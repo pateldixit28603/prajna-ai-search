@@ -1,0 +1,30 @@
+name: NVIDIA model probe
+
+# Diagnostics: how the configured NIM chat models respond to different "thinking" settings.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["backend/scripts/llm_probe.py", ".github/workflows/probe.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    env:
+      NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install httpx numpy
+      - working-directory: backend
+        run: python -m scripts.llm_probe
+      - run: |
+          git config user.name "prajna-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add backend/eval/results/llm_probe.json
+          git diff --cached --quiet || git commit -m "NVIDIA model probe results"
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done

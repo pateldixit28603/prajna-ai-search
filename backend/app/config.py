@@ -47,7 +47,7 @@ class Settings:
     # NeMo Retriever reranker. Hosted catalog URL by default; for a local NIM use http://localhost:8002/v1/ranking
     rerank_url: str = field(default_factory=lambda: os.getenv(
         "RERANK_URL",
-        "https://ai.api.nvidia.com/v1/retrieval/nvidia/nemotron-3_5-rerank-8b/reranking",
+        "https://ai.api.nvidia.com/v1/retrieval/nvidia/nemotron-3.5-rerank-8b/reranking",
     ))
     rerank_model: str = field(default_factory=lambda: os.getenv("RERANK_MODEL", "nvidia/nemotron-3.5-rerank-8b"))
 
