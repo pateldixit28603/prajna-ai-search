@@ -255,7 +255,8 @@ class AnswerEngine:
             parts = re.split(r"(?<=[.!?।])(\s+)(?!\[\d)", line)
             fixed = []
             for part in parts:
-                if not part.strip() or re.search(r"\[\d{1,2}\]", part) or len(part.split()) < 6:
+                if (not part.strip() or re.search(r"\[\d{1,2}\]", part) or len(part.split()) < 6
+                        or re.search(r"(?:^|\s)(?:[A-Z]|Dr|Mr|Mrs|Ms|St|vs|etc|e\.g|i\.e)\.\s*$", part)):
                     fixed.append(part)
                     continue
                 words = set(tokenize(part))

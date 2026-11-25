@@ -66,3 +66,11 @@ async def test_repair_citations_only_when_supported(offline_nv, docs):
     assert "Priem [1]." in out
     assert "moons tonight." in out and "tonight [" not in out
     assert eng.repair_citations("Already cited fact about Nvidia GPUs here [2].", res).count("[") == 1
+
+
+async def test_repair_citations_skips_initials(offline_nv, docs):
+    s, nv = offline_nv
+    eng = AnswerEngine(s, nv, {"wikipedia": FakeSource("wikipedia", docs)})
+    res = await eng.retrieve("When was Nvidia founded?", "wiki", [])
+    out = eng.repair_citations("Nvidia was founded in 1993 by Jensen Huang and Chris A. Malachowsky with Curtis Priem.", res)
+    assert "A. Malachowsky" in out and "A [" not in out
