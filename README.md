@@ -6,7 +6,10 @@ Prajna (Sanskrit: *wisdom*) is a Perplexity-style AI search engine. You ask a qu
 [![Daily](https://github.com/pateldixit28603/prajna-ai-search/actions/workflows/daily.yml/badge.svg)](https://github.com/pateldixit28603/prajna-ai-search/actions/workflows/daily.yml)
 ![nvidia](https://img.shields.io/badge/AI-NVIDIA%20NIM%20%2B%20NeMo%20Retriever-76b900) ![data](https://img.shields.io/badge/data-100%25%20open-blue) ![license](https://img.shields.io/badge/license-MIT-lightgrey)
 
-![Prajna answering a Hinglish question with cited sources](docs/screenshot.png)
+### 🔴 Live: **[prajna-ai-search.onrender.com](https://prajna-ai-search.onrender.com)**. Ask it anything in English, Hindi or Hinglish.
+<sub>Free hosting: if nobody has used it for a while, the first search takes about a minute to wake the server.</sub>
+
+![Prajna live, answering a Hinglish question with NVIDIA Nemotron and cited sources](docs/live-demo.jpg)
 
 **It runs every day without anyone touching it.** A GitHub Actions job:
 - 📰 **[Prajna Daily](DIGEST.md)** takes the day's trending topics from Wikipedia's most-read list and the Hacker News front page, researches each one, and publishes cited answers ([web version](https://pateldixit28603.github.io/prajna-ai-search/)).
