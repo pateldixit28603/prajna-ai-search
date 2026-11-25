@@ -1,0 +1,2 @@
+date,mode,questions,answer_accuracy,retrieval_recall,citation_coverage,citation_validity,faithfulness,latency_p50,latency_p95
+2026-11-25 16:48 UTC,extractive (no NVIDIA key),20,0.700,0.900,0.950,0.950,0.950,1.065,1.266

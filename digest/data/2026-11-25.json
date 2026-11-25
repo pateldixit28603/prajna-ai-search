@@ -1,0 +1,1066 @@
+{
+  "date": "2026-11-25",
+  "mode": "extractive (no NVIDIA key)",
+  "items": [
+    {
+      "kind": "wikipedia",
+      "topic": "Ramayana: Part 1",
+      "views": 365685,
+      "question": "Who or what is Ramayana: Part 1, and what are the key facts to know?",
+      "focus": "wiki",
+      "context": "2026 Indian film by Nitesh Tiwari",
+      "result": {
+        "question": "Who or what is Ramayana: Part 1, and what are the key facts to know?",
+        "focus": "wiki",
+        "queries": [
+          "Who or what is Ramayana: Part 1, and what are the key facts to know?"
+        ],
+        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- The first part features an ensemble cast that includes Ranbir Kapoor, Yash (in his Hindi film debut), Sai Pallavi, Ravi Dubey (in his film debut), Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, Arun Govil, Adinath Kothare. [1]\n- He wrote several popular works in Sanskrit, Awadhi, and Braj Bhasha, but is best known as the author of the Hanuman Chalisa and of the epic Ramcharitmanas, a retelling of the Sanskrit Ramayana, based on Rama's life, in the vernacular Awadhi language. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "followups": [
+          "Tell me more about Tulsidas",
+          "Tell me more about Cinematic style of S. S. Rajamouli",
+          "What are the latest developments on Who or what is Ramayana: Part 1, and what are the key facts to know?"
+        ],
+        "sources": [
+          {
+            "title": "Ramayana: Part 1",
+            "url": "https://en.wikipedia.org/wiki/Ramayana:_Part_1",
+            "source": "wikipedia",
+            "snippet": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. It is the first instalment of a two",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "df7add7e8d8b",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Tulsidas",
+            "url": "https://en.wikipedia.org/wiki/Tulsidas",
+            "source": "wikipedia",
+            "snippet": "Rambola Dubey (c. 1532 – c. 1623), popularly known as Goswami Tulsīdās, was a Ramanandi Vaishnava Hindu saint, devotee, and poet renowned for his devotion to the deities Rama, Sita, and Hanuman. He wrote several popular works in Sanskrit, Awadhi, and Braj Bhasha, but is best know",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "6d84c63ed9de",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Cinematic style of S. S. Rajamouli",
+            "url": "https://en.wikipedia.org/wiki/Cinematic_style_of_S._S._Rajamouli",
+            "source": "wikipedia",
+            "snippet": "S. S. Rajamouli is an Indian filmmaker who primarily works in Telugu cinema and is known for his action, fantasy, and epic genre films. Rachel Dwyer called Rajamouli \"India's most significant director today\". His films are typically characterised by their epic grandeur, unbridled",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "363c6e08c7fe",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Sai Pallavi",
+            "url": "https://en.wikipedia.org/wiki/Sai_Pallavi",
+            "source": "wikipedia",
+            "snippet": "Sai Pallavi Senthamarai Kannan (pronounced [saɪ paˈləvi]; born 9 May 1992) is an Indian actress who primarily works in Tamil, Telugu, and Malayalam films. Known for her natural, girl-next-door screen presence and for portraying women in emotionally challenging circumstances, she ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "21fcd3e0a0df",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Yash (actor)",
+            "url": "https://en.wikipedia.org/wiki/Yash_(actor)",
+            "source": "wikipedia",
+            "snippet": "Yash (pronounced [/yah-sh/]; born Naveen Kumar, 8 January 1986) is an Indian actor and film producer who works in Kannada cinema. Known for his work in mass hero films, he is referred to as \"Rocking Star\" in the media. One of the highest-paid actors of Kannada cinema, Yash is a r",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e56144b092d9",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Raghav Juyal",
+            "url": "https://en.wikipedia.org/wiki/Raghav_Juyal",
+            "source": "wikipedia",
+            "snippet": "Raghav Juyal (born 10 July 1991) is an Indian actor, dancer, choreographer, and television presenter. He is known as the \"King of Slow Motion\" for his surreal dance moves in slow motion style and for his reinvention of the Slow Motion Walk in India. He rose to fame after being a ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "ca3c1f63a73c",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 6.439000003410911e-06,
+          "search": 0.3840090839999988,
+          "rank": 0.001314295000000243,
+          "dense": 0.0,
+          "rerank": 0.0,
+          "retrieve": 0.3853821250000067,
+          "total": 1.3531219350000043
+        },
+        "nvidia": false
+      },
+      "metrics": {
+        "sentences": 6,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "wikipedia",
+      "topic": "Grand Theft Auto VI",
+      "views": 266240,
+      "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
+      "focus": "wiki",
+      "context": "2026 video game",
+      "result": {
+        "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
+        "focus": "wiki",
+        "queries": [
+          "Who or what is Grand Theft Auto VI, and what are the key facts to know?"
+        ],
+        "answer": "As one of the most popular gaming personalities on YouTube, his videography consists of montage-style videos of him and other creators playing various video games, such as Grand Theft Auto V, Garry's Mod, and various titles from the Call of Duty franchise. [1]\n\n**Key points from the sources:**\n- He is mostly known for his actions against Rockstar Games and the Grand Theft Auto franchise. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "followups": [
+          "Tell me more about VanossGaming",
+          "Tell me more about Jack Thompson (activist)",
+          "What are the latest developments on Who or what is Grand Theft Auto VI, and what are the key facts to know?"
+        ],
+        "sources": [
+          {
+            "title": "VanossGaming",
+            "url": "https://en.wikipedia.org/wiki/VanossGaming",
+            "source": "wikipedia",
+            "snippet": "Evan Fong (born May 31, 1992), known online as VanossGaming (or simply Vanoss), is a Canadian YouTuber and musician. As one of the most popular gaming personalities on YouTube, his videography consists of montage-style videos of him and other creators playing various video games,",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "a7568a4169b5",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Jack Thompson (activist)",
+            "url": "https://en.wikipedia.org/wiki/Jack_Thompson_(activist)",
+            "source": "wikipedia",
+            "snippet": "John Bruce Thompson (born July 25, 1951) is an American activist and disbarred attorney. As an attorney, Thompson focused his legal efforts against what he perceives as obscenity in modern culture. He gained notoriety as an anti-video game activist, criticizing the content of gam",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e025d9d77064",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Tom Araya",
+            "url": "https://en.wikipedia.org/wiki/Tom_Araya",
+            "source": "wikipedia",
+            "snippet": "Tomás Enrique \"Tom\" Araya Díaz (Spanish: [tom aˈɾaʝa]; born June 6, 1961) is a Chilean-American musician, best known as the vocalist and bassist of the thrash metal band Slayer. He was ranked 58th by Hit Parader on their list of the 100 Greatest Metal Vocalists of All Time, and 4",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "f3dfcfb56a5b",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Video game monetization",
+            "url": "https://en.wikipedia.org/wiki/Video_game_monetization",
+            "source": "wikipedia",
+            "snippet": "Video game monetization is a type of process that a video game publisher can use to generate revenue from a video game product. The methods of monetization may vary between games, especially when they come from different genres or platforms, but they all serve the same purpose to",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "ff52583957b8",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "List of security hacking incidents",
+            "url": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+            "source": "wikipedia",
+            "snippet": "This list of security hacking incidents covers important or noteworthy events in the history of security hacking and cracking.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "dff0e8eb8721",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "List of video games with LGBTQ characters",
+            "url": "https://en.wikipedia.org/wiki/List_of_video_games_with_LGBTQ_characters",
+            "source": "wikipedia",
+            "snippet": "The following is a list of confirmed video games with lesbian, gay, bisexual, transgender and queer characters, including any others falling under the LGBTQ umbrella term. The numbers in this list are possibly higher because some characters remained unconfirmed, unsourced, or con",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "a4e13f6770b5",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 4.435999997554063e-06,
+          "search": 0.647574302999999,
+          "rank": 0.0007618460000031746,
+          "dense": 0.0,
+          "rerank": 0.0,
+          "retrieve": 0.64837398600001,
+          "total": 0.983232268000009
+        },
+        "nvidia": false
+      },
+      "metrics": {
+        "sentences": 2,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "wikipedia",
+      "topic": "Jensen Huang",
+      "views": 234343,
+      "question": "Who or what is Jensen Huang, and what are the key facts to know?",
+      "focus": "wiki",
+      "context": "Taiwanese-American business executive (born 1963)",
+      "result": {
+        "question": "Who or what is Jensen Huang, and what are the key facts to know?",
+        "focus": "wiki",
+        "queries": [
+          "Who or what is Jensen Huang, and what are the key facts to know?"
+        ],
+        "answer": "On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [1]\n\n**Key points from the sources:**\n- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [1]\n- officials did not warn Jensen Huang through a defensive briefing. [1]\n- Huang had an extramarital affair with Alice Huang (no relation), a Chinese national who was an executive of Megaspeed, a Singaporean company. [1]\n- On November 12, Attorney General Todd Blanche said the Justice Department had reached no conclusion about whether Alice Huang was a spy, and CNN reported, citing multiple sources, that the... [1]\n- Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "followups": [
+          "Tell me more about Jensen Huang scandal",
+          "Tell me more about Nvidia",
+          "What are the latest developments on Who or what is Jensen Huang, and what are the key facts to know?"
+        ],
+        "sources": [
+          {
+            "title": "Jensen Huang scandal",
+            "url": "https://en.wikipedia.org/wiki/Jensen_Huang_scandal",
+            "source": "wikipedia",
+            "snippet": "On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. intelligence surveillance who spoke on condition of anonymity. Huang had an ext",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "c83e95e5b0ea",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Nvidia",
+            "url": "https://en.wikipedia.org/wiki/Nvidia",
+            "source": "wikipedia",
+            "snippet": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for gaming, data science, high",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "4a7ac65635eb",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Nintendo Switch 2",
+            "url": "https://en.wikipedia.org/wiki/Nintendo_Switch_2",
+            "source": "wikipedia",
+            "snippet": "The Nintendo Switch 2 is a video game console developed by Nintendo and released in most regions on June 5, 2025. Like the preceding Nintendo Switch, it can be used as a handheld, as a tablet, or connected via the dock to an external display. The Joy-Con 2 controllers can be used",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "4d1776e52010",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Alice Huang (executive)",
+            "url": "https://en.wikipedia.org/wiki/Alice_Huang_(executive)",
+            "source": "wikipedia",
+            "snippet": "Alice Huang (Chinese: 黄乐; pinyin: Huáng Lè; born December 1982) is a Chinese technology executive and investor. She was an executive at Megaspeed, a Singaporean technology company, before she officially stepped down from her role in August 2025. Huang's role in the company after ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "84a52381aaf2",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Generation Z in the United States",
+            "url": "https://en.wikipedia.org/wiki/Generation_Z_in_the_United_States",
+            "source": "wikipedia",
+            "snippet": "Generation Z (or Gen Z for short), colloquially known as Zoomers, is the demographic cohort succeeding Millennials and preceding Generation Alpha. Members of Generation Z, were born between the mid-to-late 1990s and the early 2010s, with the generation typically being defined as ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "28296c860aa1",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "List of -gate scandals and controversies",
+            "url": "https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies",
+            "source": "wikipedia",
+            "snippet": "This is a list of scandals or controversies whose names include a -gate suffix, by analogy with the Watergate scandal in the 1970s, as well as other incidents to which the suffix has (often facetiously) been applied. This list also includes controversies that are widely referred ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "497bdf75ebc8",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 1.9020000081582111e-06,
+          "search": 0.3949660759999887,
+          "rank": 0.0012312500000035698,
+          "dense": 0.0,
+          "rerank": 0.0,
+          "retrieve": 0.3962360029999985,
+          "total": 1.1366621689999903
+        },
+        "nvidia": false
+      },
+      "metrics": {
+        "sentences": 6,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "wikipedia",
+      "topic": "Moon",
+      "views": 180275,
+      "question": "Who or what is Moon, and what are the key facts to know?",
+      "focus": "wiki",
+      "context": "Natural satellite orbiting Earth",
+      "result": {
+        "question": "Who or what is Moon, and what are the key facts to know?",
+        "focus": "wiki",
+        "queries": [
+          "Who or what is Moon, and what are the key facts to know?"
+        ],
+        "answer": "The Moon is the only natural satellite of Earth. [1]\n\n**Key points from the sources:**\n- The Moon and Earth are bound by gravitational attraction, which is stronger on the sides facing each other. [1]\n- The resulting tidal forces are the main driver of Earth's tides, and have pulled the Moon to always face Earth with the same near side. [1]\n- This tidal locking effectively synchronizes the Moon's rotation period (lunar day) to its orbital period (lunar month). [1]\n- In geophysical terms, the Moon is a planetary-mass object or satellite planet. [1]\n- Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "followups": [
+          "Tell me more about Moon Girl and Devil Dinosaur",
+          "Tell me more about Moon (2009 film)",
+          "What are the latest developments on Who or what is Moon, and what are the key facts to know?"
+        ],
+        "sources": [
+          {
+            "title": "Moon",
+            "url": "https://en.wikipedia.org/wiki/Moon",
+            "source": "wikipedia",
+            "snippet": "The Moon is the only natural satellite of Earth. It orbits Earth in an elliptical path, at a distance that varies over the year, averaging around 378,000 kilometers (235,000 mi). It completes an orbit (lunar month) in relation to Earth and the Sun (synodically) every 29.5 days. T",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "04c9f9b5af2a",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Moon Girl and Devil Dinosaur",
+            "url": "https://en.wikipedia.org/wiki/Moon_Girl_and_Devil_Dinosaur",
+            "source": "wikipedia",
+            "snippet": "Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. Howard and Kate Kondell for Disney Channel and Disney+ based on Moon Girl And Devil Dinosaur by Marvel Co",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "0593df6f57ae",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Moon (2009 film)",
+            "url": "https://en.wikipedia.org/wiki/Moon_(2009_film)",
+            "source": "wikipedia",
+            "snippet": "Moon is a 2009 science fiction film directed by Duncan Jones (in his directorial debut), written by Nathan Parker from a story by Jones. It stars Sam Rockwell as Sam Bell, a man who experiences a personal crisis as he nears the end of a three-year solitary stint mining helium-3 o",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "3be76c7e5020",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "What We Do in the Shadows (TV series)",
+            "url": "https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows_(TV_series)",
+            "source": "wikipedia",
+            "snippet": "What We Do in the Shadows is an American comedy horror mockumentary fantasy television series created by Jemaine Clement, first broadcast on FX on March 27, 2019, until concluding its run with the end of its sixth season on December 16, 2024. Based on the 2014 New Zealand film wr",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "22b5be7b2b86",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Flashdance... What a Feeling",
+            "url": "https://en.wikipedia.org/wiki/Flashdance..._What_a_Feeling",
+            "source": "wikipedia",
+            "snippet": "\"Flashdance... What a Feeling\" is a song from the 1983 film Flashdance with music by Giorgio Moroder and lyrics by Keith Forsey and the song's performer, Irene Cara. The song spent six weeks at number one on the Billboard Hot 100 and topped the charts around the world. It was awa",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "751d27195f1c",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "On Nature (Parmenides)",
+            "url": "https://en.wikipedia.org/wiki/On_Nature_(Parmenides)",
+            "source": "wikipedia",
+            "snippet": "On Nature (Ancient Greek: Περὶ Φύσεως Ancient Greek pronunciation: [pe.rí pʰý.seɔːs]) is an early 5th century BC didactic poem written by ancient Greek philosopher Parmenides. Composed in dactylic hexameter, it originally contained roughly 800 to 3,000 lines. Only about 160 lines",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "f85e03ce6489",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 1.9430000008924253e-06,
+          "search": 0.3839714470000075,
+          "rank": 0.0012260729999979958,
+          "dense": 0.0,
+          "rerank": 0.0,
+          "retrieve": 0.3852337339999963,
+          "total": 0.9599102789999989
+        },
+        "nvidia": false
+      },
+      "metrics": {
+        "sentences": 6,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Matrix Multiplication is Θ(n^2.25)",
+      "points": 868,
+      "discussion": "https://news.ycombinator.com/item?id=50637220",
+      "question": "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?",
+      "focus": "all",
+      "result": {
+        "question": "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?",
+        "focus": "all",
+        "queries": [
+          "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?"
+        ],
+        "answer": "Unitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter. [1]\n\n**Key points from the sources:**\n- We present explicit computations and conjectures for 2 → 2 scattering matrices in large N U(N ) Chern-Simons theories coupled to fundamental bosonic or fermionic matter to all orders in the ’t Hooft coupling expansion. [1]\n- We conjecture that these unusual features are properties of S-matrices in all Chern-Simons matter theories. [1]\n- The S-matrix in one of the exchange channels in our paper has an anyonic character; the parameter map of the conjectured Bose-Fermi duality may be derived by equating the anyonic phase in the bosonic and fermionic theories. [1]\n- Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems. [2]\n- Superconformal N = 2, D = 5 matter with and without actions. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "followups": [
+          "Tell me more about Unitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter",
+          "Tell me more about Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems",
+          "What are the latest developments on Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?"
+        ],
+        "sources": [
+          {
+            "title": "Unitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter",
+            "url": "https://doi.org/10.1007/jhep04(2015)129",
+            "source": "openalex",
+            "snippet": "We present explicit computations and conjectures for 2 → 2 scattering matrices in large N U(N ) Chern-Simons theories coupled to fundamental bosonic or fermionic matter to all orders in the ’t Hooft coupling expansion. The bosonic and fermionic S-matrices map to each other under ",
+            "published": "2015",
+            "authors": [
+              "Sachin Jain",
+              "Mangesh Mandlik",
+              "Shiraz N. Minwalla",
+              "Tomohisa Takimi",
+              "Spenta R. Wadia",
+              "Shuichi Yokoyama"
+            ],
+            "extra": {
+              "cited_by": 104,
+              "venue": "Journal of High Energy Physics",
+              "license": "CC0 metadata"
+            },
+            "id": "137465610817",
+            "domain": "doi.org",
+            "n": 1
+          },
+          {
+            "title": "Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems",
+            "url": "https://doi.org/10.1016/j.lindif.2015.08.013",
+            "source": "openalex",
+            "snippet": "Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems",
+            "published": "2015",
+            "authors": [
+              "Sanne H.G. van der Ven",
+              "Marthe Straatemeier",
+              "Brenda R. J. Jansen",
+              "Sharon Klinkenberg",
+              "Han L. J. van der Maas"
+            ],
+            "extra": {
+              "cited_by": 37,
+              "venue": "Learning and Individual Differences",
+              "license": "CC0 metadata"
+            },
+            "id": "8ca37cf7b73f",
+            "domain": "doi.org",
+            "n": 2
+          },
+          {
+            "title": "Matrix theory",
+            "url": "https://doi.org/10.1016/s0920-5632(98)00130-3",
+            "source": "openalex",
+            "snippet": "Matrix theory",
+            "published": "1998",
+            "authors": [
+              "Tom Banks"
+            ],
+            "extra": {
+              "cited_by": 201,
+              "venue": "Nuclear Physics B - Proceedings Supplements",
+              "license": "CC0 metadata"
+            },
+            "id": "5d02268c7fde",
+            "domain": "doi.org",
+            "n": 3
+          },
+          {
+            "title": "Superconformal N = 2, D = 5 matter with and without actions",
+            "url": "https://doi.org/10.1088/1126-6708/2002/10/045",
+            "source": "openalex",
+            "snippet": "Superconformal N = 2, D = 5 matter with and without actions",
+            "published": "2002",
+            "authors": [
+              "Eric Bergshoeff",
+              "Tim C. de Wit",
+              "Rein Halbersma",
+              "Sorin Cucu",
+              "Jos Gheerardyn",
+              "Antoine Van Proeyen"
+            ],
+            "extra": {
+              "cited_by": 138,
+              "venue": "Journal of High Energy Physics",
+              "license": "CC0 metadata"
+            },
+            "id": "f7afba5dbb65",
+            "domain": "doi.org",
+            "n": 4
+          },
+          {
+            "title": "Feynman diagram",
+            "url": "https://en.wikipedia.org/wiki/Feynman_diagram",
+            "source": "wikipedia",
+            "snippet": "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and interaction of subatomic particles. The scheme is named after American physicist Richard Feynman, who introduced the diagrams in 1948. The calculati",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "bc294ed2b793",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Logistic regression",
+            "url": "https://en.wikipedia.org/wiki/Logistic_regression",
+            "source": "wikipedia",
+            "snippet": "In statistics, a logistic model (or logit model) is a statistical model that models the log-odds of an event as a linear combination of one or more independent variables. In regression analysis, logistic regression (or logit regression) estimates the parameters of a logistic mode",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "712f250a65fb",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Anyon",
+            "url": "https://en.wikipedia.org/wiki/Anyon",
+            "source": "wikipedia",
+            "snippet": "In physics, an anyon is a type of quasiparticle so far observed only in two-dimensional systems. In three-dimensional systems, only two kinds of elementary particles are seen: fermions and bosons. Anyons have statistical properties intermediate between fermions and bosons. In gen",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "16e28ef5c8c7",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "History of mathematical notation",
+            "url": "https://en.wikipedia.org/wiki/History_of_mathematical_notation",
+            "source": "wikipedia",
+            "snippet": "The history of mathematical notation covers the introduction, development, and cultural diffusion of mathematical symbols and the conflicts between notational methods that arise during a notation's move to popularity or obsolescence. Mathematical notation comprises the symbols us",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "4c49b66f705d",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 1.8219999873281267e-06,
+          "search": 0.6891062920000053,
+          "rank": 0.0012757359999966411,
+          "dense": 0.0,
+          "rerank": 0.0,
+          "retrieve": 0.6904181510000029,
+          "total": 1.3862299449999966
+        },
+        "nvidia": false
+      },
+      "metrics": {
+        "sentences": 6,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Button Sounds – collection of professionally-recorded button clicks and presses",
+      "points": 682,
+      "discussion": "https://news.ycombinator.com/item?id=50638032",
+      "question": "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?",
+      "focus": "all",
+      "result": {
+        "question": "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?",
+        "focus": "all",
+        "queries": [
+          "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?"
+        ],
+        "answer": "Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy. [1]\n\n**Key points from the sources:**\n- In The Pearl Button, Patricio Guzman explores the role water played in shaping how the Selk’nam inhabited the coasts of the Tierra del Fuego in Patagonia through “cosmovisions,’ sequences that extend beyond human perception, even as they link the habitation of indigenous peoples to subsequent colonial and political projects. [1]\n- He works with archival photography and the superimposition of images/sounds in order to create a pluriverse of peoples and environments, which moves beyond human audiovisual and temporal perception. [1]\n- In doing so, The Pearl Button links the ways in which the Selk’nam inhabited Chile, depending on its waters, to the ocean as the source of the colonial project of Spain and site of political murders under the later dictatorship of Augusto Pinochet. [1]\n- “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents. [2]\n- Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper. [5]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "followups": [
+          "Tell me more about Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy",
+          "Tell me more about “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents",
+          "What are the latest developments on Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?"
+        ],
+        "sources": [
+          {
+            "title": "Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy",
+            "url": "https://dc.etsu.edu/etsu-works/7825",
+            "source": "openalex",
+            "snippet": "In The Pearl Button, Patricio Guzman explores the role water played in shaping how the Selk’nam inhabited the coasts of the Tierra del Fuego in Patagonia through “cosmovisions,’ sequences that extend beyond human perception, even as they link the habitation of indigenous peoples ",
+            "published": "2019",
+            "authors": [
+              "Matthew Holtmeier"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Digital Commons - East Tennessee State University (East Tennessee State University)",
+              "license": "CC0 metadata"
+            },
+            "id": "ff9fe74caf35",
+            "domain": "dc.etsu.edu",
+            "n": 1
+          },
+          {
+            "title": "“There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents",
+            "url": "https://doi.org/10.1177/10497323231187541",
+            "source": "openalex",
+            "snippet": "Virtual spaces that allow parents in the postpartum period to connect, support each other, and exchange information have been increasing in popularity. With the COVID-19 pandemic, many parents had to rely on virtual platforms as a primary means to connect with others and attend t",
+            "published": "2023",
+            "authors": [
+              "Anna MacLeod",
+              "Megan L. Aston",
+              "Sheri Lynn Price",
+              "Kathryn Stone",
+              "Rachel Ollivier",
+              "Britney Benoit"
+            ],
+            "extra": {
+              "cited_by": 5,
+              "venue": "Qualitative Health Research",
+              "license": "CC0 metadata"
+            },
+            "id": "121faf7f5c46",
+            "domain": "doi.org",
+            "n": 2
+          },
+          {
+            "title": "Listening In Towards Sound: creating soundscapes to sound our presence",
+            "url": "https://summit.sfu.ca/_flysystem/fedora/sfu_migrate/14776/etd8716_EWeiden.pdf",
+            "source": "openalex",
+            "snippet": "Employing the arts based methodology Performative Inquiry, attending to emergent moments, those of surprise and discovery, I am inquiring and listening in towards where sound, performance, identity, and place intersect.I am interested in how sound performs identity, how identity ",
+            "published": "2014",
+            "authors": [
+              "Eric Stephen Weiden"
+            ],
+            "extra": {
+              "cited_by": 1,
+              "venue": "Summit (Simon Fraser University)",
+              "license": "CC0 metadata"
+            },
+            "id": "a0f7909c2bef",
+            "domain": "summit.sfu.ca",
+            "n": 3
+          },
+          {
+            "title": "OK Computer",
+            "url": "https://en.wikipedia.org/wiki/OK_Computer",
+            "source": "wikipedia",
+            "snippet": "OK Computer is the third studio album by the English rock band Radiohead, released on 21 May 1997. With their producer, Nigel Godrich, Radiohead recorded most of OK Computer in their rehearsal space in Oxfordshire and the historic mansion of St Catherine's Court in Bath in 1996 a",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "f3f0a81836af",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper",
+            "url": "http://resolver.tudelft.nl/uuid:3f36cd36-d668-457c-a795-39ff3ba2683c",
+            "source": "openalex",
+            "snippet": "The starting point of this graduation project is noises that nurses experience in the ICU (Intensive Care Unit). There is a defined medical symptom which is called “alarm fatigue” that refers to numb auditory senses, stress, low job satisfaction as a result of being exposed to ex",
+            "published": "2019",
+            "authors": [
+              "Yoon Lee"
+            ],
+            "extra": {
+              "cited_by": 1,
+              "venue": "Research Repository (Delft University of Technology)",
+              "license": "CC0 metadata"
+            },
+            "id": "686c44979fea",
+            "domain": "resolver.tudelft.nl",
+            "n": 5
+          },
+          {
+            "title": "Enema of the State",
+            "url": "https://en.wikipedia.org/wiki/Enema_of_the_State",
+            "source": "wikipedia",
+            "snippet": "Enema of the State is the third studio album by the American rock band Blink-182, released on June 1, 1999, by MCA Records. The band formed in Southern California, earning an early fanbase with their fast tempos, catchy hooks, and trademark irreverence. The band gained greater vi",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "6333591db96e",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "BBC",
+            "url": "https://en.wikipedia.org/wiki/BBC",
+            "source": "wikipedia",
+            "snippet": "The British Broadcasting Corporation (BBC) is a British public service broadcaster headquartered at Broadcasting House in London, England. Originally established in 1922 as the British Broadcasting Company, it evolved into its current state with its current name on 1 January 1927",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "1b38b12a31a3",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Bob Dylan",
+            "url": "https://en.wikipedia.org/wiki/Bob_Dylan",
+            "source": "wikipedia",
+            "snippet": "Bob Dylan (legally Robert Dylan; born Robert Allen Zimmerman, May 24, 1941) is an American singer-songwriter. Described as one of the greatest songwriters of all time, Dylan has been a major figure in popular culture over his 69-year career. Dylan added increasingly sophisticated",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "82ae222298bb",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 2.0429999949556077e-06,
+          "search": 0.5298131039999987,
+          "rank": 0.002145721999994521,
+          "dense": 0.0,
+          "rerank": 0.0,
+          "retrieve": 0.532001820000005,
+          "total": 1.3634133059999982
+        },
+        "nvidia": false
+      },
+      "metrics": {
+        "sentences": 6,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "The Spray Bottle",
+      "points": 575,
+      "discussion": "https://news.ycombinator.com/item?id=50598555",
+      "question": "The Spray Bottle — what is this about and why does it matter?",
+      "focus": "all",
+      "result": {
+        "question": "The Spray Bottle — what is this about and why does it matter?",
+        "focus": "all",
+        "queries": [
+          "The Spray Bottle — what is this about and why does it matter?"
+        ],
+        "answer": "“Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914. [1]\n\n**Key points from the sources:**\n- Particulate matter (PM) or particulates are microscopic particles of solid or liquid matter suspended in the air. [4]\n- Particulate matter is considered the most dangerous type of air pollution because particulates can penetrate deep into the lungs and travel through the blood stream to multiple organs, such as the brain. [4]\n- Black Lives Matter (BLM) is a decentralized political and social movement that aims to highlight racism, discrimination and racial inequality experienced by Black people in the United States, and to promote anti-racism. [5]\n- Pollinating insects: what do they mean to people and why does it matter?. [6]\n- Why Do “Good” Pictures Matter in Anthropology?. [7]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "followups": [
+          "Tell me more about “Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914",
+          "Tell me more about Operation Sea Spray",
+          "What are the latest developments on The Spray Bottle — what is this about and why does it matter?"
+        ],
+        "sources": [
+          {
+            "title": "“Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914",
+            "url": "https://doi.org/10.7202/800406ar",
+            "source": "openalex",
+            "snippet": "As insecticides were adopted by Canadian farmers and fruit-growers after 1871, the resources conferred on economic entomology by the Dominion and Ontario governments grew. In 1886, with the establishment of the Experimental Farms system, James Fletcher, the Dominion entomologist ",
+            "published": "1998",
+            "authors": [
+              "George M. Cook"
+            ],
+            "extra": {
+              "cited_by": 5,
+              "venue": "Scientia Canadensis Canadian Journal of the History of Science Technology and Medicine",
+              "license": "CC0 metadata"
+            },
+            "id": "4e22dd9fcec1",
+            "domain": "doi.org",
+            "n": 1
+          },
+          {
+            "title": "Operation Sea Spray",
+            "url": "http://hdl.handle.net/10211.2/2548",
+            "source": "openalex",
+            "snippet": "Professor Sam Redding, a medical microbiologist with a serious case of distrust and abandonment issues that stem from death of his mother when he was five years old, is trying to keep his head above water and get over his lost relationship with a former graduate student, Yara Dia",
+            "published": "2013",
+            "authors": [
+              "Lisa Lumar"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "CSUN ScholarWorks (California State University, Northridge)",
+              "license": "CC0 metadata"
+            },
+            "id": "e0447219f8b4",
+            "domain": "hdl.handle.net",
+            "n": 2
+          },
+          {
+            "title": "2026 Delaney Hall hunger strike and protests",
+            "url": "https://en.wikipedia.org/wiki/2026_Delaney_Hall_hunger_strike_and_protests",
+            "source": "wikipedia",
+            "snippet": "On May 22, 2026, in Newark, New Jersey, immigrants detained in Delaney Hall, a private prison run by GEO Group used for holding immigrants detained by Immigration and Customs Enforcement (ICE), held a month-long hunger and labor strike protesting conditions inside the facility. D",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "4bf921298add",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Particulate matter",
+            "url": "https://en.wikipedia.org/wiki/Particulate_matter",
+            "source": "wikipedia",
+            "snippet": "Particulate matter (PM) or particulates are microscopic particles of solid or liquid matter suspended in the air. The combination of particulates and air is called an aerosol. Sources of particulate matter can be either natural or occur as a result of human activities. Particulat",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d125127439e2",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Black Lives Matter",
+            "url": "https://en.wikipedia.org/wiki/Black_Lives_Matter",
+            "source": "wikipedia",
+            "snippet": "Black Lives Matter (BLM) is a decentralized political and social movement that aims to highlight racism, discrimination and racial inequality experienced by Black people in the United States, and to promote anti-racism. Its primary concerns are police brutality and racially motiv",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "4813d8c71b43",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Pollinating insects: what do they mean to people and why does it matter?",
+            "url": "https://eprints.bbk.ac.uk/id/eprint/23400/1/DEFRA_Pollinating%20Insects_PH0523_FinalReport.pdf",
+            "source": "openalex",
+            "snippet": "1. People value pollinating insects, and especially bees, in a wide range of different ways: as beautiful or fascinating creatures; as providers of goods; as objects of stewardship; as participants in a greater, interconnected whole – in which humans also participate; and as crea",
+            "published": "2018",
+            "authors": [
+              "S. Christmas",
+              "Bob Bloomfield",
+              "H. Bradburn",
+              "Raymond S. Duff",
+              "G. Ereaut",
+              "K. Miskelly"
+            ],
+            "extra": {
+              "cited_by": 5,
+              "venue": "BIROn (Birkbeck, University of London)",
+              "license": "CC0 metadata"
+            },
+            "id": "aea7bc853807",
+            "domain": "eprints.bbk.ac.uk",
+            "n": 6
+          },
+          {
+            "title": "Why Do “Good” Pictures Matter in Anthropology?",
+            "url": "https://doi.org/10.14506/ca37.3.11",
+            "source": "openalex",
+            "snippet": "This article explores the relationship between photography and anthropology in the age of digital ethnographies and anthropologies of the future. It focuses on the phenomenological bond between the picture-taking process and the politics of visual representations by looking at an",
+            "published": "2022",
+            "authors": [
+              "Camilo León-Quijano"
+            ],
+            "extra": {
+              "cited_by": 33,
+              "venue": "Cultural Anthropology",
+              "license": "CC0 metadata"
+            },
+            "id": "4270f997e85a",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "Bioplastic",
+            "url": "https://en.wikipedia.org/wiki/Bioplastic",
+            "source": "wikipedia",
+            "snippet": "Bioplastics (or bio-based plastics) are plastic materials produced from renewable biomass sources rather than petrochemical sources. This definition distinguishes it from biodegradable plastics, which are plastics that degrade by the natural action of microorganisms such as algae",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "937267e30239",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 1.8229999909635808e-06,
+          "search": 0.5033584869999999,
+          "rank": 0.0026111100000036913,
+          "dense": 0.0,
+          "rerank": 0.0,
+          "retrieve": 0.506014313999998,
+          "total": 1.1044257039999934
+        },
+        "nvidia": false
+      },
+      "metrics": {
+        "sentences": 6,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    }
+  ]
+}
