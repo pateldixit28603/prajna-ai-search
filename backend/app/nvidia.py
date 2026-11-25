@@ -25,6 +25,8 @@ class NvidiaClient:
     def __init__(self, settings: Settings, client: httpx.AsyncClient | None = None):
         self.s = settings
         self._client = client or httpx.AsyncClient(timeout=httpx.Timeout(60.0, connect=10.0))
+        # circuit breaker: a retired/missing endpoint (404/410) is skipped for the rest of the process
+        self.dead: set[str] = set()
 
     # ------------------------------------------------------------------ utils
     def _headers(self) -> dict[str, str]:
@@ -108,7 +110,11 @@ class NvidiaClient:
                 "encoding_format": "float",
                 "truncate": "END",
             }
+            if "embed" in self.dead:
+                raise NvidiaError("embedding endpoint unavailable (retired/missing)")
             r = await self._client.post(f"{self.s.embed_base_url}/embeddings", headers=self._headers(), json=payload)
+            if r.status_code in (404, 410):
+                self.dead.add("embed")
             if r.status_code >= 400:
                 raise NvidiaError(f"Embed HTTP {r.status_code}: {r.text[:300]}")
             data = sorted(r.json()["data"], key=lambda d: d["index"])
@@ -126,7 +132,11 @@ class NvidiaClient:
             "passages": [{"text": p[:4000]} for p in passages],
             "truncate": "END",
         }
+        if "rerank" in self.dead:
+            raise NvidiaError("rerank endpoint unavailable (retired/missing)")
         r = await self._client.post(self.s.rerank_url, headers=self._headers(), json=payload)
+        if r.status_code in (404, 410):
+            self.dead.add("rerank")
         if r.status_code >= 400:
             raise NvidiaError(f"Rerank HTTP {r.status_code}: {r.text[:300]}")
         scores = [float("-inf")] * len(passages)

@@ -65,7 +65,9 @@ async def main() -> None:
                 return len(r.json()["data"][0]["embedding"])
             results.append(await probe(f"embed:{m}", emb()))
     if not results[3]["ok"]:
-        for m in [m for m in catalog if "rerank" in m][:4]:
+        rr_cands = ["nvidia/nemotron-3.5-rerank-8b", "nvidia/llama-nemotron-rerank-1b-v2",
+                    "nvidia/llama-3.2-nemoretriever-500m-rerank-v2"]
+        for m in dict.fromkeys(rr_cands + [m for m in catalog if "rerank" in m]):
             slug = m.split("/", 1)[1].replace(".", "_")
             for url in (f"https://ai.api.nvidia.com/v1/retrieval/nvidia/{slug}/reranking",
                         f"https://ai.api.nvidia.com/v1/retrieval/{m}/reranking"):

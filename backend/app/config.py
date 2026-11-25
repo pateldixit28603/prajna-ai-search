@@ -38,18 +38,18 @@ class Settings:
     nvidia_api_key: str = field(default_factory=lambda: os.getenv("NVIDIA_API_KEY", ""))
     # OpenAI-compatible LLM endpoint (hosted or local NIM)
     llm_base_url: str = field(default_factory=lambda: os.getenv("LLM_BASE_URL", "https://integrate.api.nvidia.com/v1"))
-    llm_model: str = field(default_factory=lambda: os.getenv("LLM_MODEL", "nvidia/nemotron-3-nano-30b-a3b"))
+    llm_model: str = field(default_factory=lambda: os.getenv("LLM_MODEL", "nvidia/nemotron-3.5-lightning-30b-a3b"))
     # Smaller/faster model for query rewriting + follow-up questions
-    llm_fast_model: str = field(default_factory=lambda: os.getenv("LLM_FAST_MODEL", "nvidia/llama-3.1-nemotron-nano-8b-v1"))
+    llm_fast_model: str = field(default_factory=lambda: os.getenv("LLM_FAST_MODEL", "nvidia/nemotron-3.5-bolt-e4b"))
     # NeMo Retriever embeddings (OpenAI-compatible /embeddings)
     embed_base_url: str = field(default_factory=lambda: os.getenv("EMBED_BASE_URL", "https://integrate.api.nvidia.com/v1"))
-    embed_model: str = field(default_factory=lambda: os.getenv("EMBED_MODEL", "nvidia/llama-3.2-nv-embedqa-1b-v2"))
+    embed_model: str = field(default_factory=lambda: os.getenv("EMBED_MODEL", "nvidia/nemotron-3.5-embed-1b"))
     # NeMo Retriever reranker. Hosted catalog URL by default; for a local NIM use http://localhost:8002/v1/ranking
     rerank_url: str = field(default_factory=lambda: os.getenv(
         "RERANK_URL",
-        "https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-3_2-nv-rerankqa-1b-v2/reranking",
+        "https://ai.api.nvidia.com/v1/retrieval/nvidia/nemotron-3_5-rerank-8b/reranking",
     ))
-    rerank_model: str = field(default_factory=lambda: os.getenv("RERANK_MODEL", "nvidia/llama-3.2-nv-rerankqa-1b-v2"))
+    rerank_model: str = field(default_factory=lambda: os.getenv("RERANK_MODEL", "nvidia/nemotron-3.5-rerank-8b"))
 
     # ---- Retrieval --------------------------------------------------------
     max_sources: int = field(default_factory=lambda: int(os.getenv("MAX_SOURCES", "8")))

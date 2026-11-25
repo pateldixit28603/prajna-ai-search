@@ -20,8 +20,8 @@ Prajna (Sanskrit: *wisdom*) is a Perplexity-style AI search engine. You ask a qu
 |---|---|
 | **Conversational search** | Threads with follow-ups; the LLM rewrites "its price?" into a standalone query |
 | **Open data sources** | Wikipedia (any language, auto-Hindi for Devanagari), OpenAlex (250M+ papers, CC0), arXiv, Hacker News, plus your own local index |
-| **Hybrid retrieval** | BM25 (lexical) ⊕ NVIDIA `llama-3.2-nv-embedqa-1b-v2` embeddings (semantic), fused with Reciprocal Rank Fusion |
-| **Neural reranking** | NVIDIA `llama-3.2-nv-rerankqa-1b-v2` cross-encoder picks the best passages |
+| **Hybrid retrieval** | BM25 (lexical) ⊕ NVIDIA `nemotron-3.5-embed-1b` embeddings (semantic), fused with Reciprocal Rank Fusion |
+| **Neural reranking** | NVIDIA `nemotron-3.5-rerank-8b` cross-encoder picks the best passages |
 | **Grounded answers** | NVIDIA Nemotron LLM streams Markdown answers with `[n]` citations (reasoning `<think>` blocks are filtered out) |
 | **Focus modes** | All · Encyclopedia · Academic · Tech · My index |
 | **Local knowledge base** | Ingest the Simple-English Wikipedia dump, chosen Wikipedia articles, or your own `.md/.txt/.jsonl` |
@@ -98,12 +98,14 @@ The GPU stack runs three NIM containers (`llama-3.1-8b-instruct`, `llama-3.2-nv-
 
 | Stage | Model (default, configurable) | Endpoint |
 |---|---|---|
-| Query planning + follow-ups | `nvidia/llama-3.1-nemotron-nano-8b-v1` | `POST /v1/chat/completions` |
-| Answer generation (streaming) | `nvidia/nemotron-3-nano-30b-a3b` | `POST /v1/chat/completions` (`stream: true`) |
-| Passage + query embeddings | `nvidia/llama-3.2-nv-embedqa-1b-v2` | `POST /v1/embeddings` (`input_type: query/passage`) |
-| Reranking | `nvidia/llama-3.2-nv-rerankqa-1b-v2` | hosted `…/retrieval/…/reranking` or local `/v1/ranking` |
+| Query planning + follow-ups | `nvidia/nemotron-3.5-bolt-e4b` | `POST /v1/chat/completions` |
+| Answer generation (streaming) | `nvidia/nemotron-3.5-lightning-30b-a3b` | `POST /v1/chat/completions` (`stream: true`) |
+| Passage + query embeddings | `nvidia/nemotron-3.5-embed-1b` | `POST /v1/embeddings` (`input_type: query/passage`) |
+| Reranking | `nvidia/nemotron-3.5-rerank-8b` | hosted `…/retrieval/…/reranking` or local `/v1/ranking` |
 
-You can swap in a bigger answer model by setting `LLM_MODEL`, for example `nvidia/llama-3.1-nemotron-ultra-253b-v1`. Any chat model listed at build.nvidia.com works.
+Hosted models get retired over time. The daily job runs `python -m scripts.nim_check`, which probes every configured endpoint, discovers the live catalog and records what works in [`nim_status.json`](backend/eval/results/nim_status.json). Retired endpoints are skipped automatically by a circuit breaker, so a retired model never breaks search.
+
+You can swap in a bigger answer model by setting `LLM_MODEL`, for example `nvidia/nemotron-3-ultra-550b-a55b`. Any chat model listed at build.nvidia.com works.
 
 ## API
 
@@ -120,7 +122,7 @@ Interactive docs: `http://localhost:8000/docs`.
 ## Tests and benchmark
 
 ```bash
-make test                                        # 19 tests: parsers, BM25, RRF, MMR, chunker, <think> filter,
+make test                                        # 20 tests: parsers, BM25, RRF, MMR, chunker, <think> filter,
                                                  # NVIDIA path (mocked), SSE API, threads, digest + eval jobs
 cd backend && python -m eval.run_eval            # live benchmark -> EVAL.md
 cd backend && python -m scripts.daily_digest     # today's digest -> DIGEST.md + site/

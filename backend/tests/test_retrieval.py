@@ -43,3 +43,20 @@ def test_reasoning_filter_across_token_boundaries():
     out = "".join(f.feed(t) for t in ["Hi <th", "ink>secret", " stuff</thi", "nk>Answer", " here"]) + f.flush()
     assert out == "Hi Answer here"
     assert strip_reasoning("<think>x</think> ok") == "ok"
+
+
+async def test_retired_endpoint_circuit_breaker(tmp_path):
+    import httpx
+    import pytest
+    from app.nvidia import NvidiaClient, NvidiaError
+    from conftest import make_settings
+    calls = []
+
+    def handler(req):
+        calls.append(req.url.path)
+        return httpx.Response(410, json={"title": "Gone"})
+    nv = NvidiaClient(make_settings(tmp_path, key="k"), client=httpx.AsyncClient(transport=httpx.MockTransport(handler)))
+    for _ in range(3):
+        with pytest.raises(NvidiaError):
+            await nv.rerank("q", ["a", "b"])
+    assert len(calls) == 1 and "rerank" in nv.dead
