@@ -54,3 +54,15 @@ async def test_local_index_hybrid(online_nv, tmp_path):
     assert hits[0].title == "CUDA"
     # reload from disk
     assert LocalIndex(tmp_path / "idx").stats()["chunks"] == 2
+
+
+async def test_repair_citations_only_when_supported(offline_nv, docs):
+    s, nv = offline_nv
+    eng = AnswerEngine(s, nv, {"wikipedia": FakeSource("wikipedia", docs)})
+    res = await eng.retrieve("When was Nvidia founded?", "wiki", [])
+    text = ("Nvidia was founded in 1993 by Jensen Huang, Chris Malachowsky and Curtis Priem. "
+            "Purple elephants dance gracefully on distant frozen moons tonight.")
+    out = eng.repair_citations(text, res)
+    assert "Priem [1]." in out
+    assert "moons tonight." in out and "tonight [" not in out
+    assert eng.repair_citations("Already cited fact about Nvidia GPUs here [2].", res).count("[") == 1

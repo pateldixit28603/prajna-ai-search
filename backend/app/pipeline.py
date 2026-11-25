@@ -232,6 +232,45 @@ class AnswerEngine:
         if not self.last_llm_ok:
             yield ("\n\n" if got_any else "") + extractive_answer(res.question, flat)
 
+    # ---------------------------------------------------- 6b. citation repair
+    def repair_citations(self, answer: str, res: SearchResult, min_overlap: float = 0.5) -> str:
+        """Attach a citation to uncited factual sentences when one source clearly supports them.
+
+        Purely lexical and conservative: a sentence gets [n] only if >= min_overlap of its content words
+        appear in source n's retrieved passages. Unsupported sentences stay uncited (and are measured as such).
+        """
+        if not res.sources:
+            return answer
+        from .retrieval.text import tokenize
+        num = {d.id: i + 1 for i, d in enumerate(res.sources)}
+        support: dict[int, set[str]] = {}
+        for p in res.passages:
+            support.setdefault(num[p.doc.id], set()).update(tokenize(f"{p.doc.title} {p.text}"))
+        out_lines = []
+        for line in answer.split("\n"):
+            stripped = line.strip()
+            if not stripped or stripped.startswith(("#", "|", ">", "```")):
+                out_lines.append(line)
+                continue
+            parts = re.split(r"(?<=[.!?।])(\s+)(?!\[\d)", line)
+            fixed = []
+            for part in parts:
+                if not part.strip() or re.search(r"\[\d{1,2}\]", part) or len(part.split()) < 6:
+                    fixed.append(part)
+                    continue
+                words = set(tokenize(part))
+                best, score = None, 0.0
+                for n, vocab in support.items():
+                    sc = len(words & vocab) / (len(words) or 1)
+                    if sc > score:
+                        best, score = n, sc
+                if best and score >= min_overlap:
+                    m = re.match(r"^(.*?)([.!?।]?)(\s*)$", part, re.S)
+                    part = f"{m.group(1)} [{best}]{m.group(2)}{m.group(3)}"
+                fixed.append(part)
+            out_lines.append("".join(fixed))
+        return "\n".join(out_lines)
+
     # -------------------------------------------------------- 7. follow-ups
     async def followups(self, question: str, answer: str, res: SearchResult) -> list[str]:
         titles = [d.title for d in res.sources]

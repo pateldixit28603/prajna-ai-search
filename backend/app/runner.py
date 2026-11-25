@@ -27,6 +27,7 @@ async def answer(engine, question: str, focus: str = "all") -> dict:
     res = await engine.retrieve(question, focus, [])
     t_ret = time.perf_counter() - t0
     text = "".join([tok async for tok in engine.answer_stream(res, [])])
+    text = engine.repair_citations(text, res)
     follow = await engine.followups(question, text, res)
     total = time.perf_counter() - t0
     by_n: dict[int, list[str]] = {}
@@ -73,9 +74,9 @@ def citation_metrics(result: dict) -> dict:
                 support |= set(tokenize(p))
         if claim and len(claim & support) / len(claim) >= 0.5:
             faithful += 1
-    return {
+    return {   # validity/faithfulness are undefined (None) when an answer has no citations at all
         "sentences": len(sents),
         "citation_coverage": cited / len(sents) if sents else 0.0,
-        "citation_validity": valid / cited if cited else 0.0,
-        "faithfulness": faithful / cited if cited else 0.0,
+        "citation_validity": valid / cited if cited else None,
+        "faithfulness": faithful / cited if cited else None,
     }

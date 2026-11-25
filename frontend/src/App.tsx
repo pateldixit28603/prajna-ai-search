@@ -60,6 +60,9 @@ export default function App() {
           case "token":
             patchLast((t) => ({ ...t, answer: t.answer + e.text, stage: "writing" }));
             break;
+          case "replace":
+            patchLast((t) => ({ ...t, answer: e.text }));
+            break;
           case "followups":
             patchLast((t) => ({ ...t, followups: e.questions }));
             break;

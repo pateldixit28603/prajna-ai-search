@@ -124,6 +124,10 @@ async def search(req: SearchRequest, request: Request):
                 parts.append(tok)
                 yield sse({"type": "token", "text": tok})
             answer = "".join(parts)
+            repaired = engine.repair_citations(answer, res)
+            if repaired != answer:
+                answer = repaired
+                yield sse({"type": "replace", "text": answer})
 
             follow = await engine.followups(query, answer, res)
             yield sse({"type": "followups", "questions": follow})

@@ -67,7 +67,9 @@ async def run(limit: int | None) -> dict:
                   f"src={'✓' if rows[-1]['source_hit'] else '✗'} cites={pct(m['citation_coverage'])} "
                   f"{r['timings']['total']:.1f}s", flush=True)
     ok = [r for r in rows if "error" not in r]
-    mean = lambda k: statistics.mean(float(r[k]) for r in ok) if ok else 0.0  # noqa: E731
+    def mean(k: str) -> float:
+        vals = [float(r[k]) for r in ok if r.get(k) is not None]
+        return statistics.mean(vals) if vals else 0.0
     lat = [r["latency"] for r in ok]
     summary = {
         "date": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
@@ -117,7 +119,8 @@ def write_reports(result: dict, out_md: Path) -> None:
             lines.append(f"| {r['id']} | – | ⚠️ {r['error'][:60]} | | | | | |")
             continue
         lines.append(f"| {r['id']} | {r['focus']} | {'✅' if r['answer_hit'] else '❌'} | "
-                     f"{'✅' if r['source_hit'] else '❌'} | {pct(r['citation_coverage'])} | {pct(r['faithfulness'])} | "
+                     f"{'✅' if r['source_hit'] else '❌'} | {pct(r['citation_coverage'])} | "
+                     f"{pct(r['faithfulness']) if r['faithfulness'] is not None else '–'} | "
                      f"{r['n_sources']} | {r['latency']:.1f}s |")
     lines += ["", "History: [`backend/eval/results/history.csv`](backend/eval/results/history.csv). "
               "Questions: [`backend/eval/questions.jsonl`](backend/eval/questions.jsonl)."]
