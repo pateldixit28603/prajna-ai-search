@@ -2,7 +2,15 @@
 
 Prajna (Sanskrit: *wisdom*) is a Perplexity-style AI search engine. You ask a question in English, Hindi or Hinglish. Prajna searches open data sources, ranks the passages with NVIDIA NeMo Retriever models and streams back a grounded answer, with a numbered citation on every claim.
 
-![stack](https://img.shields.io/badge/backend-FastAPI-009688) ![stack](https://img.shields.io/badge/frontend-React%20%2B%20Vite-61dafb) ![nvidia](https://img.shields.io/badge/AI-NVIDIA%20NIM-76b900) ![data](https://img.shields.io/badge/data-100%25%20open-blue)
+[![CI](https://github.com/pateldixit28603/prajna-ai-search/actions/workflows/ci.yml/badge.svg)](https://github.com/pateldixit28603/prajna-ai-search/actions/workflows/ci.yml)
+[![Daily](https://github.com/pateldixit28603/prajna-ai-search/actions/workflows/daily.yml/badge.svg)](https://github.com/pateldixit28603/prajna-ai-search/actions/workflows/daily.yml)
+![nvidia](https://img.shields.io/badge/AI-NVIDIA%20NIM%20%2B%20NeMo%20Retriever-76b900) ![data](https://img.shields.io/badge/data-100%25%20open-blue) ![license](https://img.shields.io/badge/license-MIT-lightgrey)
+
+![Prajna answering a Hinglish question with cited sources](docs/screenshot.png)
+
+**It runs every day without anyone touching it.** A GitHub Actions job:
+- 📰 **[Prajna Daily](DIGEST.md)** takes the day's trending topics from Wikipedia's most-read list and the Hacker News front page, researches each one, and publishes cited answers ([web version](https://pateldixit28603.github.io/prajna-ai-search/)).
+- 📊 **[Benchmark](EVAL.md)** re-runs a fixed set of 20 questions in English, Hindi and Hinglish, across encyclopedia, academic and tech topics. It tracks answer accuracy, retrieval recall, citation coverage and validity, faithfulness and latency, with the [full history](backend/eval/results/history.csv) kept so you can see the trend.
 
 ---
 
@@ -50,7 +58,8 @@ prajna/
 │   │   ├── sources/           wikipedia.py, openalex.py, arxiv.py, hackernews.py
 │   │   └── retrieval/         bm25.py, fusion.py (RRF, cosine, MMR), text.py, local_index.py
 │   ├── scripts/ingest.py      build the local open-data index
-│   └── tests/                 15 tests, all NVIDIA + network calls mocked
+│   ├── eval/                  benchmark questions, run_eval.py, results/history.csv
+│   └── tests/                 19 tests, all NVIDIA + network calls mocked
 ├── frontend/                  React 18 + TypeScript + Tailwind v4
 ├── deploy/docker-compose.gpu.yml   self-hosted NIM LLM + embed + rerank on your GPU
 ├── docker-compose.yml         app with hosted NVIDIA API
@@ -108,11 +117,16 @@ You can swap in a bigger answer model by setting `LLM_MODEL`, for example `nvidi
 
 Interactive docs: `http://localhost:8000/docs`.
 
-## Tests
+## Tests and benchmark
 
 ```bash
-make test     # 15 tests: parsers, BM25, RRF, MMR, chunker, <think> filter, NVIDIA path (mocked), SSE API, threads
+make test                                        # 19 tests: parsers, BM25, RRF, MMR, chunker, <think> filter,
+                                                 # NVIDIA path (mocked), SSE API, threads, digest + eval jobs
+cd backend && python -m eval.run_eval            # live benchmark -> EVAL.md
+cd backend && python -m scripts.daily_digest     # today's digest -> DIGEST.md + site/
 ```
+
+To switch the daily job from extractive mode to full NVIDIA NIM answers, add a repository secret named `NVIDIA_API_KEY` under *Settings → Secrets and variables → Actions*.
 
 ## Data sources and licenses
 

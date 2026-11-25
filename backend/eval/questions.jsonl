@@ -1,0 +1,20 @@
+{"id": "nvidia-founded", "question": "When was Nvidia founded and by whom?", "focus": "wiki", "expect": ["1993", "Huang"]}
+{"id": "cuda", "question": "What is CUDA?", "focus": "wiki", "expect": ["parallel", "GPU"]}
+{"id": "transformer-paper", "question": "Who introduced the Transformer architecture and in which paper?", "focus": "all", "expect": ["Attention Is All You Need"]}
+{"id": "rag", "question": "What is retrieval-augmented generation?", "focus": "all", "expect": ["retriev", "generat"]}
+{"id": "bm25", "question": "What is the Okapi BM25 ranking function?", "focus": "wiki", "expect": ["ranking", "search"]}
+{"id": "everest", "question": "How tall is Mount Everest?", "focus": "wiki", "expect": ["8,8"]}
+{"id": "photosynthesis", "question": "How does photosynthesis work?", "focus": "wiki", "expect": ["light", "carbon dioxide"]}
+{"id": "gita-chapters", "question": "How many chapters does the Bhagavad Gita have?", "focus": "wiki", "expect": ["18"]}
+{"id": "taj-mahal", "question": "Who built the Taj Mahal and why?", "focus": "wiki", "expect": ["Shah Jahan", "Mumtaz"]}
+{"id": "isro-chandrayaan3", "question": "When did Chandrayaan-3 land on the Moon?", "focus": "wiki", "expect": ["2023"]}
+{"id": "hinglish-cuda", "question": "GPU aur CPU mein kya fark hai?", "focus": "wiki", "expect": ["GPU"]}
+{"id": "hindi-gandhi", "question": "महात्मा गांधी का जन्म कब हुआ था?", "focus": "wiki", "expect": ["1869"]}
+{"id": "llm-hallucination", "question": "Research on reducing hallucination in large language models", "focus": "academic", "expect": ["hallucinat"]}
+{"id": "small-lms", "question": "Recent papers on small language models efficiency", "focus": "academic", "expect": ["model"]}
+{"id": "vector-db", "question": "How do vector databases perform approximate nearest neighbor search?", "focus": "all", "expect": ["nearest neighbor"]}
+{"id": "dense-retrieval", "question": "Dense passage retrieval for open-domain question answering", "focus": "academic", "expect": ["retrieval"]}
+{"id": "hn-rust", "question": "What do developers say about Rust in the Linux kernel?", "focus": "tech", "expect": ["Rust"]}
+{"id": "hn-local-llm", "question": "Running LLMs locally on consumer GPUs", "focus": "tech", "expect": ["GPU"]}
+{"id": "tcp-udp", "question": "What is the difference between TCP and UDP?", "focus": "wiki", "expect": ["connection"]}
+{"id": "inflation", "question": "What causes inflation?", "focus": "wiki", "expect": ["price"]}
