@@ -72,7 +72,8 @@ async def run(limit: int | None) -> dict:
     summary = {
         "date": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "questions": len(rows), "errors": len(rows) - len(ok),
-        "mode": "NVIDIA NIM" if ok and ok[0]["nvidia"] else "extractive (no NVIDIA key)",
+        "mode": (f"NVIDIA NIM ({sum(r['nvidia'] for r in ok)}/{len(ok)} answers by the LLM)"
+                 if any(r["nvidia"] for r in ok) else "extractive (no NVIDIA LLM)"),
         "answer_accuracy": mean("answer_hit"), "retrieval_recall": mean("source_hit"),
         "citation_coverage": mean("citation_coverage"), "citation_validity": mean("citation_validity"),
         "faithfulness": mean("faithfulness"), "avg_sources": mean("n_sources"),

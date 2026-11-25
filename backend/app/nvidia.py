@@ -52,6 +52,7 @@ class NvidiaClient:
             "temperature": temperature,
             "max_tokens": max_tokens,
             "stream": False,
+            **self.s.llm_extra_body,
         }
         r = await self._client.post(f"{self.s.llm_base_url}/chat/completions", headers=self._headers(), json=payload)
         if r.status_code >= 400:
@@ -69,6 +70,7 @@ class NvidiaClient:
             "top_p": 0.9,
             "max_tokens": max_tokens,
             "stream": True,
+            **self.s.llm_extra_body,
         }
         headers = self._headers() | {"Accept": "text/event-stream"}
         filt = ReasoningFilter()
@@ -84,7 +86,10 @@ class NvidiaClient:
                 if chunk == "[DONE]":
                     break
                 try:
-                    delta = json.loads(chunk)["choices"][0].get("delta", {})
+                    choices = json.loads(chunk).get("choices") or []
+                    if not choices:          # e.g. trailing usage-only chunk
+                        continue
+                    delta = choices[0].get("delta", {})
                 except (json.JSONDecodeError, KeyError, IndexError):
                     continue
                 # Reasoning models may send `reasoning_content`; we only surface the final answer.

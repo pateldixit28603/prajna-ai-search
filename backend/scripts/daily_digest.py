@@ -181,7 +181,8 @@ async def main_async(day: dt.date, n_wiki: int, n_hn: int) -> None:
                 continue
             items.append(t | {"result": r, "metrics": citation_metrics(r)})
             print(f"  ✓ {t['topic']} ({len(r['sources'])} sources, {r['timings']['total']:.1f}s)")
-    mode = "NVIDIA NIM" if items and items[0]["result"]["nvidia"] else "extractive (no NVIDIA key)"
+    n_llm = sum(it["result"]["nvidia"] for it in items)
+    mode = f"NVIDIA NIM ({n_llm}/{len(items)} answers by the LLM)" if n_llm else "extractive (no NVIDIA LLM)"
     for it in items:
         it["result"].pop("passages", None)
 

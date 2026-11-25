@@ -6,6 +6,7 @@ Every NVIDIA endpoint is configurable, so the same code runs against:
 """
 from __future__ import annotations
 
+import json
 import os
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -41,6 +42,10 @@ class Settings:
     llm_model: str = field(default_factory=lambda: os.getenv("LLM_MODEL", "nvidia/nemotron-3.5-lightning-30b-a3b"))
     # Smaller/faster model for query rewriting + follow-up questions
     llm_fast_model: str = field(default_factory=lambda: os.getenv("LLM_FAST_MODEL", "nvidia/nemotron-3.5-bolt-e4b"))
+    # Extra JSON merged into every chat request. Nemotron 3.5 models "think" by default, which burns the
+    # token budget before the answer; disabling it gives direct answers ~7x faster (see scripts/llm_probe.py).
+    llm_extra_body: dict = field(default_factory=lambda: json.loads(
+        os.getenv("LLM_EXTRA_BODY", '{"chat_template_kwargs": {"enable_thinking": false}}') or "{}"))
     # NeMo Retriever embeddings (OpenAI-compatible /embeddings)
     embed_base_url: str = field(default_factory=lambda: os.getenv("EMBED_BASE_URL", "https://integrate.api.nvidia.com/v1"))
     embed_model: str = field(default_factory=lambda: os.getenv("EMBED_MODEL", "nvidia/nemotron-3.5-embed-1b"))

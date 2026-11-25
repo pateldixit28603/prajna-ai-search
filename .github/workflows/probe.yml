@@ -3,9 +3,6 @@ name: NVIDIA model probe
 # Diagnostics: how the configured NIM chat models respond to different "thinking" settings.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ["backend/scripts/llm_probe.py", ".github/workflows/probe.yml"]
 
 permissions:
   contents: write

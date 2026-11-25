@@ -60,3 +60,20 @@ async def test_retired_endpoint_circuit_breaker(tmp_path):
         with pytest.raises(NvidiaError):
             await nv.rerank("q", ["a", "b"])
     assert len(calls) == 1 and "rerank" in nv.dead
+
+
+async def test_chat_payload_disables_thinking_and_skips_empty_chunks(tmp_path):
+    import json as _j
+    import httpx
+    from app.nvidia import NvidiaClient
+    from conftest import make_settings
+    seen = {}
+
+    def handler(req):
+        seen.update(_j.loads(req.content))
+        body = ('data: {"choices":[{"delta":{"content":"Hi"}}]}\n\n'
+                'data: {"choices":[],"usage":{"total_tokens":3}}\n\ndata: [DONE]\n\n')
+        return httpx.Response(200, text=body, headers={"content-type": "text/event-stream"})
+    nv = NvidiaClient(make_settings(tmp_path, key="k"), client=httpx.AsyncClient(transport=httpx.MockTransport(handler)))
+    out = "".join([t async for t in nv.chat_stream([{"role": "user", "content": "x"}])])
+    assert out == "Hi" and seen["chat_template_kwargs"] == {"enable_thinking": False}
