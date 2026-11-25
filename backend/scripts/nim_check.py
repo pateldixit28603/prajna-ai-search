@@ -44,12 +44,40 @@ async def main() -> None:
         await probe(f"embed:{settings.embed_model}", nv.embed(["hello world"], input_type="query")),
         await probe(f"rerank:{settings.rerank_model}", nv.rerank("gpu", ["CUDA runs on GPUs", "bananas"])),
     ]
+    # discover what the catalog currently serves (models get retired regularly)
+    catalog: list[str] = []
+    try:
+        r = await nv._client.get(f"{settings.llm_base_url}/models", headers=nv._headers())
+        catalog = sorted(m["id"] for m in r.json().get("data", []))
+    except Exception as e:
+        results.append({"check": "list-models", "ok": False, "detail": str(e)[:200]})
     if not results[0]["ok"] or not results[1]["ok"]:
-        for m in FALLBACK_CHAT:
+        cands = [m for m in catalog if "nemotron" in m and not any(x in m for x in
+                 ("embed", "rerank", "guard", "safety", "parse", "reward", "vl", "omni", "retriever", "ocr"))]
+        for m in (cands[-6:] + [m for m in FALLBACK_CHAT if m in catalog])[:10]:
             results.append(await probe(f"chat:{m}", nv.chat(msg, model=m, max_tokens=400)))
+    if not results[2]["ok"]:
+        for m in [m for m in catalog if "embed" in m][:6]:
+            async def emb(model=m):
+                payload = {"model": model, "input": ["hello"], "input_type": "query", "encoding_format": "float"}
+                r = await nv._client.post(f"{settings.embed_base_url}/embeddings", headers=nv._headers(), json=payload)
+                r.raise_for_status()
+                return len(r.json()["data"][0]["embedding"])
+            results.append(await probe(f"embed:{m}", emb()))
+    if not results[3]["ok"]:
+        for m in [m for m in catalog if "rerank" in m][:4]:
+            slug = m.split("/", 1)[1].replace(".", "_")
+            for url in (f"https://ai.api.nvidia.com/v1/retrieval/nvidia/{slug}/reranking",
+                        f"https://ai.api.nvidia.com/v1/retrieval/{m}/reranking"):
+                async def rr(model=m, url=url):
+                    r = await nv._client.post(url, headers=nv._headers(), json={
+                        "model": model, "query": {"text": "gpu"}, "passages": [{"text": "CUDA runs on GPUs"}]})
+                    r.raise_for_status()
+                    return r.json()["rankings"][0]
+                results.append(await probe(f"rerank:{m} @ {url}", rr()))
     await nv.aclose()
     status = {"date": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-              "key_present": bool(settings.nvidia_api_key), "results": results}
+              "key_present": bool(settings.nvidia_api_key), "results": results, "catalog": catalog}
     out = ROOT / "eval" / "results" / "nim_status.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(status, indent=2), encoding="utf-8")
