@@ -13,13 +13,14 @@
         "question": "Who or what is Ramayana: Part 1, and what are the key facts to know?",
         "focus": "wiki",
         "queries": [
-          "Who or what is Ramayana: Part 1, and what are the key facts to know?"
+          "What is Ramayana Part 1",
+          "Key facts about Ramayana"
         ],
-        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- The first part features an ensemble cast that includes Ranbir Kapoor, Yash (in his Hindi film debut), Sai Pallavi, Ravi Dubey (in his film debut), Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, Arun Govil, Adinath Kothare. [1]\n- He wrote several popular works in Sanskrit, Awadhi, and Braj Bhasha, but is best known as the author of the Hanuman Chalisa and of the epic Ramcharitmanas, a retelling of the Sanskrit Ramayana, based on Rama's life, in the vernacular Awadhi language. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- Ramayana: Part 1 is the soundtrack album to the 2026 film of the same name directed by Nitesh Tiwari and produced by Namit Malhotra and Yash under Prime Focus Studios, Monster Mind Creations and DNEG. [2]\n- She has also starred in the Hindi epic mythological film Ramayana: Part 1 (2026). [5]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "Tell me more about Tulsidas",
-          "Tell me more about Cinematic style of S. S. Rajamouli",
-          "What are the latest developments on Who or what is Ramayana: Part 1, and what are the key facts to know?"
+          "When is the film releasing?",
+          "Who are the main actors?",
+          "What is the Ramayana about?"
         ],
         "sources": [
           {
@@ -38,93 +39,123 @@
             "n": 1
           },
           {
-            "title": "Tulsidas",
-            "url": "https://en.wikipedia.org/wiki/Tulsidas",
+            "title": "Ramayana: Part 1 (soundtrack)",
+            "url": "https://en.wikipedia.org/wiki/Ramayana:_Part_1_(soundtrack)",
             "source": "wikipedia",
-            "snippet": "Rambola Dubey (c. 1532 – c. 1623), popularly known as Goswami Tulsīdās, was a Ramanandi Vaishnava Hindu saint, devotee, and poet renowned for his devotion to the deities Rama, Sita, and Hanuman. He wrote several popular works in Sanskrit, Awadhi, and Braj Bhasha, but is best know",
+            "snippet": "Ramayana: Part 1 is the soundtrack album to the 2026 film of the same name directed by Nitesh Tiwari and produced by Namit Malhotra and Yash under Prime Focus Studios, Monster Mind Creations and DNEG. The film stars Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey and Sunny Deol in l",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "6d84c63ed9de",
+            "id": "48e933e25f63",
             "domain": "en.wikipedia.org",
             "n": 2
           },
           {
-            "title": "Cinematic style of S. S. Rajamouli",
-            "url": "https://en.wikipedia.org/wiki/Cinematic_style_of_S._S._Rajamouli",
+            "title": "List of characters in the Ramayana",
+            "url": "https://en.wikipedia.org/wiki/List_of_characters_in_the_Ramayana",
             "source": "wikipedia",
-            "snippet": "S. S. Rajamouli is an Indian filmmaker who primarily works in Telugu cinema and is known for his action, fantasy, and epic genre films. Rachel Dwyer called Rajamouli \"India's most significant director today\". His films are typically characterised by their epic grandeur, unbridled",
+            "snippet": "The Ramayana is one of the two major Sanskrit ancient epics of Hindu literature. It is attributed to the sage Valmiki. This is a list of important figures that appear in the epic.",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "363c6e08c7fe",
+            "id": "127b04f535a5",
             "domain": "en.wikipedia.org",
             "n": 3
           },
           {
-            "title": "Sai Pallavi",
-            "url": "https://en.wikipedia.org/wiki/Sai_Pallavi",
+            "title": "Ramayana",
+            "url": "https://en.wikipedia.org/wiki/Ramayana",
             "source": "wikipedia",
-            "snippet": "Sai Pallavi Senthamarai Kannan (pronounced [saɪ paˈləvi]; born 9 May 1992) is an Indian actress who primarily works in Tamil, Telugu, and Malayalam films. Known for her natural, girl-next-door screen presence and for portraying women in emotionally challenging circumstances, she ",
+            "snippet": "The Ramayana (; Sanskrit: रामायणम्, romanized: Rāmāyaṇam), also known as the Valmiki Ramayana, as traditionally attributed to Valmiki, is a Hindu smriti epic poem (also described as a Sanskrit epic) from ancient India. It is one of the two important epics of Hinduism known as the",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "21fcd3e0a0df",
+            "id": "0592722fa4e6",
             "domain": "en.wikipedia.org",
             "n": 4
           },
           {
-            "title": "Yash (actor)",
-            "url": "https://en.wikipedia.org/wiki/Yash_(actor)",
+            "title": "Rakul Preet Singh",
+            "url": "https://en.wikipedia.org/wiki/Rakul_Preet_Singh",
             "source": "wikipedia",
-            "snippet": "Yash (pronounced [/yah-sh/]; born Naveen Kumar, 8 January 1986) is an Indian actor and film producer who works in Kannada cinema. Known for his work in mass hero films, he is referred to as \"Rocking Star\" in the media. One of the highest-paid actors of Kannada cinema, Yash is a r",
+            "snippet": "Rakul Preet Singh (born 10 October 1990) is an Indian actress who predominantly works in Telugu, Hindi and Tamil films. Singh is a recipient of several accolades including a SIIMA Award, in addition to four nominations at the Filmfare Awards South. Singh started her career as a m",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "e56144b092d9",
+            "id": "67642473618b",
             "domain": "en.wikipedia.org",
             "n": 5
           },
           {
-            "title": "Raghav Juyal",
-            "url": "https://en.wikipedia.org/wiki/Raghav_Juyal",
+            "title": "Ramayana: The Legend of Prince Rama",
+            "url": "https://en.wikipedia.org/wiki/Ramayana:_The_Legend_of_Prince_Rama",
             "source": "wikipedia",
-            "snippet": "Raghav Juyal (born 10 July 1991) is an Indian actor, dancer, choreographer, and television presenter. He is known as the \"King of Slow Motion\" for his surreal dance moves in slow motion style and for his reinvention of the Slow Motion Walk in India. He rose to fame after being a ",
+            "snippet": "Ramayana: The Legend of Prince Rama is a 1993 Indo-Japanese anime film directed and produced by Yugo Sako, who co-directed the film with Koichi Sasaki and Ram Mohan. It is an adaptation of the Indian epic Ramayana. The film featured music composed by Vanraj Bhatia and was first r",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "ca3c1f63a73c",
+            "id": "d822fea7aa35",
             "domain": "en.wikipedia.org",
             "n": 6
+          },
+          {
+            "title": "Scion of Ikshvaku",
+            "url": "https://en.wikipedia.org/wiki/Scion_of_Ikshvaku",
+            "source": "wikipedia",
+            "snippet": "Ram: Scion of Ikshvaku is a one to one replica of the events taking place before the epic tale \"Ramayana\" and also the fourth book of Amish Tripathi, fourth book of Amishverse, and first book of Ram Chandra Series. It was released on 22 June 2015. It is based on Ram, the legendar",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "76ce12b9aaad",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Urmila",
+            "url": "https://en.wikipedia.org/wiki/Urmila",
+            "source": "wikipedia",
+            "snippet": "Urmila (Sanskrit: ऊर्मिला, romanized: Urmilā, lit. 'enchantress'), is a Hindu goddess and the princess of Videha in the epic Ramayana. She is also considered an avatar of Nagalakshmi. Urmila was born as the daughter of King Janaka of Mithila and Queen Sunayana. Sita, the female p",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "012347b65a7a",
+            "domain": "en.wikipedia.org",
+            "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.07804018199999518,
-          "search": 0.40181856200000254,
-          "rank": 0.10645927099999852,
-          "dense": 0.0,
+          "plan": 0.601565450999999,
+          "search": 0.3296957630000037,
+          "rank": 0.8991984160000044,
+          "dense": 1.0,
           "rerank": 0.0,
-          "retrieve": 0.5864175029999998,
-          "total": 0.6226215690000032
+          "retrieve": 1.830535408000003,
+          "total": 12.426083848999994
         },
         "nvidia": false,
-        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
+        "llm_error": ""
       },
       "metrics": {
         "sentences": 6,
@@ -144,29 +175,120 @@
         "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
         "focus": "wiki",
         "queries": [
-          "Who or what is Grand Theft Auto VI, and what are the key facts to know?"
+          "What is Grand Theft Auto VI",
+          "Grand Theft Auto VI key facts"
         ],
-        "answer": "As one of the most popular gaming personalities on YouTube, his videography consists of montage-style videos of him and other creators playing various video games, such as Grand Theft Auto V, Garry's Mod, and various titles from the Call of Duty franchise. [1]\n\n**Key points from the sources:**\n- He is mostly known for his actions against Rockstar Games and the Grand Theft Auto franchise. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. [1]\n\n**Key points from the sources:**\n- It is the eighth main entry in the Grand Theft Auto series, following Grand Theft Auto V (2013), and the sixteenth entry overall. [1]\n- Preliminary work began in 2014 after the release of Grand Theft Auto V; principal production began after the 2018 launch of Red Dead Redemption 2. [1]\n- \"Grand Theft Auto VI: An Extended Look\" is a 2026 promotional trailer previewing the video game Grand Theft Auto VI. [2]\n- Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games' 2026 video game Grand Theft Auto VI. [3]\n- Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "Tell me more about VanossGaming",
-          "Tell me more about Jack Thompson (activist)",
-          "What are the latest developments on Who or what is Grand Theft Auto VI, and what are the key facts to know?"
+          "When is GTA VI actually coming out?",
+          "Who are the playable characters?",
+          "Where can I find more details?"
         ],
         "sources": [
           {
-            "title": "VanossGaming",
-            "url": "https://en.wikipedia.org/wiki/VanossGaming",
+            "title": "Grand Theft Auto VI",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
             "source": "wikipedia",
-            "snippet": "Evan Fong (born May 31, 1992), known online as VanossGaming (or simply Vanoss), is a Canadian YouTuber and musician. As one of the most popular gaming personalities on YouTube, his videography consists of montage-style videos of him and other creators playing various video games,",
+            "snippet": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. It is the eighth main entry in the Grand Theft Auto series, following Grand Theft Auto V (2013), and the sixteenth entry overall. Set in the fictional US state of Leonida, based on Flor",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "a7568a4169b5",
+            "id": "e02dca2e6f61",
             "domain": "en.wikipedia.org",
             "n": 1
+          },
+          {
+            "title": "Grand Theft Auto VI: An Extended Look",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_An_Extended_Look",
+            "source": "wikipedia",
+            "snippet": "\"Grand Theft Auto VI: An Extended Look\" is a 2026 promotional trailer previewing the video game Grand Theft Auto VI. The plot follows criminal couple Jason Duval and Lucia Caminos as they gain a reputation as underworld contractors in Leonida, a fictionalised version of Florida. ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "a3ad5051691a",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Lucia Caminos",
+            "url": "https://en.wikipedia.org/wiki/Lucia_Caminos",
+            "source": "wikipedia",
+            "snippet": "Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games' 2026 video game Grand Theft Auto VI. Portrayed by Manni L. Perez, she is the first non-optional playable female protagonist in the Gr",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "c18959d481d1",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Grand Theft Auto: Vice City",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the fourth main game in the Grand Theft Auto series, following 2001's Grand Theft Auto III, and the sixth entry overall. Set in 1986 within the fictional",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "1ce06c45db6a",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Grand Theft Auto V",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth entry overall. Set within the fictional state of Sa",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e1cf99e333f0",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Grand Theft Auto: The Trilogy – The Definitive Edition",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_The_Trilogy_%E2%80%93_The_Definitive_Edition",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto: The Trilogy – The Definitive Edition is a 2021 compilation of three action-adventure games in the Grand Theft Auto series: Grand Theft Auto III (2001), Grand Theft Auto: Vice City (2002), and Grand Theft Auto: San Andreas (2004). Developed by Grove Street Games ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "1103661a44e7",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Development of Red Dead Redemption",
+            "url": "https://en.wikipedia.org/wiki/Development_of_Red_Dead_Redemption",
+            "source": "wikipedia",
+            "snippet": "A team of approximately 1,000 people developed Red Dead Redemption over five years. Rockstar Games published the action-adventure game in May 2010 for the PlayStation 3 and Xbox 360. A spiritual successor to the 2004 game Red Dead Revolver, its development was led by Rockstar San",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "41c9194e0277",
+            "domain": "en.wikipedia.org",
+            "n": 7
           },
           {
             "title": "Jack Thompson (activist)",
@@ -181,84 +303,24 @@
             },
             "id": "e025d9d77064",
             "domain": "en.wikipedia.org",
-            "n": 2
-          },
-          {
-            "title": "Tom Araya",
-            "url": "https://en.wikipedia.org/wiki/Tom_Araya",
-            "source": "wikipedia",
-            "snippet": "Tomás Enrique \"Tom\" Araya Díaz (Spanish: [tom aˈɾaʝa]; born June 6, 1961) is a Chilean-American musician, best known as the vocalist and bassist of the thrash metal band Slayer. He was ranked 58th by Hit Parader on their list of the 100 Greatest Metal Vocalists of All Time, and 4",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "f3dfcfb56a5b",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
-            "title": "Video game monetization",
-            "url": "https://en.wikipedia.org/wiki/Video_game_monetization",
-            "source": "wikipedia",
-            "snippet": "Video game monetization is a type of process that a video game publisher can use to generate revenue from a video game product. The methods of monetization may vary between games, especially when they come from different genres or platforms, but they all serve the same purpose to",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "ff52583957b8",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "List of security hacking incidents",
-            "url": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
-            "source": "wikipedia",
-            "snippet": "This list of security hacking incidents covers important or noteworthy events in the history of security hacking and cracking.",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "dff0e8eb8721",
-            "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
-            "title": "In the Air Tonight",
-            "url": "https://en.wikipedia.org/wiki/In_the_Air_Tonight",
-            "source": "wikipedia",
-            "snippet": "\"In the Air Tonight\" is a song by the English drummer and singer-songwriter Phil Collins. It was released as the lead single from Collins's debut solo studio album, Face Value, in January 1981. It was selected as the second single from the album in the United States and Canada, a",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "ac44b7c4651b",
-            "domain": "en.wikipedia.org",
-            "n": 6
+            "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.017283983000005776,
-          "search": 0.40434808399999866,
-          "rank": 0.03452687400000087,
-          "dense": 0.0,
+          "plan": 0.4645171099999885,
+          "search": 2.1498443950000024,
+          "rank": 0.8575687619999997,
+          "dense": 1.0,
           "rerank": 0.0,
-          "retrieve": 0.4561915290000016,
-          "total": 0.4921043319999967
+          "retrieve": 3.471997471999998,
+          "total": 14.956077813999997
         },
         "nvidia": false,
-        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
+        "llm_error": ""
       },
       "metrics": {
-        "sentences": 2,
+        "sentences": 6,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
@@ -275,13 +337,14 @@
         "question": "Who or what is Jensen Huang, and what are the key facts to know?",
         "focus": "wiki",
         "queries": [
-          "Who or what is Jensen Huang, and what are the key facts to know?"
+          "Who is Jensen Huang",
+          "Jensen Huang key facts"
         ],
-        "answer": "On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [1]\n\n**Key points from the sources:**\n- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [1]\n- officials did not warn Jensen Huang through a defensive briefing. [1]\n- Huang had an extramarital affair with Alice Huang (no relation), a Chinese national who was an executive of Megaspeed, a Singaporean company. [1]\n- Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [2]\n- Alice Huang (Chinese: 黄乐; pinyin: Huáng Lè; born December 1982) is a Chinese technology executive and investor. [3]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [1]\n\n**Key points from the sources:**\n- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [1]\n- officials did not warn Jensen Huang through a defensive briefing. [1]\n- Jen-Hsun \"Jensen\" Huang (born February 17, 1963) is a Taiwanese and American electrical engineer and business executive who is the co-founder, president, and chief executive officer (CEO) of Nvidia, one of the world's most valuable companies. [2]\n- In November 2026, he received attention due to Nvidia CEO Jensen Huang's extramarital affair with Alice Huang. [3]\n- Between 12 and 23 November 2026, Kress briefly served as the interim chief executive officer (CEO) of Nvidia, following the resignation of former Nvidia CEO and co-founder Jensen Huang amid allegations of his extramarital affairs. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "Tell me more about Jensen Huang scandal",
-          "Tell me more about Nvidia",
-          "What are the latest developments on Who or what is Jensen Huang, and what are the key facts to know?"
+          "What is Nvidia known for?",
+          "When was he born?",
+          "Are the reports confirmed?"
         ],
         "sources": [
           {
@@ -300,19 +363,49 @@
             "n": 1
           },
           {
-            "title": "Nvidia",
-            "url": "https://en.wikipedia.org/wiki/Nvidia",
+            "title": "Jensen Huang",
+            "url": "https://en.wikipedia.org/wiki/Jensen_Huang",
             "source": "wikipedia",
-            "snippet": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for gaming, data science, high",
+            "snippet": "Jen-Hsun \"Jensen\" Huang (born February 17, 1963) is a Taiwanese and American electrical engineer and business executive who is the co-founder, president, and chief executive officer (CEO) of Nvidia, one of the world's most valuable companies. As of November 2026, Forbes estimates",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "4a7ac65635eb",
+            "id": "f5b3ff01ae76",
             "domain": "en.wikipedia.org",
             "n": 2
+          },
+          {
+            "title": "Kang Wei",
+            "url": "https://en.wikipedia.org/wiki/Kang_Wei",
+            "source": "wikipedia",
+            "snippet": "Kang Wei (Chinese: 康伟; born January 1975) is a Chinese investor who is the chairman of Shanghai Hexi Investment Management. After 2016, he and his wife Alice Huang invested in several fast-growing sectors such as games, pharmaceuticals, and cloud computing. Kang was penalized sev",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "6b0cea7ee7d6",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Colette Kress",
+            "url": "https://en.wikipedia.org/wiki/Colette_Kress",
+            "source": "wikipedia",
+            "snippet": "Colette Marie Kress (born 1966 or 1967) is an American business executive who is the chief financial officer (CFO) of Nvidia. Kress worked at Texas Instruments, before serving as CFO of Cisco's Business Technology and Operations Finance Section and CFO at Microsoft's Server and T",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "00b437bf31c4",
+            "domain": "en.wikipedia.org",
+            "n": 4
           },
           {
             "title": "Alice Huang (executive)",
@@ -327,66 +420,66 @@
             },
             "id": "84a52381aaf2",
             "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
-            "title": "List of -gate scandals and controversies",
-            "url": "https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies",
-            "source": "wikipedia",
-            "snippet": "This is a list of scandals or controversies whose names include a -gate suffix, by analogy with the Watergate scandal in the 1970s, as well as other incidents to which the suffix has (often facetiously) been applied. This list also includes controversies that are widely referred ",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "497bdf75ebc8",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "Generation Z in the United States",
-            "url": "https://en.wikipedia.org/wiki/Generation_Z_in_the_United_States",
-            "source": "wikipedia",
-            "snippet": "Generation Z (or Gen Z for short), colloquially known as Zoomers, is the demographic cohort succeeding Millennials and preceding Generation Alpha. Members of Generation Z, were born between the mid-to-late 1990s and the early 2010s, with the generation typically being defined as ",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "28296c860aa1",
-            "domain": "en.wikipedia.org",
             "n": 5
           },
           {
-            "title": "Artificial intelligence",
-            "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+            "title": "Nvidia",
+            "url": "https://en.wikipedia.org/wiki/Nvidia",
             "source": "wikipedia",
-            "snippet": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is also a field of research spanning computer science, engineer",
+            "snippet": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for gaming, data science, high",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "0092064f1d55",
+            "id": "4a7ac65635eb",
             "domain": "en.wikipedia.org",
             "n": 6
+          },
+          {
+            "title": "Nintendo Switch 2",
+            "url": "https://en.wikipedia.org/wiki/Nintendo_Switch_2",
+            "source": "wikipedia",
+            "snippet": "The Nintendo Switch 2 is a video game console developed by Nintendo and released in most regions on June 5, 2025. Like the preceding Nintendo Switch, it can be used as a handheld, as a tablet, or connected via the dock to an external display. The Joy-Con 2 controllers can be used",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "4d1776e52010",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Megaspeed",
+            "url": "https://en.wikipedia.org/wiki/Megaspeed",
+            "source": "wikipedia",
+            "snippet": "Megaspeed International Pte. Ltd. is a cloud computing provider based in Singapore. It supplies artificial intelligence computing power and hosting services. The company was founded in 2015 as 7Road International PTE, the Singaporean subsidiary of the Chinese gaming firm 7Road Ho",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "829eb7293699",
+            "domain": "en.wikipedia.org",
+            "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.017009874999999397,
-          "search": 0.3418430440000009,
-          "rank": 0.04217033100000123,
-          "dense": 0.0,
+          "plan": 0.41081189899999515,
+          "search": 0.358190804000003,
+          "rank": 0.8028882140000064,
+          "dense": 1.0,
           "rerank": 0.0,
-          "retrieve": 0.40105376500000034,
-          "total": 0.4365142560000024
+          "retrieve": 1.5719429709999986,
+          "total": 14.523887380999994
         },
         "nvidia": false,
-        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
+        "llm_error": ""
       },
       "metrics": {
         "sentences": 6,
@@ -406,29 +499,60 @@
         "question": "Who or what is Moon, and what are the key facts to know?",
         "focus": "wiki",
         "queries": [
-          "Who or what is Moon, and what are the key facts to know?"
+          "what is the moon",
+          "key facts about the moon"
         ],
-        "answer": "Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. [1]\n\n**Key points from the sources:**\n- Howard and Kate Kondell for Disney Channel and Disney+ based on Moon Girl And Devil Dinosaur by Marvel Comics. [1]\n- Development began after Marvel Studios president Louis D'Esposito showed Laurence Fishburne the comic book series Moon Girl And Devil Dinosaur. [1]\n- His interest piqued, having been a fan of the original Moon-Boy and Devil Dinosaur, Fishburne sought to make an animated series based on the duo. [1]\n- Marvel's Moon Girl and Devil Dinosaur... [1]\n- Moon is a 2009 science fiction film directed by Duncan Jones (in his directorial debut), written by Nathan Parker from a story by Jones. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "A Moon landing (also known as a lunar landing) is the arrival of a crewed or robotic lander on the Moon. [1]\n\n**Key points from the sources:**\n- The first human-made object to touch the Moon was Luna 2 in 1959, and the first crewed mission to land on the Moon was Apollo 11 in 1969. [1]\n- All crewed missions to the Moon were conducted by the Apollo program, with the last departing in December 1972. [1]\n- After Luna 24 in 1976, there were no soft landings—landings without significant damage—on the Moon until Chang'e 3 in 2013. [1]\n- All soft landings took place on the near side of the Moon until Chang'e 4 landed on the far side of the Moon in 2019. [1]\n- The Moon is the only natural satellite of Earth. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "Tell me more about Moon Girl and Devil Dinosaur",
-          "Tell me more about Moon (2009 film)",
-          "What are the latest developments on Who or what is Moon, and what are the key facts to know?"
+          "What was the Apollo 11 mission?",
+          "When was the first soft landing?",
+          "Is the Moon Earth's only satellite?"
         ],
         "sources": [
           {
-            "title": "Moon Girl and Devil Dinosaur",
-            "url": "https://en.wikipedia.org/wiki/Moon_Girl_and_Devil_Dinosaur",
+            "title": "Moon landing",
+            "url": "https://en.wikipedia.org/wiki/Moon_landing",
             "source": "wikipedia",
-            "snippet": "Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. Howard and Kate Kondell for Disney Channel and Disney+ based on Moon Girl And Devil Dinosaur by Marvel Co",
+            "snippet": "A Moon landing (also known as a lunar landing) is the arrival of a crewed or robotic lander on the Moon. The first human-made object to touch the Moon was Luna 2 in 1959, and the first crewed mission to land on the Moon was Apollo 11 in 1969. There were six crewed landings betwee",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "0593df6f57ae",
+            "id": "b00d22f7528e",
             "domain": "en.wikipedia.org",
             "n": 1
+          },
+          {
+            "title": "Moon",
+            "url": "https://en.wikipedia.org/wiki/Moon",
+            "source": "wikipedia",
+            "snippet": "The Moon is the only natural satellite of Earth. It orbits Earth in an elliptical path, at a distance that varies over the year, averaging around 378,000 kilometers (235,000 mi). It completes an orbit (lunar month) in relation to Earth and the Sun (synodically) every 29.5 days. T",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "04c9f9b5af2a",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Lunar phase",
+            "url": "https://en.wikipedia.org/wiki/Lunar_phase",
+            "source": "wikipedia",
+            "snippet": "A lunar phase or Moon phase is the apparent shape of the Moon's day and night phases of the lunar day as viewed from Earth. Because the Moon is tidally locked to Earth, the cycle of phases takes one lunar month and moves across the same side of the Moon, which always faces Earth.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "9ab520a5d281",
+            "domain": "en.wikipedia.org",
+            "n": 3
           },
           {
             "title": "Moon (2009 film)",
@@ -443,81 +567,81 @@
             },
             "id": "3be76c7e5020",
             "domain": "en.wikipedia.org",
-            "n": 2
-          },
-          {
-            "title": "What We Do in the Shadows (TV series)",
-            "url": "https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows_(TV_series)",
-            "source": "wikipedia",
-            "snippet": "What We Do in the Shadows is an American comedy horror mockumentary fantasy television series created by Jemaine Clement, first broadcast on FX on March 27, 2019, until concluding its run with the end of its sixth season on December 16, 2024. Based on the 2014 New Zealand film wr",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "22b5be7b2b86",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
-            "title": "Flashdance... What a Feeling",
-            "url": "https://en.wikipedia.org/wiki/Flashdance..._What_a_Feeling",
-            "source": "wikipedia",
-            "snippet": "\"Flashdance... What a Feeling\" is a song from the 1983 film Flashdance with music by Giorgio Moroder and lyrics by Keith Forsey and the song's performer, Irene Cara. The song spent six weeks at number one on the Billboard Hot 100 and topped the charts around the world. It was awa",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "751d27195f1c",
-            "domain": "en.wikipedia.org",
             "n": 4
           },
           {
-            "title": "You Can't Always Get What You Want",
-            "url": "https://en.wikipedia.org/wiki/You_Can%27t_Always_Get_What_You_Want",
+            "title": "Blue moon",
+            "url": "https://en.wikipedia.org/wiki/Blue_moon",
             "source": "wikipedia",
-            "snippet": "\"You Can't Always Get What You Want\" is a song by the English rock band the Rolling Stones from their 1969 album Let It Bleed. Written by Mick Jagger and Keith Richards, it was named as the 100th greatest song of all time by Rolling Stone magazine in its 2004 list of the \"500 Gre",
+            "snippet": "A blue moon refers to the presence of a second full moon in a calendar month, the third full moon in a season containing four, or a moon that appears blue due to atmospheric effects. The calendrical meaning of \"blue moon\" is unconnected to the other meanings. It is often referred",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "feeda82e4a2c",
+            "id": "befe9fb6643b",
             "domain": "en.wikipedia.org",
             "n": 5
           },
           {
-            "title": "On Nature (Parmenides)",
-            "url": "https://en.wikipedia.org/wiki/On_Nature_(Parmenides)",
+            "title": "What If the Moon Didn't Exist",
+            "url": "https://en.wikipedia.org/wiki/What_If_the_Moon_Didn%27t_Exist",
             "source": "wikipedia",
-            "snippet": "On Nature (Ancient Greek: Περὶ Φύσεως Ancient Greek pronunciation: [pe.rí pʰý.seɔːs]) is an early 5th century BC didactic poem written by ancient Greek philosopher Parmenides. Composed in dactylic hexameter, it originally contained roughly 800 to 3,000 lines. Only about 160 lines",
+            "snippet": "What if the Moon Didn't Exist is a collection of speculative articles about different versions of Earth, published in book form in 1993. They were originally published in Astronomy magazine.",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "f85e03ce6489",
+            "id": "1e839e55998d",
             "domain": "en.wikipedia.org",
             "n": 6
+          },
+          {
+            "title": "Apollo 11",
+            "url": "https://en.wikipedia.org/wiki/Apollo_11",
+            "source": "wikipedia",
+            "snippet": "Apollo 11 (July 16–24, 1969) was the American spaceflight that first landed humans on the Moon, and the fifth crewed mission of NASA's Apollo program. The mission was crewed by Commander Neil Armstrong, Command Module Pilot Michael Collins, and Lunar Module Pilot Edwin \"Buzz\" Ald",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "bd6c8bfc1efd",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "What the Moon Brings",
+            "url": "https://en.wikipedia.org/wiki/What_the_Moon_Brings",
+            "source": "wikipedia",
+            "snippet": "\"What the Moon Brings\" is a prose poem by American horror fiction writer H. P. Lovecraft, written on June 5, 1922. This story was first published in the National Amateur in May 1923. It's shorter than most of Lovecraft's other short stories, and is essentially a fragment. The sto",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "f5edabc36633",
+            "domain": "en.wikipedia.org",
+            "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.017566171999995106,
-          "search": 0.35686115800000096,
-          "rank": 0.035526709000002654,
-          "dense": 0.0,
+          "plan": 0.4184778759999972,
+          "search": 0.3730411339999904,
+          "rank": 0.6980306009999993,
+          "dense": 1.0,
           "rerank": 0.0,
-          "retrieve": 0.40999568099999806,
-          "total": 0.44515170999999754
+          "retrieve": 1.489601365999988,
+          "total": 39.532156068999996
         },
         "nvidia": false,
-        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
+        "llm_error": ""
       },
       "metrics": {
         "sentences": 6,
@@ -529,7 +653,7 @@
     {
       "kind": "hackernews",
       "topic": "Matrix Multiplication is Θ(n^2.25)",
-      "points": 875,
+      "points": 878,
       "discussion": "https://news.ycombinator.com/item?id=50637220",
       "question": "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?",
       "focus": "all",
@@ -537,174 +661,160 @@
         "question": "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?",
         "focus": "all",
         "queries": [
-          "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?"
+          "Matrix Multiplication complexity O(n^2.25)",
+          "Significance of O(n^2.25) matrix multiplication"
         ],
-        "answer": "Unitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter. [1]\n\n**Key points from the sources:**\n- We present explicit computations and conjectures for 2 → 2 scattering matrices in large N U(N ) Chern-Simons theories coupled to fundamental bosonic or fermionic matter to all orders in the ’t Hooft coupling expansion. [1]\n- We conjecture that these unusual features are properties of S-matrices in all Chern-Simons matter theories. [1]\n- The S-matrix in one of the exchange channels in our paper has an anyonic character; the parameter map of the conjectured Bose-Fermi duality may be derived by equating the anyonic phase in the bosonic and fermionic theories. [1]\n- Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems. [2]\n- Superconformal N = 2, D = 5 matter with and without actions. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Matrix multiplication is the foundation from much of the success from high performance technologies like deep learning, scientific simulations, and video graphics. [1]\n\n**Key points from the sources:**\n- High level programming languages like Python and R rely on highly optimized low level libraries for performing core linear algebra operations like matrix multiplication from Basic Linear Algebra Subprograms (BLAS). [1]\n- This paper compares the performance of five different matrix multiplication algorithms using CuBLAS, CUDA, BLAS, OpenMP, and C++ Threads. [1]\n- We find statistical significance with a p-value below 5e-12 to support the hypothesis that for square $N \\times N$ matrices where $N$ is at least 10,000 then the in order performance as measured in floating point operations per second (FLOPS) for these matrix multiplication algorithms is CuBLAS, CUDA, BLAS, OpenMP, and C++ Threads. [1]\n- In theoretical computer science, the computational complexity of matrix multiplication dictates how quickly the operation of matrix multiplication can be performed. [2]\n- Because matrix multiplication is such a central operation in many numerical algorithms, much work has been invested in making matrix multiplication algorithms efficient. [3]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "Tell me more about Unitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter",
-          "Tell me more about Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems",
-          "What are the latest developments on Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?"
+          "What are the other algorithms compared?",
+          "How does $n^{2.25}$ compare to $n^3$?",
+          "Where can I find the full paper?"
         ],
         "sources": [
           {
-            "title": "Unitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter",
-            "url": "https://doi.org/10.1007/jhep04(2015)129",
-            "source": "openalex",
-            "snippet": "We present explicit computations and conjectures for 2 → 2 scattering matrices in large N U(N ) Chern-Simons theories coupled to fundamental bosonic or fermionic matter to all orders in the ’t Hooft coupling expansion. The bosonic and fermionic S-matrices map to each other under ",
-            "published": "2015",
+            "title": "High Performance Matrix Multiplication",
+            "url": "https://arxiv.org/abs/2509.04594v1",
+            "source": "arxiv",
+            "snippet": "Matrix multiplication is the foundation from much of the success from high performance technologies like deep learning, scientific simulations, and video graphics. High level programming languages like Python and R rely on highly optimized low level libraries for performing core ",
+            "published": "2025-09-04",
             "authors": [
-              "Sachin Jain",
-              "Mangesh Mandlik",
-              "Shiraz N. Minwalla",
-              "Tomohisa Takimi",
-              "Spenta R. Wadia",
-              "Shuichi Yokoyama"
+              "Ethan Davis"
             ],
             "extra": {
-              "cited_by": 104,
-              "venue": "Journal of High Energy Physics",
-              "license": "CC0 metadata"
+              "license": "arXiv"
             },
-            "id": "137465610817",
-            "domain": "doi.org",
+            "id": "93b46fc4318d",
+            "domain": "arxiv.org",
             "n": 1
           },
           {
-            "title": "Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems",
-            "url": "https://doi.org/10.1016/j.lindif.2015.08.013",
-            "source": "openalex",
-            "snippet": "Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems",
-            "published": "2015",
-            "authors": [
-              "Sanne H.G. van der Ven",
-              "Marthe Straatemeier",
-              "Brenda R. J. Jansen",
-              "Sharon Klinkenberg",
-              "Han L. J. van der Maas"
-            ],
+            "title": "Computational complexity of matrix multiplication",
+            "url": "https://en.wikipedia.org/wiki/Computational_complexity_of_matrix_multiplication",
+            "source": "wikipedia",
+            "snippet": "In theoretical computer science, the computational complexity of matrix multiplication dictates how quickly the operation of matrix multiplication can be performed. Matrix multiplication algorithms are a central subroutine in theoretical and numerical algorithms for numerical lin",
+            "published": null,
+            "authors": [],
             "extra": {
-              "cited_by": 37,
-              "venue": "Learning and Individual Differences",
-              "license": "CC0 metadata"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "8ca37cf7b73f",
-            "domain": "doi.org",
+            "id": "6c5fca26f0d7",
+            "domain": "en.wikipedia.org",
             "n": 2
           },
           {
-            "title": "Matrix theory",
-            "url": "https://doi.org/10.1016/s0920-5632(98)00130-3",
-            "source": "openalex",
-            "snippet": "Matrix theory",
-            "published": "1998",
-            "authors": [
-              "Tom Banks"
-            ],
+            "title": "Matrix multiplication algorithm",
+            "url": "https://en.wikipedia.org/wiki/Matrix_multiplication_algorithm",
+            "source": "wikipedia",
+            "snippet": "Because matrix multiplication is such a central operation in many numerical algorithms, much work has been invested in making matrix multiplication algorithms efficient. Applications of matrix multiplication in computational problems are found in many fields including scientific ",
+            "published": null,
+            "authors": [],
             "extra": {
-              "cited_by": 201,
-              "venue": "Nuclear Physics B - Proceedings Supplements",
-              "license": "CC0 metadata"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "5d02268c7fde",
-            "domain": "doi.org",
+            "id": "056ea7ece8cf",
+            "domain": "en.wikipedia.org",
             "n": 3
           },
           {
-            "title": "Superconformal N = 2, D = 5 matter with and without actions",
-            "url": "https://doi.org/10.1088/1126-6708/2002/10/045",
-            "source": "openalex",
-            "snippet": "Superconformal N = 2, D = 5 matter with and without actions",
-            "published": "2002",
+            "title": "Matrix Multiplication with Less Arithmetic Complexity and IO Complexity",
+            "url": "https://arxiv.org/abs/2203.16053v1",
+            "source": "arxiv",
+            "snippet": "After Strassen presented the first sub-cubic matrix multiplication algorithm, many Strassen-like algorithms are presented. Most of them with low asymptotic cost have large hidden leading coefficient which are thus impractical. To reduce the leading coefficient, Cenk and Hasan giv",
+            "published": "2022-03-30",
             "authors": [
-              "Eric Bergshoeff",
-              "Tim C. de Wit",
-              "Rein Halbersma",
-              "Sorin Cucu",
-              "Jos Gheerardyn",
-              "Antoine Van Proeyen"
+              "Pu Wu",
+              "Huiqing Jiang",
+              "Zehui Shao",
+              "Jin Xu"
             ],
             "extra": {
-              "cited_by": 138,
-              "venue": "Journal of High Energy Physics",
-              "license": "CC0 metadata"
+              "license": "arXiv"
             },
-            "id": "f7afba5dbb65",
-            "domain": "doi.org",
+            "id": "f70e9276878e",
+            "domain": "arxiv.org",
             "n": 4
           },
           {
-            "title": "Feynman diagram",
-            "url": "https://en.wikipedia.org/wiki/Feynman_diagram",
-            "source": "wikipedia",
-            "snippet": "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and interaction of subatomic particles. The scheme is named after American physicist Richard Feynman, who introduced the diagrams in 1948. The calculati",
-            "published": null,
-            "authors": [],
+            "title": "Reducing the Complexity of Matrix Multiplication by Quantum Computing",
+            "url": "https://arxiv.org/abs/2602.05541v3",
+            "source": "arxiv",
+            "snippet": "Matrix multiplication is a fundamental operation in compute-intensive tasks and a key component of modern quantum acceleration frameworks. Here we present a quantum matrix multiplication algorithm based on quantum kernels (QKMM), achieving an elementary gate complexity of \\(O(N^2",
+            "published": "2026-02-05",
+            "authors": [
+              "Jiaqi Yao",
+              "Tianjian Huang",
+              "Tonghe Zhang",
+              "Ding Liu"
+            ],
             "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
+              "license": "arXiv"
             },
-            "id": "bc294ed2b793",
-            "domain": "en.wikipedia.org",
+            "id": "6478b1fa2fb4",
+            "domain": "arxiv.org",
             "n": 5
           },
           {
-            "title": "Logistic regression",
-            "url": "https://en.wikipedia.org/wiki/Logistic_regression",
-            "source": "wikipedia",
-            "snippet": "In statistics, a logistic model (or logit model) is a statistical model that models the log-odds of an event as a linear combination of one or more independent variables. In regression analysis, logistic regression (or logit regression) estimates the parameters of a logistic mode",
-            "published": null,
-            "authors": [],
+            "title": "The complexity of matrix multiplication: developments since 2014. Extended abstract of 2018 Oberwolfach Complexity meeting plenary lecture",
+            "url": "https://arxiv.org/abs/1811.11667v1",
+            "source": "arxiv",
+            "snippet": "This is an overview of recent developments regarding the complexity of matrix multiplication, with an emphasis on the uses of algebraic geometry and representation theory in complexity theory.",
+            "published": "2018-11-28",
+            "authors": [
+              "Joseph M. Landsberg"
+            ],
             "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
+              "license": "arXiv"
             },
-            "id": "712f250a65fb",
-            "domain": "en.wikipedia.org",
+            "id": "5b852472f6e6",
+            "domain": "arxiv.org",
             "n": 6
           },
           {
-            "title": "History of mathematical notation",
-            "url": "https://en.wikipedia.org/wiki/History_of_mathematical_notation",
+            "title": "Online matrix-vector multiplication problem",
+            "url": "https://en.wikipedia.org/wiki/Online_matrix-vector_multiplication_problem",
             "source": "wikipedia",
-            "snippet": "The history of mathematical notation covers the introduction, development, and cultural diffusion of mathematical symbols and the conflicts between notational methods that arise during a notation's move to popularity or obsolescence. Mathematical notation comprises the symbols us",
+            "snippet": "In computational complexity theory, the online matrix-vector multiplication problem (OMv) asks an online algorithm to return, at each round, the product of an n×n matrix and a newly-arrived n-dimensional vector. OMv is conjectured to require roughly cubic time. This conjectured h",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "4c49b66f705d",
+            "id": "87a9e83eccb5",
             "domain": "en.wikipedia.org",
             "n": 7
           },
           {
-            "title": "Anyon",
-            "url": "https://en.wikipedia.org/wiki/Anyon",
-            "source": "wikipedia",
-            "snippet": "In physics, an anyon is a type of quasiparticle so far observed only in two-dimensional systems. In three-dimensional systems, only two kinds of elementary particles are seen: fermions and bosons. Anyons have statistical properties intermediate between fermions and bosons. In gen",
-            "published": null,
-            "authors": [],
+            "title": "Geometry and the complexity of matrix multiplication",
+            "url": "https://arxiv.org/abs/cs/0703059v1",
+            "source": "arxiv",
+            "snippet": "We survey results in algebraic complexity theory, focusing on matrix multiplication. Our goals are (i.) to show how open questions in algebraic complexity theory are naturally posed as questions in geometry and representation theory, (ii.) to motivate researchers to work on these",
+            "published": "2007-03-12",
+            "authors": [
+              "J. M. Landsberg"
+            ],
             "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
+              "license": "arXiv"
             },
-            "id": "16e28ef5c8c7",
-            "domain": "en.wikipedia.org",
+            "id": "6ef9fcb5aaa6",
+            "domain": "arxiv.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.016816728000002,
-          "search": 0.8668317630000004,
-          "rank": 0.035028087999997126,
-          "dense": 0.0,
+          "plan": 0.7288820969999961,
+          "search": 0.6640182250000066,
+          "rank": 1.3687525050000033,
+          "dense": 1.0,
           "rerank": 0.0,
-          "retrieve": 0.9187348250000014,
-          "total": 0.9544147120000019
+          "retrieve": 2.761778595999999,
+          "total": 11.49935037100002
         },
         "nvidia": false,
-        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
+        "llm_error": ""
       },
       "metrics": {
         "sentences": 6,
@@ -716,7 +826,7 @@
     {
       "kind": "hackernews",
       "topic": "Button Sounds – collection of professionally-recorded button clicks and presses",
-      "points": 694,
+      "points": 698,
       "discussion": "https://news.ycombinator.com/item?id=50638032",
       "question": "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?",
       "focus": "all",
@@ -724,177 +834,190 @@
         "question": "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?",
         "focus": "all",
         "queries": [
-          "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?"
+          "professionally recorded button clicks",
+          "button sounds collection purpose"
         ],
-        "answer": "Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy. [1]\n\n**Key points from the sources:**\n- In The Pearl Button, Patricio Guzman explores the role water played in shaping how the Selk’nam inhabited the coasts of the Tierra del Fuego in Patagonia through “cosmovisions,’ sequences that extend beyond human perception, even as they link the habitation of indigenous peoples to subsequent colonial and political projects. [1]\n- He works with archival photography and the superimposition of images/sounds in order to create a pluriverse of peoples and environments, which moves beyond human audiovisual and temporal perception. [1]\n- In doing so, The Pearl Button links the ways in which the Selk’nam inhabited Chile, depending on its waters, to the ocean as the source of the colonial project of Spain and site of political murders under the later dictatorship of Augusto Pinochet. [1]\n- “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents. [2]\n- Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper. [5]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Button Sounds is a curated library of professionally recorded button click and press audio clips, available at buttons.joshwcomeau.com and highlighted on Hacker News with 702 points and 113 comments [1]. It matters because it provides developers and designers with high-quality, instantly usable sound effects that improve interface feedback and user experience, reflecting a broader industry shift toward treating auditory detail as a core design element [1]. The collection eliminates the need for custom recording setups while ensuring consistency and polish in software applications [1].\n\n- **What it is**: A publicly accessible collection of authentic button-click sounds, ready",
         "followups": [
-          "Tell me more about Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy",
-          "Tell me more about “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents",
-          "What are the latest developments on Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?"
+          "Where can I download the sounds?",
+          "Who is Josh Comeau?",
+          "Are there other sound types?"
         ],
         "sources": [
           {
-            "title": "Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy",
-            "url": "https://dc.etsu.edu/etsu-works/7825",
-            "source": "openalex",
-            "snippet": "In The Pearl Button, Patricio Guzman explores the role water played in shaping how the Selk’nam inhabited the coasts of the Tierra del Fuego in Patagonia through “cosmovisions,’ sequences that extend beyond human perception, even as they link the habitation of indigenous peoples ",
-            "published": "2019",
+            "title": "Button Sounds – collection of professionally-recorded button clicks and presses",
+            "url": "https://buttons.joshwcomeau.com/",
+            "source": "hackernews",
+            "snippet": "Button Sounds – collection of professionally-recorded button clicks and presses",
+            "published": "2026-11-25",
             "authors": [
-              "Matthew Holtmeier"
+              "gaurang_tandon"
             ],
             "extra": {
-              "cited_by": 0,
-              "venue": "Digital Commons - East Tennessee State University (East Tennessee State University)",
-              "license": "CC0 metadata"
+              "points": 702,
+              "comments": 113,
+              "discussion": "https://news.ycombinator.com/item?id=50638032"
             },
-            "id": "ff9fe74caf35",
-            "domain": "dc.etsu.edu",
+            "id": "731330eec3a0",
+            "domain": "buttons.joshwcomeau.com",
             "n": 1
           },
           {
-            "title": "“There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents",
-            "url": "https://doi.org/10.1177/10497323231187541",
+            "title": "Sound collection systems using a crowdsourcing approach to construct sound map based on subjective evaluation",
+            "url": "https://doi.org/10.1109/icmew.2016.7574694",
             "source": "openalex",
-            "snippet": "Virtual spaces that allow parents in the postpartum period to connect, support each other, and exchange information have been increasing in popularity. With the COVID-19 pandemic, many parents had to rely on virtual platforms as a primary means to connect with others and attend t",
-            "published": "2023",
+            "snippet": "This paper presents a sound collection system that uses crowdsourcing to gather information for visualizing area characteristics. First, we developed a sound collection system to simultaneously collect physical sounds, their statistics, and subjective evaluations. We then conduct",
+            "published": "2016",
             "authors": [
-              "Anna MacLeod",
-              "Megan L. Aston",
-              "Sheri Lynn Price",
-              "Kathryn Stone",
-              "Rachel Ollivier",
-              "Britney Benoit"
+              "Sunao Hara",
+              "Shota Kobayashi",
+              "Masanobu Abe"
             ],
             "extra": {
-              "cited_by": 5,
-              "venue": "Qualitative Health Research",
+              "cited_by": 7,
+              "venue": "IEEE International Conference on Multimedia & Expo Workshops (ICMEW)",
               "license": "CC0 metadata"
             },
-            "id": "121faf7f5c46",
+            "id": "79a14997a5b8",
             "domain": "doi.org",
             "n": 2
           },
           {
-            "title": "Listening In Towards Sound: creating soundscapes to sound our presence",
-            "url": "https://summit.sfu.ca/_flysystem/fedora/sfu_migrate/14776/etd8716_EWeiden.pdf",
+            "title": "Jitter Click Test – How to Jitter click?",
+            "url": "https://doi.org/10.5281/zenodo.6997575",
             "source": "openalex",
-            "snippet": "Employing the arts based methodology Performative Inquiry, attending to emergent moments, those of surprise and discovery, I am inquiring and listening in towards where sound, performance, identity, and place intersect.I am interested in how sound performs identity, how identity ",
-            "published": "2014",
+            "snippet": "Professional gamers frequently employ the Jitter Click Test as a technique to measure and improve their jitter clicking speed, which is faster than ordinary clicking speed and is utilized to improve PVP performance. In this technique, a quick, tightly controlled vibration is prod",
+            "published": "2022",
             "authors": [
-              "Eric Stephen Weiden"
+              "Lanĕ"
             ],
             "extra": {
-              "cited_by": 1,
-              "venue": "Summit (Simon Fraser University)",
+              "cited_by": 0,
+              "venue": "Zenodo (CERN European Organization for Nuclear Research)",
               "license": "CC0 metadata"
             },
-            "id": "a0f7909c2bef",
-            "domain": "summit.sfu.ca",
+            "id": "14bcd5455091",
+            "domain": "doi.org",
             "n": 3
           },
           {
-            "title": "OK Computer",
-            "url": "https://en.wikipedia.org/wiki/OK_Computer",
-            "source": "wikipedia",
-            "snippet": "OK Computer is the third studio album by the English rock band Radiohead, released on 21 May 1997. With their producer, Nigel Godrich, Radiohead recorded most of OK Computer in their rehearsal space in Oxfordshire and the historic mansion of St Catherine's Court in Bath in 1996 a",
-            "published": null,
-            "authors": [],
+            "title": "Computing and mental health: intentionality and reflection at the click of a button",
+            "url": "https://doi.org/10.1145/3154862.3154877",
+            "source": "openalex",
+            "snippet": "Automated passive sensing applications and self-reported smart diaries seem to hold promise for the management of anxiety in autism and other mental health conditions. However, passive sensing often struggles with noisy data, ambiguous feedback and weak user agency over the devic",
+            "published": "2017",
+            "authors": [
+              "Maria Angela Ferrario",
+              "Will Simm",
+              "Adrian Gradinar",
+              "Stephen Forshaw",
+              "Marcia Tavares Smith",
+              "Thomas Lee"
+            ],
             "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
+              "cited_by": 24,
+              "venue": "International Conference on Pervasive Computing Technologies for Healthcare",
+              "license": "CC0 metadata"
             },
-            "id": "f3f0a81836af",
-            "domain": "en.wikipedia.org",
+            "id": "62ad17f22783",
+            "domain": "doi.org",
             "n": 4
           },
           {
-            "title": "Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper",
-            "url": "http://resolver.tudelft.nl/uuid:3f36cd36-d668-457c-a795-39ff3ba2683c",
-            "source": "openalex",
-            "snippet": "The starting point of this graduation project is noises that nurses experience in the ICU (Intensive Care Unit). There is a defined medical symptom which is called “alarm fatigue” that refers to numb auditory senses, stress, low job satisfaction as a result of being exposed to ex",
-            "published": "2019",
-            "authors": [
-              "Yoon Lee"
-            ],
+            "title": "Blue Button",
+            "url": "https://en.wikipedia.org/wiki/Blue_Button",
+            "source": "wikipedia",
+            "snippet": "The Blue Button is a system for patients to view online and download their own personal health records. Several Federal agencies, including the Departments of Defense, Health and Human Services, and Veterans Affairs, implemented this capability for their beneficiaries. In additio",
+            "published": null,
+            "authors": [],
             "extra": {
-              "cited_by": 1,
-              "venue": "Research Repository (Delft University of Technology)",
-              "license": "CC0 metadata"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "686c44979fea",
-            "domain": "resolver.tudelft.nl",
+            "id": "2beee44fa581",
+            "domain": "en.wikipedia.org",
             "n": 5
           },
           {
-            "title": "Enema of the State",
-            "url": "https://en.wikipedia.org/wiki/Enema_of_the_State",
-            "source": "wikipedia",
-            "snippet": "Enema of the State is the third studio album by the American rock band Blink-182, released on June 1, 1999, by MCA Records. The band formed in Southern California, earning an early fanbase with their fast tempos, catchy hooks, and trademark irreverence. The band gained greater vi",
-            "published": null,
-            "authors": [],
+            "title": "Sound Data Collection and Transmission Noise Reduction",
+            "url": "https://digitalcommons.wku.edu/stu_hon_theses/624",
+            "source": "openalex",
+            "snippet": "The WKU Engineering Department Senior Student Team, The Synchronizers, has been contracted to modify a MTD transmission’s sound characteristics. This project entails developing a sound data acquisition apparatus and method, developing a sound test stand which will fully load the ",
+            "published": "2016",
+            "authors": [
+              "Bradley Cockrel"
+            ],
             "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
+              "cited_by": 0,
+              "venue": "TopSCHOLAR (Western Kentucky University)",
+              "license": "CC0 metadata"
             },
-            "id": "6333591db96e",
-            "domain": "en.wikipedia.org",
+            "id": "92e14608b731",
+            "domain": "digitalcommons.wku.edu",
             "n": 6
           },
           {
-            "title": "BBC",
-            "url": "https://en.wikipedia.org/wiki/BBC",
-            "source": "wikipedia",
-            "snippet": "The British Broadcasting Corporation (BBC) is a British public service broadcaster headquartered at Broadcasting House in London, England. Originally established in 1922 as the British Broadcasting Company, it evolved into its current state with its current name on 1 January 1927",
-            "published": null,
-            "authors": [],
+            "title": "Paradoxes of Digital Disengagement: In Search of the Opt-Out Button",
+            "url": "https://doi.org/10.16997/book61",
+            "source": "openalex",
+            "snippet": "Life is increasingly governed and mediated through digital and smart technologies, platforms, big data and algorithms. However, the reasons, practices and impact of how the digital is used by different institutions are often deeply linked to social oppression and injustice. Simil",
+            "published": "2022",
+            "authors": [
+              "Adi Kuntsman",
+              "Esperanza Miyake"
+            ],
             "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
+              "cited_by": 97,
+              "venue": "University of Westminster Press eBooks",
+              "license": "CC0 metadata"
             },
-            "id": "1b38b12a31a3",
-            "domain": "en.wikipedia.org",
+            "id": "08d668b1e972",
+            "domain": "doi.org",
             "n": 7
           },
           {
-            "title": "Bob Dylan",
-            "url": "https://en.wikipedia.org/wiki/Bob_Dylan",
-            "source": "wikipedia",
-            "snippet": "Bob Dylan (legally Robert Dylan; born Robert Allen Zimmerman, May 24, 1941) is an American singer-songwriter. Described as one of the greatest songwriters of all time, Dylan has been a major figure in popular culture over his 69-year career. Dylan added increasingly sophisticated",
-            "published": null,
-            "authors": [],
+            "title": "Launch HN: Tavus (YC S21) – AI-generated personalized videos for sales outreach",
+            "url": "https://news.ycombinator.com/item?id=28037322",
+            "source": "hackernews",
+            "snippet": "Hi HN - Hassaan, Quinn & Rishabh here and we're the founders of Tavus ( https://tavus.io/ ). We generate personalized videos that realistically imitate your gestures and voice. See a short demo at https://video.tavus.io/video?id=2302 and play with it at https://tavus.io/playgroun",
+            "published": "2021-08-02",
+            "authors": [
+              "rishabhdhar"
+            ],
             "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
+              "points": 57,
+              "comments": 73,
+              "discussion": "https://news.ycombinator.com/item?id=28037322"
             },
-            "id": "82ae222298bb",
-            "domain": "en.wikipedia.org",
+            "id": "af90a3b20b1e",
+            "domain": "news.ycombinator.com",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.017135061000004725,
-          "search": 0.6775076360000014,
-          "rank": 0.05294735499999348,
-          "dense": 0.0,
+          "plan": 0.42722359200001847,
+          "search": 3.4084762999999896,
+          "rank": 1.2132216489999905,
+          "dense": 1.0,
           "rerank": 0.0,
-          "retrieve": 0.7476512129999975,
-          "total": 0.7842249870000018
+          "retrieve": 5.049039101000005,
+          "total": 12.632490170000011
         },
-        "nvidia": false,
-        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
+        "nvidia": true,
+        "llm_error": ""
       },
       "metrics": {
-        "sentences": 6,
-        "citation_coverage": 1.0,
+        "sentences": 4,
+        "citation_coverage": 0.75,
         "citation_validity": 1.0,
-        "faithfulness": 1.0
+        "faithfulness": 0.0
       }
     },
     {
       "kind": "hackernews",
       "topic": "The Spray Bottle",
-      "points": 577,
+      "points": 579,
       "discussion": "https://news.ycombinator.com/item?id=50598555",
       "question": "The Spray Bottle — what is this about and why does it matter?",
       "focus": "all",
@@ -902,165 +1025,172 @@
         "question": "The Spray Bottle — what is this about and why does it matter?",
         "focus": "all",
         "queries": [
-          "The Spray Bottle — what is this about and why does it matter?"
+          "what is the spray bottle",
+          "spray bottle significance"
         ],
-        "answer": "“Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914. [1]\n\n**Key points from the sources:**\n- Types of NRT include the adhesive patch, chewing gum, lozenges, nose spray, and inhaler. [3]\n- Conditions inside the facility worsened, with reports of batons, pepper spray, and tear gas being used against strikers and multiple ambulances arriving at the facility throughout the strike. [4]\n- Black Lives Matter (BLM) is a decentralized political and social movement that aims to highlight racism, discrimination and racial inequality experienced by Black people in the United States, and to promote anti-racism. [5]\n- Pollinating insects: what do they mean to people and why does it matter?. [6]\n- Why Do “Good” Pictures Matter in Anthropology?. [7]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "This is a list of bottle types, brands and companies. [1]\n\n**Key points from the sources:**\n- A bottle is a rigid container with a neck that is narrower than the body, and a \"mouth\". [1]\n- The two factors i.e., fertigation levels and foliar spray levels were evaluated against soil fertility and yield of bottle gourd. [2]\n- Effect of fertigation and foliar spray of nutrients on soil fertility and yield of bottle gourd (Lagenaria siceraria L). [2]\n- Panjabrao Deshmukh Krishi Vidyapeeth, Akola (Maharashtra) to study the effect of fertigation and foliar spray of nutrients on soil fertility and yield of bottle gourd (Lagenaria siceraria L). [2]\n- As each 8oz magnesium oil spray bottle contains 26g elemental Mg (the body has about 28g all throughout), once a bottle is finished (or a white film begins forming on the skin, implying the body isn't absorbing any more), you can be fairly certain you no longer have a magnesium deficiency. [7]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "Tell me more about “Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914",
-          "Tell me more about Operation Sea Spray",
-          "What are the latest developments on The Spray Bottle — what is this about and why does it matter?"
+          "What are the bottle types listed?",
+          "How did spray levels affect yield?",
+          "Where was this study conducted?"
         ],
         "sources": [
           {
-            "title": "“Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914",
-            "url": "https://doi.org/10.7202/800406ar",
-            "source": "openalex",
-            "snippet": "As insecticides were adopted by Canadian farmers and fruit-growers after 1871, the resources conferred on economic entomology by the Dominion and Ontario governments grew. In 1886, with the establishment of the Experimental Farms system, James Fletcher, the Dominion entomologist ",
-            "published": "1998",
-            "authors": [
-              "George M. Cook"
-            ],
-            "extra": {
-              "cited_by": 5,
-              "venue": "Scientia Canadensis Canadian Journal of the History of Science Technology and Medicine",
-              "license": "CC0 metadata"
-            },
-            "id": "4e22dd9fcec1",
-            "domain": "doi.org",
-            "n": 1
-          },
-          {
-            "title": "Operation Sea Spray",
-            "url": "http://hdl.handle.net/10211.2/2548",
-            "source": "openalex",
-            "snippet": "Professor Sam Redding, a medical microbiologist with a serious case of distrust and abandonment issues that stem from death of his mother when he was five years old, is trying to keep his head above water and get over his lost relationship with a former graduate student, Yara Dia",
-            "published": "2013",
-            "authors": [
-              "Lisa Lumar"
-            ],
-            "extra": {
-              "cited_by": 0,
-              "venue": "CSUN ScholarWorks (California State University, Northridge)",
-              "license": "CC0 metadata"
-            },
-            "id": "e0447219f8b4",
-            "domain": "hdl.handle.net",
-            "n": 2
-          },
-          {
-            "title": "Nicotine replacement therapy",
-            "url": "https://en.wikipedia.org/wiki/Nicotine_replacement_therapy",
+            "title": "List of bottle types, brands and companies",
+            "url": "https://en.wikipedia.org/wiki/List_of_bottle_types,_brands_and_companies",
             "source": "wikipedia",
-            "snippet": "Nicotine replacement therapy (NRT) is a medically approved way to treat people with tobacco use disorder by taking nicotine through means other than tobacco. It is used to help with quitting smoking or stopping chewing tobacco. It increases the chance of quitting tobacco smoking ",
+            "snippet": "This is a list of bottle types, brands and companies. A bottle is a rigid container with a neck that is narrower than the body, and a \"mouth\". Bottles are often made of glass, clay, plastic, aluminum or other impervious materials, and are typically used to store liquids. The bott",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "d06a33c19ddd",
+            "id": "e992209692c8",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Effect of fertigation and foliar spray of nutrients on soil fertility and yield of bottle gourd (Lagenaria siceraria L)",
+            "url": "https://doi.org/10.31783/elsr.2022.81146151",
+            "source": "openalex",
+            "snippet": "The field experiment was conducted during Kharif, 2020-21 at Dr. Panjabrao Deshmukh Krishi Vidyapeeth, Akola (Maharashtra) to study the effect of fertigation and foliar spray of nutrients on soil fertility and yield of bottle gourd (Lagenaria siceraria L). The experiment was cond",
+            "published": "2022",
+            "authors": [
+              "Prashant Kumar",
+              "S. S. Hadole",
+              "Pratik Ramteke",
+              "Pragya Bharti"
+            ],
+            "extra": {
+              "cited_by": 3,
+              "venue": "emergent Life Sciences Research",
+              "license": "CC0 metadata"
+            },
+            "id": "2acab95fe0fc",
+            "domain": "doi.org",
+            "n": 2
+          },
+          {
+            "title": "Beer bottle",
+            "url": "https://en.wikipedia.org/wiki/Beer_bottle",
+            "source": "wikipedia",
+            "snippet": "A beer bottle is a bottle designed as a container for beer. Such designs vary greatly in size and shape, but the glass commonly is brown or green to reduce spoilage from light, especially ultraviolet. The most widely established alternatives to glass containers for beer in retail",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "5e4fc7e5ba79",
             "domain": "en.wikipedia.org",
             "n": 3
           },
           {
-            "title": "2026 Delaney Hall hunger strike and protests",
-            "url": "https://en.wikipedia.org/wiki/2026_Delaney_Hall_hunger_strike_and_protests",
+            "title": "Plastic bottle",
+            "url": "https://en.wikipedia.org/wiki/Plastic_bottle",
             "source": "wikipedia",
-            "snippet": "On May 22, 2026, in Newark, New Jersey, immigrants detained in Delaney Hall, a private prison run by GEO Group used for holding immigrants detained by Immigration and Customs Enforcement (ICE), held a month-long hunger and labor strike protesting conditions inside the facility. D",
+            "snippet": "A plastic bottle is a bottle constructed from high-density or low-density plastic. They are typically used to store liquids such as water, soft drinks, motor oil, cooking oil, medicine, shampoo or milk. They range from very small bottles to large carboys. Consumer blow molded con",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "4bf921298add",
+            "id": "baf700b06bf4",
             "domain": "en.wikipedia.org",
             "n": 4
           },
           {
-            "title": "Black Lives Matter",
-            "url": "https://en.wikipedia.org/wiki/Black_Lives_Matter",
-            "source": "wikipedia",
-            "snippet": "Black Lives Matter (BLM) is a decentralized political and social movement that aims to highlight racism, discrimination and racial inequality experienced by Black people in the United States, and to promote anti-racism. Its primary concerns are police brutality and racially motiv",
-            "published": null,
-            "authors": [],
+            "title": "Why, when, what and how to spray",
+            "url": "https://doi.org/10.33915/agnic.43",
+            "source": "openalex",
+            "snippet": "Why, when, what and how to spray",
+            "published": "1896",
+            "authors": [
+              "L. C. Corbett"
+            ],
             "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
+              "cited_by": 0,
+              "venue": "The Research Repository @ WVU (West Virginia University)",
+              "license": "CC0 metadata"
             },
-            "id": "4813d8c71b43",
-            "domain": "en.wikipedia.org",
+            "id": "af0d02c0a51d",
+            "domain": "doi.org",
             "n": 5
           },
           {
-            "title": "Pollinating insects: what do they mean to people and why does it matter?",
-            "url": "https://eprints.bbk.ac.uk/id/eprint/23400/1/DEFRA_Pollinating%20Insects_PH0523_FinalReport.pdf",
+            "title": "Spray characteristics from nasal spray atomization",
+            "url": "https://doi.org/10.1016/j.jaerosci.2022.106009",
             "source": "openalex",
-            "snippet": "1. People value pollinating insects, and especially bees, in a wide range of different ways: as beautiful or fascinating creatures; as providers of goods; as objects of stewardship; as participants in a greater, interconnected whole – in which humans also participate; and as crea",
-            "published": "2018",
-            "authors": [
-              "S. Christmas",
-              "Bob Bloomfield",
-              "H. Bradburn",
-              "Raymond S. Duff",
-              "G. Ereaut",
-              "K. Miskelly"
-            ],
-            "extra": {
-              "cited_by": 5,
-              "venue": "BIROn (Birkbeck, University of London)",
-              "license": "CC0 metadata"
-            },
-            "id": "aea7bc853807",
-            "domain": "eprints.bbk.ac.uk",
-            "n": 6
-          },
-          {
-            "title": "Why Do “Good” Pictures Matter in Anthropology?",
-            "url": "https://doi.org/10.14506/ca37.3.11",
-            "source": "openalex",
-            "snippet": "This article explores the relationship between photography and anthropology in the age of digital ethnographies and anthropologies of the future. It focuses on the phenomenological bond between the picture-taking process and the politics of visual representations by looking at an",
+            "snippet": "Spray characteristics from nasal spray atomization",
             "published": "2022",
             "authors": [
-              "Camilo León-Quijano"
+              "James Van Strien",
+              "Phred Petersen",
+              "Petros Lappas",
+              "Leslie Y. Yeo",
+              "Amgad R. Rezk",
+              "Sara Vahaji"
             ],
             "extra": {
               "cited_by": 33,
-              "venue": "Cultural Anthropology",
+              "venue": "Journal of Aerosol Science",
               "license": "CC0 metadata"
             },
-            "id": "4270f997e85a",
+            "id": "f81e71043af8",
             "domain": "doi.org",
+            "n": 6
+          },
+          {
+            "title": "Show HN: Things that help with depression and anxiety",
+            "url": "https://news.ycombinator.com/item?id=12386378",
+            "source": "hackernews",
+            "snippet": "As there seem to be many here that suffer with depressive symptoms and/or anxiety, maybe you'll get some benefit from looking into the following stacks: https://trackmystack.com/users/baccheion You can also join the following subreddit, as the users there regularly talk about and",
+            "published": "2016-08-29",
+            "authors": [
+              "baccheion"
+            ],
+            "extra": {
+              "points": 48,
+              "comments": 48,
+              "discussion": "https://news.ycombinator.com/item?id=12386378"
+            },
+            "id": "64a276009579",
+            "domain": "news.ycombinator.com",
             "n": 7
           },
           {
-            "title": "Gift wrapping",
-            "url": "https://en.wikipedia.org/wiki/Gift_wrapping",
-            "source": "wikipedia",
-            "snippet": "Gift wrapping is the act of enclosing a gift in some sort of material. Wrapping paper is a kind of paper designed for gift wrapping. An alternative to gift wrapping is using a gift box or bag. A wrapped or boxed gift may be held closed with ribbon and topped with a decorative bow",
-            "published": null,
-            "authors": [],
+            "title": "Preparation of Hydrophobic Medical Glass Packaging Bottle and Study on the Dissolution of Trace Elements",
+            "url": "https://doi.org/10.12677/aac.2022.123026",
+            "source": "openalex",
+            "snippet": "In this paper, the effects of spraying time of dimethicone NF lotion, concentration of dimethicone NF lotion and coating baking temperature on the hydrophobic angle of coating were studied by single factor variable method. It was preliminarily obtained that the best conditions fo",
+            "published": "2022",
+            "authors": [
+              "庆海 方"
+            ],
             "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
+              "cited_by": 0,
+              "venue": "Advances in Analytical Chemistry",
+              "license": "CC0 metadata"
             },
-            "id": "33a9efe9e5b1",
-            "domain": "en.wikipedia.org",
+            "id": "3fc92175d19f",
+            "domain": "doi.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.018345889999999088,
-          "search": 0.9673923659999986,
-          "rank": 0.054129860999999835,
-          "dense": 0.0,
+          "plan": 0.40776097000002665,
+          "search": 1.191553424999995,
+          "rank": 1.48445166099998,
+          "dense": 1.0,
           "rerank": 0.0,
-          "retrieve": 1.0399266849999975,
-          "total": 1.076327532999997
+          "retrieve": 3.083872229999997,
+          "total": 11.601108691999997
         },
         "nvidia": false,
-        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
+        "llm_error": ""
       },
       "metrics": {
         "sentences": 6,
