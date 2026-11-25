@@ -22,7 +22,7 @@ As one of the most popular gaming personalities on YouTube, his videography cons
 **Key points from the sources:**
 - He is mostly known for his actions against Rockstar Games and the Grand Theft Auto franchise. [2]
 
-<sub>Sources: [1] [VanossGaming](https://en.wikipedia.org/wiki/VanossGaming) · [2] [Jack Thompson (activist)](https://en.wikipedia.org/wiki/Jack_Thompson_(activist)) · [3] [Tom Araya](https://en.wikipedia.org/wiki/Tom_Araya) · [4] [Video game monetization](https://en.wikipedia.org/wiki/Video_game_monetization) · [5] [List of security hacking incidents](https://en.wikipedia.org/wiki/List_of_security_hacking_incidents) · [6] [Illeism](https://en.wikipedia.org/wiki/Illeism)</sub>
+<sub>Sources: [1] [VanossGaming](https://en.wikipedia.org/wiki/VanossGaming) · [2] [Jack Thompson (activist)](https://en.wikipedia.org/wiki/Jack_Thompson_(activist)) · [3] [Tom Araya](https://en.wikipedia.org/wiki/Tom_Araya) · [4] [Video game monetization](https://en.wikipedia.org/wiki/Video_game_monetization) · [5] [List of security hacking incidents](https://en.wikipedia.org/wiki/List_of_security_hacking_incidents) · [6] [In the Air Tonight](https://en.wikipedia.org/wiki/In_the_Air_Tonight)</sub>
 
 ## Who or what is Jensen Huang, and what are the key facts to know?
 
@@ -32,23 +32,23 @@ On October 29, 2026, The New York Times reported that Jensen Huang, the co-found
 - On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [1]
 - officials did not warn Jensen Huang through a defensive briefing. [1]
 - Huang had an extramarital affair with Alice Huang (no relation), a Chinese national who was an executive of Megaspeed, a Singaporean company. [1]
-- On November 12, Attorney General Todd Blanche said the Justice Department had reached no conclusion about whether Alice Huang was a spy, and CNN reported, citing multiple sources, that the... [1]
 - Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [2]
+- Alice Huang (Chinese: 黄乐; pinyin: Huáng Lè; born December 1982) is a Chinese technology executive and investor. [3]
 
-<sub>Sources: [1] [Jensen Huang scandal](https://en.wikipedia.org/wiki/Jensen_Huang_scandal) · [2] [Nvidia](https://en.wikipedia.org/wiki/Nvidia) · [3] [Nintendo Switch 2](https://en.wikipedia.org/wiki/Nintendo_Switch_2) · [4] [Alice Huang (executive)](https://en.wikipedia.org/wiki/Alice_Huang_(executive)) · [5] [List of -gate scandals and controversies](https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies) · [6] [Generation Z in the United States](https://en.wikipedia.org/wiki/Generation_Z_in_the_United_States)</sub>
+<sub>Sources: [1] [Jensen Huang scandal](https://en.wikipedia.org/wiki/Jensen_Huang_scandal) · [2] [Nvidia](https://en.wikipedia.org/wiki/Nvidia) · [3] [Alice Huang (executive)](https://en.wikipedia.org/wiki/Alice_Huang_(executive)) · [4] [List of -gate scandals and controversies](https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies) · [5] [Generation Z in the United States](https://en.wikipedia.org/wiki/Generation_Z_in_the_United_States) · [6] [Artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence)</sub>
 
 ## Who or what is Moon, and what are the key facts to know?
 
-The Moon is the only natural satellite of Earth. [1]
+Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. [1]
 
 **Key points from the sources:**
-- The Moon and Earth are bound by gravitational attraction, which is stronger on the sides facing each other. [1]
-- The resulting tidal forces are the main driver of Earth's tides, and have pulled the Moon to always face Earth with the same near side. [1]
-- This tidal locking effectively synchronizes the Moon's rotation period (lunar day) to its orbital period (lunar month). [1]
-- In geophysical terms, the Moon is a planetary-mass object or satellite planet. [1]
-- Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. [2]
+- Howard and Kate Kondell for Disney Channel and Disney+ based on Moon Girl And Devil Dinosaur by Marvel Comics. [1]
+- Development began after Marvel Studios president Louis D'Esposito showed Laurence Fishburne the comic book series Moon Girl And Devil Dinosaur. [1]
+- His interest piqued, having been a fan of the original Moon-Boy and Devil Dinosaur, Fishburne sought to make an animated series based on the duo. [1]
+- Marvel's Moon Girl and Devil Dinosaur... [1]
+- Moon is a 2009 science fiction film directed by Duncan Jones (in his directorial debut), written by Nathan Parker from a story by Jones. [2]
 
-<sub>Sources: [1] [Moon](https://en.wikipedia.org/wiki/Moon) · [2] [Moon Girl and Devil Dinosaur](https://en.wikipedia.org/wiki/Moon_Girl_and_Devil_Dinosaur) · [3] [Moon (2009 film)](https://en.wikipedia.org/wiki/Moon_(2009_film)) · [4] [Flashdance... What a Feeling](https://en.wikipedia.org/wiki/Flashdance..._What_a_Feeling) · [5] [What We Do in the Shadows (TV series)](https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows_(TV_series)) · [6] [On Nature (Parmenides)](https://en.wikipedia.org/wiki/On_Nature_(Parmenides))</sub>
+<sub>Sources: [1] [Moon Girl and Devil Dinosaur](https://en.wikipedia.org/wiki/Moon_Girl_and_Devil_Dinosaur) · [2] [Moon (2009 film)](https://en.wikipedia.org/wiki/Moon_(2009_film)) · [3] [What We Do in the Shadows (TV series)](https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows_(TV_series)) · [4] [Flashdance... What a Feeling](https://en.wikipedia.org/wiki/Flashdance..._What_a_Feeling) · [5] [You Can't Always Get What You Want](https://en.wikipedia.org/wiki/You_Can%27t_Always_Get_What_You_Want) · [6] [On Nature (Parmenides)](https://en.wikipedia.org/wiki/On_Nature_(Parmenides))</sub>
 
 ## Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?
 
@@ -81,11 +81,11 @@ Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy.
 “Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914. [1]
 
 **Key points from the sources:**
-- Particulate matter (PM) or particulates are microscopic particles of solid or liquid matter suspended in the air. [5]
-- Particulate matter is considered the most dangerous type of air pollution because particulates can penetrate deep into the lungs and travel through the blood stream to multiple organs, such as the brain. [5]
-- Black Lives Matter (BLM) is a decentralized political and social movement that aims to highlight racism, discrimination and racial inequality experienced by Black people in the United States, and to promote anti-racism. [6]
-- Pollinating insects: what do they mean to people and why does it matter?. [7]
-- Why Do “Good” Pictures Matter in Anthropology?. [8]
+- Types of NRT include the adhesive patch, chewing gum, lozenges, nose spray, and inhaler. [3]
+- Conditions inside the facility worsened, with reports of batons, pepper spray, and tear gas being used against strikers and multiple ambulances arriving at the facility throughout the strike. [4]
+- Black Lives Matter (BLM) is a decentralized political and social movement that aims to highlight racism, discrimination and racial inequality experienced by Black people in the United States, and to promote anti-racism. [5]
+- Pollinating insects: what do they mean to people and why does it matter?. [6]
+- Why Do “Good” Pictures Matter in Anthropology?. [7]
 
-<sub>Sources: [1] [“Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914](https://doi.org/10.7202/800406ar) · [2] [Operation Sea Spray](http://hdl.handle.net/10211.2/2548) · [3] [Nicotine replacement therapy](https://en.wikipedia.org/wiki/Nicotine_replacement_therapy) · [4] [2026 Delaney Hall hunger strike and protests](https://en.wikipedia.org/wiki/2026_Delaney_Hall_hunger_strike_and_protests) · [5] [Particulate matter](https://en.wikipedia.org/wiki/Particulate_matter) · [6] [Black Lives Matter](https://en.wikipedia.org/wiki/Black_Lives_Matter) · [7] [Pollinating insects: what do they mean to people and why does it matter?](https://eprints.bbk.ac.uk/id/eprint/23400/1/DEFRA_Pollinating%20Insects_PH0523_FinalReport.pdf) · [8] [Why Do “Good” Pictures Matter in Anthropology?](https://doi.org/10.14506/ca37.3.11)</sub>
+<sub>Sources: [1] [“Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914](https://doi.org/10.7202/800406ar) · [2] [Operation Sea Spray](http://hdl.handle.net/10211.2/2548) · [3] [Nicotine replacement therapy](https://en.wikipedia.org/wiki/Nicotine_replacement_therapy) · [4] [2026 Delaney Hall hunger strike and protests](https://en.wikipedia.org/wiki/2026_Delaney_Hall_hunger_strike_and_protests) · [5] [Black Lives Matter](https://en.wikipedia.org/wiki/Black_Lives_Matter) · [6] [Pollinating insects: what do they mean to people and why does it matter?](https://eprints.bbk.ac.uk/id/eprint/23400/1/DEFRA_Pollinating%20Insects_PH0523_FinalReport.pdf) · [7] [Why Do “Good” Pictures Matter in Anthropology?](https://doi.org/10.14506/ca37.3.11) · [8] [Gift wrapping](https://en.wikipedia.org/wiki/Gift_wrapping)</sub>
 

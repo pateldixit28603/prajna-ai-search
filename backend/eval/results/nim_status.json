@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-25 17:07 UTC",
+  "date": "2026-11-25 17:09 UTC",
   "key_present": true,
   "results": [
     {
@@ -23,34 +23,81 @@
       "detail": "NvidiaError: Rerank HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"This endpoint has reached its end of life on 2026-05-18T00:00:00Z and is no longer available.\"}\n"
     },
     {
-      "check": "chat:meta/llama-3.3-70b-instruct",
-      "ok": false,
-      "detail": "NvidiaError: LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available.\"}\n"
+      "check": "chat:nvidia/nemotron-3-ultra-550b-a55b",
+      "ok": true,
+      "detail": "ready"
     },
     {
-      "check": "chat:meta/llama-3.1-8b-instruct",
-      "ok": false,
-      "detail": "NvidiaError: LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'meta/llama-3.1-8b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available.\"}\n"
+      "check": "chat:nvidia/nemotron-3.5-bolt-e4b",
+      "ok": true,
+      "detail": "ready"
     },
     {
-      "check": "chat:nvidia/llama-3.3-nemotron-super-49b-v1.5",
-      "ok": false,
-      "detail": "NvidiaError: LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/llama-3.3-nemotron-super-49b-v1.5' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available.\"}\n"
+      "check": "chat:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "ok": true,
+      "detail": "ready"
     },
     {
-      "check": "chat:nvidia/nvidia-nemotron-nano-9b-v2",
+      "check": "embed:nvidia/embed-qa-4",
       "ok": false,
-      "detail": "NvidiaError: LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nvidia-nemotron-nano-9b-v2' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available.\"}\n"
+      "detail": "HTTPStatusError: Client error '404 Not Found' for url 'https://integrate.api.nvidia.com/v1/embeddings'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
     },
     {
-      "check": "chat:nvidia/llama-3.1-nemotron-nano-8b-v1",
+      "check": "embed:nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
       "ok": false,
-      "detail": "NvidiaError: LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/llama-3.1-nemotron-nano-8b-v1' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available.\"}\n"
+      "detail": "HTTPStatusError: Client error '404 Not Found' for url 'https://integrate.api.nvidia.com/v1/embeddings'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
     },
     {
-      "check": "chat:mistralai/mistral-small-24b-instruct",
+      "check": "embed:nvidia/llama-3.2-nv-embedqa-1b-v1",
       "ok": false,
-      "detail": "NvidiaError: LLM HTTP 404: 404 page not found\n"
+      "detail": "HTTPStatusError: Client error '404 Not Found' for url 'https://integrate.api.nvidia.com/v1/embeddings'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    },
+    {
+      "check": "embed:nvidia/nemotron-3.5-embed-1b",
+      "ok": true,
+      "detail": "2048"
+    },
+    {
+      "check": "embed:nvidia/nemotron-3.5-embed-8b",
+      "ok": true,
+      "detail": "4096"
+    },
+    {
+      "check": "embed:nvidia/nv-embedqa-mistral-7b-v2",
+      "ok": false,
+      "detail": "HTTPStatusError: Client error '404 Not Found' for url 'https://integrate.api.nvidia.com/v1/embeddings'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
     }
+  ],
+  "catalog": [
+    "bigcode/starcoder2-15b",
+    "fastino/gliner2-pii",
+    "google/gemma-3-12b-it",
+    "google/gemma-3-4b-it",
+    "minimaxai/minimax-m3.1-flash",
+    "mistralai/mistral-large-4-1t-a52b",
+    "moonshotai/kimi-k3.1-pro",
+    "nvidia/ai-synthetic-video-detector",
+    "nvidia/cosmos-reason2-8b",
+    "nvidia/embed-qa-4",
+    "nvidia/ising-calibration-1.5-31b",
+    "nvidia/llama-3.1-nemoguard-8b-topic-control",
+    "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+    "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+    "nvidia/llama-3.2-nv-embedqa-1b-v1",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+    "nvidia/nemotron-3-ultra-550b-a55b",
+    "nvidia/nemotron-3.5-bolt-e4b",
+    "nvidia/nemotron-3.5-content-safety",
+    "nvidia/nemotron-3.5-embed-1b",
+    "nvidia/nemotron-3.5-embed-8b",
+    "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "nvidia/nemotron-3.5-super-vl-120b-a12b",
+    "nvidia/nv-embedqa-mistral-7b-v2",
+    "nvidia/nvclip",
+    "nvidia/riva-translate-4b-instruct-v2",
+    "poolside/laguna-xs-2.1",
+    "snowflake/arctic-embed-l",
+    "stepfun-ai/step-5-preview",
+    "z-ai/glm-5.3-flash"
   ]
 }
