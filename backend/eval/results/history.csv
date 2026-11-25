@@ -2,3 +2,4 @@ date,mode,questions,answer_accuracy,retrieval_recall,citation_coverage,citation_
 2026-11-25 16:48 UTC,extractive (no NVIDIA key),20,0.700,0.900,0.950,0.950,0.950,1.065,1.266
 2026-11-25 16:54 UTC,extractive (no NVIDIA key),20,0.700,0.900,0.950,0.950,0.950,1.087,1.414
 2026-11-25 17:06 UTC,NVIDIA NIM,20,0.700,0.900,0.950,0.950,0.950,0.644,2.513
+2026-11-25 17:08 UTC,extractive (no NVIDIA key),20,0.650,0.850,0.850,0.850,0.850,0.684,1.474

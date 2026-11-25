@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "mode": "NVIDIA NIM",
+  "mode": "extractive (no NVIDIA key)",
   "items": [
     {
       "kind": "wikipedia",
@@ -15,7 +15,7 @@
         "queries": [
           "Who or what is Ramayana: Part 1, and what are the key facts to know?"
         ],
-        "answer": "\n\nRamayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- The first part features an ensemble cast that includes Ranbir Kapoor, Yash (in his Hindi film debut), Sai Pallavi, Ravi Dubey (in his film debut), Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, Arun Govil, Adinath Kothare. [1]\n- He wrote several popular works in Sanskrit, Awadhi, and Braj Bhasha, but is best known as the author of the Hanuman Chalisa and of the epic Ramcharitmanas, a retelling of the Sanskrit Ramayana, based on Rama's life, in the vernacular Awadhi language. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- The first part features an ensemble cast that includes Ranbir Kapoor, Yash (in his Hindi film debut), Sai Pallavi, Ravi Dubey (in his film debut), Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, Arun Govil, Adinath Kothare. [1]\n- He wrote several popular works in Sanskrit, Awadhi, and Braj Bhasha, but is best known as the author of the Hanuman Chalisa and of the epic Ramcharitmanas, a retelling of the Sanskrit Ramayana, based on Rama's life, in the vernacular Awadhi language. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about Tulsidas",
           "Tell me more about Cinematic style of S. S. Rajamouli",
@@ -115,15 +115,16 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.07531154499999815,
-          "search": 0.36413217900000205,
-          "rank": 0.10609673399999764,
+          "plan": 0.17617105000000777,
+          "search": 0.4207782559999913,
+          "rank": 0.23242046600000776,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.5455943389999973,
-          "total": 0.5795164819999954
+          "retrieve": 0.8294699489999999,
+          "total": 0.921847017999994
         },
-        "nvidia": true
+        "nvidia": false,
+        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
       },
       "metrics": {
         "sentences": 6,
@@ -145,7 +146,7 @@
         "queries": [
           "Who or what is Grand Theft Auto VI, and what are the key facts to know?"
         ],
-        "answer": "\n\nAs one of the most popular gaming personalities on YouTube, his videography consists of montage-style videos of him and other creators playing various video games, such as Grand Theft Auto V, Garry's Mod, and various titles from the Call of Duty franchise. [1]\n\n**Key points from the sources:**\n- He is mostly known for his actions against Rockstar Games and the Grand Theft Auto franchise. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "As one of the most popular gaming personalities on YouTube, his videography consists of montage-style videos of him and other creators playing various video games, such as Grand Theft Auto V, Garry's Mod, and various titles from the Call of Duty franchise. [1]\n\n**Key points from the sources:**\n- He is mostly known for his actions against Rockstar Games and the Grand Theft Auto franchise. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about VanossGaming",
           "Tell me more about Jack Thompson (activist)",
@@ -228,32 +229,33 @@
             "n": 5
           },
           {
-            "title": "In the Air Tonight",
-            "url": "https://en.wikipedia.org/wiki/In_the_Air_Tonight",
+            "title": "Illeism",
+            "url": "https://en.wikipedia.org/wiki/Illeism",
             "source": "wikipedia",
-            "snippet": "\"In the Air Tonight\" is a song by the English drummer and singer-songwriter Phil Collins. It was released as the lead single from Collins's debut solo studio album, Face Value, in January 1981. It was selected as the second single from the album in the United States and Canada, a",
+            "snippet": "Illeism (; from Latin ille: \"he; that man\") is the act of referring to oneself in the third person instead of first person. It is sometimes used in literature as a stylistic device. In real-life usage, illeism can reflect a number of different stylistic intentions or involuntary ",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "ac44b7c4651b",
+            "id": "dae0b163e2de",
             "domain": "en.wikipedia.org",
             "n": 6
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.01606608499999851,
-          "search": 0.4188203750000028,
-          "rank": 0.035781919999998024,
+          "plan": 0.04610659500001191,
+          "search": 0.3797561499999915,
+          "rank": 0.09429079500000626,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.4707105219999974,
-          "total": 0.5042183019999982
+          "retrieve": 0.5202001270000096,
+          "total": 0.6126694270000002
         },
-        "nvidia": true
+        "nvidia": false,
+        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
       },
       "metrics": {
         "sentences": 2,
@@ -275,7 +277,7 @@
         "queries": [
           "Who or what is Jensen Huang, and what are the key facts to know?"
         ],
-        "answer": "\n\nOn October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [1]\n\n**Key points from the sources:**\n- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [1]\n- officials did not warn Jensen Huang through a defensive briefing. [1]\n- Huang had an extramarital affair with Alice Huang (no relation), a Chinese national who was an executive of Megaspeed, a Singaporean company. [1]\n- On November 12, Attorney General Todd Blanche said the Justice Department had reached no conclusion about whether Alice Huang was a spy, and CNN reported, citing multiple sources, that the... [1]\n- Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [1]\n\n**Key points from the sources:**\n- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [1]\n- officials did not warn Jensen Huang through a defensive briefing. [1]\n- Huang had an extramarital affair with Alice Huang (no relation), a Chinese national who was an executive of Megaspeed, a Singaporean company. [1]\n- On November 12, Attorney General Todd Blanche said the Justice Department had reached no conclusion about whether Alice Huang was a spy, and CNN reported, citing multiple sources, that the... [1]\n- Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about Jensen Huang scandal",
           "Tell me more about Nvidia",
@@ -375,15 +377,16 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.01650201100000004,
-          "search": 0.2755253059999987,
-          "rank": 0.03474199899999775,
+          "plan": 0.04546377500000176,
+          "search": 5.034911184000009,
+          "rank": 0.2794222349999984,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.3268061010000025,
-          "total": 0.36035581200000166
+          "retrieve": 5.359848979999995,
+          "total": 5.449627133999996
         },
-        "nvidia": true
+        "nvidia": false,
+        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
       },
       "metrics": {
         "sentences": 6,
@@ -405,25 +408,25 @@
         "queries": [
           "Who or what is Moon, and what are the key facts to know?"
         ],
-        "answer": "\n\nA blue moon refers to the presence of a second full moon in a calendar month, the third full moon in a season containing four, or a moon that appears blue due to atmospheric effects. [1]\n\n**Key points from the sources:**\n- The calendrical meaning of \"blue moon\" is unconnected to the other meanings. [1]\n- The practice of designating the second full moon in a month as \"blue\" originated with amateur astronomer James Hugh Pruett in 1946. [1]\n- The moon—not necessarily full—can sometimes appear blue due to atmospheric emissions from large forest fires or volcanoes, though the phenomenon is rare and unpredictable (hence the saying \"once in a blue moon\"). [1]\n- A calendrical blue moon (by Pruett's definition) is predictable and relatively common, happening 7 times in every 19 years (i.e. [1]\n- Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "The Moon is the only natural satellite of Earth. [1]\n\n**Key points from the sources:**\n- The Moon and Earth are bound by gravitational attraction, which is stronger on the sides facing each other. [1]\n- The resulting tidal forces are the main driver of Earth's tides, and have pulled the Moon to always face Earth with the same near side. [1]\n- This tidal locking effectively synchronizes the Moon's rotation period (lunar day) to its orbital period (lunar month). [1]\n- In geophysical terms, the Moon is a planetary-mass object or satellite planet. [1]\n- Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "Tell me more about Blue moon",
           "Tell me more about Moon Girl and Devil Dinosaur",
+          "Tell me more about Moon (2009 film)",
           "What are the latest developments on Who or what is Moon, and what are the key facts to know?"
         ],
         "sources": [
           {
-            "title": "Blue moon",
-            "url": "https://en.wikipedia.org/wiki/Blue_moon",
+            "title": "Moon",
+            "url": "https://en.wikipedia.org/wiki/Moon",
             "source": "wikipedia",
-            "snippet": "A blue moon refers to the presence of a second full moon in a calendar month, the third full moon in a season containing four, or a moon that appears blue due to atmospheric effects. The calendrical meaning of \"blue moon\" is unconnected to the other meanings. It is often referred",
+            "snippet": "The Moon is the only natural satellite of Earth. It orbits Earth in an elliptical path, at a distance that varies over the year, averaging around 378,000 kilometers (235,000 mi). It completes an orbit (lunar month) in relation to Earth and the Sun (synodically) every 29.5 days. T",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "befe9fb6643b",
+            "id": "04c9f9b5af2a",
             "domain": "en.wikipedia.org",
             "n": 1
           },
@@ -458,21 +461,6 @@
             "n": 3
           },
           {
-            "title": "What We Do in the Shadows (TV series)",
-            "url": "https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows_(TV_series)",
-            "source": "wikipedia",
-            "snippet": "What We Do in the Shadows is an American comedy horror mockumentary fantasy television series created by Jemaine Clement, first broadcast on FX on March 27, 2019, until concluding its run with the end of its sixth season on December 16, 2024. Based on the 2014 New Zealand film wr",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "22b5be7b2b86",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
             "title": "Flashdance... What a Feeling",
             "url": "https://en.wikipedia.org/wiki/Flashdance..._What_a_Feeling",
             "source": "wikipedia",
@@ -484,6 +472,21 @@
               "license": "CC BY-SA 4.0"
             },
             "id": "751d27195f1c",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "What We Do in the Shadows (TV series)",
+            "url": "https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows_(TV_series)",
+            "source": "wikipedia",
+            "snippet": "What We Do in the Shadows is an American comedy horror mockumentary fantasy television series created by Jemaine Clement, first broadcast on FX on March 27, 2019, until concluding its run with the end of its sixth season on December 16, 2024. Based on the 2014 New Zealand film wr",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "22b5be7b2b86",
             "domain": "en.wikipedia.org",
             "n": 5
           },
@@ -505,15 +508,16 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.0161915209999961,
-          "search": 1.6932633329999973,
-          "rank": 0.03509865700000603,
+          "plan": 0.04379198700000586,
+          "search": 0.41151902199999313,
+          "rank": 0.1065650840000103,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 1.744594561999996,
-          "total": 1.777445496999995
+          "retrieve": 0.5619350639999965,
+          "total": 0.6512403329999898
         },
-        "nvidia": true
+        "nvidia": false,
+        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
       },
       "metrics": {
         "sentences": 6,
@@ -535,7 +539,7 @@
         "queries": [
           "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?"
         ],
-        "answer": "\n\nUnitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter. [1]\n\n**Key points from the sources:**\n- We present explicit computations and conjectures for 2 → 2 scattering matrices in large N U(N ) Chern-Simons theories coupled to fundamental bosonic or fermionic matter to all orders in the ’t Hooft coupling expansion. [1]\n- We conjecture that these unusual features are properties of S-matrices in all Chern-Simons matter theories. [1]\n- The S-matrix in one of the exchange channels in our paper has an anyonic character; the parameter map of the conjectured Bose-Fermi duality may be derived by equating the anyonic phase in the bosonic and fermionic theories. [1]\n- Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems. [2]\n- Superconformal N = 2, D = 5 matter with and without actions. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Unitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter. [1]\n\n**Key points from the sources:**\n- We present explicit computations and conjectures for 2 → 2 scattering matrices in large N U(N ) Chern-Simons theories coupled to fundamental bosonic or fermionic matter to all orders in the ’t Hooft coupling expansion. [1]\n- We conjecture that these unusual features are properties of S-matrices in all Chern-Simons matter theories. [1]\n- The S-matrix in one of the exchange channels in our paper has an anyonic character; the parameter map of the conjectured Bose-Fermi duality may be derived by equating the anyonic phase in the bosonic and fermionic theories. [1]\n- Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems. [2]\n- Superconformal N = 2, D = 5 matter with and without actions. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about Unitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter",
           "Tell me more about Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems",
@@ -691,15 +695,16 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.016373941000004777,
-          "search": 0.9898052559999968,
-          "rank": 0.035712316999997995,
+          "plan": 0.0438687299999998,
+          "search": 0.8276244540000022,
+          "rank": 0.0917437949999993,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 1.041943480999997,
-          "total": 1.0747708009999997
+          "retrieve": 0.9632911400000097,
+          "total": 1.05327087900001
         },
-        "nvidia": true
+        "nvidia": false,
+        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
       },
       "metrics": {
         "sentences": 6,
@@ -721,7 +726,7 @@
         "queries": [
           "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?"
         ],
-        "answer": "\n\nVital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy. [1]\n\n**Key points from the sources:**\n- In The Pearl Button, Patricio Guzman explores the role water played in shaping how the Selk’nam inhabited the coasts of the Tierra del Fuego in Patagonia through “cosmovisions,’ sequences that extend beyond human perception, even as they link the habitation of indigenous peoples to subsequent colonial and political projects. [1]\n- He works with archival photography and the superimposition of images/sounds in order to create a pluriverse of peoples and environments, which moves beyond human audiovisual and temporal perception. [1]\n- In doing so, The Pearl Button links the ways in which the Selk’nam inhabited Chile, depending on its waters, to the ocean as the source of the colonial project of Spain and site of political murders under the later dictatorship of Augusto Pinochet. [1]\n- “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents. [2]\n- Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper. [5]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy. [1]\n\n**Key points from the sources:**\n- In The Pearl Button, Patricio Guzman explores the role water played in shaping how the Selk’nam inhabited the coasts of the Tierra del Fuego in Patagonia through “cosmovisions,’ sequences that extend beyond human perception, even as they link the habitation of indigenous peoples to subsequent colonial and political projects. [1]\n- He works with archival photography and the superimposition of images/sounds in order to create a pluriverse of peoples and environments, which moves beyond human audiovisual and temporal perception. [1]\n- In doing so, The Pearl Button links the ways in which the Selk’nam inhabited Chile, depending on its waters, to the ocean as the source of the colonial project of Spain and site of political murders under the later dictatorship of Augusto Pinochet. [1]\n- “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents. [2]\n- Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper. [5]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy",
           "Tell me more about “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents",
@@ -851,32 +856,33 @@
             "n": 7
           },
           {
-            "title": "Glossary of video game terms",
-            "url": "https://en.wikipedia.org/wiki/Glossary_of_video_game_terms",
+            "title": "Bob Dylan",
+            "url": "https://en.wikipedia.org/wiki/Bob_Dylan",
             "source": "wikipedia",
-            "snippet": "Since the origin of video games in the early 1970s, the video game industry, the players, and surrounding culture have spawned a wide range of technical jargons and slang terms.",
+            "snippet": "Bob Dylan (legally Robert Dylan; born Robert Allen Zimmerman, May 24, 1941) is an American singer-songwriter. Described as one of the greatest songwriters of all time, Dylan has been a major figure in popular culture over his 69-year career. Dylan added increasingly sophisticated",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "d3bc1dd62f11",
+            "id": "82ae222298bb",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.01644774100000035,
-          "search": 0.49920698300000055,
-          "rank": 0.05273821400000145,
+          "plan": 0.04421586899999852,
+          "search": 0.45568880600001194,
+          "rank": 0.13854307999999094,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.568448980999996,
-          "total": 0.6027121909999948
+          "retrieve": 0.638521733999994,
+          "total": 0.7294355679999995
         },
-        "nvidia": true
+        "nvidia": false,
+        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
       },
       "metrics": {
         "sentences": 6,
@@ -898,7 +904,7 @@
         "queries": [
           "The Spray Bottle — what is this about and why does it matter?"
         ],
-        "answer": "\n\n“Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914. [1]\n\n**Key points from the sources:**\n- Particulate matter (PM) or particulates are microscopic particles of solid or liquid matter suspended in the air. [5]\n- Particulate matter is considered the most dangerous type of air pollution because particulates can penetrate deep into the lungs and travel through the blood stream to multiple organs, such as the brain. [5]\n- Black Lives Matter (BLM) is a decentralized political and social movement that aims to highlight racism, discrimination and racial inequality experienced by Black people in the United States, and to promote anti-racism. [6]\n- Pollinating insects: what do they mean to people and why does it matter?. [7]\n- Why Do “Good” Pictures Matter in Anthropology?. [8]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "“Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914. [1]\n\n**Key points from the sources:**\n- Particulate matter (PM) or particulates are microscopic particles of solid or liquid matter suspended in the air. [5]\n- Particulate matter is considered the most dangerous type of air pollution because particulates can penetrate deep into the lungs and travel through the blood stream to multiple organs, such as the brain. [5]\n- Black Lives Matter (BLM) is a decentralized political and social movement that aims to highlight racism, discrimination and racial inequality experienced by Black people in the United States, and to promote anti-racism. [6]\n- Pollinating insects: what do they mean to people and why does it matter?. [7]\n- Why Do “Good” Pictures Matter in Anthropology?. [8]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about “Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914",
           "Tell me more about Operation Sea Spray",
@@ -1045,15 +1051,16 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.016203347999997675,
-          "search": 8.436868697999998,
-          "rank": 0.11367883900000209,
+          "plan": 0.04381465999999534,
+          "search": 0.39645687400000895,
+          "rank": 0.13969959099999585,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 8.566816097999997,
-          "total": 8.601192978999997
+          "retrieve": 0.5800344740000014,
+          "total": 0.6701027579999987
         },
-        "nvidia": true
+        "nvidia": false,
+        "llm_error": "LLM HTTP 410: {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nemotron-3-nano-30b-a3b' has reached its end of life on 2026-09-01T09:00:00Z and is no longer available.\"}\n"
       },
       "metrics": {
         "sentences": 6,

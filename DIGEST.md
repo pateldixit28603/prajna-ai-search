@@ -1,6 +1,6 @@
 # Prajna Daily — 2026-11-25
 
-_Today's trending topics (Wikipedia most-read + Hacker News front page), answered automatically with citations. Mode: **NVIDIA NIM**. Updated daily by GitHub Actions — [archive](digest/data/)._
+_Today's trending topics (Wikipedia most-read + Hacker News front page), answered automatically with citations. Mode: **extractive (no NVIDIA key)**. Updated daily by GitHub Actions — [archive](digest/data/)._
 
 ## Who or what is Ramayana: Part 1, and what are the key facts to know?
 
@@ -22,7 +22,7 @@ As one of the most popular gaming personalities on YouTube, his videography cons
 **Key points from the sources:**
 - He is mostly known for his actions against Rockstar Games and the Grand Theft Auto franchise. [2]
 
-<sub>Sources: [1] [VanossGaming](https://en.wikipedia.org/wiki/VanossGaming) · [2] [Jack Thompson (activist)](https://en.wikipedia.org/wiki/Jack_Thompson_(activist)) · [3] [Tom Araya](https://en.wikipedia.org/wiki/Tom_Araya) · [4] [Video game monetization](https://en.wikipedia.org/wiki/Video_game_monetization) · [5] [List of security hacking incidents](https://en.wikipedia.org/wiki/List_of_security_hacking_incidents) · [6] [In the Air Tonight](https://en.wikipedia.org/wiki/In_the_Air_Tonight)</sub>
+<sub>Sources: [1] [VanossGaming](https://en.wikipedia.org/wiki/VanossGaming) · [2] [Jack Thompson (activist)](https://en.wikipedia.org/wiki/Jack_Thompson_(activist)) · [3] [Tom Araya](https://en.wikipedia.org/wiki/Tom_Araya) · [4] [Video game monetization](https://en.wikipedia.org/wiki/Video_game_monetization) · [5] [List of security hacking incidents](https://en.wikipedia.org/wiki/List_of_security_hacking_incidents) · [6] [Illeism](https://en.wikipedia.org/wiki/Illeism)</sub>
 
 ## Who or what is Jensen Huang, and what are the key facts to know?
 
@@ -39,16 +39,16 @@ On October 29, 2026, The New York Times reported that Jensen Huang, the co-found
 
 ## Who or what is Moon, and what are the key facts to know?
 
-A blue moon refers to the presence of a second full moon in a calendar month, the third full moon in a season containing four, or a moon that appears blue due to atmospheric effects. [1]
+The Moon is the only natural satellite of Earth. [1]
 
 **Key points from the sources:**
-- The calendrical meaning of "blue moon" is unconnected to the other meanings. [1]
-- The practice of designating the second full moon in a month as "blue" originated with amateur astronomer James Hugh Pruett in 1946. [1]
-- The moon—not necessarily full—can sometimes appear blue due to atmospheric emissions from large forest fires or volcanoes, though the phenomenon is rare and unpredictable (hence the saying "once in a blue moon"). [1]
-- A calendrical blue moon (by Pruett's definition) is predictable and relatively common, happening 7 times in every 19 years (i.e. [1]
+- The Moon and Earth are bound by gravitational attraction, which is stronger on the sides facing each other. [1]
+- The resulting tidal forces are the main driver of Earth's tides, and have pulled the Moon to always face Earth with the same near side. [1]
+- This tidal locking effectively synchronizes the Moon's rotation period (lunar day) to its orbital period (lunar month). [1]
+- In geophysical terms, the Moon is a planetary-mass object or satellite planet. [1]
 - Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. [2]
 
-<sub>Sources: [1] [Blue moon](https://en.wikipedia.org/wiki/Blue_moon) · [2] [Moon Girl and Devil Dinosaur](https://en.wikipedia.org/wiki/Moon_Girl_and_Devil_Dinosaur) · [3] [Moon (2009 film)](https://en.wikipedia.org/wiki/Moon_(2009_film)) · [4] [What We Do in the Shadows (TV series)](https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows_(TV_series)) · [5] [Flashdance... What a Feeling](https://en.wikipedia.org/wiki/Flashdance..._What_a_Feeling) · [6] [On Nature (Parmenides)](https://en.wikipedia.org/wiki/On_Nature_(Parmenides))</sub>
+<sub>Sources: [1] [Moon](https://en.wikipedia.org/wiki/Moon) · [2] [Moon Girl and Devil Dinosaur](https://en.wikipedia.org/wiki/Moon_Girl_and_Devil_Dinosaur) · [3] [Moon (2009 film)](https://en.wikipedia.org/wiki/Moon_(2009_film)) · [4] [Flashdance... What a Feeling](https://en.wikipedia.org/wiki/Flashdance..._What_a_Feeling) · [5] [What We Do in the Shadows (TV series)](https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows_(TV_series)) · [6] [On Nature (Parmenides)](https://en.wikipedia.org/wiki/On_Nature_(Parmenides))</sub>
 
 ## Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?
 
@@ -74,7 +74,7 @@ Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy.
 - “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents. [2]
 - Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper. [5]
 
-<sub>Sources: [1] [Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy](https://dc.etsu.edu/etsu-works/7825) · [2] [“There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents](https://doi.org/10.1177/10497323231187541) · [3] [Listening In Towards Sound: creating soundscapes to sound our presence](https://summit.sfu.ca/_flysystem/fedora/sfu_migrate/14776/etd8716_EWeiden.pdf) · [4] [OK Computer](https://en.wikipedia.org/wiki/OK_Computer) · [5] [Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper](http://resolver.tudelft.nl/uuid:3f36cd36-d668-457c-a795-39ff3ba2683c) · [6] [Enema of the State](https://en.wikipedia.org/wiki/Enema_of_the_State) · [7] [BBC](https://en.wikipedia.org/wiki/BBC) · [8] [Glossary of video game terms](https://en.wikipedia.org/wiki/Glossary_of_video_game_terms)</sub>
+<sub>Sources: [1] [Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy](https://dc.etsu.edu/etsu-works/7825) · [2] [“There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents](https://doi.org/10.1177/10497323231187541) · [3] [Listening In Towards Sound: creating soundscapes to sound our presence](https://summit.sfu.ca/_flysystem/fedora/sfu_migrate/14776/etd8716_EWeiden.pdf) · [4] [OK Computer](https://en.wikipedia.org/wiki/OK_Computer) · [5] [Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper](http://resolver.tudelft.nl/uuid:3f36cd36-d668-457c-a795-39ff3ba2683c) · [6] [Enema of the State](https://en.wikipedia.org/wiki/Enema_of_the_State) · [7] [BBC](https://en.wikipedia.org/wiki/BBC) · [8] [Bob Dylan](https://en.wikipedia.org/wiki/Bob_Dylan)</sub>
 
 ## The Spray Bottle — what is this about and why does it matter?
 
