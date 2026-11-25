@@ -18,7 +18,7 @@
         "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- The first part features an ensemble cast that includes Ranbir Kapoor, Yash (in his Hindi film debut), Sai Pallavi, Ravi Dubey (in his film debut), Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, Arun Govil, Adinath Kothare. [1]\n- He wrote several popular works in Sanskrit, Awadhi, and Braj Bhasha, but is best known as the author of the Hanuman Chalisa and of the epic Ramcharitmanas, a retelling of the Sanskrit Ramayana, based on Rama's life, in the vernacular Awadhi language. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about Tulsidas",
-          "Tell me more about Cinematic style of S. S. Rajamouli",
+          "Tell me more about Sai Pallavi",
           "What are the latest developments on Who or what is Ramayana: Part 1, and what are the key facts to know?"
         ],
         "sources": [
@@ -53,21 +53,6 @@
             "n": 2
           },
           {
-            "title": "Cinematic style of S. S. Rajamouli",
-            "url": "https://en.wikipedia.org/wiki/Cinematic_style_of_S._S._Rajamouli",
-            "source": "wikipedia",
-            "snippet": "S. S. Rajamouli is an Indian filmmaker who primarily works in Telugu cinema and is known for his action, fantasy, and epic genre films. Rachel Dwyer called Rajamouli \"India's most significant director today\". His films are typically characterised by their epic grandeur, unbridled",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "363c6e08c7fe",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
             "title": "Sai Pallavi",
             "url": "https://en.wikipedia.org/wiki/Sai_Pallavi",
             "source": "wikipedia",
@@ -80,7 +65,7 @@
             },
             "id": "21fcd3e0a0df",
             "domain": "en.wikipedia.org",
-            "n": 4
+            "n": 3
           },
           {
             "title": "Yash (actor)",
@@ -95,7 +80,7 @@
             },
             "id": "e56144b092d9",
             "domain": "en.wikipedia.org",
-            "n": 5
+            "n": 4
           },
           {
             "title": "Raghav Juyal",
@@ -110,18 +95,33 @@
             },
             "id": "ca3c1f63a73c",
             "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Lara Dutta",
+            "url": "https://en.wikipedia.org/wiki/Lara_Dutta",
+            "source": "wikipedia",
+            "snippet": "Lara Dutta Bhupathi (née Dutta; born 16 April 1978) is an Indian actress. The winner of Miss Intercontinental 1997 and Miss Universe 2000 pageants, she has since predominantly worked in Hindi films and series. Dutta is a recipient of a Filmfare Award and established herself as a ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "ade930270d95",
+            "domain": "en.wikipedia.org",
             "n": 6
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 6.439000003410911e-06,
-          "search": 0.3840090839999988,
-          "rank": 0.001314295000000243,
+          "plan": 3.937999991876495e-06,
+          "search": 0.44639051100000415,
+          "rank": 0.0011568850000003295,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.3853821250000067,
-          "total": 1.3531219350000043
+          "retrieve": 0.4475860780000005,
+          "total": 1.4068249659999879
         },
         "nvidia": false
       },
@@ -198,21 +198,6 @@
             "n": 3
           },
           {
-            "title": "Video game monetization",
-            "url": "https://en.wikipedia.org/wiki/Video_game_monetization",
-            "source": "wikipedia",
-            "snippet": "Video game monetization is a type of process that a video game publisher can use to generate revenue from a video game product. The methods of monetization may vary between games, especially when they come from different genres or platforms, but they all serve the same purpose to",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "ff52583957b8",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
             "title": "List of security hacking incidents",
             "url": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
             "source": "wikipedia",
@@ -225,33 +210,48 @@
             },
             "id": "dff0e8eb8721",
             "domain": "en.wikipedia.org",
-            "n": 5
+            "n": 4
           },
           {
-            "title": "List of video games with LGBTQ characters",
-            "url": "https://en.wikipedia.org/wiki/List_of_video_games_with_LGBTQ_characters",
+            "title": "Video game monetization",
+            "url": "https://en.wikipedia.org/wiki/Video_game_monetization",
             "source": "wikipedia",
-            "snippet": "The following is a list of confirmed video games with lesbian, gay, bisexual, transgender and queer characters, including any others falling under the LGBTQ umbrella term. The numbers in this list are possibly higher because some characters remained unconfirmed, unsourced, or con",
+            "snippet": "Video game monetization is a type of process that a video game publisher can use to generate revenue from a video game product. The methods of monetization may vary between games, especially when they come from different genres or platforms, but they all serve the same purpose to",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "a4e13f6770b5",
+            "id": "ff52583957b8",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Keith Richards",
+            "url": "https://en.wikipedia.org/wiki/Keith_Richards",
+            "source": "wikipedia",
+            "snippet": "Keith Richards (born 18 December 1943) is an English musician, songwriter, singer and record producer who is an original member, guitarist, secondary vocalist, and co-principal songwriter of the Rolling Stones. His songwriting partnership with the band's lead vocalist Mick Jagger",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "8fd8334bcfa2",
             "domain": "en.wikipedia.org",
             "n": 6
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 4.435999997554063e-06,
-          "search": 0.647574302999999,
-          "rank": 0.0007618460000031746,
+          "plan": 2.6149999996505358e-06,
+          "search": 0.4071002119999889,
+          "rank": 0.0007954799999936313,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.64837398600001,
-          "total": 0.983232268000009
+          "retrieve": 0.407920187000002,
+          "total": 0.740421901000019
         },
         "nvidia": false
       },
@@ -343,21 +343,6 @@
             "n": 4
           },
           {
-            "title": "Generation Z in the United States",
-            "url": "https://en.wikipedia.org/wiki/Generation_Z_in_the_United_States",
-            "source": "wikipedia",
-            "snippet": "Generation Z (or Gen Z for short), colloquially known as Zoomers, is the demographic cohort succeeding Millennials and preceding Generation Alpha. Members of Generation Z, were born between the mid-to-late 1990s and the early 2010s, with the generation typically being defined as ",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "28296c860aa1",
-            "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
             "title": "List of -gate scandals and controversies",
             "url": "https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies",
             "source": "wikipedia",
@@ -370,18 +355,33 @@
             },
             "id": "497bdf75ebc8",
             "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Artificial intelligence",
+            "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+            "source": "wikipedia",
+            "snippet": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is also a field of research spanning computer science, engineer",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "0092064f1d55",
+            "domain": "en.wikipedia.org",
             "n": 6
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 1.9020000081582111e-06,
-          "search": 0.3949660759999887,
-          "rank": 0.0012312500000035698,
+          "plan": 2.0740000081787002e-06,
+          "search": 0.3274943790000009,
+          "rank": 0.0009497579999901973,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.3962360029999985,
-          "total": 1.1366621689999903
+          "retrieve": 0.32846642900000234,
+          "total": 1.0620402239999862
         },
         "nvidia": false
       },
@@ -505,13 +505,13 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 1.9430000008924253e-06,
-          "search": 0.3839714470000075,
-          "rank": 0.0012260729999979958,
+          "plan": 1.7330000048332295e-06,
+          "search": 0.41519002900000146,
+          "rank": 0.0010604450000073484,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.3852337339999963,
-          "total": 0.9599102789999989
+          "retrieve": 0.4162751700000058,
+          "total": 0.9859897759999967
         },
         "nvidia": false
       },
@@ -525,7 +525,7 @@
     {
       "kind": "hackernews",
       "topic": "Matrix Multiplication is Θ(n^2.25)",
-      "points": 868,
+      "points": 869,
       "discussion": "https://news.ycombinator.com/item?id=50637220",
       "question": "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?",
       "focus": "all",
@@ -691,13 +691,13 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 1.8219999873281267e-06,
-          "search": 0.6891062920000053,
-          "rank": 0.0012757359999966411,
+          "plan": 2.1940000181075447e-06,
+          "search": 0.628761929999996,
+          "rank": 0.0011648100000059003,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.6904181510000029,
-          "total": 1.3862299449999966
+          "retrieve": 0.6299560950000114,
+          "total": 1.3224289340000155
         },
         "nvidia": false
       },
@@ -711,7 +711,7 @@
     {
       "kind": "hackernews",
       "topic": "Button Sounds – collection of professionally-recorded button clicks and presses",
-      "points": 682,
+      "points": 686,
       "discussion": "https://news.ycombinator.com/item?id=50638032",
       "question": "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?",
       "focus": "all",
@@ -836,6 +836,21 @@
             "n": 6
           },
           {
+            "title": "U2",
+            "url": "https://en.wikipedia.org/wiki/U2",
+            "source": "wikipedia",
+            "snippet": "U2 are an Irish rock band formed in Dublin in 1976. They comprise Bono (lead vocals), the Edge (lead guitar, keyboards, and vocals), Adam Clayton (bass guitar), and Larry Mullen Jr. (drums and percussion). Initially rooted in post-punk, U2's musical style has evolved throughout t",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "6e4d4285f062",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
             "title": "BBC",
             "url": "https://en.wikipedia.org/wiki/BBC",
             "source": "wikipedia",
@@ -848,33 +863,18 @@
             },
             "id": "1b38b12a31a3",
             "domain": "en.wikipedia.org",
-            "n": 7
-          },
-          {
-            "title": "Bob Dylan",
-            "url": "https://en.wikipedia.org/wiki/Bob_Dylan",
-            "source": "wikipedia",
-            "snippet": "Bob Dylan (legally Robert Dylan; born Robert Allen Zimmerman, May 24, 1941) is an American singer-songwriter. Described as one of the greatest songwriters of all time, Dylan has been a major figure in popular culture over his 69-year career. Dylan added increasingly sophisticated",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "82ae222298bb",
-            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 2.0429999949556077e-06,
-          "search": 0.5298131039999987,
-          "rank": 0.002145721999994521,
+          "plan": 2.7050000142025965e-06,
+          "search": 0.7144278959999895,
+          "rank": 0.0020511590000182878,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.532001820000005,
-          "total": 1.3634133059999982
+          "retrieve": 0.7165163950000135,
+          "total": 1.5421359629999927
         },
         "nvidia": false
       },
@@ -888,7 +888,7 @@
     {
       "kind": "hackernews",
       "topic": "The Spray Bottle",
-      "points": 575,
+      "points": 577,
       "discussion": "https://news.ycombinator.com/item?id=50598555",
       "question": "The Spray Bottle — what is this about and why does it matter?",
       "focus": "all",
@@ -1045,13 +1045,13 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 1.8229999909635808e-06,
-          "search": 0.5033584869999999,
-          "rank": 0.0026111100000036913,
+          "plan": 1.7830000160756754e-06,
+          "search": 0.5933659799999873,
+          "rank": 0.0023750860000006924,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.506014313999998,
-          "total": 1.1044257039999934
+          "retrieve": 0.5957756699999948,
+          "total": 1.190689667000015
         },
         "nvidia": false
       },

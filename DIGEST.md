@@ -13,7 +13,7 @@ Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed
 - The first part features an ensemble cast that includes Ranbir Kapoor, Yash (in his Hindi film debut), Sai Pallavi, Ravi Dubey (in his film debut), Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, Arun Govil, Adinath Kothare. [1]
 - He wrote several popular works in Sanskrit, Awadhi, and Braj Bhasha, but is best known as the author of the Hanuman Chalisa and of the epic Ramcharitmanas, a retelling of the Sanskrit Ramayana, based on Rama's life, in the vernacular Awadhi language. [2]
 
-<sub>Sources: [1] [Ramayana: Part 1](https://en.wikipedia.org/wiki/Ramayana:_Part_1) · [2] [Tulsidas](https://en.wikipedia.org/wiki/Tulsidas) · [3] [Cinematic style of S. S. Rajamouli](https://en.wikipedia.org/wiki/Cinematic_style_of_S._S._Rajamouli) · [4] [Sai Pallavi](https://en.wikipedia.org/wiki/Sai_Pallavi) · [5] [Yash (actor)](https://en.wikipedia.org/wiki/Yash_(actor)) · [6] [Raghav Juyal](https://en.wikipedia.org/wiki/Raghav_Juyal)</sub>
+<sub>Sources: [1] [Ramayana: Part 1](https://en.wikipedia.org/wiki/Ramayana:_Part_1) · [2] [Tulsidas](https://en.wikipedia.org/wiki/Tulsidas) · [3] [Sai Pallavi](https://en.wikipedia.org/wiki/Sai_Pallavi) · [4] [Yash (actor)](https://en.wikipedia.org/wiki/Yash_(actor)) · [5] [Raghav Juyal](https://en.wikipedia.org/wiki/Raghav_Juyal) · [6] [Lara Dutta](https://en.wikipedia.org/wiki/Lara_Dutta)</sub>
 
 ## Who or what is Grand Theft Auto VI, and what are the key facts to know?
 
@@ -22,7 +22,7 @@ As one of the most popular gaming personalities on YouTube, his videography cons
 **Key points from the sources:**
 - He is mostly known for his actions against Rockstar Games and the Grand Theft Auto franchise. [2]
 
-<sub>Sources: [1] [VanossGaming](https://en.wikipedia.org/wiki/VanossGaming) · [2] [Jack Thompson (activist)](https://en.wikipedia.org/wiki/Jack_Thompson_(activist)) · [3] [Tom Araya](https://en.wikipedia.org/wiki/Tom_Araya) · [4] [Video game monetization](https://en.wikipedia.org/wiki/Video_game_monetization) · [5] [List of security hacking incidents](https://en.wikipedia.org/wiki/List_of_security_hacking_incidents) · [6] [List of video games with LGBTQ characters](https://en.wikipedia.org/wiki/List_of_video_games_with_LGBTQ_characters)</sub>
+<sub>Sources: [1] [VanossGaming](https://en.wikipedia.org/wiki/VanossGaming) · [2] [Jack Thompson (activist)](https://en.wikipedia.org/wiki/Jack_Thompson_(activist)) · [3] [Tom Araya](https://en.wikipedia.org/wiki/Tom_Araya) · [4] [List of security hacking incidents](https://en.wikipedia.org/wiki/List_of_security_hacking_incidents) · [5] [Video game monetization](https://en.wikipedia.org/wiki/Video_game_monetization) · [6] [Keith Richards](https://en.wikipedia.org/wiki/Keith_Richards)</sub>
 
 ## Who or what is Jensen Huang, and what are the key facts to know?
 
@@ -35,7 +35,7 @@ On October 29, 2026, The New York Times reported that Jensen Huang, the co-found
 - On November 12, Attorney General Todd Blanche said the Justice Department had reached no conclusion about whether Alice Huang was a spy, and CNN reported, citing multiple sources, that the... [1]
 - Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [2]
 
-<sub>Sources: [1] [Jensen Huang scandal](https://en.wikipedia.org/wiki/Jensen_Huang_scandal) · [2] [Nvidia](https://en.wikipedia.org/wiki/Nvidia) · [3] [Nintendo Switch 2](https://en.wikipedia.org/wiki/Nintendo_Switch_2) · [4] [Alice Huang (executive)](https://en.wikipedia.org/wiki/Alice_Huang_(executive)) · [5] [Generation Z in the United States](https://en.wikipedia.org/wiki/Generation_Z_in_the_United_States) · [6] [List of -gate scandals and controversies](https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies)</sub>
+<sub>Sources: [1] [Jensen Huang scandal](https://en.wikipedia.org/wiki/Jensen_Huang_scandal) · [2] [Nvidia](https://en.wikipedia.org/wiki/Nvidia) · [3] [Nintendo Switch 2](https://en.wikipedia.org/wiki/Nintendo_Switch_2) · [4] [Alice Huang (executive)](https://en.wikipedia.org/wiki/Alice_Huang_(executive)) · [5] [List of -gate scandals and controversies](https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies) · [6] [Artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence)</sub>
 
 ## Who or what is Moon, and what are the key facts to know?
 
@@ -74,7 +74,7 @@ Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy.
 - “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents. [2]
 - Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper. [5]
 
-<sub>Sources: [1] [Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy](https://dc.etsu.edu/etsu-works/7825) · [2] [“There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents](https://doi.org/10.1177/10497323231187541) · [3] [Listening In Towards Sound: creating soundscapes to sound our presence](https://summit.sfu.ca/_flysystem/fedora/sfu_migrate/14776/etd8716_EWeiden.pdf) · [4] [OK Computer](https://en.wikipedia.org/wiki/OK_Computer) · [5] [Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper](http://resolver.tudelft.nl/uuid:3f36cd36-d668-457c-a795-39ff3ba2683c) · [6] [Enema of the State](https://en.wikipedia.org/wiki/Enema_of_the_State) · [7] [BBC](https://en.wikipedia.org/wiki/BBC) · [8] [Bob Dylan](https://en.wikipedia.org/wiki/Bob_Dylan)</sub>
+<sub>Sources: [1] [Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy](https://dc.etsu.edu/etsu-works/7825) · [2] [“There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents](https://doi.org/10.1177/10497323231187541) · [3] [Listening In Towards Sound: creating soundscapes to sound our presence](https://summit.sfu.ca/_flysystem/fedora/sfu_migrate/14776/etd8716_EWeiden.pdf) · [4] [OK Computer](https://en.wikipedia.org/wiki/OK_Computer) · [5] [Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper](http://resolver.tudelft.nl/uuid:3f36cd36-d668-457c-a795-39ff3ba2683c) · [6] [Enema of the State](https://en.wikipedia.org/wiki/Enema_of_the_State) · [7] [U2](https://en.wikipedia.org/wiki/U2) · [8] [BBC](https://en.wikipedia.org/wiki/BBC)</sub>
 
 ## The Spray Bottle — what is this about and why does it matter?
 
