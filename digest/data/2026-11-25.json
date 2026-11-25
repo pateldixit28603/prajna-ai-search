@@ -16,11 +16,11 @@
           "What is Ramayana Part 1",
           "Key facts about Ramayana"
         ],
-        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, based on the Hindu epic Ramayana by Valmiki. It is the first instalment of a two-part film series covering Prince Rama's life from childhood to his 14-year exile. The film features an ensemble cast including Ranbir Kapoor, Yash (in his Hindi debut), Sai Pallavi, Ravi Dubey, Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, Arun Govil, and Adinath Kothare. Hans Zimmer and A. R. Rahman composed the score, marking Zimmer's Indian film debut. Filming ran from April 2024 at Film City, Mumbai. Rakul Preet Singh confirmed her role in the film [5]. The soundtrack is by Hans Zimmer and A. R. Rahman with lyrics by Kumar Vishwas [2].",
+        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari [1]. It is the first instalment of a two-part film series based on the Hindu epic Ramayana by Valmiki [3]. The film chronicles Prince Rama's life from childhood up to his 14-year exile [1]. It features an ensemble cast including Ranbir Kapoor, Yash in his Hindi debut, Sai Pallavi, and Rakul Preet Singh [1][5]. The soundtrack is composed by Hans Zimmer and A [2]. R. Rahman [2][1]. Filming took place at Film City, Mumbai, from April 2024 [1]. The film was announced in May 2017 and restructured from a trilogy to a two-part series under Tiwari's direction [1].",
         "followups": [
           "When is the film releasing?",
-          "Who plays Prince Rama?",
-          "What is the Ramayana about?"
+          "Who are the main actors?",
+          "What is the Ramayana epic about?"
         ],
         "sources": [
           {
@@ -129,37 +129,37 @@
             "n": 7
           },
           {
-            "title": "Urmila",
-            "url": "https://en.wikipedia.org/wiki/Urmila",
+            "title": "Yash (actor)",
+            "url": "https://en.wikipedia.org/wiki/Yash_(actor)",
             "source": "wikipedia",
-            "snippet": "Urmila (Sanskrit: ऊर्मिला, romanized: Urmilā, lit. 'enchantress'), is a Hindu goddess and the princess of Videha in the epic Ramayana. She is also considered an avatar of Nagalakshmi. Urmila was born as the daughter of King Janaka of Mithila and Queen Sunayana. Sita, the female p",
+            "snippet": "Yash (pronounced [/yah-sh/]; born Naveen Kumar, 8 January 1986) is an Indian actor and film producer who works in Kannada cinema. Known for his work in mass hero films, he is referred to as \"Rocking Star\" in the media. One of the highest-paid actors of Kannada cinema, Yash is a r",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "012347b65a7a",
+            "id": "e56144b092d9",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.40087931900001195,
-          "search": 0.4162032979999708,
-          "rank": 1.4642784160000133,
+          "plan": 0.5035771879999942,
+          "search": 0.4234334209999986,
+          "rank": 0.7889220950000038,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.281426554999996,
-          "total": 5.8429160430000024
+          "retrieve": 1.715998337000002,
+          "total": 3.565802507000001
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 8,
-        "citation_coverage": 0.25,
+        "sentences": 7,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -178,11 +178,11 @@
           "What is Grand Theft Auto VI",
           "Grand Theft Auto VI key facts"
         ],
-        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games, the eighth main entry in the series following GTA V (2013). Set in the fictional US state of Leonida (based on Florida), it follows criminal duo Jason Duval and Lucia Caminos as they navigate a state-wide conspiracy. The game features an open world with Vice City (Miami-inspired) and Leonida, parodies 2020s American culture, and had over 1,000 developers—Rockstar's teams more than doubled since Red Dead Redemption 2. The protagonists' dynamic is inspired by Bonnie and Clyde. A 27-minute trailer premiered on Netflix in August 2026 and topped charts in 87 countries. Lucia is the series' first non-optional female protagonist, designed as a strong, independent character avoiding clichés. Development began in 2014 after GTA V, with principal production starting after Red Dead Redemption 2's 2018 launch.",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following Grand Theft Auto V (2013), and the sixteenth overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to escape corrupt police officers in a state-wide conspiracy [1]. Preliminary work began in 2014 after GTA V, and principal production started after the 2018 launch of Red Dead Redemption 2; Rockstar's global development teams had more than doubled since then [1]. The trailer premiered on Netflix on August 27, 2026, then was released to YouTube, crashing both platforms due to high demand [2]. Lucia is the first non-optional playable female protagonist in the series, designed to be independent and stoic, avoiding common clichés [3].",
         "followups": [
-          "When is the full release date?",
-          "What platforms will it be on?",
-          "Is the trailer all we have?"
+          "When is it actually releasing?",
+          "What is Leonida like?",
+          "Who are Jason and Lucia?"
         ],
         "sources": [
           {
@@ -216,21 +216,6 @@
             "n": 2
           },
           {
-            "title": "Grand Theft Auto V",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
-            "source": "wikipedia",
-            "snippet": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth entry overall. Set within the fictional state of Sa",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e1cf99e333f0",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
             "title": "Lucia Caminos",
             "url": "https://en.wikipedia.org/wiki/Lucia_Caminos",
             "source": "wikipedia",
@@ -242,6 +227,21 @@
               "license": "CC BY-SA 4.0"
             },
             "id": "c18959d481d1",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Niko Bellic",
+            "url": "https://en.wikipedia.org/wiki/Niko_Bellic",
+            "source": "wikipedia",
+            "snippet": "Niko Bellic (NEE-koh BEL-ək); (Serbian: Нико Белић) is a fictional character and the playable protagonist of Rockstar North's video game Grand Theft Auto IV (2008), the sixth main entry in Rockstar Games' Grand Theft Auto series. He also makes non-playable appearances in the game",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "9a1d6c8ac9f4",
             "domain": "en.wikipedia.org",
             "n": 4
           },
@@ -308,22 +308,22 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.3433250799999996,
-          "search": 0.3113978169999996,
-          "rank": 0.3863871829999539,
+          "plan": 1.6964238289999969,
+          "search": 0.48078217500000164,
+          "rank": 1.654276976999995,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 1.0411859719999939,
-          "total": 2.8262280280000027
+          "retrieve": 3.831542601999999,
+          "total": 5.875639918999994
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 7,
-        "citation_coverage": 0.0,
-        "citation_validity": 0.0,
-        "faithfulness": 0.0
+        "sentences": 6,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
       }
     },
     {
@@ -337,14 +337,14 @@
         "question": "Who or what is Jensen Huang, and what are the key facts to know?",
         "focus": "wiki",
         "queries": [
-          "who is Jensen Huang",
+          "Who is Jensen Huang",
           "Jensen Huang key facts"
         ],
-        "answer": "Jensen Huang is the co-founder, president, and CEO of Nvidia, a leading American technology company. Key facts include his birth in Taipei (1963), co-founding Nvidia in 1993 at a Denny's restaurant, leading Nvidia through near-bankruptcy to become a $5 trillion market cap company during the AI boom, and recent allegations of extramarital affairs that led to his resignation in November 2026.",
+        "answer": "Jensen Huang is the co-founder, president, and CEO of Nvidia, the American technology company that dominates AI hardware [1][3]. Born in Taipei in 1963, he immigrated to the U.S., earned a Stanford master's degree, and launched Nvidia in 1993 with Chris Malachowsky and Curtis Priem [1]. Under his leadership, Nvidia evolved from GPU development into high-performance computing and AI, becoming the first company to surpass $5 trillion in market capitalization in October 2025 [1][3]. In late 2026, Huang faced allegations of extramarital affairs with two executives, Alice Huang and Kimberly Powell, which triggered board discussions about his resignation; he stepped down on November 12, 2026 [2][5]. His net worth is estimated at $143.4 billion as of November 2026, ranking him the 13th-wealthiest person globally [1].",
         "followups": [
-          "What is Nvidia known for now?",
-          "When did he co-found Nvidia?",
-          "Are the resignation allegations true?"
+          "What is Nvidia's main business now?",
+          "When did he step down as CEO?",
+          "What drove Nvidia's AI growth?"
         ],
         "sources": [
           {
@@ -453,39 +453,39 @@
             "n": 7
           },
           {
-            "title": "2026 California Proposition 40",
-            "url": "https://en.wikipedia.org/wiki/2026_California_Proposition_40",
+            "title": "Artificial intelligence",
+            "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
             "source": "wikipedia",
-            "snippet": "Proposition 40, also known as the California billionaire tax or California wealth tax, is a combined initiated constitutional amendment and state statute that appeared on the November 3, 2026, ballot in the US state of California. The measure would have imposed a one-time 5% tax ",
+            "snippet": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is also a field of research spanning computer science, engineer",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "6507993496ba",
+            "id": "0092064f1d55",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.35000829400001976,
-          "search": 0.31686374899999237,
-          "rank": 0.7102993369999808,
+          "plan": 0.4500621789999997,
+          "search": 0.30314973999999495,
+          "rank": 1.2764549089999946,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 1.3772111339999924,
-          "total": 2.717070750000005
+          "retrieve": 2.0297099799999927,
+          "total": 4.070494428999993
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 2,
-        "citation_coverage": 0.0,
-        "citation_validity": 0.0,
-        "faithfulness": 0.0
+        "sentences": 5,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
       }
     },
     {
@@ -502,11 +502,11 @@
           "what is the moon",
           "key facts about the moon"
         ],
-        "answer": "Moon is Earth's only natural satellite, orbiting at an average distance of 378,000 km and completing a lunar month every 29.5 days [1]. It is tidally locked to Earth, always showing the same near side, and its gravity drives Earth's tides [1]. The Moon has a diameter of 3,474 km and mass of 1.2% of Earth's [1]. It appears in phases from new to full as it orbits Earth [3]. The first crewed landing was Apollo 11 in 1969, with six Apollo missions landing between 1969–1972 [4][7]. A 2009 sci-fi film titled *Moon* stars Sam Rockwell as a miner on the far side of the Moon [2]. Blue moons—second full moons in a calendar month—occur roughly every 2–3 years [5].",
+        "answer": "Moon is Earth's only natural satellite, orbiting at an average distance of 378,000 km [1]. It is tidally locked to Earth, meaning the same side always faces us, and completes one orbit every 29.5 days [1][3]. The Moon's diameter is 3,474 km, with mass 1.2% of Earth's, and surface gravity about one-sixth of Earth's [1].\n\nKey facts:\n- The first human-made object to touch the Moon was Luna 2 in 1959; the first crewed landing was Apollo 11 in 1969 [4][7].\n- Six crewed Apollo landings occurred between 1969 and 1972, with 12 people walking on the Moon [7].\n- After 1976, no soft landings occurred until Chang'e 3 in 2013, and Chang'e 4 landed on the far side in 2019 [4].\n- A \"blue moon\" is a calendrical phenomenon—7 times in every 19 years—when a second full moon appears in a month [5].\n- The 2009 sci-fi film *Moon* stars Sam Rockwell as a miner on the far side of the Moon [2].",
         "followups": [
-          "Is the Moon geologically active?",
-          "How does tidal locking work?",
-          "What is the far side like?"
+          "What is tidally locked?",
+          "When was Apollo 11?",
+          "What is a blue moon?"
         ],
         "sources": [
           {
@@ -632,19 +632,19 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.3283631510000191,
-          "search": 0.4828075359999957,
-          "rank": 2.1313401379999846,
+          "plan": 0.4232126280000017,
+          "search": 0.358511680999996,
+          "rank": 3.0210568259999917,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.9425527729999885,
-          "total": 4.645025613999962
+          "retrieve": 3.802824666999996,
+          "total": 6.003463109999998
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 7,
+        "sentences": 8,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
@@ -653,7 +653,7 @@
     {
       "kind": "hackernews",
       "topic": "Matrix Multiplication is Θ(n^2.25)",
-      "points": 887,
+      "points": 890,
       "discussion": "https://news.ycombinator.com/item?id=50637220",
       "question": "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?",
       "focus": "all",
@@ -664,11 +664,11 @@
           "Matrix Multiplication complexity O(n^2.25)",
           "Significance of O(n^2.25) matrix multiplication"
         ],
-        "answer": "The claim that matrix multiplication is Θ(n^2.25) refers to the **asymptotic complexity** of the best-known algorithms that multiply two n×n matrices. In big-O notation, this means the operation can be done in time proportional to n raised to the power 2.25, which is significantly faster than the naive \"schoolbook\" method that requires n³ operations.\n\n**Why it matters:**\n- **Practical impact:** Faster matrix multiplication accelerates countless applications—from deep learning model training and scientific simulations to graphics rendering and graph algorithms. Even a small reduction in the exponent translates to massive speedups on large matrices.\n- **Theoretical significance:** The \"optimal\" exponent ω (omega) is a major open problem in theoretical computer science. The current best bound (as of 2025) is O(n^2.371339) [2], meaning ω ≈ 2.371339. A result of Θ(n^2.25) would represent a breakthrough, improving upon the best-known asymptotic bound.\n- **Algorithmic progress:** Over decades, researchers have discovered increasingly efficient algorithms. Strassen's algorithm (1969) was the first to beat n³, reducing the exponent to ~2.807. Since then, methods based on algebraic geometry, tensor decompositions, and group theory have incrementally lowered ω [3][4]. A Θ(n^2.25) algorithm would be a substantial leap forward.\n\n**Current state of knowledge:**\n- The exact asymptotic complexity of matrix multiplication remains unknown [1].\n- The best proven upper bound as of September 2025 is O(n^2.371339) [2].\n- Claims of proofs or new algorithms (such as the November 2026 OpenAI update mentioned in [1]) are subject to rigorous verification.\n\nIn summary, Θ(n^2.25) describes a hypothetical or newly proposed algorithm that would multiply matrices faster than any previously published method, with profound implications for both theory and practice. However, as of the latest reliable sources, the best established bound remains above 2.37.\n\n[2][3][4]",
+        "answer": "The claim that matrix multiplication is Θ(n^2.25) refers to the best-known asymptotic complexity for multiplying two n×n matrices, meaning the operation can be performed in time proportional to n^2.25, which is faster than the naive O(n³) approach [2]. This matters because faster matrix multiplication accelerates countless downstream applications, from scientific computing and pattern recognition to deep learning and graph algorithms [2]. The current best bound, as of September 2025, is O(n^2.371339) [2], and research continues to push this exponent lower [3][4].\n\nWhy this specific exponent (2.25) appears in your question likely stems from recent algorithmic improvements or a specific variant. The field has seen steady progress: Strassen's algorithm achieved O(n^log₂7) ≈ O(n^2.807) in 1969 [1], and subsequent Strassen-like algorithms have reduced both arithmetic and IO complexity [5]. The IO complexity of certain $-algorithms has been shown to break prior lower bounds [5], and new methods aim to reduce leading coefficients while maintaining low asymptotic cost [5]. These advances, driven by algebraic geometry and representation theory [3][4], make practical high-performance implementations increasingly viable [6].\n\nThe practical impact is significant: faster matrix multiplication directly improves performance in deep learning training, scientific simulations, and video graphics, where highly optimized libraries like CuBLAS and CUDA dominate [6]. While the theoretical optimal exponent ω remains unknown, each reduction brings us closer to more efficient computation across science and technology.",
         "followups": [
-          "What is the naive method complexity?",
-          "What is the current best exponent?",
-          "Where is this used practically?"
+          "What is the current best bound?",
+          "How does Strassen's algorithm work?",
+          "What applications use this?"
         ],
         "sources": [
           {
@@ -786,47 +786,45 @@
             "n": 7
           },
           {
-            "title": "On the Capacity of Secure Distributed Matrix Multiplication",
-            "url": "https://arxiv.org/abs/1806.00469v1",
-            "source": "arxiv",
-            "snippet": "Matrix multiplication is one of the key operations in various engineering applications. Outsourcing large-scale matrix multiplication tasks to multiple distributed servers or cloud is desirable to speed up computation. However, security becomes an issue when these servers are unt",
-            "published": "2018-06-01",
-            "authors": [
-              "Wei-Ting Chang",
-              "Ravi Tandon"
-            ],
+            "title": "Online matrix-vector multiplication problem",
+            "url": "https://en.wikipedia.org/wiki/Online_matrix-vector_multiplication_problem",
+            "source": "wikipedia",
+            "snippet": "In computational complexity theory, the online matrix-vector multiplication problem (OMv) asks an online algorithm to return, at each round, the product of an n×n matrix and a newly-arrived n-dimensional vector. OMv is conjectured to require roughly cubic time. This conjectured h",
+            "published": null,
+            "authors": [],
             "extra": {
-              "license": "arXiv"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "f7c145ba0174",
-            "domain": "arxiv.org",
+            "id": "87a9e83eccb5",
+            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.48022003699998095,
-          "search": 2.3127884470000026,
-          "rank": 1.3975325839999755,
+          "plan": 0.6037909049999968,
+          "search": 1.9670675419999952,
+          "rank": 2.1146543260000072,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.190636376000043,
-          "total": 12.357718831
+          "retrieve": 4.685608783999996,
+          "total": 7.611731947999999
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 16,
-        "citation_coverage": 0.3125,
+        "sentences": 9,
+        "citation_coverage": 0.7777777777777778,
         "citation_validity": 1.0,
-        "faithfulness": 0.6
+        "faithfulness": 0.5714285714285714
       }
     },
     {
       "kind": "hackernews",
       "topic": "Button Sounds – collection of professionally-recorded button clicks and presses",
-      "points": 708,
+      "points": 711,
       "discussion": "https://news.ycombinator.com/item?id=50638032",
       "question": "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?",
       "focus": "all",
@@ -837,11 +835,11 @@
           "Button Sounds collection professionally recorded",
           "importance of button click sounds"
         ],
-        "answer": "Button Sounds is a curated library of professionally recorded button click and press sounds available at https://buttons.joshwcomeau.com/. It matters because high-quality button sounds are critical for user experience in digital interfaces—they provide auditory feedback that confirms actions, guides interaction, and shapes the perceived quality of a product. Well-designed button sounds can make interfaces feel more responsive, intuitive, and polished, while poor or missing sounds can leave users uncertain whether their input registered. The collection addresses a often-overlooked aspect of UI design: the sonic layer that completes the tactile and visual experience. Designers can use these sounds to create consistent, brand-aligned feedback across apps and websites, improving accessibility and user satisfaction.",
+        "answer": "Button Sounds is a curated collection of professionally-recorded button clicks and presses, available at buttons.joshwcomeau.com [1]. It matters because high-quality button audio is essential for user experience in digital interfaces, providing auditory feedback that confirms user actions and enhances perceived responsiveness. Well-designed button sounds can improve usability, reduce user errors, and contribute to the overall polish of an application or website.",
         "followups": [
-          "Where can I download these sounds?",
-          "Are there different sound types?",
-          "Is there a pricing structure?"
+          "Where can I find the collection?",
+          "What platforms use this?",
+          "Are there different sound types?"
         ],
         "sources": [
           {
@@ -854,7 +852,7 @@
               "gaurang_tandon"
             ],
             "extra": {
-              "points": 708,
+              "points": 711,
               "comments": 115,
               "discussion": "https://news.ycombinator.com/item?id=50638032"
             },
@@ -990,28 +988,28 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.34010542300001134,
-          "search": 0.7670828880000045,
-          "rank": 0.6609109270000317,
+          "plan": 0.45140042700001004,
+          "search": 0.3845202389999969,
+          "rank": 0.7732106910000027,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 1.7682354319999831,
-          "total": 3.208338798999989
+          "retrieve": 1.609286425999997,
+          "total": 2.865803948000007
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 5,
-        "citation_coverage": 0.0,
-        "citation_validity": 0.0,
-        "faithfulness": 0.0
+        "sentences": 3,
+        "citation_coverage": 0.3333333333333333,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
       }
     },
     {
       "kind": "hackernews",
       "topic": "The Spray Bottle",
-      "points": 584,
+      "points": 585,
       "discussion": "https://news.ycombinator.com/item?id=50598555",
       "question": "The Spray Bottle — what is this about and why does it matter?",
       "focus": "all",
@@ -1022,11 +1020,11 @@
           "what is the spray bottle",
           "spray bottle significance"
         ],
-        "answer": "The search results reveal several distinct topics related to \"spray bottles,\" depending on context:\n\n**Functional manipulation & robotics** ([2]) CoDex is a recent AI framework (2026) that enables robots to learn dexterous manipulation of spray-type objects like spray bottles and glue guns. It addresses the challenge of coordinating grasp, movement, and actuation to apply a product to a target—such as spraying a plant or surface—without requiring human demonstrations. The system uses vision-language models to understand the task, then optimizes grasp candidates and refines them with reinforcement learning, allowing policies to transfer from simulation to the real world.\n\n**Body spray / personal care** ([3]) Body spray is a light, affordable perfume product used across the body (unlike armpit deodorant), often serving double duty as deodorant. It's a common personal care item with synthetic polymers that improve texture, scent longevity, and skin feel ([7]).\n\n**Agricultural & pesticide spraying** ([1][8]) Spray equipment is critical in farming. Results show that spray frequency and pesticide type significantly affect farmer health ([8]), and proper spraying techniques matter for effective application ([1]).\n\n**Medication delivery** ([4]) Historically, \"undines\" and drop bottles were developed to make eye-drop administration reliable—a precursor to modern spray mechanisms for precise dosing.\n\n**Cleaning products** ([6]) Homemade cleaning sprays using lemon, lemongrass, and vinegar are popular, though concerns about chemical exposure persist.\n\n**Nasal spray physics** ([5]) Research on atomization characteristics helps design better nasal delivery systems.\n\nThe \"spray bottle\" matters because it bridges functional manipulation (robotics), personal care, agriculture, and medicine—requiring precise control of flow, pressure, and direction. For robots, mastering spray-bottle manipulation means mastering the integration of perception, grasp, and actuation in unstructured environments.",
+        "answer": "The Spray Bottle refers to a functional manipulation task where robots must learn to aim and actuate a spray bottle to apply its function (e.g., watering a plant) to a target [2]. It matters because it requires integrating semantic understanding of the object's function, precise pose control, and dexterous actuation to achieve stable grasp and effective application [2].\n\nKey points:\n- CoDex is a zero-demonstration framework that discovers spray-bottle manipulation strategies using vision-language models to infer semantic constraints, which guide analytic optimization and reinforcement learning to generate transferable grasp-move-actuate policies [2].\n- The task involves previously unseen objects with internal mechanisms, showcasing the system's ability to execute physically viable dexterous behaviors without human demonstrations [2].\n- Spray bottles are one of several CD-FOM tasks (alongside hot glue guns, air dusters, flashlights, and pepper grinders) that require actuating an object's internal mechanism while controlling its pose [2].\n\n[2]",
         "followups": [
-          "Which context are you interested in?",
-          "Can you elaborate on CoDex?",
-          "What are common spray bottle uses?"
+          "How does CoDex work?",
+          "What are the challenges?",
+          "Can it handle other tasks?"
         ],
         "sources": [
           {
@@ -1189,22 +1187,22 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.294924610999999,
-          "search": 3.1671627960000137,
-          "rank": 0.6224270280000042,
+          "plan": 0.45942242299999236,
+          "search": 0.451233282000004,
+          "rank": 1.4120416640000002,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.08460485400002,
-          "total": 12.198593517000006
+          "retrieve": 2.3227892620000006,
+          "total": 4.325120541999993
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 7,
-        "citation_coverage": 0.2857142857142857,
+        "sentences": 5,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
-        "faithfulness": 0.5
+        "faithfulness": 1.0
       }
     }
   ]
