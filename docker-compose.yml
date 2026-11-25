@@ -1,0 +1,12 @@
+# Default: Prajna app using the HOSTED NVIDIA API catalog (no GPU needed, just NVIDIA_API_KEY in .env)
+#   docker compose up --build        ->  http://localhost:8000
+services:
+  prajna:
+    build: .
+    env_file: .env
+    ports: ["8000:8000"]
+    volumes: ["prajna-data:/data"]
+    restart: unless-stopped
+
+volumes:
+  prajna-data:

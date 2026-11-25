@@ -1,0 +1,51 @@
+# Fully self-hosted on YOUR NVIDIA GPU(s): LLM + embedding + reranking NIM containers + Prajna.
+# Needs: NVIDIA driver, NVIDIA Container Toolkit, an NGC API key (https://org.ngc.nvidia.com/setup/api-keys)
+#   echo $NGC_API_KEY | docker login nvcr.io -u '$oauthtoken' --password-stdin
+#   docker compose -f deploy/docker-compose.gpu.yml up --build
+# VRAM guide: llama-3.1-8b-instruct ~ 24 GB (fits one L4/A10/4090 class card); embed + rerank ~ 4 GB each.
+x-nim: &nim
+  restart: unless-stopped
+  environment:
+    NGC_API_KEY: ${NGC_API_KEY}
+  volumes: ["nim-cache:/opt/nim/.cache"]
+  shm_size: 16gb
+  deploy:
+    resources:
+      reservations:
+        devices: [{ driver: nvidia, count: all, capabilities: [gpu] }]
+
+services:
+  nim-llm:
+    <<: *nim
+    image: nvcr.io/nim/meta/llama-3.1-8b-instruct:latest
+    ports: ["8001:8000"]
+
+  nim-embed:
+    <<: *nim
+    image: nvcr.io/nim/nvidia/llama-3.2-nv-embedqa-1b-v2:latest
+    ports: ["8002:8000"]
+
+  nim-rerank:
+    <<: *nim
+    image: nvcr.io/nim/nvidia/llama-3.2-nv-rerankqa-1b-v2:latest
+    ports: ["8003:8000"]
+
+  prajna:
+    build: ..
+    ports: ["8000:8000"]
+    volumes: ["prajna-data:/data"]
+    depends_on: [nim-llm, nim-embed, nim-rerank]
+    environment:
+      LLM_BASE_URL: http://nim-llm:8000/v1
+      LLM_MODEL: meta/llama-3.1-8b-instruct
+      LLM_FAST_MODEL: meta/llama-3.1-8b-instruct
+      EMBED_BASE_URL: http://nim-embed:8000/v1
+      EMBED_MODEL: nvidia/llama-3.2-nv-embedqa-1b-v2
+      RERANK_URL: http://nim-rerank:8000/v1/ranking
+      RERANK_MODEL: nvidia/llama-3.2-nv-rerankqa-1b-v2
+      CONTACT_EMAIL: ${CONTACT_EMAIL:-you@example.com}
+    restart: unless-stopped
+
+volumes:
+  nim-cache:
+  prajna-data:
