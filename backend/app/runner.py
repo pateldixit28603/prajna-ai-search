@@ -43,7 +43,8 @@ async def answer(engine, question: str, focus: str = "all") -> dict:
         "passages": {str(k): v for k, v in by_n.items()},
         "warnings": res.warnings,
         "timings": {**res.timings, "retrieve": t_ret, "total": total},
-        "nvidia": engine.nv.enabled,
+        "nvidia": bool(engine.nv.enabled and engine.last_llm_ok),
+        "llm_error": "" if engine.last_llm_ok else getattr(engine, "last_llm_error", ""),
     }
 
 

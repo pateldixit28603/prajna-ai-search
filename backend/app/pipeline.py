@@ -72,6 +72,8 @@ class AnswerEngine:
         self.s = settings
         self.nv = nvidia
         self.sources = sources          # name -> SearchSource
+        self.last_llm_ok = False        # did the most recent answer really come from the LLM?
+        self.last_llm_error = ""
 
     # ------------------------------------------------------------ 1. planning
     async def plan_queries(self, question: str, history: list[dict]) -> list[str]:
@@ -217,12 +219,18 @@ class AnswerEngine:
             messages += [{"role": "user", "content": h["question"]},
                          {"role": "assistant", "content": h["answer"][:1500]}]
         messages.append({"role": "user", "content": ANSWER_USER.format(context=context, question=res.question)})
+        self.last_llm_ok = False
+        got_any = False
         try:
             async for tok in self.nv.chat_stream(messages):
+                got_any = True
                 yield tok
+            self.last_llm_ok = got_any
         except Exception as e:
             log.error("LLM stream failed, falling back to extractive: %s", e)
-            yield "\n\n" + extractive_answer(res.question, flat)
+            self.last_llm_error = str(e)[:300]
+        if not self.last_llm_ok:
+            yield ("\n\n" if got_any else "") + extractive_answer(res.question, flat)
 
     # -------------------------------------------------------- 7. follow-ups
     async def followups(self, question: str, answer: str, res: SearchResult) -> list[str]:

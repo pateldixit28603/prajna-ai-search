@@ -131,7 +131,7 @@ async def search(req: SearchRequest, request: Request):
             if not thread_id:
                 thread_id = store.create_thread(query, req.focus)
             meta = {"queries": res.queries, "timings": res.timings, "focus": req.focus,
-                    "nvidia": settings.nvidia_enabled, "ttft": t_first, "total": time.perf_counter() - t0}
+                    "nvidia": bool(settings.nvidia_enabled and engine.last_llm_ok), "ttft": t_first, "total": time.perf_counter() - t0}
             store.add_turn(thread_id, query, answer, public_sources, follow, meta)
             yield sse({"type": "done", "thread_id": thread_id, "meta": meta})
         except Exception as e:  # never leave the client hanging
