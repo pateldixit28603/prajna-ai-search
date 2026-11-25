@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "mode": "extractive (no NVIDIA key)",
+  "mode": "NVIDIA NIM",
   "items": [
     {
       "kind": "wikipedia",
@@ -15,10 +15,10 @@
         "queries": [
           "Who or what is Ramayana: Part 1, and what are the key facts to know?"
         ],
-        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- The first part features an ensemble cast that includes Ranbir Kapoor, Yash (in his Hindi film debut), Sai Pallavi, Ravi Dubey (in his film debut), Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, Arun Govil, Adinath Kothare. [1]\n- He wrote several popular works in Sanskrit, Awadhi, and Braj Bhasha, but is best known as the author of the Hanuman Chalisa and of the epic Ramcharitmanas, a retelling of the Sanskrit Ramayana, based on Rama's life, in the vernacular Awadhi language. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "\n\nRamayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- The first part features an ensemble cast that includes Ranbir Kapoor, Yash (in his Hindi film debut), Sai Pallavi, Ravi Dubey (in his film debut), Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, Arun Govil, Adinath Kothare. [1]\n- He wrote several popular works in Sanskrit, Awadhi, and Braj Bhasha, but is best known as the author of the Hanuman Chalisa and of the epic Ramcharitmanas, a retelling of the Sanskrit Ramayana, based on Rama's life, in the vernacular Awadhi language. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about Tulsidas",
-          "Tell me more about Sai Pallavi",
+          "Tell me more about Cinematic style of S. S. Rajamouli",
           "What are the latest developments on Who or what is Ramayana: Part 1, and what are the key facts to know?"
         ],
         "sources": [
@@ -53,6 +53,21 @@
             "n": 2
           },
           {
+            "title": "Cinematic style of S. S. Rajamouli",
+            "url": "https://en.wikipedia.org/wiki/Cinematic_style_of_S._S._Rajamouli",
+            "source": "wikipedia",
+            "snippet": "S. S. Rajamouli is an Indian filmmaker who primarily works in Telugu cinema and is known for his action, fantasy, and epic genre films. Rachel Dwyer called Rajamouli \"India's most significant director today\". His films are typically characterised by their epic grandeur, unbridled",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "363c6e08c7fe",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
             "title": "Sai Pallavi",
             "url": "https://en.wikipedia.org/wiki/Sai_Pallavi",
             "source": "wikipedia",
@@ -65,7 +80,7 @@
             },
             "id": "21fcd3e0a0df",
             "domain": "en.wikipedia.org",
-            "n": 3
+            "n": 4
           },
           {
             "title": "Yash (actor)",
@@ -80,7 +95,7 @@
             },
             "id": "e56144b092d9",
             "domain": "en.wikipedia.org",
-            "n": 4
+            "n": 5
           },
           {
             "title": "Raghav Juyal",
@@ -95,35 +110,20 @@
             },
             "id": "ca3c1f63a73c",
             "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
-            "title": "Lara Dutta",
-            "url": "https://en.wikipedia.org/wiki/Lara_Dutta",
-            "source": "wikipedia",
-            "snippet": "Lara Dutta Bhupathi (née Dutta; born 16 April 1978) is an Indian actress. The winner of Miss Intercontinental 1997 and Miss Universe 2000 pageants, she has since predominantly worked in Hindi films and series. Dutta is a recipient of a Filmfare Award and established herself as a ",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "ade930270d95",
-            "domain": "en.wikipedia.org",
             "n": 6
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 3.937999991876495e-06,
-          "search": 0.44639051100000415,
-          "rank": 0.0011568850000003295,
+          "plan": 0.07531154499999815,
+          "search": 0.36413217900000205,
+          "rank": 0.10609673399999764,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.4475860780000005,
-          "total": 1.4068249659999879
+          "retrieve": 0.5455943389999973,
+          "total": 0.5795164819999954
         },
-        "nvidia": false
+        "nvidia": true
       },
       "metrics": {
         "sentences": 6,
@@ -145,7 +145,7 @@
         "queries": [
           "Who or what is Grand Theft Auto VI, and what are the key facts to know?"
         ],
-        "answer": "As one of the most popular gaming personalities on YouTube, his videography consists of montage-style videos of him and other creators playing various video games, such as Grand Theft Auto V, Garry's Mod, and various titles from the Call of Duty franchise. [1]\n\n**Key points from the sources:**\n- He is mostly known for his actions against Rockstar Games and the Grand Theft Auto franchise. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "\n\nAs one of the most popular gaming personalities on YouTube, his videography consists of montage-style videos of him and other creators playing various video games, such as Grand Theft Auto V, Garry's Mod, and various titles from the Call of Duty franchise. [1]\n\n**Key points from the sources:**\n- He is mostly known for his actions against Rockstar Games and the Grand Theft Auto franchise. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about VanossGaming",
           "Tell me more about Jack Thompson (activist)",
@@ -198,21 +198,6 @@
             "n": 3
           },
           {
-            "title": "List of security hacking incidents",
-            "url": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
-            "source": "wikipedia",
-            "snippet": "This list of security hacking incidents covers important or noteworthy events in the history of security hacking and cracking.",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "dff0e8eb8721",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
             "title": "Video game monetization",
             "url": "https://en.wikipedia.org/wiki/Video_game_monetization",
             "source": "wikipedia",
@@ -225,35 +210,50 @@
             },
             "id": "ff52583957b8",
             "domain": "en.wikipedia.org",
-            "n": 5
+            "n": 4
           },
           {
-            "title": "Keith Richards",
-            "url": "https://en.wikipedia.org/wiki/Keith_Richards",
+            "title": "List of security hacking incidents",
+            "url": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
             "source": "wikipedia",
-            "snippet": "Keith Richards (born 18 December 1943) is an English musician, songwriter, singer and record producer who is an original member, guitarist, secondary vocalist, and co-principal songwriter of the Rolling Stones. His songwriting partnership with the band's lead vocalist Mick Jagger",
+            "snippet": "This list of security hacking incidents covers important or noteworthy events in the history of security hacking and cracking.",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "8fd8334bcfa2",
+            "id": "dff0e8eb8721",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "In the Air Tonight",
+            "url": "https://en.wikipedia.org/wiki/In_the_Air_Tonight",
+            "source": "wikipedia",
+            "snippet": "\"In the Air Tonight\" is a song by the English drummer and singer-songwriter Phil Collins. It was released as the lead single from Collins's debut solo studio album, Face Value, in January 1981. It was selected as the second single from the album in the United States and Canada, a",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "ac44b7c4651b",
             "domain": "en.wikipedia.org",
             "n": 6
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 2.6149999996505358e-06,
-          "search": 0.4071002119999889,
-          "rank": 0.0007954799999936313,
+          "plan": 0.01606608499999851,
+          "search": 0.4188203750000028,
+          "rank": 0.035781919999998024,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.407920187000002,
-          "total": 0.740421901000019
+          "retrieve": 0.4707105219999974,
+          "total": 0.5042183019999982
         },
-        "nvidia": false
+        "nvidia": true
       },
       "metrics": {
         "sentences": 2,
@@ -275,7 +275,7 @@
         "queries": [
           "Who or what is Jensen Huang, and what are the key facts to know?"
         ],
-        "answer": "On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [1]\n\n**Key points from the sources:**\n- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [1]\n- officials did not warn Jensen Huang through a defensive briefing. [1]\n- Huang had an extramarital affair with Alice Huang (no relation), a Chinese national who was an executive of Megaspeed, a Singaporean company. [1]\n- On November 12, Attorney General Todd Blanche said the Justice Department had reached no conclusion about whether Alice Huang was a spy, and CNN reported, citing multiple sources, that the... [1]\n- Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "\n\nOn October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [1]\n\n**Key points from the sources:**\n- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [1]\n- officials did not warn Jensen Huang through a defensive briefing. [1]\n- Huang had an extramarital affair with Alice Huang (no relation), a Chinese national who was an executive of Megaspeed, a Singaporean company. [1]\n- On November 12, Attorney General Todd Blanche said the Justice Department had reached no conclusion about whether Alice Huang was a spy, and CNN reported, citing multiple sources, that the... [1]\n- Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about Jensen Huang scandal",
           "Tell me more about Nvidia",
@@ -358,32 +358,32 @@
             "n": 5
           },
           {
-            "title": "Artificial intelligence",
-            "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+            "title": "Generation Z in the United States",
+            "url": "https://en.wikipedia.org/wiki/Generation_Z_in_the_United_States",
             "source": "wikipedia",
-            "snippet": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is also a field of research spanning computer science, engineer",
+            "snippet": "Generation Z (or Gen Z for short), colloquially known as Zoomers, is the demographic cohort succeeding Millennials and preceding Generation Alpha. Members of Generation Z, were born between the mid-to-late 1990s and the early 2010s, with the generation typically being defined as ",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "0092064f1d55",
+            "id": "28296c860aa1",
             "domain": "en.wikipedia.org",
             "n": 6
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 2.0740000081787002e-06,
-          "search": 0.3274943790000009,
-          "rank": 0.0009497579999901973,
+          "plan": 0.01650201100000004,
+          "search": 0.2755253059999987,
+          "rank": 0.03474199899999775,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.32846642900000234,
-          "total": 1.0620402239999862
+          "retrieve": 0.3268061010000025,
+          "total": 0.36035581200000166
         },
-        "nvidia": false
+        "nvidia": true
       },
       "metrics": {
         "sentences": 6,
@@ -405,25 +405,25 @@
         "queries": [
           "Who or what is Moon, and what are the key facts to know?"
         ],
-        "answer": "The Moon is the only natural satellite of Earth. [1]\n\n**Key points from the sources:**\n- The Moon and Earth are bound by gravitational attraction, which is stronger on the sides facing each other. [1]\n- The resulting tidal forces are the main driver of Earth's tides, and have pulled the Moon to always face Earth with the same near side. [1]\n- This tidal locking effectively synchronizes the Moon's rotation period (lunar day) to its orbital period (lunar month). [1]\n- In geophysical terms, the Moon is a planetary-mass object or satellite planet. [1]\n- Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "\n\nA blue moon refers to the presence of a second full moon in a calendar month, the third full moon in a season containing four, or a moon that appears blue due to atmospheric effects. [1]\n\n**Key points from the sources:**\n- The calendrical meaning of \"blue moon\" is unconnected to the other meanings. [1]\n- The practice of designating the second full moon in a month as \"blue\" originated with amateur astronomer James Hugh Pruett in 1946. [1]\n- The moon—not necessarily full—can sometimes appear blue due to atmospheric emissions from large forest fires or volcanoes, though the phenomenon is rare and unpredictable (hence the saying \"once in a blue moon\"). [1]\n- A calendrical blue moon (by Pruett's definition) is predictable and relatively common, happening 7 times in every 19 years (i.e. [1]\n- Marvel's Moon Girl and Devil Dinosaur (or simply Moon Girl and Devil Dinosaur) is an American animated superhero comedy television series developed by Steve Loter, Jeffrey M. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
+          "Tell me more about Blue moon",
           "Tell me more about Moon Girl and Devil Dinosaur",
-          "Tell me more about Moon (2009 film)",
           "What are the latest developments on Who or what is Moon, and what are the key facts to know?"
         ],
         "sources": [
           {
-            "title": "Moon",
-            "url": "https://en.wikipedia.org/wiki/Moon",
+            "title": "Blue moon",
+            "url": "https://en.wikipedia.org/wiki/Blue_moon",
             "source": "wikipedia",
-            "snippet": "The Moon is the only natural satellite of Earth. It orbits Earth in an elliptical path, at a distance that varies over the year, averaging around 378,000 kilometers (235,000 mi). It completes an orbit (lunar month) in relation to Earth and the Sun (synodically) every 29.5 days. T",
+            "snippet": "A blue moon refers to the presence of a second full moon in a calendar month, the third full moon in a season containing four, or a moon that appears blue due to atmospheric effects. The calendrical meaning of \"blue moon\" is unconnected to the other meanings. It is often referred",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "04c9f9b5af2a",
+            "id": "befe9fb6643b",
             "domain": "en.wikipedia.org",
             "n": 1
           },
@@ -505,15 +505,15 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 1.7330000048332295e-06,
-          "search": 0.41519002900000146,
-          "rank": 0.0010604450000073484,
+          "plan": 0.0161915209999961,
+          "search": 1.6932633329999973,
+          "rank": 0.03509865700000603,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.4162751700000058,
-          "total": 0.9859897759999967
+          "retrieve": 1.744594561999996,
+          "total": 1.777445496999995
         },
-        "nvidia": false
+        "nvidia": true
       },
       "metrics": {
         "sentences": 6,
@@ -525,7 +525,7 @@
     {
       "kind": "hackernews",
       "topic": "Matrix Multiplication is Θ(n^2.25)",
-      "points": 869,
+      "points": 875,
       "discussion": "https://news.ycombinator.com/item?id=50637220",
       "question": "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?",
       "focus": "all",
@@ -535,7 +535,7 @@
         "queries": [
           "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?"
         ],
-        "answer": "Unitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter. [1]\n\n**Key points from the sources:**\n- We present explicit computations and conjectures for 2 → 2 scattering matrices in large N U(N ) Chern-Simons theories coupled to fundamental bosonic or fermionic matter to all orders in the ’t Hooft coupling expansion. [1]\n- We conjecture that these unusual features are properties of S-matrices in all Chern-Simons matter theories. [1]\n- The S-matrix in one of the exchange channels in our paper has an anyonic character; the parameter map of the conjectured Bose-Fermi duality may be derived by equating the anyonic phase in the bosonic and fermionic theories. [1]\n- Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems. [2]\n- Superconformal N = 2, D = 5 matter with and without actions. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "\n\nUnitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter. [1]\n\n**Key points from the sources:**\n- We present explicit computations and conjectures for 2 → 2 scattering matrices in large N U(N ) Chern-Simons theories coupled to fundamental bosonic or fermionic matter to all orders in the ’t Hooft coupling expansion. [1]\n- We conjecture that these unusual features are properties of S-matrices in all Chern-Simons matter theories. [1]\n- The S-matrix in one of the exchange channels in our paper has an anyonic character; the parameter map of the conjectured Bose-Fermi duality may be derived by equating the anyonic phase in the bosonic and fermionic theories. [1]\n- Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems. [2]\n- Superconformal N = 2, D = 5 matter with and without actions. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about Unitarity, crossing symmetry and duality of the S-matrix in large N Chern-Simons theories with fundamental matter",
           "Tell me more about Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems",
@@ -659,21 +659,6 @@
             "n": 6
           },
           {
-            "title": "Anyon",
-            "url": "https://en.wikipedia.org/wiki/Anyon",
-            "source": "wikipedia",
-            "snippet": "In physics, an anyon is a type of quasiparticle so far observed only in two-dimensional systems. In three-dimensional systems, only two kinds of elementary particles are seen: fermions and bosons. Anyons have statistical properties intermediate between fermions and bosons. In gen",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "16e28ef5c8c7",
-            "domain": "en.wikipedia.org",
-            "n": 7
-          },
-          {
             "title": "History of mathematical notation",
             "url": "https://en.wikipedia.org/wiki/History_of_mathematical_notation",
             "source": "wikipedia",
@@ -686,20 +671,35 @@
             },
             "id": "4c49b66f705d",
             "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Anyon",
+            "url": "https://en.wikipedia.org/wiki/Anyon",
+            "source": "wikipedia",
+            "snippet": "In physics, an anyon is a type of quasiparticle so far observed only in two-dimensional systems. In three-dimensional systems, only two kinds of elementary particles are seen: fermions and bosons. Anyons have statistical properties intermediate between fermions and bosons. In gen",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "16e28ef5c8c7",
+            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 2.1940000181075447e-06,
-          "search": 0.628761929999996,
-          "rank": 0.0011648100000059003,
+          "plan": 0.016373941000004777,
+          "search": 0.9898052559999968,
+          "rank": 0.035712316999997995,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.6299560950000114,
-          "total": 1.3224289340000155
+          "retrieve": 1.041943480999997,
+          "total": 1.0747708009999997
         },
-        "nvidia": false
+        "nvidia": true
       },
       "metrics": {
         "sentences": 6,
@@ -711,7 +711,7 @@
     {
       "kind": "hackernews",
       "topic": "Button Sounds – collection of professionally-recorded button clicks and presses",
-      "points": 686,
+      "points": 694,
       "discussion": "https://news.ycombinator.com/item?id=50638032",
       "question": "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?",
       "focus": "all",
@@ -721,7 +721,7 @@
         "queries": [
           "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?"
         ],
-        "answer": "Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy. [1]\n\n**Key points from the sources:**\n- In The Pearl Button, Patricio Guzman explores the role water played in shaping how the Selk’nam inhabited the coasts of the Tierra del Fuego in Patagonia through “cosmovisions,’ sequences that extend beyond human perception, even as they link the habitation of indigenous peoples to subsequent colonial and political projects. [1]\n- He works with archival photography and the superimposition of images/sounds in order to create a pluriverse of peoples and environments, which moves beyond human audiovisual and temporal perception. [1]\n- In doing so, The Pearl Button links the ways in which the Selk’nam inhabited Chile, depending on its waters, to the ocean as the source of the colonial project of Spain and site of political murders under the later dictatorship of Augusto Pinochet. [1]\n- “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents. [2]\n- Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper. [5]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "\n\nVital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy. [1]\n\n**Key points from the sources:**\n- In The Pearl Button, Patricio Guzman explores the role water played in shaping how the Selk’nam inhabited the coasts of the Tierra del Fuego in Patagonia through “cosmovisions,’ sequences that extend beyond human perception, even as they link the habitation of indigenous peoples to subsequent colonial and political projects. [1]\n- He works with archival photography and the superimposition of images/sounds in order to create a pluriverse of peoples and environments, which moves beyond human audiovisual and temporal perception. [1]\n- In doing so, The Pearl Button links the ways in which the Selk’nam inhabited Chile, depending on its waters, to the ocean as the source of the colonial project of Spain and site of political murders under the later dictatorship of Augusto Pinochet. [1]\n- “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents. [2]\n- Noise fatigue in the ICU: platform for sound data collection and visualization: Cacophony Mapper. [5]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about Vital Coasts, Mortal Oceans: The Pearl Button as Media Environmental Philosophy",
           "Tell me more about “There’s an Etiquette to Zoom That’s Not Really Present In-Person”: A Qualitative Study Showing How the Mute Button Shapes Virtual Postpartum Support for New Parents",
@@ -836,21 +836,6 @@
             "n": 6
           },
           {
-            "title": "U2",
-            "url": "https://en.wikipedia.org/wiki/U2",
-            "source": "wikipedia",
-            "snippet": "U2 are an Irish rock band formed in Dublin in 1976. They comprise Bono (lead vocals), the Edge (lead guitar, keyboards, and vocals), Adam Clayton (bass guitar), and Larry Mullen Jr. (drums and percussion). Initially rooted in post-punk, U2's musical style has evolved throughout t",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "6e4d4285f062",
-            "domain": "en.wikipedia.org",
-            "n": 7
-          },
-          {
             "title": "BBC",
             "url": "https://en.wikipedia.org/wiki/BBC",
             "source": "wikipedia",
@@ -863,20 +848,35 @@
             },
             "id": "1b38b12a31a3",
             "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Glossary of video game terms",
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_video_game_terms",
+            "source": "wikipedia",
+            "snippet": "Since the origin of video games in the early 1970s, the video game industry, the players, and surrounding culture have spawned a wide range of technical jargons and slang terms.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d3bc1dd62f11",
+            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 2.7050000142025965e-06,
-          "search": 0.7144278959999895,
-          "rank": 0.0020511590000182878,
+          "plan": 0.01644774100000035,
+          "search": 0.49920698300000055,
+          "rank": 0.05273821400000145,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.7165163950000135,
-          "total": 1.5421359629999927
+          "retrieve": 0.568448980999996,
+          "total": 0.6027121909999948
         },
-        "nvidia": false
+        "nvidia": true
       },
       "metrics": {
         "sentences": 6,
@@ -898,7 +898,7 @@
         "queries": [
           "The Spray Bottle — what is this about and why does it matter?"
         ],
-        "answer": "“Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914. [1]\n\n**Key points from the sources:**\n- Particulate matter (PM) or particulates are microscopic particles of solid or liquid matter suspended in the air. [4]\n- Particulate matter is considered the most dangerous type of air pollution because particulates can penetrate deep into the lungs and travel through the blood stream to multiple organs, such as the brain. [4]\n- Black Lives Matter (BLM) is a decentralized political and social movement that aims to highlight racism, discrimination and racial inequality experienced by Black people in the United States, and to promote anti-racism. [5]\n- Pollinating insects: what do they mean to people and why does it matter?. [6]\n- Why Do “Good” Pictures Matter in Anthropology?. [7]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "\n\n“Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914. [1]\n\n**Key points from the sources:**\n- Particulate matter (PM) or particulates are microscopic particles of solid or liquid matter suspended in the air. [5]\n- Particulate matter is considered the most dangerous type of air pollution because particulates can penetrate deep into the lungs and travel through the blood stream to multiple organs, such as the brain. [5]\n- Black Lives Matter (BLM) is a decentralized political and social movement that aims to highlight racism, discrimination and racial inequality experienced by Black people in the United States, and to promote anti-racism. [6]\n- Pollinating insects: what do they mean to people and why does it matter?. [7]\n- Why Do “Good” Pictures Matter in Anthropology?. [8]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "Tell me more about “Spray, Spray, Spray!”: Insecticides and the Making of Applied Entomology in Canada, 1871-1914",
           "Tell me more about Operation Sea Spray",
@@ -942,6 +942,21 @@
             "n": 2
           },
           {
+            "title": "Nicotine replacement therapy",
+            "url": "https://en.wikipedia.org/wiki/Nicotine_replacement_therapy",
+            "source": "wikipedia",
+            "snippet": "Nicotine replacement therapy (NRT) is a medically approved way to treat people with tobacco use disorder by taking nicotine through means other than tobacco. It is used to help with quitting smoking or stopping chewing tobacco. It increases the chance of quitting tobacco smoking ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d06a33c19ddd",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
             "title": "2026 Delaney Hall hunger strike and protests",
             "url": "https://en.wikipedia.org/wiki/2026_Delaney_Hall_hunger_strike_and_protests",
             "source": "wikipedia",
@@ -954,7 +969,7 @@
             },
             "id": "4bf921298add",
             "domain": "en.wikipedia.org",
-            "n": 3
+            "n": 4
           },
           {
             "title": "Particulate matter",
@@ -969,7 +984,7 @@
             },
             "id": "d125127439e2",
             "domain": "en.wikipedia.org",
-            "n": 4
+            "n": 5
           },
           {
             "title": "Black Lives Matter",
@@ -984,7 +999,7 @@
             },
             "id": "4813d8c71b43",
             "domain": "en.wikipedia.org",
-            "n": 5
+            "n": 6
           },
           {
             "title": "Pollinating insects: what do they mean to people and why does it matter?",
@@ -1007,7 +1022,7 @@
             },
             "id": "aea7bc853807",
             "domain": "eprints.bbk.ac.uk",
-            "n": 6
+            "n": 7
           },
           {
             "title": "Why Do “Good” Pictures Matter in Anthropology?",
@@ -1025,35 +1040,20 @@
             },
             "id": "4270f997e85a",
             "domain": "doi.org",
-            "n": 7
-          },
-          {
-            "title": "Bioplastic",
-            "url": "https://en.wikipedia.org/wiki/Bioplastic",
-            "source": "wikipedia",
-            "snippet": "Bioplastics (or bio-based plastics) are plastic materials produced from renewable biomass sources rather than petrochemical sources. This definition distinguishes it from biodegradable plastics, which are plastics that degrade by the natural action of microorganisms such as algae",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "937267e30239",
-            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 1.7830000160756754e-06,
-          "search": 0.5933659799999873,
-          "rank": 0.0023750860000006924,
+          "plan": 0.016203347999997675,
+          "search": 8.436868697999998,
+          "rank": 0.11367883900000209,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 0.5957756699999948,
-          "total": 1.190689667000015
+          "retrieve": 8.566816097999997,
+          "total": 8.601192978999997
         },
-        "nvidia": false
+        "nvidia": true
       },
       "metrics": {
         "sentences": 6,
