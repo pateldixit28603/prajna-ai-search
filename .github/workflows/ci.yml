@@ -33,10 +33,10 @@ jobs:
       - run: docker build -t prajna .
       - name: Smoke test (container serves UI + API on $PORT)
         run: |
-          docker run -d --name p -e PORT=10000 -p 10000:10000 prajna
+          docker run -d --name prajna-smoke -e PORT=10000 -p 10000:10000 prajna
           ok=""
           for i in $(seq 1 30); do if curl -fs localhost:10000/api/health > health.json; then ok=1; break; fi; sleep 2; done
-          docker logs p 2>&1 | tail -20
+          docker logs prajna-smoke 2>&1 | tail -20
           test -n "$ok"
           cat health.json; grep -q '"status":"ok"' health.json
           curl -fs localhost:10000/ > index.html
