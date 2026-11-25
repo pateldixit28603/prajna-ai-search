@@ -15,7 +15,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY backend/ ./
 COPY --from=web /web/dist /app/frontend/dist
 ENV DATA_DIR=/data
-VOLUME ["/data"]
+ENV PORT=8000
 EXPOSE 8000
-HEALTHCHECK CMD python -c "import urllib.request;urllib.request.urlopen('http://localhost:8000/api/health')"
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--proxy-headers"]
+HEALTHCHECK CMD python -c "import os,urllib.request;urllib.request.urlopen(f'http://localhost:{os.environ.get(\"PORT\",\"8000\")}/api/health')"
+# Hosting platforms (Render, Railway, Fly, HF Spaces) inject $PORT
+CMD ["sh", "-c", "mkdir -p \"$DATA_DIR\" && exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --proxy-headers --forwarded-allow-ips '*'"]

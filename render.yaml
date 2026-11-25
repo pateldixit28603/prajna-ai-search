@@ -1,0 +1,17 @@
+# One-click deploy on Render (free tier): https://render.com/deploy?repo=https://github.com/pateldixit28603/prajna-ai-search
+# Auto-deploys on every push to main. Set NVIDIA_API_KEY when Render asks for it.
+services:
+  - type: web
+    name: prajna-ai-search
+    runtime: docker
+    plan: free
+    branch: main
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: NVIDIA_API_KEY
+        sync: false
+      - key: DATA_DIR
+        value: /tmp/prajna-data
+      - key: CONTACT_EMAIL
+        value: pateldixit28603@users.noreply.github.com

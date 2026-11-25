@@ -85,6 +85,12 @@ cd backend && .venv/bin/python -m scripts.ingest hf-wikipedia --limit 20000   # 
 cd backend && .venv/bin/python -m scripts.ingest files ~/my-notes            # your own .md/.txt/.jsonl
 ```
 
+## Deploy (live link, auto-updates from GitHub)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/pateldixit28603/prajna-ai-search)
+
+`render.yaml` sets up a free Render web service from this repo's Dockerfile. Render redeploys on every push to `main`. Enter `NVIDIA_API_KEY` when Render asks for it. Free instances sleep when idle, so the first request after a while takes about a minute.
+
 ## Production (Docker)
 
 ```bash
