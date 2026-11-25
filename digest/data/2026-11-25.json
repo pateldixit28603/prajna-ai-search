@@ -16,11 +16,11 @@
           "What is Ramayana Part 1",
           "Key facts about Ramayana"
         ],
-        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari [1]. It is the first instalment of a two-part film series based on the Hindu epic Ramayana by Valmiki [3]. The film chronicles Prince Rama's life from childhood up to his 14-year exile [1]. It features an ensemble cast including Ranbir Kapoor, Yash in his Hindi debut, Sai Pallavi, and Rakul Preet Singh [1][5]. The soundtrack is composed by Hans Zimmer and A [2]. R. Rahman [2][1]. Filming took place at Film City, Mumbai, from April 2024 [1]. The film was announced in May 2017 and restructured from a trilogy to a two-part series under Tiwari's direction [1].",
+        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari [1]. It is the first instalment of a two-part series based on the Hindu epic Ramayana by Valmiki [3]. The film chronicles Prince Rama's life from childhood up to his 14-year exile [1]. It features an ensemble cast including Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey, Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, Arun Govil, and Adinath Kothare [1][5]. The soundtrack is composed by Hans Zimmer and A. R. Rahman [2][1]. Filming took place at Film City, Mumbai, from April 2024 onwards [1]. The film was announced in May 2017 and was initially conceived as a trilogy before being restructured as a two-part series [1].",
         "followups": [
           "When is the film releasing?",
-          "Who are the main actors?",
-          "What is the Ramayana epic about?"
+          "Who is Valmiki?",
+          "What is the plot about?"
         ],
         "sources": [
           {
@@ -114,52 +114,52 @@
             "n": 6
           },
           {
-            "title": "Kumbhakarna",
-            "url": "https://en.wikipedia.org/wiki/Kumbhakarna",
+            "title": "Hanuman",
+            "url": "https://en.wikipedia.org/wiki/Hanuman",
             "source": "wikipedia",
-            "snippet": "Kumbhakarna (Sanskrit: कुम्भकर्ण, lit. pot-eared) is a powerful rakshasa and younger brother of Ravana from the Hindu epic Ramayana. He is said to have slaughtered 8,000 vanaras over the course of Rama's mission to rescue Sita. Kumbhakarna is known to sleep for six months at a ti",
+            "snippet": "Hanuman (; Sanskrit: हनुमान्, IAST: Hanumān), also known as Maruti, Bajrangabali, and Anjaneya, is a deity in Hinduism, revered as a divine vanara, and a devoted companion of Lord Rama. Central to the Ramayana, Hanuman is celebrated for his unwavering devotion to Rama and is cons",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "824beb892946",
+            "id": "22464cfb0974",
             "domain": "en.wikipedia.org",
             "n": 7
           },
           {
-            "title": "Yash (actor)",
-            "url": "https://en.wikipedia.org/wiki/Yash_(actor)",
+            "title": "Urmila",
+            "url": "https://en.wikipedia.org/wiki/Urmila",
             "source": "wikipedia",
-            "snippet": "Yash (pronounced [/yah-sh/]; born Naveen Kumar, 8 January 1986) is an Indian actor and film producer who works in Kannada cinema. Known for his work in mass hero films, he is referred to as \"Rocking Star\" in the media. One of the highest-paid actors of Kannada cinema, Yash is a r",
+            "snippet": "Urmila (Sanskrit: ऊर्मिला, romanized: Urmilā, lit. 'enchantress'), is a Hindu goddess and the princess of Videha in the epic Ramayana. She is also considered an avatar of Nagalakshmi. Urmila was born as the daughter of King Janaka of Mithila and Queen Sunayana. Sita, the female p",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "e56144b092d9",
+            "id": "012347b65a7a",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5035771879999942,
-          "search": 0.4234334209999986,
-          "rank": 0.7889220950000038,
+          "plan": 0.4252038260000006,
+          "search": 0.3389473669999745,
+          "rank": 2.7728931050000085,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 1.715998337000002,
-          "total": 3.565802507000001
+          "retrieve": 3.537114238000015,
+          "total": 5.222051139999991
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
         "sentences": 7,
-        "citation_coverage": 1.0,
+        "citation_coverage": 0.8571428571428571,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -178,11 +178,11 @@
           "What is Grand Theft Auto VI",
           "Grand Theft Auto VI key facts"
         ],
-        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following Grand Theft Auto V (2013), and the sixteenth overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to escape corrupt police officers in a state-wide conspiracy [1]. Preliminary work began in 2014 after GTA V, and principal production started after the 2018 launch of Red Dead Redemption 2; Rockstar's global development teams had more than doubled since then [1]. The trailer premiered on Netflix on August 27, 2026, then was released to YouTube, crashing both platforms due to high demand [2]. Lucia is the first non-optional playable female protagonist in the series, designed to be independent and stoic, avoiding common clichés [3].",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following Grand Theft Auto V (2013), and the sixteenth entry overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to escape corrupt police officers in a state-wide conspiracy [1]. Preliminary work began in 2014 after the release of GTA V, and principal production started after the 2018 launch of Red Dead Redemption 2; Rockstar's development teams had more than doubled since then [1].\n\nKey facts:\n- The game's open world includes Leonida and a Miami-inspired Vice City [1].\n- The protagonists' dynamic is inspired by Bonnie and Clyde [1].\n- Lucia Caminos is the first non-optional playable female protagonist in the series [3].\n- The promotional trailer \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix on August 27, 2026, and topped the English language trailer chart in 87 countries [2].\n- The game parodies Floridian and 2020s American culture [1].",
         "followups": [
-          "When is it actually releasing?",
-          "What is Leonida like?",
-          "Who are Jason and Lucia?"
+          "When is it expected to release?",
+          "Where can I find more details?",
+          "What is Leonida like?"
         ],
         "sources": [
           {
@@ -308,19 +308,19 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 1.6964238289999969,
-          "search": 0.48078217500000164,
-          "rank": 1.654276976999995,
+          "plan": 0.37908838499998865,
+          "search": 0.3377972440000008,
+          "rank": 1.9430162159999895,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.831542601999999,
-          "total": 5.875639918999994
+          "retrieve": 2.6599554950000197,
+          "total": 10.163512741999995
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 6,
+        "sentences": 9,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
@@ -340,11 +340,11 @@
           "Who is Jensen Huang",
           "Jensen Huang key facts"
         ],
-        "answer": "Jensen Huang is the co-founder, president, and CEO of Nvidia, the American technology company that dominates AI hardware [1][3]. Born in Taipei in 1963, he immigrated to the U.S., earned a Stanford master's degree, and launched Nvidia in 1993 with Chris Malachowsky and Curtis Priem [1]. Under his leadership, Nvidia evolved from GPU development into high-performance computing and AI, becoming the first company to surpass $5 trillion in market capitalization in October 2025 [1][3]. In late 2026, Huang faced allegations of extramarital affairs with two executives, Alice Huang and Kimberly Powell, which triggered board discussions about his resignation; he stepped down on November 12, 2026 [2][5]. His net worth is estimated at $143.4 billion as of November 2026, ranking him the 13th-wealthiest person globally [1].",
+        "answer": "Jensen Huang is the co-founder, president, and CEO of Nvidia, the American technology company that dominates AI hardware [1][3]. Born in 1963 in Taipei, he immigrated to the U.S., earned a Stanford master's degree, and launched Nvidia in 1993 with Chris Malachowsky and Curtis Priem [1][3]. Under his leadership, Nvidia grew from GPU development into high-performance computing and AI, reaching a market capitalization over $5 trillion in October 2025 [1][3]. In late 2026, Huang faced allegations of extramarital affairs with executives Alice Huang and Kimberly Powell, which led to his resignation and brief interim leadership by CFO Colette Kress [2][5][6]. These scandals also drew attention to Chinese investor Kang Wei, Alice Huang's husband, who was penalized for securities violations [4][6].",
         "followups": [
-          "What is Nvidia's main business now?",
-          "When did he step down as CEO?",
-          "What drove Nvidia's AI growth?"
+          "What is Nvidia's main product now?",
+          "When did he found Nvidia?",
+          "What caused his resignation?"
         ],
         "sources": [
           {
@@ -453,30 +453,30 @@
             "n": 7
           },
           {
-            "title": "Artificial intelligence",
-            "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+            "title": "Moore's law",
+            "url": "https://en.wikipedia.org/wiki/Moore%27s_law",
             "source": "wikipedia",
-            "snippet": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is also a field of research spanning computer science, engineer",
+            "snippet": "Moore's law is the observation that the number of transistors in an integrated circuit (IC) doubles about every two years, with minimal increase in cost. Despite the name, Moore's law describes an empirical relationship, not a scientific law. This type of observation, an experien",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "0092064f1d55",
+            "id": "034fe83b6deb",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4500621789999997,
-          "search": 0.30314973999999495,
-          "rank": 1.2764549089999946,
+          "plan": 0.5071966920000079,
+          "search": 0.287494965999997,
+          "rank": 0.44732320800000025,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.0297099799999927,
-          "total": 4.070494428999993
+          "retrieve": 1.242051153999995,
+          "total": 3.370275429000003
         },
         "nvidia": true,
         "llm_error": ""
@@ -502,11 +502,11 @@
           "what is the moon",
           "key facts about the moon"
         ],
-        "answer": "Moon is Earth's only natural satellite, orbiting at an average distance of 378,000 km [1]. It is tidally locked to Earth, meaning the same side always faces us, and completes one orbit every 29.5 days [1][3]. The Moon's diameter is 3,474 km, with mass 1.2% of Earth's, and surface gravity about one-sixth of Earth's [1].\n\nKey facts:\n- The first human-made object to touch the Moon was Luna 2 in 1959; the first crewed landing was Apollo 11 in 1969 [4][7].\n- Six crewed Apollo landings occurred between 1969 and 1972, with 12 people walking on the Moon [7].\n- After 1976, no soft landings occurred until Chang'e 3 in 2013, and Chang'e 4 landed on the far side in 2019 [4].\n- A \"blue moon\" is a calendrical phenomenon—7 times in every 19 years—when a second full moon appears in a month [5].\n- The 2009 sci-fi film *Moon* stars Sam Rockwell as a miner on the far side of the Moon [2].",
+        "answer": "Moon is Earth's only natural satellite [1]. It orbits Earth in an elliptical path, averaging about 378,000 km away, and completes one orbit every 29.5 days [1]. The Moon is tidally locked to Earth, so the same side always faces us, and its phases cycle over a lunar month [3]. The first human-made object to reach the Moon was Luna 2 in 1959, and the first crewed landing was Apollo 11 in 1969 [4][7]. The Apollo program conducted six crewed landings between 1969 and 1972, with twelve astronauts walking on the lunar surface [7]. The Moon's diameter is 3,474 km, and its mass is 1.2% of Earth's [1].",
         "followups": [
-          "What is tidally locked?",
-          "When was Apollo 11?",
-          "What is a blue moon?"
+          "What causes the Moon's phases?",
+          "How does tidal locking work?",
+          "When was the first landing?"
         ],
         "sources": [
           {
@@ -632,19 +632,19 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4232126280000017,
-          "search": 0.358511680999996,
-          "rank": 3.0210568259999917,
+          "plan": 0.35616575200000966,
+          "search": 0.4085658120000062,
+          "rank": 0.5850781519999941,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.802824666999996,
-          "total": 6.003463109999998
+          "retrieve": 1.3498542490000034,
+          "total": 4.150097895000016
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 8,
+        "sentences": 6,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
@@ -664,11 +664,11 @@
           "Matrix Multiplication complexity O(n^2.25)",
           "Significance of O(n^2.25) matrix multiplication"
         ],
-        "answer": "The claim that matrix multiplication is Θ(n^2.25) refers to the best-known asymptotic complexity for multiplying two n×n matrices, meaning the operation can be performed in time proportional to n^2.25, which is faster than the naive O(n³) approach [2]. This matters because faster matrix multiplication accelerates countless downstream applications, from scientific computing and pattern recognition to deep learning and graph algorithms [2]. The current best bound, as of September 2025, is O(n^2.371339) [2], and research continues to push this exponent lower [3][4].\n\nWhy this specific exponent (2.25) appears in your question likely stems from recent algorithmic improvements or a specific variant. The field has seen steady progress: Strassen's algorithm achieved O(n^log₂7) ≈ O(n^2.807) in 1969 [1], and subsequent Strassen-like algorithms have reduced both arithmetic and IO complexity [5]. The IO complexity of certain $-algorithms has been shown to break prior lower bounds [5], and new methods aim to reduce leading coefficients while maintaining low asymptotic cost [5]. These advances, driven by algebraic geometry and representation theory [3][4], make practical high-performance implementations increasingly viable [6].\n\nThe practical impact is significant: faster matrix multiplication directly improves performance in deep learning training, scientific simulations, and video graphics, where highly optimized libraries like CuBLAS and CUDA dominate [6]. While the theoretical optimal exponent ω remains unknown, each reduction brings us closer to more efficient computation across science and technology.",
+        "answer": "The claim that matrix multiplication is Θ(n^2.25) refers to the best-known asymptotic complexity for multiplying two n×n matrices, meaning the operation can be performed in time proportional to n^2.25 up to constant factors [1]. This matters because matrix multiplication is a central subroutine in theoretical and numerical algorithms for numerical linear algebra and optimization; faster algorithms enable significant speedups in scientific computing, pattern recognition, deep learning, and other fields where these operations are fundamental [2][5].\n\nThe Θ(n^2.25) bound is not the historical schoolbook Θ(n^3) nor Strassen's Θ(n^log₂7 ≈ n^2.807). Instead, it represents the current best asymptotic bound discovered in recent research, improving upon earlier results. The progression of matrix multiplication complexity includes: [1]\n\n- Schoolbook algorithm: Θ(n³) [1][2]\n- Strassen's algorithm (1969): Θ(n^log₂7) ≈ Θ(n^2.807) [1][2]\n- Subsequent improvements reducing the exponent further [2][5]\n- Current best bound: O(n^2.371339) as of September 2025 [2]\n\nThe gap between the theoretical optimal complexity and practical implementations matters because algorithms with better asymptotic bounds often have large hidden constant factors, making them impractical for real-world sizes despite superior theoretical growth rates [5]. The development of faster matrix multiplication algorithms has direct implications for high-performance computing domains like deep learning, scientific simulations, and video graphics, where matrix operations form the computational foundation [6].\n\nThe pursuit of faster matrix multiplication remains a major open question in theoretical computer science, with recent claims of proofs formalized in proof assistants like Lean suggesting active progress toward resolving the asymptotic complexity [1].",
         "followups": [
           "What is the current best bound?",
-          "How does Strassen's algorithm work?",
-          "What applications use this?"
+          "How does this compare to $n^3$?",
+          "Where is this used practically?"
         ],
         "sources": [
           {
@@ -786,39 +786,41 @@
             "n": 7
           },
           {
-            "title": "Online matrix-vector multiplication problem",
-            "url": "https://en.wikipedia.org/wiki/Online_matrix-vector_multiplication_problem",
-            "source": "wikipedia",
-            "snippet": "In computational complexity theory, the online matrix-vector multiplication problem (OMv) asks an online algorithm to return, at each round, the product of an n×n matrix and a newly-arrived n-dimensional vector. OMv is conjectured to require roughly cubic time. This conjectured h",
-            "published": null,
-            "authors": [],
+            "title": "On the Capacity of Secure Distributed Matrix Multiplication",
+            "url": "https://arxiv.org/abs/1806.00469v1",
+            "source": "arxiv",
+            "snippet": "Matrix multiplication is one of the key operations in various engineering applications. Outsourcing large-scale matrix multiplication tasks to multiple distributed servers or cloud is desirable to speed up computation. However, security becomes an issue when these servers are unt",
+            "published": "2018-06-01",
+            "authors": [
+              "Wei-Ting Chang",
+              "Ravi Tandon"
+            ],
             "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
+              "license": "arXiv"
             },
-            "id": "87a9e83eccb5",
-            "domain": "en.wikipedia.org",
+            "id": "f7c145ba0174",
+            "domain": "arxiv.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.6037909049999968,
-          "search": 1.9670675419999952,
-          "rank": 2.1146543260000072,
+          "plan": 0.5642937990000121,
+          "search": 2.9791549469999836,
+          "rank": 2.822229904000011,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.685608783999996,
-          "total": 7.611731947999999
+          "retrieve": 6.365778425999991,
+          "total": 12.247744273999984
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 9,
-        "citation_coverage": 0.7777777777777778,
+        "sentences": 12,
+        "citation_coverage": 0.8333333333333334,
         "citation_validity": 1.0,
-        "faithfulness": 0.5714285714285714
+        "faithfulness": 0.7
       }
     },
     {
@@ -835,11 +837,11 @@
           "Button Sounds collection professionally recorded",
           "importance of button click sounds"
         ],
-        "answer": "Button Sounds is a curated collection of professionally-recorded button clicks and presses, available at buttons.joshwcomeau.com [1]. It matters because high-quality button audio is essential for user experience in digital interfaces, providing auditory feedback that confirms user actions and enhances perceived responsiveness. Well-designed button sounds can improve usability, reduce user errors, and contribute to the overall polish of an application or website.",
+        "answer": "Button Sounds is a curated collection of professionally-recorded button clicks and presses, available at buttons.joshwcomeau.com [1]. It matters because high-quality button sounds enhance user experience in digital interfaces by providing auditory feedback that confirms interactions, reduces uncertainty, and improves accessibility. Well-designed button sounds can make interfaces feel more responsive and satisfying, while poorly designed ones can be irritating or distracting. The collection serves as a resource for designers seeking authentic, polished click sounds for applications, games, and websites.",
         "followups": [
-          "Where can I find the collection?",
-          "What platforms use this?",
-          "Are there different sound types?"
+          "Where can I download them?",
+          "Are they free to use?",
+          "What platforms are they for?"
         ],
         "sources": [
           {
@@ -852,31 +854,13 @@
               "gaurang_tandon"
             ],
             "extra": {
-              "points": 711,
+              "points": 714,
               "comments": 115,
               "discussion": "https://news.ycombinator.com/item?id=50638032"
             },
             "id": "731330eec3a0",
             "domain": "buttons.joshwcomeau.com",
             "n": 1
-          },
-          {
-            "title": "Perceptual features of everyday push button sounds and audiotactile interaction",
-            "url": "https://doi.org/10.1250/ast.41.173",
-            "source": "openalex",
-            "snippet": "The first aim of this study is to investigate the relationship between the signal properties and the perceptual attributes of everyday push button sounds and the second aim is to investigate the effect of loudness on the perceived tactile feedback intensity from buttons. This kno",
-            "published": "2020",
-            "authors": [
-              "M. Ercan Altinsoy"
-            ],
-            "extra": {
-              "cited_by": 13,
-              "venue": "Nippon Onkyo Gakkaishi/Acoustical science and technology/Nihon Onkyo Gakkaishi",
-              "license": "CC0 metadata"
-            },
-            "id": "feef9034db52",
-            "domain": "doi.org",
-            "n": 2
           },
           {
             "title": "Judge Pauley’s Opinion in Clapper: Reset Button for Bulk Collection Debate?",
@@ -894,6 +878,24 @@
             },
             "id": "ff0eacac5f77",
             "domain": "docs.rwu.edu",
+            "n": 2
+          },
+          {
+            "title": "Perceptual features of everyday push button sounds and audiotactile interaction",
+            "url": "https://doi.org/10.1250/ast.41.173",
+            "source": "openalex",
+            "snippet": "The first aim of this study is to investigate the relationship between the signal properties and the perceptual attributes of everyday push button sounds and the second aim is to investigate the effect of loudness on the perceived tactile feedback intensity from buttons. This kno",
+            "published": "2020",
+            "authors": [
+              "M. Ercan Altinsoy"
+            ],
+            "extra": {
+              "cited_by": 13,
+              "venue": "Nippon Onkyo Gakkaishi/Acoustical science and technology/Nihon Onkyo Gakkaishi",
+              "license": "CC0 metadata"
+            },
+            "id": "feef9034db52",
+            "domain": "doi.org",
             "n": 3
           },
           {
@@ -915,6 +917,21 @@
             "n": 4
           },
           {
+            "title": "Push the Button (Sugababes song)",
+            "url": "https://en.wikipedia.org/wiki/Push_the_Button_(Sugababes_song)",
+            "source": "wikipedia",
+            "snippet": "\"Push the Button\" is a song recorded by English girl group Sugababes for their fourth studio album Taller in More Ways (2005). Composed by Dallas Austin and the Sugababes, it was inspired by an infatuation that group member Keisha Buchanan developed with another artist. Musically",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "066f3d658533",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
             "title": "An investigation of underwater click sounds of biological origin in UK shallow waters",
             "url": "https://eprints.soton.ac.uk/id/eprint/415735/1/Final_e_thesis_for_e_prints_HARLAND_22265465.pdf",
             "source": "openalex",
@@ -930,21 +947,6 @@
             },
             "id": "109ca7d45dec",
             "domain": "eprints.soton.ac.uk",
-            "n": 5
-          },
-          {
-            "title": "Push the Button (Sugababes song)",
-            "url": "https://en.wikipedia.org/wiki/Push_the_Button_(Sugababes_song)",
-            "source": "wikipedia",
-            "snippet": "\"Push the Button\" is a song recorded by English girl group Sugababes for their fourth studio album Taller in More Ways (2005). Composed by Dallas Austin and the Sugababes, it was inspired by an infatuation that group member Keisha Buchanan developed with another artist. Musically",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "066f3d658533",
-            "domain": "en.wikipedia.org",
             "n": 6
           },
           {
@@ -963,45 +965,40 @@
             "n": 7
           },
           {
-            "title": "Effects of intensive care unit ambient sounds on healthcare professionals: results of an online survey and noise exposure in an experimental setting",
-            "url": "https://doi.org/10.1186/s40635-020-00321-3",
+            "title": "Curating the sound of the word revolution",
+            "url": "https://eprints.leedsbeckett.ac.uk/id/eprint/6383/",
             "source": "openalex",
-            "snippet": "BACKGROUND: Noise levels on intensive care units (ICUs) are typically elevated. While many studies reported negative effects of ICU ambient sounds on patients, only few investigated noise as a factor to influence well-being or performance in healthcare professionals. METHODS: An ",
-            "published": "2020",
+            "snippet": "Dr. Alan Dunn, Senior Lecturer at Leeds Beckett University, reflects upon his sound art project Artists’ uses of the word revolution in relation to pedagogy, curating and distribution. The project formed part of a new pedagogic model established at Leeds between Dunn, Chris Watso",
+            "published": "2018",
             "authors": [
-              "Nadine Schmidt",
-              "Stephan Moreno Gerber",
-              "Björn Zante",
-              "Tom Gawliczek",
-              "Alvin Chesham",
-              "Klemens Gutbrod"
+              "Archibald M. Dunn"
             ],
             "extra": {
-              "cited_by": 53,
-              "venue": "Intensive Care Medicine Experimental",
+              "cited_by": 0,
+              "venue": "Leeds Beckett Repository (Leeds Beckett University)",
               "license": "CC0 metadata"
             },
-            "id": "245114af5902",
-            "domain": "doi.org",
+            "id": "14c39bcdea78",
+            "domain": "eprints.leedsbeckett.ac.uk",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.45140042700001004,
-          "search": 0.3845202389999969,
-          "rank": 0.7732106910000027,
+          "plan": 0.3449775169999896,
+          "search": 0.37478117599999905,
+          "rank": 0.49366694000002553,
           "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 1.609286425999997,
-          "total": 2.865803948000007
+          "retrieve": 1.2135556759999986,
+          "total": 2.7118605520000187
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 3,
-        "citation_coverage": 0.3333333333333333,
+        "sentences": 4,
+        "citation_coverage": 0.25,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -1020,11 +1017,11 @@
           "what is the spray bottle",
           "spray bottle significance"
         ],
-        "answer": "The Spray Bottle refers to a functional manipulation task where robots must learn to aim and actuate a spray bottle to apply its function (e.g., watering a plant) to a target [2]. It matters because it requires integrating semantic understanding of the object's function, precise pose control, and dexterous actuation to achieve stable grasp and effective application [2].\n\nKey points:\n- CoDex is a zero-demonstration framework that discovers spray-bottle manipulation strategies using vision-language models to infer semantic constraints, which guide analytic optimization and reinforcement learning to generate transferable grasp-move-actuate policies [2].\n- The task involves previously unseen objects with internal mechanisms, showcasing the system's ability to execute physically viable dexterous behaviors without human demonstrations [2].\n- Spray bottles are one of several CD-FOM tasks (alongside hot glue guns, air dusters, flashlights, and pepper grinders) that require actuating an object's internal mechanism while controlling its pose [2].\n\n[2]",
+        "answer": "The \"Spray Bottle\" refers to a functional manipulation task in robotics where a robot must coordinate grasp, movement, and actuation to apply a substance (like spraying a plant or surface) [2]. This matters because such tasks integrate semantic understanding of the object's function, precise physical dexterity, and trajectory control—challenges that robotic systems like CoDex [2] aim to solve through zero-demonstration learning.",
         "followups": [
-          "How does CoDex work?",
-          "What are the challenges?",
-          "Can it handle other tasks?"
+          "What specific skills does this test?",
+          "How does CoDex help with this?",
+          "Can you give another example?"
         ],
         "sources": [
           {
@@ -1187,19 +1184,19 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.45942242299999236,
-          "search": 0.451233282000004,
-          "rank": 1.4120416640000002,
+          "plan": 0.311342929000034,
+          "search": 0.2680207809999615,
+          "rank": 0.8465529590000074,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.3227892620000006,
-          "total": 4.325120541999993
+          "retrieve": 1.4260107940000353,
+          "total": 2.918113892000008
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 5,
+        "sentences": 2,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
