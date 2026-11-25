@@ -52,7 +52,12 @@ jobs:
           git add DIGEST.md EVAL.md digest site backend/eval/results
           if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
           git commit -m "Daily digest + benchmark $(date -u +%F)"
-          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
+          # generated files: on conflict keep this run's fresh output (-X theirs = our commit during rebase)
+          for i in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true; sleep 5
+          done
+          echo "::error::could not push results"; exit 1
 
       - uses: actions/upload-pages-artifact@v3
         with: { path: site }
