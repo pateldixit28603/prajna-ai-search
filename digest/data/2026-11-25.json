@@ -16,7 +16,7 @@
           "What is Ramayana Part 1",
           "Key facts about Ramayana"
         ],
-        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- Ramayana: Part 1 is the soundtrack album to the 2026 film of the same name directed by Nitesh Tiwari and produced by Namit Malhotra and Yash under Prime Focus Studios, Monster Mind Creations and DNEG. [2]\n- She has also starred in the Hindi epic mythological film Ramayana: Part 1 (2026). [5]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- Ramayana: Part 1 is the soundtrack album to the 2026 film of the same name directed by Nitesh Tiwari and produced by Namit Malhotra and Yash under Prime Focus Studios, Monster Mind Creations and DNEG. [2]\n- She has also starred in the Hindi epic mythological film Ramayana: Part 1 (2026). [6]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "When is the film releasing?",
           "Who are the main actors?",
@@ -54,21 +54,6 @@
             "n": 2
           },
           {
-            "title": "List of characters in the Ramayana",
-            "url": "https://en.wikipedia.org/wiki/List_of_characters_in_the_Ramayana",
-            "source": "wikipedia",
-            "snippet": "The Ramayana is one of the two major Sanskrit ancient epics of Hindu literature. It is attributed to the sage Valmiki. This is a list of important figures that appear in the epic.",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "127b04f535a5",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
             "title": "Ramayana",
             "url": "https://en.wikipedia.org/wiki/Ramayana",
             "source": "wikipedia",
@@ -81,22 +66,7 @@
             },
             "id": "0592722fa4e6",
             "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "Rakul Preet Singh",
-            "url": "https://en.wikipedia.org/wiki/Rakul_Preet_Singh",
-            "source": "wikipedia",
-            "snippet": "Rakul Preet Singh (born 10 October 1990) is an Indian actress who predominantly works in Telugu, Hindi and Tamil films. Singh is a recipient of several accolades including a SIIMA Award, in addition to four nominations at the Filmfare Awards South. Singh started her career as a m",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "67642473618b",
-            "domain": "en.wikipedia.org",
-            "n": 5
+            "n": 3
           },
           {
             "title": "Ramayana: The Legend of Prince Rama",
@@ -111,7 +81,7 @@
             },
             "id": "d822fea7aa35",
             "domain": "en.wikipedia.org",
-            "n": 6
+            "n": 4
           },
           {
             "title": "Scion of Ikshvaku",
@@ -126,33 +96,63 @@
             },
             "id": "76ce12b9aaad",
             "domain": "en.wikipedia.org",
-            "n": 7
+            "n": 5
           },
           {
-            "title": "Urmila",
-            "url": "https://en.wikipedia.org/wiki/Urmila",
+            "title": "Rakul Preet Singh",
+            "url": "https://en.wikipedia.org/wiki/Rakul_Preet_Singh",
             "source": "wikipedia",
-            "snippet": "Urmila (Sanskrit: ऊर्मिला, romanized: Urmilā, lit. 'enchantress'), is a Hindu goddess and the princess of Videha in the epic Ramayana. She is also considered an avatar of Nagalakshmi. Urmila was born as the daughter of King Janaka of Mithila and Queen Sunayana. Sita, the female p",
+            "snippet": "Rakul Preet Singh (born 10 October 1990) is an Indian actress who predominantly works in Telugu, Hindi and Tamil films. Singh is a recipient of several accolades including a SIIMA Award, in addition to four nominations at the Filmfare Awards South. Singh started her career as a m",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "012347b65a7a",
+            "id": "67642473618b",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "List of characters in the Ramayana",
+            "url": "https://en.wikipedia.org/wiki/List_of_characters_in_the_Ramayana",
+            "source": "wikipedia",
+            "snippet": "The Ramayana is one of the two major Sanskrit ancient epics of Hindu literature. It is attributed to the sage Valmiki. This is a list of important figures that appear in the epic.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "127b04f535a5",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Kumbhakarna",
+            "url": "https://en.wikipedia.org/wiki/Kumbhakarna",
+            "source": "wikipedia",
+            "snippet": "Kumbhakarna (Sanskrit: कुम्भकर्ण, lit. pot-eared) is a powerful rakshasa and younger brother of Ravana from the Hindu epic Ramayana. He is said to have slaughtered 8,000 vanaras over the course of Rama's mission to rescue Sita. Kumbhakarna is known to sleep for six months at a ti",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "824beb892946",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.601565450999999,
-          "search": 0.3296957630000037,
-          "rank": 0.8991984160000044,
+          "plan": 0.46541041000000405,
+          "search": 0.4659278459999996,
+          "rank": 3.282221725999996,
           "dense": 1.0,
-          "rerank": 0.0,
-          "retrieve": 1.830535408000003,
-          "total": 12.426083848999994
+          "rerank": 1.0,
+          "retrieve": 4.213618920000002,
+          "total": 14.298588623
         },
         "nvidia": false,
         "llm_error": ""
@@ -178,9 +178,9 @@
           "What is Grand Theft Auto VI",
           "Grand Theft Auto VI key facts"
         ],
-        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. [1]\n\n**Key points from the sources:**\n- It is the eighth main entry in the Grand Theft Auto series, following Grand Theft Auto V (2013), and the sixteenth entry overall. [1]\n- Preliminary work began in 2014 after the release of Grand Theft Auto V; principal production began after the 2018 launch of Red Dead Redemption 2. [1]\n- \"Grand Theft Auto VI: An Extended Look\" is a 2026 promotional trailer previewing the video game Grand Theft Auto VI. [2]\n- Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games' 2026 video game Grand Theft Auto VI. [3]\n- Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. [1]\n\n**Key points from the sources:**\n- It is the eighth main entry in the Grand Theft Auto series, following Grand Theft Auto V (2013), and the sixteenth entry overall. [1]\n- Preliminary work began in 2014 after the release of Grand Theft Auto V; principal production began after the 2018 launch of Red Dead Redemption 2. [1]\n- \"Grand Theft Auto VI: An Extended Look\" is a 2026 promotional trailer previewing the video game Grand Theft Auto VI. [2]\n- Grand Theft Auto (GTA) is an action-adventure video game series created by the Scottish programmers David Jones and Mike Dailly at DMA Design, now known as Rockstar North. [3]\n- Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games' 2026 video game Grand Theft Auto VI. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "When is GTA VI actually coming out?",
+          "When is it expected to release?",
           "Who are the playable characters?",
           "Where can I find more details?"
         ],
@@ -216,6 +216,21 @@
             "n": 2
           },
           {
+            "title": "Grand Theft Auto",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto (GTA) is an action-adventure video game series created by the Scottish programmers David Jones and Mike Dailly at DMA Design, now known as Rockstar North. Later titles were developed under the oversight of brothers Dan and Sam Houser, Leslie Benzies and Aaron Gar",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d56b41b53500",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
             "title": "Lucia Caminos",
             "url": "https://en.wikipedia.org/wiki/Lucia_Caminos",
             "source": "wikipedia",
@@ -228,7 +243,7 @@
             },
             "id": "c18959d481d1",
             "domain": "en.wikipedia.org",
-            "n": 3
+            "n": 4
           },
           {
             "title": "Grand Theft Auto: Vice City",
@@ -242,21 +257,6 @@
               "license": "CC BY-SA 4.0"
             },
             "id": "1ce06c45db6a",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "Grand Theft Auto V",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
-            "source": "wikipedia",
-            "snippet": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth entry overall. Set within the fictional state of Sa",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e1cf99e333f0",
             "domain": "en.wikipedia.org",
             "n": 5
           },
@@ -276,21 +276,6 @@
             "n": 6
           },
           {
-            "title": "Development of Red Dead Redemption",
-            "url": "https://en.wikipedia.org/wiki/Development_of_Red_Dead_Redemption",
-            "source": "wikipedia",
-            "snippet": "A team of approximately 1,000 people developed Red Dead Redemption over five years. Rockstar Games published the action-adventure game in May 2010 for the PlayStation 3 and Xbox 360. A spiritual successor to the 2004 game Red Dead Revolver, its development was led by Rockstar San",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "41c9194e0277",
-            "domain": "en.wikipedia.org",
-            "n": 7
-          },
-          {
             "title": "Jack Thompson (activist)",
             "url": "https://en.wikipedia.org/wiki/Jack_Thompson_(activist)",
             "source": "wikipedia",
@@ -303,18 +288,33 @@
             },
             "id": "e025d9d77064",
             "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Development of Red Dead Redemption",
+            "url": "https://en.wikipedia.org/wiki/Development_of_Red_Dead_Redemption",
+            "source": "wikipedia",
+            "snippet": "A team of approximately 1,000 people developed Red Dead Redemption over five years. Rockstar Games published the action-adventure game in May 2010 for the PlayStation 3 and Xbox 360. A spiritual successor to the 2004 game Red Dead Revolver, its development was led by Rockstar San",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "41c9194e0277",
+            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4645171099999885,
-          "search": 2.1498443950000024,
-          "rank": 0.8575687619999997,
+          "plan": 0.36363181400000144,
+          "search": 1.441531806999997,
+          "rank": 0.4482422029999995,
           "dense": 1.0,
-          "rerank": 0.0,
-          "retrieve": 3.471997471999998,
-          "total": 14.956077813999997
+          "rerank": 1.0,
+          "retrieve": 2.253454365000003,
+          "total": 11.066201923000001
         },
         "nvidia": false,
         "llm_error": ""
@@ -340,28 +340,13 @@
           "Who is Jensen Huang",
           "Jensen Huang key facts"
         ],
-        "answer": "On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [1]\n\n**Key points from the sources:**\n- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [1]\n- officials did not warn Jensen Huang through a defensive briefing. [1]\n- Jen-Hsun \"Jensen\" Huang (born February 17, 1963) is a Taiwanese and American electrical engineer and business executive who is the co-founder, president, and chief executive officer (CEO) of Nvidia, one of the world's most valuable companies. [2]\n- In November 2026, he received attention due to Nvidia CEO Jensen Huang's extramarital affair with Alice Huang. [3]\n- Between 12 and 23 November 2026, Kress briefly served as the interim chief executive officer (CEO) of Nvidia, following the resignation of former Nvidia CEO and co-founder Jensen Huang amid allegations of his extramarital affairs. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Jen-Hsun \"Jensen\" Huang (born February 17, 1963) is a Taiwanese and American electrical engineer and business executive who is the co-founder, president, and chief executive officer (CEO) of Nvidia, one of the world's most valuable companies. [1]\n\n**Key points from the sources:**\n- On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [2]\n- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [2]\n- officials did not warn Jensen Huang through a defensive briefing. [2]\n- Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [3]\n- In November 2026, he received attention due to Nvidia CEO Jensen Huang's extramarital affair with Alice Huang. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "What is Nvidia known for?",
-          "When was he born?",
-          "Are the reports confirmed?"
+          "When was Nvidia founded?",
+          "Are there more details on the spy plot?"
         ],
         "sources": [
-          {
-            "title": "Jensen Huang scandal",
-            "url": "https://en.wikipedia.org/wiki/Jensen_Huang_scandal",
-            "source": "wikipedia",
-            "snippet": "On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. intelligence surveillance who spoke on condition of anonymity. Huang had an ext",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "c83e95e5b0ea",
-            "domain": "en.wikipedia.org",
-            "n": 1
-          },
           {
             "title": "Jensen Huang",
             "url": "https://en.wikipedia.org/wiki/Jensen_Huang",
@@ -375,52 +360,22 @@
             },
             "id": "f5b3ff01ae76",
             "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Jensen Huang scandal",
+            "url": "https://en.wikipedia.org/wiki/Jensen_Huang_scandal",
+            "source": "wikipedia",
+            "snippet": "On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. intelligence surveillance who spoke on condition of anonymity. Huang had an ext",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "c83e95e5b0ea",
+            "domain": "en.wikipedia.org",
             "n": 2
-          },
-          {
-            "title": "Kang Wei",
-            "url": "https://en.wikipedia.org/wiki/Kang_Wei",
-            "source": "wikipedia",
-            "snippet": "Kang Wei (Chinese: 康伟; born January 1975) is a Chinese investor who is the chairman of Shanghai Hexi Investment Management. After 2016, he and his wife Alice Huang invested in several fast-growing sectors such as games, pharmaceuticals, and cloud computing. Kang was penalized sev",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "6b0cea7ee7d6",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
-            "title": "Colette Kress",
-            "url": "https://en.wikipedia.org/wiki/Colette_Kress",
-            "source": "wikipedia",
-            "snippet": "Colette Marie Kress (born 1966 or 1967) is an American business executive who is the chief financial officer (CFO) of Nvidia. Kress worked at Texas Instruments, before serving as CFO of Cisco's Business Technology and Operations Finance Section and CFO at Microsoft's Server and T",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "00b437bf31c4",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "Alice Huang (executive)",
-            "url": "https://en.wikipedia.org/wiki/Alice_Huang_(executive)",
-            "source": "wikipedia",
-            "snippet": "Alice Huang (Chinese: 黄乐; pinyin: Huáng Lè; born December 1982) is a Chinese technology executive and investor. She was an executive at Megaspeed, a Singaporean technology company, before she officially stepped down from her role in August 2025. Huang's role in the company after ",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "84a52381aaf2",
-            "domain": "en.wikipedia.org",
-            "n": 5
           },
           {
             "title": "Nvidia",
@@ -435,22 +390,52 @@
             },
             "id": "4a7ac65635eb",
             "domain": "en.wikipedia.org",
-            "n": 6
+            "n": 3
           },
           {
-            "title": "Nintendo Switch 2",
-            "url": "https://en.wikipedia.org/wiki/Nintendo_Switch_2",
+            "title": "Kang Wei",
+            "url": "https://en.wikipedia.org/wiki/Kang_Wei",
             "source": "wikipedia",
-            "snippet": "The Nintendo Switch 2 is a video game console developed by Nintendo and released in most regions on June 5, 2025. Like the preceding Nintendo Switch, it can be used as a handheld, as a tablet, or connected via the dock to an external display. The Joy-Con 2 controllers can be used",
+            "snippet": "Kang Wei (Chinese: 康伟; born January 1975) is a Chinese investor who is the chairman of Shanghai Hexi Investment Management. After 2016, he and his wife Alice Huang invested in several fast-growing sectors such as games, pharmaceuticals, and cloud computing. Kang was penalized sev",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "4d1776e52010",
+            "id": "6b0cea7ee7d6",
             "domain": "en.wikipedia.org",
-            "n": 7
+            "n": 4
+          },
+          {
+            "title": "Colette Kress",
+            "url": "https://en.wikipedia.org/wiki/Colette_Kress",
+            "source": "wikipedia",
+            "snippet": "Colette Marie Kress (born 1966 or 1967) is an American business executive who is the chief financial officer (CFO) of Nvidia. Kress worked at Texas Instruments, before serving as CFO of Cisco's Business Technology and Operations Finance Section and CFO at Microsoft's Server and T",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "00b437bf31c4",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Alice Huang (executive)",
+            "url": "https://en.wikipedia.org/wiki/Alice_Huang_(executive)",
+            "source": "wikipedia",
+            "snippet": "Alice Huang (Chinese: 黄乐; pinyin: Huáng Lè; born December 1982) is a Chinese technology executive and investor. She was an executive at Megaspeed, a Singaporean technology company, before she officially stepped down from her role in August 2025. Huang's role in the company after ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "84a52381aaf2",
+            "domain": "en.wikipedia.org",
+            "n": 6
           },
           {
             "title": "Megaspeed",
@@ -465,18 +450,33 @@
             },
             "id": "829eb7293699",
             "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Moore's law",
+            "url": "https://en.wikipedia.org/wiki/Moore%27s_law",
+            "source": "wikipedia",
+            "snippet": "Moore's law is the observation that the number of transistors in an integrated circuit (IC) doubles about every two years, with minimal increase in cost. Despite the name, Moore's law describes an empirical relationship, not a scientific law. This type of observation, an experien",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "034fe83b6deb",
+            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.41081189899999515,
-          "search": 0.358190804000003,
-          "rank": 0.8028882140000064,
+          "plan": 0.3207064419999952,
+          "search": 0.4063290680000051,
+          "rank": 3.562778680000001,
           "dense": 1.0,
-          "rerank": 0.0,
-          "retrieve": 1.5719429709999986,
-          "total": 14.523887380999994
+          "rerank": 1.0,
+          "retrieve": 4.28985329799999,
+          "total": 12.077483034999993
         },
         "nvidia": false,
         "llm_error": ""
@@ -502,28 +502,13 @@
           "what is the moon",
           "key facts about the moon"
         ],
-        "answer": "A Moon landing (also known as a lunar landing) is the arrival of a crewed or robotic lander on the Moon. [1]\n\n**Key points from the sources:**\n- The first human-made object to touch the Moon was Luna 2 in 1959, and the first crewed mission to land on the Moon was Apollo 11 in 1969. [1]\n- All crewed missions to the Moon were conducted by the Apollo program, with the last departing in December 1972. [1]\n- After Luna 24 in 1976, there were no soft landings—landings without significant damage—on the Moon until Chang'e 3 in 2013. [1]\n- All soft landings took place on the near side of the Moon until Chang'e 4 landed on the far side of the Moon in 2019. [1]\n- The Moon is the only natural satellite of Earth. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "The Moon is the only natural satellite of Earth. [1]\n\n**Key points from the sources:**\n- The Moon and Earth are bound by gravitational attraction, which is stronger on the sides facing each other. [1]\n- The resulting tidal forces are the main driver of Earth's tides, and have pulled the Moon to always face Earth with the same near side. [1]\n- This tidal locking effectively synchronizes the Moon's rotation period (lunar day) to its orbital period (lunar month). [1]\n- In geophysical terms, the Moon is a planetary-mass object or satellite planet. [1]\n- Moon is a 2009 science fiction film directed by Duncan Jones (in his directorial debut), written by Nathan Parker from a story by Jones. [2]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "What was the Apollo 11 mission?",
-          "When was the first soft landing?",
-          "Is the Moon Earth's only satellite?"
+          "Is the Moon a planet?",
+          "How does tidal locking work?",
+          "Which Moon are you referring to?"
         ],
         "sources": [
-          {
-            "title": "Moon landing",
-            "url": "https://en.wikipedia.org/wiki/Moon_landing",
-            "source": "wikipedia",
-            "snippet": "A Moon landing (also known as a lunar landing) is the arrival of a crewed or robotic lander on the Moon. The first human-made object to touch the Moon was Luna 2 in 1959, and the first crewed mission to land on the Moon was Apollo 11 in 1969. There were six crewed landings betwee",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "b00d22f7528e",
-            "domain": "en.wikipedia.org",
-            "n": 1
-          },
           {
             "title": "Moon",
             "url": "https://en.wikipedia.org/wiki/Moon",
@@ -536,6 +521,21 @@
               "license": "CC BY-SA 4.0"
             },
             "id": "04c9f9b5af2a",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Moon (2009 film)",
+            "url": "https://en.wikipedia.org/wiki/Moon_(2009_film)",
+            "source": "wikipedia",
+            "snippet": "Moon is a 2009 science fiction film directed by Duncan Jones (in his directorial debut), written by Nathan Parker from a story by Jones. It stars Sam Rockwell as Sam Bell, a man who experiences a personal crisis as he nears the end of a three-year solitary stint mining helium-3 o",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "3be76c7e5020",
             "domain": "en.wikipedia.org",
             "n": 2
           },
@@ -555,17 +555,17 @@
             "n": 3
           },
           {
-            "title": "Moon (2009 film)",
-            "url": "https://en.wikipedia.org/wiki/Moon_(2009_film)",
+            "title": "Moon landing",
+            "url": "https://en.wikipedia.org/wiki/Moon_landing",
             "source": "wikipedia",
-            "snippet": "Moon is a 2009 science fiction film directed by Duncan Jones (in his directorial debut), written by Nathan Parker from a story by Jones. It stars Sam Rockwell as Sam Bell, a man who experiences a personal crisis as he nears the end of a three-year solitary stint mining helium-3 o",
+            "snippet": "A Moon landing (also known as a lunar landing) is the arrival of a crewed or robotic lander on the Moon. The first human-made object to touch the Moon was Luna 2 in 1959, and the first crewed mission to land on the Moon was Apollo 11 in 1969. There were six crewed landings betwee",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "3be76c7e5020",
+            "id": "b00d22f7528e",
             "domain": "en.wikipedia.org",
             "n": 4
           },
@@ -600,17 +600,17 @@
             "n": 6
           },
           {
-            "title": "Apollo 11",
-            "url": "https://en.wikipedia.org/wiki/Apollo_11",
+            "title": "Apollo program",
+            "url": "https://en.wikipedia.org/wiki/Apollo_program",
             "source": "wikipedia",
-            "snippet": "Apollo 11 (July 16–24, 1969) was the American spaceflight that first landed humans on the Moon, and the fifth crewed mission of NASA's Apollo program. The mission was crewed by Commander Neil Armstrong, Command Module Pilot Michael Collins, and Lunar Module Pilot Edwin \"Buzz\" Ald",
+            "snippet": "The Apollo program, also known as Project Apollo, was a United States human spaceflight program led by NASA that landed the first humans on the Moon in 1969. Conceived in 1960 during the presidency of Dwight D. Eisenhower, alongside Project Mercury, the program was carried out fo",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "bd6c8bfc1efd",
+            "id": "d578f0ca697f",
             "domain": "en.wikipedia.org",
             "n": 7
           },
@@ -632,13 +632,13 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4184778759999972,
-          "search": 0.3730411339999904,
-          "rank": 0.6980306009999993,
+          "plan": 0.30998333399999467,
+          "search": 0.4414542370000021,
+          "rank": 1.5298798900000037,
           "dense": 1.0,
-          "rerank": 0.0,
-          "retrieve": 1.489601365999988,
-          "total": 39.532156068999996
+          "rerank": 1.0,
+          "retrieve": 2.2813561070000077,
+          "total": 21.22183441700001
         },
         "nvidia": false,
         "llm_error": ""
@@ -653,7 +653,7 @@
     {
       "kind": "hackernews",
       "topic": "Matrix Multiplication is Θ(n^2.25)",
-      "points": 878,
+      "points": 880,
       "discussion": "https://news.ycombinator.com/item?id=50637220",
       "question": "Matrix Multiplication is Θ(n^2.25) — what is this about and why does it matter?",
       "focus": "all",
@@ -662,31 +662,15 @@
         "focus": "all",
         "queries": [
           "Matrix Multiplication complexity O(n^2.25)",
-          "Significance of O(n^2.25) matrix multiplication"
+          "Significance of matrix multiplication complexity"
         ],
-        "answer": "Matrix multiplication is the foundation from much of the success from high performance technologies like deep learning, scientific simulations, and video graphics. [1]\n\n**Key points from the sources:**\n- High level programming languages like Python and R rely on highly optimized low level libraries for performing core linear algebra operations like matrix multiplication from Basic Linear Algebra Subprograms (BLAS). [1]\n- This paper compares the performance of five different matrix multiplication algorithms using CuBLAS, CUDA, BLAS, OpenMP, and C++ Threads. [1]\n- We find statistical significance with a p-value below 5e-12 to support the hypothesis that for square $N \\times N$ matrices where $N$ is at least 10,000 then the in order performance as measured in floating point operations per second (FLOPS) for these matrix multiplication algorithms is CuBLAS, CUDA, BLAS, OpenMP, and C++ Threads. [1]\n- In theoretical computer science, the computational complexity of matrix multiplication dictates how quickly the operation of matrix multiplication can be performed. [2]\n- Because matrix multiplication is such a central operation in many numerical algorithms, much work has been invested in making matrix multiplication algorithms efficient. [3]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "In theoretical computer science, the computational complexity of matrix multiplication dictates how quickly the operation of matrix multiplication can be performed. [1]\n\n**Key points from the sources:**\n- Matrix multiplication algorithms are a central subroutine in theoretical and numerical algorithms for numerical linear algebra and optimization, so finding the fastest algorithm for matrix multiplication is of major practical relevance. [1]\n- Directly applying the mathematical definition of matrix multiplication gives an algorithm that requires n3 field operations to multiply two n × n matrices over that field (Θ(n3) in big O notation). [1]\n- The first to be discovered was Strassen's algorithm, devised by Volker Strassen in 1969 and often referred to as \"fast matrix multiplication\". [1]\n- Because matrix multiplication is such a central operation in many numerical algorithms, much work has been invested in making matrix multiplication algorithms efficient. [2]\n- The complexity of matrix multiplication: developments since 2014. [3]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "What are the other algorithms compared?",
-          "How does $n^{2.25}$ compare to $n^3$?",
-          "Where can I find the full paper?"
+          "What is Strassen's algorithm?",
+          "How does n^2.25 compare to n^3?",
+          "What are other fast algorithms?"
         ],
         "sources": [
-          {
-            "title": "High Performance Matrix Multiplication",
-            "url": "https://arxiv.org/abs/2509.04594v1",
-            "source": "arxiv",
-            "snippet": "Matrix multiplication is the foundation from much of the success from high performance technologies like deep learning, scientific simulations, and video graphics. High level programming languages like Python and R rely on highly optimized low level libraries for performing core ",
-            "published": "2025-09-04",
-            "authors": [
-              "Ethan Davis"
-            ],
-            "extra": {
-              "license": "arXiv"
-            },
-            "id": "93b46fc4318d",
-            "domain": "arxiv.org",
-            "n": 1
-          },
           {
             "title": "Computational complexity of matrix multiplication",
             "url": "https://en.wikipedia.org/wiki/Computational_complexity_of_matrix_multiplication",
@@ -700,7 +684,7 @@
             },
             "id": "6c5fca26f0d7",
             "domain": "en.wikipedia.org",
-            "n": 2
+            "n": 1
           },
           {
             "title": "Matrix multiplication algorithm",
@@ -715,7 +699,39 @@
             },
             "id": "056ea7ece8cf",
             "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "The complexity of matrix multiplication: developments since 2014. Extended abstract of 2018 Oberwolfach Complexity meeting plenary lecture",
+            "url": "https://arxiv.org/abs/1811.11667v1",
+            "source": "arxiv",
+            "snippet": "This is an overview of recent developments regarding the complexity of matrix multiplication, with an emphasis on the uses of algebraic geometry and representation theory in complexity theory.",
+            "published": "2018-11-28",
+            "authors": [
+              "Joseph M. Landsberg"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "5b852472f6e6",
+            "domain": "arxiv.org",
             "n": 3
+          },
+          {
+            "title": "Geometry and the complexity of matrix multiplication",
+            "url": "https://arxiv.org/abs/cs/0703059v1",
+            "source": "arxiv",
+            "snippet": "We survey results in algebraic complexity theory, focusing on matrix multiplication. Our goals are (i.) to show how open questions in algebraic complexity theory are naturally posed as questions in geometry and representation theory, (ii.) to motivate researchers to work on these",
+            "published": "2007-03-12",
+            "authors": [
+              "J. M. Landsberg"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "6ef9fcb5aaa6",
+            "domain": "arxiv.org",
+            "n": 4
           },
           {
             "title": "Matrix Multiplication with Less Arithmetic Complexity and IO Complexity",
@@ -734,84 +750,69 @@
             },
             "id": "f70e9276878e",
             "domain": "arxiv.org",
-            "n": 4
-          },
-          {
-            "title": "Reducing the Complexity of Matrix Multiplication by Quantum Computing",
-            "url": "https://arxiv.org/abs/2602.05541v3",
-            "source": "arxiv",
-            "snippet": "Matrix multiplication is a fundamental operation in compute-intensive tasks and a key component of modern quantum acceleration frameworks. Here we present a quantum matrix multiplication algorithm based on quantum kernels (QKMM), achieving an elementary gate complexity of \\(O(N^2",
-            "published": "2026-02-05",
-            "authors": [
-              "Jiaqi Yao",
-              "Tianjian Huang",
-              "Tonghe Zhang",
-              "Ding Liu"
-            ],
-            "extra": {
-              "license": "arXiv"
-            },
-            "id": "6478b1fa2fb4",
-            "domain": "arxiv.org",
             "n": 5
           },
           {
-            "title": "The complexity of matrix multiplication: developments since 2014. Extended abstract of 2018 Oberwolfach Complexity meeting plenary lecture",
-            "url": "https://arxiv.org/abs/1811.11667v1",
+            "title": "Secant varieties and the complexity of matrix multiplication",
+            "url": "https://arxiv.org/abs/2208.00857v1",
             "source": "arxiv",
-            "snippet": "This is an overview of recent developments regarding the complexity of matrix multiplication, with an emphasis on the uses of algebraic geometry and representation theory in complexity theory.",
-            "published": "2018-11-28",
-            "authors": [
-              "Joseph M. Landsberg"
-            ],
-            "extra": {
-              "license": "arXiv"
-            },
-            "id": "5b852472f6e6",
-            "domain": "arxiv.org",
-            "n": 6
-          },
-          {
-            "title": "Online matrix-vector multiplication problem",
-            "url": "https://en.wikipedia.org/wiki/Online_matrix-vector_multiplication_problem",
-            "source": "wikipedia",
-            "snippet": "In computational complexity theory, the online matrix-vector multiplication problem (OMv) asks an online algorithm to return, at each round, the product of an n×n matrix and a newly-arrived n-dimensional vector. OMv is conjectured to require roughly cubic time. This conjectured h",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "87a9e83eccb5",
-            "domain": "en.wikipedia.org",
-            "n": 7
-          },
-          {
-            "title": "Geometry and the complexity of matrix multiplication",
-            "url": "https://arxiv.org/abs/cs/0703059v1",
-            "source": "arxiv",
-            "snippet": "We survey results in algebraic complexity theory, focusing on matrix multiplication. Our goals are (i.) to show how open questions in algebraic complexity theory are naturally posed as questions in geometry and representation theory, (ii.) to motivate researchers to work on these",
-            "published": "2007-03-12",
+            "snippet": "This is a survey primarily about determining the border rank of tensors, especially those relevant for the study of the complexity of matrix multiplication. This is a subject that on the one hand is of great significance in theoretical computer science, and on the other hand touc",
+            "published": "2022-08-01",
             "authors": [
               "J. M. Landsberg"
             ],
             "extra": {
               "license": "arXiv"
             },
-            "id": "6ef9fcb5aaa6",
+            "id": "aa7bec298092",
+            "domain": "arxiv.org",
+            "n": 6
+          },
+          {
+            "title": "High Performance Matrix Multiplication",
+            "url": "https://doi.org/10.48550/arxiv.2509.04594",
+            "source": "openalex",
+            "snippet": "Matrix multiplication is the foundation from much of the success from high performance technologies like deep learning, scientific simulations, and video graphics. High level programming languages like Python and R rely on highly optimized low level libraries for performing core ",
+            "published": "2025",
+            "authors": [
+              "Davis, Ethan"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "5329db87e972",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "The Complexity of Simulation and Matrix Multiplication",
+            "url": "https://arxiv.org/abs/1605.02156v2",
+            "source": "arxiv",
+            "snippet": "Computing the simulation preorder of a given Kripke structure (i.e., a directed graph with $n$ labeled vertices) has crucial applications in model checking of temporal logic. It amounts to solving a specific two-players reachability game, called simulation game. We offer the firs",
+            "published": "2016-05-07",
+            "authors": [
+              "Massimo Cairo",
+              "Romeo Rizzi"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "640db32388f8",
             "domain": "arxiv.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.7288820969999961,
-          "search": 0.6640182250000066,
-          "rank": 1.3687525050000033,
+          "plan": 0.39989782099999616,
+          "search": 0.7500550490000109,
+          "rank": 0.9301694950000012,
           "dense": 1.0,
-          "rerank": 0.0,
-          "retrieve": 2.761778595999999,
-          "total": 11.49935037100002
+          "rerank": 1.0,
+          "retrieve": 2.080212598000003,
+          "total": 10.190702345000005
         },
         "nvidia": false,
         "llm_error": ""
@@ -826,7 +827,7 @@
     {
       "kind": "hackernews",
       "topic": "Button Sounds – collection of professionally-recorded button clicks and presses",
-      "points": 698,
+      "points": 702,
       "discussion": "https://news.ycombinator.com/item?id=50638032",
       "question": "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?",
       "focus": "all",
@@ -834,14 +835,14 @@
         "question": "Button Sounds – collection of professionally-recorded button clicks and presses — what is this about and why does it matter?",
         "focus": "all",
         "queries": [
-          "professionally recorded button clicks",
-          "button sounds collection purpose"
+          "Button Sounds collection professionally recorded",
+          "importance of button click sounds"
         ],
-        "answer": "Button Sounds is a curated library of professionally recorded button click and press audio clips, available at buttons.joshwcomeau.com and highlighted on Hacker News with 702 points and 113 comments [1]. It matters because it provides developers and designers with high-quality, instantly usable sound effects that improve interface feedback and user experience, reflecting a broader industry shift toward treating auditory detail as a core design element [1]. The collection eliminates the need for custom recording setups while ensuring consistency and polish in software applications [1].\n\n- **What it is**: A publicly accessible collection of authentic button-click sounds, ready",
+        "answer": "Button Sounds – collection of professionally-recorded button clicks and presses. [1]\n\n**Key points from the sources:**\n- Judge Pauley’s Opinion in Clapper: Reset Button for Bulk Collection Debate?. [2]\n- This article was originally found in Lawfare, available here: https://www.lawfareblog.com/judge-pauleys-opinion-clapper-reset-button-bulk-collection-debate [2]\n- Perceptual features of everyday push button sounds and audiotactile interaction. [3]\n- The results of this investigation showed that the fundamental perceptual factors of button sounds are pleasantness, confirmation, alerting, irritating, and quality. [3]\n- \"Push the Button\" is a song recorded by English girl group Sugababes for their fourth studio album Taller in More Ways (2005). [5]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "Where can I download the sounds?",
-          "Who is Josh Comeau?",
-          "Are there other sound types?"
+          "Is it related to the Clapper case?",
+          "What are the perceptual factors?",
+          "Is there a specific use case?"
         ],
         "sources": [
           {
@@ -854,8 +855,8 @@
               "gaurang_tandon"
             ],
             "extra": {
-              "points": 702,
-              "comments": 113,
+              "points": 705,
+              "comments": 115,
               "discussion": "https://news.ycombinator.com/item?id=50638032"
             },
             "id": "731330eec3a0",
@@ -863,161 +864,150 @@
             "n": 1
           },
           {
-            "title": "Sound collection systems using a crowdsourcing approach to construct sound map based on subjective evaluation",
-            "url": "https://doi.org/10.1109/icmew.2016.7574694",
+            "title": "Judge Pauley’s Opinion in Clapper: Reset Button for Bulk Collection Debate?",
+            "url": "https://docs.rwu.edu/law_fac_fs/256",
             "source": "openalex",
-            "snippet": "This paper presents a sound collection system that uses crowdsourcing to gather information for visualizing area characteristics. First, we developed a sound collection system to simultaneously collect physical sounds, their statistics, and subjective evaluations. We then conduct",
-            "published": "2016",
+            "snippet": "This article was originally found in Lawfare, available here: https://www.lawfareblog.com/judge-pauleys-opinion-clapper-reset-button-bulk-collection-debate",
+            "published": "2013",
             "authors": [
-              "Sunao Hara",
-              "Shota Kobayashi",
-              "Masanobu Abe"
-            ],
-            "extra": {
-              "cited_by": 7,
-              "venue": "IEEE International Conference on Multimedia & Expo Workshops (ICMEW)",
-              "license": "CC0 metadata"
-            },
-            "id": "79a14997a5b8",
-            "domain": "doi.org",
-            "n": 2
-          },
-          {
-            "title": "Jitter Click Test – How to Jitter click?",
-            "url": "https://doi.org/10.5281/zenodo.6997575",
-            "source": "openalex",
-            "snippet": "Professional gamers frequently employ the Jitter Click Test as a technique to measure and improve their jitter clicking speed, which is faster than ordinary clicking speed and is utilized to improve PVP performance. In this technique, a quick, tightly controlled vibration is prod",
-            "published": "2022",
-            "authors": [
-              "Lanĕ"
+              "Peter Margulies"
             ],
             "extra": {
               "cited_by": 0,
-              "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+              "venue": "Roger Williams University - Digital Commons (Roger Williams University)",
               "license": "CC0 metadata"
             },
-            "id": "14bcd5455091",
+            "id": "ff0eacac5f77",
+            "domain": "docs.rwu.edu",
+            "n": 2
+          },
+          {
+            "title": "Perceptual features of everyday push button sounds and audiotactile interaction",
+            "url": "https://doi.org/10.1250/ast.41.173",
+            "source": "openalex",
+            "snippet": "The first aim of this study is to investigate the relationship between the signal properties and the perceptual attributes of everyday push button sounds and the second aim is to investigate the effect of loudness on the perceived tactile feedback intensity from buttons. This kno",
+            "published": "2020",
+            "authors": [
+              "M. Ercan Altinsoy"
+            ],
+            "extra": {
+              "cited_by": 13,
+              "venue": "Nippon Onkyo Gakkaishi/Acoustical science and technology/Nihon Onkyo Gakkaishi",
+              "license": "CC0 metadata"
+            },
+            "id": "feef9034db52",
             "domain": "doi.org",
             "n": 3
           },
           {
-            "title": "Computing and mental health: intentionality and reflection at the click of a button",
-            "url": "https://doi.org/10.1145/3154862.3154877",
+            "title": "You click and hold the move button. A study on Incidental L2-Vocabulary Learning whilst playing video games",
+            "url": "https://nva.sikt.no/registration/0198cc7068dd-c988b661-9650-4395-bf4f-a67f26b7404d",
             "source": "openalex",
-            "snippet": "Automated passive sensing applications and self-reported smart diaries seem to hold promise for the management of anxiety in autism and other mental health conditions. However, passive sensing often struggles with noisy data, ambiguous feedback and weak user agency over the devic",
-            "published": "2017",
+            "snippet": "The goal of the study was to investigate if there were any advantages acquiring verbs from playing video games instead of watching them. The theoretical framework suggested that supplementary input from elsewhere is needed in order to explain how second language learners learn En",
+            "published": "2015",
             "authors": [
-              "Maria Angela Ferrario",
-              "Will Simm",
-              "Adrian Gradinar",
-              "Stephen Forshaw",
-              "Marcia Tavares Smith",
-              "Thomas Lee"
+              "Tor Emil Fløan"
             ],
             "extra": {
-              "cited_by": 24,
-              "venue": "International Conference on Pervasive Computing Technologies for Healthcare",
+              "cited_by": 0,
+              "venue": "NVA (Nasjonalt vitenarkiv)",
               "license": "CC0 metadata"
             },
-            "id": "62ad17f22783",
-            "domain": "doi.org",
+            "id": "6afed1832943",
+            "domain": "nva.sikt.no",
             "n": 4
           },
           {
-            "title": "Blue Button",
-            "url": "https://en.wikipedia.org/wiki/Blue_Button",
+            "title": "Push the Button (Sugababes song)",
+            "url": "https://en.wikipedia.org/wiki/Push_the_Button_(Sugababes_song)",
             "source": "wikipedia",
-            "snippet": "The Blue Button is a system for patients to view online and download their own personal health records. Several Federal agencies, including the Departments of Defense, Health and Human Services, and Veterans Affairs, implemented this capability for their beneficiaries. In additio",
+            "snippet": "\"Push the Button\" is a song recorded by English girl group Sugababes for their fourth studio album Taller in More Ways (2005). Composed by Dallas Austin and the Sugababes, it was inspired by an infatuation that group member Keisha Buchanan developed with another artist. Musically",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "2beee44fa581",
+            "id": "066f3d658533",
             "domain": "en.wikipedia.org",
             "n": 5
           },
           {
-            "title": "Sound Data Collection and Transmission Noise Reduction",
-            "url": "https://digitalcommons.wku.edu/stu_hon_theses/624",
+            "title": "An investigation of underwater click sounds of biological origin in UK shallow waters",
+            "url": "https://eprints.soton.ac.uk/id/eprint/415735/1/Final_e_thesis_for_e_prints_HARLAND_22265465.pdf",
             "source": "openalex",
-            "snippet": "The WKU Engineering Department Senior Student Team, The Synchronizers, has been contracted to modify a MTD transmission’s sound characteristics. This project entails developing a sound data acquisition apparatus and method, developing a sound test stand which will fully load the ",
-            "published": "2016",
+            "snippet": "This study investigated a clicking sound which is often heard when deploying a hydrophone in UK shallow waters. This sound has often been described as being produced by snapping shrimp yet very few snapping shrimp have been found in UK waters. This work has identified the sound o",
+            "published": "2017",
             "authors": [
-              "Bradley Cockrel"
+              "E.J. Harland"
             ],
             "extra": {
-              "cited_by": 0,
-              "venue": "TopSCHOLAR (Western Kentucky University)",
+              "cited_by": 2,
+              "venue": "ePrints Soton (University of Southampton)",
               "license": "CC0 metadata"
             },
-            "id": "92e14608b731",
-            "domain": "digitalcommons.wku.edu",
+            "id": "109ca7d45dec",
+            "domain": "eprints.soton.ac.uk",
             "n": 6
           },
           {
-            "title": "Paradoxes of Digital Disengagement: In Search of the Opt-Out Button",
-            "url": "https://doi.org/10.16997/book61",
-            "source": "openalex",
-            "snippet": "Life is increasingly governed and mediated through digital and smart technologies, platforms, big data and algorithms. However, the reasons, practices and impact of how the digital is used by different institutions are often deeply linked to social oppression and injustice. Simil",
-            "published": "2022",
-            "authors": [
-              "Adi Kuntsman",
-              "Esperanza Miyake"
-            ],
+            "title": "Overloaded: The Singles Collection",
+            "url": "https://en.wikipedia.org/wiki/Overloaded:_The_Singles_Collection",
+            "source": "wikipedia",
+            "snippet": "Overloaded: The Singles Collection is the first greatest hits album of British girl group Sugababes. It was released on 10 November 2006—almost one year following the departure of founding member Mutya Buena and the introduction of her replacement, Amelle Berrabah. Overloaded fea",
+            "published": null,
+            "authors": [],
             "extra": {
-              "cited_by": 97,
-              "venue": "University of Westminster Press eBooks",
-              "license": "CC0 metadata"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "08d668b1e972",
-            "domain": "doi.org",
+            "id": "3e63a53685c5",
+            "domain": "en.wikipedia.org",
             "n": 7
           },
           {
-            "title": "Launch HN: Tavus (YC S21) – AI-generated personalized videos for sales outreach",
-            "url": "https://news.ycombinator.com/item?id=28037322",
-            "source": "hackernews",
-            "snippet": "Hi HN - Hassaan, Quinn & Rishabh here and we're the founders of Tavus ( https://tavus.io/ ). We generate personalized videos that realistically imitate your gestures and voice. See a short demo at https://video.tavus.io/video?id=2302 and play with it at https://tavus.io/playgroun",
-            "published": "2021-08-02",
+            "title": "Curating the sound of the word revolution",
+            "url": "https://eprints.leedsbeckett.ac.uk/id/eprint/6383/",
+            "source": "openalex",
+            "snippet": "Dr. Alan Dunn, Senior Lecturer at Leeds Beckett University, reflects upon his sound art project Artists’ uses of the word revolution in relation to pedagogy, curating and distribution. The project formed part of a new pedagogic model established at Leeds between Dunn, Chris Watso",
+            "published": "2018",
             "authors": [
-              "rishabhdhar"
+              "Archibald M. Dunn"
             ],
             "extra": {
-              "points": 57,
-              "comments": 73,
-              "discussion": "https://news.ycombinator.com/item?id=28037322"
+              "cited_by": 0,
+              "venue": "Leeds Beckett Repository (Leeds Beckett University)",
+              "license": "CC0 metadata"
             },
-            "id": "af90a3b20b1e",
-            "domain": "news.ycombinator.com",
+            "id": "14c39bcdea78",
+            "domain": "eprints.leedsbeckett.ac.uk",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.42722359200001847,
-          "search": 3.4084762999999896,
-          "rank": 1.2132216489999905,
-          "dense": 1.0,
+          "plan": 0.3623698459999929,
+          "search": 0.5951913580000081,
+          "rank": 0.43843386199999657,
+          "dense": 0.0,
           "rerank": 0.0,
-          "retrieve": 5.049039101000005,
-          "total": 12.632490170000011
+          "retrieve": 1.3961090740000088,
+          "total": 10.052185578000007
         },
-        "nvidia": true,
+        "nvidia": false,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 4,
-        "citation_coverage": 0.75,
+        "sentences": 6,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
-        "faithfulness": 0.0
+        "faithfulness": 1.0
       }
     },
     {
       "kind": "hackernews",
       "topic": "The Spray Bottle",
-      "points": 579,
+      "points": 581,
       "discussion": "https://news.ycombinator.com/item?id=50598555",
       "question": "The Spray Bottle — what is this about and why does it matter?",
       "focus": "all",
@@ -1028,79 +1018,13 @@
           "what is the spray bottle",
           "spray bottle significance"
         ],
-        "answer": "This is a list of bottle types, brands and companies. [1]\n\n**Key points from the sources:**\n- A bottle is a rigid container with a neck that is narrower than the body, and a \"mouth\". [1]\n- The two factors i.e., fertigation levels and foliar spray levels were evaluated against soil fertility and yield of bottle gourd. [2]\n- Effect of fertigation and foliar spray of nutrients on soil fertility and yield of bottle gourd (Lagenaria siceraria L). [2]\n- Panjabrao Deshmukh Krishi Vidyapeeth, Akola (Maharashtra) to study the effect of fertigation and foliar spray of nutrients on soil fertility and yield of bottle gourd (Lagenaria siceraria L). [2]\n- As each 8oz magnesium oil spray bottle contains 26g elemental Mg (the body has about 28g all throughout), once a bottle is finished (or a white film begins forming on the skin, implying the body isn't absorbing any more), you can be fairly certain you no longer have a magnesium deficiency. [7]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
+        "answer": "Why, when, what and how to spray. [1]\n\n**Key points from the sources:**\n- In this work, we study Compositional Dexterous Functional Object Manipulation (CD-FOM): tasks such as aiming and actuating a spray bottle on a plant or a glue gun on wood, which require both actuating an object's internal mechanism and controlling its pose to apply the object's function to the environment. [2]\n- Body spray is a perfume product, similar to aerosol deodorant, which is intended to be used elsewhere on the body besides the armpits. [3]\n- Spray characteristics from nasal spray atomization. [5]\n- But the list of ingredients in small print on the back of the bottle tells consumers what manufacturers already know: Less glamorous synthetic polymers are often the real stars behind skin creams, hair sprays, sunscreens, and a host of other cosmetics. [7]\n- The number of spray operations per week, the use of hazardous pesticides, and skin and clothes being wetted with the spray solution were significantly and independently associated with the number of signs and symptoms. [8]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "What are the bottle types listed?",
-          "How did spray levels affect yield?",
-          "Where was this study conducted?"
+          "What is CD-FOM?",
+          "How is it used?",
+          "Are there other examples?"
         ],
         "sources": [
-          {
-            "title": "List of bottle types, brands and companies",
-            "url": "https://en.wikipedia.org/wiki/List_of_bottle_types,_brands_and_companies",
-            "source": "wikipedia",
-            "snippet": "This is a list of bottle types, brands and companies. A bottle is a rigid container with a neck that is narrower than the body, and a \"mouth\". Bottles are often made of glass, clay, plastic, aluminum or other impervious materials, and are typically used to store liquids. The bott",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e992209692c8",
-            "domain": "en.wikipedia.org",
-            "n": 1
-          },
-          {
-            "title": "Effect of fertigation and foliar spray of nutrients on soil fertility and yield of bottle gourd (Lagenaria siceraria L)",
-            "url": "https://doi.org/10.31783/elsr.2022.81146151",
-            "source": "openalex",
-            "snippet": "The field experiment was conducted during Kharif, 2020-21 at Dr. Panjabrao Deshmukh Krishi Vidyapeeth, Akola (Maharashtra) to study the effect of fertigation and foliar spray of nutrients on soil fertility and yield of bottle gourd (Lagenaria siceraria L). The experiment was cond",
-            "published": "2022",
-            "authors": [
-              "Prashant Kumar",
-              "S. S. Hadole",
-              "Pratik Ramteke",
-              "Pragya Bharti"
-            ],
-            "extra": {
-              "cited_by": 3,
-              "venue": "emergent Life Sciences Research",
-              "license": "CC0 metadata"
-            },
-            "id": "2acab95fe0fc",
-            "domain": "doi.org",
-            "n": 2
-          },
-          {
-            "title": "Beer bottle",
-            "url": "https://en.wikipedia.org/wiki/Beer_bottle",
-            "source": "wikipedia",
-            "snippet": "A beer bottle is a bottle designed as a container for beer. Such designs vary greatly in size and shape, but the glass commonly is brown or green to reduce spoilage from light, especially ultraviolet. The most widely established alternatives to glass containers for beer in retail",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "5e4fc7e5ba79",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
-            "title": "Plastic bottle",
-            "url": "https://en.wikipedia.org/wiki/Plastic_bottle",
-            "source": "wikipedia",
-            "snippet": "A plastic bottle is a bottle constructed from high-density or low-density plastic. They are typically used to store liquids such as water, soft drinks, motor oil, cooking oil, medicine, shampoo or milk. They range from very small bottles to large carboys. Consumer blow molded con",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "baf700b06bf4",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
           {
             "title": "Why, when, what and how to spray",
             "url": "https://doi.org/10.33915/agnic.43",
@@ -1117,7 +1041,60 @@
             },
             "id": "af0d02c0a51d",
             "domain": "doi.org",
-            "n": 5
+            "n": 1
+          },
+          {
+            "title": "CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations",
+            "url": "https://arxiv.org/abs/2606.31909v1",
+            "source": "arxiv",
+            "snippet": "In this work, we study Compositional Dexterous Functional Object Manipulation (CD-FOM): tasks such as aiming and actuating a spray bottle on a plant or a glue gun on wood, which require both actuating an object's internal mechanism and controlling its pose to apply the object's f",
+            "published": "2026-06-30",
+            "authors": [
+              "Bowen Jiang",
+              "William Painter Reger",
+              "Roberto Martin-Martin"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "301aa1edfbd1",
+            "domain": "arxiv.org",
+            "n": 2
+          },
+          {
+            "title": "Body spray",
+            "url": "https://en.wikipedia.org/wiki/Body_spray",
+            "source": "wikipedia",
+            "snippet": "Body spray is a perfume product, similar to aerosol deodorant, which is intended to be used elsewhere on the body besides the armpits. Body sprays are lighter in strength than cologne, generally less expensive, and double as deodorant.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "9fb9a14ef9ec",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "All for a drop: Undines and drop bottles",
+            "url": "https://doi.org/10.1136/bjo.2009.177030",
+            "source": "openalex",
+            "snippet": "Cover illustration courtesy of Mr Richard Keeler, curator of the museum of the Royal College of Ophthalmologists, UK. Cover photo: Mark Thomas. Drops, ointments, gels, inserts and sprays are established modes of administering medication to the eye. Doctors and patients will not p",
+            "published": "2009",
+            "authors": [
+              "R. Keeler",
+              "Arun D. Singh",
+              "Harminder S Dua"
+            ],
+            "extra": {
+              "cited_by": 1,
+              "venue": "British Journal of Ophthalmology",
+              "license": "CC0 metadata"
+            },
+            "id": "d4f370195e2b",
+            "domain": "doi.org",
+            "n": 4
           },
           {
             "title": "Spray characteristics from nasal spray atomization",
@@ -1140,54 +1117,81 @@
             },
             "id": "f81e71043af8",
             "domain": "doi.org",
-            "n": 6
+            "n": 5
           },
           {
-            "title": "Show HN: Things that help with depression and anxiety",
-            "url": "https://news.ycombinator.com/item?id=12386378",
-            "source": "hackernews",
-            "snippet": "As there seem to be many here that suffer with depressive symptoms and/or anxiety, maybe you'll get some benefit from looking into the following stacks: https://trackmystack.com/users/baccheion You can also join the following subreddit, as the users there regularly talk about and",
-            "published": "2016-08-29",
-            "authors": [
-              "baccheion"
-            ],
-            "extra": {
-              "points": 48,
-              "comments": 48,
-              "discussion": "https://news.ycombinator.com/item?id=12386378"
-            },
-            "id": "64a276009579",
-            "domain": "news.ycombinator.com",
-            "n": 7
-          },
-          {
-            "title": "Preparation of Hydrophobic Medical Glass Packaging Bottle and Study on the Dissolution of Trace Elements",
-            "url": "https://doi.org/10.12677/aac.2022.123026",
+            "title": "CR spray",
+            "url": "https://ir.uitm.edu.my/id/eprint/128174/",
             "source": "openalex",
-            "snippet": "In this paper, the effects of spraying time of dimethicone NF lotion, concentration of dimethicone NF lotion and coating baking temperature on the hydrophobic angle of coating were studied by single factor variable method. It was preliminarily obtained that the best conditions fo",
-            "published": "2022",
+            "snippet": "Nowadays, people always use different kinds of cleaning products to clean and repel. Which is that itcontains a huge amount of chemicals. Those people do not know how dangerous these products are for them and the environment. Based on this issue, we are planning to produce cleani",
+            "published": "2023",
             "authors": [
-              "庆海 方"
+              "Syed Osman, Syarifah Norziana",
+              "Azhar, Muhammad Ilham Husaini",
+              "Saharuddin, Futra Ramadani",
+              "Ahmad Rafie, Irdina Maisarah",
+              "Rosdy, Nur Athirah"
             ],
             "extra": {
               "cited_by": 0,
-              "venue": "Advances in Analytical Chemistry",
+              "venue": "UiTM Institutional Repositories (Universiti Teknologi MARA)",
               "license": "CC0 metadata"
             },
-            "id": "3fc92175d19f",
+            "id": "f4e884432b4c",
+            "domain": "ir.uitm.edu.my",
+            "n": 6
+          },
+          {
+            "title": "MESSAGE IN A BOTTLE",
+            "url": "https://doi.org/10.1021/cen-v084n019.p015",
+            "source": "openalex",
+            "snippet": "TERMS SUCH AS \"ORGANIC\" AND \"NATURAL\" OFTEN GET top billing on cosmetic labels. But the list of ingredients in small print on the back of the bottle tells consumers what manufacturers already know: Less glamorous synthetic polymers are often the real stars behind skin creams, hai",
+            "published": "2006",
+            "authors": [
+              "Marc S. Reisch"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Chemical & Engineering News",
+              "license": "CC0 metadata"
+            },
+            "id": "66f207746ef2",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "Relationship of pesticide spraying to signs and symptoms in Indonesian farmers",
+            "url": "https://doi.org/10.5271/sjweh.19",
+            "source": "openalex",
+            "snippet": "OBJECTIVES: This study assessed correlations between exposure to pesticides and signs and symptoms of pesticide toxicity among Indonesian farmers. METHODS: Detailed observations were recorded of spray frequency and pesticide handling, dermal exposure, and the chemicals used. Symp",
+            "published": "1995",
+            "authors": [
+              "Misa Kishi",
+              "Norbert Hirschhorn",
+              "Marlinda Djajadisastra",
+              "LN Satterlee",
+              "Shelley R. Strowman",
+              "Russell Dilts"
+            ],
+            "extra": {
+              "cited_by": 253,
+              "venue": "Scandinavian Journal of Work Environment & Health",
+              "license": "CC0 metadata"
+            },
+            "id": "6626a2c5f55c",
             "domain": "doi.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.40776097000002665,
-          "search": 1.191553424999995,
-          "rank": 1.48445166099998,
+          "plan": 0.3414359900000079,
+          "search": 1.3688989169999957,
+          "rank": 0.9289388279999997,
           "dense": 1.0,
-          "rerank": 0.0,
-          "retrieve": 3.083872229999997,
-          "total": 11.601108691999997
+          "rerank": 1.0,
+          "retrieve": 2.639357448999988,
+          "total": 12.668356605999989
         },
         "nvidia": false,
         "llm_error": ""

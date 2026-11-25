@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-25 17:12 UTC",
+  "date": "2026-11-25 17:20 UTC",
   "key_present": true,
   "results": [
     {
@@ -19,38 +19,8 @@
     },
     {
       "check": "rerank:nvidia/nemotron-3.5-rerank-8b",
-      "ok": false,
-      "detail": "NvidiaError: Rerank HTTP 404: 404 page not found\n"
-    },
-    {
-      "check": "rerank:nvidia/nemotron-3.5-rerank-8b @ https://ai.api.nvidia.com/v1/retrieval/nvidia/nemotron-3_5-rerank-8b/reranking",
-      "ok": false,
-      "detail": "HTTPStatusError: Client error '404 Not Found' for url 'https://ai.api.nvidia.com/v1/retrieval/nvidia/nemotron-3_5-rerank-8b/reranking'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
-    },
-    {
-      "check": "rerank:nvidia/nemotron-3.5-rerank-8b @ https://ai.api.nvidia.com/v1/retrieval/nvidia/nemotron-3.5-rerank-8b/reranking",
       "ok": true,
-      "detail": "{'index': 0, 'logit': -2.4414563179016113}"
-    },
-    {
-      "check": "rerank:nvidia/llama-nemotron-rerank-1b-v2 @ https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-nemotron-rerank-1b-v2/reranking",
-      "ok": false,
-      "detail": "HTTPStatusError: Client error '410 Gone' for url 'https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-nemotron-rerank-1b-v2/reranking'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410"
-    },
-    {
-      "check": "rerank:nvidia/llama-nemotron-rerank-1b-v2 @ https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-nemotron-rerank-1b-v2/reranking",
-      "ok": false,
-      "detail": "HTTPStatusError: Client error '410 Gone' for url 'https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-nemotron-rerank-1b-v2/reranking'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410"
-    },
-    {
-      "check": "rerank:nvidia/llama-3.2-nemoretriever-500m-rerank-v2 @ https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-3_2-nemoretriever-500m-rerank-v2/reranking",
-      "ok": false,
-      "detail": "HTTPStatusError: Client error '410 Gone' for url 'https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-3_2-nemoretriever-500m-rerank-v2/reranking'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410"
-    },
-    {
-      "check": "rerank:nvidia/llama-3.2-nemoretriever-500m-rerank-v2 @ https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-3.2-nemoretriever-500m-rerank-v2/reranking",
-      "ok": false,
-      "detail": "HTTPStatusError: Client error '404 Not Found' for url 'https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-3.2-nemoretriever-500m-rerank-v2/reranking'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/4"
+      "detail": "[-2.4414563179016113, -3.1762280464172363]"
     }
   ],
   "catalog": [
