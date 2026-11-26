@@ -17,7 +17,7 @@
           "What is Ramayana Part 1",
           "Key facts about Ramayana"
         ],
-        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari [1]. It is the first instalment of a two-part series based on the Hindu epic Ramayana by Valmiki [3]. The film chronicles Prince Rama's life from childhood up to his 14-year exile [1]. It features an ensemble cast including Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey, Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, and Arun Govil [1][6]. Hans Zimmer and A. R. Rahman collaborated to compose the score [1][2]. Rakul Preet Singh stars in the film alongside her roles in other Hindi and South Indian films [6]. The soundtrack album is composed by Hans Zimmer and A. R. Rahman, with lyrics by Kumar Vishwas [2].",
+        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari [1]. It is the first instalment of a two-part film series based on the Hindu epic Ramayana by Valmiki [3]. The film features an ensemble cast including Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey, and Rakul Preet Singh [1][5]. The soundtrack is composed by Hans Zimmer and A. R. Rahman [2][1]. Rakul Preet Singh stars in the film alongside her roles in other Hindi and South Indian films [6]. The project was announced in May 2017 and restructured from a trilogy to a two-part series under Tiwari's direction [1]. Filming took place at Film City, Mumbai, from April 2024 onwards [1].",
         "followups": [
           "When is the film releasing?",
           "Who is Valmiki?",
@@ -130,37 +130,37 @@
             "n": 7
           },
           {
-            "title": "Kumbhakarna",
-            "url": "https://en.wikipedia.org/wiki/Kumbhakarna",
+            "title": "Urmila",
+            "url": "https://en.wikipedia.org/wiki/Urmila",
             "source": "wikipedia",
-            "snippet": "Kumbhakarna (Sanskrit: कुम्भकर्ण, lit. pot-eared) is a powerful rakshasa and younger brother of Ravana from the Hindu epic Ramayana. He is said to have slaughtered 8,000 vanaras over the course of Rama's mission to rescue Sita. Kumbhakarna is known to sleep for six months at a ti",
+            "snippet": "Urmila (Sanskrit: ऊर्मिला, romanized: Urmilā, lit. 'enchantress'), is a Hindu goddess and the princess of Videha in the epic Ramayana. She is also considered an avatar of Nagalakshmi. Urmila was born as the daughter of King Janaka of Mithila and Queen Sunayana. Sita, the female p",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "824beb892946",
+            "id": "012347b65a7a",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4157709859999841,
-          "search": 0.25002210200000263,
-          "rank": 4.253001111999993,
+          "plan": 0.43350905399998396,
+          "search": 0.24175401200000124,
+          "rank": 0.6650391650000245,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.91887236599996,
-          "total": 6.684222849999969
+          "retrieve": 1.3403657810000027,
+          "total": 2.9133885469999825
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 8,
-        "citation_coverage": 0.875,
+        "sentences": 7,
+        "citation_coverage": 0.8571428571428571,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -180,11 +180,11 @@
           "Who is Jensen Huang",
           "Jensen Huang key facts"
         ],
-        "answer": "Jensen Huang is the co-founder, president, and CEO of Nvidia, the American technology company that dominates GPU and AI hardware markets [1][3]. Born in Taipei in 1963, he immigrated to the U.S., earned a Stanford master's degree, and launched Nvidia in 1993 with Chris Malachowsky and Curtis Priem [1]. Under his leadership, Nvidia grew from a GPU developer into a $5 trillion market-cap company during the AI boom [1][3].\n\nIn late 2026, Huang faced a major scandal involving extramarital affairs with two women: Alice Huang, a Chinese executive at Megaspeed, and Kimberly Powell, an Nvidia executive who reported to him [2][5]. These revelations triggered his resignation and a brief period where Colette Kress served as interim CEO [5][6]. U.S. intelligence had investigated whether Alice Huang was a Chinese spy, though no conclusion was reached [2][4]. Kang Wei, a Chinese investor and Alice Huang's husband, drew public attention in November 2026 due to the affair [4].",
+        "answer": "Jensen Huang is the co-founder, president, and CEO of Nvidia, the American technology company that dominates AI hardware [1][3]. He launched Nvidia in 1993 alongside Chris Malachowsky and Curtis Priem [1][3]. Under his leadership, Nvidia grew from a GPU developer into a $5 trillion market-cap company during the AI boom [1][3]. In late 2026, Huang resigned amid reports of extramarital affairs with Alice Huang, a Chinese executive at Megaspeed, which sparked a spy-plot investigation involving Chinese government interests [2][4][6].",
         "followups": [
-          "What was the impact of the scandal?",
-          "When did he resign?",
-          "What is Nvidia's current focus?"
+          "What is Nvidia known for?",
+          "When did he found Nvidia?",
+          "What caused his resignation?"
         ],
         "sources": [
           {
@@ -293,36 +293,36 @@
             "n": 7
           },
           {
-            "title": "2026 California Proposition 40",
-            "url": "https://en.wikipedia.org/wiki/2026_California_Proposition_40",
+            "title": "Moore's law",
+            "url": "https://en.wikipedia.org/wiki/Moore%27s_law",
             "source": "wikipedia",
-            "snippet": "Proposition 40, also known as the California billionaire tax or California wealth tax, is a combined initiated constitutional amendment and state statute that appeared on the November 3, 2026, ballot in the US state of California. The measure would have imposed a one-time 5% tax ",
+            "snippet": "Moore's law is the observation that the number of transistors in an integrated circuit (IC) doubles about every two years, with minimal increase in cost. Despite the name, Moore's law describes an empirical relationship, not a scientific law. This type of observation, an experien",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "6507993496ba",
+            "id": "034fe83b6deb",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.30328314500002307,
-          "search": 0.19655560599994715,
-          "rank": 3.331519028999992,
+          "plan": 0.3668545129999927,
+          "search": 0.21807830299999864,
+          "rank": 1.5893302579999897,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.8314112599999817,
-          "total": 5.934200285999964
+          "retrieve": 2.174308568000015,
+          "total": 9.495776102999997
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 7,
+        "sentences": 4,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
@@ -343,10 +343,10 @@
           "What is Grand Theft Auto VI",
           "Grand Theft Auto VI key facts"
         ],
-        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following Grand Theft Auto V (2013), and the sixteenth entry overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to secure a better life and escape from corrupt police officers in a state-wide criminal conspiracy [1]. The open world allows players to roam Leonida and its Miami-inspired Vice City and engage in various side activities [1]. Preliminary work began in 2014 after the release of Grand Theft Auto V; principal production began after the 2018 launch of Red Dead Redemption 2 [1]. Rockstar's global development teams had more than doubled since Red Dead Redemption 2 [1]. The protagonists' dynamic is inspired by Bonnie and Clyde [1].\n\nLucia Caminos is one of two playable protagonists, alongside Jason Duval [3]. She is the first non-optional playable female protagonist in the Grand Theft Auto series [3]. Originally from Liberty City, she is a skilled fighter taught by her father [3]. She is dedicated to achieving the \"good life her mom has dreamed of since their days in Liberty City\" [3]. She begins engaging in criminal activities in Liberty City, Liberty State and Vice City, Leonida, but is subsequently arrested and placed into Leonida Penitentiary [3]. She is later released on parole with an ankle monitor [3]. Lucia was designed to be an absolute independent, stoic, and strong female protagonist, intended to avoid common clichés [3].\n\nThe promotional trailer \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix on August 27, 2026, and was then released to YouTube [2]. It features 27 minutes of game footage and mixes compilation-style trailer sequences with longer narrative cutscenes [2]. Demand upon release crashed Netflix and Twitch [2]. In its first week, it topped the Netflix English language trailer chart in 87 countries [2]. The trailer received praise for its visuals and the protagonist Lucia but some criticism for the characterisation of Jason [2].",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following Grand Theft Auto V (2013), and the sixteenth entry overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to secure a better life and escape from corrupt police officers in a state-wide criminal conspiracy [1]. The open world allows players to freely roam Leonida and its Miami-inspired Vice City and engage in various side activities [1]. Preliminary work began in 2014 after the release of Grand Theft Auto V; principal production began after the 2018 launch of Red Dead Redemption 2 [1]. Rockstar's global development teams had more than doubled since Red Dead Redemption 2 [1]. The protagonists' dynamic is inspired by Bonnie and Clyde, and the story was written to ensure players experience different areas of Leonida [1]. After years of speculation and anticipation, the game was released in 2026 [1].",
         "followups": [
           "When is it expected to release?",
-          "Where is Leonida based?",
+          "Where is Leonida located?",
           "Who are the main characters?"
         ],
         "sources": [
@@ -384,7 +384,7 @@
             "title": "Lucia Caminos",
             "url": "https://en.wikipedia.org/wiki/Lucia_Caminos",
             "source": "wikipedia",
-            "snippet": "Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games' 2026 video game Grand Theft Auto VI. Portrayed by Manni L. Perez, she is the first non-optional playable female protagonist in the Gr",
+            "snippet": "Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games's 2026 video game Grand Theft Auto VI. Portrayed by Manni L. Perez, she is the first non-optional playable female protagonist in the G",
             "published": null,
             "authors": [],
             "extra": {
@@ -473,19 +473,19 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.3515729949999695,
-          "search": 0.27599402900000314,
-          "rank": 7.663008806999983,
+          "plan": 0.37428606899999295,
+          "search": 0.3204304049999962,
+          "rank": 0.4751103270000101,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 8.290636774000063,
-          "total": 10.909073557000056
+          "retrieve": 1.1698781360000226,
+          "total": 3.048109731000011
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 19,
+        "sentences": 8,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
@@ -506,11 +506,11 @@
           "The Hunger Games Sunrise on the Reaping",
           "The Hunger Games key facts"
         ],
-        "answer": "The Hunger Games: Sunrise on the Reaping is a 2026 American dystopian film and the sixth installment in The Hunger Games film series, serving as the second prequel to the 2012 original [1][2]. It is based on Suzanne Collins' 2025 novel Sunrise on the Reaping, which is the second prequel to the original Hunger Games trilogy [2]. The film is set 24 years before the first movie and follows 16-year-old Haymitch Abernathy's participation in the 50th Hunger Games, a special edition with double the usual tributes [1][2]. The ensemble cast includes Joseph Zada as young Haymitch, alongside Jesse Plemons, Ralph Fiennes, Glenn Close, Kieran Culkin, Elle Fanning, Mckenna Grace, Maya Hawke, Whitney Peak, Kelvin Harrison Jr., and Ben Wang, with Josh Hutcherson, Woody Harrelson, and Jennifer Lawrence reprising their roles [1]. The film was announced in June 2024 and released theatrically on November 20, 2026 [2]. A soundtrack album featuring 29 tracks was released on November 13, 2026 [3]. Irish child actor Molly McCann also appears in the film [6], and Australian actor Joseph Zada stars as Haymitch after prior roles in 2025 productions [7].",
+        "answer": "The Hunger Games: Sunrise on the Reaping is a 2026 American dystopian film and the sixth installment in The Hunger Games film series, serving as the second prequel to the 2012 original [1][2]. It is based on Suzanne Collins' 2025 novel Sunrise on the Reaping, which is the second prequel to the original Hunger Games trilogy [2]. The film stars Joseph Zada as a young Haymitch Abernathy, alongside Jesse Plemons, Ralph Fiennes, Glenn Close, Kieran Culkin, Elle Fanning, Mckenna Grace, Maya Hawke, Whitney Peak, Kelvin Harrison Jr., and Ben Wang, with Josh Hutcherson, Woody Harrelson, and Jennifer Lawrence reprising their roles [1][7]. Set 24 years before the first film, the story follows 16-year-old Haymitch from District 12 who is forced to compete in the 50th Hunger Games, a special edition with twice the usual number of tributes [1][2]. The film adaptation was announced in June 2024 and released by Lionsgate on November 20, 2026 [2]. The soundtrack album, produced by Dave Cobb with 29 tracks, was released on November 13, 2026 [3]. Molly McCann, an Irish child actor, also appears in the 2026 film [6].",
         "followups": [
-          "When is the film set?",
-          "Who plays young Haymitch?",
-          "What is the novel based on?"
+          "When is the film set to release?",
+          "Who wrote the book?",
+          "What is the 50th Hunger Games about?"
         ],
         "sources": [
           {
@@ -636,189 +636,13 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.3433979019999924,
-          "search": 0.25589030000003277,
-          "rank": 1.8253862560000016,
+          "plan": 0.44527552499999956,
+          "search": 0.2725655110000105,
+          "rank": 2.2249092190000113,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.424731164000036,
-          "total": 4.476594146000025
-        },
-        "nvidia": true,
-        "llm_error": ""
-      },
-      "metrics": {
-        "sentences": 7,
-        "citation_coverage": 1.0,
-        "citation_validity": 1.0,
-        "faithfulness": 1.0
-      }
-    },
-    {
-      "kind": "hackernews",
-      "topic": "1Password Security Incident",
-      "points": 1091,
-      "discussion": "https://news.ycombinator.com/item?id=50644817",
-      "question": "1Password Security Incident — what is this about and why does it matter?",
-      "focus": "all",
-      "result": {
-        "question": "1Password Security Incident — what is this about and why does it matter?",
-        "focus": "all",
-        "lang": "en",
-        "queries": [
-          "1Password security incident details",
-          "1Password security incident impact"
-        ],
-        "answer": "1Password is a password manager developed by AgileBits Inc [1]. that stores sensitive information in an encrypted vault locked with a PBKDF2-guarded master password, with vaults hosted on 1Password's servers for a monthly fee [1]. Unlike Todoist, which recently suffered a security incident involving unauthorized access to customer data including password hashes [2], 1Password has not been associated with a recent security breach in the provided results. LastPass, by contrast, suffered significant security incidents between 2011 and 2022, including a 2022 breach where user data, billing information, and vaults were compromised [3]. Credential stuffing attacks exploit password reuse, with 81% of users reusing passwords across multiple sites [4], making password managers like 1Password valuable for generating and storing unique credentials. Apple also offers a password manager available for iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher [6]. The Todoist incident matters because an attacker used a stolen development credential to access production systems and retrieve customer information including email addresses and password hashes, prompting Todoist to reset affected passwords and enforce tighter access controls [2].",
-        "followups": [
-          "What are credential stuffing attacks?",
-          "How does 1Password secure data?",
-          "Which password managers are safest?"
-        ],
-        "sources": [
-          {
-            "title": "1Password",
-            "url": "https://en.wikipedia.org/wiki/1Password",
-            "source": "wikipedia",
-            "snippet": "1Password is a password manager developed by the Canadian software company AgileBits Inc. It supports multiple platforms such as iOS, Android, Windows, Linux, and macOS. It provides a place for users to store various passwords, software licenses, and other sensitive information i",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "6ad33b172c74",
-            "domain": "en.wikipedia.org",
-            "n": 1
-          },
-          {
-            "title": "Security incident affecting Todoist accounts",
-            "url": "https://www.todoist.com/help/todoist/get-started/security-incident-in-november-2026",
-            "source": "hackernews",
-            "snippet": "Hi We’re writing to let you know about a recent security incident in which an attacker gained unauthorized access to our systems and retrieved information from some customers, including you. Protecting your information is our responsibility, and we fell short. We’re sorry for let",
-            "published": "2026-11-24",
-            "authors": [
-              "marconey"
-            ],
-            "extra": {
-              "points": 6,
-              "comments": 2,
-              "discussion": "https://news.ycombinator.com/item?id=50633995"
-            },
-            "id": "99921d001778",
-            "domain": "todoist.com",
-            "n": 2
-          },
-          {
-            "title": "LastPass",
-            "url": "https://en.wikipedia.org/wiki/LastPass",
-            "source": "wikipedia",
-            "snippet": "LastPass is a password manager application. The standard version of LastPass comes as a web interface, but also includes a browser extension, an app and support for bookmarklets. Founded in 2008 by four developers, Lastpass was acquired by GoTo (formerly LogMeIn Inc.) for $110 mi",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "def8b62c97e9",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
-            "title": "Credential stuffing",
-            "url": "https://en.wikipedia.org/wiki/Credential_stuffing",
-            "source": "wikipedia",
-            "snippet": "Credential stuffing is a type of cyberattack in which the attacker collects stolen account credentials, typically consisting of lists of usernames or email addresses and the corresponding passwords (often from a data breach), and then uses the credentials to gain unauthorized acc",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e57b37e08098",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "Cloudbleed",
-            "url": "https://en.wikipedia.org/wiki/Cloudbleed",
-            "source": "wikipedia",
-            "snippet": "Cloudbleed was a buffer overflow in Cloudflare disclosed by Project Zero on February 17, 2017. Cloudflare's code disclosed the contents of memory that contained the private information of other customers, such as HTTP cookies, authentication tokens, HTTP POST bodies, and other se",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e8de43b00a53",
-            "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
-            "title": "Passwords (Apple)",
-            "url": "https://en.wikipedia.org/wiki/Passwords_(Apple)",
-            "source": "wikipedia",
-            "snippet": "Passwords is a password manager application developed by Apple Inc. available for devices running iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher.",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "bfc1c72e7d0e",
-            "domain": "en.wikipedia.org",
-            "n": 6
-          },
-          {
-            "title": "Six steps to protect researchers’ digital security",
-            "url": "https://doi.org/10.1038/d41586-026-00086-x",
-            "source": "openalex",
-            "snippet": "Six steps to protect researchers’ digital security",
-            "published": "2026",
-            "authors": [
-              "Virginia Gewin"
-            ],
-            "extra": {
-              "cited_by": 0,
-              "venue": "Nature",
-              "license": "CC0 metadata"
-            },
-            "id": "afd6c1021f6b",
-            "domain": "doi.org",
-            "n": 7
-          },
-          {
-            "title": "Enhancing security behaviour by supporting the user",
-            "url": "https://doi.org/10.1016/j.cose.2018.01.016",
-            "source": "openalex",
-            "snippet": "Enhancing security behaviour by supporting the user",
-            "published": "2018",
-            "authors": [
-              "Steven Furnell",
-              "Warut Khern-am-nuai",
-              "Rawan Esmael",
-              "Wei‐Ning Yang",
-              "Ninghui Li"
-            ],
-            "extra": {
-              "cited_by": 97,
-              "venue": "Computers & Security",
-              "license": "CC0 metadata"
-            },
-            "id": "73f7dbb964c7",
-            "domain": "doi.org",
-            "n": 8
-          }
-        ],
-        "warnings": [],
-        "timings": {
-          "plan": 0.30272391699998025,
-          "search": 0.43061066600000686,
-          "rank": 2.283786288999977,
-          "dense": 0.0,
-          "rerank": 1.0,
-          "retrieve": 3.0171907220000094,
-          "total": 6.030849553000053
+          "retrieve": 2.9427966110000057,
+          "total": 5.818004379000001
         },
         "nvidia": true,
         "llm_error": ""
@@ -833,7 +657,7 @@
     {
       "kind": "hackernews",
       "topic": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-      "points": 832,
+      "points": 1762,
       "discussion": "https://news.ycombinator.com/item?id=50646108",
       "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
       "focus": "all",
@@ -845,11 +669,11 @@
           "what is happening now",
           "why is this important"
         ],
-        "answer": "The search results provided do not contain information about NVIDIA NIM, open-source AI answer engines, or related technical topics. The results are primarily about entertainment, philosophy, networking transitions, cattle raiding, privacy, and Hacker News posts. I cannot answer the user's question using only the given sources, as they are unrelated to the requested topic.",
+        "answer": "Based on the search results, the phrase \"What is happening now?\" appears across diverse contexts including entertainment, academic philosophy, IPv6 transition, cattle raiding in conflict, and privacy theory.\n\nKey observations from the results:\n\n- **Academic/philosophical usage**: Results [1], [2], and [3] show \"What is happening now?\" as titles or themes in entertainment studies (2015), philosophy (1979), and medical education (2011). Result [5] uses the phrase in a chapter title about contemporary political conflicts and cattle raiding in South Sudan.\n\n- **Technical context**: Result [4] addresses IPv4 to IPv6 transition, describing \"what is unfortunately happening now\" regarding network infrastructure challenges.\n\n- **Community discussion**: Result [7] captures a Hacker News post from 2013 expressing concern about community conflict, while result [8] from 2024 showcases a touch sensor technology for robotics.\n\n- **Thematic diversity**: The phrase spans entertainment, metaphysics, medical education, network technology, conflict analysis, and privacy philosophy without a single unified meaning.\n\nThe search results demonstrate \"What is happening now?\" as a versatile interrogative phrase applied across multiple disciplines and time periods, from 1979 philosophical works to 2024 technology demonstrations, each context giving the question distinct meaning.\n\n[1][2][3][4][5][6][7][8]",
         "followups": [
-          "What topic were you hoping to find?",
-          "Can you provide more context?",
-          "Where did you see this information?"
+          "Which context is most relevant?",
+          "Can you elaborate on the conflicts?",
+          "What is the IPv6 issue?"
         ],
         "sources": [
           {
@@ -954,7 +778,7 @@
               "James A. Rachels"
             ],
             "extra": {
-              "cited_by": 700,
+              "cited_by": 705,
               "venue": "Philosophy &amp Public Affairs",
               "license": "CC0 metadata"
             },
@@ -1001,220 +825,375 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.31630037500008257,
-          "search": 0.7577947749999794,
-          "rank": 1.8399604339999769,
-          "dense": 0.0,
+          "plan": 0.32666544499997485,
+          "search": 1.1107888930000058,
+          "rank": 1.1532270179999955,
+          "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.914196486000037,
-          "total": 3.9870303259999673
+          "retrieve": 2.5907911110000157,
+          "total": 8.734007466000008
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 3,
-        "citation_coverage": 0.0,
-        "citation_validity": null,
-        "faithfulness": null
+        "sentences": 8,
+        "citation_coverage": 0.5,
+        "citation_validity": 1.0,
+        "faithfulness": 0.25
       }
     },
     {
       "kind": "hackernews",
-      "topic": "Google releases Cogentic papers on integer factorization, discrete logs and more",
-      "points": 443,
-      "discussion": "https://news.ycombinator.com/item?id=50642086",
-      "question": "Google releases Cogentic papers on integer factorization, discrete logs and more — what is this about and why does it matter?",
+      "topic": "1Password Security Incident",
+      "points": 1549,
+      "discussion": "https://news.ycombinator.com/item?id=50644817",
+      "question": "1Password Security Incident — what is this about and why does it matter?",
       "focus": "all",
       "result": {
-        "question": "Google releases Cogentic papers on integer factorization, discrete logs and more — what is this about and why does it matter?",
+        "question": "1Password Security Incident — what is this about and why does it matter?",
         "focus": "all",
         "lang": "en",
         "queries": [
-          "Google Cogentic integer factorization papers",
-          "Cogentic discrete logs significance",
-          "what is Cogentic research about"
+          "1Password security incident details",
+          "1Password security incident impact"
         ],
-        "answer": "Google has released a new set of research papers under the \"Cogentic\" umbrella, focusing on integer factorization and discrete logarithms. The papers are hosted on Google's research GitHub repository and were announced on Hacker News. This matters because integer factorization and discrete logarithms are foundational problems in cryptography; breakthroughs in their efficient solution could impact the security of widely used encryption schemes. The specific paper on integer factorization claims an unconditional algorithm running in time $L_N[1/3, O(1)]$, which is a significant complexity improvement.",
+        "answer": "Based on the provided search results, there is no documented security incident specifically for 1Password in the given data. However, the results contain relevant context about password managers and security incidents that help explain the landscape.\n\n1Password is a password manager developed by AgileBits Inc., supporting multiple platforms and using a PBKDF2-guarded master password to protect an encrypted vault hosted on their servers by default [1].\n\nPassword managers like 1Password are recommended for generating and storing strong, unique passwords, especially after security incidents. Following the Slack security incident in 2022, users were advised to use password managers to help generate and store strong, unique passwords for every service [4]. Similarly, after the Todoist security incident in November 2026, users were advised to update passwords on other sites and turn on two-factor authentication [2].\n\nThe LastPass Wikipedia article notes that LastPass \"was known for suffering significant security incidents between 2011 and 2022,\" including a 2022 breach of user data, billing information, and vaults [3]. This highlights why credential security matters across password manager platforms.\n\nCredential stuffing remains a significant risk, as 81% of users have reused a password across two or more sites, and 25% use the same passwords across a majority of their accounts [6]. This practice allows attackers who gain access to one system to attempt the same credentials on other services [6].\n\nIf you are concerned about 1Password security specifically, the available results do not contain information about any incident affecting that service. For the most current information, checking 1Password's official security announcements or AgileBits Inc. directly would be recommended.\n\n[1][2][3][4][6]",
         "followups": [
-          "What encryption is at risk?",
-          "Where can I read the papers?",
-          "How big is this complexity improvement?"
+          "What are good password manager features?",
+          "Should I use a password manager now?",
+          "What security advice is relevant?"
         ],
         "sources": [
           {
-            "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
-            "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
-            "source": "hackernews",
-            "snippet": "Google releases Cogentic papers on integer factorization, discrete logs and more",
-            "published": "2026-11-25",
-            "authors": [
-              "rgwohlbold"
-            ],
+            "title": "1Password",
+            "url": "https://en.wikipedia.org/wiki/1Password",
+            "source": "wikipedia",
+            "snippet": "1Password is a password manager developed by the Canadian software company AgileBits Inc. It supports multiple platforms such as iOS, Android, Windows, Linux, and macOS. It provides a place for users to store various passwords, software licenses, and other sensitive information i",
+            "published": null,
+            "authors": [],
             "extra": {
-              "points": 443,
-              "comments": 330,
-              "discussion": "https://news.ycombinator.com/item?id=50642086"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "abef7dcffe0c",
-            "domain": "github.com",
+            "id": "6ad33b172c74",
+            "domain": "en.wikipedia.org",
             "n": 1
           },
           {
-            "title": "Unconditional Integer Factorization in Time L N [ 1 / 3, O ( 1) ]",
-            "url": "https://github.com/google-research/google-research/tree/4a7bc8ab0bc770e71a259b7966c500496b99010a/cogentic_research_papers/integer_factorization",
+            "title": "Security incident affecting Todoist accounts",
+            "url": "https://www.todoist.com/help/todoist/get-started/security-incident-in-november-2026",
             "source": "hackernews",
-            "snippet": "Unconditional Integer Factorization in Time L N [ 1 / 3, O ( 1) ]",
-            "published": "2026-11-25",
+            "snippet": "Hi We’re writing to let you know about a recent security incident in which an attacker gained unauthorized access to our systems and retrieved information from some customers, including you. Protecting your information is our responsibility, and we fell short. We’re sorry for let",
+            "published": "2026-11-24",
             "authors": [
-              "koalala"
+              "marconey"
             ],
             "extra": {
-              "points": 4,
-              "comments": 1,
-              "discussion": "https://news.ycombinator.com/item?id=50641847"
+              "points": 8,
+              "comments": 2,
+              "discussion": "https://news.ycombinator.com/item?id=50633995"
             },
-            "id": "971f7afa718c",
-            "domain": "github.com",
+            "id": "99921d001778",
+            "domain": "todoist.com",
             "n": 2
           },
           {
-            "title": "The Sisyphus Syndrome and Professor Cogent",
-            "url": "https://doi.org/10.1080/00193089.1974.10533534",
-            "source": "openalex",
-            "snippet": "TTE image of the benign, hard working purveyor of knowledge surrounded by mesmerized and ado ing students seems to have died with Mr. Chips and tele vision's Halls of Ivy. Today, Professor Cogent (his name is Legion) is afflicted with a destructive and debilitating syndrome. He f",
-            "published": "1974",
-            "authors": [
-              "Robert Bruce McLaren"
-            ],
+            "title": "LastPass",
+            "url": "https://en.wikipedia.org/wiki/LastPass",
+            "source": "wikipedia",
+            "snippet": "LastPass is a password manager application. The standard version of LastPass comes as a web interface, but also includes a browser extension, an app and support for bookmarklets. Founded in 2008 by four developers, Lastpass was acquired by GoTo (formerly LogMeIn Inc.) for $110 mi",
+            "published": null,
+            "authors": [],
             "extra": {
-              "cited_by": 0,
-              "venue": "Improving College and University Teaching",
-              "license": "CC0 metadata"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "7928f1bab09d",
-            "domain": "doi.org",
+            "id": "def8b62c97e9",
+            "domain": "en.wikipedia.org",
             "n": 3
           },
           {
-            "title": "Optimistic CoGeNT analysis",
-            "url": "https://doi.org/10.1103/physrevd.87.015001",
-            "source": "openalex",
-            "snippet": "Inspired by a recently proposed model of millicharged atomic dark matter (MADM), we analyze several classes of light dark matter models with respect to CoGeNT modulated and unmodulated data, and constraints from CDMS, XENON10 and XENON100. After removing the surface contaminated ",
-            "published": "2013",
+            "title": "Slack Security Incident in Invite Links",
+            "url": "https://news.ycombinator.com/item?id=32354939",
+            "source": "hackernews",
+            "snippet": "[Disclaimer] We are a paying Slack Customer. There's a security incident and it seems like Slack is trying to keep it under wraps by only sending emails to affected accounts. I've verified the email by all means (SPF/DKIM/DMARC) and it's legit: # Security notice from Slack regard",
+            "published": "2022-08-05",
             "authors": [
-              "James M. Cline",
-              "Zuowei Liu",
-              "Wei Xue"
+              "kirab"
             ],
             "extra": {
-              "cited_by": 21,
-              "venue": "Physical review. D. Particles, fields, gravitation, and cosmology/Physical review. D. Particles and fields",
-              "license": "CC0 metadata"
+              "points": 3,
+              "comments": 1,
+              "discussion": "https://news.ycombinator.com/item?id=32354939"
             },
-            "id": "1b451baf736f",
-            "domain": "doi.org",
+            "id": "98873748b272",
+            "domain": "news.ycombinator.com",
             "n": 4
           },
           {
-            "title": "What is Collaborative, Interdisciplinary Reasoning? The Heart of Interdisciplinary Team Research",
-            "url": "https://doi.org/10.28945/4010",
-            "source": "openalex",
-            "snippet": "Aim/Purpose: Collaborative, interdisciplinary research is growing rapidly, but we still have limited and fragmented understanding of what is arguably the heart of such research—collaborative, interdisciplinary reasoning (CIR). Background: This article integrates neo-Pragmatist th",
-            "published": "2018",
+            "title": "You need threat exposure management tool at work",
+            "url": "https://news.ycombinator.com/item?id=43240647",
+            "source": "hackernews",
+            "snippet": "I know that not all businesses are aware of this, but there’s loads of data that is accessible about businesses - employee, client records, login credentials. If there’s a cyberattack or a breach, the data might've been placed in the dark web or used for stealing identities, acce",
+            "published": "2025-03-03",
             "authors": [
-              "Bethany Kate Laursen"
+              "GershwinA"
             ],
             "extra": {
-              "cited_by": 32,
-              "venue": "Informing Science The International Journal of an Emerging Transdiscipline",
-              "license": "CC0 metadata"
+              "points": 1,
+              "comments": 1,
+              "discussion": "https://news.ycombinator.com/item?id=43240647"
             },
-            "id": "3639beca8044",
-            "domain": "doi.org",
+            "id": "1a479fc01419",
+            "domain": "news.ycombinator.com",
             "n": 5
           },
           {
-            "title": "A CoGeNT modulation analysis",
-            "url": "https://doi.org/10.1103/physrevd.85.036008",
-            "source": "openalex",
-            "snippet": "We analyze the recently released CoGeNT data with a focus on their time-dependent properties. Using a variety of statistical tests, we confirm the presence of modulation in the data, and find a significant component at high (${E}_{ee}\\ensuremath{\\gtrsim}1.5\\text{ }\\text{ }\\mathrm",
-            "published": "2012",
-            "authors": [
-              "Patrick J. Fox",
-              "Joachim Kopp",
-              "Mariangela Lisanti",
-              "Neal Weiner"
-            ],
+            "title": "Credential stuffing",
+            "url": "https://en.wikipedia.org/wiki/Credential_stuffing",
+            "source": "wikipedia",
+            "snippet": "Credential stuffing is a type of cyberattack in which the attacker collects stolen account credentials, typically consisting of lists of usernames or email addresses and the corresponding passwords (often from a data breach), and then uses the credentials to gain unauthorized acc",
+            "published": null,
+            "authors": [],
             "extra": {
-              "cited_by": 74,
-              "venue": "Physical review. D. Particles, fields, gravitation, and cosmology/Physical review. D. Particles and fields",
-              "license": "CC0 metadata"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "9f13e022b886",
-            "domain": "doi.org",
+            "id": "e57b37e08098",
+            "domain": "en.wikipedia.org",
             "n": 6
           },
           {
-            "title": "Six Lessons for a Cogent Science of Implicit Bias and Its Criticism",
-            "url": "https://doi.org/10.1177/1745691619826015",
-            "source": "openalex",
-            "snippet": "Skepticism about the explanatory value of implicit bias in understanding social discrimination has grown considerably. The current article argues that both the dominant narrative about implicit bias as well as extant criticism are based on a selective focus on particular findings",
-            "published": "2019",
-            "authors": [
-              "Bertram Gawronski"
-            ],
+            "title": "Cloudbleed",
+            "url": "https://en.wikipedia.org/wiki/Cloudbleed",
+            "source": "wikipedia",
+            "snippet": "Cloudbleed was a buffer overflow in Cloudflare disclosed by Project Zero on February 17, 2017. Cloudflare's code disclosed the contents of memory that contained the private information of other customers, such as HTTP cookies, authentication tokens, HTTP POST bodies, and other se",
+            "published": null,
+            "authors": [],
             "extra": {
-              "cited_by": 299,
-              "venue": "Perspectives on Psychological Science",
-              "license": "CC0 metadata"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "e970f98db33b",
-            "domain": "doi.org",
+            "id": "e8de43b00a53",
+            "domain": "en.wikipedia.org",
             "n": 7
           },
           {
-            "title": "Beyond Efficiency: A Systematic Survey of Resource-Efficient Large Language Models",
-            "url": "https://doi.org/10.1145/3845797",
-            "source": "openalex",
-            "snippet": "The burgeoning field of Large Language Models (LLMs), exemplified by sophisticated models like OpenAI’s ChatGPT, represents a significant advancement in artificial intelligence. These models, however, bring forth substantial challenges in high consumption of computational, memory",
-            "published": "2026",
-            "authors": [
-              "Guangji Bai",
-              "Zheng Chai",
-              "Ling Chen",
-              "Shiyu Wang",
-              "Jiaying Lu",
-              "Nan Zhang"
-            ],
+            "title": "Passwords (Apple)",
+            "url": "https://en.wikipedia.org/wiki/Passwords_(Apple)",
+            "source": "wikipedia",
+            "snippet": "Passwords is a password manager application developed by Apple Inc. available for devices running iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher.",
+            "published": null,
+            "authors": [],
             "extra": {
-              "cited_by": 240,
-              "venue": "ACM Computing Surveys",
-              "license": "CC0 metadata"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "001d5651acd6",
-            "domain": "doi.org",
+            "id": "bfc1c72e7d0e",
+            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4607620609999685,
-          "search": 0.3784353490000285,
-          "rank": 0.3954398380000157,
-          "dense": 0.0,
+          "plan": 0.37147790000000214,
+          "search": 0.34959783699997615,
+          "rank": 2.8806799050000222,
+          "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 1.2349336219999714,
-          "total": 2.538659278999944
+          "retrieve": 3.601825300999991,
+          "total": 7.217410452999985
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 4,
-        "citation_coverage": 0.0,
-        "citation_validity": null,
-        "faithfulness": null
+        "sentences": 12,
+        "citation_coverage": 0.5,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Much shorter version of GRH Lean verification from Anthropic",
+      "points": 497,
+      "discussion": "https://news.ycombinator.com/item?id=50648050",
+      "question": "Much shorter version of GRH Lean verification from Anthropic — what is this about and why does it matter?",
+      "focus": "all",
+      "result": {
+        "question": "Much shorter version of GRH Lean verification from Anthropic — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "GRH Lean verification Anthropic summary",
+          "what is GRH Lean verification",
+          "importance of GRH Lean verification"
+        ],
+        "answer": "The Anthropic team, led by mathematician Levent Alpöge, developed a formal proof of the Riemann hypothesis using a large language model (Claude) to generate arguments subsequently verified in the Lean proof assistant [2]. The initial proof comprised approximately 17 million lines of code; a more efficient 300,000-line version was published on 25 November 2026 [2]. On 21 November 2026, the Lean FRO and Mathlib Initiative announced they had verified the proof with full confidence in its correctness [2]. The proof establishes not only the classical Riemann hypothesis but also the generalized Riemann hypothesis for Dirichlet L-functions [2].\n\nThis matters because the Riemann hypothesis is one of the seven Millennium Prize Problems; its resolution advances number theory by providing tighter bounds on the distribution of prime numbers [6]. The formalization in Lean demonstrates that machine-checked validity and human comprehension can decouple: the verification carries low Epistemia risk (0.245) but remains machine-verified yet human-opaque [1]. Additionally, the verification process encountered a virtual-memory wall on a 64 GB workstation, which was bypassed via module-by-module replay, checking 28,357 of 175,187 modules with zero failures [1]. This workflow sets a precedent for autonomous scientific auditing of large formal proofs.",
+        "followups": [
+          "What is the Riemann hypothesis?",
+          "How did Claude help the proof?",
+          "Where can I read the Lean verification?"
+        ],
+        "sources": [
+          {
+            "title": "Independent Formal Verification, Epistemic Spine Cartography, and Comparative Auditing of Riemann Hypothesis Proof Claims",
+            "url": "https://doi.org/10.5281/zenodo.24492309",
+            "source": "openalex",
+            "snippet": "We report an independent computational verification, transitive fresh-environment kernel replay, cryptographic provenance audit, deductive dependency cartography, human-comprehensible verification anatomy, and comparative manuscript evaluation of two contemporary claims addressin",
+            "published": "2026",
+            "authors": [
+              "Aida Hayani"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+              "license": "CC0 metadata"
+            },
+            "id": "c4a7fab60564",
+            "domain": "doi.org",
+            "n": 1
+          },
+          {
+            "title": "Alpöge's proof of the Riemann hypothesis",
+            "url": "https://en.wikipedia.org/wiki/Alp%C3%B6ge%27s_proof_of_the_Riemann_hypothesis",
+            "source": "wikipedia",
+            "snippet": "On 20 November 2026, Anthropic mathematician Levent Alpöge released a formal proof of the Riemann hypothesis, a long-standing open problem in mathematics and one of the Millennium Prize Problems. He used an unreleased model of Claude, a large language model developed by Anthropic",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "064c1fa8e751",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "miosync-masa/xiprime-simple-rh-triple: v1.1.0 — Without the RH hypothesis: at least 1 − c₂₀/3 of the zeros of ξ′ are simple and on the critical line (Lean 4)",
+            "url": "https://doi.org/10.5281/zenodo.24454638",
+            "source": "openalex",
+            "snippet": "Headline -- lean/RHTripleIntegration/Unconditional.lean theorem xiPrime_simple_proportion_c20_unconditional : 1 - c20/3 ≤ liminf (fun T => (Zeta23.XiPrime.N0simple 0 T : ℝ) / (Zeta23.XiPrime.Ncount 0 T : ℝ)) atTop [propext, Classical.choice, Quot.sound] $$ \\liminf_{T\\to\\infty}\\fr",
+            "published": "2026",
+            "authors": [
+              "MASAMICHI IIZUMI"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+              "license": "CC0 metadata"
+            },
+            "id": "7e96dee1a98a",
+            "domain": "doi.org",
+            "n": 3
+          },
+          {
+            "title": "An Audit of the Claimed Lean Proof of the Riemann Hypothesis: Eight Findings, with Addresses",
+            "url": "https://doi.org/10.5281/zenodo.24489394",
+            "source": "openalex",
+            "snippet": "In November 2026 a Lean formalization was announced as a proof of the Riemann Hypothesis and its generalization to Dirichlet L-functions. The artifact is large: 175,187 Lean files, 17,374,215 lines. Its top-level statements are genuine — they are Mathlib's own statements of RH an",
+            "published": "2026",
+            "authors": [
+              "Richard Vigslist"
+            ],
+            "extra": {
+              "cited_by": 1,
+              "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+              "license": "CC0 metadata"
+            },
+            "id": "f2e2d5e907d3",
+            "domain": "doi.org",
+            "n": 4
+          },
+          {
+            "title": "NovaraX ForgeX · 0.888: Explicit Bounds for the Least Prime in an Arithmetic Progression under the Generalized Riemann Hypothesis",
+            "url": "https://doi.org/10.5281/zenodo.24474008",
+            "source": "openalex",
+            "snippet": "Rafał Wiktorowicz (NovaraX), Braun SI with family AI What this is Walk through a, a+q, a+2q, ... and ask how far you must go to reach a prime: under the Generalized Riemann Hypothesis for Dirichlet L-functions (GRH), this paper gives an explicit limit, as a multiple of (φ(q) log ",
+            "published": "2026",
+            "authors": [
+              "Rafał Wiktorowicz",
+              "Braun SI Wiktorowicz"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+              "license": "CC0 metadata"
+            },
+            "id": "229eeea804b4",
+            "domain": "doi.org",
+            "n": 5
+          },
+          {
+            "title": "Riemann hypothesis",
+            "url": "https://en.wikipedia.org/wiki/Riemann_hypothesis",
+            "source": "wikipedia",
+            "snippet": "In mathematics, the Riemann hypothesis is the theorem that the Riemann zeta function has its zeros only at the negative even integers and at complex numbers with real part 12. First posed in 1859 by Bernhard Riemann, pure mathematicians consider the hypothesis to be one of the mo",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "9871693dffa5",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Performance et régulation sociale du lean : apports de la GRH mobilisatrice",
+            "url": "https://doi.org/10.3917/mav.112.0015",
+            "source": "openalex",
+            "snippet": "Certains chercheurs ont proposé de composer avec les standards du lean en veillant à ce que des espaces d’échange social contribuent à la rencontre des régulations. Nous souhaitons poursuivre cette démarche en étudiant l’effet modérateur des pratiques de GRH mobilisatrice sur la ",
+            "published": "2019",
+            "authors": [
+              "Abdelwahab Aït Razouk",
+              "Yann Quéméner"
+            ],
+            "extra": {
+              "cited_by": 4,
+              "venue": "Management & Avenir",
+              "license": "CC0 metadata"
+            },
+            "id": "f2e7a3021c84",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "List of mathematical discoveries made with artificial intelligence",
+            "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+            "source": "wikipedia",
+            "snippet": "Beginning in the mid-2020s, large language models, including reasoning models, have made increasing progress in generating mathematical proofs at research level. As of November 2026, artificial intelligence has been used to resolve two of the seven Millennium Prize Problems (Navi",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d79b398e27ec",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.5055325349999862,
+          "search": 0.36300788900001635,
+          "rank": 1.2955469649999998,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 2.1641743400000166,
+          "total": 4.627839119000015
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 8,
+        "citation_coverage": 0.875,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
       }
     }
   ]
