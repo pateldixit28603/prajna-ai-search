@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-26 15:10 UTC",
+  "date": "2026-11-26 15:17 UTC",
   "key_present": true,
   "results": [
     {
@@ -15,32 +15,27 @@
     {
       "check": "embed:nvidia/nemotron-3.5-embed-1b",
       "ok": true,
-      "detail": "[[0.08929443, -0.04107666, -0.030212402, -0.018478394, -0.014839172, 0.04156494,"
+      "detail": "[[0.08929443, -0.040893555, -0.030273438, -0.018554688, -0.014884949, 0.04156494"
     },
     {
       "check": "rerank:nvidia/nemotron-3.5-rerank-8b",
       "ok": true,
-      "detail": "[-2.4414563179016113, -3.1762280464172363]"
+      "detail": "[-2.443920612335205, -3.176544666290283]"
     },
     {
       "check": "image:black-forest-labs/flux.1-schnell",
       "ok": false,
-      "detail": "HTTP 422 in 52.1s: {\"detail\":[{\"type\":\"extra_forbidden\",\"loc\":[\"body\",\"seed\"],\"msg\":\"Extra inputs are not permitted\",\"input\":7}]}"
+      "detail": "TimeoutError after 75.1s"
     },
     {
       "check": "image:black-forest-labs/flux.1-dev",
       "ok": false,
-      "detail": "HTTP 422 in 33.4s: {\"detail\":[{\"type\":\"extra_forbidden\",\"loc\":[\"body\",\"seed\"],\"msg\":\"Extra inputs are not permitted\",\"input\":7}]}"
+      "detail": "TimeoutError after 75.1s"
     },
     {
       "check": "image:black-forest-labs/flux.2-klein-4b",
-      "ok": false,
-      "detail": "HTTP 422 in 1.8s: {\"detail\":[{\"type\":\"extra_forbidden\",\"loc\":[\"body\",\"seed\"],\"msg\":\"Extra inputs are not permitted\",\"input\":7}]}"
-    },
-    {
-      "check": "image:stabilityai/stable-diffusion-3-medium",
-      "ok": false,
-      "detail": "HTTP 404 in 0.1s: {\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function '1a89a4d9-bbf6-432c-95ca-4ab78fb02f28': Not found for account 'y_vONxGPuSQnSvZqLmzvHtHbP7P07gw2okHLGH8QYsI'"
+      "ok": true,
+      "detail": "HTTP 200 in 4.7s, keys=['artifacts'], finish=SUCCESS, 74 KB"
     },
     {
       "check": "research:openalex",
