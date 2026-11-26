@@ -115,6 +115,7 @@ def image_transport(seen, mode="ok"):
 @pytest.mark.asyncio
 async def test_image_generator_falls_back_and_skips_dead_models(tmp_path):
     s = make_settings(tmp_path, key="nvapi-test")
+    s.image_models = ["black-forest-labs/flux.1-schnell", "black-forest-labs/flux.1-dev"]
     seen = []
     gen = ImageGenerator(s, client=httpx.AsyncClient(transport=image_transport(seen)))
     out = await gen.generate("a robot", "square", seed=3)
