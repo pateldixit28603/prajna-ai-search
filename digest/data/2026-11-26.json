@@ -17,11 +17,11 @@
           "What is Ramayana Part 1",
           "Key facts about Ramayana"
         ],
-        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari [1]. It is the first instalment of a two-part film series based on the Hindu epic Ramayana by Valmiki [3]. The film chronicles Prince Rama's life from childhood up to his 14-year exile, covering the first three kāṇḍa (chapters) [1]. It features an ensemble cast including Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey, Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, and Arun Govil [1][6]. Hans Zimmer and A. R. Rahman collaborated to compose the score [1][2]. Rakul Preet Singh stars in the film alongside her roles in other Hindi and Telugu films [6]. The soundtrack is composed by Hans Zimmer and A. R. Rahman with lyrics by Kumar Vishwas [2].",
+        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari [1]. It is the first instalment of a two-part series based on the Hindu epic Ramayana by Valmiki, chronicling Prince Rama's life from childhood to his 14-year exile [1]. The film features an ensemble cast including Ranbir Kapoor, Yash in his Hindi debut, Sai Pallavi, and Rakul Preet Singh [1][5]. The soundtrack is composed by Hans Zimmer and A. R. Rahman [2]. Rakul Preet Singh, who stars in the film, predominantly works in Telugu, Hindi and Tamil films and is married to actor–producer Jackky Bhagnani [5].",
         "followups": [
-          "When is the film releasing?",
+          "When is the film released?",
           "Who is Valmiki?",
-          "What are the first three kāṇḍa about?"
+          "What is the second part about?"
         ],
         "sources": [
           {
@@ -85,21 +85,6 @@
             "n": 4
           },
           {
-            "title": "Ramayan (1987 TV series)",
-            "url": "https://en.wikipedia.org/wiki/Ramayan_(1987_TV_series)",
-            "source": "wikipedia",
-            "snippet": "Ramayan (also known as Ramanand Sagar's Ramayan) is an Indian Hindi-language epic television series based on ancient Indian Sanskrit Epic Ramayana. The show was created, written, and directed by Ramanand Sagar. It originally aired between 1987 and 1988 on DD National and it was n",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "270a77307d73",
-            "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
             "title": "Rakul Preet Singh",
             "url": "https://en.wikipedia.org/wiki/Rakul_Preet_Singh",
             "source": "wikipedia",
@@ -112,7 +97,7 @@
             },
             "id": "67642473618b",
             "domain": "en.wikipedia.org",
-            "n": 6
+            "n": 5
           },
           {
             "title": "List of characters in the Ramayana",
@@ -127,40 +112,55 @@
             },
             "id": "127b04f535a5",
             "domain": "en.wikipedia.org",
-            "n": 7
+            "n": 6
           },
           {
-            "title": "Urmila",
-            "url": "https://en.wikipedia.org/wiki/Urmila",
+            "title": "Krishnavataram Part 1: The Heart (Hridayam)",
+            "url": "https://en.wikipedia.org/wiki/Krishnavataram_Part_1:_The_Heart_(Hridayam)",
             "source": "wikipedia",
-            "snippet": "Urmila (Sanskrit: ऊर्मिला, romanized: Urmilā, lit. 'enchantress'), is a Hindu goddess and the princess of Videha in the epic Ramayana. She is also considered an avatar of Nagalakshmi. Urmila was born as the daughter of King Janaka of Mithila and Queen Sunayana. Sita, the female p",
+            "snippet": "Krishnavataram Part 1: The Heart (Hridayam) is a 2026 Indian Hindi-language devotional film directed by Hardik Gajjar, produced by Sajan Raj Kurup and Shobha Sant under Creativeland Studios Entertainment and Athashrikatha Motion Pictures. The first installment in the Krishnavatar",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "012347b65a7a",
+            "id": "c80e0ec04e0e",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Yash (actor)",
+            "url": "https://en.wikipedia.org/wiki/Yash_(actor)",
+            "source": "wikipedia",
+            "snippet": "Yash (pronounced [/yah-sh/]; born Naveen Kumar, 8 January 1986) is an Indian actor and film producer who works in Kannada cinema. Known for his work in mass hero films, he is referred to as \"Rocking Star\" in the media. One of the highest-paid actors of Kannada cinema, Yash is a r",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e56144b092d9",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4072781529999929,
-          "search": 0.30496031900000276,
-          "rank": 2.703354845000007,
+          "plan": 0.5567651269999985,
+          "search": 0.30894712900000343,
+          "rank": 0.8141581369999997,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.415658788999991,
-          "total": 4.952149319
+          "retrieve": 1.6799429000000003,
+          "total": 3.3339210440000002
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 8,
-        "citation_coverage": 0.875,
+        "sentences": 5,
+        "citation_coverage": 0.8,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -180,11 +180,11 @@
           "Who is Jensen Huang",
           "Jensen Huang key facts"
         ],
-        "answer": "Jensen Huang is the co-founder, president, and CEO of Nvidia, the American technology company that dominates AI hardware [1][3]. Born in Taipei in 1963, he immigrated to the U.S., earned a Stanford master's degree, and launched Nvidia in 1993 with Chris Malachowsky and Curtis Priem [1]. Under his leadership, Nvidia grew from a GPU startup into the world's most valuable company, briefly surpassing a $5 trillion market cap in 2025 [1][3].\n\nIn late 2026, Huang resigned amid a major scandal. The New York Times reported he had extramarital affairs with Alice Huang, a Chinese executive at Megaspeed, and Kimberly Powell, an Nvidia executive [2][6]. U.S. intelligence suspected Alice Huang may have been a Chinese spy, though the Justice Department found no conclusion on that charge [2][6]. Following his resignation, Colette Kress served as interim CEO of Nvidia [5]. Kang Wei, a Chinese investor and Alice Huang's husband, drew attention in November 2026 due to the affair [4][6].",
+        "answer": "Jen-Hsun \"Jensen\" Huang is the co-founder, president, and CEO of Nvidia, the American technology company that dominates AI hardware and GPU development [1][3]. He launched Nvidia in 1993 with Chris Malachowsky and Curtis Priem, steering the company from graphics processing into high-performance computing and artificial intelligence [1]. Under his leadership, Nvidia became the first company to surpass $5 trillion in market capitalization in 2025 [3]. In late 2026, Huang resigned amid reports of extramarital affairs with Alice Huang, a Chinese technology executive, and Kimberly Powell, an Nvidia executive; U.S [1]. intelligence investigated Alice Huang as a potential Chinese spy, though no conclusion was reached [2][4][6]. Colette Kress served as interim CEO following his resignation [5].",
         "followups": [
-          "What caused his resignation?",
-          "What is Nvidia's main product?",
-          "When did he start Nvidia?"
+          "What is Nvidia known for now?",
+          "When did he found Nvidia?",
+          "Who is the current CEO?"
         ],
         "sources": [
           {
@@ -293,37 +293,37 @@
             "n": 7
           },
           {
-            "title": "Nintendo Switch 2",
-            "url": "https://en.wikipedia.org/wiki/Nintendo_Switch_2",
+            "title": "Moore's law",
+            "url": "https://en.wikipedia.org/wiki/Moore%27s_law",
             "source": "wikipedia",
-            "snippet": "The Nintendo Switch 2 is a video game console developed by Nintendo and released in most regions on June 5, 2025. Like the preceding Nintendo Switch, it can be used as a handheld, as a tablet, or connected via the dock to an external display. The Joy-Con 2 controllers can be used",
+            "snippet": "Moore's law is the observation that the number of transistors in an integrated circuit (IC) doubles about every two years, with minimal increase in cost. Despite the name, Moore's law describes an empirical relationship, not a scientific law. This type of observation, an experien",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "4d1776e52010",
+            "id": "034fe83b6deb",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.35855333999998606,
-          "search": 1.5691931560000114,
-          "rank": 0.3101861189999795,
+          "plan": 0.49409694100000223,
+          "search": 0.23209921799999478,
+          "rank": 2.2089971150000025,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.2379747329999873,
-          "total": 7.917408725000001
+          "retrieve": 2.9352411770000018,
+          "total": 6.084084529000002
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 8,
-        "citation_coverage": 0.875,
+        "sentences": 6,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -343,11 +343,11 @@
           "What is Grand Theft Auto VI",
           "Grand Theft Auto VI key facts"
         ],
-        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following Grand Theft Auto V (2013), and the sixteenth entry overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to secure a better life and escape from corrupt police officers in a state-wide criminal conspiracy [1]. The open world allows players to roam Leonida and its Miami-inspired Vice City and engage in various side activities [1]. Preliminary work began in 2014 after the release of Grand Theft Auto V; principal production began after the 2018 launch of Red Dead Redemption 2 [1]. Rockstar's global development teams had more than doubled since Red Dead Redemption 2 [1]. The protagonists' dynamic is inspired by Bonnie and Clyde, and the story was written to ensure players experience different areas of Leonida [1]. After years of speculation and anticipation, the game was released in 2026 [1].\n\nKey facts:\n- Lucia Caminos is the first non-optional playable female protagonist in the Grand Theft Auto series [3].\n- The game is set in Leonida (based on Florida) and features Vice City, a Miami-inspired location [1][5].\n- The game's development spanned many years, with teams more than doubling in size since Red Dead Redemption 2 [1].\n- The promotional trailer \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix on August 27, 2026, and topped the English language trailer chart in 87 countries [2].\n- Niko Bellic, protagonist of Grand Theft Auto IV, makes a non-playable appearance in Grand Theft Auto VI [4].\n- The game parodies Floridian and 2020s American culture [1].\n- The development team extensively researched Miami and its surrounding areas [1].",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following Grand Theft Auto V (2013), and the sixteenth entry overall [1]. The game is set in the fictional US state of Leonida, based on Florida, and features the criminal duo Jason Duval and Lucia Caminos as they navigate a state-wide criminal conspiracy [1][3]. Lucia is the first non-optional playable female protagonist in the series, portrayed by Manni L. Perez [3]. The promotional trailer \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix on August 27, 2026, and topped the English language trailer chart in 87 countries [2]. The game's world parodies Floridian and 2020s American culture, and its development began in 2014 after the release of Grand Theft Auto V [1].",
         "followups": [
           "When is GTA VI expected to release?",
-          "Where is Leonida located?",
-          "Who are the main characters?"
+          "Who are the main characters?",
+          "What is Leonida based on?"
         ],
         "sources": [
           {
@@ -396,21 +396,6 @@
             "n": 3
           },
           {
-            "title": "Niko Bellic",
-            "url": "https://en.wikipedia.org/wiki/Niko_Bellic",
-            "source": "wikipedia",
-            "snippet": "Niko Bellic (NEE-koh BEL-ək; Serbian: Нико Белић) is a fictional character and the playable protagonist of Rockstar North's video game Grand Theft Auto IV (2008), the sixth main entry in Rockstar Games' Grand Theft Auto series. He also makes non-playable appearances in the game's",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "9a1d6c8ac9f4",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
             "title": "Grand Theft Auto: Vice City",
             "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
             "source": "wikipedia",
@@ -423,7 +408,7 @@
             },
             "id": "1ce06c45db6a",
             "domain": "en.wikipedia.org",
-            "n": 5
+            "n": 4
           },
           {
             "title": "Grand Theft Auto: The Trilogy – The Definitive Edition",
@@ -437,6 +422,21 @@
               "license": "CC BY-SA 4.0"
             },
             "id": "1103661a44e7",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Grand Theft Auto modding",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_modding",
+            "source": "wikipedia",
+            "snippet": "User modification, or modding, of video games in the open world sandbox Grand Theft Auto series is a popular trend in the PC gaming community. These unofficial modifications are made by altering gameplay logic and asset files within a user's game installation, and can change the ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "2abef26406fa",
             "domain": "en.wikipedia.org",
             "n": 6
           },
@@ -473,20 +473,20 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.36137733200001776,
-          "search": 0.3768021539999893,
-          "rank": 1.650751396000004,
+          "plan": 0.5068796669999998,
+          "search": 0.35982480500000236,
+          "rank": 2.5084602199999964,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.3889808149999965,
-          "total": 4.955818973999982
+          "retrieve": 3.3752219599999975,
+          "total": 5.379024135999998
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 15,
-        "citation_coverage": 1.0,
+        "sentences": 6,
+        "citation_coverage": 0.8333333333333334,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -506,7 +506,7 @@
           "The Hunger Games Sunrise on the Reaping",
           "The Hunger Games key facts"
         ],
-        "answer": "The Hunger Games: Sunrise on the Reaping is a 2026 American dystopian film and the sixth installment in The Hunger Games film series, serving as the second prequel to the 2012 original [1][2]. It is based on Suzanne Collins' 2025 novel Sunrise on the Reaping, which is the second prequel to the original trilogy [2]. The film stars Joseph Zada as a young Haymitch Abernathy, alongside Jesse Plemons, Ralph Fiennes, Glenn Close, Kieran Culkin, Elle Fanning, Mckenna Grace, Maya Hawke, Whitney Peak, Kelvin Harrison Jr., and Ben Wang, with Josh Hutcherson, Woody Harrelson, and Jennifer Lawrence reprising their roles [1][7]. Set 24 years before the first film, the story follows 16-year-old Haymitch from District 12 who is forced to compete in the 50th Hunger Games, a special edition with twice the usual number of tributes [1][2]. The film adaptation was announced in June 2024 and released by Lionsgate on November 20, 2026 [2]. The soundtrack album, released November 13, 2026, via MCA, features 29 tracks including the lead single \"Draw You Out\" by Noah Kahan [3]. Molly McCann, an Irish child actor, also appears in the 2026 film [6].",
+        "answer": "The Hunger Games: Sunrise on the Reaping is a 2026 American dystopian film and the sixth installment in The Hunger Games film series, serving as the second prequel to the 2012 original [1][2]. It is based on Suzanne Collins' 2025 novel Sunrise on the Reaping, which is the second prequel to the original Hunger Games trilogy [2]. The film stars Joseph Zada as a young Haymitch Abernathy, alongside Jesse Plemons, Ralph Fiennes, Glenn Close, Kieran Culkin, Elle Fanning, Mckenna Grace, Maya Hawke, Whitney Peak, Kelvin Harrison Jr., and Ben Wang, with Josh Hutcherson, Woody Harrelson, and Jennifer Lawrence reprising their roles [1][7]. Set 24 years before the first film, the story follows 16-year-old Haymitch from District 12 who is forced to compete in the 50th Hunger Games, a special edition with twice the usual number of tributes [1][2]. The film adaptation was announced in June 2024 and released by Lionsgate on November 20, 2026 [2]. The soundtrack album, released November 13, 2026, via MCA, features 29 tracks including the lead single \"Draw You Out\" by Noah Kahan [3]. Molly McCann, an Irish child actor, also appears in the 2026 film [6].",
         "followups": [
           "When is the film set to release?",
           "Who wrote the book?",
@@ -636,13 +636,13 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4093585120000114,
-          "search": 0.24338096599998948,
-          "rank": 2.491018389000004,
+          "plan": 0.4638467150000025,
+          "search": 1.247952974999997,
+          "rank": 2.653696895000003,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.1438064180000254,
-          "total": 5.097605247000018
+          "retrieve": 4.365548214,
+          "total": 7.026248662
         },
         "nvidia": true,
         "llm_error": ""
@@ -657,7 +657,7 @@
     {
       "kind": "hackernews",
       "topic": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-      "points": 1773,
+      "points": 1777,
       "discussion": "https://news.ycombinator.com/item?id=50646108",
       "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
       "focus": "all",
@@ -669,11 +669,11 @@
           "what is happening now",
           "why is this important"
         ],
-        "answer": "The search results provided are metadata entries with titles and URLs, but they do not contain substantive content about any specific topic. Each result is identified only by a title phrase such as \"What is happening now?\" or related phrases, along with a source identifier (e.g., openalex, hackernews) and a year or date. There are no descriptions, summaries, or factual statements about the subjects mentioned.\n\nBecause the results lack the necessary detail to extract or verify any facts, no answer can be provided that satisfies the requirement to cite sources [n]. If you have access to the actual content of these sources or can provide search results with descriptive text, I would be happy to help formulate a properly cited response.",
+        "answer": "The search results provided are metadata entries titled \"What is happening now?\" across various domains including entertainment, philosophy, education, technology transitions, conflict studies, and privacy. They do not contain substantive content that answers a specific question about a current event, technology, or topic. Each result is a bibliographic record with a title and URL, but no body text, data, or analysis is included in the snippets. Therefore, no factual information can be extracted or cited from these results to form a meaningful answer. If you have a specific topic or question in mind, please provide additional context or search results with actual content.",
         "followups": [
-          "Can you search for current events?",
-          "What topics are in those titles?",
-          "Where can I find the actual content?"
+          "What specific topic are you interested in?",
+          "Can you provide more context?",
+          "What kind of event are you thinking of?"
         ],
         "sources": [
           {
@@ -825,13 +825,13 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4502414940000108,
-          "search": 1.0770096189999947,
-          "rank": 1.4519217099999935,
+          "plan": 0.4682332360000032,
+          "search": 1.2179678119999977,
+          "rank": 2.610047112999993,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.9792732809999904,
-          "total": 4.545238861999991
+          "retrieve": 4.2963681090000065,
+          "total": 5.994793663000003
         },
         "nvidia": true,
         "llm_error": ""
@@ -846,7 +846,7 @@
     {
       "kind": "hackernews",
       "topic": "1Password Security Incident",
-      "points": 1551,
+      "points": 1552,
       "discussion": "https://news.ycombinator.com/item?id=50644817",
       "question": "1Password Security Incident — what is this about and why does it matter?",
       "focus": "all",
@@ -858,11 +858,11 @@
           "1Password security incident details",
           "1Password security incident impact"
         ],
-        "answer": "Based on the provided search results, there is no documented security incident specifically named \"1Password Security Incident.\" 1Password is a password manager developed by AgileBits Inc., as noted in result [1]. It supports multiple platforms and stores sensitive information in a virtual vault locked with a PBKDF2-guarded master password, with encrypted vaults hosted on 1Password's servers for a monthly fee [1].\n\nThe search results do contain information about security incidents relevant to the password manager industry [2]. LastPass, a competitor, suffered significant security incidents between 2011 and 2022, with a notable breach in late 2022 where user data, billing information, and vaults were breached [2]. Credential stuffing, a type of cyberattack using stolen credentials from data breaches, is a risk for any password manager user [3]. Cloudbleed, a buffer overflow in Cloudflare, leaked private information from customer memory [4].\n\nThe importance of password manager security is underscored by the fact that 81% of users reuse passwords across multiple sites, making them vulnerable to credential stuffing attacks [3]. For researchers, six steps to protect digital security are recommended [6].\n\nSince the provided results do not mention a 1Password-specific incident, the answer focuses on general password manager security and relevant industry incidents.",
+        "answer": "1Password is a password manager developed by AgileBits Inc [1]. that stores user data in an encrypted vault protected by a PBKDF2-guarded master password, with vaults hosted on 1Password's servers for a monthly fee [1]. Unlike LastPass, which suffered multiple security incidents between 2011 and 2022 including a 2022 breach of user data, billing information, and vaults [2], 1Password has not been associated with a major publicized security incident in the provided search results. However, credential stuffing attacks remain a risk for any password manager when users reuse passwords across sites, as 81% of users reuse passwords across multiple sites [5]. The importance of 1Password's security model lies in its local encryption and vault design, which differs from cloud-based managers that have experienced breaches. Users should still follow best practices such as using unique passwords and enabling two-factor authentication where available.",
         "followups": [
-          "Are there any recent 1Password advisories?",
-          "What are common password manager risks?",
-          "How can I check my 1Password security?"
+          "What are credential stuffing attacks?",
+          "How does 1Password's encryption work?",
+          "What should I do about password reuse?"
         ],
         "sources": [
           {
@@ -896,6 +896,42 @@
             "n": 2
           },
           {
+            "title": "Slack Security Incident in Invite Links",
+            "url": "https://news.ycombinator.com/item?id=32354939",
+            "source": "hackernews",
+            "snippet": "[Disclaimer] We are a paying Slack Customer. There's a security incident and it seems like Slack is trying to keep it under wraps by only sending emails to affected accounts. I've verified the email by all means (SPF/DKIM/DMARC) and it's legit: # Security notice from Slack regard",
+            "published": "2022-08-05",
+            "authors": [
+              "kirab"
+            ],
+            "extra": {
+              "points": 3,
+              "comments": 1,
+              "discussion": "https://news.ycombinator.com/item?id=32354939"
+            },
+            "id": "98873748b272",
+            "domain": "news.ycombinator.com",
+            "n": 3
+          },
+          {
+            "title": "LogMeIn/Goto Hamachi was hacked",
+            "url": "https://news.ycombinator.com/item?id=34854463",
+            "source": "hackernews",
+            "snippet": "Dear Customer, I am writing to update you on our ongoing investigation about the security incident we told you about in November 2022. Our investigation to date has determined that a threat actor exfiltrated encrypted backups related to Hamachi from a third-party cloud storage fa",
+            "published": "2023-02-19",
+            "authors": [
+              "lionkor"
+            ],
+            "extra": {
+              "points": 4,
+              "comments": 1,
+              "discussion": "https://news.ycombinator.com/item?id=34854463"
+            },
+            "id": "5ede4cd13c8e",
+            "domain": "news.ycombinator.com",
+            "n": 4
+          },
+          {
             "title": "Credential stuffing",
             "url": "https://en.wikipedia.org/wiki/Credential_stuffing",
             "source": "wikipedia",
@@ -908,121 +944,87 @@
             },
             "id": "e57b37e08098",
             "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
-            "title": "Cloudbleed",
-            "url": "https://en.wikipedia.org/wiki/Cloudbleed",
-            "source": "wikipedia",
-            "snippet": "Cloudbleed was a buffer overflow in Cloudflare disclosed by Project Zero on February 17, 2017. Cloudflare's code disclosed the contents of memory that contained the private information of other customers, such as HTTP cookies, authentication tokens, HTTP POST bodies, and other se",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e8de43b00a53",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "Passwords (Apple)",
-            "url": "https://en.wikipedia.org/wiki/Passwords_(Apple)",
-            "source": "wikipedia",
-            "snippet": "Passwords is a password manager application developed by Apple Inc. available for devices running iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher.",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "bfc1c72e7d0e",
-            "domain": "en.wikipedia.org",
             "n": 5
           },
           {
-            "title": "Six steps to protect researchers’ digital security",
-            "url": "https://doi.org/10.1038/d41586-026-00086-x",
-            "source": "openalex",
-            "snippet": "Six steps to protect researchers’ digital security",
-            "published": "2026",
+            "title": "Plex Update: Notice of a potential security incident",
+            "url": "https://news.ycombinator.com/item?id=45174684",
+            "source": "hackernews",
+            "snippet": "Dear Plex User, We have recently experienced a security incident that may potentially involve your Plex account information. We believe the actual impact of this incident is limited; however, action is required from you to ensure your account remains secure. What happened An unau",
+            "published": "2025-09-08",
             "authors": [
-              "Virginia Gewin"
+              "white_viel"
             ],
             "extra": {
-              "cited_by": 0,
-              "venue": "Nature",
-              "license": "CC0 metadata"
+              "points": 34,
+              "comments": 12,
+              "discussion": "https://news.ycombinator.com/item?id=45174684"
             },
-            "id": "afd6c1021f6b",
-            "domain": "doi.org",
+            "id": "e960ba5ee02a",
+            "domain": "news.ycombinator.com",
             "n": 6
           },
           {
-            "title": "Enhancing security behaviour by supporting the user",
-            "url": "https://doi.org/10.1016/j.cose.2018.01.016",
-            "source": "openalex",
-            "snippet": "Enhancing security behaviour by supporting the user",
-            "published": "2018",
+            "title": "Plex: Important notice of a potential data breach",
+            "url": "https://news.ycombinator.com/item?id=32575350",
+            "source": "hackernews",
+            "snippet": "Dear Plex User, We want you to be aware of an incident involving your Plex account information yesterday. While we believe the actual impact of this incident is limited, we want to ensure you have the right information and tools to keep your account secure. What happened Yesterda",
+            "published": "2022-08-24",
             "authors": [
-              "Steven Furnell",
-              "Warut Khern-am-nuai",
-              "Rawan Esmael",
-              "Wei‐Ning Yang",
-              "Ninghui Li"
+              "Flollop"
             ],
             "extra": {
-              "cited_by": 97,
-              "venue": "Computers & Security",
-              "license": "CC0 metadata"
+              "points": 231,
+              "comments": 189,
+              "discussion": "https://news.ycombinator.com/item?id=32575350"
             },
-            "id": "73f7dbb964c7",
-            "domain": "doi.org",
+            "id": "061f1b8c05e1",
+            "domain": "news.ycombinator.com",
             "n": 7
           },
           {
-            "title": "Securing the Human – Exploring Current Security Awareness among Employees and Finding Ways to Improve it in the Organizational Setting",
-            "url": "https://doi.org/10.13016/m20647",
-            "source": "openalex",
-            "snippet": "As organizational security breaches increase, it becomes imperative to understand the factors that lead to these breaches and take the necessary steps to minimize threats. Since employees are considered the weakest link in ensuring the security of corporate data, this paper evalu",
-            "published": "2015",
+            "title": "Tell HN: Plex was hacked, emails and hashed passwords stolen",
+            "url": "https://news.ycombinator.com/item?id=32575536",
+            "source": "hackernews",
+            "snippet": "Received this email from Plex today. Dear Plex User, We want you to be aware of an incident involving your Plex account information yesterday. While we believe the actual impact of this incident is limited, we want to ensure you have the right information and tools to keep your a",
+            "published": "2022-08-24",
             "authors": [
-              "Nina Sebescen"
+              "honkdaddy"
             ],
             "extra": {
-              "cited_by": 0,
-              "venue": "University Libraries (University of Maryland)",
-              "license": "CC0 metadata"
+              "points": 19,
+              "comments": 0,
+              "discussion": "https://news.ycombinator.com/item?id=32575536"
             },
-            "id": "8091f74ebfe8",
-            "domain": "doi.org",
+            "id": "6b1ede9ad8bf",
+            "domain": "news.ycombinator.com",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4576725660000136,
-          "search": 0.2712969389999955,
-          "rank": 1.830161769,
+          "plan": 0.4995678639999994,
+          "search": 0.4170060340000106,
+          "rank": 3.864490011000001,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.559181787,
-          "total": 4.729068909999995
+          "retrieve": 4.781166709999994,
+          "total": 7.728218251999991
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 9,
-        "citation_coverage": 0.8888888888888888,
+        "sentences": 6,
+        "citation_coverage": 0.6666666666666666,
         "citation_validity": 1.0,
-        "faithfulness": 0.875
+        "faithfulness": 0.75
       }
     },
     {
       "kind": "hackernews",
       "topic": "The New York Times warns photographers not to update Photoshop over AI features",
-      "points": 501,
+      "points": 504,
       "discussion": "https://news.ycombinator.com/item?id=50647673",
       "question": "The New York Times warns photographers not to update Photoshop over AI features — what is this about and why does it matter?",
       "focus": "all",
@@ -1035,11 +1037,11 @@
           "Photoshop AI features warning photographers",
           "Why not update Photoshop AI"
         ],
-        "answer": "The New York Times recently warned photographers against updating Photoshop due to new AI features that automatically tag and organize images. This matters because the update introduces automated content analysis that some photographers view as intrusive or unnecessary for their workflow. The controversy stems from concerns about AI integration in professional tools without clear opt-out options, potentially altering how images are categorized and managed. [6][1]",
+        "answer": "The New York Times recently warned photographers against updating Photoshop due to new AI features that automatically tag and organize images. This matters because the update introduces automated content analysis that some photographers view as intrusive or unnecessary for their workflow. The concern centers on AI-driven metadata and organizational tools being baked into a professional editing suite, potentially altering how images are categorized and searched [1][6].\n\nKey points about the issue:\n- The warning stems from Photoshop updates adding AI-powered features like automatic subject selection and content-aware fill enhancements\n- Photographers worry about unintended AI alterations to their work or unwanted automated tagging\n- The controversy reflects broader tensions between AI integration and professional creative control\n- Some see these features as productivity boosters, while others view them as threats to artistic integrity\n\nThe debate highlights the growing friction between traditional photography practices and AI-assisted tools in professional software. As AI capabilities expand in creative applications, users must balance convenience with control over their artistic output.",
         "followups": [
-          "What are the specific AI features?",
-          "Can photographers opt out?",
-          "How does this affect workflow?"
+          "What specific AI features are causing concern?",
+          "Can they avoid the update safely?",
+          "How can I manage the new tagging?"
         ],
         "sources": [
           {
@@ -1174,20 +1176,20 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4424882959999934,
-          "search": 0.3190460100000223,
-          "rank": 2.7479463659999794,
+          "plan": 0.5313758240000084,
+          "search": 0.528313795999992,
+          "rank": 2.784840365000008,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.5095717720000152,
-          "total": 4.6521305329999905
+          "retrieve": 3.8446453070000075,
+          "total": 7.934576727999996
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 3,
-        "citation_coverage": 0.3333333333333333,
+        "sentences": 10,
+        "citation_coverage": 0.1,
         "citation_validity": 1.0,
         "faithfulness": 0.0
       }
