@@ -121,6 +121,8 @@ class ImageGenerator:
             except httpx.HTTPError as e:
                 errors.append(f"{model}: {type(e).__name__}")
                 continue
+            if r.status_code == 202:          # NVCF queued the job: poll until the image is ready
+                r = await self._poll(r, headers)
             if r.status_code in (401,):
                 raise ImageError("NVIDIA rejected the API key for image generation.", 502)
             if r.status_code in (403, 404, 410):
@@ -143,6 +145,20 @@ class ImageGenerator:
                     "aspect": aspect, "width": w, "height": h}
         log.warning("image generation failed: %s", errors)
         raise ImageError("No NVIDIA image model answered right now. " + "; ".join(errors)[:300], 502)
+
+    async def _poll(self, r: httpx.Response, headers: dict, deadline: float = 80.0) -> httpx.Response:
+        req_id = r.headers.get("NVCF-REQID") or r.headers.get("nvcf-reqid")
+        if not req_id:
+            return r
+        url = f"{self.s.image_status_url.rstrip('/')}/{req_id}"
+        waited = 0.0
+        while waited < deadline:
+            await asyncio.sleep(1.5)
+            waited += 1.5
+            r = await self._client.get(url, headers=headers)
+            if r.status_code != 202:
+                return r
+        return httpx.Response(504, text="image job still queued")
 
     async def aclose(self) -> None:
         await self._client.aclose()

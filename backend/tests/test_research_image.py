@@ -185,3 +185,25 @@ async def test_prompt_enhancer_uses_nemotron_and_falls_back(tmp_path):
     assert await gen.enhance(FakeNV('Prompt: "' + good + '"'), "tiger mumbai rain") == good
     assert await gen.enhance(FakeNV('{"questions": ["x"]}'), "tiger") == "tiger"
     assert await gen.enhance(FakeNV(RuntimeError("down")), "tiger") == "tiger"
+
+
+@pytest.mark.asyncio
+async def test_image_generator_polls_queued_nvcf_jobs(tmp_path, monkeypatch):
+    import app.imagegen as ig
+    async def no_sleep(_):
+        return None
+    monkeypatch.setattr(ig.asyncio, "sleep", no_sleep)
+    s = make_settings(tmp_path, key="nvapi-test")
+    s.image_models = ["black-forest-labs/flux.1-schnell"]
+    polls = []
+
+    def handler(req):
+        if req.method == "POST":
+            return httpx.Response(202, headers={"NVCF-REQID": "abc"})
+        polls.append(req.url.path)
+        if len(polls) < 2:
+            return httpx.Response(202, headers={"NVCF-REQID": "abc"})
+        return httpx.Response(200, json={"artifacts": [{"base64": PNG, "finishReason": "SUCCESS"}]})
+    gen = ImageGenerator(s, client=httpx.AsyncClient(transport=httpx.MockTransport(handler)))
+    out = await gen.generate("x y")
+    assert out["image"].startswith("data:image/png") and polls[-1].endswith("/status/abc") and len(polls) == 2

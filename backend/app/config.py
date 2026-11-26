@@ -58,6 +58,8 @@ class Settings:
 
     # Visual GenAI (image generation). Models are tried in order; ones that 404 are skipped.
     image_base_url: str = field(default_factory=lambda: os.getenv("IMAGE_BASE_URL", "https://ai.api.nvidia.com/v1/genai"))
+    image_status_url: str = field(default_factory=lambda: os.getenv(
+        "IMAGE_STATUS_URL", "https://api.nvcf.nvidia.com/v2/nvcf/pexec/status"))
     image_models: list[str] = field(default_factory=lambda: [m.strip() for m in os.getenv(
         "IMAGE_MODELS",
         "black-forest-labs/flux.1-schnell,black-forest-labs/flux.1-dev,black-forest-labs/flux.2-klein-4b,"

@@ -77,15 +77,35 @@ async def main() -> None:
                     r.raise_for_status()
                     return r.json()["rankings"][0]
                 results.append(await probe(f"rerank:{m} @ {url}", rr()))
-    # image generation: one small FLUX schnell render per day tells us which visual-GenAI model works
-    from app.imagegen import ImageGenerator
+    # image generation: one small render per day tells us which visual-GenAI model works.
+    # Each model is probed separately with its own timer so slow or hanging endpoints are visible.
+    import time as _t
+    from app.imagegen import ImageGenerator, build_body, parse_image
     ig = ImageGenerator(settings)
-    async def img():
-        out = await ig.generate("a small green circuit board, studio photo", "square", seed=7)
-        return f"{out['model']} ok ({len(out['image']) // 1365} KB)"
-    results.append(await probe("image:" + ",".join(settings.image_models), img()))
-    if ig.dead:
-        results.append({"check": "image:unavailable", "ok": False, "detail": ", ".join(sorted(ig.dead))})
+    for model in settings.image_models:
+        t0 = _t.perf_counter()
+        try:
+            r = await asyncio.wait_for(ig._client.post(
+                f"{settings.image_base_url}/{model}", headers=nv._headers(),
+                json=build_body(model, "a small green circuit board, studio photo", "square", 7)), timeout=75)
+            info = f"HTTP {r.status_code} in {_t.perf_counter() - t0:.1f}s"
+            ok = False
+            if r.status_code == 202:
+                info += f", queued reqid={'yes' if r.headers.get('NVCF-REQID') else 'no'}"
+                r = await asyncio.wait_for(ig._poll(r, nv._headers()), timeout=85)
+                info += f" -> HTTP {r.status_code} after {_t.perf_counter() - t0:.1f}s"
+            if r.status_code == 200:
+                data = r.json()
+                b64, finish = parse_image(data)
+                ok = bool(b64)
+                info += f", keys={sorted(data)[:5]}, finish={finish}, {len(b64) // 1365} KB"
+            else:
+                info += f": {r.text[:160]}"
+        except Exception as e:
+            ok, info = False, f"{type(e).__name__} after {_t.perf_counter() - t0:.1f}s"
+        results.append({"check": f"image:{model}", "ok": ok, "detail": info})
+        if ok:
+            break
     await ig.aclose()
     # Research mode data source (not NVIDIA, but checked here so the daily status shows it)
     import httpx
