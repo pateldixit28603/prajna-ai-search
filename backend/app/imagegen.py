@@ -75,7 +75,7 @@ def mime_of(b64: str) -> str:
 class ImageGenerator:
     def __init__(self, settings: Settings, client: httpx.AsyncClient | None = None):
         self.s = settings
-        self._client = client or httpx.AsyncClient(timeout=httpx.Timeout(90.0, connect=10.0))
+        self._client = client or httpx.AsyncClient(timeout=httpx.Timeout(60.0, connect=10.0))
         self.dead: set[str] = set()
 
     @property

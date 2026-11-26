@@ -22,7 +22,7 @@ Prajna (Sanskrit: *wisdom*) is a Perplexity-style AI search engine. You ask a qu
 | Feature | How |
 |---|---|
 | **Answer in 7 languages** 🆕 | One click re-renders any answer in English, 简体中文, हिन्दी, Español, العربية (right-to-left), Русский or Hinglish with the NIM LLM. No new search, and every `[n]` citation is checked and restored so it points at the same source. Pick the language before searching too (auto-detected from the script by default); non-English questions also search that language's Wikipedia (ru/zh/hi/es/ar). The choice is saved with the thread |
-| **Create images** 🆕 | *Create image* mode: NVIDIA visual GenAI (FLUX.1 / FLUX.2 / Stable Diffusion 3 via `ai.api.nvidia.com/v1/genai`), with Nemotron Bolt expanding your idea into a detailed prompt. Square / wide / tall, variations, download, saved in history |
+| **Create images** 🆕 | *Create image* mode: NVIDIA visual GenAI (FLUX.2 klein first, then FLUX.1 / Stable Diffusion 3 via `ai.api.nvidia.com/v1/genai`), with Nemotron Bolt expanding your idea into a detailed prompt. Square / wide / tall, variations, download, saved in history |
 | **Research mode** 🆕 | A *Research* tab on every answer: key, foundational (most-cited) and rising papers with citation counts and free full-text links, a "read next" list, and a publications-per-year timeline, all from OpenAlex (CC0) |
 | **Conversational search** | Threads with follow-ups; the LLM rewrites "its price?" into a standalone query |
 | **Open data sources** | Wikipedia (any language, auto-Hindi for Devanagari), OpenAlex (250M+ papers, CC0), arXiv, Hacker News, plus your own local index |

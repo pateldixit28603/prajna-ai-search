@@ -62,7 +62,7 @@ class Settings:
         "IMAGE_STATUS_URL", "https://api.nvcf.nvidia.com/v2/nvcf/pexec/status"))
     image_models: list[str] = field(default_factory=lambda: [m.strip() for m in os.getenv(
         "IMAGE_MODELS",
-        "black-forest-labs/flux.1-schnell,black-forest-labs/flux.1-dev,black-forest-labs/flux.2-klein-4b,"
+        "black-forest-labs/flux.2-klein-4b,black-forest-labs/flux.1-schnell,black-forest-labs/flux.1-dev,"
         "stabilityai/stable-diffusion-3-medium").split(",") if m.strip()])
 
     # ---- Retrieval --------------------------------------------------------
