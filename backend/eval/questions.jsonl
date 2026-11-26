@@ -18,3 +18,7 @@
 {"id": "hn-local-llm", "question": "Running LLMs locally on consumer GPUs", "focus": "tech", "expect": ["GPU"]}
 {"id": "tcp-udp", "question": "What is the difference between TCP and UDP?", "focus": "wiki", "expect": ["connection"]}
 {"id": "inflation", "question": "What causes inflation?", "focus": "wiki", "expect": ["price"]}
+{"id": "ru-nvidia", "question": "Когда была основана компания Nvidia?", "focus": "wiki", "expect": ["1993"]}
+{"id": "es-moon", "question": "¿En qué año llegó el ser humano a la Luna?", "focus": "wiki", "expect": ["1969"]}
+{"id": "zh-nvidia", "question": "英伟达是哪一年成立的？", "focus": "wiki", "expect": ["1993"]}
+{"id": "ar-moon", "question": "في أي عام هبط الإنسان على سطح القمر؟", "focus": "wiki", "expect": ["1969"]}

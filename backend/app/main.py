@@ -17,6 +17,7 @@ from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
+from . import lang as L
 from .config import settings
 from .nvidia import NvidiaClient
 from .pipeline import FOCUS_MODES, AnswerEngine
@@ -69,6 +70,15 @@ class SearchRequest(BaseModel):
     query: str = Field(..., min_length=1, max_length=1000)
     focus: str = "all"
     thread_id: str | None = None
+    lang: str | None = None          # answer language; None/"auto" = thread's choice, else detected
+
+
+class TranslateRequest(BaseModel):
+    text: str = Field(..., min_length=1, max_length=12000)
+    lang: str
+    n_sources: int = Field(0, ge=0, le=50)
+    turn_id: int | None = None       # when given, the translation is cached on the stored turn
+    thread_id: str | None = None     # when given, the language becomes the thread's choice
 
 
 def sse(event: dict) -> str:
@@ -86,6 +96,7 @@ async def health(request: Request):
                    "embed": settings.embed_model, "rerank": settings.rerank_model},
         "local_index": local.stats() if local else None,
         "focus_modes": {k: v["label"] for k, v in FOCUS_MODES.items()},
+        "languages": {k: {"label": v["label"], "native": v["native"], "dir": v["dir"]} for k, v in L.LANGUAGES.items()},
     }
 
 
@@ -102,13 +113,16 @@ async def search(req: SearchRequest, request: Request):
     query = req.query.strip()
     thread_id = req.thread_id if req.thread_id and store.exists(req.thread_id) else None
     history = store.history(thread_id) if thread_id else []
+    lang = L.normalize(req.lang) or (store.get_lang(thread_id) if thread_id else None) or L.detect_language(query)
+    lang_source = "chosen" if L.normalize(req.lang) else "thread" if thread_id and store.get_lang(thread_id) else "detected"
 
     async def events():
         nonlocal thread_id
         t0 = time.perf_counter()
         try:
             yield sse({"type": "status", "stage": "planning", "message": "Understanding your question…"})
-            res = await engine.retrieve(query, req.focus, history)
+            yield sse({"type": "lang", "lang": lang, "source": lang_source})
+            res = await engine.retrieve(query, req.focus, history, lang)
             yield sse({"type": "queries", "queries": res.queries})
             yield sse({"type": "status", "stage": "reading",
                        "message": f"Reading {len(res.sources)} sources…"})
@@ -118,7 +132,7 @@ async def search(req: SearchRequest, request: Request):
 
             parts: list[str] = []
             t_first = None
-            async for tok in engine.answer_stream(res, history):
+            async for tok in engine.answer_stream(res, history, lang):
                 if t_first is None:
                     t_first = time.perf_counter() - t0
                 parts.append(tok)
@@ -129,21 +143,55 @@ async def search(req: SearchRequest, request: Request):
                 answer = repaired
                 yield sse({"type": "replace", "text": answer})
 
-            follow = await engine.followups(query, answer, res)
+            follow = await engine.followups(query, answer, res, lang)
             yield sse({"type": "followups", "questions": follow})
 
             if not thread_id:
-                thread_id = store.create_thread(query, req.focus)
-            meta = {"queries": res.queries, "timings": res.timings, "focus": req.focus,
+                thread_id = store.create_thread(query, req.focus, lang)
+            elif L.normalize(req.lang):
+                store.set_lang(thread_id, lang)
+            meta = {"queries": res.queries, "timings": res.timings, "focus": req.focus, "lang": lang,
                     "nvidia": bool(settings.nvidia_enabled and engine.last_llm_ok), "ttft": t_first, "total": time.perf_counter() - t0}
-            store.add_turn(thread_id, query, answer, public_sources, follow, meta)
-            yield sse({"type": "done", "thread_id": thread_id, "meta": meta})
+            turn_id = store.add_turn(thread_id, query, answer, public_sources, follow, meta)
+            yield sse({"type": "done", "thread_id": thread_id, "turn_id": turn_id, "meta": meta})
         except Exception as e:  # never leave the client hanging
             log.exception("search failed")
             yield sse({"type": "error", "message": f"Search failed: {type(e).__name__}"})
 
     return StreamingResponse(events(), media_type="text/event-stream",
                              headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+
+
+@app.post("/api/translate")
+async def translate(req: TranslateRequest, request: Request):
+    """Re-render an answer in one of the 7 answer languages. No new search; citations are preserved."""
+    lang = L.normalize(req.lang)
+    if not lang:
+        raise HTTPException(400, f"Unknown language. Use one of {list(L.LANGUAGES)}")
+    client_ip = request.client.host if request.client else "anon"
+    store: ThreadStore = request.app.state.store
+    engine: AnswerEngine = request.app.state.engine
+    turn = store.get_turn(req.turn_id) if req.turn_id else None
+    if turn and req.thread_id and turn["thread_id"] != req.thread_id:
+        turn = None
+    cached = (turn or {}).get("meta", {}).get("translations", {}).get(lang)
+    if cached:
+        text, ok, msg = cached, True, ""
+    else:
+        if not limiter.allow(client_ip):
+            raise HTTPException(429, "Too many requests — slow down a little.")
+        source_text = turn["answer"] if turn else req.text
+        n_sources = len(turn["sources"]) if turn else req.n_sources
+        if turn and lang == turn["meta"].get("lang"):
+            text, ok, msg = source_text, True, ""
+        else:
+            text, ok, msg = await engine.translate(source_text, lang, n_sources)
+        if ok and turn:
+            store.save_translation(turn["id"], lang, text)
+    if ok and req.thread_id and store.exists(req.thread_id):
+        store.set_lang(req.thread_id, lang)
+    return {"lang": lang, "dir": L.LANGUAGES[lang]["dir"], "text": text, "ok": ok, "message": msg,
+            "citations_ok": L.citations_preserved(turn["answer"] if turn else req.text, text)}
 
 
 @app.get("/api/threads")

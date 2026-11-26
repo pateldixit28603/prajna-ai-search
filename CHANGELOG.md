@@ -2,6 +2,13 @@
 
 All notable changes to Prajna. Daily digest/benchmark commits from `prajna-bot` are not listed here.
 
+## 2026-11-26
+- **Answer in 7 languages.** Every answer now has a one-click language switch: English, 简体中文, हिन्दी, Español, العربية, Русский and Hinglish. The NVIDIA NIM LLM re-renders the answer without searching again. Prajna then checks the citations: any `[n]` the translation dropped is put back on the same paragraph, and invented numbers are removed, so each citation still points at the same source. Arabic answers display right-to-left. Translations are cached on the thread, so switching back is instant.
+- Pick the answer language before you search, or leave it on **Auto**, which detects it from the question's script (Devanagari → Hindi, Cyrillic → Russian, Arabic script → Arabic, Chinese characters → Chinese, plus word lists for Hinglish and Spanish). The choice is saved with the thread, and follow-ups inherit it.
+- Non-English questions also search the matching Wikipedia edition (ru, zh, hi, es, ar.wikipedia.org) alongside the English sources.
+- If NVIDIA is unavailable, the switch keeps the original answer and says why.
+- Benchmark: added Russian, Spanish, Chinese and Arabic questions (24 questions in total), so scores from this date onward aren't directly comparable with earlier runs.
+
 ## 2026-11-25
 - Added one-click Render deploy (`render.yaml`). The Dockerfile now honours `$PORT`, and CI builds the image and smoke-tests the UI and API in a container.
 - Citations: a stricter prompt, plus conservative citation repair. An uncited sentence gets `[n]` only when at least 50% of its content words appear in source n's passages. The UI receives the repaired text through a `replace` SSE event. Validity and faithfulness are now averaged only over answers that have citations.

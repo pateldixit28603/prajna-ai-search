@@ -72,6 +72,12 @@ def nim_transport():
                     f"data: {json.dumps({'choices': [{'delta': {'content': p}}]})}\n\n" for p in parts)
                 return httpx.Response(200, text=lines + "data: [DONE]\n\n",
                                       headers={"content-type": "text/event-stream"})
+            if "translator" in sys_prompt:
+                # simulate a sloppy translation: drops [1], invents a non-existent source [9]
+                src = body["messages"][1]["content"]
+                out = src.replace("Nvidia was founded in 1993", "Nvidia fue fundada en 1993")
+                out = out.replace("[1]", "[9]")
+                return httpx.Response(200, json={"choices": [{"message": {"content": out}}]})
             content = ('{"queries": ["nvidia founding year"]}' if "search queries" in sys_prompt
                        else '{"questions": ["Who founded Nvidia?", "What is CUDA?", "Nvidia GPUs?"]}')
             return httpx.Response(200, json={"choices": [{"message": {"content": content}}]})

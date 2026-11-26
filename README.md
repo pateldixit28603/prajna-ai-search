@@ -13,7 +13,7 @@ Prajna (Sanskrit: *wisdom*) is a Perplexity-style AI search engine. You ask a qu
 
 **It runs every day without anyone touching it.** A GitHub Actions job:
 - 📰 **[Prajna Daily](DIGEST.md)** takes the day's trending topics from Wikipedia's most-read list and the Hacker News front page, researches each one, and publishes cited answers ([web version](https://pateldixit28603.github.io/prajna-ai-search/)).
-- 📊 **[Benchmark](EVAL.md)** re-runs a fixed set of 20 questions in English, Hindi and Hinglish, across encyclopedia, academic and tech topics. It tracks answer accuracy, retrieval recall, citation coverage and validity, faithfulness and latency, with the [full history](backend/eval/results/history.csv) kept so you can see the trend.
+- 📊 **[Benchmark](EVAL.md)** re-runs a fixed set of 24 questions in English, Hindi, Hinglish, Russian, Spanish, Chinese and Arabic, across encyclopedia, academic and tech topics. It tracks answer accuracy, retrieval recall, citation coverage and validity, faithfulness and latency, with the [full history](backend/eval/results/history.csv) kept so you can see the trend.
 
 ---
 
@@ -21,6 +21,7 @@ Prajna (Sanskrit: *wisdom*) is a Perplexity-style AI search engine. You ask a qu
 
 | Feature | How |
 |---|---|
+| **Answer in 7 languages** 🆕 | One click re-renders any answer in English, 简体中文, हिन्दी, Español, العربية (right-to-left), Русский or Hinglish with the NIM LLM. No new search, and every `[n]` citation is checked and restored so it points at the same source. Pick the language before searching too (auto-detected from the script by default); non-English questions also search that language's Wikipedia (ru/zh/hi/es/ar). The choice is saved with the thread |
 | **Conversational search** | Threads with follow-ups; the LLM rewrites "its price?" into a standalone query |
 | **Open data sources** | Wikipedia (any language, auto-Hindi for Devanagari), OpenAlex (250M+ papers, CC0), arXiv, Hacker News, plus your own local index |
 | **Hybrid retrieval** | BM25 (lexical) ⊕ NVIDIA `nemotron-3.5-embed-1b` embeddings (semantic), fused with Reciprocal Rank Fusion |

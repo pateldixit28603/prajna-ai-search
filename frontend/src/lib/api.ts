@@ -20,8 +20,16 @@ export type Turn = {
   status: string;
   stage: "planning" | "reading" | "writing" | "done" | "error";
   warnings: string[];
-  meta?: { total?: number; ttft?: number; nvidia?: boolean; timings?: Record<string, number> };
+  meta?: { total?: number; ttft?: number; nvidia?: boolean; timings?: Record<string, number>; lang?: string };
   error?: string;
+  /** language the answer was written in (detected from the question, or chosen) */
+  lang?: string;
+  /** stored turn id, used to cache translations server-side */
+  turnId?: number;
+  /** answer re-rendered in other languages, keyed by language code */
+  translations?: Record<string, string>;
+  /** language currently shown for this answer */
+  shownLang?: string;
 };
 
 export type ThreadSummary = { id: string; title: string; focus: string; updated_at: number };
@@ -54,9 +62,24 @@ export async function deleteThread(id: string) {
   await fetch(`${BASE}/api/threads/${id}`, { method: "DELETE" });
 }
 
+export type TranslateResult = { lang: string; dir: "ltr" | "rtl"; text: string; ok: boolean; message: string; citations_ok: boolean };
+
+/** Re-render an answer in another language with the NIM LLM (no new search; citations preserved). */
+export async function translateAnswer(body: {
+  text: string; lang: string; n_sources: number; turn_id?: number; thread_id?: string | null;
+}): Promise<TranslateResult> {
+  const r = await fetch(`${BASE}/api/translate`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!r.ok) throw new Error(r.status === 429 ? "Too many requests — wait a moment." : `Server error (${r.status})`);
+  return r.json();
+}
+
 /** POST /api/search and parse the Server-Sent-Events stream. */
 export async function streamSearch(
-  body: { query: string; focus: string; thread_id?: string | null },
+  body: { query: string; focus: string; thread_id?: string | null; lang?: string | null },
   onEvent: (e: any) => void,
   signal?: AbortSignal,
 ) {

@@ -21,6 +21,7 @@ from dataclasses import dataclass, field
 from typing import AsyncIterator
 
 from .config import Settings
+from . import lang as L
 from .fallback import extractive_answer, heuristic_followups
 from .nvidia import NvidiaClient
 from .prompts import ANSWER_SYSTEM, ANSWER_USER, FOLLOWUP_SYSTEM, REWRITE_SYSTEM
@@ -92,7 +93,10 @@ class AnswerEngine:
             return [question]
 
     # ------------------------------------------------------------ 2. fan-out
-    async def gather(self, queries: list[str], focus: str) -> tuple[list[Document], list[str]]:
+    async def gather(self, queries: list[str], focus: str,
+                     native: tuple[str, str] | None = None) -> tuple[list[Document], list[str]]:
+        """Fan out to every source. `native` = (wiki edition, original question): for a non-English
+        answer language, the matching Wikipedia edition (ru.wikipedia.org, …) is searched too."""
         names = [n for n in FOCUS_MODES.get(focus, FOCUS_MODES["all"])["sources"] if n in self.sources]
         warnings: list[str] = []
 
@@ -104,7 +108,18 @@ class AnswerEngine:
                 warnings.append(f"{name}: {type(e).__name__}")
                 return []
 
+        async def run_native(edition: str, q: str):
+            try:
+                return await asyncio.wait_for(
+                    self.sources["wikipedia"].search_edition(q, self.s.per_source_limit, edition),
+                    timeout=self.s.http_timeout)
+            except Exception as e:
+                warnings.append(f"wikipedia-{edition}: {type(e).__name__}")
+                return []
+
         tasks = [run(n, q) for n in names for q in queries]
+        if native and "wikipedia" in names and hasattr(self.sources["wikipedia"], "search_edition"):
+            tasks.append(run_native(*native))
         results = await asyncio.gather(*tasks)
         docs, seen = [], set()
         for batch in results:
@@ -173,11 +188,13 @@ class AnswerEngine:
                 chosen.append(p)
         return docs, chosen
 
-    async def retrieve(self, question: str, focus: str, history: list[dict]) -> SearchResult:
+    async def retrieve(self, question: str, focus: str, history: list[dict],
+                       lang: str | None = None) -> SearchResult:
         t0 = time.perf_counter()
         queries = await self.plan_queries(question, history)
         t1 = time.perf_counter()
-        docs, warnings = await self.gather(queries, focus)
+        edition = L.wiki_edition(lang or L.detect_language(question))
+        docs, warnings = await self.gather(queries, focus, (edition, question) if edition else None)
         t2 = time.perf_counter()
         ranked, info = await self.rank(question, queries, docs)
         t3 = time.perf_counter()
@@ -202,7 +219,8 @@ class AnswerEngine:
             flat.extend((n, t) for t in blocks.get(n, []))
         return "\n\n".join(ctx), flat
 
-    async def answer_stream(self, res: SearchResult, history: list[dict]) -> AsyncIterator[str]:
+    async def answer_stream(self, res: SearchResult, history: list[dict],
+                            lang: str | None = None) -> AsyncIterator[str]:
         context, flat = self.build_context(res)
         if not res.sources:
             yield ("I couldn't find anything relevant in the open sources for this question. "
@@ -214,7 +232,8 @@ class AnswerEngine:
                 yield piece
                 await asyncio.sleep(0.004)
             return
-        messages = [{"role": "system", "content": ANSWER_SYSTEM.format(today=dt.date.today().isoformat())}]
+        messages = [{"role": "system", "content": ANSWER_SYSTEM.format(
+            today=dt.date.today().isoformat(), lang_rule=L.language_instruction(lang))}]
         for h in history[-3:]:
             messages += [{"role": "user", "content": h["question"]},
                          {"role": "assistant", "content": h["answer"][:1500]}]
@@ -273,16 +292,44 @@ class AnswerEngine:
         return "\n".join(out_lines)
 
     # -------------------------------------------------------- 7. follow-ups
-    async def followups(self, question: str, answer: str, res: SearchResult) -> list[str]:
+    async def followups(self, question: str, answer: str, res: SearchResult,
+                        lang: str | None = None) -> list[str]:
         titles = [d.title for d in res.sources]
         if not self.nv.enabled:
             return heuristic_followups(question, titles)
         try:
             raw = await asyncio.wait_for(self.nv.chat(
-                [{"role": "system", "content": FOLLOWUP_SYSTEM},
+                [{"role": "system", "content": FOLLOWUP_SYSTEM.replace(
+                    "LANG_RULE", L.language_instruction(lang).replace("whole answer", "questions"))},
                  {"role": "user", "content": f"Question: {question}\nAnswer summary: {answer[:800]}"}],
                 model=self.s.llm_fast_model, temperature=0.5, max_tokens=150), timeout=8)
             qs = [q.strip() for q in _json_from(raw).get("questions", []) if isinstance(q, str)]
             return qs[:3] or heuristic_followups(question, titles)
         except Exception:
             return heuristic_followups(question, titles)
+
+    # ------------------------------------------------- 8. answer translation
+    async def translate(self, text: str, lang: str, n_sources: int) -> tuple[str, bool, str]:
+        """Re-render an answer in another language with the NIM LLM (no new search).
+
+        Returns (text, ok, message). Citations are verified and restored, so [n] keeps pointing at
+        the same source. If NVIDIA is unavailable the original text comes back with ok=False.
+        """
+        if lang not in L.LANGUAGES:
+            return text, False, "Unsupported language"
+        if not text.strip():
+            return text, True, ""
+        if not self.nv.enabled:
+            return text, False, "Translation needs NVIDIA NIM, which isn't configured here."
+        try:
+            out = await asyncio.wait_for(self.nv.chat(
+                [{"role": "system", "content": L.TRANSLATE_SYSTEM.format(name=L.LANGUAGES[lang]["name"])},
+                 {"role": "user", "content": text}],
+                temperature=0.1, max_tokens=2000), timeout=45)
+        except Exception as e:
+            log.warning("translation failed: %s", e)
+            return text, False, "NVIDIA NIM translation failed. Showing the original answer."
+        out = out.strip()
+        if not out:
+            return text, False, "NVIDIA NIM returned an empty translation. Showing the original answer."
+        return L.restore_citations(text, out, n_sources), True, ""

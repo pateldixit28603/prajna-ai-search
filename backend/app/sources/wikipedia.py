@@ -25,6 +25,10 @@ class WikipediaSource(HttpSource):
             docs.extend(await self._search_lang(query, limit, lang))
         return docs[:limit]
 
+    async def search_edition(self, query: str, limit: int, lang: str) -> list[Document]:
+        """Search one specific language edition (e.g. ru.wikipedia.org for a Russian question)."""
+        return await self._search_lang(query, limit, lang)
+
     async def _search_lang(self, query: str, limit: int, lang: str) -> list[Document]:
         api = f"https://{lang}.wikipedia.org/w/api.php"
         r = await self.get(

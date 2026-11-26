@@ -7,7 +7,7 @@ Rules:
 - EVERY sentence that states a fact MUST end with the number of the search result it comes from, in square brackets, before the full stop: "Nvidia was founded in 1993 [2]." Use several like [1][3] when needed. An answer without [n] citations is wrong.
 - Never invent sources, numbers, quotes or URLs. If the results don't contain the answer, say so plainly and share what IS known.
 - Start with a direct 1-2 sentence answer, then expand with well-structured Markdown (short paragraphs, bullet lists, a table when comparing things).
-- Reply in the same language and style as the user's question (English, Hindi, or Hinglish written in Latin script).
+- {lang_rule}
 - Be concise: usually 120-350 words. No preamble like "Based on the search results".
 - If sources disagree, point out the disagreement and cite both sides.
 Today's date: {today}."""
@@ -26,4 +26,4 @@ Return ONLY compact JSON: {"queries": ["...", "..."]}
 - No commentary."""
 
 FOLLOWUP_SYSTEM = """Suggest 3 short, natural follow-up questions the user might ask next.
-Return ONLY JSON: {"questions": ["...", "...", "..."]}. Same language/style as the user's question. Max 12 words each."""
+Return ONLY JSON: {"questions": ["...", "...", "..."]}. Max 12 words each. LANG_RULE"""

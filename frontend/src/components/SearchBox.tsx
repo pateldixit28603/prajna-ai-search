@@ -1,5 +1,6 @@
-import { ArrowUp, BookOpen, Cpu, Database, GraduationCap, Globe } from "lucide-react";
+import { ArrowUp, BookOpen, Cpu, Database, GraduationCap, Globe, Languages } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { LANGS } from "../lib/langs";
 
 export const FOCUS = [
   { id: "all", label: "All", icon: Globe, hint: "Wikipedia, OpenAlex, arXiv, Hacker News" },
@@ -13,12 +14,14 @@ type Props = {
   onSubmit: (q: string) => void;
   focus: string;
   setFocus: (f: string) => void;
+  lang: string;
+  setLang: (l: string) => void;
   busy?: boolean;
   compact?: boolean;
   placeholder?: string;
 };
 
-export default function SearchBox({ onSubmit, focus, setFocus, busy, compact, placeholder }: Props) {
+export default function SearchBox({ onSubmit, focus, setFocus, lang, setLang, busy, compact, placeholder }: Props) {
   const [q, setQ] = useState("");
   const ref = useRef<HTMLTextAreaElement>(null);
 
@@ -80,6 +83,25 @@ export default function SearchBox({ onSubmit, focus, setFocus, busy, compact, pl
               <span className={compact ? "hidden sm:inline" : ""}>{label}</span>
             </button>
           ))}
+          <label
+            title="Answer language. Auto detects it from your question."
+            className={`flex items-center gap-1 rounded-lg px-2 py-1.5 text-xs font-medium transition hover:bg-panel-2 ${
+              lang !== "auto" ? "bg-nv-soft text-nv" : "text-muted hover:text-text"
+            }`}
+          >
+            <Languages size={13} />
+            <select
+              value={lang}
+              onChange={(e) => setLang(e.target.value)}
+              aria-label="Answer language"
+              className="cursor-pointer bg-transparent outline-none [&>option]:bg-panel [&>option]:text-text"
+            >
+              <option value="auto">Auto</option>
+              {LANGS.map((l) => (
+                <option key={l.code} value={l.code}>{l.native}</option>
+              ))}
+            </select>
+          </label>
         </div>
         <button
           onClick={submit}

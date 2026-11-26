@@ -22,13 +22,15 @@ async def engine_session():
         await engine.nv.aclose()
 
 
-async def answer(engine, question: str, focus: str = "all") -> dict:
+async def answer(engine, question: str, focus: str = "all", lang: str | None = None) -> dict:
+    from .lang import detect_language
+    lang = lang or detect_language(question)
     t0 = time.perf_counter()
-    res = await engine.retrieve(question, focus, [])
+    res = await engine.retrieve(question, focus, [], lang)
     t_ret = time.perf_counter() - t0
-    text = "".join([tok async for tok in engine.answer_stream(res, [])])
+    text = "".join([tok async for tok in engine.answer_stream(res, [], lang)])
     text = engine.repair_citations(text, res)
-    follow = await engine.followups(question, text, res)
+    follow = await engine.followups(question, text, res, lang)
     total = time.perf_counter() - t0
     by_n: dict[int, list[str]] = {}
     num = {d.id: i + 1 for i, d in enumerate(res.sources)}
@@ -37,6 +39,7 @@ async def answer(engine, question: str, focus: str = "all") -> dict:
     return {
         "question": question,
         "focus": focus,
+        "lang": lang,
         "queries": res.queries,
         "answer": text,
         "followups": follow,

@@ -7,10 +7,12 @@ function linkCitations(md: string) {
   return md.replace(/\[(\d{1,2})\](?!\()/g, "[$1](#cite-$1)");
 }
 
-export default function Answer({ text, sources, streaming }: { text: string; sources: Source[]; streaming: boolean }) {
+export default function Answer({ text, sources, streaming, dir }: {
+  text: string; sources: Source[]; streaming: boolean; dir?: "ltr" | "rtl";
+}) {
   const byN = new Map(sources.map((s) => [String(s.n), s]));
   return (
-    <div className={`prose-answer ${streaming ? "caret" : ""}`}>
+    <div dir={dir ?? "auto"} className={`prose-answer ${streaming ? "caret" : ""}`}>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
