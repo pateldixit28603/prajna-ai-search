@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "mode": "NVIDIA NIM (7/7 answers by the LLM)",
+  "mode": "NVIDIA NIM (2/7 answers by the LLM)",
   "items": [
     {
       "kind": "wikipedia",
@@ -17,10 +17,10 @@
           "What is Ramayana Part 1",
           "Key facts about Ramayana"
         ],
-        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari [1]. It is the first instalment of a two-part series based on the Hindu epic Ramayana by Valmiki, chronicling Prince Rama's life from childhood to his 14-year exile [1]. The film features an ensemble cast including Ranbir Kapoor, Yash in his Hindi debut, Sai Pallavi, and Rakul Preet Singh [1][5]. The soundtrack is composed by Hans Zimmer and A. R. Rahman [2]. Rakul Preet Singh, who stars in the film, predominantly works in Telugu, Hindi and Tamil films and is married to actor–producer Jackky Bhagnani [5].",
+        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]\n\n**Key points from the sources:**\n- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]\n- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]\n- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]\n- Ramayana: Part 1 is the soundtrack album to the 2026 film of the same name directed by Nitesh Tiwari and produced by Namit Malhotra and Yash under Prime Focus Studios, Monster Mind Creations and DNEG. [2]\n- She has also starred in the Hindi epic mythological film Ramayana: Part 1 (2026). [6]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "When is the film released?",
-          "Who is Valmiki?",
+          "When is the film set to release?",
+          "Who are the main actors?",
           "What is the second part about?"
         ],
         "sources": [
@@ -85,6 +85,21 @@
             "n": 4
           },
           {
+            "title": "Scion of Ikshvaku",
+            "url": "https://en.wikipedia.org/wiki/Scion_of_Ikshvaku",
+            "source": "wikipedia",
+            "snippet": "Ram: Scion of Ikshvaku is a one to one replica of the events taking place before the epic tale \"Ramayana\" and also the fourth book of Amish Tripathi, fourth book of Amishverse, and first book of Ram Chandra Series. It was released on 22 June 2015. It is based on Ram, the legendar",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "76ce12b9aaad",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
             "title": "Rakul Preet Singh",
             "url": "https://en.wikipedia.org/wiki/Rakul_Preet_Singh",
             "source": "wikipedia",
@@ -97,7 +112,7 @@
             },
             "id": "67642473618b",
             "domain": "en.wikipedia.org",
-            "n": 5
+            "n": 6
           },
           {
             "title": "List of characters in the Ramayana",
@@ -112,55 +127,40 @@
             },
             "id": "127b04f535a5",
             "domain": "en.wikipedia.org",
-            "n": 6
-          },
-          {
-            "title": "Krishnavataram Part 1: The Heart (Hridayam)",
-            "url": "https://en.wikipedia.org/wiki/Krishnavataram_Part_1:_The_Heart_(Hridayam)",
-            "source": "wikipedia",
-            "snippet": "Krishnavataram Part 1: The Heart (Hridayam) is a 2026 Indian Hindi-language devotional film directed by Hardik Gajjar, produced by Sajan Raj Kurup and Shobha Sant under Creativeland Studios Entertainment and Athashrikatha Motion Pictures. The first installment in the Krishnavatar",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "c80e0ec04e0e",
-            "domain": "en.wikipedia.org",
             "n": 7
           },
           {
-            "title": "Yash (actor)",
-            "url": "https://en.wikipedia.org/wiki/Yash_(actor)",
+            "title": "Kumbhakarna",
+            "url": "https://en.wikipedia.org/wiki/Kumbhakarna",
             "source": "wikipedia",
-            "snippet": "Yash (pronounced [/yah-sh/]; born Naveen Kumar, 8 January 1986) is an Indian actor and film producer who works in Kannada cinema. Known for his work in mass hero films, he is referred to as \"Rocking Star\" in the media. One of the highest-paid actors of Kannada cinema, Yash is a r",
+            "snippet": "Kumbhakarna (Sanskrit: कुम्भकर्ण, lit. pot-eared) is a powerful rakshasa and younger brother of Ravana from the Hindu epic Ramayana. He is said to have slaughtered 8,000 vanaras over the course of Rama's mission to rescue Sita. Kumbhakarna is known to sleep for six months at a ti",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "e56144b092d9",
+            "id": "824beb892946",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5567651269999985,
-          "search": 0.30894712900000343,
-          "rank": 0.8141581369999997,
+          "plan": 0.5550184190000209,
+          "search": 0.3181087109999794,
+          "rank": 1.825338892000019,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 1.6799429000000003,
-          "total": 3.3339210440000002
+          "retrieve": 2.6985266730000035,
+          "total": 63.422477904999994
         },
-        "nvidia": true,
+        "nvidia": false,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 5,
-        "citation_coverage": 0.8,
+        "sentences": 6,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -177,14 +177,14 @@
         "focus": "wiki",
         "lang": "en",
         "queries": [
-          "Who is Jensen Huang",
+          "who is Jensen Huang",
           "Jensen Huang key facts"
         ],
-        "answer": "Jen-Hsun \"Jensen\" Huang is the co-founder, president, and CEO of Nvidia, the American technology company that dominates AI hardware and GPU development [1][3]. He launched Nvidia in 1993 with Chris Malachowsky and Curtis Priem, steering the company from graphics processing into high-performance computing and artificial intelligence [1]. Under his leadership, Nvidia became the first company to surpass $5 trillion in market capitalization in 2025 [3]. In late 2026, Huang resigned amid reports of extramarital affairs with Alice Huang, a Chinese technology executive, and Kimberly Powell, an Nvidia executive; U.S [1]. intelligence investigated Alice Huang as a potential Chinese spy, though no conclusion was reached [2][4][6]. Colette Kress served as interim CEO following his resignation [5].",
+        "answer": "Jen-Hsun \"Jensen\" Huang (born February 17, 1963) is a Taiwanese and American electrical engineer and business executive who is the co-founder, president, and chief executive officer (CEO) of Nvidia, one of the world's most valuable companies. [1]\n\n**Key points from the sources:**\n- On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [2]\n- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [2]\n- officials did not warn Jensen Huang through a defensive briefing. [2]\n- Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [3]\n- In November 2026, he received attention due to Nvidia CEO Jensen Huang's extramarital affair with Alice Huang. [4]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "What is Nvidia known for now?",
-          "When did he found Nvidia?",
-          "Who is the current CEO?"
+          "What is Nvidia known for?",
+          "When was Nvidia founded?",
+          "Are there more details on the spy plot?"
         ],
         "sources": [
           {
@@ -266,7 +266,7 @@
             "title": "Alice Huang (executive)",
             "url": "https://en.wikipedia.org/wiki/Alice_Huang_(executive)",
             "source": "wikipedia",
-            "snippet": "Alice Huang (Chinese: 黄乐; pinyin: Huáng Lè; born December 1982) is a Chinese technology executive and investor. She was an executive at Megaspeed, a Singaporean technology company, before she officially stepped down from her role in August 2025. Huang's role in the company after ",
+            "snippet": "Alice Huang (Chinese: 黄乐; pinyin: Huáng Lè; born December 1982) is a Chinese technology executive and investor. Singaporean and U.S. authorities have described her as the chief executive of Megaspeed, a Singapore-based technology company; the company says she left it on 30 August",
             "published": null,
             "authors": [],
             "extra": {
@@ -310,15 +310,15 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.49409694100000223,
-          "search": 0.23209921799999478,
-          "rank": 2.2089971150000025,
+          "plan": 0.45117930300000353,
+          "search": 0.310272120999997,
+          "rank": 2.406070994999993,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.9352411770000018,
-          "total": 6.084084529000002
+          "retrieve": 3.1675628710000012,
+          "total": 63.929436451000015
         },
-        "nvidia": true,
+        "nvidia": false,
         "llm_error": ""
       },
       "metrics": {
@@ -340,14 +340,15 @@
         "focus": "wiki",
         "lang": "en",
         "queries": [
-          "What is Grand Theft Auto VI",
-          "Grand Theft Auto VI key facts"
+          "Grand Theft Auto VI details",
+          "GTA VI key facts",
+          "Grand Theft Auto VI release date"
         ],
-        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following Grand Theft Auto V (2013), and the sixteenth entry overall [1]. The game is set in the fictional US state of Leonida, based on Florida, and features the criminal duo Jason Duval and Lucia Caminos as they navigate a state-wide criminal conspiracy [1][3]. Lucia is the first non-optional playable female protagonist in the series, portrayed by Manni L. Perez [3]. The promotional trailer \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix on August 27, 2026, and topped the English language trailer chart in 87 countries [2]. The game's world parodies Floridian and 2020s American culture, and its development began in 2014 after the release of Grand Theft Auto V [1].",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. [1]\n\n**Key points from the sources:**\n- Grand Theft Auto VI: Original Score is the score for the 2026 video game Grand Theft Auto VI, composed by French electronic duo Justice. [2]\n- Grand Theft Auto VI: The Album is a soundtrack album for the 2026 action-adventure video game Grand Theft Auto VI. [3]\n- The album, which emulates the music of Florida within Grand Theft Auto VI's fictional setting of Leonida, features 34 original tracks on the standard edition from a diverse ensemble of artists including Cardi B, Dua Lipa, Lana Del Rey, Morgan Wallen and Travis Scott, among others. [3]\n- \"Grand Theft Auto VI: An Extended Look\" is a 2026 promotional trailer previewing the video game Grand Theft Auto VI. [4]\n- Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games's 2026 video game Grand Theft Auto VI. [6]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "When is GTA VI expected to release?",
+          "When is GTA VI releasing?",
           "Who are the main characters?",
-          "What is Leonida based on?"
+          "What is Leonida like?"
         ],
         "sources": [
           {
@@ -366,6 +367,36 @@
             "n": 1
           },
           {
+            "title": "Grand Theft Auto VI: Original Score",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_Original_Score",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto VI: Original Score is the score for the 2026 video game Grand Theft Auto VI, composed by French electronic duo Justice. It is scheduled for release on 11 December 2026 through Ed Banger and Because Music.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "2f9658afacde",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Grand Theft Auto VI: The Album",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_The_Album",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto VI: The Album is a soundtrack album for the 2026 action-adventure video game Grand Theft Auto VI. It was released on November 20, 2026, through Atlantic Records and Take-Two Interactive. The album, which emulates the music of Florida within Grand Theft Auto VI's ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "dd56cba87008",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
             "title": "Grand Theft Auto VI: An Extended Look",
             "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_An_Extended_Look",
             "source": "wikipedia",
@@ -378,7 +409,22 @@
             },
             "id": "a3ad5051691a",
             "domain": "en.wikipedia.org",
-            "n": 2
+            "n": 4
+          },
+          {
+            "title": "Grand Theft Auto",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto (GTA) is an action-adventure video game series created by the Scottish programmers David Jones and Mike Dailly at DMA Design, now known as Rockstar North. Later titles were developed under the oversight of brothers Dan and Sam Houser, Leslie Benzies and Aaron Gar",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d56b41b53500",
+            "domain": "en.wikipedia.org",
+            "n": 5
           },
           {
             "title": "Lucia Caminos",
@@ -393,22 +439,22 @@
             },
             "id": "c18959d481d1",
             "domain": "en.wikipedia.org",
-            "n": 3
+            "n": 6
           },
           {
-            "title": "Grand Theft Auto: Vice City",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
+            "title": "Niko Bellic",
+            "url": "https://en.wikipedia.org/wiki/Niko_Bellic",
             "source": "wikipedia",
-            "snippet": "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the fourth main game in the Grand Theft Auto series, following 2001's Grand Theft Auto III, and the sixth entry overall. Set in 1986 within the fictional",
+            "snippet": "Niko Bellic (NEE-koh BEL-ək; Serbian: Нико Белић) is a fictional character and the playable protagonist of Rockstar North's video game Grand Theft Auto IV (2008), the sixth main entry in Rockstar Games' Grand Theft Auto series. He also makes non-playable appearances in the game's",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "1ce06c45db6a",
+            "id": "9a1d6c8ac9f4",
             "domain": "en.wikipedia.org",
-            "n": 4
+            "n": 7
           },
           {
             "title": "Grand Theft Auto: The Trilogy – The Definitive Edition",
@@ -423,70 +469,25 @@
             },
             "id": "1103661a44e7",
             "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
-            "title": "Grand Theft Auto modding",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_modding",
-            "source": "wikipedia",
-            "snippet": "User modification, or modding, of video games in the open world sandbox Grand Theft Auto series is a popular trend in the PC gaming community. These unofficial modifications are made by altering gameplay logic and asset files within a user's game installation, and can change the ",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "2abef26406fa",
-            "domain": "en.wikipedia.org",
-            "n": 6
-          },
-          {
-            "title": "Jack Thompson (activist)",
-            "url": "https://en.wikipedia.org/wiki/Jack_Thompson_(activist)",
-            "source": "wikipedia",
-            "snippet": "John Bruce Thompson (born July 25, 1951) is an American activist and disbarred attorney. As an attorney, Thompson focused his legal efforts against what he perceives as obscenity in modern culture. He gained notoriety as an anti-video game activist, criticizing the content of gam",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e025d9d77064",
-            "domain": "en.wikipedia.org",
-            "n": 7
-          },
-          {
-            "title": "Development of Red Dead Redemption",
-            "url": "https://en.wikipedia.org/wiki/Development_of_Red_Dead_Redemption",
-            "source": "wikipedia",
-            "snippet": "A team of approximately 1,000 people developed Red Dead Redemption over five years. Rockstar Games published the action-adventure game in May 2010 for the PlayStation 3 and Xbox 360. A spiritual successor to the 2004 game Red Dead Revolver, its development was led by Rockstar San",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "41c9194e0277",
-            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5068796669999998,
-          "search": 0.35982480500000236,
-          "rank": 2.5084602199999964,
+          "plan": 0.5102233630000228,
+          "search": 0.38555460300000277,
+          "rank": 2.8638292829999727,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.3752219599999975,
-          "total": 5.379024135999998
+          "retrieve": 3.7596653560000277,
+          "total": 64.45190622300004
         },
-        "nvidia": true,
+        "nvidia": false,
         "llm_error": ""
       },
       "metrics": {
         "sentences": 6,
-        "citation_coverage": 0.8333333333333334,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -506,11 +507,11 @@
           "The Hunger Games Sunrise on the Reaping",
           "The Hunger Games key facts"
         ],
-        "answer": "The Hunger Games: Sunrise on the Reaping is a 2026 American dystopian film and the sixth installment in The Hunger Games film series, serving as the second prequel to the 2012 original [1][2]. It is based on Suzanne Collins' 2025 novel Sunrise on the Reaping, which is the second prequel to the original Hunger Games trilogy [2]. The film stars Joseph Zada as a young Haymitch Abernathy, alongside Jesse Plemons, Ralph Fiennes, Glenn Close, Kieran Culkin, Elle Fanning, Mckenna Grace, Maya Hawke, Whitney Peak, Kelvin Harrison Jr., and Ben Wang, with Josh Hutcherson, Woody Harrelson, and Jennifer Lawrence reprising their roles [1][7]. Set 24 years before the first film, the story follows 16-year-old Haymitch from District 12 who is forced to compete in the 50th Hunger Games, a special edition with twice the usual number of tributes [1][2]. The film adaptation was announced in June 2024 and released by Lionsgate on November 20, 2026 [2]. The soundtrack album, released November 13, 2026, via MCA, features 29 tracks including the lead single \"Draw You Out\" by Noah Kahan [3]. Molly McCann, an Irish child actor, also appears in the 2026 film [6].",
+        "answer": "The Hunger Games: Sunrise on the Reaping is a 2026 American dystopian film produced and directed by Francis Lawrence from a screenplay by Billy Ray and Michael Lesslie. [1]\n\n**Key points from the sources:**\n- Based on the 2025 novel Sunrise on the Reaping by Suzanne Collins, it is the sixth installment in The Hunger Games film series, serving as the second prequel to The Hunger Games (2012) after The Hunger Games: The Ballad of Songbirds & Snakes (2023). [1]\n- Sunrise on the Reaping is a 2025 dystopian novel written by American author Suzanne Collins and the second prequel novel to the original The Hunger Games trilogy, following The Ballad of Songbirds and Snakes (2020). [2]\n- The Hunger Games: Sunrise on the Reaping (The Album) is the soundtrack album to the 2026 film, an adaptation of the 2025 novel Sunrise on the Reaping by Suzanne Collins. [3]\n- Her film credits include The Hunger Games: Sunrise on the Reaping (2026). [6]\n- He has starred in television series Invisible Boys (2025), We Were Liars (2025–present), and East of Eden (2026) before gaining wider recognition as Haymitch Abernathy in the 2026 film The Hunger Games: Sunrise on the Reaping. [7]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
           "When is the film set to release?",
-          "Who wrote the book?",
-          "What is the 50th Hunger Games about?"
+          "Who stars in the movie?",
+          "Is it related to the trilogy?"
         ],
         "sources": [
           {
@@ -636,19 +637,19 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4638467150000025,
-          "search": 1.247952974999997,
-          "rank": 2.653696895000003,
+          "plan": 0.47148449700000583,
+          "search": 0.44716743500003986,
+          "rank": 0.8803565519999665,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.365548214,
-          "total": 7.026248662
+          "retrieve": 1.7990535719999912,
+          "total": 62.493702231999976
         },
-        "nvidia": true,
+        "nvidia": false,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 7,
+        "sentences": 6,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
@@ -657,7 +658,7 @@
     {
       "kind": "hackernews",
       "topic": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-      "points": 1777,
+      "points": 1920,
       "discussion": "https://news.ycombinator.com/item?id=50646108",
       "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
       "focus": "all",
@@ -669,11 +670,11 @@
           "what is happening now",
           "why is this important"
         ],
-        "answer": "The search results provided are metadata entries titled \"What is happening now?\" across various domains including entertainment, philosophy, education, technology transitions, conflict studies, and privacy. They do not contain substantive content that answers a specific question about a current event, technology, or topic. Each result is a bibliographic record with a title and URL, but no body text, data, or analysis is included in the snippets. Therefore, no factual information can be extracted or cited from these results to form a meaningful answer. If you have a specific topic or question in mind, please provide additional context or search results with actual content.",
+        "answer": "The Status of Becoming: What is Happening Now?. [2]\n\n**Key points from the sources:**\n- IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now. [4]\n- ‘What is happening now is not raiding, it's war’. [5]\n- I've never seen such a rift in the community as what is happening right now. [7]\n- I understand the need to grieve, this is for sure not an easy time for any of us but the amount of hate-mongering that is happening right now is really beyond the pale. [7]\n- For the first time, you could now collect data and train models on one sensor and expect them to generalize to new copies of the sensor -- opening the door to the kind of large foundation models that have revolutionized vision and language reasoning. [8]\n\n> _Extractive mode: add an `NVIDIA_API_KEY` (or run a local NIM) for full AI-written answers._",
         "followups": [
-          "What specific topic are you interested in?",
-          "Can you provide more context?",
-          "What kind of event are you thinking of?"
+          "What is the community rift about?",
+          "What is the IPv6 transition issue?",
+          "How does sensor data help models?"
         ],
         "sources": [
           {
@@ -825,206 +826,28 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4682332360000032,
-          "search": 1.2179678119999977,
-          "rank": 2.610047112999993,
+          "plan": 0.4052830869999866,
+          "search": 0.9924980750000145,
+          "rank": 4.584502659999998,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.2963681090000065,
-          "total": 5.994793663000003
+          "retrieve": 5.982381089,
+          "total": 66.69674125300003
         },
-        "nvidia": true,
-        "llm_error": ""
-      },
-      "metrics": {
-        "sentences": 5,
-        "citation_coverage": 0.0,
-        "citation_validity": null,
-        "faithfulness": null
-      }
-    },
-    {
-      "kind": "hackernews",
-      "topic": "1Password Security Incident",
-      "points": 1552,
-      "discussion": "https://news.ycombinator.com/item?id=50644817",
-      "question": "1Password Security Incident — what is this about and why does it matter?",
-      "focus": "all",
-      "result": {
-        "question": "1Password Security Incident — what is this about and why does it matter?",
-        "focus": "all",
-        "lang": "en",
-        "queries": [
-          "1Password security incident details",
-          "1Password security incident impact"
-        ],
-        "answer": "1Password is a password manager developed by AgileBits Inc [1]. that stores user data in an encrypted vault protected by a PBKDF2-guarded master password, with vaults hosted on 1Password's servers for a monthly fee [1]. Unlike LastPass, which suffered multiple security incidents between 2011 and 2022 including a 2022 breach of user data, billing information, and vaults [2], 1Password has not been associated with a major publicized security incident in the provided search results. However, credential stuffing attacks remain a risk for any password manager when users reuse passwords across sites, as 81% of users reuse passwords across multiple sites [5]. The importance of 1Password's security model lies in its local encryption and vault design, which differs from cloud-based managers that have experienced breaches. Users should still follow best practices such as using unique passwords and enabling two-factor authentication where available.",
-        "followups": [
-          "What are credential stuffing attacks?",
-          "How does 1Password's encryption work?",
-          "What should I do about password reuse?"
-        ],
-        "sources": [
-          {
-            "title": "1Password",
-            "url": "https://en.wikipedia.org/wiki/1Password",
-            "source": "wikipedia",
-            "snippet": "1Password is a password manager developed by the Canadian software company AgileBits Inc. It supports multiple platforms such as iOS, Android, Windows, Linux, and macOS. It provides a place for users to store various passwords, software licenses, and other sensitive information i",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "6ad33b172c74",
-            "domain": "en.wikipedia.org",
-            "n": 1
-          },
-          {
-            "title": "LastPass",
-            "url": "https://en.wikipedia.org/wiki/LastPass",
-            "source": "wikipedia",
-            "snippet": "LastPass is a password manager application. The standard version of LastPass comes as a web interface, but also includes a browser extension, an app and support for bookmarklets. Founded in 2008 by four developers, Lastpass was acquired by GoTo (formerly LogMeIn Inc.) for $110 mi",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "def8b62c97e9",
-            "domain": "en.wikipedia.org",
-            "n": 2
-          },
-          {
-            "title": "Slack Security Incident in Invite Links",
-            "url": "https://news.ycombinator.com/item?id=32354939",
-            "source": "hackernews",
-            "snippet": "[Disclaimer] We are a paying Slack Customer. There's a security incident and it seems like Slack is trying to keep it under wraps by only sending emails to affected accounts. I've verified the email by all means (SPF/DKIM/DMARC) and it's legit: # Security notice from Slack regard",
-            "published": "2022-08-05",
-            "authors": [
-              "kirab"
-            ],
-            "extra": {
-              "points": 3,
-              "comments": 1,
-              "discussion": "https://news.ycombinator.com/item?id=32354939"
-            },
-            "id": "98873748b272",
-            "domain": "news.ycombinator.com",
-            "n": 3
-          },
-          {
-            "title": "LogMeIn/Goto Hamachi was hacked",
-            "url": "https://news.ycombinator.com/item?id=34854463",
-            "source": "hackernews",
-            "snippet": "Dear Customer, I am writing to update you on our ongoing investigation about the security incident we told you about in November 2022. Our investigation to date has determined that a threat actor exfiltrated encrypted backups related to Hamachi from a third-party cloud storage fa",
-            "published": "2023-02-19",
-            "authors": [
-              "lionkor"
-            ],
-            "extra": {
-              "points": 4,
-              "comments": 1,
-              "discussion": "https://news.ycombinator.com/item?id=34854463"
-            },
-            "id": "5ede4cd13c8e",
-            "domain": "news.ycombinator.com",
-            "n": 4
-          },
-          {
-            "title": "Credential stuffing",
-            "url": "https://en.wikipedia.org/wiki/Credential_stuffing",
-            "source": "wikipedia",
-            "snippet": "Credential stuffing is a type of cyberattack in which the attacker collects stolen account credentials, typically consisting of lists of usernames or email addresses and the corresponding passwords (often from a data breach), and then uses the credentials to gain unauthorized acc",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e57b37e08098",
-            "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
-            "title": "Plex Update: Notice of a potential security incident",
-            "url": "https://news.ycombinator.com/item?id=45174684",
-            "source": "hackernews",
-            "snippet": "Dear Plex User, We have recently experienced a security incident that may potentially involve your Plex account information. We believe the actual impact of this incident is limited; however, action is required from you to ensure your account remains secure. What happened An unau",
-            "published": "2025-09-08",
-            "authors": [
-              "white_viel"
-            ],
-            "extra": {
-              "points": 34,
-              "comments": 12,
-              "discussion": "https://news.ycombinator.com/item?id=45174684"
-            },
-            "id": "e960ba5ee02a",
-            "domain": "news.ycombinator.com",
-            "n": 6
-          },
-          {
-            "title": "Plex: Important notice of a potential data breach",
-            "url": "https://news.ycombinator.com/item?id=32575350",
-            "source": "hackernews",
-            "snippet": "Dear Plex User, We want you to be aware of an incident involving your Plex account information yesterday. While we believe the actual impact of this incident is limited, we want to ensure you have the right information and tools to keep your account secure. What happened Yesterda",
-            "published": "2022-08-24",
-            "authors": [
-              "Flollop"
-            ],
-            "extra": {
-              "points": 231,
-              "comments": 189,
-              "discussion": "https://news.ycombinator.com/item?id=32575350"
-            },
-            "id": "061f1b8c05e1",
-            "domain": "news.ycombinator.com",
-            "n": 7
-          },
-          {
-            "title": "Tell HN: Plex was hacked, emails and hashed passwords stolen",
-            "url": "https://news.ycombinator.com/item?id=32575536",
-            "source": "hackernews",
-            "snippet": "Received this email from Plex today. Dear Plex User, We want you to be aware of an incident involving your Plex account information yesterday. While we believe the actual impact of this incident is limited, we want to ensure you have the right information and tools to keep your a",
-            "published": "2022-08-24",
-            "authors": [
-              "honkdaddy"
-            ],
-            "extra": {
-              "points": 19,
-              "comments": 0,
-              "discussion": "https://news.ycombinator.com/item?id=32575536"
-            },
-            "id": "6b1ede9ad8bf",
-            "domain": "news.ycombinator.com",
-            "n": 8
-          }
-        ],
-        "warnings": [],
-        "timings": {
-          "plan": 0.4995678639999994,
-          "search": 0.4170060340000106,
-          "rank": 3.864490011000001,
-          "dense": 1.0,
-          "rerank": 1.0,
-          "retrieve": 4.781166709999994,
-          "total": 7.728218251999991
-        },
-        "nvidia": true,
+        "nvidia": false,
         "llm_error": ""
       },
       "metrics": {
         "sentences": 6,
-        "citation_coverage": 0.6666666666666666,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
-        "faithfulness": 0.75
+        "faithfulness": 1.0
       }
     },
     {
       "kind": "hackernews",
       "topic": "The New York Times warns photographers not to update Photoshop over AI features",
-      "points": 504,
+      "points": 622,
       "discussion": "https://news.ycombinator.com/item?id=50647673",
       "question": "The New York Times warns photographers not to update Photoshop over AI features — what is this about and why does it matter?",
       "focus": "all",
@@ -1033,35 +856,17 @@
         "focus": "all",
         "lang": "en",
         "queries": [
-          "NYT Photoshop AI update warning",
-          "Photoshop AI features warning photographers",
+          "NYT warning Photoshop AI features",
+          "Photoshop update AI risks",
           "Why not update Photoshop AI"
         ],
-        "answer": "The New York Times recently warned photographers against updating Photoshop due to new AI features that automatically tag and organize images. This matters because the update introduces automated content analysis that some photographers view as intrusive or unnecessary for their workflow. The concern centers on AI-driven metadata and organizational tools being baked into a professional editing suite, potentially altering how images are categorized and searched [1][6].\n\nKey points about the issue:\n- The warning stems from Photoshop updates adding AI-powered features like automatic subject selection and content-aware fill enhancements\n- Photographers worry about unintended AI alterations to their work or unwanted automated tagging\n- The controversy reflects broader tensions between AI integration and professional creative control\n- Some see these features as productivity boosters, while others view them as threats to artistic integrity\n\nThe debate highlights the growing friction between traditional photography practices and AI-assisted tools in professional software. As AI capabilities expand in creative applications, users must balance convenience with control over their artistic output.",
+        "answer": "The New York Times recently warned photographers against updating Photoshop due to its new AI features, specifically the \"Generative Fill\" and \"Contextual Task Bar\" tools powered by Adobe Firefly. This matters because the updates automate complex editing tasks, raising concerns about authenticity, copyright, and the future of professional photography.\n\nHere are the key details:\n\n*   **The Feature:** The update introduces Generative Fill, which allows users to add, extend, or remove content from images using text prompts. It also includes a Contextual Task Bar that suggests actions based on the user's current task [1].\n*   **The Warning:** The New York Times advised photographers to delay the update, fearing that the ease of AI generation could devalue the skill and authenticity traditionally associated with photographic work [1].\n*   **Industry Context:** Adobe, the maker of Photoshop, has integrated generative AI across its Creative Cloud suite, including Lightroom, to streamline workflows for photographers [6][7]. However, this has sparked broader debate within the industry regarding the impact on artistic integrity and the definition of \"photography\" [1].\n*   **Broader Concerns:** Beyond photography, the integration of AI into creative tools has intensified discussions about copyright, deception, and the spread of misinformation, especially as these tools become more accessible [2][5].\n\n**Why it matters:** This warning highlights the tension between technological efficiency and artistic authenticity. As AI features become embedded in standard software like Photoshop, the line between captured reality and generated art blurs, challenging photographers to adapt to new ethical and professional standards.",
         "followups": [
-          "What specific AI features are causing concern?",
-          "Can they avoid the update safely?",
-          "How can I manage the new tagging?"
+          "What are the specific copyright concerns?",
+          "How can I use AI responsibly?",
+          "Are there alternative editing tools?"
         ],
         "sources": [
-          {
-            "title": "Photorealism versus photography. AI-generated depiction in the age of visual disinformation",
-            "url": "https://doi.org/10.1080/20004214.2024.2340787",
-            "source": "openalex",
-            "snippet": "In the spring of 2023, we witnessed a breakthrough in the development of AI-generated images accessible to the general public. Pictures of Pope Francis wearing a stylishly long, white puffer jacket or driving a motorcycle down a busy street went viral. The same thing happened wit",
-            "published": "2024",
-            "authors": [
-              "Liv Hausken"
-            ],
-            "extra": {
-              "cited_by": 89,
-              "venue": "Journal of AESTHETICS & CULTURE",
-              "license": "CC0 metadata"
-            },
-            "id": "511596057b76",
-            "domain": "doi.org",
-            "n": 1
-          },
           {
             "title": "AI art",
             "url": "https://en.wikipedia.org/wiki/AI_art",
@@ -1075,7 +880,7 @@
             },
             "id": "092e97dbace5",
             "domain": "en.wikipedia.org",
-            "n": 2
+            "n": 1
           },
           {
             "title": "Deepfake",
@@ -1090,6 +895,24 @@
             },
             "id": "21d8ec46c47a",
             "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ В ГРАФИЧЕСКОМ ДИЗАЙНЕ: ПРИМЕНЕНИЕ В ADOBE PHOTOSHOP И ADOBE ILLUSTRATOR",
+            "url": "https://doi.org/10.5281/zenodo.18913256",
+            "source": "openalex",
+            "snippet": "В статье рассматривается применение искусственного интеллекта в графическом дизайне, с акцентом на Adobe Photoshop и Adobe Illustrator. Анализируются генеративные функции, автоматизация рутинных задач, создание фрагментов изображения и роль дизайнера в контроле, интерпретации и с",
+            "published": "2026",
+            "authors": [
+              "Умарова Карина"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Journal of Universal Science Research",
+              "license": "CC0 metadata"
+            },
+            "id": "00a626c30149",
+            "domain": "doi.org",
             "n": 3
           },
           {
@@ -1141,24 +964,6 @@
             "n": 6
           },
           {
-            "title": "Get Citizens’ Input on AI Deployments",
-            "url": "https://doi.org/10.58875/puph1340",
-            "source": "openalex",
-            "snippet": "Sometime last summer, I needed to install a new dryer in my home in Bergen, Norway.I opened a localized version of Google and typed a request for instructions in Norwegian.Everything the search engine returned was irrelevant-most results assumed my dryer relied on gas, which is n",
-            "published": "2024",
-            "authors": [
-              "Karine Gentelet"
-            ],
-            "extra": {
-              "cited_by": 0,
-              "venue": "Issues in Science and Technology",
-              "license": "CC0 metadata"
-            },
-            "id": "aaa780a1bd53",
-            "domain": "doi.org",
-            "n": 7
-          },
-          {
             "title": "Adobe Lightroom",
             "url": "https://en.wikipedia.org/wiki/Adobe_Lightroom",
             "source": "wikipedia",
@@ -1171,27 +976,223 @@
             },
             "id": "51ab600c0069",
             "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Artificial intelligence controversies",
+            "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_controversies",
+            "source": "wikipedia",
+            "snippet": "A broad range of public, academic, and political debates regarding the societal effects of artificial intelligence (AI) have intensified particularly in the late 2010s and 2020s, coinciding with an accelerated period of development known as the AI boom. While advocates emphasize ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "9d51121f6acb",
+            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5313758240000084,
-          "search": 0.528313795999992,
-          "rank": 2.784840365000008,
+          "plan": 0.5179206130000011,
+          "search": 0.4760594200000128,
+          "rank": 2.97509360600003,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.8446453070000075,
-          "total": 7.934576727999996
+          "retrieve": 3.969165076999957,
+          "total": 36.667402368999944
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
         "sentences": 10,
-        "citation_coverage": 0.1,
+        "citation_coverage": 0.5,
         "citation_validity": 1.0,
         "faithfulness": 0.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Much shorter version of GRH Lean verification from Anthropic",
+      "points": 529,
+      "discussion": "https://news.ycombinator.com/item?id=50648050",
+      "question": "Much shorter version of GRH Lean verification from Anthropic — what is this about and why does it matter?",
+      "focus": "all",
+      "result": {
+        "question": "Much shorter version of GRH Lean verification from Anthropic — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "GRH Lean verification Anthropic summary",
+          "what is GRH Lean verification",
+          "why is GRH Lean verification important"
+        ],
+        "answer": "Anthropic mathematician Levent Alpöge announced a formal proof of the Riemann Hypothesis using AI model Claude, releasing ~17 million lines of Lean code [3]. The Lean and Mathlib communities subsequently verified the proof passed all logical checks [2]. A more efficient 300,000-line version followed from Anthropic researcher Luke Sernau [3]. The proof also established the Generalized Riemann Hypothesis for Dirichlet L-functions [3][2]. Verification confirmed the mathematical statement was correctly formulated, the code compiled successfully, it proved the intended theorem, and it satisfied formal logic rules [2]. The artifact is formally verified but not yet human-readable, as the argument described by its names and packaging differs from the code's actual argument [4]. AI has now resolved two of the seven Millennium Prize Problems, including the Riemann hypothesis in November 2026 [8].",
+        "followups": [
+          "What is the Riemann Hypothesis?",
+          "How efficient is the 300k line version?",
+          "Is the proof fully human-readable?"
+        ],
+        "sources": [
+          {
+            "title": "Independent Formal Verification, Epistemic Spine Cartography, and Comparative Auditing of Riemann Hypothesis Proof Claims",
+            "url": "https://doi.org/10.5281/zenodo.24492309",
+            "source": "openalex",
+            "snippet": "We report an independent computational verification, transitive fresh-environment kernel replay, cryptographic provenance audit, deductive dependency cartography, human-comprehensible verification anatomy, and comparative manuscript evaluation of two contemporary claims addressin",
+            "published": "2026",
+            "authors": [
+              "Aida Hayani"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+              "license": "CC0 metadata"
+            },
+            "id": "c4a7fab60564",
+            "domain": "doi.org",
+            "n": 1
+          },
+          {
+            "title": "AI-assisted proof of Riemann Hypothesis passes independent verification",
+            "url": "https://doi.org/10.59717/j.tiis.2026.100023",
+            "source": "openalex",
+            "snippet": "The Innovation News Team (2026).AI-assisted proof of Riemann Hypothesis passes independent verification.The Innovation Insights 1:100023.On Nov. 20, Levent Alpöge, a Turkish-American mathematician at Artificial Intelligence (AI) company Anthropic, announced that he and the compan",
+            "published": "2026",
+            "authors": [
+              "The Innovation News Team"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "The Innovation Insights",
+              "license": "CC0 metadata"
+            },
+            "id": "cc1b7a0d1e27",
+            "domain": "doi.org",
+            "n": 2
+          },
+          {
+            "title": "Alpöge's proof of the Riemann hypothesis",
+            "url": "https://en.wikipedia.org/wiki/Alp%C3%B6ge%27s_proof_of_the_Riemann_hypothesis",
+            "source": "wikipedia",
+            "snippet": "On 20 November 2026, Anthropic mathematician Levent Alpöge released a formal proof of the Riemann hypothesis, a long-standing open problem in mathematics and one of the Millennium Prize Problems. He used an unreleased model of Claude, a large language model developed by Anthropic",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "064c1fa8e751",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "An Audit of the Claimed Lean Proof of the Riemann Hypothesis: Eight Findings, with Addresses",
+            "url": "https://doi.org/10.5281/zenodo.24489394",
+            "source": "openalex",
+            "snippet": "In November 2026 a Lean formalization was announced as a proof of the Riemann Hypothesis and its generalization to Dirichlet L-functions. The artifact is large: 175,187 Lean files, 17,374,215 lines. Its top-level statements are genuine — they are Mathlib's own statements of RH an",
+            "published": "2026",
+            "authors": [
+              "Richard Vigslist"
+            ],
+            "extra": {
+              "cited_by": 1,
+              "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+              "license": "CC0 metadata"
+            },
+            "id": "f2e2d5e907d3",
+            "domain": "doi.org",
+            "n": 4
+          },
+          {
+            "title": "NovaraX ForgeX · 0.888: Explicit Bounds for the Least Prime in an Arithmetic Progression under the Generalized Riemann Hypothesis",
+            "url": "https://doi.org/10.5281/zenodo.24474008",
+            "source": "openalex",
+            "snippet": "Rafał Wiktorowicz (NovaraX), Braun SI with family AI What this is Walk through a, a+q, a+2q, ... and ask how far you must go to reach a prime: under the Generalized Riemann Hypothesis for Dirichlet L-functions (GRH), this paper gives an explicit limit, as a multiple of (φ(q) log ",
+            "published": "2026",
+            "authors": [
+              "Rafał Wiktorowicz",
+              "Braun SI Wiktorowicz"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+              "license": "CC0 metadata"
+            },
+            "id": "229eeea804b4",
+            "domain": "doi.org",
+            "n": 5
+          },
+          {
+            "title": "Riemann hypothesis",
+            "url": "https://en.wikipedia.org/wiki/Riemann_hypothesis",
+            "source": "wikipedia",
+            "snippet": "In mathematics, the Riemann hypothesis is the theorem that the Riemann zeta function has its zeros only at the negative even integers and at complex numbers with real part 12. First posed in 1859 by Bernhard Riemann, pure mathematicians consider the hypothesis to be one of the mo",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "9871693dffa5",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Performance et régulation sociale du lean : apports de la GRH mobilisatrice",
+            "url": "https://doi.org/10.3917/mav.112.0015",
+            "source": "openalex",
+            "snippet": "Certains chercheurs ont proposé de composer avec les standards du lean en veillant à ce que des espaces d’échange social contribuent à la rencontre des régulations. Nous souhaitons poursuivre cette démarche en étudiant l’effet modérateur des pratiques de GRH mobilisatrice sur la ",
+            "published": "2019",
+            "authors": [
+              "Abdelwahab Aït Razouk",
+              "Yann Quéméner"
+            ],
+            "extra": {
+              "cited_by": 4,
+              "venue": "Management & Avenir",
+              "license": "CC0 metadata"
+            },
+            "id": "f2e7a3021c84",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "List of mathematical discoveries made with artificial intelligence",
+            "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+            "source": "wikipedia",
+            "snippet": "Beginning in the mid-2020s, large language models, including reasoning models, have made increasing progress in generating mathematical proofs at research level. As of November 2026, artificial intelligence has been used to resolve two of the seven Millennium Prize Problems (Navi",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d79b398e27ec",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.5604639459999703,
+          "search": 0.5150019400000474,
+          "rank": 1.6297668009999597,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 2.705305296000006,
+          "total": 11.596802257000036
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 7,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
       }
     }
   ]
