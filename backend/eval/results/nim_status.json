@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-26 15:04 UTC",
+  "date": "2026-11-26 15:10 UTC",
   "key_present": true,
   "results": [
     {
@@ -23,9 +23,24 @@
       "detail": "[-2.4414563179016113, -3.1762280464172363]"
     },
     {
-      "check": "image:black-forest-labs/flux.1-schnell,black-forest-labs/flux.1-dev,black-forest-labs/flux.2-klein-4b,stabilityai/stable-diffusion-3-medium",
+      "check": "image:black-forest-labs/flux.1-schnell",
       "ok": false,
-      "detail": "TimeoutError: "
+      "detail": "HTTP 422 in 52.1s: {\"detail\":[{\"type\":\"extra_forbidden\",\"loc\":[\"body\",\"seed\"],\"msg\":\"Extra inputs are not permitted\",\"input\":7}]}"
+    },
+    {
+      "check": "image:black-forest-labs/flux.1-dev",
+      "ok": false,
+      "detail": "HTTP 422 in 33.4s: {\"detail\":[{\"type\":\"extra_forbidden\",\"loc\":[\"body\",\"seed\"],\"msg\":\"Extra inputs are not permitted\",\"input\":7}]}"
+    },
+    {
+      "check": "image:black-forest-labs/flux.2-klein-4b",
+      "ok": false,
+      "detail": "HTTP 422 in 1.8s: {\"detail\":[{\"type\":\"extra_forbidden\",\"loc\":[\"body\",\"seed\"],\"msg\":\"Extra inputs are not permitted\",\"input\":7}]}"
+    },
+    {
+      "check": "image:stabilityai/stable-diffusion-3-medium",
+      "ok": false,
+      "detail": "HTTP 404 in 0.1s: {\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function '1a89a4d9-bbf6-432c-95ca-4ab78fb02f28': Not found for account 'y_vONxGPuSQnSvZqLmzvHtHbP7P07gw2okHLGH8QYsI'"
     },
     {
       "check": "research:openalex",
