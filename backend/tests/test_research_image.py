@@ -89,7 +89,8 @@ PNG = base64.b64encode(b"\x89PNG\r\n\x1a\nfake").decode()
 
 def test_image_bodies_and_parsing():
     assert build_body("black-forest-labs/flux.1-schnell", "cat", "landscape", 1) | {} == {
-        "prompt": "cat", "width": 1344, "height": 768, "steps": 4, "cfg_scale": 0, "seed": 1, "mode": "base"}
+        "prompt": "cat", "width": 1344, "height": 768, "steps": 4, "cfg_scale": 0, "mode": "base"}
+    assert all("seed" not in build_body(m, "cat", "square", 1) for m in ("x/flux.1-dev", "x/flux.2-klein-4b"))
     assert build_body("stabilityai/stable-diffusion-3-medium", "cat", "portrait", 1)["aspect_ratio"] == "9:16"
     assert parse_image({"artifacts": [{"base64": "abc", "finishReason": "SUCCESS"}]}) == ("abc", "SUCCESS")
     assert parse_image({"image": "abc", "finish_reason": "SUCCESS"}) == ("abc", "SUCCESS")

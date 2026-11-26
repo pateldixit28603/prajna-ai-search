@@ -44,11 +44,12 @@ def build_body(model: str, prompt: str, aspect: str, seed: int) -> dict:
     if "stable-diffusion-3" in model:
         return {"prompt": prompt, "aspect_ratio": ratio, "cfg_scale": 5, "steps": 30, "seed": seed,
                 "negative_prompt": "blurry, low quality, distorted, watermark"}
+    # The hosted FLUX endpoints reject a "seed" field (HTTP 422 extra_forbidden, seen in nim_status.json)
     if "schnell" in model:
-        return {"prompt": prompt, "width": w, "height": h, "steps": 4, "cfg_scale": 0, "seed": seed, "mode": "base"}
+        return {"prompt": prompt, "width": w, "height": h, "steps": 4, "cfg_scale": 0, "mode": "base"}
     if "klein" in model:
-        return {"prompt": prompt, "width": w, "height": h, "steps": 4, "seed": seed}
-    return {"prompt": prompt, "width": w, "height": h, "steps": 30, "cfg_scale": 3.5, "seed": seed, "mode": "base"}
+        return {"prompt": prompt, "width": w, "height": h, "steps": 4}
+    return {"prompt": prompt, "width": w, "height": h, "steps": 30, "cfg_scale": 3.5, "mode": "base"}
 
 
 def parse_image(data: dict) -> tuple[str, str]:
