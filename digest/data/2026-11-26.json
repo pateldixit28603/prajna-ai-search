@@ -1,0 +1,1221 @@
+{
+  "date": "2026-11-26",
+  "mode": "NVIDIA NIM (7/7 answers by the LLM)",
+  "items": [
+    {
+      "kind": "wikipedia",
+      "topic": "Ramayana: Part 1",
+      "views": 305811,
+      "question": "Who or what is Ramayana: Part 1, and what are the key facts to know?",
+      "focus": "wiki",
+      "context": "2026 Indian film by Nitesh Tiwari",
+      "result": {
+        "question": "Who or what is Ramayana: Part 1, and what are the key facts to know?",
+        "focus": "wiki",
+        "lang": "en",
+        "queries": [
+          "What is Ramayana Part 1",
+          "Key facts about Ramayana"
+        ],
+        "answer": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari [1]. It is the first instalment of a two-part series based on the Hindu epic Ramayana by Valmiki [3]. The film chronicles Prince Rama's life from childhood up to his 14-year exile [1]. It features an ensemble cast including Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey, Anupam Kher, Lara Dutta, Shobana, Kajal Aggarwal, Rakul Preet Singh, Vivek Oberoi, Kunal Kapoor, and Arun Govil [1][6]. Hans Zimmer and A. R. Rahman collaborated to compose the score [1][2]. Rakul Preet Singh stars in the film alongside her roles in other Hindi and South Indian films [6]. The soundtrack album is composed by Hans Zimmer and A. R. Rahman, with lyrics by Kumar Vishwas [2].",
+        "followups": [
+          "When is the film releasing?",
+          "Who is Valmiki?",
+          "What is the plot about?"
+        ],
+        "sources": [
+          {
+            "title": "Ramayana: Part 1",
+            "url": "https://en.wikipedia.org/wiki/Ramayana:_Part_1",
+            "source": "wikipedia",
+            "snippet": "Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. It is the first instalment of a two",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "df7add7e8d8b",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Ramayana: Part 1 (soundtrack)",
+            "url": "https://en.wikipedia.org/wiki/Ramayana:_Part_1_(soundtrack)",
+            "source": "wikipedia",
+            "snippet": "Ramayana: Part 1 is the soundtrack album to the 2026 film of the same name directed by Nitesh Tiwari and produced by Namit Malhotra and Yash under Prime Focus Studios, Monster Mind Creations and DNEG. The film stars Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey and Sunny Deol in l",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "48e933e25f63",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Ramayana",
+            "url": "https://en.wikipedia.org/wiki/Ramayana",
+            "source": "wikipedia",
+            "snippet": "The Ramayana (; Sanskrit: रामायणम्, romanized: Rāmāyaṇam), also known as the Valmiki Ramayana, as traditionally attributed to Valmiki, is a Hindu smriti epic poem (also described as a Sanskrit epic) from ancient India. It is one of the two important epics of Hinduism known as the",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "0592722fa4e6",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Ramayana: The Legend of Prince Rama",
+            "url": "https://en.wikipedia.org/wiki/Ramayana:_The_Legend_of_Prince_Rama",
+            "source": "wikipedia",
+            "snippet": "Ramayana: The Legend of Prince Rama is a 1993 Indo-Japanese anime film directed and produced by Yugo Sako, who co-directed the film with Koichi Sasaki and Ram Mohan. It is an adaptation of the Indian epic Ramayana. The film featured music composed by Vanraj Bhatia and was first r",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d822fea7aa35",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Scion of Ikshvaku",
+            "url": "https://en.wikipedia.org/wiki/Scion_of_Ikshvaku",
+            "source": "wikipedia",
+            "snippet": "Ram: Scion of Ikshvaku is a one to one replica of the events taking place before the epic tale \"Ramayana\" and also the fourth book of Amish Tripathi, fourth book of Amishverse, and first book of Ram Chandra Series. It was released on 22 June 2015. It is based on Ram, the legendar",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "76ce12b9aaad",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Rakul Preet Singh",
+            "url": "https://en.wikipedia.org/wiki/Rakul_Preet_Singh",
+            "source": "wikipedia",
+            "snippet": "Rakul Preet Singh (born 10 October 1990) is an Indian actress who predominantly works in Telugu, Hindi and Tamil films. Singh is a recipient of several accolades including a SIIMA Award, in addition to four nominations at the Filmfare Awards South. Singh started her career as a m",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "67642473618b",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "List of characters in the Ramayana",
+            "url": "https://en.wikipedia.org/wiki/List_of_characters_in_the_Ramayana",
+            "source": "wikipedia",
+            "snippet": "The Ramayana is one of the two major Sanskrit ancient epics of Hindu literature. It is attributed to the sage Valmiki. This is a list of important figures that appear in the epic.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "127b04f535a5",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Kumbhakarna",
+            "url": "https://en.wikipedia.org/wiki/Kumbhakarna",
+            "source": "wikipedia",
+            "snippet": "Kumbhakarna (Sanskrit: कुम्भकर्ण, lit. pot-eared) is a powerful rakshasa and younger brother of Ravana from the Hindu epic Ramayana. He is said to have slaughtered 8,000 vanaras over the course of Rama's mission to rescue Sita. Kumbhakarna is known to sleep for six months at a ti",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "824beb892946",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.4157709859999841,
+          "search": 0.25002210200000263,
+          "rank": 4.253001111999993,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 4.91887236599996,
+          "total": 6.684222849999969
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 8,
+        "citation_coverage": 0.875,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "wikipedia",
+      "topic": "Jensen Huang",
+      "views": 254240,
+      "question": "Who or what is Jensen Huang, and what are the key facts to know?",
+      "focus": "wiki",
+      "context": "Taiwanese-American business executive (born 1963)",
+      "result": {
+        "question": "Who or what is Jensen Huang, and what are the key facts to know?",
+        "focus": "wiki",
+        "lang": "en",
+        "queries": [
+          "Who is Jensen Huang",
+          "Jensen Huang key facts"
+        ],
+        "answer": "Jensen Huang is the co-founder, president, and CEO of Nvidia, the American technology company that dominates GPU and AI hardware markets [1][3]. Born in Taipei in 1963, he immigrated to the U.S., earned a Stanford master's degree, and launched Nvidia in 1993 with Chris Malachowsky and Curtis Priem [1]. Under his leadership, Nvidia grew from a GPU developer into a $5 trillion market-cap company during the AI boom [1][3].\n\nIn late 2026, Huang faced a major scandal involving extramarital affairs with two women: Alice Huang, a Chinese executive at Megaspeed, and Kimberly Powell, an Nvidia executive who reported to him [2][5]. These revelations triggered his resignation and a brief period where Colette Kress served as interim CEO [5][6]. U.S. intelligence had investigated whether Alice Huang was a Chinese spy, though no conclusion was reached [2][4]. Kang Wei, a Chinese investor and Alice Huang's husband, drew public attention in November 2026 due to the affair [4].",
+        "followups": [
+          "What was the impact of the scandal?",
+          "When did he resign?",
+          "What is Nvidia's current focus?"
+        ],
+        "sources": [
+          {
+            "title": "Jensen Huang",
+            "url": "https://en.wikipedia.org/wiki/Jensen_Huang",
+            "source": "wikipedia",
+            "snippet": "Jen-Hsun \"Jensen\" Huang (born February 17, 1963) is a Taiwanese and American electrical engineer and business executive who is the co-founder, president, and chief executive officer (CEO) of Nvidia, one of the world's most valuable companies. As of November 2026, Forbes estimates",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "f5b3ff01ae76",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Jensen Huang scandal",
+            "url": "https://en.wikipedia.org/wiki/Jensen_Huang_scandal",
+            "source": "wikipedia",
+            "snippet": "On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. intelligence surveillance who spoke on condition of anonymity. Huang had an ext",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "c83e95e5b0ea",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Nvidia",
+            "url": "https://en.wikipedia.org/wiki/Nvidia",
+            "source": "wikipedia",
+            "snippet": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for gaming, data science, high",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "4a7ac65635eb",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Kang Wei",
+            "url": "https://en.wikipedia.org/wiki/Kang_Wei",
+            "source": "wikipedia",
+            "snippet": "Kang Wei (Chinese: 康伟; born January 1975) is a Chinese investor who is the chairman of Shanghai Hexi Investment Management. After 2016, he and his wife Alice Huang invested in several fast-growing sectors such as games, pharmaceuticals, and cloud computing. Kang was penalized sev",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "6b0cea7ee7d6",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Colette Kress",
+            "url": "https://en.wikipedia.org/wiki/Colette_Kress",
+            "source": "wikipedia",
+            "snippet": "Colette Marie Kress (born 1966 or 1967) is an American business executive who is the chief financial officer (CFO) of Nvidia. Kress worked at Texas Instruments, before serving as CFO of Cisco's Business Technology and Operations Finance Section and CFO at Microsoft's Server and T",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "00b437bf31c4",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Alice Huang (executive)",
+            "url": "https://en.wikipedia.org/wiki/Alice_Huang_(executive)",
+            "source": "wikipedia",
+            "snippet": "Alice Huang (Chinese: 黄乐; pinyin: Huáng Lè; born December 1982) is a Chinese technology executive and investor. She was an executive at Megaspeed, a Singaporean technology company, before she officially stepped down from her role in August 2025. Huang's role in the company after ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "84a52381aaf2",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Megaspeed",
+            "url": "https://en.wikipedia.org/wiki/Megaspeed",
+            "source": "wikipedia",
+            "snippet": "Megaspeed International Pte. Ltd. is a cloud computing provider based in Singapore. It supplies artificial intelligence computing power and hosting services. The company was founded in 2015 as 7Road International PTE, the Singaporean subsidiary of the Chinese gaming firm 7Road Ho",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "829eb7293699",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "2026 California Proposition 40",
+            "url": "https://en.wikipedia.org/wiki/2026_California_Proposition_40",
+            "source": "wikipedia",
+            "snippet": "Proposition 40, also known as the California billionaire tax or California wealth tax, is a combined initiated constitutional amendment and state statute that appeared on the November 3, 2026, ballot in the US state of California. The measure would have imposed a one-time 5% tax ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "6507993496ba",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.30328314500002307,
+          "search": 0.19655560599994715,
+          "rank": 3.331519028999992,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 3.8314112599999817,
+          "total": 5.934200285999964
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 7,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "wikipedia",
+      "topic": "Grand Theft Auto VI",
+      "views": 198339,
+      "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
+      "focus": "wiki",
+      "context": "2026 video game",
+      "result": {
+        "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
+        "focus": "wiki",
+        "lang": "en",
+        "queries": [
+          "What is Grand Theft Auto VI",
+          "Grand Theft Auto VI key facts"
+        ],
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following Grand Theft Auto V (2013), and the sixteenth entry overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to secure a better life and escape from corrupt police officers in a state-wide criminal conspiracy [1]. The open world allows players to roam Leonida and its Miami-inspired Vice City and engage in various side activities [1]. Preliminary work began in 2014 after the release of Grand Theft Auto V; principal production began after the 2018 launch of Red Dead Redemption 2 [1]. Rockstar's global development teams had more than doubled since Red Dead Redemption 2 [1]. The protagonists' dynamic is inspired by Bonnie and Clyde [1].\n\nLucia Caminos is one of two playable protagonists, alongside Jason Duval [3]. She is the first non-optional playable female protagonist in the Grand Theft Auto series [3]. Originally from Liberty City, she is a skilled fighter taught by her father [3]. She is dedicated to achieving the \"good life her mom has dreamed of since their days in Liberty City\" [3]. She begins engaging in criminal activities in Liberty City, Liberty State and Vice City, Leonida, but is subsequently arrested and placed into Leonida Penitentiary [3]. She is later released on parole with an ankle monitor [3]. Lucia was designed to be an absolute independent, stoic, and strong female protagonist, intended to avoid common clichés [3].\n\nThe promotional trailer \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix on August 27, 2026, and was then released to YouTube [2]. It features 27 minutes of game footage and mixes compilation-style trailer sequences with longer narrative cutscenes [2]. Demand upon release crashed Netflix and Twitch [2]. In its first week, it topped the Netflix English language trailer chart in 87 countries [2]. The trailer received praise for its visuals and the protagonist Lucia but some criticism for the characterisation of Jason [2].",
+        "followups": [
+          "When is it expected to release?",
+          "Where is Leonida based?",
+          "Who are the main characters?"
+        ],
+        "sources": [
+          {
+            "title": "Grand Theft Auto VI",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. It is the eighth main entry in the Grand Theft Auto series, following Grand Theft Auto V (2013), and the sixteenth entry overall. Set in the fictional US state of Leonida, based on Flor",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e02dca2e6f61",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Grand Theft Auto VI: An Extended Look",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_An_Extended_Look",
+            "source": "wikipedia",
+            "snippet": "\"Grand Theft Auto VI: An Extended Look\" is a 2026 promotional trailer previewing the video game Grand Theft Auto VI. The plot follows criminal couple Jason Duval and Lucia Caminos as they gain a reputation as underworld contractors in Leonida, a fictionalised version of Florida. ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "a3ad5051691a",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Lucia Caminos",
+            "url": "https://en.wikipedia.org/wiki/Lucia_Caminos",
+            "source": "wikipedia",
+            "snippet": "Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games' 2026 video game Grand Theft Auto VI. Portrayed by Manni L. Perez, she is the first non-optional playable female protagonist in the Gr",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "c18959d481d1",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Niko Bellic",
+            "url": "https://en.wikipedia.org/wiki/Niko_Bellic",
+            "source": "wikipedia",
+            "snippet": "Niko Bellic (NEE-koh BEL-ək; Serbian: Нико Белић) is a fictional character and the playable protagonist of Rockstar North's video game Grand Theft Auto IV (2008), the sixth main entry in Rockstar Games' Grand Theft Auto series. He also makes non-playable appearances in the game's",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "9a1d6c8ac9f4",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Grand Theft Auto: Vice City",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the fourth main game in the Grand Theft Auto series, following 2001's Grand Theft Auto III, and the sixth entry overall. Set in 1986 within the fictional",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "1ce06c45db6a",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Grand Theft Auto: The Trilogy – The Definitive Edition",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_The_Trilogy_%E2%80%93_The_Definitive_Edition",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto: The Trilogy – The Definitive Edition is a 2021 compilation of three action-adventure games in the Grand Theft Auto series: Grand Theft Auto III (2001), Grand Theft Auto: Vice City (2002), and Grand Theft Auto: San Andreas (2004). Developed by Grove Street Games ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "1103661a44e7",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Jack Thompson (activist)",
+            "url": "https://en.wikipedia.org/wiki/Jack_Thompson_(activist)",
+            "source": "wikipedia",
+            "snippet": "John Bruce Thompson (born July 25, 1951) is an American activist and disbarred attorney. As an attorney, Thompson focused his legal efforts against what he perceives as obscenity in modern culture. He gained notoriety as an anti-video game activist, criticizing the content of gam",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e025d9d77064",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Development of Red Dead Redemption",
+            "url": "https://en.wikipedia.org/wiki/Development_of_Red_Dead_Redemption",
+            "source": "wikipedia",
+            "snippet": "A team of approximately 1,000 people developed Red Dead Redemption over five years. Rockstar Games published the action-adventure game in May 2010 for the PlayStation 3 and Xbox 360. A spiritual successor to the 2004 game Red Dead Revolver, its development was led by Rockstar San",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "41c9194e0277",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.3515729949999695,
+          "search": 0.27599402900000314,
+          "rank": 7.663008806999983,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 8.290636774000063,
+          "total": 10.909073557000056
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 19,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "wikipedia",
+      "topic": "The Hunger Games: Sunrise on the Reaping",
+      "views": 129863,
+      "question": "Who or what is The Hunger Games: Sunrise on the Reaping, and what are the key facts to know?",
+      "focus": "wiki",
+      "context": "2026 film by Francis Lawrence",
+      "result": {
+        "question": "Who or what is The Hunger Games: Sunrise on the Reaping, and what are the key facts to know?",
+        "focus": "wiki",
+        "lang": "en",
+        "queries": [
+          "The Hunger Games Sunrise on the Reaping",
+          "The Hunger Games key facts"
+        ],
+        "answer": "The Hunger Games: Sunrise on the Reaping is a 2026 American dystopian film and the sixth installment in The Hunger Games film series, serving as the second prequel to the 2012 original [1][2]. It is based on Suzanne Collins' 2025 novel Sunrise on the Reaping, which is the second prequel to the original Hunger Games trilogy [2]. The film is set 24 years before the first movie and follows 16-year-old Haymitch Abernathy's participation in the 50th Hunger Games, a special edition with double the usual tributes [1][2]. The ensemble cast includes Joseph Zada as young Haymitch, alongside Jesse Plemons, Ralph Fiennes, Glenn Close, Kieran Culkin, Elle Fanning, Mckenna Grace, Maya Hawke, Whitney Peak, Kelvin Harrison Jr., and Ben Wang, with Josh Hutcherson, Woody Harrelson, and Jennifer Lawrence reprising their roles [1]. The film was announced in June 2024 and released theatrically on November 20, 2026 [2]. A soundtrack album featuring 29 tracks was released on November 13, 2026 [3]. Irish child actor Molly McCann also appears in the film [6], and Australian actor Joseph Zada stars as Haymitch after prior roles in 2025 productions [7].",
+        "followups": [
+          "When is the film set?",
+          "Who plays young Haymitch?",
+          "What is the novel based on?"
+        ],
+        "sources": [
+          {
+            "title": "The Hunger Games: Sunrise on the Reaping",
+            "url": "https://en.wikipedia.org/wiki/The_Hunger_Games:_Sunrise_on_the_Reaping",
+            "source": "wikipedia",
+            "snippet": "The Hunger Games: Sunrise on the Reaping is a 2026 American dystopian film produced and directed by Francis Lawrence from a screenplay by Billy Ray and Michael Lesslie. Based on the 2025 novel Sunrise on the Reaping by Suzanne Collins, it is the sixth installment in The Hunger Ga",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "2a486dffdc4d",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Sunrise on the Reaping",
+            "url": "https://en.wikipedia.org/wiki/Sunrise_on_the_Reaping",
+            "source": "wikipedia",
+            "snippet": "Sunrise on the Reaping is a 2025 dystopian novel written by American author Suzanne Collins and the second prequel novel to the original The Hunger Games trilogy, following The Ballad of Songbirds and Snakes (2020). Set 24 years before the events of the first novel, the narrative",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "cb422013a0d9",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "The Hunger Games: Sunrise on the Reaping (soundtrack)",
+            "url": "https://en.wikipedia.org/wiki/The_Hunger_Games:_Sunrise_on_the_Reaping_(soundtrack)",
+            "source": "wikipedia",
+            "snippet": "The Hunger Games: Sunrise on the Reaping (The Album) is the soundtrack album to the 2026 film, an adaptation of the 2025 novel Sunrise on the Reaping by Suzanne Collins. Executively produced by Dave Cobb and consisting of 29 tracks, it was released on November 13, 2026, via MCA, ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "664519f003b7",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "The Hunger Games",
+            "url": "https://en.wikipedia.org/wiki/The_Hunger_Games",
+            "source": "wikipedia",
+            "snippet": "The Hunger Games is a series of young adult dystopian novels written by American author Suzanne Collins. The series consists of a trilogy that follows teenage protagonist Katniss Everdeen, as well as two prequels. The Hunger Games universe is a dystopia set in Panem, a post-apoca",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "7f6e65fca75e",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "The Hunger Games (franchise)",
+            "url": "https://en.wikipedia.org/wiki/The_Hunger_Games_(franchise)",
+            "source": "wikipedia",
+            "snippet": "The Hunger Games is an American media franchise centering on a series of dystopian films, based on the novel series by Suzanne Collins. In a future North America known as \"Panem\", the elite of the country's Capitol punish the rebel districts by forcing their children to compete t",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "8f59dbda95ca",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Molly McCann (actress)",
+            "url": "https://en.wikipedia.org/wiki/Molly_McCann_(actress)",
+            "source": "wikipedia",
+            "snippet": "Molly McCann is an Irish child actor. Her film credits include The Hunger Games: Sunrise on the Reaping (2026). For her role in Herself (2020) she was nominated for Best Supporting Actress at the Irish Film & Television Awards.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d0843a91d6c8",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Joseph Zada",
+            "url": "https://en.wikipedia.org/wiki/Joseph_Zada",
+            "source": "wikipedia",
+            "snippet": "Joseph Cumpston (born 21 July 2005), known professionally as Joseph Zada (), is an Australian actor. He has starred in television series Invisible Boys (2025), We Were Liars (2025–present), and East of Eden (2026) before gaining wider recognition as Haymitch Abernathy in the 2026",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e24c95c39796",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Josh Hutcherson",
+            "url": "https://en.wikipedia.org/wiki/Josh_Hutcherson",
+            "source": "wikipedia",
+            "snippet": "Joshua Ryan Hutcherson (born October 12, 1992) is an American actor. His accolades include four Teen Choice Awards, four Young Artist Awards, and three MTV Movie Awards, in addition to a nomination for a Screen Actors Guild Award. Hutcherson began acting in the early 2000s and ap",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "58dd2b2ed66d",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.3433979019999924,
+          "search": 0.25589030000003277,
+          "rank": 1.8253862560000016,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 2.424731164000036,
+          "total": 4.476594146000025
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 7,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "1Password Security Incident",
+      "points": 1091,
+      "discussion": "https://news.ycombinator.com/item?id=50644817",
+      "question": "1Password Security Incident — what is this about and why does it matter?",
+      "focus": "all",
+      "result": {
+        "question": "1Password Security Incident — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "1Password security incident details",
+          "1Password security incident impact"
+        ],
+        "answer": "1Password is a password manager developed by AgileBits Inc [1]. that stores sensitive information in an encrypted vault locked with a PBKDF2-guarded master password, with vaults hosted on 1Password's servers for a monthly fee [1]. Unlike Todoist, which recently suffered a security incident involving unauthorized access to customer data including password hashes [2], 1Password has not been associated with a recent security breach in the provided results. LastPass, by contrast, suffered significant security incidents between 2011 and 2022, including a 2022 breach where user data, billing information, and vaults were compromised [3]. Credential stuffing attacks exploit password reuse, with 81% of users reusing passwords across multiple sites [4], making password managers like 1Password valuable for generating and storing unique credentials. Apple also offers a password manager available for iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher [6]. The Todoist incident matters because an attacker used a stolen development credential to access production systems and retrieve customer information including email addresses and password hashes, prompting Todoist to reset affected passwords and enforce tighter access controls [2].",
+        "followups": [
+          "What are credential stuffing attacks?",
+          "How does 1Password secure data?",
+          "Which password managers are safest?"
+        ],
+        "sources": [
+          {
+            "title": "1Password",
+            "url": "https://en.wikipedia.org/wiki/1Password",
+            "source": "wikipedia",
+            "snippet": "1Password is a password manager developed by the Canadian software company AgileBits Inc. It supports multiple platforms such as iOS, Android, Windows, Linux, and macOS. It provides a place for users to store various passwords, software licenses, and other sensitive information i",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "6ad33b172c74",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Security incident affecting Todoist accounts",
+            "url": "https://www.todoist.com/help/todoist/get-started/security-incident-in-november-2026",
+            "source": "hackernews",
+            "snippet": "Hi We’re writing to let you know about a recent security incident in which an attacker gained unauthorized access to our systems and retrieved information from some customers, including you. Protecting your information is our responsibility, and we fell short. We’re sorry for let",
+            "published": "2026-11-24",
+            "authors": [
+              "marconey"
+            ],
+            "extra": {
+              "points": 6,
+              "comments": 2,
+              "discussion": "https://news.ycombinator.com/item?id=50633995"
+            },
+            "id": "99921d001778",
+            "domain": "todoist.com",
+            "n": 2
+          },
+          {
+            "title": "LastPass",
+            "url": "https://en.wikipedia.org/wiki/LastPass",
+            "source": "wikipedia",
+            "snippet": "LastPass is a password manager application. The standard version of LastPass comes as a web interface, but also includes a browser extension, an app and support for bookmarklets. Founded in 2008 by four developers, Lastpass was acquired by GoTo (formerly LogMeIn Inc.) for $110 mi",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "def8b62c97e9",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Credential stuffing",
+            "url": "https://en.wikipedia.org/wiki/Credential_stuffing",
+            "source": "wikipedia",
+            "snippet": "Credential stuffing is a type of cyberattack in which the attacker collects stolen account credentials, typically consisting of lists of usernames or email addresses and the corresponding passwords (often from a data breach), and then uses the credentials to gain unauthorized acc",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e57b37e08098",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Cloudbleed",
+            "url": "https://en.wikipedia.org/wiki/Cloudbleed",
+            "source": "wikipedia",
+            "snippet": "Cloudbleed was a buffer overflow in Cloudflare disclosed by Project Zero on February 17, 2017. Cloudflare's code disclosed the contents of memory that contained the private information of other customers, such as HTTP cookies, authentication tokens, HTTP POST bodies, and other se",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e8de43b00a53",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Passwords (Apple)",
+            "url": "https://en.wikipedia.org/wiki/Passwords_(Apple)",
+            "source": "wikipedia",
+            "snippet": "Passwords is a password manager application developed by Apple Inc. available for devices running iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "bfc1c72e7d0e",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Six steps to protect researchers’ digital security",
+            "url": "https://doi.org/10.1038/d41586-026-00086-x",
+            "source": "openalex",
+            "snippet": "Six steps to protect researchers’ digital security",
+            "published": "2026",
+            "authors": [
+              "Virginia Gewin"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Nature",
+              "license": "CC0 metadata"
+            },
+            "id": "afd6c1021f6b",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "Enhancing security behaviour by supporting the user",
+            "url": "https://doi.org/10.1016/j.cose.2018.01.016",
+            "source": "openalex",
+            "snippet": "Enhancing security behaviour by supporting the user",
+            "published": "2018",
+            "authors": [
+              "Steven Furnell",
+              "Warut Khern-am-nuai",
+              "Rawan Esmael",
+              "Wei‐Ning Yang",
+              "Ninghui Li"
+            ],
+            "extra": {
+              "cited_by": 97,
+              "venue": "Computers & Security",
+              "license": "CC0 metadata"
+            },
+            "id": "73f7dbb964c7",
+            "domain": "doi.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.30272391699998025,
+          "search": 0.43061066600000686,
+          "rank": 2.283786288999977,
+          "dense": 0.0,
+          "rerank": 1.0,
+          "retrieve": 3.0171907220000094,
+          "total": 6.030849553000053
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 7,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
+      "points": 832,
+      "discussion": "https://news.ycombinator.com/item?id=50646108",
+      "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
+      "focus": "all",
+      "result": {
+        "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "what is happening now",
+          "why is this important"
+        ],
+        "answer": "The search results provided do not contain information about NVIDIA NIM, open-source AI answer engines, or related technical topics. The results are primarily about entertainment, philosophy, networking transitions, cattle raiding, privacy, and Hacker News posts. I cannot answer the user's question using only the given sources, as they are unrelated to the requested topic.",
+        "followups": [
+          "What topic were you hoping to find?",
+          "Can you provide more context?",
+          "Where did you see this information?"
+        ],
+        "sources": [
+          {
+            "title": "What is happening now? entertainment",
+            "url": "https://www.um.edu.mt/library/oar/handle/123456789/10987",
+            "source": "openalex",
+            "snippet": "What is happening now? entertainment",
+            "published": "2015",
+            "authors": [
+              "Matthew Muscat"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": null,
+              "license": "CC0 metadata"
+            },
+            "id": "6b8c43d06c11",
+            "domain": "um.edu.mt",
+            "n": 1
+          },
+          {
+            "title": "The Status of Becoming: What is Happening Now?",
+            "url": "https://doi.org/10.2307/2025813",
+            "source": "openalex",
+            "snippet": "The Status of Becoming: What is Happening Now?",
+            "published": "1979",
+            "authors": [
+              "Ernest Sosa"
+            ],
+            "extra": {
+              "cited_by": 14,
+              "venue": "The Journal of Philosophy",
+              "license": "CC0 metadata"
+            },
+            "id": "9f5b94b86267",
+            "domain": "doi.org",
+            "n": 2
+          },
+          {
+            "title": "Educating clinicians. What is happening now?",
+            "url": "https://research.usc.edu.au/esploro/outputs/conferencePresentation/Educating-clinicians--What-is-happening-now/99450690102621",
+            "source": "openalex",
+            "snippet": "Educating clinicians. What is happening now?",
+            "published": "2011",
+            "authors": [
+              " Geoff Simon"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "UniSC Research Bank (University of the Sunshine Coast)",
+              "license": "CC0 metadata"
+            },
+            "id": "71c05ed0af68",
+            "domain": "research.usc.edu.au",
+            "n": 3
+          },
+          {
+            "title": "IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now",
+            "url": "http://www.potaroo.net/ispcol/2012-08/EndPt2.html",
+            "source": "hackernews",
+            "snippet": "IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now",
+            "published": "2012-08-02",
+            "authors": [
+              "liotier"
+            ],
+            "extra": {
+              "points": 2,
+              "comments": 1,
+              "discussion": "https://news.ycombinator.com/item?id=4328064"
+            },
+            "id": "6dbe29c252ff",
+            "domain": "potaroo.net",
+            "n": 4
+          },
+          {
+            "title": "‘What is happening now is not raiding, it's war’",
+            "url": "https://doi.org/10.4324/9780429426957-23",
+            "source": "openalex",
+            "snippet": "Drawing on extensive fieldwork by the three authors, this chapter discusses how contemporary political conflicts have interacted with pastoralism. It focuses on the contrasting but interrelated settings of the Western Nuer and Murle peoples of South Sudan. The chapter argues that",
+            "published": "2022",
+            "authors": [
+              "Diana Felix da Costa",
+              "Naomi Pendle",
+              "Jérôme Tubiana"
+            ],
+            "extra": {
+              "cited_by": 4,
+              "venue": "Routledge eBooks",
+              "license": "CC0 metadata"
+            },
+            "id": "5545bf0274dc",
+            "domain": "doi.org",
+            "n": 5
+          },
+          {
+            "title": "Why privacy is important",
+            "url": "https://philpapers.org/rec/RACWPI",
+            "source": "openalex",
+            "snippet": "Why privacy is important",
+            "published": "1975",
+            "authors": [
+              "James A. Rachels"
+            ],
+            "extra": {
+              "cited_by": 700,
+              "venue": "Philosophy &amp Public Affairs",
+              "license": "CC0 metadata"
+            },
+            "id": "c39e3069bec5",
+            "domain": "philpapers.org",
+            "n": 6
+          },
+          {
+            "title": "Ask HN: Please stop tearing each other up.",
+            "url": "https://news.ycombinator.com/item?id=5058052",
+            "source": "hackernews",
+            "snippet": "I am beginning to believe that one of the unintended casualties of Aarons' passing is that HN is dying as well. I've never seen such a rift in the community as what is happening right now. Can we please all stop this before there is no turning back? I understand the need to griev",
+            "published": "2013-01-15",
+            "authors": [
+              "jacquesm"
+            ],
+            "extra": {
+              "points": 27,
+              "comments": 7,
+              "discussion": "https://news.ycombinator.com/item?id=5058052"
+            },
+            "id": "0d6339886b18",
+            "domain": "news.ycombinator.com",
+            "n": 7
+          },
+          {
+            "title": "Show HN: Put this touch sensor on a robot and learn super precise tasks",
+            "url": "https://any-skin.github.io",
+            "source": "hackernews",
+            "snippet": "We just released a very excited touch sensor that finally simplifies touch sensing for robotics. Our most exciting result: Learned visuotactile policies for precise tasks like inserting USBs and credit card swiping, that work out-of-the-box when you replace skins! To the best of ",
+            "published": "2024-09-20",
+            "authors": [
+              "raunaqmb"
+            ],
+            "extra": {
+              "points": 390,
+              "comments": 66,
+              "discussion": "https://news.ycombinator.com/item?id=41603865"
+            },
+            "id": "8a40a197bac0",
+            "domain": "any-skin.github.io",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.31630037500008257,
+          "search": 0.7577947749999794,
+          "rank": 1.8399604339999769,
+          "dense": 0.0,
+          "rerank": 1.0,
+          "retrieve": 2.914196486000037,
+          "total": 3.9870303259999673
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 3,
+        "citation_coverage": 0.0,
+        "citation_validity": null,
+        "faithfulness": null
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+      "points": 443,
+      "discussion": "https://news.ycombinator.com/item?id=50642086",
+      "question": "Google releases Cogentic papers on integer factorization, discrete logs and more — what is this about and why does it matter?",
+      "focus": "all",
+      "result": {
+        "question": "Google releases Cogentic papers on integer factorization, discrete logs and more — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "Google Cogentic integer factorization papers",
+          "Cogentic discrete logs significance",
+          "what is Cogentic research about"
+        ],
+        "answer": "Google has released a new set of research papers under the \"Cogentic\" umbrella, focusing on integer factorization and discrete logarithms. The papers are hosted on Google's research GitHub repository and were announced on Hacker News. This matters because integer factorization and discrete logarithms are foundational problems in cryptography; breakthroughs in their efficient solution could impact the security of widely used encryption schemes. The specific paper on integer factorization claims an unconditional algorithm running in time $L_N[1/3, O(1)]$, which is a significant complexity improvement.",
+        "followups": [
+          "What encryption is at risk?",
+          "Where can I read the papers?",
+          "How big is this complexity improvement?"
+        ],
+        "sources": [
+          {
+            "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+            "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+            "source": "hackernews",
+            "snippet": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+            "published": "2026-11-25",
+            "authors": [
+              "rgwohlbold"
+            ],
+            "extra": {
+              "points": 443,
+              "comments": 330,
+              "discussion": "https://news.ycombinator.com/item?id=50642086"
+            },
+            "id": "abef7dcffe0c",
+            "domain": "github.com",
+            "n": 1
+          },
+          {
+            "title": "Unconditional Integer Factorization in Time L N [ 1 / 3, O ( 1) ]",
+            "url": "https://github.com/google-research/google-research/tree/4a7bc8ab0bc770e71a259b7966c500496b99010a/cogentic_research_papers/integer_factorization",
+            "source": "hackernews",
+            "snippet": "Unconditional Integer Factorization in Time L N [ 1 / 3, O ( 1) ]",
+            "published": "2026-11-25",
+            "authors": [
+              "koalala"
+            ],
+            "extra": {
+              "points": 4,
+              "comments": 1,
+              "discussion": "https://news.ycombinator.com/item?id=50641847"
+            },
+            "id": "971f7afa718c",
+            "domain": "github.com",
+            "n": 2
+          },
+          {
+            "title": "The Sisyphus Syndrome and Professor Cogent",
+            "url": "https://doi.org/10.1080/00193089.1974.10533534",
+            "source": "openalex",
+            "snippet": "TTE image of the benign, hard working purveyor of knowledge surrounded by mesmerized and ado ing students seems to have died with Mr. Chips and tele vision's Halls of Ivy. Today, Professor Cogent (his name is Legion) is afflicted with a destructive and debilitating syndrome. He f",
+            "published": "1974",
+            "authors": [
+              "Robert Bruce McLaren"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Improving College and University Teaching",
+              "license": "CC0 metadata"
+            },
+            "id": "7928f1bab09d",
+            "domain": "doi.org",
+            "n": 3
+          },
+          {
+            "title": "Optimistic CoGeNT analysis",
+            "url": "https://doi.org/10.1103/physrevd.87.015001",
+            "source": "openalex",
+            "snippet": "Inspired by a recently proposed model of millicharged atomic dark matter (MADM), we analyze several classes of light dark matter models with respect to CoGeNT modulated and unmodulated data, and constraints from CDMS, XENON10 and XENON100. After removing the surface contaminated ",
+            "published": "2013",
+            "authors": [
+              "James M. Cline",
+              "Zuowei Liu",
+              "Wei Xue"
+            ],
+            "extra": {
+              "cited_by": 21,
+              "venue": "Physical review. D. Particles, fields, gravitation, and cosmology/Physical review. D. Particles and fields",
+              "license": "CC0 metadata"
+            },
+            "id": "1b451baf736f",
+            "domain": "doi.org",
+            "n": 4
+          },
+          {
+            "title": "What is Collaborative, Interdisciplinary Reasoning? The Heart of Interdisciplinary Team Research",
+            "url": "https://doi.org/10.28945/4010",
+            "source": "openalex",
+            "snippet": "Aim/Purpose: Collaborative, interdisciplinary research is growing rapidly, but we still have limited and fragmented understanding of what is arguably the heart of such research—collaborative, interdisciplinary reasoning (CIR). Background: This article integrates neo-Pragmatist th",
+            "published": "2018",
+            "authors": [
+              "Bethany Kate Laursen"
+            ],
+            "extra": {
+              "cited_by": 32,
+              "venue": "Informing Science The International Journal of an Emerging Transdiscipline",
+              "license": "CC0 metadata"
+            },
+            "id": "3639beca8044",
+            "domain": "doi.org",
+            "n": 5
+          },
+          {
+            "title": "A CoGeNT modulation analysis",
+            "url": "https://doi.org/10.1103/physrevd.85.036008",
+            "source": "openalex",
+            "snippet": "We analyze the recently released CoGeNT data with a focus on their time-dependent properties. Using a variety of statistical tests, we confirm the presence of modulation in the data, and find a significant component at high (${E}_{ee}\\ensuremath{\\gtrsim}1.5\\text{ }\\text{ }\\mathrm",
+            "published": "2012",
+            "authors": [
+              "Patrick J. Fox",
+              "Joachim Kopp",
+              "Mariangela Lisanti",
+              "Neal Weiner"
+            ],
+            "extra": {
+              "cited_by": 74,
+              "venue": "Physical review. D. Particles, fields, gravitation, and cosmology/Physical review. D. Particles and fields",
+              "license": "CC0 metadata"
+            },
+            "id": "9f13e022b886",
+            "domain": "doi.org",
+            "n": 6
+          },
+          {
+            "title": "Six Lessons for a Cogent Science of Implicit Bias and Its Criticism",
+            "url": "https://doi.org/10.1177/1745691619826015",
+            "source": "openalex",
+            "snippet": "Skepticism about the explanatory value of implicit bias in understanding social discrimination has grown considerably. The current article argues that both the dominant narrative about implicit bias as well as extant criticism are based on a selective focus on particular findings",
+            "published": "2019",
+            "authors": [
+              "Bertram Gawronski"
+            ],
+            "extra": {
+              "cited_by": 299,
+              "venue": "Perspectives on Psychological Science",
+              "license": "CC0 metadata"
+            },
+            "id": "e970f98db33b",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "Beyond Efficiency: A Systematic Survey of Resource-Efficient Large Language Models",
+            "url": "https://doi.org/10.1145/3845797",
+            "source": "openalex",
+            "snippet": "The burgeoning field of Large Language Models (LLMs), exemplified by sophisticated models like OpenAI’s ChatGPT, represents a significant advancement in artificial intelligence. These models, however, bring forth substantial challenges in high consumption of computational, memory",
+            "published": "2026",
+            "authors": [
+              "Guangji Bai",
+              "Zheng Chai",
+              "Ling Chen",
+              "Shiyu Wang",
+              "Jiaying Lu",
+              "Nan Zhang"
+            ],
+            "extra": {
+              "cited_by": 240,
+              "venue": "ACM Computing Surveys",
+              "license": "CC0 metadata"
+            },
+            "id": "001d5651acd6",
+            "domain": "doi.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.4607620609999685,
+          "search": 0.3784353490000285,
+          "rank": 0.3954398380000157,
+          "dense": 0.0,
+          "rerank": 1.0,
+          "retrieve": 1.2349336219999714,
+          "total": 2.538659278999944
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 4,
+        "citation_coverage": 0.0,
+        "citation_validity": null,
+        "faithfulness": null
+      }
+    }
+  ]
+}
