@@ -56,6 +56,13 @@ class Settings:
     ))
     rerank_model: str = field(default_factory=lambda: os.getenv("RERANK_MODEL", "nvidia/nemotron-3.5-rerank-8b"))
 
+    # Visual GenAI (image generation). Models are tried in order; ones that 404 are skipped.
+    image_base_url: str = field(default_factory=lambda: os.getenv("IMAGE_BASE_URL", "https://ai.api.nvidia.com/v1/genai"))
+    image_models: list[str] = field(default_factory=lambda: [m.strip() for m in os.getenv(
+        "IMAGE_MODELS",
+        "black-forest-labs/flux.1-schnell,black-forest-labs/flux.1-dev,black-forest-labs/flux.2-klein-4b,"
+        "stabilityai/stable-diffusion-3-medium").split(",") if m.strip()])
+
     # ---- Retrieval --------------------------------------------------------
     max_sources: int = field(default_factory=lambda: int(os.getenv("MAX_SOURCES", "8")))
     per_source_limit: int = field(default_factory=lambda: int(os.getenv("PER_SOURCE_LIMIT", "6")))

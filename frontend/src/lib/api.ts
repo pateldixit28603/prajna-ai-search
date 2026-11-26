@@ -30,7 +30,51 @@ export type Turn = {
   translations?: Record<string, string>;
   /** language currently shown for this answer */
   shownLang?: string;
+  /** "image" turns hold a generated picture instead of an answer */
+  kind?: "answer" | "image";
+  image?: ImageResult;
 };
+
+export type ImageResult = {
+  image: string; model: string; seed: number; aspect: string; prompt: string; enhanced: boolean; total: number;
+  thread_id?: string; turn_id?: number;
+};
+
+export type Paper = {
+  id: string; title: string; year: number | null; cited_by: number; authors: string[];
+  venue: string | null; url: string; oa_url: string | null; abstract: string;
+};
+
+export type Research = {
+  query: string; total_works: number; key_papers: Paper[]; foundational: Paper[]; rising: Paper[];
+  read_next: Paper[]; timeline: { year: number; count: number }[]; peak_year: number | null; warnings: string[];
+};
+
+async function errorOf(r: Response) {
+  try {
+    const j = await r.json();
+    if (j?.detail) return String(j.detail);
+  } catch { /* not json */ }
+  return r.status === 429 ? "Too many requests — wait a moment." : `Server error (${r.status})`;
+}
+
+/** Literature map for a topic (OpenAlex): key / foundational / rising papers, read-next, timeline. */
+export async function getResearch(q: string): Promise<Research> {
+  const r = await fetch(`${BASE}/api/research?q=${encodeURIComponent(q)}`);
+  if (!r.ok) throw new Error(await errorOf(r));
+  return r.json();
+}
+
+/** Generate an image with NVIDIA visual GenAI (FLUX / Stable Diffusion). */
+export async function createImage(body: {
+  prompt: string; aspect: string; enhance: boolean; seed?: number; thread_id?: string | null;
+}): Promise<ImageResult> {
+  const r = await fetch(`${BASE}/api/image`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
+  });
+  if (!r.ok) throw new Error(await errorOf(r));
+  return r.json();
+}
 
 export type ThreadSummary = { id: string; title: string; focus: string; updated_at: number };
 

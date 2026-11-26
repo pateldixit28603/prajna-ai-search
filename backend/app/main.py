@@ -20,8 +20,10 @@ from pydantic import BaseModel, Field
 from . import lang as L
 from .config import settings
 from .nvidia import NvidiaClient
+from .imagegen import ASPECTS, ImageError, ImageGenerator
 from .pipeline import FOCUS_MODES, AnswerEngine
 from .ratelimit import RateLimiter
+from .research import ResearchService
 from .retrieval.local_index import LocalIndex
 from .sources.arxiv import ArxivSource
 from .sources.hackernews import HackerNewsSource
@@ -52,6 +54,10 @@ async def lifespan(app: FastAPI):
     http = httpx.AsyncClient(follow_redirects=True, limits=httpx.Limits(max_connections=40))
     if not getattr(app.state, "engine", None):          # tests may inject their own engine
         app.state.engine, app.state.local = build_engine(http)
+    if not getattr(app.state, "research", None):
+        app.state.research = ResearchService(http, settings.user_agent, settings.contact_email, settings.http_timeout)
+    if not getattr(app.state, "images", None):
+        app.state.images = ImageGenerator(settings)
     if not getattr(app.state, "store", None):
         app.state.store = ThreadStore(settings.data_dir / "prajna.db")
     log.info("NVIDIA NIM %s | LLM=%s", "ENABLED" if settings.nvidia_enabled else "DISABLED (extractive mode)",
@@ -64,6 +70,7 @@ app = FastAPI(title="Prajna AI Search", version="1.0.0", lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=settings.cors_origins, allow_credentials=False,
                    allow_methods=["*"], allow_headers=["*"])
 limiter = RateLimiter(per_minute=30)
+image_limiter = RateLimiter(per_minute=6)
 
 
 class SearchRequest(BaseModel):
@@ -71,6 +78,14 @@ class SearchRequest(BaseModel):
     focus: str = "all"
     thread_id: str | None = None
     lang: str | None = None          # answer language; None/"auto" = thread's choice, else detected
+
+
+class ImageRequest(BaseModel):
+    prompt: str = Field(..., min_length=2, max_length=1000)
+    aspect: str = "square"
+    enhance: bool = True               # let Nemotron Bolt expand the idea into a detailed prompt
+    seed: int | None = Field(None, ge=0, le=2**31 - 1)
+    thread_id: str | None = None
 
 
 class TranslateRequest(BaseModel):
@@ -96,6 +111,7 @@ async def health(request: Request):
                    "embed": settings.embed_model, "rerank": settings.rerank_model},
         "local_index": local.stats() if local else None,
         "focus_modes": {k: v["label"] for k, v in FOCUS_MODES.items()},
+        "image_models": settings.image_models,
         "languages": {k: {"label": v["label"], "native": v["native"], "dir": v["dir"]} for k, v in L.LANGUAGES.items()},
     }
 
@@ -160,6 +176,50 @@ async def search(req: SearchRequest, request: Request):
 
     return StreamingResponse(events(), media_type="text/event-stream",
                              headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+
+
+@app.get("/api/research")
+async def research(q: str, request: Request):
+    """Literature map for a topic: key, foundational and rising papers, read-next list, timeline (OpenAlex)."""
+    q = q.strip()[:300]
+    if len(q) < 2:
+        raise HTTPException(400, "Query too short")
+    client_ip = request.client.host if request.client else "anon"
+    if not limiter.allow(client_ip):
+        raise HTTPException(429, "Too many requests — slow down a little.")
+    try:
+        return await request.app.state.research.explore(q)
+    except Exception as e:
+        log.warning("research failed: %s", e)
+        raise HTTPException(502, "OpenAlex is unreachable right now. Try again in a moment.")
+
+
+@app.post("/api/image")
+async def create_image(req: ImageRequest, request: Request):
+    """Generate an image with NVIDIA visual GenAI (FLUX / Stable Diffusion), saved into a thread."""
+    if req.aspect not in ASPECTS:
+        raise HTTPException(400, f"Unknown aspect. Use one of {list(ASPECTS)}")
+    client_ip = request.client.host if request.client else "anon"
+    if not image_limiter.allow(client_ip):
+        raise HTTPException(429, "Image limit reached (6 per minute). Wait a moment.")
+    gen: ImageGenerator = request.app.state.images
+    engine: AnswerEngine = request.app.state.engine
+    store: ThreadStore = request.app.state.store
+    idea = req.prompt.strip()
+    t0 = time.perf_counter()
+    prompt = await gen.enhance(engine.nv, idea) if req.enhance else idea
+    try:
+        out = await gen.generate(prompt, req.aspect, req.seed)
+    except ImageError as e:
+        raise HTTPException(e.status, str(e))
+    meta = {"kind": "image", "image": out["image"], "model": out["model"], "seed": out["seed"],
+            "aspect": out["aspect"], "prompt": prompt, "enhanced": prompt != idea,
+            "total": time.perf_counter() - t0, "nvidia": True}
+    thread_id = req.thread_id if req.thread_id and store.exists(req.thread_id) else None
+    if not thread_id:
+        thread_id = store.create_thread(f"🎨 {idea}", "image")
+    turn_id = store.add_turn(thread_id, idea, "", [], [], meta)
+    return meta | {"idea": idea, "thread_id": thread_id, "turn_id": turn_id}
 
 
 @app.post("/api/translate")

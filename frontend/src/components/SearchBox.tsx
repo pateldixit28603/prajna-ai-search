@@ -1,4 +1,4 @@
-import { ArrowUp, BookOpen, Cpu, Database, GraduationCap, Globe, Languages } from "lucide-react";
+import { ArrowUp, BookOpen, Cpu, Database, GraduationCap, Globe, Languages, Palette, RectangleHorizontal, RectangleVertical, Square } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { LANGS } from "../lib/langs";
 
@@ -8,6 +8,13 @@ export const FOCUS = [
   { id: "academic", label: "Academic", icon: GraduationCap, hint: "OpenAlex + arXiv papers" },
   { id: "tech", label: "Tech", icon: Cpu, hint: "Hacker News + arXiv" },
   { id: "local", label: "My index", icon: Database, hint: "Your ingested open datasets" },
+  { id: "image", label: "Create image", icon: Palette, hint: "Generate an image with NVIDIA visual GenAI (FLUX)" },
+];
+
+const ASPECTS = [
+  { id: "square", label: "Square", icon: Square },
+  { id: "landscape", label: "Wide", icon: RectangleHorizontal },
+  { id: "portrait", label: "Tall", icon: RectangleVertical },
 ];
 
 type Props = {
@@ -16,12 +23,14 @@ type Props = {
   setFocus: (f: string) => void;
   lang: string;
   setLang: (l: string) => void;
+  aspect: string;
+  setAspect: (a: string) => void;
   busy?: boolean;
   compact?: boolean;
   placeholder?: string;
 };
 
-export default function SearchBox({ onSubmit, focus, setFocus, lang, setLang, busy, compact, placeholder }: Props) {
+export default function SearchBox({ onSubmit, focus, setFocus, lang, setLang, aspect, setAspect, busy, compact, placeholder }: Props) {
   const [q, setQ] = useState("");
   const ref = useRef<HTMLTextAreaElement>(null);
 
@@ -64,7 +73,7 @@ export default function SearchBox({ onSubmit, focus, setFocus, lang, setLang, bu
             submit();
           }
         }}
-        placeholder={placeholder ?? "Kuch bhi poochho… Ask anything"}
+        placeholder={focus === "image" ? "Describe an image… e.g. a tiger walking through Mumbai rain at night" : placeholder ?? "Kuch bhi poochho… Ask anything"}
         className="w-full resize-none bg-transparent px-4 pt-3.5 pb-1 text-[1.02rem] outline-none placeholder:text-muted"
         aria-label="Search query"
       />
@@ -83,6 +92,16 @@ export default function SearchBox({ onSubmit, focus, setFocus, lang, setLang, bu
               <span className={compact ? "hidden sm:inline" : ""}>{label}</span>
             </button>
           ))}
+          {focus === "image" ? (
+            <div className="flex items-center gap-0.5 ps-1" role="group" aria-label="Image shape">
+              {ASPECTS.map(({ id, label, icon: Icon }) => (
+                <button key={id} title={label} aria-pressed={aspect === id} onClick={() => setAspect(id)}
+                  className={`grid h-7 w-7 place-items-center rounded-md transition ${aspect === id ? "bg-nv-soft text-nv" : "text-muted hover:bg-panel-2 hover:text-text"}`}>
+                  <Icon size={13} />
+                </button>
+              ))}
+            </div>
+          ) : (
           <label
             title="Answer language. Auto detects it from your question."
             className={`flex items-center gap-1 rounded-lg px-2 py-1.5 text-xs font-medium transition hover:bg-panel-2 ${
@@ -102,6 +121,7 @@ export default function SearchBox({ onSubmit, focus, setFocus, lang, setLang, bu
               ))}
             </select>
           </label>
+          )}
         </div>
         <button
           onClick={submit}

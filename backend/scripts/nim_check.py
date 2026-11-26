@@ -77,6 +77,26 @@ async def main() -> None:
                     r.raise_for_status()
                     return r.json()["rankings"][0]
                 results.append(await probe(f"rerank:{m} @ {url}", rr()))
+    # image generation: one small FLUX schnell render per day tells us which visual-GenAI model works
+    from app.imagegen import ImageGenerator
+    ig = ImageGenerator(settings)
+    async def img():
+        out = await ig.generate("a small green circuit board, studio photo", "square", seed=7)
+        return f"{out['model']} ok ({len(out['image']) // 1365} KB)"
+    results.append(await probe("image:" + ",".join(settings.image_models), img()))
+    if ig.dead:
+        results.append({"check": "image:unavailable", "ok": False, "detail": ", ".join(sorted(ig.dead))})
+    await ig.aclose()
+    # Research mode data source (not NVIDIA, but checked here so the daily status shows it)
+    import httpx
+    from app.research import ResearchService
+    async with httpx.AsyncClient(follow_redirects=True) as http:
+        rs = ResearchService(http, settings.user_agent, settings.contact_email)
+        async def research():
+            r = await rs.explore("retrieval augmented generation")
+            return (f"{len(r['key_papers'])} key, {len(r['read_next'])} read-next, "
+                    f"{len(r['timeline'])} years, warnings={r['warnings']}")
+        results.append(await probe("research:openalex", research()))
     await nv.aclose()
     status = {"date": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
               "key_present": bool(settings.nvidia_api_key), "results": results, "catalog": catalog}

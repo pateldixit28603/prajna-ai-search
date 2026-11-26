@@ -1,8 +1,9 @@
-import { AlertTriangle, Check, Copy, CornerDownRight, Languages, Layers, Loader2, Sparkles, Zap } from "lucide-react";
+import { AlertTriangle, Check, Copy, CornerDownRight, GraduationCap, Languages, Layers, Loader2, Sparkles, Zap } from "lucide-react";
 import { useState } from "react";
 import { translateAnswer, type Turn } from "../lib/api";
 import { LANGS, langDir, langName } from "../lib/langs";
 import Answer from "./Answer";
+import ResearchPanel from "./ResearchPanel";
 import Sources, { SourceList, SourceSkeleton } from "./Sources";
 
 const STEPS = [
@@ -92,7 +93,7 @@ export default function TurnView({ turn, onFollowup, live, threadId, onLang }: {
   turn: Turn; onFollowup: (q: string) => void; live: boolean;
   threadId: string | null; onLang: (code: string, text?: string) => void;
 }) {
-  const [tab, setTab] = useState<"answer" | "sources">("answer");
+  const [tab, setTab] = useState<"answer" | "sources" | "research">("answer");
   const [copied, setCopied] = useState(false);
   const streaming = live && turn.stage === "writing";
   const done = turn.stage === "done";
@@ -112,7 +113,7 @@ export default function TurnView({ turn, onFollowup, live, threadId, onLang }: {
       <h2 dir="auto" className="font-display text-[1.7rem] leading-tight font-semibold tracking-tight md:text-3xl">{turn.question}</h2>
 
       <div className="mt-4 flex items-center gap-5 border-b border-line text-sm">
-        {(["answer", "sources"] as const).map((t) => (
+        {(["answer", "sources", "research"] as const).map((t) => (
           <button
             key={t}
             onClick={() => setTab(t)}
@@ -120,7 +121,7 @@ export default function TurnView({ turn, onFollowup, live, threadId, onLang }: {
               tab === t ? "border-nv text-text" : "border-transparent text-muted hover:text-text"
             }`}
           >
-            {t === "answer" ? <Sparkles size={14} /> : <Layers size={14} />}
+            {t === "answer" ? <Sparkles size={14} /> : t === "sources" ? <Layers size={14} /> : <GraduationCap size={14} />}
             {t}
             {t === "sources" && turn.sources.length > 0 && <span className="font-mono text-xs text-muted">{turn.sources.length}</span>}
           </button>
@@ -132,7 +133,9 @@ export default function TurnView({ turn, onFollowup, live, threadId, onLang }: {
         )}
       </div>
 
-      {tab === "sources" ? (
+      {tab === "research" ? (
+        <ResearchPanel query={turn.queries[0] || turn.question} />
+      ) : tab === "sources" ? (
         <div className="mt-5">
           <SourceList sources={turn.sources} />
         </div>

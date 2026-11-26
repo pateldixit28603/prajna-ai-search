@@ -1,9 +1,10 @@
 import { Menu } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
+import ImageTurn from "./components/ImageTurn";
 import SearchBox from "./components/SearchBox";
 import Sidebar, { Logo } from "./components/Sidebar";
 import TurnView from "./components/TurnView";
-import { deleteThread, getHealth, getThread, listThreads, streamSearch, type Health, type ThreadSummary, type Turn } from "./lib/api";
+import { createImage, deleteThread, getHealth, getThread, listThreads, streamSearch, type Health, type ThreadSummary, type Turn } from "./lib/api";
 
 const EXAMPLES = [
   "NVIDIA ka CUDA kya hai aur AI ke liye kyun zaroori hai?",
@@ -21,6 +22,7 @@ export default function App() {
   const [threadId, setThreadId] = useState<string | null>(null);
   const [focus, setFocus] = useState("all");
   const [lang, setLang] = useState("auto");
+  const [aspect, setAspect] = useState("square");
   const [busy, setBusy] = useState(false);
   const [threads, setThreads] = useState<ThreadSummary[]>([]);
   const [health, setHealth] = useState<Health | null>(null);
@@ -38,7 +40,26 @@ export default function App() {
   const patchLast = (fn: (t: Turn) => Turn) =>
     setTurns((ts) => (ts.length ? [...ts.slice(0, -1), fn(ts[ts.length - 1])] : ts));
 
+  const imagine = async (prompt: string, shape = aspect) => {
+    if (busy) return;
+    setBusy(true);
+    setMenu(false);
+    setTurns((ts) => [...ts, { ...emptyTurn(prompt), kind: "image", status: shape }]);
+    setTimeout(() => bottomRef.current?.scrollIntoView({ behavior: "smooth" }), 50);
+    try {
+      const img = await createImage({ prompt, aspect: shape, enhance: true, thread_id: threadId });
+      patchLast((t) => ({ ...t, stage: "done", image: img, turnId: img.turn_id }));
+      if (img.thread_id) setThreadId(img.thread_id);
+      refreshThreads();
+    } catch (err) {
+      patchLast((t) => ({ ...t, stage: "error", error: (err as Error).message || "Image generation failed." }));
+    } finally {
+      setBusy(false);
+    }
+  };
+
   const ask = async (question: string) => {
+    if (focus === "image") return imagine(question);
     if (busy) return;
     setBusy(true);
     setMenu(false);
@@ -102,7 +123,11 @@ export default function App() {
     setThreadId(id);
     setFocus(t.focus);
     setLang(t.lang ?? "auto");
-    setTurns(t.turns.map((x: any) => ({
+    setTurns(t.turns.map((x: any): Turn => x.meta?.kind === "image" ? ({
+      ...emptyTurn(x.question), kind: "image", stage: "done", turnId: x.id,
+      image: { image: x.meta.image, model: x.meta.model, seed: x.meta.seed, aspect: x.meta.aspect,
+               prompt: x.meta.prompt, enhanced: x.meta.enhanced, total: x.meta.total },
+    }) : ({
       question: x.question, answer: x.answer, sources: x.sources, followups: x.followups,
       queries: x.meta?.queries ?? [], status: "", stage: "done", warnings: [], meta: x.meta,
       lang: x.meta?.lang, turnId: x.id, translations: x.meta?.translations ?? {},
@@ -137,7 +162,7 @@ export default function App() {
               Open-source answer engine — open data from Wikipedia, OpenAlex, arXiv & Hacker News, ranked and written by NVIDIA NIM.
             </p>
             <div className="mt-8 w-full max-w-2xl">
-              <SearchBox onSubmit={ask} focus={focus} setFocus={setFocus} lang={lang} setLang={setLang} busy={busy} />
+              <SearchBox onSubmit={ask} focus={focus} setFocus={setFocus} lang={lang} setLang={setLang} aspect={aspect} setAspect={setAspect} busy={busy} />
             </div>
             <div className="mt-6 grid w-full max-w-2xl gap-2 sm:grid-cols-2">
               {EXAMPLES.map((ex) => (
@@ -152,7 +177,9 @@ export default function App() {
           <>
             <div className="scroll-thin flex-1 overflow-y-auto">
               <div className="mx-auto max-w-3xl space-y-10 px-4 pt-8 pb-40 md:px-6">
-                {turns.map((t, i) => (
+                {turns.map((t, i) => t.kind === "image" ? (
+                  <ImageTurn key={i} turn={t} busy={busy} onVariation={(p, a) => imagine(p, a)} />
+                ) : (
                   <TurnView key={i} turn={t} live={i === turns.length - 1 && busy} onFollowup={ask}
                     threadId={threadId} onLang={(code, text) => {
                       setLang(code);
@@ -166,7 +193,7 @@ export default function App() {
             </div>
             <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink via-ink/95 to-transparent pt-10 pb-5">
               <div className="pointer-events-auto mx-auto max-w-3xl px-4 md:px-6">
-                <SearchBox compact onSubmit={ask} focus={focus} setFocus={setFocus} lang={lang} setLang={setLang} busy={busy} placeholder="Ask a follow-up…" />
+                <SearchBox compact onSubmit={ask} focus={focus} setFocus={setFocus} lang={lang} setLang={setLang} aspect={aspect} setAspect={setAspect} busy={busy} placeholder="Ask a follow-up…" />
               </div>
             </div>
           </>
