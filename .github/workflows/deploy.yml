@@ -35,6 +35,13 @@ jobs:
             echo "::notice::RENDER_DEPLOY_HOOK_URL not set; relying on Render auto-deploy"
           fi
 
+      - name: Snapshot of the live site right now
+        run: |
+          body=$(curl -s -m 90 "$SITE/api/health" || true)
+          code=$(curl -s -o /dev/null -m 60 -w "%{http_code}" "$SITE/" || true)
+          summary=$(echo "$body" | python3 -c "import json,sys; d=json.load(sys.stdin); print('version=%s nvidia=%s image_models=%s languages=%s' % (d.get('version','none'), d.get('nvidia'), 'image_models' in d, 'languages' in d))" 2>/dev/null || echo "no JSON: ${body:0:200}")
+          echo "::notice title=Live site snapshot::HTTP $code on /, $summary"
+
       - name: Wait for the live site to run this commit
         run: |
           want="${GITHUB_SHA::7}"
