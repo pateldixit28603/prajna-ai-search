@@ -98,6 +98,13 @@ cd backend && .venv/bin/python -m scripts.ingest files ~/my-notes            # y
 
 `render.yaml` sets up a free Render web service from this repo's Dockerfile. Render redeploys on every push to `main`. Enter `NVIDIA_API_KEY` when Render asks for it. Free instances sleep when idle, so the first request after a while takes about a minute.
 
+After each push, the **Live site check** workflow (`.github/workflows/deploy.yml`) waits until the live `/api/health` reports the new commit in `version`, and fails if Render didn't deploy it. To make every push trigger a deploy even when Render's auto-deploy is off, add the service's Deploy Hook URL as the repository secret `RENDER_DEPLOY_HOOK_URL`. If you deploy to a new URL, update `SITE` in that workflow.
+
+## Project conventions
+
+- All website/UI text is in English: labels, placeholders, examples, buttons and messages. Answers can still be shown in the 7 answer languages, and the language picker uses English names (Chinese, Hindi, …).
+- Keep the UI professional and consistent: dark theme, NVIDIA green accent, and a layout that works at phone width.
+
 ## Production (Docker)
 
 ```bash
