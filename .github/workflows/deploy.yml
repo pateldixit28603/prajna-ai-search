@@ -1,7 +1,7 @@
 name: Live site check
 
 # After every push to main: (optionally) ask Render to deploy, then wait until
-# https://prajna-ai-search.onrender.com/api/health reports this commit (or a newer one).
+# https://prajna-ai-search-l11b.onrender.com/api/health reports this commit (or a newer one).
 # The job log shows exactly what the live site is running, so a stuck Render deploy is visible.
 #
 # Optional: add a repository secret RENDER_DEPLOY_HOOK_URL (Render dashboard -> service ->
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      SITE: https://prajna-ai-search.onrender.com
+      SITE: https://prajna-ai-search-l11b.onrender.com
       HOOK: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
     steps:
       - uses: actions/checkout@v4
