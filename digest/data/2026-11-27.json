@@ -4,411 +4,1021 @@
   "categories_by": "nvidia",
   "items": [
     {
-      "kind": "paper",
-      "topic": "Mixture-of-Loops Transformer",
-      "upvotes": 61,
-      "context": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops",
-      "link": "https://huggingface.co/papers/2611.34923",
-      "question": "What does the new AI research paper \"Mixture-of-Loops Transformer\" propose, and why does it matter?",
-      "focus": "academic",
-      "category": "ai",
+      "kind": "hackernews",
+      "topic": "Hard Drive pricing has gotten bad",
+      "points": 532,
+      "comments": 451,
+      "link": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+      "discussion": "https://news.ycombinator.com/item?id=50661646",
+      "question": "Hard Drive pricing has gotten bad — what is this about and why does it matter?",
+      "focus": "all",
+      "category": "chips",
       "category_by": "nvidia",
-      "signal": "▲ 61 upvotes on Hugging Face Daily Papers",
+      "signal": "▲ 532 points on Hacker News · 451 comments",
       "result": {
-        "question": "What does the new AI research paper \"Mixture-of-Loops Transformer\" propose, and why does it matter?",
-        "focus": "academic",
+        "question": "Hard Drive pricing has gotten bad — what is this about and why does it matter?",
+        "focus": "all",
         "lang": "en",
         "queries": [
-          "Mixture-of-Loops Transformer proposal",
-          "Mixture-of-Loops Transformer significance"
+          "hard drive pricing issues",
+          "why hard drive prices matter"
         ],
-        "answer": "Mixture-of-Loops Transformer is not a specific published paper in the provided results [2]. However, the search results cover several related works on looped Mixture-of-Experts (MoE) architectures, which are likely the basis for your question.\n\nThe most directly relevant findings are:\n\n- **LOOM (Looping Mixture-of-Experts)** [1]: Proposes a \"single principle\" that each loop should contribute new computation while keeping the recurrent state stable. It stabilizes recurrence by scaling residual updates to bound variance growth and re-injecting the input embedding at every loop [1]. It diversifies computation through per-loop routers engaging different experts and a Looping Residual carrying earlier outputs forward [1]. Experiments show stable scaling to 9-12 loops, with the 700M model achieving the best near-iso-FLOP performance at 5 loops, reducing perplexity from 18.36 to 16.54 and improving average zero-shot accuracy from 38.84% to 39.53% over the non-looped baseline [1].\n\n- **Sparse Layers are Critical to Scaling Looped Language Models** [2]: Finds that looped-MoE models scale better than the standard baseline, while dense looped models do not. The key is routing divergence between loops: in Looped-MoE models, different experts are activated on each pass through the same shared layers, recovering expressivity without additional parameters [2]. Loped models also have better compute-quality trade-offs with early exits, as loop boundaries are superior exit points with earlier output convergence [2].\n\n- **Loopback Transformer** [4]: Implements geometric decay to set total update weight and supply a recency prior, with attention learning how to allocate that weight. On ClimbMix, it reaches lower validation loss than standard Transformer baselines with 40-75% of their parameters (excluding token embeddings and output head) at reference scales from 191M to 3B, with training tokens and executed depth matched [4]. It also has higher mean accuracy over thirteen downstream tasks at 1.4B and 3B [4].\n\n- **DyLoMo-DiT** [3]: Proposes Dynamic Looped MoE DiT, which reuses parameters rather than adding them: a weight-shared loop repeatedly applies the middle layers, while sparse experts allocate parameter capacity across tokens. On ImageNet 256×256, it reduces FID by 11-24% relative to DiT and 36-56% relative to DiT-MoE at matched parameter and compute budgets [3].\n\n- **LoopCTR** [5]: Introduces a loop scaling paradigm that increases training-time computation through recursive reuse of shared model layers, decoupling computation from parameter growth. Employs process supervision at every loop depth to encode multi-loop benefits into shared parameters, enabling a train-multi-loop, infer-zero-loop strategy where a single forward pass without any loop already outperforms all baselines [5].\n\n- **LoopMoEVR** [6]: Introduces a loop-based mixture-of-experts model for UHD video restoration, using a degradation-conditioned low-rank loop embedding and spatio-temporal iterative adaptive normalization. With only ~0.884M trainable parameters, it uniformly handles UHD video dehazing, deraining, denoising, and low-light enhancement [6].\n\n- **Looped Transformers with Source-Centered State Evolution** [7]: Proposes SCSE to reconcile input conditioning with reference-preserving shared recurrence. Retains input dependence through a learned anchor and initial deviation, allows nonzero deviations to drive recurrent computation while mapping zero deviation to zero, and guarantees exact anchor invariance through a zero-deviation mask [7]. The designated anchor is a one-step fixed point by construction [7].\n\n- **LoopCache** [8]: Proposes an efficient self-speculative decoding framework for long-context Looped Transformers, introducing confidence-guided dynamic draft updating and a cyclic loop KV cache strategy that restricts per-step KV traffic to a single loop while batching tokens at the nearest matching cycle. Achieves average 10.25x and 14.56x speedup over WFD and LoopSpec [8].\n\nThese works collectively advance looped transformer architectures by addressing stability, expressivity, compute efficiency, and application-specific improvements across language, vision, and industrial tasks.\n\n[1][2][3][4][5][6][7][8]",
+        "answer": "Hard drive pricing has become fragmented and difficult to track across retailers, as highlighted by the ListofDisks project [1]. This tool monitors prices across Amazon, B&H, Best Buy, Newegg, Office Depot, ServerPartDeals, and Walmart, normalizing listings into canonical products to allow side-by-side comparisons [1]. It tracks 90-day median $/TB and historical-low pricing to help users identify genuine deals amid marketplace noise [1].\n\nManufacturer reliability varies significantly [4]. Based on Backblaze dataset analysis, HGST drives show the lowest failure rates—about 41% of Seagate's [4]. Toshiba's rates are slightly above Seagate's, while Western Digital (WD) rates are significantly above HGST's but still only about 52% of Seagate's when controlling for age, capacity, form-factor, and temperature [4].\n\nPrice tracking matters because HDDs remain dominant secondary storage despite solid-state alternatives [3][6]. While HDDs offer high capacity at lower cost per terabyte, reliability and pricing transparency vary by manufacturer and retailer. Tiering and caching strategies in storage systems [6] automatically move data between media types based on access patterns, balancing performance needs with cost considerations.\n\nHistorically, IBM introduced the first HDD in 1956 [3][7], and the technology has evolved from data-center-only devices to ubiquitous consumer storage. Modern HDDs store data on rigid platters with magnetic heads, maintaining random-access capabilities while offering non-volatile retention [3].",
         "followups": [
-          "What are the key features of LOOM?",
-          "How does LOOM stabilize recurrence?",
-          "Where can I find more on MoE architectures?"
+          "Which retailers does ListofDisks track?",
+          "Are HGST drives the most reliable?",
+          "How can I find a good deal?"
         ],
         "sources": [
           {
-            "title": "Looping Beyond Twice: A Scalable Recipe for Looped Mixture-of-Experts",
-            "url": "https://arxiv.org/abs/2610.01153v1",
-            "source": "arxiv",
-            "snippet": "Looped Transformers introduce recurrent depth as a new scaling axis for LLMs: by repeatedly applying shared Transformer blocks, they increase effective depth without increasing parameter count. However, the benefits of looping remain unclear for large MoE LLMs under FLOPs-matched",
-            "published": "2026-10-01",
+            "title": "Show HN: ListofDisks – hard drive price index across 7 retailers not just Amazon",
+            "url": "https://news.ycombinator.com/item?id=46992426",
+            "source": "hackernews",
+            "snippet": "I decided to build this after looking for drives for my own new DS1525+. I realized that existing storage price trackers were mostly lazy Amazon API wrappers that ignored other retailers. ListofDisks tracks offers across Amazon, B&H, Best Buy, Newegg, Office Depot, ServerPartDeal",
+            "published": "2026-02-12",
             "authors": [
-              "Di He",
-              "Pengxiang Li",
-              "Da Chang",
-              "Qingyan Meng",
-              "Lu Yin",
-              "Shiwei Liu"
+              "listofdisks"
             ],
             "extra": {
-              "license": "arXiv"
+              "points": 4,
+              "comments": 0,
+              "discussion": "https://news.ycombinator.com/item?id=46992426"
             },
-            "id": "b97ae6a72d9c",
-            "domain": "arxiv.org",
+            "id": "43f604eb3259",
+            "domain": "news.ycombinator.com",
             "n": 1
           },
           {
-            "title": "Sparse Layers are Critical to Scaling Looped Language Models",
-            "url": "https://arxiv.org/abs/2605.09165v3",
-            "source": "arxiv",
-            "snippet": "Looped language models repeat a set of transformer layers through depth, reducing memory costs and providing natural early-exit points at loop boundaries. However, looped models do not scale as favorably as standard transformers with unique layers. We compare standard and Mixture",
-            "published": "2026-05-09",
+            "title": "Modern Hard Disk Media Issues",
+            "url": "https://doi.org/10.1007/978-94-010-0624-8_3",
+            "source": "openalex",
+            "snippet": "Modern Hard Disk Media Issues",
+            "published": "2001",
             "authors": [
-              "Ryan Lee",
-              "Jacob Biloki",
-              "Edward J. Hu",
-              "Jonathan May"
+              "D.N. Lambeth"
             ],
             "extra": {
-              "license": "arXiv"
+              "cited_by": 3,
+              "venue": "Springer eBooks",
+              "license": "CC0 metadata"
             },
-            "id": "ed46b46ac04f",
-            "domain": "arxiv.org",
+            "id": "322903c7a494",
+            "domain": "doi.org",
             "n": 2
           },
           {
-            "title": "DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers",
-            "url": "https://arxiv.org/abs/2611.30844v1",
-            "source": "arxiv",
-            "snippet": "Diffusion Transformers (DiTs) scale model capacity by increasing both parameter count and computation. Mixture-of-Experts (MoE) variants expand parameter capacity while keeping per-token computation roughly fixed, but still require substantial parameter storage. In this paper, we",
-            "published": "2026-11-23",
-            "authors": [
-              "Lernie Li",
-              "Yuanliu Liu",
-              "Pengfei Xiong",
-              "Wei Zhang"
-            ],
+            "title": "Hard disk drive",
+            "url": "https://en.wikipedia.org/wiki/Hard_disk_drive",
+            "source": "wikipedia",
+            "snippet": "A hard disk drive (HDD), hard disk, hard drive, or fixed disk is an electro-mechanical computer data storage device that stores and retrieves digital data using magnetic storage with one or more rigid rapidly rotating platters coated with magnetic material. The platters are paire",
+            "published": null,
+            "authors": [],
             "extra": {
-              "license": "arXiv"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "7651dacaf856",
-            "domain": "arxiv.org",
+            "id": "15089287ccc0",
+            "domain": "en.wikipedia.org",
             "n": 3
           },
           {
-            "title": "Loopback Transformer: Towards a Unified View of Residual Looped Transformers",
-            "url": "https://doi.org/10.48550/arxiv.2611.07226",
+            "title": "Are There Manufacturer Differences in Hard-Drive Reliability?",
+            "url": "https://doi.org/10.1109/tcc.2026.3679404",
             "source": "openalex",
-            "snippet": "Looped Transformers reduce parameter count by repeatedly applying shared blocks, but parameter sharing alone does not determine how the results of repeated computation are reused. We take the depth-memory view of residual connections and analyze which representation is stored aft",
+            "snippet": "Based on the Backblaze hard disk drive (HDD) dataset, we analyze whether the four major HDD manufacturers represented in the dataset—HGST, Seagate, Toshiba, Western Digital (WD)—show differences in short- to medium-term HDD failure rates. Using two different duration regression m",
             "published": "2026",
             "authors": [
-              "Xuan Ouyang",
-              "Zefan Cai",
-              "Chenlong Zhang",
-              "Cheng Luo",
-              "Ke Wan",
-              "Junjie Hu"
+              "Christoph Siemroth",
+              "Yeomyung Park"
             ],
             "extra": {
-              "cited_by": 0,
-              "venue": "arXiv",
+              "cited_by": 1,
+              "venue": "IEEE Transactions on Cloud Computing",
               "license": "CC0 metadata"
             },
-            "id": "d82dac60bef2",
+            "id": "9c764ed632a8",
             "domain": "doi.org",
             "n": 4
           },
           {
-            "title": "LoopCTR: Unlocking the Loop Scaling Power for Click-Through Rate Prediction",
-            "url": "https://arxiv.org/abs/2604.19550v1",
-            "source": "arxiv",
-            "snippet": "Scaling Transformer-based click-through rate (CTR) models by stacking more parameters brings growing computational and storage overhead, creating a widening gap between scaling ambitions and the stringent industrial deployment constraints. We propose LoopCTR, which introduces a l",
-            "published": "2026-04-21",
+            "title": "Ask HN: Is there a good cloud provider to archive large files to?",
+            "url": "https://news.ycombinator.com/item?id=36333417",
+            "source": "hackernews",
+            "snippet": "Here's my need. I have enough iCloud drive space, but some of my devices don't have enough hard drive space to download all my iCloud drive files. And I'm seeing sync issues that I suspect are related to those laptops needing to try and store some iCloud drive files only in the c",
+            "published": "2023-06-14",
             "authors": [
-              "Jiakai Tang",
-              "Runfeng Zhang",
-              "Weiqiu Wang",
-              "Yifei Liu",
-              "Chuan Wang",
-              "Xu Chen"
+              "tikkun"
             ],
             "extra": {
-              "license": "arXiv"
+              "points": 1,
+              "comments": 4,
+              "discussion": "https://news.ycombinator.com/item?id=36333417"
             },
-            "id": "cfa2faae03c8",
-            "domain": "arxiv.org",
+            "id": "7aa35bfc463e",
+            "domain": "news.ycombinator.com",
             "n": 5
           },
           {
-            "title": "LoopMoEVR: Loop-Based Degradation-Aware Mixture-of-Experts for Unified UHD Video Restoration",
-            "url": "https://arxiv.org/abs/2610.05109v1",
+            "title": "A Survey on Tiering and Caching in High-Performance Storage Systems",
+            "url": "https://arxiv.org/abs/1904.11560v1",
             "source": "arxiv",
-            "snippet": "Recently, unified high-definition image restoration has attracted considerable attention; however, existing models tend to excessively increase their depth in pursuit of improved generalization, which often yields only limited gains. Meanwhile, loop-based learning paradigms have ",
-            "published": "2026-10-04",
+            "snippet": "Although every individual invented storage technology made a big step towards perfection, none of them is spotless. Different data store essentials such as performance, availability, and recovery requirements have not met together in a single economically affordable medium, yet. ",
+            "published": "2019-04-25",
             "authors": [
-              "Yucheng Xin",
-              "Runci Bai",
-              "Yongcong Wang",
-              "Guangwei Gao",
-              "Jiao Liu",
-              "Dianjie Lu"
+              "Morteza Hoseinzadeh"
             ],
             "extra": {
               "license": "arXiv"
             },
-            "id": "cd36d4af5d8b",
+            "id": "1058eff42b30",
             "domain": "arxiv.org",
             "n": 6
           },
           {
-            "title": "Looped Transformers with Source-Centered State Evolution",
-            "url": "https://doi.org/10.48550/arxiv.2607.27656",
-            "source": "openalex",
-            "snippet": "Looped Transformers create a useful train- and test-time compute axis by reusing the same Transformer block over recurrent depth, increasing effective depth at a fixed parameter count. However, that shared block must then govern an entire trajectory of varying hidden states over ",
-            "published": "2026",
-            "authors": [
-              "Bum Jun Kim",
-              "Kohei Hayashi",
-              "Shunsuke Kamiya",
-              "Masanori Koyama",
-              "Yusuke Iwasawa",
-              "Yutaka Matsuo"
-            ],
+            "title": "History of hard disk drives",
+            "url": "https://en.wikipedia.org/wiki/History_of_hard_disk_drives",
+            "source": "wikipedia",
+            "snippet": "In 1953, IBM recognized the immediate application for what it termed a \"Random Access File\" having high capacity and rapid random access at a relatively low cost. After considering technologies such as wire matrices, rod arrays, drums, drum arrays, etc., the engineers at IBM's Sa",
+            "published": null,
+            "authors": [],
             "extra": {
-              "cited_by": 2,
-              "venue": "arXiv",
-              "license": "CC0 metadata"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "09da90145d18",
-            "domain": "doi.org",
+            "id": "ed8395371f46",
+            "domain": "en.wikipedia.org",
             "n": 7
           },
           {
-            "title": "LoopCache: Accelerating Long-Context Self-Speculative Decoding for Looped Transformers",
-            "url": "https://doi.org/10.48550/arxiv.2611.24301",
+            "title": "Examining the feasibility of the urban mining of hard disk drives",
+            "url": "https://doi.org/10.1016/j.jclepro.2019.119216",
             "source": "openalex",
-            "snippet": "Looped Transformers achieve large effective depth with compact models by repeatedly applying a weight-shared block across R recurrent steps, each maintaining a loop-specific key-value (KV) cache. To accelerate sequential loop execution, recent wave-style self-speculative methods ",
-            "published": "2026",
+            "snippet": "Examining the feasibility of the urban mining of hard disk drives",
+            "published": "2019",
             "authors": [
-              "Zizhuo Fu",
-              "Haochen Huang",
-              "Shengxuan Qiu",
-              "Wei Linye",
-              "Ziyu Tang",
-              "Runsheng Wang"
+              "Laura Talens Peiró",
+              "Alejandra Castro",
+              "Xavier Gabarrell"
             ],
             "extra": {
-              "cited_by": 0,
-              "venue": "arXiv",
+              "cited_by": 30,
+              "venue": "Journal of Cleaner Production",
               "license": "CC0 metadata"
             },
-            "id": "bbb2fdcfa832",
+            "id": "efb973133904",
             "domain": "doi.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4559606520000017,
-          "search": 0.31165031099999396,
-          "rank": 3.307279906000005,
+          "plan": 0.4472309869999833,
+          "search": 0.6175675679999983,
+          "rank": 3.7085059820000197,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.074991737000005,
-          "total": 11.326047626000005
+          "retrieve": 4.773408931999995,
+          "total": 7.566966449999967
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 25,
-        "citation_coverage": 0.88,
+        "sentences": 11,
+        "citation_coverage": 0.9090909090909091,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "AI made self-hosting fun again",
+      "points": 1028,
+      "comments": 488,
+      "link": "https://janlukas.blog/posts/ai-self-hosting",
+      "discussion": "https://news.ycombinator.com/item?id=50660180",
+      "question": "AI made self-hosting fun again — what is this about and why does it matter?",
+      "focus": "all",
+      "category": "ai",
+      "category_by": "nvidia",
+      "signal": "▲ 1,028 points on Hacker News · 488 comments",
+      "result": {
+        "question": "AI made self-hosting fun again — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "AI self-hosting trends",
+          "why is AI self-hosting important"
+        ],
+        "answer": "Self-hosting AI has re-emerged as a strategic choice for organizations prioritizing data sovereignty and cost control. Platforms like Alien [1][2] enable deploying software directly into customers' AWS, GCP, or Azure accounts, ensuring no sensitive data leaves the customer's environment while maintaining a fully managed vendor experience. This approach addresses enterprise concerns about operating third-party software and losing visibility into deployments [1][2]. Open-source frameworks such as OpenClaw [7] and n8n [6] further support self-hosted AI by providing adaptive educational AI and workflow automation for cybersecurity, respectively. These tools offer significant advantages in cost, customization, and data control, though they present challenges in technical deployment complexity and psychometric maturity [7]. Meanwhile, Pythia [5] provides a framework for analyzing web hosting environments, revealing that under 11% of popular domains are self-hosted, highlighting the historical dominance of third-party hosting [5].",
+        "followups": [
+          "What are the main benefits?",
+          "Which platforms are easiest to use?",
+          "How complex is technical setup?"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: Alien – Ship to your customer's cloud",
+            "url": "https://github.com/alienplatform/alien",
+            "source": "hackernews",
+            "snippet": "Hi HN, I'm Alon, and I'm building Alien ( https://alien.dev ), an open-source platform for deploying your software into your customers' cloud accounts - AWS, GCP, or Azure — and keeping it fully managed. In my previous startup, I heard the same question from every single enterpri",
+            "published": "2026-04-16",
+            "authors": [
+              "alongub"
+            ],
+            "extra": {
+              "points": 3,
+              "comments": 0,
+              "discussion": "https://news.ycombinator.com/item?id=47791745"
+            },
+            "id": "fd2b2a0f5349",
+            "domain": "github.com",
+            "n": 1
+          },
+          {
+            "title": "Show HN: Deploy to your customers' AWS/GCP/Azure accounts",
+            "url": "https://news.ycombinator.com/item?id=47818157",
+            "source": "hackernews",
+            "snippet": "Hi HN, I'm Alon, and I'm building Alien ( https://alien.dev ), an open-source platform for deploying your software into your customers' cloud accounts - AWS, GCP, or Azure — and keeping it fully managed. In my previous startup, I heard the same question from every single enterpri",
+            "published": "2026-04-18",
+            "authors": [
+              "alongub"
+            ],
+            "extra": {
+              "points": 2,
+              "comments": 0,
+              "discussion": "https://news.ycombinator.com/item?id=47818157"
+            },
+            "id": "def6c1f15f72",
+            "domain": "news.ycombinator.com",
+            "n": 2
+          },
+          {
+            "title": "Show HN: Plandex v2 – OSS AI coding agent w/ diff sandbox, full auto, 2M context",
+            "url": "https://plandex.ai",
+            "source": "hackernews",
+            "snippet": "Hey HN! I’m Dane, the creator of Plandex ( https://github.com/plandex-ai/plandex ), an open source AI coding agent focused especially on tackling large tasks in real world software projects. You can watch a 2 minute demo of Plandex in action here: https://www.youtube.com/watch?v=",
+            "published": "2025-04-03",
+            "authors": [
+              "danenania"
+            ],
+            "extra": {
+              "points": 4,
+              "comments": 0,
+              "discussion": "https://news.ycombinator.com/item?id=43569813"
+            },
+            "id": "75d95d6a64bd",
+            "domain": "plandex.ai",
+            "n": 3
+          },
+          {
+            "title": "Show HN: Whilio – AI chatbot that learns your site and explains user behavior",
+            "url": "https://whilio.com/",
+            "source": "hackernews",
+            "snippet": "I built Whilio after years in ads/sales where dashboards showed what happened but not why. Even with tagging, surveys, and A/B tests, it was still hard to see why users churn or convert. I wanted something that would ask questions in the moment and surface real themes from conver",
+            "published": "2025-09-06",
+            "authors": [
+              "duverse"
+            ],
+            "extra": {
+              "points": 3,
+              "comments": 0,
+              "discussion": "https://news.ycombinator.com/item?id=45153454"
+            },
+            "id": "84612b285417",
+            "domain": "whilio.com",
+            "n": 4
+          },
+          {
+            "title": "Pythia: a Framework for the Automated Analysis of Web Hosting Environments",
+            "url": "https://arxiv.org/abs/1903.06925v2",
+            "source": "arxiv",
+            "snippet": "A common approach when setting up a website is to utilize third party Web hosting and content delivery networks. Without taking this trend into account, any measurement study inspecting the deployment and operation of websites can be heavily skewed. Unfortunately, the research co",
+            "published": "2019-03-16",
+            "authors": [
+              "Srdjan Matic",
+              "Gareth Tyson",
+              "Gianluca Stringhini"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "c6fbf4dba2be",
+            "domain": "arxiv.org",
+            "n": 5
+          },
+          {
+            "title": "Self-Hosted Workflow Automation for AI-Based Cybersecurity Operation",
+            "url": "https://doi.org/10.53735/cisse.v13i1.241",
+            "source": "openalex",
+            "snippet": "Cybersecurity operations often involve repetitive tasks such as running Nmap scans, analyzing logs, and performing Open-Source Intelligence (OSINT) investigations. These processes are essential for maintaining security but consume time and resources that many small organizations ",
+            "published": "2026",
+            "authors": [
+              "Hareign Casaclang",
+              "Bianca Ionescu",
+              "Yoohwan Kim",
+              "Ju-Yeon Jo"
+            ],
+            "extra": {
+              "cited_by": 6,
+              "venue": "Journal of The Colloquium for Information Systems Security Education",
+              "license": "CC0 metadata"
+            },
+            "id": "eee68883d9a5",
+            "domain": "doi.org",
+            "n": 6
+          },
+          {
+            "title": "Exploring OpenClaw’s potential for adaptive, self-hosted educational AI",
+            "url": "https://doi.org/10.3389/feduc.2026.1859178",
+            "source": "openalex",
+            "snippet": "This paper examines whether OpenClaw, an open-source AI agent framework, can serve as the foundation for adaptive educational AI systems. We analyse OpenClaw's architecture against established requirements for adaptive learning: student modelling, curriculum delivery, difficulty ",
+            "published": "2026",
+            "authors": [
+              "Simon Baradziej",
+              "Ratnabali Pal"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Frontiers in Education",
+              "license": "CC0 metadata"
+            },
+            "id": "ea9f61c369f6",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "AI Chips: What They Are and Why They Matter",
+            "url": "https://doi.org/10.51593/20190014",
+            "source": "openalex",
+            "snippet": "The success of modern AI techniques relies on computation on a scale unimaginable even a few years ago. What exactly are the AI chips powering the development and deployment of AI at scale and why are they essential? Saif M. Khan and Alexander Mann explain how these chips work, w",
+            "published": "2020",
+            "authors": [
+              "Saifullah Khan",
+              "Alexander Mann"
+            ],
+            "extra": {
+              "cited_by": 82,
+              "venue": null,
+              "license": "CC0 metadata"
+            },
+            "id": "d1d5d41acc10",
+            "domain": "doi.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.45266716400001883,
+          "search": 0.6420669379999993,
+          "rank": 2.9849662379999984,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 4.079824731999992,
+          "total": 6.073987031999991
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 6,
+        "citation_coverage": 0.8333333333333334,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Group chat where your AI talks behind your back",
+      "points": 621,
+      "comments": 262,
+      "link": "https://construct22.com/",
+      "discussion": "https://news.ycombinator.com/item?id=50663595",
+      "question": "Group chat where your AI talks behind your back — what is this about and why does it matter?",
+      "focus": "all",
+      "category": "ai",
+      "category_by": "nvidia",
+      "signal": "▲ 621 points on Hacker News · 262 comments",
+      "result": {
+        "question": "Group chat where your AI talks behind your back — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "AI talking behind back in group chat",
+          "risks of AI gossip",
+          "AI privacy concerns"
+        ],
+        "answer": "AI gossip refers to generative AI chatbots producing rich streams of text that appear truth-apt without concern for truthfulness, potentially fabricating social information like rumors or private details [1][2]. This differs from simple hallucination by focusing on the social dynamics of misinformation. The phenomenon matters because it can create \"technosocial harms\"—distinct harms that follow from AI-mediated social interactions, such as reputational damage or relational disruption [2].\n\nKey aspects of AI gossip include:\n\n- **Mechanism**: Chatbots produce text that looks truth-apt without any concern for truthfulness, making them capable of generating gossip-like content about historical events, figures, legal cases, and biographies [1][2]\n- **Social impact**: The \"technosocial harms\" framework identifies specific harms that emerge from AI-mediated social interactions, particularly around privacy and relational dynamics [2][4]\n- **Privacy concerns**: AI companions lower disclosure thresholds, encouraging intimate self-disclosure while users recognize corporate control over their data, creating unique privacy management challenges [4]\n- **User behavior**: People may disclose more to AI companions than intended, treating shared information as relationally held despite knowing corporate control exists [4]\n\nThe concern about \"group chat where your AI talks behind your back\" relates to how AI systems might share or gossip about user information across contexts, potentially violating privacy expectations and creating social harm through rumor-spreading or information leakage [4][5].",
+        "followups": [
+          "How can this be prevented?",
+          "What are examples of this?",
+          "Is this a new problem?"
+        ],
+        "sources": [
+          {
+            "title": "AI Gossip",
+            "url": "https://doi.org/10.48550/arxiv.2508.08143",
+            "source": "openalex",
+            "snippet": "Generative AI chatbots like OpenAI's ChatGPT and Google's Gemini routinely make things up. They \"hallucinate\" historical events and figures, legal cases, academic papers, non-existent tech products and features, biographies, and news articles. Recently, some have argued that thes",
+            "published": "2025",
+            "authors": [
+              "Krueger, Joel",
+              "Osler, Lucy"
+            ],
+            "extra": {
+              "cited_by": 2,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "cedc0400e7b0",
+            "domain": "doi.org",
+            "n": 1
+          },
+          {
+            "title": "AI gossip",
+            "url": "https://doi.org/10.1007/s10676-025-09871-0",
+            "source": "openalex",
+            "snippet": "Generative AI chatbots like OpenAI's ChatGPT and Google's Gemini routinely make things up. They \"hallucinate\" historical events and figures, legal cases, academic papers, non-existent tech products and features, biographies, and news articles. Recently, some have argued that thes",
+            "published": "2025",
+            "authors": [
+              "Joel W. Krueger",
+              "Lucy Osler"
+            ],
+            "extra": {
+              "cited_by": 6,
+              "venue": "Ethics and Information Technology",
+              "license": "CC0 metadata"
+            },
+            "id": "6ce32112ec21",
+            "domain": "doi.org",
+            "n": 2
+          },
+          {
+            "title": "Show HN: Knowledgework – AI Extensions of Your Coworkers",
+            "url": "https://knowledgework.ai/",
+            "source": "hackernews",
+            "snippet": "Hey HN! We’re building Knowledgework.ai, which creates AI clones of your coworkers that actually know what they know. It's like having a version of each teammate that never sleeps, never judges you for asking \"dumb\" questions, and responds instantly. As a SWE at Amazon, I constan",
+            "published": "2025-08-28",
+            "authors": [
+              "grbsh"
+            ],
+            "extra": {
+              "points": 8,
+              "comments": 2,
+              "discussion": "https://news.ycombinator.com/item?id=45055510"
+            },
+            "id": "0fd988c04e45",
+            "domain": "knowledgework.ai",
+            "n": 3
+          },
+          {
+            "title": "Chatting with confidants or corporations? Privacy management with AI companions",
+            "url": "https://doi.org/10.1093/jcmc/zmag014",
+            "source": "openalex",
+            "snippet": "AI companion chatbots feel like intimate confidants but exist as part of corporate data systems. Drawing on Communication Privacy Management (CPM) theory and Masur’s dimensional privacy framework, we interviewed users of platforms like Replika and Character.AI (N = 15) to underst",
+            "published": "2026",
+            "authors": [
+              "Hsuen-Chi Chiu",
+              "Jeremy Foote"
+            ],
+            "extra": {
+              "cited_by": 5,
+              "venue": "Journal of Computer-Mediated Communication",
+              "license": "CC0 metadata"
+            },
+            "id": "a3a1ed2e9c21",
+            "domain": "doi.org",
+            "n": 4
+          },
+          {
+            "title": "Show HN: AgentSea – Private, fast, and safe AI chat to access latest AI models",
+            "url": "https://agentsea.com",
+            "source": "hackernews",
+            "snippet": "We’ve been power users of AI tools for the past year, and we kept running into three constant frustrations: 1. Too many subscriptions – Paying separately for OpenAI, Anthropic, Perplexity, and others quickly adds up. 2. Losing memory & context – Switching between models or platfo",
+            "published": "2025-09-02",
+            "authors": [
+              "miletus"
+            ],
+            "extra": {
+              "points": 6,
+              "comments": 0,
+              "discussion": "https://news.ycombinator.com/item?id=45101235"
+            },
+            "id": "95123fca04d5",
+            "domain": "agentsea.com",
+            "n": 5
+          },
+          {
+            "title": "Google's Gemini AI and Privacy Concerns: What You Need to Know",
+            "url": "https://www.geeksmatrix.com/2024/07/googles-gemini-ai-and-privacy-concerns.html",
+            "source": "hackernews",
+            "snippet": "Google's Gemini AI and Privacy Concerns: What You Need to Know",
+            "published": "2024-07-15",
+            "authors": [
+              "nuriodaci"
+            ],
+            "extra": {
+              "points": 2,
+              "comments": 1,
+              "discussion": "https://news.ycombinator.com/item?id=40966215"
+            },
+            "id": "fdcfa93a3a9e",
+            "domain": "geeksmatrix.com",
+            "n": 6
+          },
+          {
+            "title": "Security And Privacy Concerns In Generative AI",
+            "url": "https://doi.org/10.2139/ssrn.5052837",
+            "source": "openalex",
+            "snippet": "Security And Privacy Concerns In Generative AI",
+            "published": "2024",
+            "authors": [
+              "Pavan Konakalla",
+              "Govindaiah Simuni"
+            ],
+            "extra": {
+              "cited_by": 19,
+              "venue": "SSRN Electronic Journal",
+              "license": "CC0 metadata"
+            },
+            "id": "f140cacf1376",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "ChatGPT",
+            "url": "https://en.wikipedia.org/wiki/ChatGPT",
+            "source": "wikipedia",
+            "snippet": "ChatGPT is a generative artificial intelligence (AI) chatbot developed by OpenAI. It uses large language models – specifically generative pre-trained transformers (GPTs) – to generate text in response to user prompts. ChatGPT popularized the use of generative AI and accelerated t",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "5db1779af952",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.5056116089999989,
+          "search": 0.5355519240000035,
+          "rank": 6.08892934299999,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 7.13021997200002,
+          "total": 10.409773091000005
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 9,
+        "citation_coverage": 0.7777777777777778,
+        "citation_validity": 1.0,
+        "faithfulness": 0.5714285714285714
+      }
+    },
+    {
+      "kind": "paper",
+      "topic": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
+      "upvotes": 126,
+      "context": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writin",
+      "link": "https://huggingface.co/papers/2611.34051",
+      "question": "What does the new AI research paper \"Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability\" propose, and why does it matter?",
+      "focus": "academic",
+      "category": "ai",
+      "category_by": "nvidia",
+      "signal": "▲ 126 upvotes on Hugging Face Daily Papers",
+      "result": {
+        "question": "What does the new AI research paper \"Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability\" propose, and why does it matter?",
+        "focus": "academic",
+        "lang": "en",
+        "queries": [
+          "Stable Gated DeltaNet-2 proposal",
+          "Stable Gated DeltaNet-2 significance"
+        ],
+        "answer": "Stable Gated DeltaNet-2 (SGDN-2) proposes symmetric erasure to ensure non-expansive state propagation and decay-regulated residual writing to preserve writing flexibility [1]. This resolves training failures in long-context training caused by asymmetric reading and modification directions during erasure, which previously led to exponential state growth even without new writes [1]. Theoretically, the method establishes an $O(\\sqrt{T})$ upper bound on recurrent state growth while retaining chunkwise parallel computation [1]. Experiments on ~1.6B parameter models show SGDN-2 achieves stable training alongside improved long-context retrieval, boosting the 128K average RULER score by 6.80 points in the recurrent setting and average accuracy across nine downstream tasks by 0.62 points in the hybrid setting compared to GDN-2 [1].",
+        "followups": [
+          "Tell me more about Gated Delta Networks: Improving Mamba2 with Delta Rule",
+          "Tell me more about SANE: State Anomaly Neutralization for Stable Extreme-Context Delta-Rule Models",
+          "What are the latest developments on What does the new AI research paper \"Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability\" propose, and why does it matter?"
+        ],
+        "sources": [
+          {
+            "title": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
+            "url": "https://arxiv.org/abs/2611.34051v1",
+            "source": "arxiv",
+            "snippet": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retr",
+            "published": "2026-11-25",
+            "authors": [
+              "Xichong Zhang",
+              "Xixuan Hao",
+              "Zhichen Liu",
+              "Le Zhou",
+              "Zeyu Zhang",
+              "Boyu Chen"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "3a4403be998b",
+            "domain": "arxiv.org",
+            "n": 1
+          },
+          {
+            "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+            "url": "https://doi.org/10.48550/arxiv.2412.06464",
+            "source": "openalex",
+            "snippet": "Linear Transformers have gained attention as efficient alternatives to standard Transformers, but their performance in retrieval and long-context tasks has been limited. To address these limitations, recent work has explored two distinct mechanisms: gating for adaptive memory con",
+            "published": "2025",
+            "authors": [
+              "Songlin Yang",
+              "Jan Kautz",
+              "Ali Hatamizadeh"
+            ],
+            "extra": {
+              "cited_by": 775,
+              "venue": "International Conference on Learning Representations",
+              "license": "CC0 metadata"
+            },
+            "id": "17751ccf8996",
+            "domain": "doi.org",
+            "n": 2
+          },
+          {
+            "title": "SANE: State Anomaly Neutralization for Stable Extreme-Context Delta-Rule Models",
+            "url": "https://doi.org/10.48550/arxiv.2608.22354",
+            "source": "openalex",
+            "snippet": "Delta-Rule recurrent models maintain a fixed-size state, enabling $O(1)$ inference memory but potentially becoming unstable under extreme-context extrapolation. By tracking RWKV-7 over sequences of up to 100M tokens, we empirically identify a distinct failure pattern: \\textbf{loc",
+            "published": "2026",
+            "authors": [
+              "Qingwen Lin",
+              "Boyan Xu",
+              "Xiao Liu",
+              "Zhifeng Hao",
+              "Ruichu Cai"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "73e8557c0cd9",
+            "domain": "doi.org",
+            "n": 3
+          },
+          {
+            "title": "Kaczmarz Linear Attention",
+            "url": "https://arxiv.org/abs/2605.08587v1",
+            "source": "arxiv",
+            "snippet": "Long-context language modeling remains central to modern sequence modeling, but the quadratic cost of Transformer attention makes scaling computationally prohibitive. Linear recurrent models address this bottleneck by compressing the context into a fixed-size state, making the ru",
+            "published": "2026-05-09",
+            "authors": [
+              "Jiaxuan Zou",
+              "Ruifeng Ren",
+              "Yong Liu"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "85c9bdb23a1d",
+            "domain": "arxiv.org",
+            "n": 4
+          },
+          {
+            "title": "Gated KalmaNet: A Fading Memory Layer Through Test-Time Ridge Regression",
+            "url": "https://doi.org/10.48550/arxiv.2511.21016",
+            "source": "openalex",
+            "snippet": "Linear State-Space Models (SSMs) offer an efficient alternative to softmax Attention with constant memory and linear compute, but their lossy, fading summary of the past hurts recall-oriented tasks. We propose Gated KalmaNet (GKA, pronounced \"gee-ka\"), a layer that accounts for t",
+            "published": "2025",
+            "authors": [
+              "Liangzu Peng",
+              "Chattopadhyay, Aditya",
+              "Luca Zancato",
+              "Elvis Nunez",
+              "Xia, Wei",
+              "Stefano Soatto"
+            ],
+            "extra": {
+              "cited_by": 12,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "2d6c52fe3a4c",
+            "domain": "doi.org",
+            "n": 5
+          },
+          {
+            "title": "Gated KalmaNet: A Fading Memory Layer Through Test-Time Ridge Regression",
+            "url": "https://arxiv.org/abs/2511.21016v3",
+            "source": "arxiv",
+            "snippet": "Linear State-Space Models (SSMs) offer an efficient alternative to softmax Attention with constant memory and linear compute, but their lossy, fading summary of the past hurts recall-oriented tasks. We propose Gated KalmaNet (GKA, pronounced \"gee-ka\"), a layer that accounts for t",
+            "published": "2025-11-26",
+            "authors": [
+              "Liangzu Peng",
+              "Aditya Chattopadhyay",
+              "Luca Zancato",
+              "Elvis Nunez",
+              "Wei Xia",
+              "Stefano Soatto"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "284398978a4b",
+            "domain": "arxiv.org",
+            "n": 6
+          },
+          {
+            "title": "MemT-1.0: Towards Memory-Native Evolution",
+            "url": "https://doi.org/10.48550/arxiv.2610.26825",
+            "source": "openalex",
+            "snippet": "Memory-native evolution requires making memory an intrinsic capability of foundation models, enabling them to continuously accumulate and utilize information. To this end, we introduce MemT-1.0, a new architecture of memory foundation models that internalize memory as part of mod",
+            "published": "2026",
+            "authors": [
+              "Zhiyu Li",
+              "Zeyu Zhang",
+              "Linyun Liu",
+              "Yiwei Bu",
+              "Chenyang Xi",
+              "Xichong Zhang"
+            ],
+            "extra": {
+              "cited_by": 3,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "6449b6d77dc0",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "Taylor-Calibrate: Principled Initialization for Hybrid Linear Attention Distillation",
+            "url": "https://doi.org/10.48550/arxiv.2606.16429",
+            "source": "openalex",
+            "snippet": "Hybrid linear attention models offer an appealing path to faster long-context inference: they reduce the quadratic cost and KV-cache burden of full softmax attention while retaining much of the quality of Transformer models. A practical way to obtain such models is to convert a p",
+            "published": "2026",
+            "authors": [
+              "Zhongzhu Zhou",
+              "Qile Wu",
+              "Junxiong Wang",
+              "Mayank Mishra",
+              "Shuaiwen Leon Song",
+              "Ben Athiwaratkun"
+            ],
+            "extra": {
+              "cited_by": 2,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "7dceb07025f4",
+            "domain": "doi.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.5130854039999804,
+          "search": 0.5594208030000232,
+          "rank": 3.752589807999982,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 4.825159534000022,
+          "total": 8.784510054000009
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 4,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
     },
     {
       "kind": "paper",
-      "topic": "DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding",
-      "upvotes": 27,
-      "context": "Multi-page document vision-language models encode each page independently, creating a feature-level discontinuity at page boundaries: visual tokens are formed without access to content on adjacent pages, and the language",
-      "link": "https://huggingface.co/papers/2611.34420",
-      "question": "What does the new AI research paper \"DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding\" propose, and why does it matter?",
+      "topic": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+      "upvotes": 101,
+      "context": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear w",
+      "link": "https://huggingface.co/papers/2611.34232",
+      "question": "What does the new AI research paper \"OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms\" propose, and why does it matter?",
       "focus": "academic",
       "category": "ai",
       "category_by": "nvidia",
-      "signal": "▲ 27 upvotes on Hugging Face Daily Papers",
+      "signal": "▲ 101 upvotes on Hugging Face Daily Papers",
       "result": {
-        "question": "What does the new AI research paper \"DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding\" propose, and why does it matter?",
+        "question": "What does the new AI research paper \"OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms\" propose, and why does it matter?",
         "focus": "academic",
         "lang": "en",
         "queries": [
-          "DocSEAM AI research paper proposal",
-          "Bidirectional Cross-Page Encoding document understanding",
-          "importance of DocSEAM paper"
+          "OS-Omni AI research paper proposal",
+          "OS-Omni benchmarking generalist agents",
+          "importance of OS-Omni paper"
         ],
-        "answer": "DocSEAM proposes a lightweight module that injects cross-page context into multi-page document vision-language models by forming local triplets between each page and its neighbors, applying masked self-attention with directional salience gates to fuse neighbor information, and returning only enriched center-page tokens [1]. It matters because it achieves state-of-the-art results among open-weight models up to 10B parameters on five multi-page document VQA benchmarks and reduces sensitivity to boundary placement under controlled re-pagination [1].",
+        "answer": "OS-Omni proposes a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments [1][2]. It matters because existing benchmarks typically isolate single platforms, leaving unclear whether a single generalist agent can execute long-horizon workflows spanning multiple operating systems and persistent application states [1][2]. The benchmark releases tasks in versioned waves of 300 each; v1 contains 48 tasks per platform and 12 cross-platform workflows pairing a desktop with an Android phone [1][2]. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, executable final-state evaluators, and controlled service-backed applications for workflows involving account, cart, budget, calendar, and message states [1][2]. Human studies show OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps [1][2]. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS [1][2]. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes [1][2].",
         "followups": [
-          "What are the VQA benchmarks?",
-          "How does it reduce boundary sensitivity?",
-          "Is the module computationally heavy?"
+          "What are the key platforms tested?",
+          "What is a cross-platform workflow example?",
+          "Where can I find the benchmark?"
         ],
         "sources": [
           {
-            "title": "DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding",
-            "url": "https://arxiv.org/abs/2611.34420v1",
+            "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+            "url": "https://doi.org/10.48550/arxiv.2611.34232",
+            "source": "openalex",
+            "snippet": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon wo",
+            "published": "2026",
+            "authors": [
+              "Hui Shen",
+              "Yunta Hsieh",
+              "Jianing Ma",
+              "Zhuoran Yin",
+              "Zhuhan Bao",
+              "Ziyuan Liu"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "e0faecd996f7",
+            "domain": "doi.org",
+            "n": 1
+          },
+          {
+            "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+            "url": "https://arxiv.org/abs/2611.34232v1",
             "source": "arxiv",
-            "snippet": "Multi-page document vision-language models encode each page independently, creating a feature-level discontinuity at page boundaries: visual tokens are formed without access to content on adjacent pages, and the language model must reason over these page representations formed in",
+            "snippet": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon wo",
             "published": "2026-11-25",
             "authors": [
-              "Hoang-Nhat Nguyen",
-              "Chen Change Loy"
+              "Hui Shen",
+              "Yunta Hsieh",
+              "Jianing Ma",
+              "Zhuoran Yin",
+              "Zhuhan Bao",
+              "Ziyuan Liu"
             ],
             "extra": {
               "license": "arXiv"
             },
-            "id": "d2896f6d0808",
+            "id": "f83c5e5d5c3d",
             "domain": "arxiv.org",
-            "n": 1
-          },
-          {
-            "title": "Focus Anywhere for Fine-grained Multi-page Document Understanding",
-            "url": "https://doi.org/10.48550/arxiv.2405.14295",
-            "source": "openalex",
-            "snippet": "Modern LVLMs still struggle to achieve fine-grained document understanding, such as OCR/translation/caption for regions of interest to the user, tasks that require the context of the entire page, or even multiple pages. Accordingly, this paper proposes Fox, an effective pipeline,",
-            "published": "2024",
-            "authors": [
-              "Chenglong Liu",
-              "Haoran Wei",
-              "Jinyue Chen",
-              "Lingyu Kong",
-              "Ge, Zheng",
-              "Zhu, Zining"
-            ],
-            "extra": {
-              "cited_by": 89,
-              "venue": "arXiv",
-              "license": "CC0 metadata"
-            },
-            "id": "c6ba5b2164be",
-            "domain": "doi.org",
             "n": 2
           },
           {
-            "title": "Document Understanding Dataset and Evaluation (DUDE)",
-            "url": "https://doi.org/10.1109/iccv51070.2023.01789",
+            "title": "OfficeBench: Benchmarking Language Agents across Multiple Applications for Office Automation",
+            "url": "https://doi.org/10.48550/arxiv.2407.19056",
             "source": "openalex",
-            "snippet": "We call on the Document AI (DocAI) community to reevaluate current methodologies and embrace the challenge of creating more practically-oriented benchmarks. Document Understanding Dataset and Evaluation (DUDE) seeks to remediate the halted research progress in understanding visua",
-            "published": "2023",
+            "snippet": "Office automation significantly enhances human productivity by automatically finishing routine tasks in the workflow. Beyond the basic information extraction studied in much of the prior document AI literature, the office automation research should be extended to more realistic o",
+            "published": "2024",
             "authors": [
-              "Jordy Van Landeghem",
-              "Rafał Powalski",
-              "Rubèn Tito",
-              "Dawid Jurkiewicz",
-              "Matthew B. Blaschko",
-              "Łukasz Borchmann"
+              "Zilong Wang",
+              "Yuedong Cui",
+              "Li Zhong",
+              "Zimin Zhang",
+              "Da Yin",
+              "Bill Yuchen Lin"
             ],
             "extra": {
-              "cited_by": 256,
-              "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+              "cited_by": 108,
+              "venue": "arXiv",
               "license": "CC0 metadata"
             },
-            "id": "69f7aeda67fd",
+            "id": "f51a909ae495",
             "domain": "doi.org",
             "n": 3
           },
           {
-            "title": "Bidirectional Context-Aware Hierarchical Attention Network for Document Understanding",
-            "url": "https://doi.org/10.48550/arxiv.1908.06006",
+            "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
+            "url": "https://doi.org/10.48550/arxiv.2605.16909",
             "source": "openalex",
-            "snippet": "The Hierarchical Attention Network (HAN) has made great strides, but it suffers a major limitation: at level 1, each sentence is encoded in complete isolation. In this work, we propose and compare several modifications of HAN in which the sentence encoder is able to make context-",
-            "published": "2019",
+            "snippet": "Tool-using agents are increasingly expected to operate across realistic professional workflows, where they must interpret multimodal inputs, coordinate external tools, inspect intermediate artifacts, and revise their actions before producing a final result. Existing benchmarks, h",
+            "published": "2026",
             "authors": [
-              "Jean-Baptiste Remy",
-              "Antoine J.‐P. Tixier",
-              "Michalis Vazirgiannis"
+              "Zhiqiang Liu",
+              "Wenhui Dong",
+              "Yilang Tan",
+              "曲玉文",
+              "Haochen Yin",
+              "Chenyang Si"
             ],
             "extra": {
-              "cited_by": 4,
+              "cited_by": 0,
               "venue": "arXiv",
               "license": "CC0 metadata"
             },
-            "id": "ef4007b09685",
+            "id": "26c657a62380",
             "domain": "doi.org",
             "n": 4
           },
           {
-            "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
-            "url": "https://doi.org/10.48550/arxiv.1810.04805",
+            "title": "OmniGUI: Benchmarking GUI Agents in Omni-Modal Smartphone Environments",
+            "url": "https://doi.org/10.48550/arxiv.2605.18758",
             "source": "openalex",
-            "snippet": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly co",
-            "published": "2018",
+            "snippet": "Current benchmarks for graphical user interface (GUI) agents predominantly rely on static screenshots. However, real-world smartphone interaction routinely requires agents to process transient audio cues and temporal video dynamics that are tightly coupled with the moment of acti",
+            "published": "2026",
             "authors": [
-              "Jacob Devlin",
-              "Ming-Wei Chang",
-              "Kenton Lee",
-              "Kristina Toutanova"
+              "Félix Henry",
+              "Xiaochen Lin",
+              "Jiangyou Zhu",
+              "Yangfan",
+              "Bingqian Zhang",
+              "Min Chen"
             ],
             "extra": {
-              "cited_by": 64095,
+              "cited_by": 2,
               "venue": "arXiv",
               "license": "CC0 metadata"
             },
-            "id": "4b1030f70b82",
+            "id": "0247ce38a70a",
             "domain": "doi.org",
             "n": 5
           },
           {
-            "title": "Survey of BERT (Bidirectional Encoder Representation Transformer) types",
-            "url": "https://doi.org/10.1088/1742-6596/1963/1/012173",
+            "title": "Focused Omni-Modal GUI Agents",
+            "url": "https://doi.org/10.48550/arxiv.2610.26203",
             "source": "openalex",
-            "snippet": "There are many algorithms used in Natural Language Processing( NLP) to achieve good results, such as Machine Learning (ML), Deep Learning(DL) and many other algorithms. In Natural Language Processing,the first challenges is to convert text to numbers for using by any algorithm th",
-            "published": "2021",
+            "snippet": "Graphical User Interface (GUI) agents increasingly act over streaming omni-modal observations spanning screenshots, audio, video, interaction history, and device states. However, exposing this complete context uniformly at every step ignores that relevance is transient and sparse",
+            "published": "2026",
             "authors": [
-              "Athar Hussein Mohammed",
-              "Ali H. Ali"
+              "Fuyao Zhang",
+              "Wenwen He",
+              "Jiaming Zhang",
+              "Yurong Hao",
+              "Xuan Wang",
+              "Guowei Guan"
             ],
             "extra": {
-              "cited_by": 84,
-              "venue": "Journal of Physics Conference Series",
+              "cited_by": 0,
+              "venue": "arXiv",
               "license": "CC0 metadata"
             },
-            "id": "34f23e3fc896",
+            "id": "ba7316c85da0",
             "domain": "doi.org",
             "n": 6
           },
           {
-            "title": "MosaicBERT: A Bidirectional Encoder Optimized for Fast Pretraining",
-            "url": "https://doi.org/10.52202/075280-0137",
+            "title": "Deep Research of Deep Research: From Transformer to Agent, From AI to AI for Science",
+            "url": "https://doi.org/10.48550/arxiv.2603.28361",
             "source": "openalex",
-            "snippet": "Although BERT-style encoder models are heavily used in NLP research, many researchers do not pretrain their own BERTs from scratch due to the high cost of training. In the past half-decade since BERT first rose to prominence, many advances have been made with other transformer ar",
-            "published": "2023",
+            "snippet": "With the advancement of large language models (LLMs) in their knowledge base and reasoning capabilities, their interactive modalities have evolved from pure text to multimodality and further to agentic tool use. Consequently, their applications have broadened from question answer",
+            "published": "2026",
             "authors": [
-              "Jacob Portes",
-              "Alex Trott",
-              "Sam Havens",
-              "Daniel King",
-              "Abhinav Venigalla",
-              "Moin Nadeem"
+              "Yipeng Yu"
             ],
             "extra": {
-              "cited_by": 60,
-              "venue": "neural information processing systems",
+              "cited_by": 3,
+              "venue": "arXiv",
               "license": "CC0 metadata"
             },
-            "id": "bc95bcb36e5c",
+            "id": "b0939e200970",
             "domain": "doi.org",
             "n": 7
+          },
+          {
+            "title": "VIT-LENS: Towards Omni-modal Representations",
+            "url": "https://doi.org/10.1109/cvpr52733.2024.02516",
+            "source": "openalex",
+            "snippet": "Aiming to advance AI agents, large foundation models significantly improve reasoning and instruction execution, yet the current focus on vision and language neglects the potential of perceiving diverse modalities in open-world environments. However, the success of data-driven vis",
+            "published": "2024",
+            "authors": [
+              "Weixian Lei",
+              "Yixiao Ge",
+              "Kun Yi",
+              "Jianfeng Zhang",
+              "Difei Gao",
+              "Dylan Sun"
+            ],
+            "extra": {
+              "cited_by": 54,
+              "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+              "license": "CC0 metadata"
+            },
+            "id": "f6741eb13230",
+            "domain": "doi.org",
+            "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.6273734279999985,
-          "search": 0.3808548819999942,
-          "rank": 2.595128066000001,
+          "plan": 0.6146495460000097,
+          "search": 6.961990530000037,
+          "rank": 1.8385108609999747,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.6033876510000056,
-          "total": 5.006921143
+          "retrieve": 9.415230716999986,
+          "total": 12.35069307599997
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 2,
+        "sentences": 7,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
@@ -418,7 +1028,7 @@
       "kind": "github",
       "topic": "Marvisak/VIctory",
       "context": "An attempt at running GTA VI on PC",
-      "stars": 13380,
+      "stars": 13750,
       "language": "Rust",
       "created": "2026-11-23",
       "link": "https://github.com/Marvisak/VIctory",
@@ -426,20 +1036,20 @@
       "focus": "all",
       "category": "gadgets",
       "category_by": "nvidia",
-      "signal": "★ 13,380 GitHub stars since 2026-11-23 · Rust",
+      "signal": "★ 13,750 GitHub stars since 2026-11-23 · Rust",
       "result": {
         "question": "What is the new open-source project VIctory (An attempt at running GTA VI on PC), and why is it getting attention?",
         "focus": "all",
         "lang": "en",
         "queries": [
           "Victory GTA VI open-source project",
-          "running GTA VI on PC open source"
+          "GTA VI PC open-source attention"
         ],
-        "answer": "Victory is an open-source project attempting to run Grand Theft Auto VI on PC, and it is getting attention because it demonstrates how developers can reverse-engineer and port recent commercial games to open-source platforms despite official PC releases [1]. The project leverages the open-source development environment built on Grand Theft Auto V to enable running the newer title [4]. \n\nKey details about the project and its context:\n- Victory is built on the foundation of GTA V's open-source development environment, which was originally created for self-driving vehicle research [4]\n- The project highlights the growing trend of open-source simulators for autonomous driving, with analysis of the past thirty years' development trajectory revealing increased functionality scope [7]\n- GTA VI was released in 2026 and is set in the fictional US state of Leonida, based on Florida, following the criminal duo Jason Duval and Lucia Caminos [1]\n- The original GTA V from 2013 served as the base platform for the development environment used in Victory [4]\n- Rockstar's global development teams had more than doubled since the 2018 launch of Red Dead Redemption 2, indicating the scale of development for GTA VI [1]\n\nThe attention surrounding Victory stems from its demonstration of open-source capabilities in running cutting-edge commercial games, connecting to broader trends in autonomous driving simulation and game preservation efforts.",
+        "answer": "Victory is an open-source project aimed at running Grand Theft Auto VI on PC, gaining attention as one of the first attempts to reverse-engineer and port the 2026 title to the platform. Because GTA VI is a recent commercial release, modding it presents significant technical challenges. The project leverages the precedent set by GTA V modding, which relies on third-party software due to the lack of official editing tools from Rockstar Games [2]. Notably, the open-source development environment for self-driving vehicles was built on top of GTA V [4], demonstrating the game's utility beyond entertainment. GTA VI's development began after the 2018 launch of Red Dead Redemption 2, which itself had a development cycle lasting over eight years [8]. The open-source community's interest in Victory reflects broader trends in GTA modding, where users alter gameplay logic and asset files to modify their experience [2].",
         "followups": [
-          "Is GTA VI officially on PC yet?",
-          "How does it use GTA V code?",
-          "What are the technical challenges?"
+          "What are the technical challenges?",
+          "How does it differ from GTA V modding?",
+          "When is a release expected?"
         ],
         "sources": [
           {
@@ -458,17 +1068,17 @@
             "n": 1
           },
           {
-            "title": "Grand Theft Auto",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto",
+            "title": "Grand Theft Auto modding",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_modding",
             "source": "wikipedia",
-            "snippet": "Grand Theft Auto (GTA) is an action-adventure video game series created by the Scottish programmers David Jones and Mike Dailly at DMA Design, now known as Rockstar North. Later titles were developed under the oversight of brothers Dan and Sam Houser, Leslie Benzies and Aaron Gar",
+            "snippet": "User modification, or modding, of video games in the open world sandbox Grand Theft Auto series is a popular trend in the PC gaming community. These unofficial modifications are made by altering gameplay logic and asset files within a user's game installation, and can change the ",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "d56b41b53500",
+            "id": "2abef26406fa",
             "domain": "en.wikipedia.org",
             "n": 2
           },
@@ -506,192 +1116,17 @@
             "n": 4
           },
           {
-            "title": "List of commercial video games with available source code",
-            "url": "https://en.wikipedia.org/wiki/List_of_commercial_video_games_with_available_source_code",
+            "title": "Grand Theft Auto (video game)",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_(video_game)",
             "source": "wikipedia",
-            "snippet": "This is a list of commercial video games with available source code. The source code of these commercially developed and distributed video games is available to the public or the games' communities. In several of the cases listed here, the game's developers released the source co",
+            "snippet": "Grand Theft Auto is a 1997 action-adventure game developed by DMA Design and published by BMG Interactive. It is the first game in the Grand Theft Auto series and was released in November 1997 for MS-DOS and Windows, in December 1997 for the PlayStation and in October 1999 for th",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "7e22fd4dfd2c",
-            "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
-            "title": "List of video games in development",
-            "url": "https://en.wikipedia.org/wiki/List_of_video_games_in_development",
-            "source": "wikipedia",
-            "snippet": "This is a confirmed list of video games in development, but are scheduled for release beyond 2027 or currently carry no announced, reported, or confirmed release date at all.",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "2d96330e804d",
-            "domain": "en.wikipedia.org",
-            "n": 6
-          },
-          {
-            "title": "Choose Your Simulator Wisely: A Review on Open-Source Simulators for Autonomous Driving",
-            "url": "https://doi.org/10.1109/tiv.2024.3374044",
-            "source": "openalex",
-            "snippet": "Simulators play a crucial role in autonomous driving, offering significant time, cost, and labor savings. Over the past few years, the number of simulators for autonomous driving has grown substantially. However, there is a growing concern about the validity of algorithms develop",
-            "published": "2024",
-            "authors": [
-              "Yueyuan Li",
-              "Wei Yuan",
-              "Songan Zhang",
-              "Weihao Yan",
-              "Qiyuan Shen",
-              "Chunxiang Wang"
-            ],
-            "extra": {
-              "cited_by": 134,
-              "venue": "IEEE Transactions on Intelligent Vehicles",
-              "license": "CC0 metadata"
-            },
-            "id": "336820f85288",
-            "domain": "doi.org",
-            "n": 7
-          },
-          {
-            "title": "Red Dead Redemption",
-            "url": "https://en.wikipedia.org/wiki/Red_Dead_Redemption",
-            "source": "wikipedia",
-            "snippet": "Red Dead Redemption is a 2010 action-adventure game developed by Rockstar San Diego and published by Rockstar Games. A successor to 2004's Red Dead Revolver, it is the second game in the Red Dead series. Red Dead Redemption is set during the decline of the American frontier in th",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "ce7607b69669",
-            "domain": "en.wikipedia.org",
-            "n": 8
-          }
-        ],
-        "warnings": [],
-        "timings": {
-          "plan": 0.9230341230000008,
-          "search": 0.38790688400000306,
-          "rank": 3.4090933210000003,
-          "dense": 1.0,
-          "rerank": 1.0,
-          "retrieve": 4.720112873000005,
-          "total": 9.280961421
-        },
-        "nvidia": true,
-        "llm_error": ""
-      },
-      "metrics": {
-        "sentences": 9,
-        "citation_coverage": 0.7777777777777778,
-        "citation_validity": 1.0,
-        "faithfulness": 0.7142857142857143
-      }
-    },
-    {
-      "kind": "wikipedia",
-      "topic": "Grand Theft Auto VI",
-      "views": 151092,
-      "context": "2026 video game",
-      "link": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
-      "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
-      "focus": "wiki",
-      "category": "gadgets",
-      "category_by": "nvidia",
-      "signal": "👁 151,092 Wikipedia views yesterday",
-      "result": {
-        "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
-        "focus": "wiki",
-        "lang": "en",
-        "queries": [
-          "What is Grand Theft Auto VI",
-          "Grand Theft Auto VI key facts"
-        ],
-        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following 2013's Grand Theft Auto V, and the sixteenth entry overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to escape corrupt police officers [1]. Preliminary work began in 2014 after the release of Grand Theft Auto V; principal production began after the 2018 launch of Red Dead Redemption 2 [1]. Rockstar's global development teams had more than doubled since Red Dead Redemption 2 [1]. The protagonists' dynamic is inspired by Bonnie and Clyde, and the story was written to ensure players experience different areas of Leonida [1]. The 2026 promotional trailer \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix and featured 27 minutes of game footage [2]. Lucia Caminos is the first non-optional playable female protagonist in the series, portrayed by Manni L. Perez [3].",
-        "followups": [
-          "When is GTA VI expected to release?",
-          "Where is Leonida based?",
-          "Who are the main characters?"
-        ],
-        "sources": [
-          {
-            "title": "Grand Theft Auto VI",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
-            "source": "wikipedia",
-            "snippet": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. It is the eighth main entry in the Grand Theft Auto series, following 2013's Grand Theft Auto V, and the sixteenth entry overall. Set in the fictional US state of Leonida, based on Flor",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e02dca2e6f61",
-            "domain": "en.wikipedia.org",
-            "n": 1
-          },
-          {
-            "title": "Grand Theft Auto VI: An Extended Look",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_An_Extended_Look",
-            "source": "wikipedia",
-            "snippet": "\"Grand Theft Auto VI: An Extended Look\" is a 2026 promotional trailer previewing the video game Grand Theft Auto VI. The plot follows criminal couple Jason Duval and Lucia Caminos as they gain a reputation as underworld contractors in Leonida, a fictionalised version of Florida. ",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "a3ad5051691a",
-            "domain": "en.wikipedia.org",
-            "n": 2
-          },
-          {
-            "title": "Lucia Caminos",
-            "url": "https://en.wikipedia.org/wiki/Lucia_Caminos",
-            "source": "wikipedia",
-            "snippet": "Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games's 2026 video game Grand Theft Auto VI. Portrayed by Manni L. Perez, she is the first non-optional playable female protagonist in the G",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "c18959d481d1",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
-            "title": "Niko Bellic",
-            "url": "https://en.wikipedia.org/wiki/Niko_Bellic",
-            "source": "wikipedia",
-            "snippet": "Niko Bellic (NEE-koh BEL-ək; Serbian: Нико Белић) is a fictional character and the playable protagonist of Rockstar North's video game Grand Theft Auto IV (2008), the sixth main entry in Rockstar Games' Grand Theft Auto series. He also makes non-playable appearances in the game's",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "9a1d6c8ac9f4",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "Grand Theft Auto: Vice City",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
-            "source": "wikipedia",
-            "snippet": "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the fourth main game in the Grand Theft Auto series, following 2001's Grand Theft Auto III, and the sixth entry overall. Set in 1986 within the fictional",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "1ce06c45db6a",
+            "id": "b65ded0cf9d0",
             "domain": "en.wikipedia.org",
             "n": 5
           },
@@ -711,610 +1146,229 @@
             "n": 6
           },
           {
-            "title": "Jack Thompson (activist)",
-            "url": "https://en.wikipedia.org/wiki/Jack_Thompson_(activist)",
+            "title": "List of video games in development",
+            "url": "https://en.wikipedia.org/wiki/List_of_video_games_in_development",
             "source": "wikipedia",
-            "snippet": "John Bruce Thompson (born July 25, 1951) is an American activist and disbarred attorney. As an attorney, Thompson focused his legal efforts against what he perceives as obscenity in modern culture. He gained notoriety as an anti-video game activist, criticizing the content of gam",
+            "snippet": "This is a confirmed list of video games in development, but are scheduled for release beyond 2027 or currently carry no announced, reported, or confirmed release date at all.",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "e025d9d77064",
+            "id": "2d96330e804d",
             "domain": "en.wikipedia.org",
             "n": 7
           },
           {
-            "title": "Development of Red Dead Redemption",
-            "url": "https://en.wikipedia.org/wiki/Development_of_Red_Dead_Redemption",
+            "title": "Red Dead Redemption 2",
+            "url": "https://en.wikipedia.org/wiki/Red_Dead_Redemption_2",
             "source": "wikipedia",
-            "snippet": "A team of approximately 1,000 people developed Red Dead Redemption over five years. Rockstar Games published the action-adventure game in May 2010 for the PlayStation 3 and Xbox 360. A spiritual successor to the 2004 game Red Dead Revolver, its development was led by Rockstar San",
+            "snippet": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games. The game is the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption. The story is set in a fictionalized representation of the United States in 1899 ",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "41c9194e0277",
+            "id": "a56c34573760",
             "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.42460594800000706,
-          "search": 0.28545239399998934,
-          "rank": 3.872915158000012,
+          "plan": 0.5151449420000063,
+          "search": 6.50372281999995,
+          "rank": 2.91227720400002,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.583019187000005,
-          "total": 6.596016923999997
-        },
-        "nvidia": true,
-        "llm_error": ""
-      },
-      "metrics": {
-        "sentences": 8,
-        "citation_coverage": 0.875,
-        "citation_validity": 1.0,
-        "faithfulness": 1.0
-      }
-    },
-    {
-      "kind": "hackernews",
-      "topic": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-      "points": 1985,
-      "comments": 1815,
-      "link": "https://scottaaronson.blog/?p=10379",
-      "discussion": "https://news.ycombinator.com/item?id=50646108",
-      "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
-      "focus": "all",
-      "category": "bigtech",
-      "category_by": "nvidia",
-      "signal": "▲ 1,985 points on Hacker News · 1,815 comments",
-      "result": {
-        "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
-        "focus": "all",
-        "lang": "en",
-        "queries": [
-          "what is happening now",
-          "significance of current events"
-        ],
-        "answer": "Based on the search results, the query \"Holy shit holy shit holy shit holy shit: The magnitude of what's now happening — what is this about and why does it matter?\" appears to reference the ongoing Iran War, as indicated by result [8], which describes a Hacker News post documenting major events of the \"current Iran War.\"\n\nThe magnitude of this situation matters because it represents a significant geopolitical conflict with widespread implications. Result [8] explains that tracking this conflict is \"incredibly difficult\" from a distance, with much of the daily information coming from social media statements rather than verified reports. The post creator is attempting to document \"major events of the current Iran War in one place\" through a scrolling timeline, acknowledging the challenge of including every single military action or politically aligned statement [8].\n\nThe importance of understanding this situation stems from its potential impact on global stability, regional relationships, and international security. The difficulty in obtaining accurate, comprehensive information highlights the complexity of modern conflict reporting and the challenges individuals face in staying informed about significant global events.\n\n[8]",
-        "followups": [
-          "What are the major events?",
-          "Where can I find verified reports?",
-          "Who is documenting this conflict?"
-        ],
-        "sources": [
-          {
-            "title": "What is happening now? entertainment",
-            "url": "https://www.um.edu.mt/library/oar/handle/123456789/10987",
-            "source": "openalex",
-            "snippet": "What is happening now? entertainment",
-            "published": "2015",
-            "authors": [
-              "Matthew Muscat"
-            ],
-            "extra": {
-              "cited_by": 0,
-              "venue": null,
-              "license": "CC0 metadata"
-            },
-            "id": "6b8c43d06c11",
-            "domain": "um.edu.mt",
-            "n": 1
-          },
-          {
-            "title": "The Status of Becoming: What is Happening Now?",
-            "url": "https://doi.org/10.2307/2025813",
-            "source": "openalex",
-            "snippet": "The Status of Becoming: What is Happening Now?",
-            "published": "1979",
-            "authors": [
-              "Ernest Sosa"
-            ],
-            "extra": {
-              "cited_by": 14,
-              "venue": "The Journal of Philosophy",
-              "license": "CC0 metadata"
-            },
-            "id": "9f5b94b86267",
-            "domain": "doi.org",
-            "n": 2
-          },
-          {
-            "title": "Religious significance of Jerusalem",
-            "url": "https://en.wikipedia.org/wiki/Religious_significance_of_Jerusalem",
-            "source": "wikipedia",
-            "snippet": "The city of Jerusalem is sacred to many religious traditions, including the Abrahamic religions of Judaism, Christianity and Islam which consider it a holy city. Some of the most sacred places for each of these religions are found in Jerusalem, including the Temple Mount/Haram Al",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "0c2a673c2c71",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
-            "title": "The $5.5T Paradox: Structural displacement in the GPU/AI infra labor demand?",
-            "url": "https://news.ycombinator.com/item?id=46935171",
-            "source": "hackernews",
-            "snippet": "The Q1 2026 labor data presents a significant anomaly. We are observing a persistent high-volume layoff cycle (~25k YTD) occurring simultaneously with a projected $5.5T global economic loss attributed to unfilled technical roles (IDC). This suggests we aren't witnessing a cyclica",
-            "published": "2026-02-08",
-            "authors": [
-              "y2236li"
-            ],
-            "extra": {
-              "points": 4,
-              "comments": 2,
-              "discussion": "https://news.ycombinator.com/item?id=46935171"
-            },
-            "id": "5261c8d9321d",
-            "domain": "news.ycombinator.com",
-            "n": 4
-          },
-          {
-            "title": "Educating clinicians. What is happening now?",
-            "url": "https://research.usc.edu.au/esploro/outputs/conferencePresentation/Educating-clinicians--What-is-happening-now/99450690102621",
-            "source": "openalex",
-            "snippet": "Educating clinicians. What is happening now?",
-            "published": "2011",
-            "authors": [
-              " Geoff Simon"
-            ],
-            "extra": {
-              "cited_by": 0,
-              "venue": "UniSC Research Bank (University of the Sunshine Coast)",
-              "license": "CC0 metadata"
-            },
-            "id": "71c05ed0af68",
-            "domain": "research.usc.edu.au",
-            "n": 5
-          },
-          {
-            "title": "LTA history and its significance for current events",
-            "url": "https://doi.org/10.2514/6.1977-328",
-            "source": "openalex",
-            "snippet": "LTA history and its significance for current events",
-            "published": "1977",
-            "authors": [
-              "J. Gordon Vaeth"
-            ],
-            "extra": {
-              "cited_by": 0,
-              "venue": "AIAA Annual Meeting and Technical Display",
-              "license": "CC0 metadata"
-            },
-            "id": "23c5f80a7084",
-            "domain": "doi.org",
-            "n": 6
-          },
-          {
-            "title": "IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now",
-            "url": "http://www.potaroo.net/ispcol/2012-08/EndPt2.html",
-            "source": "hackernews",
-            "snippet": "IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now",
-            "published": "2012-08-02",
-            "authors": [
-              "liotier"
-            ],
-            "extra": {
-              "points": 2,
-              "comments": 1,
-              "discussion": "https://news.ycombinator.com/item?id=4328064"
-            },
-            "id": "6dbe29c252ff",
-            "domain": "potaroo.net",
-            "n": 7
-          },
-          {
-            "title": "Show HN: A Little Excursion",
-            "url": "https://alittleexcursion.com/",
-            "source": "hackernews",
-            "snippet": "I'm attempting to document the major events of the current Iran War in one place. Its incredibly difficult to know whats going on from across the world and most of what we see daily are just Trump's tweets. I've thrown together a scrolling timeline to help myself (and others) tra",
-            "published": "2026-04-07",
-            "authors": [
-              "zzzzzzzzzzzxc"
-            ],
-            "extra": {
-              "points": 2,
-              "comments": 0,
-              "discussion": "https://news.ycombinator.com/item?id=47680001"
-            },
-            "id": "3b267c5cf490",
-            "domain": "alittleexcursion.com",
-            "n": 8
-          }
-        ],
-        "warnings": [],
-        "timings": {
-          "plan": 0.42002181499999836,
-          "search": 0.663331245000002,
-          "rank": 3.603399870000004,
-          "dense": 1.0,
-          "rerank": 1.0,
-          "retrieve": 4.686878845999999,
-          "total": 6.928238577000002
+          "retrieve": 9.931241557000021,
+          "total": 13.14236205100002
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
         "sentences": 6,
-        "citation_coverage": 0.5,
+        "citation_coverage": 0.6666666666666666,
         "citation_validity": 1.0,
-        "faithfulness": 0.3333333333333333
+        "faithfulness": 0.75
       }
     },
     {
-      "kind": "hackernews",
-      "topic": "Nextcloud Office Desktop app",
-      "points": 396,
-      "comments": 203,
-      "link": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
-      "discussion": "https://news.ycombinator.com/item?id=50654289",
-      "question": "Nextcloud Office Desktop app — what is this about and why does it matter?",
-      "focus": "all",
-      "category": "opensource",
+      "kind": "wikipedia",
+      "topic": "Grand Theft Auto VI",
+      "views": 151092,
+      "context": "2026 video game",
+      "link": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
+      "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
+      "focus": "wiki",
+      "category": "gadgets",
       "category_by": "nvidia",
-      "signal": "▲ 396 points on Hacker News · 203 comments",
+      "signal": "👁 151,092 Wikipedia views yesterday",
       "result": {
-        "question": "Nextcloud Office Desktop app — what is this about and why does it matter?",
-        "focus": "all",
+        "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
+        "focus": "wiki",
         "lang": "en",
         "queries": [
-          "Nextcloud Office Desktop app explained",
-          "benefits of Nextcloud Office"
+          "Grand Theft Auto VI details",
+          "GTA VI key facts",
+          "Grand Theft Auto VI release date"
         ],
-        "answer": "Nextcloud Office Desktop app refers to the integration of Collabora Online (COOL) as a collaborative office suite within the Nextcloud platform, enabling real-time document editing directly in a web browser or desktop interface [2]. This matters because it provides an open-source alternative to proprietary cloud office suites like Microsoft 365 and Google Workspace, offering enterprises and institutions greater digital sovereignty and independence from U.S.-based \"big tech\" companies [2][1]. The desktop app leverages Nextcloud's modular architecture to bring office productivity tools—such as document, spreadsheet, and presentation editing—into a privacy-focused environment that can be self-hosted on legacy devices or on-premises servers [5][4]. It supports the OpenDocument format and is compatible with major formats used by Microsoft Office, ensuring interoperability while maintaining data privacy through local LLM-based AI assistants that run entirely on local hardware [1]. The implementation enhances data security and usability in cloud environments, particularly for users concerned with data sovereignty, security, cost efficiency, and environmental impact, as legacy devices can be repurposed to host personal cloud servers efficiently [5].",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following 2013's Grand Theft Auto V [1][6], and features a fictional US state of Leonida based on Florida [1]. The story follows criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to escape corrupt police [1]. The game's open world includes Miami-inspired Vice City and various side activities [1]. Development began preliminary work in 2014 after GTA V, with principal production starting after the 2018 launch of Red Dead Redemption 2; Rockstar's global development teams had more than doubled since then [1]. A promotional trailer, \"An Extended Look,\" premiered on Netflix in August 2026 and topped English language trailer charts in 87 countries [4]. The original score is composed by the French electronic duo Justice, scheduled for release on 11 December 2026 [3]. A soundtrack album, \"The Album,\" was released on November 20, 2026, through Atlantic Records and Take-Two Interactive, featuring artists such as Cardi B, Dua Lipa, Lana Del Rey, Morgan Wallen and Travis Scott [2].",
         "followups": [
-          "How do I install it?",
-          "Is it easy to set up?",
-          "What are its limitations?"
+          "When is GTA VI expected to release?",
+          "Where is Leonida located?",
+          "Who are the main characters?"
         ],
         "sources": [
           {
-            "title": "Nextcloud",
-            "url": "https://en.wikipedia.org/wiki/Nextcloud",
+            "title": "Grand Theft Auto VI",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
             "source": "wikipedia",
-            "snippet": "Nextcloud is a modular workspace platform designed to provide teams and businesses with a comprehensive environment for digital collaboration. Beyond central data management, it integrates office suites like Collabora Online and EuroOffice for cooperative workflows. The platform ",
+            "snippet": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. It is the eighth main entry in the Grand Theft Auto series, following 2013's Grand Theft Auto V, and the sixteenth entry overall. Set in the fictional US state of Leonida, based on Flor",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "3ec555ded626",
+            "id": "e02dca2e6f61",
             "domain": "en.wikipedia.org",
             "n": 1
           },
           {
-            "title": "Collabora Online",
-            "url": "https://en.wikipedia.org/wiki/Collabora_Online",
+            "title": "Grand Theft Auto VI: The Album",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_The_Album",
             "source": "wikipedia",
-            "snippet": "Collabora Online (often abbreviated as COOL) is an open-source online office suite developed by Collabora, based on LibreOffice Online, the web-based edition of the LibreOffice office suite. It enables real-time collaborative editing of documents, spreadsheets, presentations, and",
+            "snippet": "Grand Theft Auto VI: The Album is a soundtrack album for the 2026 action-adventure video game Grand Theft Auto VI. It was released on November 20, 2026, through Atlantic Records and Take-Two Interactive. The album, which emulates the music of Florida within Grand Theft Auto VI's ",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "01ef2f480bae",
+            "id": "dd56cba87008",
             "domain": "en.wikipedia.org",
             "n": 2
           },
           {
-            "title": "Implementing Searchable Symmetric Encryption with Attribute-Based Encryption for Secure Key Distribution and File Synchronization Using Nextcloud",
-            "url": "https://trepo.tuni.fi/handle/10024/159424",
-            "source": "openalex",
-            "snippet": "Master's Degree Programme in Information security July 2024Cloud computing has brought about a significant transformation in the way data is stored and managed by offering scalable and flexible resources.However, it poses significant data privacy challenges.Encrypting data in the",
-            "published": "2024",
-            "authors": [
-              "Denis Ssamba"
-            ],
-            "extra": {
-              "cited_by": 0,
-              "venue": "Tampere University Institutional Repository (Tampere University)",
-              "license": "CC0 metadata"
-            },
-            "id": "868e1afd4a8d",
-            "domain": "trepo.tuni.fi",
-            "n": 3
-          },
-          {
-            "title": "Self-hosting (network)",
-            "url": "https://en.wikipedia.org/wiki/Self-hosting_(network)",
+            "title": "Grand Theft Auto VI: Original Score",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_Original_Score",
             "source": "wikipedia",
-            "snippet": "Self-hosting is the practice of running a website or service on either a home server or a server fully under the user's control, as opposed to using a service managed by someone else. Self-hosting allows users to have more control over their data, privacy, and computing infrastru",
+            "snippet": "Grand Theft Auto VI: Original Score is the score for the 2026 video game Grand Theft Auto VI, composed by French electronic duo Justice. It is scheduled for release on 11 December 2026 through Ed Banger and Because Music.",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "3db871f8ab9b",
+            "id": "2f9658afacde",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Grand Theft Auto VI: An Extended Look",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_An_Extended_Look",
+            "source": "wikipedia",
+            "snippet": "\"Grand Theft Auto VI: An Extended Look\" is a 2026 promotional trailer previewing the video game Grand Theft Auto VI. The plot follows criminal couple Jason Duval and Lucia Caminos as they gain a reputation as underworld contractors in Leonida, a fictionalised version of Florida. ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "a3ad5051691a",
             "domain": "en.wikipedia.org",
             "n": 4
           },
           {
-            "title": "A Step Towards E-Sustainability : Deploying Legacy Devices for Self-Hosted Personal Clouds",
-            "url": "http://www.theseus.fi/handle/10024/902341",
-            "source": "openalex",
-            "snippet": "This thesis assesses the feasibility of deploying a Self-Hosted Personal Cloud (SPC) systems on legacy devices ascertaining sustainable and data privacy focused alternative to Commercial Cloud Platforms (CCPs). Further, thesis discussed the user motivations for adopting such a de",
-            "published": "2025",
-            "authors": [
-              "Irshad, Imran"
-            ],
-            "extra": {
-              "cited_by": 0,
-              "venue": "Theseus (Ammattikorkeakoulujen)",
-              "license": "CC0 metadata"
-            },
-            "id": "5aa6d0caa7bd",
-            "domain": "theseus.fi",
-            "n": 5
-          },
-          {
-            "title": "Assessing software privacy using the privacy flow-graph",
-            "url": "https://doi.org/10.1145/3549035.3561185",
-            "source": "openalex",
-            "snippet": "We increasingly rely on digital services and the conveniences they provide. Processing of personal data is integral to such services and thus privacy and data protection are a growing concern, and governments have responded with regulations such as the EU's GDPR. Following this, ",
-            "published": "2022",
-            "authors": [
-              "Feiyang Tang",
-              "Bjarte M. Østvold"
-            ],
-            "extra": {
-              "cited_by": 25,
-              "venue": null,
-              "license": "CC0 metadata"
-            },
-            "id": "e566550fab32",
-            "domain": "doi.org",
-            "n": 6
-          },
-          {
-            "title": "OpenOffice.org",
-            "url": "https://en.wikipedia.org/wiki/OpenOffice.org",
+            "title": "Grand Theft Auto",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto",
             "source": "wikipedia",
-            "snippet": "OpenOffice.org is an open-source office productivity software suite. It originated from the proprietary StarOffice, developed by Star Division, which was acquired by Sun Microsystems in 1999. Sun open-sourced the software in July 2000 as a free alternative to Microsoft Office, an",
+            "snippet": "Grand Theft Auto (GTA) is an action-adventure video game series created by the Scottish programmers David Jones and Mike Dailly at DMA Design, now known as Rockstar North. Later titles were developed under the oversight of brothers Dan and Sam Houser, Leslie Benzies and Aaron Gar",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "4f455f3d6f46",
+            "id": "d56b41b53500",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Grand Theft Auto V",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth entry overall. Set within the fictional state of Sa",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e1cf99e333f0",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Niko Bellic",
+            "url": "https://en.wikipedia.org/wiki/Niko_Bellic",
+            "source": "wikipedia",
+            "snippet": "Niko Bellic (NEE-koh BEL-ək; Serbian: Нико Белић) is a fictional character and the playable protagonist of Rockstar North's video game Grand Theft Auto IV (2008), the sixth main entry in Rockstar Games' Grand Theft Auto series. He also makes non-playable appearances in the game's",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "9a1d6c8ac9f4",
             "domain": "en.wikipedia.org",
             "n": 7
           },
           {
-            "title": "LabOps: A flexible self-hosted workflow of open source tools for efficient collaboration within research laboratories",
-            "url": "https://doi.org/10.1371/journal.pcbi.1013248",
-            "source": "openalex",
-            "snippet": "Effective collaboration, essential for success in academic environments, often requires efficient team communication and access to a team-oriented digital infrastructure. Despite the significance of efficient and effective collaboration within the academy, a standardized and stru",
-            "published": "2025",
-            "authors": [
-              "Hector D. Garcia‐Verdugo",
-              "Cristian Román‐Palacios"
-            ],
+            "title": "Grand Theft Auto: Vice City",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the fourth main game in the Grand Theft Auto series, following 2001's Grand Theft Auto III, and the sixth entry overall. Set in 1986 within the fictional",
+            "published": null,
+            "authors": [],
             "extra": {
-              "cited_by": 1,
-              "venue": "PLoS Computational Biology",
-              "license": "CC0 metadata"
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
             },
-            "id": "6ba2e717bc33",
-            "domain": "doi.org",
+            "id": "1ce06c45db6a",
+            "domain": "en.wikipedia.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.3799985450000065,
-          "search": 0.332823230999999,
-          "rank": 3.8850170929999948,
+          "plan": 0.5165649460000168,
+          "search": 0.3560498289999714,
+          "rank": 1.0887873540000328,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.597926618999999,
-          "total": 10.993241648000001
-        },
-        "nvidia": true,
-        "llm_error": ""
-      },
-      "metrics": {
-        "sentences": 5,
-        "citation_coverage": 1.0,
-        "citation_validity": 1.0,
-        "faithfulness": 0.6
-      }
-    },
-    {
-      "kind": "hackernews",
-      "topic": "Intel One Mono font",
-      "points": 465,
-      "comments": 238,
-      "link": "https://github.com/intel/intel-one-mono",
-      "discussion": "https://news.ycombinator.com/item?id=50653667",
-      "question": "Intel One Mono font — what is this about and why does it matter?",
-      "focus": "all",
-      "category": "software",
-      "category_by": "nvidia",
-      "signal": "▲ 465 points on Hacker News · 238 comments",
-      "result": {
-        "question": "Intel One Mono font — what is this about and why does it matter?",
-        "focus": "all",
-        "lang": "en",
-        "queries": [
-          "Intel One Mono font information",
-          "importance of Intel One Mono font"
-        ],
-        "answer": "Intel One Mono is a monospaced font released by Intel in 2023, designed specifically for source code and developer tools. It matters because it offers high legibility at small sizes and includes programming-specific glyphs, joining a trend of tech companies creating custom typefaces for developer ecosystems. [1]\n\nThe font addresses common readability issues in coding environments, such as distinguishing between similar characters (like 0 vs O, or l vs 1). Intel made it open-source and free to use, reflecting the industry shift toward open-source tooling that began with projects like Mono in 2004. [1][3]\n\nUnlike proprietary fonts of the past, Intel One Mono is cross-platform and works across Windows, macOS, and Linux. This aligns with the broader movement toward open-source developer tools, where companies like Microsoft have also released free, cross-platform solutions like Visual Studio Code and Roslyn. [1][3]\n\nThe release shows how typography has become a differentiator in developer experience, with companies investing in fonts that improve productivity and reduce eye strain during long coding sessions. As open-source ecosystems mature, more programming fonts are likely to follow this model of being both high-quality and freely available.",
-        "followups": [
-          "Where can I download it?",
-          "What are its best features?",
-          "Is it compatible with VS Code?"
-        ],
-        "sources": [
-          {
-            "title": "C Sharp (programming language)",
-            "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
-            "source": "wikipedia",
-            "snippet": "C# ( see SHARP) is a general-purpose high-level programming language supporting multiple paradigms. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disci",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "6a09e9d4e31c",
-            "domain": "en.wikipedia.org",
-            "n": 1
-          },
-          {
-            "title": "List of home computers by video hardware",
-            "url": "https://en.wikipedia.org/wiki/List_of_home_computers_by_video_hardware",
-            "source": "wikipedia",
-            "snippet": "This is a list of home computers, sorted alphanumerically, which lists all relevant details of their video hardware. Home computers are the second generation of desktop computers, entering the market in 1977 and becoming common during the 1980s. A decade later they were generally",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "8cdd5d1d5b49",
-            "domain": "en.wikipedia.org",
-            "n": 2
-          },
-          {
-            "title": "Mono-Camera 3D Multi-Object Tracking Using Deep Learning Detections and PMBM Filtering",
-            "url": "https://doi.org/10.1109/ivs.2018.8500454",
-            "source": "openalex",
-            "snippet": "Monocular cameras are one of the most commonly used sensors in the automotive industry for autonomous vehicles. One major drawback using a monocular camera is that it only makes observations in the two dimensional image plane and can not directly measure the distance to objects. ",
-            "published": "2018",
-            "authors": [
-              "Samuel Scheidegger",
-              "Joachim Benjaminsson",
-              "Emil Rosenberg",
-              "Amrit Krishnan",
-              "Karl Granström"
-            ],
-            "extra": {
-              "cited_by": 181,
-              "venue": "IEEE Intelligent Vehicles Symposium",
-              "license": "CC0 metadata"
-            },
-            "id": "8d0a4ec3b887",
-            "domain": "doi.org",
-            "n": 3
-          },
-          {
-            "title": "Classic Mac OS",
-            "url": "https://en.wikipedia.org/wiki/Classic_Mac_OS",
-            "source": "wikipedia",
-            "snippet": "Mac OS (originally System Software; retronymically Classic Mac OS) is a discontinued series of operating systems developed for the Motorola 68k and PowerPC architectures. It is owned by Apple Computer, Inc. and developed from 1984 to 2001. The Macintosh operating system is credit",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "58f8485509e5",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "List of retronyms",
-            "url": "https://en.wikipedia.org/wiki/List_of_retronyms",
-            "source": "wikipedia",
-            "snippet": "A retronym is a newer name for an existing subject, that differentiates the original form or version from a subsequent one. Retronyms are typically used as a self-explanatory adjective for a subject. Retronyms are introduced to differentiate the already existing things from the n",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "d1e7f47f8dc5",
-            "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
-            "title": "Semiconductor device fabrication",
-            "url": "https://en.wikipedia.org/wiki/Semiconductor_device_fabrication",
-            "source": "wikipedia",
-            "snippet": "Semiconductor device fabrication is the process used to manufacture semiconductor devices, typically integrated circuits (ICs) such as microprocessors, microcontrollers, and memories (such as RAM and flash memory). It is a multiple-step photolithographic and physico-chemical proc",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "d7a53e79d9f4",
-            "domain": "en.wikipedia.org",
-            "n": 6
-          },
-          {
-            "title": "Mobile app development",
-            "url": "https://en.wikipedia.org/wiki/Mobile_app_development",
-            "source": "wikipedia",
-            "snippet": "Mobile app development is the act or process by which a mobile app is developed for one or more mobile devices, which can include personal digital assistants (PDA), enterprise digital assistants (EDA), or mobile phones. Such software applications are specifically designed to run ",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "1bf0c58b6fca",
-            "domain": "en.wikipedia.org",
-            "n": 7
-          },
-          {
-            "title": "Transistors mono-electroniques double-grille : Modélisation, conception and évaluation d’architectures logiques",
-            "url": "https://doi.org/10.70675/de0f758azc78az4d7azb844z5a751ec33917",
-            "source": "openalex",
-            "snippet": "Dans les années à venir, l’industrie de la microélectronique doit développer de nouvelles filières technologiques qui pourront devenir des successeurs ou des compléments de la technologie CMOS ultime. Parmi ces technologies émergentes relevant du domaine ‘‘Beyond CMOS’’, ce trava",
-            "published": "2013",
-            "authors": [
-              "Mohamed Amine Bounouar"
-            ],
-            "extra": {
-              "cited_by": 3,
-              "venue": "theses.fr (ABES)",
-              "license": "CC0 metadata"
-            },
-            "id": "37bec547a20b",
-            "domain": "doi.org",
-            "n": 8
-          }
-        ],
-        "warnings": [],
-        "timings": {
-          "plan": 0.4431806210000033,
-          "search": 0.34603286099999764,
-          "rank": 3.1873719299999976,
-          "dense": 1.0,
-          "rerank": 1.0,
-          "retrieve": 3.9766740429999956,
-          "total": 6.629142510999998
+          "retrieve": 1.961465205999957,
+          "total": 4.354365692999977
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
         "sentences": 8,
-        "citation_coverage": 0.375,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
-        "faithfulness": 0.3333333333333333
+        "faithfulness": 1.0
       }
     },
     {
       "kind": "github",
       "topic": "xcl-dev/xcl",
       "context": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-      "stars": 8616,
+      "stars": 8711,
       "language": "Rust",
       "created": "2026-11-20",
       "link": "https://github.com/xcl-dev/xcl",
@@ -1322,7 +1376,7 @@
       "focus": "all",
       "category": "software",
       "category_by": "nvidia",
-      "signal": "★ 8,616 GitHub stars since 2026-11-20 · Rust",
+      "signal": "★ 8,711 GitHub stars since 2026-11-20 · Rust",
       "result": {
         "question": "What is the new open-source project xcl (Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL), and why is it getting attention?",
         "focus": "all",
@@ -1332,10 +1386,10 @@
           "Xbox Series compatibility layer Windows",
           "why is xcl getting attention"
         ],
-        "answer": "xcl (Xbox Series compatibility layer for Windows) is an open-source project that runs Xbox Series X/S console game code natively on Windows by reimplementing console system libraries and recompiling RDNA2 shaders to DXIL. It is gaining attention because it allows Windows users to play Xbox Series games without an Xbox console, effectively bridging console and PC gaming ecosystems. The project reimplements the console's system libraries and translates the shader language used by AMD's RDNA2 architecture into Microsoft's DirectX Intermediate Language (DXIL), enabling native execution of Xbox Series game code on Windows hardware [3][5].",
+        "answer": "xcl (Xbox Series compatibility layer for Windows) is an open-source project that runs Xbox Series X/S console game code natively on Windows by reimplementing console system libraries and recompiling RDNA2 shaders to DXIL. It is gaining attention because it allows playing Xbox Series games on PC without emulation overhead, leveraging the Windows ecosystem while supporting the console's hardware architecture [3][4].",
         "followups": [
-          "How does it achieve native execution?",
-          "What are its current limitations?",
+          "How does native execution help performance?",
+          "What are the current limitations?",
           "Where can I find the source code?"
         ],
         "sources": [
@@ -1370,21 +1424,6 @@
             "n": 2
           },
           {
-            "title": "Ninth generation of video game consoles",
-            "url": "https://en.wikipedia.org/wiki/Ninth_generation_of_video_game_consoles",
-            "source": "wikipedia",
-            "snippet": "The ninth generation of video game consoles began in November 2020 with the releases of Microsoft's Xbox Series X and Series S console family and Sony's PlayStation 5. Compared to the eighth generation consoles Xbox One and PlayStation 4, the new consoles add faster computation a",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "48c71e047c9f",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
             "title": "Your visualisations are going places: SciVis on gaming consoles",
             "url": "https://doi.org/10.1007/s12650-024-01035-4",
             "source": "openalex",
@@ -1405,6 +1444,21 @@
             },
             "id": "3e13f6f731da",
             "domain": "doi.org",
+            "n": 3
+          },
+          {
+            "title": "Xbox (console)",
+            "url": "https://en.wikipedia.org/wiki/Xbox_(console)",
+            "source": "wikipedia",
+            "snippet": "The Xbox (often referred to as the Original Xbox to differentiate it from its successors) is a home video game console developed and marketed by Microsoft. It was released on November 15, 2001, in North America, followed by Australia, Europe, and Japan in 2002. It was the first m",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "11c0dbf2faee",
+            "domain": "en.wikipedia.org",
             "n": 4
           },
           {
@@ -1480,20 +1534,20 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5431480190000002,
-          "search": 0.46284113299999774,
-          "rank": 3.6506596930000086,
+          "plan": 0.5381460959999913,
+          "search": 5.78626164100001,
+          "rank": 3.5359618400000272,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.656731996999994,
-          "total": 6.176729624999993
+          "retrieve": 9.860474173,
+          "total": 11.285240735999992
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 3,
-        "citation_coverage": 0.3333333333333333,
+        "sentences": 2,
+        "citation_coverage": 0.5,
         "citation_validity": 1.0,
         "faithfulness": 0.0
       }
