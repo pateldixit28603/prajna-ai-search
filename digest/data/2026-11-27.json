@@ -4,197 +4,16 @@
   "categories_by": "nvidia",
   "items": [
     {
-      "kind": "hackernews",
-      "topic": "1Password Security Incident",
-      "points": 1632,
-      "comments": 704,
-      "link": "https://1password.com/blog/update-on-nov-2026-security-incident",
-      "discussion": "https://news.ycombinator.com/item?id=50644817",
-      "question": "1Password Security Incident — what is this about and why does it matter?",
-      "focus": "all",
-      "category": "security",
-      "category_by": "nvidia",
-      "signal": "▲ 1,632 points on Hacker News · 704 comments",
-      "result": {
-        "question": "1Password Security Incident — what is this about and why does it matter?",
-        "focus": "all",
-        "lang": "en",
-        "queries": [
-          "1Password security incident details",
-          "1Password security incident impact"
-        ],
-        "answer": "Based on the provided search results, there is no documented security incident specifically named \"1Password Security Incident.\" 1Password is a password manager developed by AgileBits Inc. that stores user data in an encrypted vault protected by a master password [1]. Unlike LastPass, which suffered significant breaches between 2011 and 2022, including a 2022 incident where user data and vaults were breached [2], 1Password's security model and incident history are not detailed in the given sources.\n\nThe provided results discuss credential stuffing attacks, which exploit password reuse across sites [3], and Cloudbleed, a Cloudflare memory leak that exposed customer data [4], but these are unrelated to 1Password. Apple's Passwords manager is also mentioned [5], but no 1Password breach is described.\n\nSince the search results do not contain information about a 1Password security incident, the following is based on general knowledge of the service's design and the absence of breach data in the sources: 1Password emphasizes client-side encryption, meaning user data is encrypted on the device before syncing to 1Password's servers [1]. Without cited evidence of an incident in the provided texts, users should rely on 1Password's stated security practices and monitor official AgileBits communications for any future updates.",
-        "followups": [
-          "What are common password risks?",
-          "How is 1Password secured?",
-          "Should I check my passwords?"
-        ],
-        "sources": [
-          {
-            "title": "1Password",
-            "url": "https://en.wikipedia.org/wiki/1Password",
-            "source": "wikipedia",
-            "snippet": "1Password is a password manager developed by the Canadian software company AgileBits Inc. It supports multiple platforms such as iOS, Android, Windows, Linux, and macOS. It provides a place for users to store various passwords, software licenses, and other sensitive information i",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "6ad33b172c74",
-            "domain": "en.wikipedia.org",
-            "n": 1
-          },
-          {
-            "title": "LastPass",
-            "url": "https://en.wikipedia.org/wiki/LastPass",
-            "source": "wikipedia",
-            "snippet": "LastPass is a password manager application. The standard version of LastPass comes as a web interface, but also includes a browser extension, an app and support for bookmarklets. Founded in 2008 by four developers, Lastpass was acquired by GoTo (formerly LogMeIn Inc.) for $110 mi",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "def8b62c97e9",
-            "domain": "en.wikipedia.org",
-            "n": 2
-          },
-          {
-            "title": "Credential stuffing",
-            "url": "https://en.wikipedia.org/wiki/Credential_stuffing",
-            "source": "wikipedia",
-            "snippet": "Credential stuffing is a type of cyberattack in which the attacker collects stolen account credentials, typically consisting of lists of usernames or email addresses and the corresponding passwords (often from a data breach), and then uses the credentials to gain unauthorized acc",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e57b37e08098",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
-            "title": "Cloudbleed",
-            "url": "https://en.wikipedia.org/wiki/Cloudbleed",
-            "source": "wikipedia",
-            "snippet": "Cloudbleed was a buffer overflow in Cloudflare disclosed by Project Zero on February 17, 2017. Cloudflare's code disclosed the contents of memory that contained the private information of other customers, such as HTTP cookies, authentication tokens, HTTP POST bodies, and other se",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "e8de43b00a53",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "Passwords (Apple)",
-            "url": "https://en.wikipedia.org/wiki/Passwords_(Apple)",
-            "source": "wikipedia",
-            "snippet": "Passwords is a password manager application developed by Apple Inc. available for devices running iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher.",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "bfc1c72e7d0e",
-            "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
-            "title": "Six steps to protect researchers’ digital security",
-            "url": "https://doi.org/10.1038/d41586-026-00086-x",
-            "source": "openalex",
-            "snippet": "Six steps to protect researchers’ digital security",
-            "published": "2026",
-            "authors": [
-              "Virginia Gewin"
-            ],
-            "extra": {
-              "cited_by": 0,
-              "venue": "Nature",
-              "license": "CC0 metadata"
-            },
-            "id": "afd6c1021f6b",
-            "domain": "doi.org",
-            "n": 6
-          },
-          {
-            "title": "Enhancing security behaviour by supporting the user",
-            "url": "https://doi.org/10.1016/j.cose.2018.01.016",
-            "source": "openalex",
-            "snippet": "Enhancing security behaviour by supporting the user",
-            "published": "2018",
-            "authors": [
-              "Steven Furnell",
-              "Warut Khern-am-nuai",
-              "Rawan Esmael",
-              "Wei‐Ning Yang",
-              "Ninghui Li"
-            ],
-            "extra": {
-              "cited_by": 97,
-              "venue": "Computers & Security",
-              "license": "CC0 metadata"
-            },
-            "id": "73f7dbb964c7",
-            "domain": "doi.org",
-            "n": 7
-          },
-          {
-            "title": "Securing the Human – Exploring Current Security Awareness among Employees and Finding Ways to Improve it in the Organizational Setting",
-            "url": "https://doi.org/10.13016/m20647",
-            "source": "openalex",
-            "snippet": "As organizational security breaches increase, it becomes imperative to understand the factors that lead to these breaches and take the necessary steps to minimize threats. Since employees are considered the weakest link in ensuring the security of corporate data, this paper evalu",
-            "published": "2015",
-            "authors": [
-              "Nina Sebescen"
-            ],
-            "extra": {
-              "cited_by": 0,
-              "venue": "University Libraries (University of Maryland)",
-              "license": "CC0 metadata"
-            },
-            "id": "8091f74ebfe8",
-            "domain": "doi.org",
-            "n": 8
-          }
-        ],
-        "warnings": [],
-        "timings": {
-          "plan": 0.4594165580000009,
-          "search": 0.44530482600000454,
-          "rank": 0.8249472149999946,
-          "dense": 1.0,
-          "rerank": 1.0,
-          "retrieve": 1.7297322970000053,
-          "total": 4.195551356999999
-        },
-        "nvidia": true,
-        "llm_error": ""
-      },
-      "metrics": {
-        "sentences": 7,
-        "citation_coverage": 0.7142857142857143,
-        "citation_validity": 1.0,
-        "faithfulness": 0.6
-      }
-    },
-    {
       "kind": "paper",
       "topic": "Mixture-of-Loops Transformer",
-      "upvotes": 60,
+      "upvotes": 61,
       "context": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops",
       "link": "https://huggingface.co/papers/2611.34923",
       "question": "What does the new AI research paper \"Mixture-of-Loops Transformer\" propose, and why does it matter?",
       "focus": "academic",
       "category": "ai",
       "category_by": "nvidia",
-      "signal": "▲ 60 upvotes on Hugging Face Daily Papers",
+      "signal": "▲ 61 upvotes on Hugging Face Daily Papers",
       "result": {
         "question": "What does the new AI research paper \"Mixture-of-Loops Transformer\" propose, and why does it matter?",
         "focus": "academic",
@@ -203,11 +22,11 @@
           "Mixture-of-Loops Transformer proposal",
           "Mixture-of-Loops Transformer significance"
         ],
-        "answer": "Mixture-of-Loops Transformer is not a specific published paper in the provided results; however, the search results cover several related works on looped Mixture-of-Experts (MoE) architectures. The most directly relevant is \"Looping Beyond Twice: A Scalable Recipe for Looped Mixture-of-Experts\" [1], which proposes LOOM, a method that stabilizes recurrence by scaling residual updates and re-injecting input embeddings at every loop, while diversifying computation through per-loop routers and a Looping Residual. This enables stable scaling to 9–12 loops, with the 700M model achieving the best near-iso-FLOP performance at 5 loops, reducing perplexity from 18.36 to 16.54 and improving zero-shot accuracy from 38.84% to 39.53% [1]. Another key finding [2] is that looped-MoE models scale better than standard baselines because routing divergence across loops recovers expressivity without additional parameters, and loop boundaries serve as superior early-exit points due to earlier output convergence. DyLoMo-DiT [3] extends the looped MoE concept to Diffusion Transformers, achieving significant FID reductions and higher GenEval scores with a fraction of the parameters. Loopback Transformer [4] introduces geometric decay and attention-based weight allocation to control recurrent state, reaching lower validation loss with 40–75% of standard transformer parameters. LoopCTR [5] applies loop scaling to click-through rate prediction, enabling train-multi-loop, infer-zero-loop strategies that outperform baselines with fewer loops. LoopMoEVR [6] uses loop-based Mixture-of-Experts for UHD video restoration, achieving state-of-the-art performance with minimal parameters. Looped Transformers with Source-Centered State Evolution [7] propose a mechanism to reconcile input conditioning with reference-preserving recurrence, improving controlled recurrent quality across multiple benchmarks. Finally, LoopCache [8] accelerates long-context speculative decoding for looped transformers via confidence-guided draft updating and cyclic KV cache rotation, achieving 10–15x speedups. Together, these works demonstrate that looped MoE architectures can improve compute-quality trade-offs, enable early exits, and scale effectively when routing and residual stabilization are properly designed [2].",
+        "answer": "The \"Mixture-of-Loops Transformer\" concept, as reflected in recent research, proposes using recurrent depth—repeatedly applying shared Transformer blocks—to increase effective model depth without increasing parameter count [1]. This approach matters because it enables scalable improvements in model quality and compute efficiency across diverse tasks, from language modeling to video restoration and image generation, while reducing memory overhead.\n\nKey contributions and findings from the search results include:\n\n*   **Scaling and Stability**: Looped Transformers introduce recurrent depth as a new scaling axis [1]. However, simply looping blocks can lead to hidden-state variance growth and expert selection collapse, where routers repeatedly select the same experts, limiting the benefits of additional iterations [1][2].\n*   **Mixture-of-Experts (MoE) Advantage**: Looped-MoE models scale better than standard looped models because routing divergence between loops activates different experts on each pass through shared layers, recovering expressivity without additional parameters [2].\n*   **Dynamic and Adaptive Looping**: Papers like DyLoMo-DiT propose dynamic looping that varies the number of passes across noise levels, making more effective use of parameter and compute budgets [3]. LoopCTR introduces a \"train-multi-loop, infer-zero-loop\" strategy, where a single forward pass without loops already outperforms baselines, unlocking significant deployment efficiency [5].\n*   **State Management and Convergence**: Techniques such as Loopback Transformer use geometric decay and attention controls to stabilize recurrence and allocate update weight [4][7]. LoopCache addresses long-context decoding bottlenecks by employing cyclic KV cache strategies, achieving over 10x speedups [8].\n*   **Performance Gains**: Under near-iso-FLOP comparisons, looped models with MoE can reduce perplexity and improve zero-shot accuracy [1]. For example, the LOOM method achieves stable scaling to 9-12 loops, with the 700M model at 5 loops reducing perplexity from 18.36 to 16.54 and improving accuracy from 38.84% to 39.53% [1]. Similarly, LoopMoEVR achieves state-of-the-art UHD video restoration with minimal parameters [6].\n\nIn summary, the Mixture-of-Loops approach matters because it provides a pathway to deeper effective models with fixed parameter budgets, improved compute-quality trade-offs via early exits, and dynamic compute allocation, though it requires careful engineering to manage state stability and expert diversity.\n\n[1][2][3][4][5][6][7][8]",
         "followups": [
-          "What is LOOM?",
-          "How does LOOM stabilize recurrence?",
-          "What are the performance improvements?"
+          "How does recurrent depth work?",
+          "What are the risks of looping?",
+          "Which tasks benefit most?"
         ],
         "sources": [
           {
@@ -383,20 +202,20 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5438218970000008,
-          "search": 0.4562590630000045,
-          "rank": 4.362431337999993,
+          "plan": 0.5036818049999852,
+          "search": 0.48753678100001707,
+          "rank": 3.078285232999974,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 5.362603700000008,
-          "total": 35.18049771000001
+          "retrieve": 4.0695957709999675,
+          "total": 8.16608297099998
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 11,
-        "citation_coverage": 0.9090909090909091,
+        "sentences": 14,
+        "citation_coverage": 0.7857142857142857,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -404,14 +223,14 @@
     {
       "kind": "paper",
       "topic": "DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding",
-      "upvotes": 26,
+      "upvotes": 27,
       "context": "Multi-page document vision-language models encode each page independently, creating a feature-level discontinuity at page boundaries: visual tokens are formed without access to content on adjacent pages, and the language",
       "link": "https://huggingface.co/papers/2611.34420",
       "question": "What does the new AI research paper \"DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding\" propose, and why does it matter?",
       "focus": "academic",
       "category": "ai",
       "category_by": "nvidia",
-      "signal": "▲ 26 upvotes on Hugging Face Daily Papers",
+      "signal": "▲ 27 upvotes on Hugging Face Daily Papers",
       "result": {
         "question": "What does the new AI research paper \"DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding\" propose, and why does it matter?",
         "focus": "academic",
@@ -421,11 +240,11 @@
           "Bidirectional Cross-Page Encoding document understanding",
           "importance of DocSEAM paper"
         ],
-        "answer": "DocSEAM proposes a lightweight module that injects cross-page context into visual representations by forming local triplets with neighboring pages and applying masked self-attention, enabling a 9B-parameter model to achieve state-of-the-art results on multi-page document VQA benchmarks and reduce sensitivity to boundary placement [1]. This matters because multi-page document vision-language models traditionally encode each page independently, creating feature-level discontinuities at page boundaries that hinder reasoning across adjacent content [1]. DocSEAM addresses this by preserving the visual token count while enriching center-page tokens with directional salience from neighbors, improving robustness under controlled re-pagination [1].",
+        "answer": "DocSEAM proposes a lightweight module that injects cross-page context into visual representations by forming local triplets with neighboring pages and applying masked self-attention with directional salience gates [1]. It matters because multi-page document vision-language models previously suffered from feature-level discontinuity at page boundaries, where visual tokens were formed without access to adjacent page content [1]. After supervised cross-page warm-up and fine-tuning, a 9B-parameter model using DocSEAM achieved state-of-the-art results among open-weight models up to 10B parameters on five multi-page document VQA benchmarks [1]. Additionally, DocSEAM reduces sensitivity to boundary placement and improves cross-page span localization under controlled re-pagination [1].",
         "followups": [
-          "How does the triplet formation work?",
           "What are the VQA benchmarks?",
-          "Is it faster than other methods?"
+          "How does it reduce boundary sensitivity?",
+          "Is the module computationally heavy?"
         ],
         "sources": [
           {
@@ -577,19 +396,19 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.6073736249999939,
-          "search": 0.5607104290000109,
-          "rank": 0.8390341960000001,
+          "plan": 0.5694483249999962,
+          "search": 0.5390951040000118,
+          "rank": 0.6980476210000006,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.0071539169999966,
-          "total": 3.7768173550000057
+          "retrieve": 1.8066253860000074,
+          "total": 3.2834462579999695
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 3,
+        "sentences": 4,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
@@ -598,15 +417,15 @@
     {
       "kind": "hackernews",
       "topic": "Intel One Mono font",
-      "points": 458,
-      "comments": 237,
+      "points": 462,
+      "comments": 238,
       "link": "https://github.com/intel/intel-one-mono",
       "discussion": "https://news.ycombinator.com/item?id=50653667",
       "question": "Intel One Mono font — what is this about and why does it matter?",
       "focus": "all",
       "category": "gadgets",
       "category_by": "nvidia",
-      "signal": "▲ 458 points on Hacker News · 237 comments",
+      "signal": "▲ 462 points on Hacker News · 238 comments",
       "result": {
         "question": "Intel One Mono font — what is this about and why does it matter?",
         "focus": "all",
@@ -615,11 +434,11 @@
           "Intel One Mono font information",
           "importance of Intel One Mono font"
         ],
-        "answer": "Intel One Mono is a monospaced font released by Intel in 2023, designed specifically for source code and developer tools. It matters because it offers high legibility at small sizes, includes programming-specific glyphs, and is free and open-source, addressing the need for accessible coding fonts in developer workflows. [1]\n\nThe font was created to improve developer productivity and accessibility. Key features include [1][3]:\n- Optimized for code editing and terminal use\n- High legibility at small sizes\n- Extensive glyph set for programming symbols\n- Free and open-source licensing\n- Available across platforms\n\nIntel One Mono joins a growing trend of tech companies releasing custom fonts. Microsoft's Cascadia Code and Fira Code are notable examples in the developer tools space. The font is available on GitHub and can be integrated into IDEs like Visual Studio Code.",
+        "answer": "Intel One Mono is a monospaced font released by Intel in 2023 as an open-source typeface designed for source code and developer tools. It matters because it offers high legibility, distinct character shapes to reduce confusion (like 0 vs O), and is free to use, reflecting a trend of tech companies open-sourcing developer utilities. [1][6]",
         "followups": [
-          "Where can I download Intel One Mono?",
+          "Where can I download it?",
           "What are its best uses?",
-          "How does it compare to Cascadia Code?"
+          "Is it compatible everywhere?"
         ],
         "sources": [
           {
@@ -755,20 +574,20 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5383188939999997,
-          "search": 0.45282558099999903,
-          "rank": 4.078634962999999,
+          "plan": 0.4578039129999638,
+          "search": 0.48570168899999544,
+          "rank": 6.069554797000023,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 5.0698603199999965,
-          "total": 6.949797924999999
+          "retrieve": 7.013237301999993,
+          "total": 8.248119892000034
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 10,
-        "citation_coverage": 0.1,
+        "sentences": 2,
+        "citation_coverage": 0.5,
         "citation_validity": 1.0,
         "faithfulness": 0.0
       }
@@ -777,7 +596,7 @@
       "kind": "github",
       "topic": "Marvisak/VIctory",
       "context": "An attempt at running GTA VI on PC",
-      "stars": 13374,
+      "stars": 13375,
       "language": "Rust",
       "created": "2026-11-23",
       "link": "https://github.com/Marvisak/VIctory",
@@ -785,7 +604,7 @@
       "focus": "all",
       "category": "gadgets",
       "category_by": "nvidia",
-      "signal": "★ 13,374 GitHub stars since 2026-11-23 · Rust",
+      "signal": "★ 13,375 GitHub stars since 2026-11-23 · Rust",
       "result": {
         "question": "What is the new open-source project VIctory (An attempt at running GTA VI on PC), and why is it getting attention?",
         "focus": "all",
@@ -794,11 +613,11 @@
           "Victory GTA VI open-source project",
           "running GTA VI on PC open source"
         ],
-        "answer": "Victory is an open-source project attempting to run Grand Theft Auto VI on PC. It is getting attention because it demonstrates how developers can reverse-engineer and port recent commercial games to open-source platforms, even before official PC releases.\n\nThe project leverages the game's existing architecture built on Rockstar's RAGE engine. Because GTA VI runs on the same foundation as its predecessor, developers can adapt existing PC porting techniques. The open-source nature allows the community to inspect, modify, and improve the code, fostering transparency and collaborative development.\n\nKey points about the project include:\n\n- **Reverse Engineering**: The team is dissecting the game's assets and code to create a compatible runtime environment.\n- **Community Interest**: Gamers and tech enthusiasts are tracking its progress as a proof-of-concept for running next-gen titles on unsupported hardware.\n- **Technical Challenges**: Running a 2026 title on PC involves overcoming DRM, optimizing shaders, and ensuring stability across different GPU configurations.\n\nThe project highlights the growing trend of open-source initiatives bridging the gap between console-exclusive releases and PC gaming communities.",
+        "answer": "Victory is an open-source project attempting to run Grand Theft Auto VI on PC. It is getting attention because it demonstrates the feasibility of running the latest Rockstar title on personal computers despite the game's recent console-exclusive launch.\n\nThe project leverages the open-source development environment for self-driving vehicles built on Grand Theft Auto V [4]. This environment was created to facilitate Deep Learning models for object detection and steering angle regression, showing that GTA V serves as a foundation for autonomous vehicle research [4]. The project's ability to run the newest GTA title highlights the ongoing use of the series' game engine beyond traditional gaming applications.\n\nKey points about the project and its attention:\n- Victory attempts to port/run GTA VI on PC platforms\n- It builds upon the open-source development environment originally built on GTA V [4]\n- The project demonstrates how game engines serve dual purposes in gaming and AI research\n- It reflects the trend of open-source simulators for autonomous driving discussed in recent literature [7]\n\nThe attention surrounding Victory stems from its technical achievement in running a major commercial release on PC, as well as its connection to the broader open-source autonomous driving ecosystem that has used GTA titles as simulation platforms [4][7].",
         "followups": [
-          "Is it fully playable yet?",
-          "What engine does it use?",
-          "When can I try it?"
+          "Is it fully functional yet?",
+          "What are the technical challenges?",
+          "When can users try it?"
         ],
         "sources": [
           {
@@ -935,22 +754,22 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5848432680000073,
-          "search": 0.6305048809999931,
-          "rank": 5.9027832390000015,
+          "plan": 0.4442791600000078,
+          "search": 0.4958014829999797,
+          "rank": 1.9091673899999932,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 7.118222908999996,
-          "total": 9.336374144999994
+          "retrieve": 2.8493483510000033,
+          "total": 5.197953858000005
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 10,
-        "citation_coverage": 0.0,
-        "citation_validity": null,
-        "faithfulness": null
+        "sentences": 11,
+        "citation_coverage": 0.45454545454545453,
+        "citation_validity": 1.0,
+        "faithfulness": 0.8
       }
     },
     {
@@ -972,11 +791,11 @@
           "What is Grand Theft Auto VI",
           "Grand Theft Auto VI key facts"
         ],
-        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games, serving as the eighth main entry in the series and the sixteenth overall [1]. It is set in the fictional US state of Leonida, based on Florida, and follows the criminal duo Jason Duval and Lucia Caminos as they navigate a state-wide criminal conspiracy [1][4]. Key facts include:\n\n- **Release & Development**: Preliminary work began in 2014 after GTA V; principal production started after Red Dead Redemption 2 (2018) [1]. Rockstar's global development teams had more than doubled since then [1].\n- **Protagonists**: Lucia is the first non-optional playable female protagonist in the series, originally from Liberty City; she partners with Jason Duval [4].\n- **Trailer**: \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix on August 27, 2026, then on YouTube, featuring 27 minutes of gameplay footage [2].\n- **Setting**: The open world includes Leonida and a Miami-inspired Vice City, parodying Floridian and 2020s American culture [1].\n- **Development Context**: Rockstar North, the series creator (originally DMA Design), has overseen the franchise since its inception in the early 1960s [3].",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following 2013's Grand Theft Auto V, and the sixteenth entry overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to escape a state-wide conspiracy [1]. The game features an open world with Vice City, a Miami-inspired location, and parodies 2020s American culture [1]. Preliminary work began in 2014 after GTA V, and principal production started after the 2018 launch of Red Dead Redemption 2, during which Rockstar's global development teams more than doubled [1][8]. Lucia is the first non-optional playable female protagonist in the series, designed to be independent and stoic, avoiding common clichés [3]. The protagonists' dynamic is inspired by Bonnie and Clyde [1].",
         "followups": [
-          "When is the official release date?",
-          "What is Leonida like?",
-          "Who are the main characters?"
+          "When is GTA VI expected to release?",
+          "Where is Leonida based?",
+          "Who are the main protagonists?"
         ],
         "sources": [
           {
@@ -1010,21 +829,6 @@
             "n": 2
           },
           {
-            "title": "Grand Theft Auto",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto",
-            "source": "wikipedia",
-            "snippet": "Grand Theft Auto (GTA) is an action-adventure video game series created by the Scottish programmers David Jones and Mike Dailly at DMA Design, now known as Rockstar North. Later titles were developed under the oversight of brothers Dan and Sam Houser, Leslie Benzies and Aaron Gar",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "d56b41b53500",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
             "title": "Lucia Caminos",
             "url": "https://en.wikipedia.org/wiki/Lucia_Caminos",
             "source": "wikipedia",
@@ -1037,22 +841,22 @@
             },
             "id": "c18959d481d1",
             "domain": "en.wikipedia.org",
-            "n": 4
+            "n": 3
           },
           {
-            "title": "Niko Bellic",
-            "url": "https://en.wikipedia.org/wiki/Niko_Bellic",
+            "title": "Grand Theft Auto: Vice City",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
             "source": "wikipedia",
-            "snippet": "Niko Bellic (NEE-koh BEL-ək; Serbian: Нико Белић) is a fictional character and the playable protagonist of Rockstar North's video game Grand Theft Auto IV (2008), the sixth main entry in Rockstar Games' Grand Theft Auto series. He also makes non-playable appearances in the game's",
+            "snippet": "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the fourth main game in the Grand Theft Auto series, following 2001's Grand Theft Auto III, and the sixth entry overall. Set in 1986 within the fictional",
             "published": null,
             "authors": [],
             "extra": {
               "lang": "en",
               "license": "CC BY-SA 4.0"
             },
-            "id": "9a1d6c8ac9f4",
+            "id": "1ce06c45db6a",
             "domain": "en.wikipedia.org",
-            "n": 5
+            "n": 4
           },
           {
             "title": "Grand Theft Auto: The Trilogy – The Definitive Edition",
@@ -1066,6 +870,21 @@
               "license": "CC BY-SA 4.0"
             },
             "id": "1103661a44e7",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Grand Theft Auto modding",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_modding",
+            "source": "wikipedia",
+            "snippet": "User modification, or modding, of video games in the open world sandbox Grand Theft Auto series is a popular trend in the PC gaming community. These unofficial modifications are made by altering gameplay logic and asset files within a user's game installation, and can change the ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "2abef26406fa",
             "domain": "en.wikipedia.org",
             "n": 6
           },
@@ -1102,36 +921,36 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5336983269999962,
-          "search": 0.3517374320000073,
-          "rank": 3.1210734919999936,
+          "plan": 0.4753380579999771,
+          "search": 0.348937033000027,
+          "rank": 3.1904084290000014,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.0065624009999965,
-          "total": 6.1184389819999865
+          "retrieve": 4.014736059000029,
+          "total": 5.823819427999979
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 8,
+        "sentences": 7,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
-        "faithfulness": 0.875
+        "faithfulness": 1.0
       }
     },
     {
       "kind": "hackernews",
       "topic": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-      "points": 1981,
-      "comments": 1810,
+      "points": 1985,
+      "comments": 1813,
       "link": "https://scottaaronson.blog/?p=10379",
       "discussion": "https://news.ycombinator.com/item?id=50646108",
       "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
       "focus": "all",
       "category": "bigtech",
       "category_by": "nvidia",
-      "signal": "▲ 1,981 points on Hacker News · 1,810 comments",
+      "signal": "▲ 1,985 points on Hacker News · 1,813 comments",
       "result": {
         "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
         "focus": "all",
@@ -1140,11 +959,11 @@
           "what is happening now",
           "why is current event important"
         ],
-        "answer": "The phrase \"what is happening now\" appears across diverse topics in the provided search results, ranging from entertainment and academic works to current events and technology transitions. Here is a breakdown of the contexts:\n\n**Academic and Literary Works**\n- \"What is happening now?\" is the title of several academic publications. Result [1] lists it as an entertainment topic from 2015, while result [2] references \"The Status of Becoming: What is Happening Now?\" from 1979. Result [3] covers \"Educating clinicians. What is happening now?\" from 2011 [1]. Result [6] includes the chapter \"‘What is happening now is not raiding, it's war’\" from 2022, analyzing cattle-raiding in contemporary political conflicts in South Sudan.\n\n**Technology and Internet**\n- Result [5] discusses the \"IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now,\" reflecting on the delayed adoption of IPv6 compared to earlier optimistic projections.\n\n**Community and Current Events**\n- Result [4] captures a Hacker News discussion from 2023 about Israel war submissions being flagged, highlighting ongoing geopolitical tensions and community moderation debates.\n- Result [7] from 2013 features an Ask HN post titled \"Please stop tearing each other up,\" expressing concern over community rifts and hate-mongering at the time.\n\n**Software and Releases**\n- Result [8] refers to \"GNOME 3.7: what is happening now,\" a 2012 blog post detailing the features and development status of the GNOME 3.7 desktop environment.\n\nThe phrase spans academic, technological, and social domains, with no single unifying event. Disagreements or distinct viewpoints are not evident across the results, as each addresses a separate subject.\n\n[1][2][3][4][5][6][7][8]",
+        "answer": "The question \"Holy shit holy shit holy shit holy shit: The magnitude of what's now happening — what is this about and why does it matter?\" appears to reference a major current event, but the provided search results do not contain information about this specific topic. \n\nThe search results cover diverse subjects including entertainment, academic works on \"what is happening now,\" Hacker News discussions about geopolitical conflicts, IPv4 to IPv6 transitions, cattle raiding in South Sudan, and GNOME 3.7 development. None of these results address the magnitude of event referenced in the question.\n\nSince the search results don't contain information about what \"is now happening\" in the context of the question, I cannot provide a factual answer with citations from these sources. The results are unrelated to the magnitude of event being asked about.",
         "followups": [
-          "Which context is most relevant?",
-          "Can you narrow down the topic?",
-          "What are the key takeaways?"
+          "What specific event are you referring to?",
+          "Can you provide more context?",
+          "Where did you see this happening?"
         ],
         "sources": [
           {
@@ -1296,20 +1115,202 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4929040190000009,
-          "search": 0.9873226160000002,
-          "rank": 4.794685880000003,
+          "plan": 0.4158110630000351,
+          "search": 0.8263079219999554,
+          "rank": 8.083247583000002,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 6.275045953999999,
-          "total": 9.749241922000003
+          "retrieve": 9.325494149999997,
+          "total": 10.961873261999983
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 13,
-        "citation_coverage": 0.6153846153846154,
+        "sentences": 5,
+        "citation_coverage": 0.0,
+        "citation_validity": null,
+        "faithfulness": null
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Nextcloud Office Desktop app",
+      "points": 396,
+      "comments": 203,
+      "link": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+      "discussion": "https://news.ycombinator.com/item?id=50654289",
+      "question": "Nextcloud Office Desktop app — what is this about and why does it matter?",
+      "focus": "all",
+      "category": "opensource",
+      "category_by": "nvidia",
+      "signal": "▲ 396 points on Hacker News · 203 comments",
+      "result": {
+        "question": "Nextcloud Office Desktop app — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "Nextcloud Office Desktop app explained",
+          "benefits of Nextcloud Office"
+        ],
+        "answer": "The Nextcloud Office Desktop app is a client application that enables users to access and edit documents stored in a Nextcloud instance from their local desktop, integrating the platform's collaborative office suite capabilities directly into the operating system's file system and workflow. It matters because it bridges the gap between local desktop productivity and cloud-based collaboration, allowing real-time editing of documents, spreadsheets, and presentations while maintaining data privacy and sovereignty through self-hosting. This aligns with Nextcloud's broader mission of providing a modular workspace platform for teams and businesses, as noted in its Wikipedia entry [1].\n\nKey points about the Nextcloud Office Desktop app and its significance:\n\n- **Integration with Collabora Online**: The desktop app works in conjunction with Collabora Online [2], the open-source office suite that Nextcloud integrates for cooperative workflows. This combination enables real-time collaborative editing of documents, spreadsheets, and presentations directly from the desktop [2].\n\n- **Privacy and Sovereignty**: By using the desktop app with a self-hosted Nextcloud instance, users gain greater control over their data [5]. This is particularly valuable for enterprises and public institutions seeking independence from U.S.-based \"big tech\" companies, as Collabora Online is marketed toward such organizations [2].\n\n- **Offline Capabilities**: Optional applications are available for offline use across multiple platforms including Android, ChromeOS, iOS, iPadOS, Linux distributions, macOS, and Windows [2], making the desktop app versatile for various working environments.\n\n- **Sustainability**: The desktop app supports the deployment of Nextcloud on legacy devices, contributing to e-sustainability by repurposing old hardware to host personal cloud servers, which reduces electronic waste [5].\n\n- **Privacy Analysis**: The platform's privacy behavior, including the desktop app component, has been analyzed using privacy flow-graph techniques, showing how privacy-related data flows can be documented for DPIA compliance [6].\n\nThe desktop app represents Nextcloud's approach to making collaborative office tools accessible while respecting user control over data, positioning it as a viable alternative to proprietary cloud office platforms like Google Workspace and Microsoft 365.",
+        "followups": [
+          "How does it integrate with Collabora Online?",
+          "Is there a cost to use this app?",
+          "What operating systems does it support?"
+        ],
+        "sources": [
+          {
+            "title": "Nextcloud",
+            "url": "https://en.wikipedia.org/wiki/Nextcloud",
+            "source": "wikipedia",
+            "snippet": "Nextcloud is a modular workspace platform designed to provide teams and businesses with a comprehensive environment for digital collaboration. Beyond central data management, it integrates office suites like Collabora Online and EuroOffice for cooperative workflows. The platform ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "3ec555ded626",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Collabora Online",
+            "url": "https://en.wikipedia.org/wiki/Collabora_Online",
+            "source": "wikipedia",
+            "snippet": "Collabora Online (often abbreviated as COOL) is an open-source online office suite developed by Collabora, based on LibreOffice Online, the web-based edition of the LibreOffice office suite. It enables real-time collaborative editing of documents, spreadsheets, presentations, and",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "01ef2f480bae",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Implementing Searchable Symmetric Encryption with Attribute-Based Encryption for Secure Key Distribution and File Synchronization Using Nextcloud",
+            "url": "https://trepo.tuni.fi/handle/10024/159424",
+            "source": "openalex",
+            "snippet": "Master's Degree Programme in Information security July 2024Cloud computing has brought about a significant transformation in the way data is stored and managed by offering scalable and flexible resources.However, it poses significant data privacy challenges.Encrypting data in the",
+            "published": "2024",
+            "authors": [
+              "Denis Ssamba"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Tampere University Institutional Repository (Tampere University)",
+              "license": "CC0 metadata"
+            },
+            "id": "868e1afd4a8d",
+            "domain": "trepo.tuni.fi",
+            "n": 3
+          },
+          {
+            "title": "Self-hosting (network)",
+            "url": "https://en.wikipedia.org/wiki/Self-hosting_(network)",
+            "source": "wikipedia",
+            "snippet": "Self-hosting is the practice of running a website or service on either a home server or a server fully under the user's control, as opposed to using a service managed by someone else. Self-hosting allows users to have more control over their data, privacy, and computing infrastru",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "3db871f8ab9b",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "A Step Towards E-Sustainability : Deploying Legacy Devices for Self-Hosted Personal Clouds",
+            "url": "http://www.theseus.fi/handle/10024/902341",
+            "source": "openalex",
+            "snippet": "This thesis assesses the feasibility of deploying a Self-Hosted Personal Cloud (SPC) systems on legacy devices ascertaining sustainable and data privacy focused alternative to Commercial Cloud Platforms (CCPs). Further, thesis discussed the user motivations for adopting such a de",
+            "published": "2025",
+            "authors": [
+              "Irshad, Imran"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Theseus (Ammattikorkeakoulujen)",
+              "license": "CC0 metadata"
+            },
+            "id": "5aa6d0caa7bd",
+            "domain": "theseus.fi",
+            "n": 5
+          },
+          {
+            "title": "Assessing software privacy using the privacy flow-graph",
+            "url": "https://doi.org/10.1145/3549035.3561185",
+            "source": "openalex",
+            "snippet": "We increasingly rely on digital services and the conveniences they provide. Processing of personal data is integral to such services and thus privacy and data protection are a growing concern, and governments have responded with regulations such as the EU's GDPR. Following this, ",
+            "published": "2022",
+            "authors": [
+              "Feiyang Tang",
+              "Bjarte M. Østvold"
+            ],
+            "extra": {
+              "cited_by": 25,
+              "venue": null,
+              "license": "CC0 metadata"
+            },
+            "id": "e566550fab32",
+            "domain": "doi.org",
+            "n": 6
+          },
+          {
+            "title": "OpenOffice.org",
+            "url": "https://en.wikipedia.org/wiki/OpenOffice.org",
+            "source": "wikipedia",
+            "snippet": "OpenOffice.org is an open-source office productivity software suite. It originated from the proprietary StarOffice, developed by Star Division, which was acquired by Sun Microsystems in 1999. Sun open-sourced the software in July 2000 as a free alternative to Microsoft Office, an",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "4f455f3d6f46",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "LabOps: A flexible self-hosted workflow of open source tools for efficient collaboration within research laboratories",
+            "url": "https://doi.org/10.1371/journal.pcbi.1013248",
+            "source": "openalex",
+            "snippet": "Effective collaboration, essential for success in academic environments, often requires efficient team communication and access to a team-oriented digital infrastructure. Despite the significance of efficient and effective collaboration within the academy, a standardized and stru",
+            "published": "2025",
+            "authors": [
+              "Hector D. Garcia‐Verdugo",
+              "Cristian Román‐Palacios"
+            ],
+            "extra": {
+              "cited_by": 1,
+              "venue": "PLoS Computational Biology",
+              "license": "CC0 metadata"
+            },
+            "id": "6ba2e717bc33",
+            "domain": "doi.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.4238764009999727,
+          "search": 0.4870738070000016,
+          "rank": 2.7649895150000248,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 3.6760288340000216,
+          "total": 7.802097215999993
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 12,
+        "citation_coverage": 0.6666666666666666,
         "citation_validity": 1.0,
         "faithfulness": 0.625
       }
@@ -1318,7 +1319,7 @@
       "kind": "github",
       "topic": "xcl-dev/xcl",
       "context": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-      "stars": 8612,
+      "stars": 8614,
       "language": "Rust",
       "created": "2026-11-20",
       "link": "https://github.com/xcl-dev/xcl",
@@ -1326,7 +1327,7 @@
       "focus": "all",
       "category": "software",
       "category_by": "nvidia",
-      "signal": "★ 8,612 GitHub stars since 2026-11-20 · Rust",
+      "signal": "★ 8,614 GitHub stars since 2026-11-20 · Rust",
       "result": {
         "question": "What is the new open-source project xcl (Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL), and why is it getting attention?",
         "focus": "all",
@@ -1336,11 +1337,11 @@
           "Xbox Series compatibility layer Windows",
           "why is xcl getting attention"
         ],
-        "answer": "xcl (Xbox Series compatibility layer for Windows) is an open-source project that runs Xbox Series X/S console game code natively on Windows by reimplementing console system libraries and recompiling RDNA2 shaders to DXIL. It is gaining attention because it enables playing Xbox Series games directly on Windows without emulation, leveraging the compatibility layer to translate console APIs to DirectX. This approach allows Windows users to play console exclusives on PC hardware, bridging the gap between the Xbox ecosystem and the Windows platform. The project represents a significant development in cross-platform gaming, as it potentially reduces the need for separate console and PC game libraries.",
+        "answer": "xcl (Xbox Series compatibility layer for Windows) is an open-source project that runs Xbox Series X/S console game code natively on Windows by reimplementing console system libraries and recompiling RDNA2 shaders to DXIL. It is gaining attention because it allows Windows users to play Xbox Series games without an Xbox console, effectively bridging console and PC gaming ecosystems [3].\n\nKey points about xcl:\n- It reimplements console system libraries to enable native Xbox Series game execution on Windows\n- It converts RDNA2 shaders to DXIL (DirectX Intermediate Language) for compatibility\n- The project demonstrates viability of running console applications on desktop hardware [3]\n- It supports performance evaluation compared to standard desktop computers [3]\n\nThe development aligns with Microsoft's broader strategy of unifying gaming across platforms. The Xbox division, formerly Microsoft Gaming, oversees both console and PC gaming initiatives [5]. Additionally, Xbox consoles have historically used standard PC components, with the original Xbox featuring an Nvidia GeForce 3-based GPU and Windows 2000-based software [4]. More recently, Xbox Series X/S supports Universal Windows Platform (UWP) app development, making it potentially suitable for bringing applications like scientific visualization to broader audiences [3].",
         "followups": [
-          "How does it avoid emulation?",
+          "How does it achieve native execution?",
           "What are its current limitations?",
-          "When will it be more stable?"
+          "When is it expected to improve?"
         ],
         "sources": [
           {
@@ -1374,21 +1375,6 @@
             "n": 2
           },
           {
-            "title": "Ninth generation of video game consoles",
-            "url": "https://en.wikipedia.org/wiki/Ninth_generation_of_video_game_consoles",
-            "source": "wikipedia",
-            "snippet": "The ninth generation of video game consoles began in November 2020 with the releases of Microsoft's Xbox Series X and Series S console family and Sony's PlayStation 5. Compared to the eighth generation consoles Xbox One and PlayStation 4, the new consoles add faster computation a",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "48c71e047c9f",
-            "domain": "en.wikipedia.org",
-            "n": 3
-          },
-          {
             "title": "Your visualisations are going places: SciVis on gaming consoles",
             "url": "https://doi.org/10.1007/s12650-024-01035-4",
             "source": "openalex",
@@ -1409,6 +1395,21 @@
             },
             "id": "3e13f6f731da",
             "domain": "doi.org",
+            "n": 3
+          },
+          {
+            "title": "Xbox (console)",
+            "url": "https://en.wikipedia.org/wiki/Xbox_(console)",
+            "source": "wikipedia",
+            "snippet": "The Xbox (often referred to as the Original Xbox to differentiate it from its successors) is a home video game console developed and marketed by Microsoft. It was released on November 15, 2001, in North America, followed by Australia, Europe, and Japan in 2002. It was the first m",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "11c0dbf2faee",
+            "domain": "en.wikipedia.org",
             "n": 4
           },
           {
@@ -1484,22 +1485,22 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.6400451269999934,
-          "search": 0.5871913700000135,
-          "rank": 6.7844525499999975,
+          "plan": 0.5046742910000148,
+          "search": 0.4261330719999705,
+          "rank": 2.634975655000005,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 8.011783675000004,
-          "total": 9.554951279000008
+          "retrieve": 3.565890103000015,
+          "total": 5.835639447999995
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 4,
-        "citation_coverage": 0.0,
-        "citation_validity": null,
-        "faithfulness": null
+        "sentences": 10,
+        "citation_coverage": 0.6,
+        "citation_validity": 1.0,
+        "faithfulness": 0.6666666666666666
       }
     }
   ]
