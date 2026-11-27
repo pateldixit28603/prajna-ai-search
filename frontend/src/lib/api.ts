@@ -88,6 +88,7 @@ export type ThreadSummary = { id: string; title: string; focus: string; updated_
 
 export type Health = {
   status: string;
+  version?: string;
   nvidia: boolean;
   models: Record<string, string>;
   local_index: { chunks: number; documents: number; dense: boolean } | null;

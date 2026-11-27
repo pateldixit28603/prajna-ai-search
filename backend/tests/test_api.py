@@ -18,7 +18,8 @@ def test_search_stream_and_threads(tmp_path):
     app.state.engine = AnswerEngine(s, NvidiaClient(s), {"wikipedia": FakeSource("wikipedia", DOCS)})
     app.state.store = ThreadStore(tmp_path / "t.db")
     with TestClient(app) as c:
-        assert c.get("/api/health").json()["status"] == "ok"
+        h = c.get("/api/health").json()
+        assert h["status"] == "ok" and h["version"] and "image_models" in h
         r = c.post("/api/search", json={"query": "When was Nvidia founded?", "focus": "wiki"})
         ev = events(r)
         types = [e["type"] for e in ev]

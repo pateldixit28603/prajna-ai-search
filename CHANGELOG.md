@@ -3,6 +3,8 @@
 All notable changes to Prajna. Daily digest/benchmark commits from `prajna-bot` are not listed here.
 
 ## 2026-11-27
+- The **Create image** button now shows its label in the follow-up box on phones too, not just an icon, so it's easier to find.
+- `/api/health` now reports `version`, the git commit that is live on Render. The sidebar shows it as "build abc1234", so you can check whether the latest push has been deployed.
 - **Evidence view.** Hover over any `[n]` citation in an answer, or tap it on a phone, to open a card showing the exact passage Prajna read from that source. These are the passages the NVIDIA reranker picked. The sentence that best supports the claim is highlighted, and the card says what share of the claim's key words it contains. If there's no word overlap (for example, an English passage behind a Hindi sentence), the card says so plainly and suggests checking the source. Each citation keeps its own evidence, even when the same source is cited several times, and it still works after you switch the answer language or reopen a saved thread. Matching is instant and needs no extra model call, so it also works when NVIDIA is down.
 
 ## 2026-11-26

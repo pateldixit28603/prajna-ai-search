@@ -78,6 +78,7 @@ export default function Sidebar({ threads, current, health, open, onClose, onNew
             {health ? (health.nvidia ? "NVIDIA NIM connected" : "Extractive mode (no NIM key)") : "Connecting…"}
           </div>
           {health?.nvidia && <p className="truncate pl-4 font-mono text-[10px]" title={health.models.llm}>{health.models.llm}</p>}
+          {health?.version && <p className="truncate pl-4 font-mono text-[10px]" title="Live build (git commit)">build {health.version}</p>}
           {health?.local_index && (
             <div className="flex items-center gap-2 pl-4">
               <Database size={12} /> {health.local_index.chunks.toLocaleString()} local chunks

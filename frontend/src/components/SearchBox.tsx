@@ -89,7 +89,7 @@ export default function SearchBox({ onSubmit, focus, setFocus, lang, setLang, as
               }`}
             >
               <Icon size={13} />
-              <span className={compact ? "hidden sm:inline" : ""}>{label}</span>
+              <span className={compact && id !== "image" ? "hidden sm:inline" : ""}>{label}</span>
             </button>
           ))}
           {focus === "image" ? (

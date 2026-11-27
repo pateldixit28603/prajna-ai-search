@@ -5,6 +5,7 @@ Run:  uvicorn app.main:app --reload --port 8000
 from __future__ import annotations
 
 import json
+import os
 import logging
 import time
 from contextlib import asynccontextmanager
@@ -107,6 +108,8 @@ async def health(request: Request):
     local: LocalIndex | None = getattr(request.app.state, "local", None)
     return {
         "status": "ok",
+        # Render sets RENDER_GIT_COMMIT at runtime; lets anyone check which commit is live
+        "version": (os.getenv("RENDER_GIT_COMMIT") or os.getenv("GIT_COMMIT") or "dev")[:7],
         "nvidia": settings.nvidia_enabled,
         "models": {"llm": settings.llm_model, "fast": settings.llm_fast_model,
                    "embed": settings.embed_model, "rerank": settings.rerank_model},
