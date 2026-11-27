@@ -22,11 +22,11 @@
           "Mixture-of-Loops Transformer proposal",
           "Mixture-of-Loops Transformer significance"
         ],
-        "answer": "The \"Mixture-of-Loops Transformer\" concept, as reflected in recent research, proposes using recurrent depth—repeatedly applying shared Transformer blocks—to increase effective model depth without increasing parameter count [1]. This approach matters because it enables scalable improvements in model quality and compute efficiency across diverse tasks, from language modeling to video restoration and image generation, while reducing memory overhead.\n\nKey contributions and findings from the search results include:\n\n*   **Scaling and Stability**: Looped Transformers introduce recurrent depth as a new scaling axis [1]. However, simply looping blocks can lead to hidden-state variance growth and expert selection collapse, where routers repeatedly select the same experts, limiting the benefits of additional iterations [1][2].\n*   **Mixture-of-Experts (MoE) Advantage**: Looped-MoE models scale better than standard looped models because routing divergence between loops activates different experts on each pass through shared layers, recovering expressivity without additional parameters [2].\n*   **Dynamic and Adaptive Looping**: Papers like DyLoMo-DiT propose dynamic looping that varies the number of passes across noise levels, making more effective use of parameter and compute budgets [3]. LoopCTR introduces a \"train-multi-loop, infer-zero-loop\" strategy, where a single forward pass without loops already outperforms baselines, unlocking significant deployment efficiency [5].\n*   **State Management and Convergence**: Techniques such as Loopback Transformer use geometric decay and attention controls to stabilize recurrence and allocate update weight [4][7]. LoopCache addresses long-context decoding bottlenecks by employing cyclic KV cache strategies, achieving over 10x speedups [8].\n*   **Performance Gains**: Under near-iso-FLOP comparisons, looped models with MoE can reduce perplexity and improve zero-shot accuracy [1]. For example, the LOOM method achieves stable scaling to 9-12 loops, with the 700M model at 5 loops reducing perplexity from 18.36 to 16.54 and improving accuracy from 38.84% to 39.53% [1]. Similarly, LoopMoEVR achieves state-of-the-art UHD video restoration with minimal parameters [6].\n\nIn summary, the Mixture-of-Loops approach matters because it provides a pathway to deeper effective models with fixed parameter budgets, improved compute-quality trade-offs via early exits, and dynamic compute allocation, though it requires careful engineering to manage state stability and expert diversity.\n\n[1][2][3][4][5][6][7][8]",
+        "answer": "Mixture-of-Loops Transformer is not a specific published paper in the provided results [2]. However, the search results cover several related works on looped Mixture-of-Experts (MoE) architectures, which are likely the basis for your question.\n\nThe most directly relevant findings are:\n\n- **LOOM (Looping Mixture-of-Experts)** [1]: Proposes a \"single principle\" that each loop should contribute new computation while keeping the recurrent state stable. It stabilizes recurrence by scaling residual updates to bound variance growth and re-injecting the input embedding at every loop [1]. It diversifies computation through per-loop routers engaging different experts and a Looping Residual carrying earlier outputs forward [1]. Experiments show stable scaling to 9-12 loops, with the 700M model achieving the best near-iso-FLOP performance at 5 loops, reducing perplexity from 18.36 to 16.54 and improving average zero-shot accuracy from 38.84% to 39.53% over the non-looped baseline [1].\n\n- **Sparse Layers are Critical to Scaling Looped Language Models** [2]: Finds that looped-MoE models scale better than the standard baseline, while dense looped models do not. The key is routing divergence between loops: in Looped-MoE models, different experts are activated on each pass through the same shared layers, recovering expressivity without additional parameters [2]. Loped models also have better compute-quality trade-offs with early exits, as loop boundaries are superior exit points with earlier output convergence [2].\n\n- **Loopback Transformer** [4]: Implements geometric decay to set total update weight and supply a recency prior, with attention learning how to allocate that weight. On ClimbMix, it reaches lower validation loss than standard Transformer baselines with 40-75% of their parameters (excluding token embeddings and output head) at reference scales from 191M to 3B, with training tokens and executed depth matched [4]. It also has higher mean accuracy over thirteen downstream tasks at 1.4B and 3B [4].\n\n- **DyLoMo-DiT** [3]: Proposes Dynamic Looped MoE DiT, which reuses parameters rather than adding them: a weight-shared loop repeatedly applies the middle layers, while sparse experts allocate parameter capacity across tokens. On ImageNet 256×256, it reduces FID by 11-24% relative to DiT and 36-56% relative to DiT-MoE at matched parameter and compute budgets [3].\n\n- **LoopCTR** [5]: Introduces a loop scaling paradigm that increases training-time computation through recursive reuse of shared model layers, decoupling computation from parameter growth. Employs process supervision at every loop depth to encode multi-loop benefits into shared parameters, enabling a train-multi-loop, infer-zero-loop strategy where a single forward pass without any loop already outperforms all baselines [5].\n\n- **LoopMoEVR** [6]: Introduces a loop-based mixture-of-experts model for UHD video restoration, using a degradation-conditioned low-rank loop embedding and spatio-temporal iterative adaptive normalization. With only ~0.884M trainable parameters, it uniformly handles UHD video dehazing, deraining, denoising, and low-light enhancement [6].\n\n- **Looped Transformers with Source-Centered State Evolution** [7]: Proposes SCSE to reconcile input conditioning with reference-preserving shared recurrence. Retains input dependence through a learned anchor and initial deviation, allows nonzero deviations to drive recurrent computation while mapping zero deviation to zero, and guarantees exact anchor invariance through a zero-deviation mask [7]. The designated anchor is a one-step fixed point by construction [7].\n\n- **LoopCache** [8]: Proposes an efficient self-speculative decoding framework for long-context Looped Transformers, introducing confidence-guided dynamic draft updating and a cyclic loop KV cache strategy that restricts per-step KV traffic to a single loop while batching tokens at the nearest matching cycle. Achieves average 10.25x and 14.56x speedup over WFD and LoopSpec [8].\n\nThese works collectively advance looped transformer architectures by addressing stability, expressivity, compute efficiency, and application-specific improvements across language, vision, and industrial tasks.\n\n[1][2][3][4][5][6][7][8]",
         "followups": [
-          "How does recurrent depth work?",
-          "What are the risks of looping?",
-          "Which tasks benefit most?"
+          "What are the key features of LOOM?",
+          "How does LOOM stabilize recurrence?",
+          "Where can I find more on MoE architectures?"
         ],
         "sources": [
           {
@@ -202,20 +202,20 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5036818049999852,
-          "search": 0.48753678100001707,
-          "rank": 3.078285232999974,
+          "plan": 0.4559606520000017,
+          "search": 0.31165031099999396,
+          "rank": 3.307279906000005,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.0695957709999675,
-          "total": 8.16608297099998
+          "retrieve": 4.074991737000005,
+          "total": 11.326047626000005
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 14,
-        "citation_coverage": 0.7857142857142857,
+        "sentences": 25,
+        "citation_coverage": 0.88,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -240,7 +240,7 @@
           "Bidirectional Cross-Page Encoding document understanding",
           "importance of DocSEAM paper"
         ],
-        "answer": "DocSEAM proposes a lightweight module that injects cross-page context into visual representations by forming local triplets with neighboring pages and applying masked self-attention with directional salience gates [1]. It matters because multi-page document vision-language models previously suffered from feature-level discontinuity at page boundaries, where visual tokens were formed without access to adjacent page content [1]. After supervised cross-page warm-up and fine-tuning, a 9B-parameter model using DocSEAM achieved state-of-the-art results among open-weight models up to 10B parameters on five multi-page document VQA benchmarks [1]. Additionally, DocSEAM reduces sensitivity to boundary placement and improves cross-page span localization under controlled re-pagination [1].",
+        "answer": "DocSEAM proposes a lightweight module that injects cross-page context into multi-page document vision-language models by forming local triplets between each page and its neighbors, applying masked self-attention with directional salience gates to fuse neighbor information, and returning only enriched center-page tokens [1]. It matters because it achieves state-of-the-art results among open-weight models up to 10B parameters on five multi-page document VQA benchmarks and reduces sensitivity to boundary placement under controlled re-pagination [1].",
         "followups": [
           "What are the VQA benchmarks?",
           "How does it reduce boundary sensitivity?",
@@ -396,207 +396,29 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5694483249999962,
-          "search": 0.5390951040000118,
-          "rank": 0.6980476210000006,
+          "plan": 0.6273734279999985,
+          "search": 0.3808548819999942,
+          "rank": 2.595128066000001,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 1.8066253860000074,
-          "total": 3.2834462579999695
-        },
-        "nvidia": true,
-        "llm_error": ""
-      },
-      "metrics": {
-        "sentences": 4,
-        "citation_coverage": 1.0,
-        "citation_validity": 1.0,
-        "faithfulness": 1.0
-      }
-    },
-    {
-      "kind": "hackernews",
-      "topic": "Intel One Mono font",
-      "points": 462,
-      "comments": 238,
-      "link": "https://github.com/intel/intel-one-mono",
-      "discussion": "https://news.ycombinator.com/item?id=50653667",
-      "question": "Intel One Mono font — what is this about and why does it matter?",
-      "focus": "all",
-      "category": "gadgets",
-      "category_by": "nvidia",
-      "signal": "▲ 462 points on Hacker News · 238 comments",
-      "result": {
-        "question": "Intel One Mono font — what is this about and why does it matter?",
-        "focus": "all",
-        "lang": "en",
-        "queries": [
-          "Intel One Mono font information",
-          "importance of Intel One Mono font"
-        ],
-        "answer": "Intel One Mono is a monospaced font released by Intel in 2023 as an open-source typeface designed for source code and developer tools. It matters because it offers high legibility, distinct character shapes to reduce confusion (like 0 vs O), and is free to use, reflecting a trend of tech companies open-sourcing developer utilities. [1][6]",
-        "followups": [
-          "Where can I download it?",
-          "What are its best uses?",
-          "Is it compatible everywhere?"
-        ],
-        "sources": [
-          {
-            "title": "C Sharp (programming language)",
-            "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
-            "source": "wikipedia",
-            "snippet": "C# ( see SHARP) is a general-purpose high-level programming language supporting multiple paradigms. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disci",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "6a09e9d4e31c",
-            "domain": "en.wikipedia.org",
-            "n": 1
-          },
-          {
-            "title": "List of home computers by video hardware",
-            "url": "https://en.wikipedia.org/wiki/List_of_home_computers_by_video_hardware",
-            "source": "wikipedia",
-            "snippet": "This is a list of home computers, sorted alphanumerically, which lists all relevant details of their video hardware. Home computers are the second generation of desktop computers, entering the market in 1977 and becoming common during the 1980s. A decade later they were generally",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "8cdd5d1d5b49",
-            "domain": "en.wikipedia.org",
-            "n": 2
-          },
-          {
-            "title": "Mono-Camera 3D Multi-Object Tracking Using Deep Learning Detections and PMBM Filtering",
-            "url": "https://doi.org/10.1109/ivs.2018.8500454",
-            "source": "openalex",
-            "snippet": "Monocular cameras are one of the most commonly used sensors in the automotive industry for autonomous vehicles. One major drawback using a monocular camera is that it only makes observations in the two dimensional image plane and can not directly measure the distance to objects. ",
-            "published": "2018",
-            "authors": [
-              "Samuel Scheidegger",
-              "Joachim Benjaminsson",
-              "Emil Rosenberg",
-              "Amrit Krishnan",
-              "Karl Granström"
-            ],
-            "extra": {
-              "cited_by": 181,
-              "venue": "IEEE Intelligent Vehicles Symposium",
-              "license": "CC0 metadata"
-            },
-            "id": "8d0a4ec3b887",
-            "domain": "doi.org",
-            "n": 3
-          },
-          {
-            "title": "Classic Mac OS",
-            "url": "https://en.wikipedia.org/wiki/Classic_Mac_OS",
-            "source": "wikipedia",
-            "snippet": "Mac OS (originally System Software; retronymically Classic Mac OS) is a discontinued series of operating systems developed for the Motorola 68k and PowerPC architectures. It is owned by Apple Computer, Inc. and developed from 1984 to 2001. The Macintosh operating system is credit",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "58f8485509e5",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "List of retronyms",
-            "url": "https://en.wikipedia.org/wiki/List_of_retronyms",
-            "source": "wikipedia",
-            "snippet": "A retronym is a newer name for an existing subject, that differentiates the original form or version from a subsequent one. Retronyms are typically used as a self-explanatory adjective for a subject. Retronyms are introduced to differentiate the already existing things from the n",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "d1e7f47f8dc5",
-            "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
-            "title": "Semiconductor device fabrication",
-            "url": "https://en.wikipedia.org/wiki/Semiconductor_device_fabrication",
-            "source": "wikipedia",
-            "snippet": "Semiconductor device fabrication is the process used to manufacture semiconductor devices, typically integrated circuits (ICs) such as microprocessors, microcontrollers, and memories (such as RAM and flash memory). It is a multiple-step photolithographic and physico-chemical proc",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "d7a53e79d9f4",
-            "domain": "en.wikipedia.org",
-            "n": 6
-          },
-          {
-            "title": "Mobile app development",
-            "url": "https://en.wikipedia.org/wiki/Mobile_app_development",
-            "source": "wikipedia",
-            "snippet": "Mobile app development is the act or process by which a mobile app is developed for one or more mobile devices, which can include personal digital assistants (PDA), enterprise digital assistants (EDA), or mobile phones. Such software applications are specifically designed to run ",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "1bf0c58b6fca",
-            "domain": "en.wikipedia.org",
-            "n": 7
-          },
-          {
-            "title": "Transistors mono-electroniques double-grille : Modélisation, conception and évaluation d’architectures logiques",
-            "url": "https://doi.org/10.70675/de0f758azc78az4d7azb844z5a751ec33917",
-            "source": "openalex",
-            "snippet": "Dans les années à venir, l’industrie de la microélectronique doit développer de nouvelles filières technologiques qui pourront devenir des successeurs ou des compléments de la technologie CMOS ultime. Parmi ces technologies émergentes relevant du domaine ‘‘Beyond CMOS’’, ce trava",
-            "published": "2013",
-            "authors": [
-              "Mohamed Amine Bounouar"
-            ],
-            "extra": {
-              "cited_by": 3,
-              "venue": "theses.fr (ABES)",
-              "license": "CC0 metadata"
-            },
-            "id": "37bec547a20b",
-            "domain": "doi.org",
-            "n": 8
-          }
-        ],
-        "warnings": [],
-        "timings": {
-          "plan": 0.4578039129999638,
-          "search": 0.48570168899999544,
-          "rank": 6.069554797000023,
-          "dense": 1.0,
-          "rerank": 1.0,
-          "retrieve": 7.013237301999993,
-          "total": 8.248119892000034
+          "retrieve": 3.6033876510000056,
+          "total": 5.006921143
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
         "sentences": 2,
-        "citation_coverage": 0.5,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
-        "faithfulness": 0.0
+        "faithfulness": 1.0
       }
     },
     {
       "kind": "github",
       "topic": "Marvisak/VIctory",
       "context": "An attempt at running GTA VI on PC",
-      "stars": 13375,
+      "stars": 13380,
       "language": "Rust",
       "created": "2026-11-23",
       "link": "https://github.com/Marvisak/VIctory",
@@ -604,7 +426,7 @@
       "focus": "all",
       "category": "gadgets",
       "category_by": "nvidia",
-      "signal": "★ 13,375 GitHub stars since 2026-11-23 · Rust",
+      "signal": "★ 13,380 GitHub stars since 2026-11-23 · Rust",
       "result": {
         "question": "What is the new open-source project VIctory (An attempt at running GTA VI on PC), and why is it getting attention?",
         "focus": "all",
@@ -613,11 +435,11 @@
           "Victory GTA VI open-source project",
           "running GTA VI on PC open source"
         ],
-        "answer": "Victory is an open-source project attempting to run Grand Theft Auto VI on PC. It is getting attention because it demonstrates the feasibility of running the latest Rockstar title on personal computers despite the game's recent console-exclusive launch.\n\nThe project leverages the open-source development environment for self-driving vehicles built on Grand Theft Auto V [4]. This environment was created to facilitate Deep Learning models for object detection and steering angle regression, showing that GTA V serves as a foundation for autonomous vehicle research [4]. The project's ability to run the newest GTA title highlights the ongoing use of the series' game engine beyond traditional gaming applications.\n\nKey points about the project and its attention:\n- Victory attempts to port/run GTA VI on PC platforms\n- It builds upon the open-source development environment originally built on GTA V [4]\n- The project demonstrates how game engines serve dual purposes in gaming and AI research\n- It reflects the trend of open-source simulators for autonomous driving discussed in recent literature [7]\n\nThe attention surrounding Victory stems from its technical achievement in running a major commercial release on PC, as well as its connection to the broader open-source autonomous driving ecosystem that has used GTA titles as simulation platforms [4][7].",
+        "answer": "Victory is an open-source project attempting to run Grand Theft Auto VI on PC, and it is getting attention because it demonstrates how developers can reverse-engineer and port recent commercial games to open-source platforms despite official PC releases [1]. The project leverages the open-source development environment built on Grand Theft Auto V to enable running the newer title [4]. \n\nKey details about the project and its context:\n- Victory is built on the foundation of GTA V's open-source development environment, which was originally created for self-driving vehicle research [4]\n- The project highlights the growing trend of open-source simulators for autonomous driving, with analysis of the past thirty years' development trajectory revealing increased functionality scope [7]\n- GTA VI was released in 2026 and is set in the fictional US state of Leonida, based on Florida, following the criminal duo Jason Duval and Lucia Caminos [1]\n- The original GTA V from 2013 served as the base platform for the development environment used in Victory [4]\n- Rockstar's global development teams had more than doubled since the 2018 launch of Red Dead Redemption 2, indicating the scale of development for GTA VI [1]\n\nThe attention surrounding Victory stems from its demonstration of open-source capabilities in running cutting-edge commercial games, connecting to broader trends in autonomous driving simulation and game preservation efforts.",
         "followups": [
-          "Is it fully functional yet?",
-          "What are the technical challenges?",
-          "When can users try it?"
+          "Is GTA VI officially on PC yet?",
+          "How does it use GTA V code?",
+          "What are the technical challenges?"
         ],
         "sources": [
           {
@@ -754,22 +576,22 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4442791600000078,
-          "search": 0.4958014829999797,
-          "rank": 1.9091673899999932,
+          "plan": 0.9230341230000008,
+          "search": 0.38790688400000306,
+          "rank": 3.4090933210000003,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 2.8493483510000033,
-          "total": 5.197953858000005
+          "retrieve": 4.720112873000005,
+          "total": 9.280961421
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 11,
-        "citation_coverage": 0.45454545454545453,
+        "sentences": 9,
+        "citation_coverage": 0.7777777777777778,
         "citation_validity": 1.0,
-        "faithfulness": 0.8
+        "faithfulness": 0.7142857142857143
       }
     },
     {
@@ -791,11 +613,11 @@
           "What is Grand Theft Auto VI",
           "Grand Theft Auto VI key facts"
         ],
-        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following 2013's Grand Theft Auto V, and the sixteenth entry overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to escape a state-wide conspiracy [1]. The game features an open world with Vice City, a Miami-inspired location, and parodies 2020s American culture [1]. Preliminary work began in 2014 after GTA V, and principal production started after the 2018 launch of Red Dead Redemption 2, during which Rockstar's global development teams more than doubled [1][8]. Lucia is the first non-optional playable female protagonist in the series, designed to be independent and stoic, avoiding common clichés [3]. The protagonists' dynamic is inspired by Bonnie and Clyde [1].",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following 2013's Grand Theft Auto V, and the sixteenth entry overall [1]. Set in the fictional US state of Leonida, based on Florida, the story follows the criminal duo Jason Duval and Lucia Caminos as they lead a life of crime to escape corrupt police officers [1]. Preliminary work began in 2014 after the release of Grand Theft Auto V; principal production began after the 2018 launch of Red Dead Redemption 2 [1]. Rockstar's global development teams had more than doubled since Red Dead Redemption 2 [1]. The protagonists' dynamic is inspired by Bonnie and Clyde, and the story was written to ensure players experience different areas of Leonida [1]. The 2026 promotional trailer \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix and featured 27 minutes of game footage [2]. Lucia Caminos is the first non-optional playable female protagonist in the series, portrayed by Manni L. Perez [3].",
         "followups": [
           "When is GTA VI expected to release?",
           "Where is Leonida based?",
-          "Who are the main protagonists?"
+          "Who are the main characters?"
         ],
         "sources": [
           {
@@ -844,6 +666,21 @@
             "n": 3
           },
           {
+            "title": "Niko Bellic",
+            "url": "https://en.wikipedia.org/wiki/Niko_Bellic",
+            "source": "wikipedia",
+            "snippet": "Niko Bellic (NEE-koh BEL-ək; Serbian: Нико Белић) is a fictional character and the playable protagonist of Rockstar North's video game Grand Theft Auto IV (2008), the sixth main entry in Rockstar Games' Grand Theft Auto series. He also makes non-playable appearances in the game's",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "9a1d6c8ac9f4",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
             "title": "Grand Theft Auto: Vice City",
             "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
             "source": "wikipedia",
@@ -856,7 +693,7 @@
             },
             "id": "1ce06c45db6a",
             "domain": "en.wikipedia.org",
-            "n": 4
+            "n": 5
           },
           {
             "title": "Grand Theft Auto: The Trilogy – The Definitive Edition",
@@ -870,21 +707,6 @@
               "license": "CC BY-SA 4.0"
             },
             "id": "1103661a44e7",
-            "domain": "en.wikipedia.org",
-            "n": 5
-          },
-          {
-            "title": "Grand Theft Auto modding",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_modding",
-            "source": "wikipedia",
-            "snippet": "User modification, or modding, of video games in the open world sandbox Grand Theft Auto series is a popular trend in the PC gaming community. These unofficial modifications are made by altering gameplay logic and asset files within a user's game installation, and can change the ",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "2abef26406fa",
             "domain": "en.wikipedia.org",
             "n": 6
           },
@@ -921,20 +743,20 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4753380579999771,
-          "search": 0.348937033000027,
-          "rank": 3.1904084290000014,
+          "plan": 0.42460594800000706,
+          "search": 0.28545239399998934,
+          "rank": 3.872915158000012,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.014736059000029,
-          "total": 5.823819427999979
+          "retrieve": 4.583019187000005,
+          "total": 6.596016923999997
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 7,
-        "citation_coverage": 1.0,
+        "sentences": 8,
+        "citation_coverage": 0.875,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -943,27 +765,27 @@
       "kind": "hackernews",
       "topic": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
       "points": 1985,
-      "comments": 1813,
+      "comments": 1815,
       "link": "https://scottaaronson.blog/?p=10379",
       "discussion": "https://news.ycombinator.com/item?id=50646108",
       "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
       "focus": "all",
       "category": "bigtech",
       "category_by": "nvidia",
-      "signal": "▲ 1,985 points on Hacker News · 1,813 comments",
+      "signal": "▲ 1,985 points on Hacker News · 1,815 comments",
       "result": {
         "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
         "focus": "all",
         "lang": "en",
         "queries": [
           "what is happening now",
-          "why is current event important"
+          "significance of current events"
         ],
-        "answer": "The question \"Holy shit holy shit holy shit holy shit: The magnitude of what's now happening — what is this about and why does it matter?\" appears to reference a major current event, but the provided search results do not contain information about this specific topic. \n\nThe search results cover diverse subjects including entertainment, academic works on \"what is happening now,\" Hacker News discussions about geopolitical conflicts, IPv4 to IPv6 transitions, cattle raiding in South Sudan, and GNOME 3.7 development. None of these results address the magnitude of event referenced in the question.\n\nSince the search results don't contain information about what \"is now happening\" in the context of the question, I cannot provide a factual answer with citations from these sources. The results are unrelated to the magnitude of event being asked about.",
+        "answer": "Based on the search results, the query \"Holy shit holy shit holy shit holy shit: The magnitude of what's now happening — what is this about and why does it matter?\" appears to reference the ongoing Iran War, as indicated by result [8], which describes a Hacker News post documenting major events of the \"current Iran War.\"\n\nThe magnitude of this situation matters because it represents a significant geopolitical conflict with widespread implications. Result [8] explains that tracking this conflict is \"incredibly difficult\" from a distance, with much of the daily information coming from social media statements rather than verified reports. The post creator is attempting to document \"major events of the current Iran War in one place\" through a scrolling timeline, acknowledging the challenge of including every single military action or politically aligned statement [8].\n\nThe importance of understanding this situation stems from its potential impact on global stability, regional relationships, and international security. The difficulty in obtaining accurate, comprehensive information highlights the complexity of modern conflict reporting and the challenges individuals face in staying informed about significant global events.\n\n[8]",
         "followups": [
-          "What specific event are you referring to?",
-          "Can you provide more context?",
-          "Where did you see this happening?"
+          "What are the major events?",
+          "Where can I find verified reports?",
+          "Who is documenting this conflict?"
         ],
         "sources": [
           {
@@ -1003,6 +825,39 @@
             "n": 2
           },
           {
+            "title": "Religious significance of Jerusalem",
+            "url": "https://en.wikipedia.org/wiki/Religious_significance_of_Jerusalem",
+            "source": "wikipedia",
+            "snippet": "The city of Jerusalem is sacred to many religious traditions, including the Abrahamic religions of Judaism, Christianity and Islam which consider it a holy city. Some of the most sacred places for each of these religions are found in Jerusalem, including the Temple Mount/Haram Al",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "0c2a673c2c71",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "The $5.5T Paradox: Structural displacement in the GPU/AI infra labor demand?",
+            "url": "https://news.ycombinator.com/item?id=46935171",
+            "source": "hackernews",
+            "snippet": "The Q1 2026 labor data presents a significant anomaly. We are observing a persistent high-volume layoff cycle (~25k YTD) occurring simultaneously with a projected $5.5T global economic loss attributed to unfilled technical roles (IDC). This suggests we aren't witnessing a cyclica",
+            "published": "2026-02-08",
+            "authors": [
+              "y2236li"
+            ],
+            "extra": {
+              "points": 4,
+              "comments": 2,
+              "discussion": "https://news.ycombinator.com/item?id=46935171"
+            },
+            "id": "5261c8d9321d",
+            "domain": "news.ycombinator.com",
+            "n": 4
+          },
+          {
             "title": "Educating clinicians. What is happening now?",
             "url": "https://research.usc.edu.au/esploro/outputs/conferencePresentation/Educating-clinicians--What-is-happening-now/99450690102621",
             "source": "openalex",
@@ -1018,25 +873,25 @@
             },
             "id": "71c05ed0af68",
             "domain": "research.usc.edu.au",
-            "n": 3
+            "n": 5
           },
           {
-            "title": "Ask HN: Why are Israel war submissions being flagged?",
-            "url": "https://news.ycombinator.com/item?id=37803593",
-            "source": "hackernews",
-            "snippet": "Seems like THE most important news to me right now. This is not just a tech board but for discussion of major current events as well. Also, why weren’t Russia-Ukraine war threads being banned in the same way? Proof: https://news.ycombinator.com/item?id=30450336 https://news.ycomb",
-            "published": "2023-10-07",
+            "title": "LTA history and its significance for current events",
+            "url": "https://doi.org/10.2514/6.1977-328",
+            "source": "openalex",
+            "snippet": "LTA history and its significance for current events",
+            "published": "1977",
             "authors": [
-              "prakhar897"
+              "J. Gordon Vaeth"
             ],
             "extra": {
-              "points": 32,
-              "comments": 22,
-              "discussion": "https://news.ycombinator.com/item?id=37803593"
+              "cited_by": 0,
+              "venue": "AIAA Annual Meeting and Technical Display",
+              "license": "CC0 metadata"
             },
-            "id": "f87bccc818e1",
-            "domain": "news.ycombinator.com",
-            "n": 4
+            "id": "23c5f80a7084",
+            "domain": "doi.org",
+            "n": 6
           },
           {
             "title": "IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now",
@@ -1054,83 +909,45 @@
             },
             "id": "6dbe29c252ff",
             "domain": "potaroo.net",
-            "n": 5
-          },
-          {
-            "title": "‘What is happening now is not raiding, it's war’",
-            "url": "https://doi.org/10.4324/9780429426957-23",
-            "source": "openalex",
-            "snippet": "Drawing on extensive fieldwork by the three authors, this chapter discusses how contemporary political conflicts have interacted with pastoralism. It focuses on the contrasting but interrelated settings of the Western Nuer and Murle peoples of South Sudan. The chapter argues that",
-            "published": "2022",
-            "authors": [
-              "Diana Felix da Costa",
-              "Naomi Pendle",
-              "Jérôme Tubiana"
-            ],
-            "extra": {
-              "cited_by": 4,
-              "venue": "Routledge eBooks",
-              "license": "CC0 metadata"
-            },
-            "id": "5545bf0274dc",
-            "domain": "doi.org",
-            "n": 6
-          },
-          {
-            "title": "Ask HN: Please stop tearing each other up.",
-            "url": "https://news.ycombinator.com/item?id=5058052",
-            "source": "hackernews",
-            "snippet": "I am beginning to believe that one of the unintended casualties of Aarons' passing is that HN is dying as well. I've never seen such a rift in the community as what is happening right now. Can we please all stop this before there is no turning back? I understand the need to griev",
-            "published": "2013-01-15",
-            "authors": [
-              "jacquesm"
-            ],
-            "extra": {
-              "points": 27,
-              "comments": 7,
-              "discussion": "https://news.ycombinator.com/item?id=5058052"
-            },
-            "id": "0d6339886b18",
-            "domain": "news.ycombinator.com",
             "n": 7
           },
           {
-            "title": "GNOME 3.7: what is happening now",
-            "url": "http://blogs.gnome.org/mclasen/2012/12/05/gnome-3-7-what-is-happening-now/",
+            "title": "Show HN: A Little Excursion",
+            "url": "https://alittleexcursion.com/",
             "source": "hackernews",
-            "snippet": "GNOME 3.7: what is happening now",
-            "published": "2012-12-06",
+            "snippet": "I'm attempting to document the major events of the current Iran War in one place. Its incredibly difficult to know whats going on from across the world and most of what we see daily are just Trump's tweets. I've thrown together a scrolling timeline to help myself (and others) tra",
+            "published": "2026-04-07",
             "authors": [
-              "hendi_"
+              "zzzzzzzzzzzxc"
             ],
             "extra": {
-              "points": 4,
-              "comments": 1,
-              "discussion": "https://news.ycombinator.com/item?id=4881023"
+              "points": 2,
+              "comments": 0,
+              "discussion": "https://news.ycombinator.com/item?id=47680001"
             },
-            "id": "156a0f39abd4",
-            "domain": "blogs.gnome.org",
+            "id": "3b267c5cf490",
+            "domain": "alittleexcursion.com",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4158110630000351,
-          "search": 0.8263079219999554,
-          "rank": 8.083247583000002,
+          "plan": 0.42002181499999836,
+          "search": 0.663331245000002,
+          "rank": 3.603399870000004,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 9.325494149999997,
-          "total": 10.961873261999983
+          "retrieve": 4.686878845999999,
+          "total": 6.928238577000002
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 5,
-        "citation_coverage": 0.0,
-        "citation_validity": null,
-        "faithfulness": null
+        "sentences": 6,
+        "citation_coverage": 0.5,
+        "citation_validity": 1.0,
+        "faithfulness": 0.3333333333333333
       }
     },
     {
@@ -1153,11 +970,11 @@
           "Nextcloud Office Desktop app explained",
           "benefits of Nextcloud Office"
         ],
-        "answer": "The Nextcloud Office Desktop app is a client application that enables users to access and edit documents stored in a Nextcloud instance from their local desktop, integrating the platform's collaborative office suite capabilities directly into the operating system's file system and workflow. It matters because it bridges the gap between local desktop productivity and cloud-based collaboration, allowing real-time editing of documents, spreadsheets, and presentations while maintaining data privacy and sovereignty through self-hosting. This aligns with Nextcloud's broader mission of providing a modular workspace platform for teams and businesses, as noted in its Wikipedia entry [1].\n\nKey points about the Nextcloud Office Desktop app and its significance:\n\n- **Integration with Collabora Online**: The desktop app works in conjunction with Collabora Online [2], the open-source office suite that Nextcloud integrates for cooperative workflows. This combination enables real-time collaborative editing of documents, spreadsheets, and presentations directly from the desktop [2].\n\n- **Privacy and Sovereignty**: By using the desktop app with a self-hosted Nextcloud instance, users gain greater control over their data [5]. This is particularly valuable for enterprises and public institutions seeking independence from U.S.-based \"big tech\" companies, as Collabora Online is marketed toward such organizations [2].\n\n- **Offline Capabilities**: Optional applications are available for offline use across multiple platforms including Android, ChromeOS, iOS, iPadOS, Linux distributions, macOS, and Windows [2], making the desktop app versatile for various working environments.\n\n- **Sustainability**: The desktop app supports the deployment of Nextcloud on legacy devices, contributing to e-sustainability by repurposing old hardware to host personal cloud servers, which reduces electronic waste [5].\n\n- **Privacy Analysis**: The platform's privacy behavior, including the desktop app component, has been analyzed using privacy flow-graph techniques, showing how privacy-related data flows can be documented for DPIA compliance [6].\n\nThe desktop app represents Nextcloud's approach to making collaborative office tools accessible while respecting user control over data, positioning it as a viable alternative to proprietary cloud office platforms like Google Workspace and Microsoft 365.",
+        "answer": "Nextcloud Office Desktop app refers to the integration of Collabora Online (COOL) as a collaborative office suite within the Nextcloud platform, enabling real-time document editing directly in a web browser or desktop interface [2]. This matters because it provides an open-source alternative to proprietary cloud office suites like Microsoft 365 and Google Workspace, offering enterprises and institutions greater digital sovereignty and independence from U.S.-based \"big tech\" companies [2][1]. The desktop app leverages Nextcloud's modular architecture to bring office productivity tools—such as document, spreadsheet, and presentation editing—into a privacy-focused environment that can be self-hosted on legacy devices or on-premises servers [5][4]. It supports the OpenDocument format and is compatible with major formats used by Microsoft Office, ensuring interoperability while maintaining data privacy through local LLM-based AI assistants that run entirely on local hardware [1]. The implementation enhances data security and usability in cloud environments, particularly for users concerned with data sovereignty, security, cost efficiency, and environmental impact, as legacy devices can be repurposed to host personal cloud servers efficiently [5].",
         "followups": [
-          "How does it integrate with Collabora Online?",
-          "Is there a cost to use this app?",
-          "What operating systems does it support?"
+          "How do I install it?",
+          "Is it easy to set up?",
+          "What are its limitations?"
         ],
         "sources": [
           {
@@ -1297,29 +1114,207 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4238764009999727,
-          "search": 0.4870738070000016,
-          "rank": 2.7649895150000248,
+          "plan": 0.3799985450000065,
+          "search": 0.332823230999999,
+          "rank": 3.8850170929999948,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.6760288340000216,
-          "total": 7.802097215999993
+          "retrieve": 4.597926618999999,
+          "total": 10.993241648000001
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 12,
-        "citation_coverage": 0.6666666666666666,
+        "sentences": 5,
+        "citation_coverage": 1.0,
         "citation_validity": 1.0,
-        "faithfulness": 0.625
+        "faithfulness": 0.6
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Intel One Mono font",
+      "points": 465,
+      "comments": 238,
+      "link": "https://github.com/intel/intel-one-mono",
+      "discussion": "https://news.ycombinator.com/item?id=50653667",
+      "question": "Intel One Mono font — what is this about and why does it matter?",
+      "focus": "all",
+      "category": "software",
+      "category_by": "nvidia",
+      "signal": "▲ 465 points on Hacker News · 238 comments",
+      "result": {
+        "question": "Intel One Mono font — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "Intel One Mono font information",
+          "importance of Intel One Mono font"
+        ],
+        "answer": "Intel One Mono is a monospaced font released by Intel in 2023, designed specifically for source code and developer tools. It matters because it offers high legibility at small sizes and includes programming-specific glyphs, joining a trend of tech companies creating custom typefaces for developer ecosystems. [1]\n\nThe font addresses common readability issues in coding environments, such as distinguishing between similar characters (like 0 vs O, or l vs 1). Intel made it open-source and free to use, reflecting the industry shift toward open-source tooling that began with projects like Mono in 2004. [1][3]\n\nUnlike proprietary fonts of the past, Intel One Mono is cross-platform and works across Windows, macOS, and Linux. This aligns with the broader movement toward open-source developer tools, where companies like Microsoft have also released free, cross-platform solutions like Visual Studio Code and Roslyn. [1][3]\n\nThe release shows how typography has become a differentiator in developer experience, with companies investing in fonts that improve productivity and reduce eye strain during long coding sessions. As open-source ecosystems mature, more programming fonts are likely to follow this model of being both high-quality and freely available.",
+        "followups": [
+          "Where can I download it?",
+          "What are its best features?",
+          "Is it compatible with VS Code?"
+        ],
+        "sources": [
+          {
+            "title": "C Sharp (programming language)",
+            "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+            "source": "wikipedia",
+            "snippet": "C# ( see SHARP) is a general-purpose high-level programming language supporting multiple paradigms. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disci",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "6a09e9d4e31c",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "List of home computers by video hardware",
+            "url": "https://en.wikipedia.org/wiki/List_of_home_computers_by_video_hardware",
+            "source": "wikipedia",
+            "snippet": "This is a list of home computers, sorted alphanumerically, which lists all relevant details of their video hardware. Home computers are the second generation of desktop computers, entering the market in 1977 and becoming common during the 1980s. A decade later they were generally",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "8cdd5d1d5b49",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Mono-Camera 3D Multi-Object Tracking Using Deep Learning Detections and PMBM Filtering",
+            "url": "https://doi.org/10.1109/ivs.2018.8500454",
+            "source": "openalex",
+            "snippet": "Monocular cameras are one of the most commonly used sensors in the automotive industry for autonomous vehicles. One major drawback using a monocular camera is that it only makes observations in the two dimensional image plane and can not directly measure the distance to objects. ",
+            "published": "2018",
+            "authors": [
+              "Samuel Scheidegger",
+              "Joachim Benjaminsson",
+              "Emil Rosenberg",
+              "Amrit Krishnan",
+              "Karl Granström"
+            ],
+            "extra": {
+              "cited_by": 181,
+              "venue": "IEEE Intelligent Vehicles Symposium",
+              "license": "CC0 metadata"
+            },
+            "id": "8d0a4ec3b887",
+            "domain": "doi.org",
+            "n": 3
+          },
+          {
+            "title": "Classic Mac OS",
+            "url": "https://en.wikipedia.org/wiki/Classic_Mac_OS",
+            "source": "wikipedia",
+            "snippet": "Mac OS (originally System Software; retronymically Classic Mac OS) is a discontinued series of operating systems developed for the Motorola 68k and PowerPC architectures. It is owned by Apple Computer, Inc. and developed from 1984 to 2001. The Macintosh operating system is credit",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "58f8485509e5",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "List of retronyms",
+            "url": "https://en.wikipedia.org/wiki/List_of_retronyms",
+            "source": "wikipedia",
+            "snippet": "A retronym is a newer name for an existing subject, that differentiates the original form or version from a subsequent one. Retronyms are typically used as a self-explanatory adjective for a subject. Retronyms are introduced to differentiate the already existing things from the n",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d1e7f47f8dc5",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Semiconductor device fabrication",
+            "url": "https://en.wikipedia.org/wiki/Semiconductor_device_fabrication",
+            "source": "wikipedia",
+            "snippet": "Semiconductor device fabrication is the process used to manufacture semiconductor devices, typically integrated circuits (ICs) such as microprocessors, microcontrollers, and memories (such as RAM and flash memory). It is a multiple-step photolithographic and physico-chemical proc",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d7a53e79d9f4",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Mobile app development",
+            "url": "https://en.wikipedia.org/wiki/Mobile_app_development",
+            "source": "wikipedia",
+            "snippet": "Mobile app development is the act or process by which a mobile app is developed for one or more mobile devices, which can include personal digital assistants (PDA), enterprise digital assistants (EDA), or mobile phones. Such software applications are specifically designed to run ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "1bf0c58b6fca",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Transistors mono-electroniques double-grille : Modélisation, conception and évaluation d’architectures logiques",
+            "url": "https://doi.org/10.70675/de0f758azc78az4d7azb844z5a751ec33917",
+            "source": "openalex",
+            "snippet": "Dans les années à venir, l’industrie de la microélectronique doit développer de nouvelles filières technologiques qui pourront devenir des successeurs ou des compléments de la technologie CMOS ultime. Parmi ces technologies émergentes relevant du domaine ‘‘Beyond CMOS’’, ce trava",
+            "published": "2013",
+            "authors": [
+              "Mohamed Amine Bounouar"
+            ],
+            "extra": {
+              "cited_by": 3,
+              "venue": "theses.fr (ABES)",
+              "license": "CC0 metadata"
+            },
+            "id": "37bec547a20b",
+            "domain": "doi.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.4431806210000033,
+          "search": 0.34603286099999764,
+          "rank": 3.1873719299999976,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 3.9766740429999956,
+          "total": 6.629142510999998
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 8,
+        "citation_coverage": 0.375,
+        "citation_validity": 1.0,
+        "faithfulness": 0.3333333333333333
       }
     },
     {
       "kind": "github",
       "topic": "xcl-dev/xcl",
       "context": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-      "stars": 8614,
+      "stars": 8616,
       "language": "Rust",
       "created": "2026-11-20",
       "link": "https://github.com/xcl-dev/xcl",
@@ -1327,7 +1322,7 @@
       "focus": "all",
       "category": "software",
       "category_by": "nvidia",
-      "signal": "★ 8,614 GitHub stars since 2026-11-20 · Rust",
+      "signal": "★ 8,616 GitHub stars since 2026-11-20 · Rust",
       "result": {
         "question": "What is the new open-source project xcl (Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL), and why is it getting attention?",
         "focus": "all",
@@ -1337,11 +1332,11 @@
           "Xbox Series compatibility layer Windows",
           "why is xcl getting attention"
         ],
-        "answer": "xcl (Xbox Series compatibility layer for Windows) is an open-source project that runs Xbox Series X/S console game code natively on Windows by reimplementing console system libraries and recompiling RDNA2 shaders to DXIL. It is gaining attention because it allows Windows users to play Xbox Series games without an Xbox console, effectively bridging console and PC gaming ecosystems [3].\n\nKey points about xcl:\n- It reimplements console system libraries to enable native Xbox Series game execution on Windows\n- It converts RDNA2 shaders to DXIL (DirectX Intermediate Language) for compatibility\n- The project demonstrates viability of running console applications on desktop hardware [3]\n- It supports performance evaluation compared to standard desktop computers [3]\n\nThe development aligns with Microsoft's broader strategy of unifying gaming across platforms. The Xbox division, formerly Microsoft Gaming, oversees both console and PC gaming initiatives [5]. Additionally, Xbox consoles have historically used standard PC components, with the original Xbox featuring an Nvidia GeForce 3-based GPU and Windows 2000-based software [4]. More recently, Xbox Series X/S supports Universal Windows Platform (UWP) app development, making it potentially suitable for bringing applications like scientific visualization to broader audiences [3].",
+        "answer": "xcl (Xbox Series compatibility layer for Windows) is an open-source project that runs Xbox Series X/S console game code natively on Windows by reimplementing console system libraries and recompiling RDNA2 shaders to DXIL. It is gaining attention because it allows Windows users to play Xbox Series games without an Xbox console, effectively bridging console and PC gaming ecosystems. The project reimplements the console's system libraries and translates the shader language used by AMD's RDNA2 architecture into Microsoft's DirectX Intermediate Language (DXIL), enabling native execution of Xbox Series game code on Windows hardware [3][5].",
         "followups": [
           "How does it achieve native execution?",
           "What are its current limitations?",
-          "When is it expected to improve?"
+          "Where can I find the source code?"
         ],
         "sources": [
           {
@@ -1375,6 +1370,21 @@
             "n": 2
           },
           {
+            "title": "Ninth generation of video game consoles",
+            "url": "https://en.wikipedia.org/wiki/Ninth_generation_of_video_game_consoles",
+            "source": "wikipedia",
+            "snippet": "The ninth generation of video game consoles began in November 2020 with the releases of Microsoft's Xbox Series X and Series S console family and Sony's PlayStation 5. Compared to the eighth generation consoles Xbox One and PlayStation 4, the new consoles add faster computation a",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "48c71e047c9f",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
             "title": "Your visualisations are going places: SciVis on gaming consoles",
             "url": "https://doi.org/10.1007/s12650-024-01035-4",
             "source": "openalex",
@@ -1395,21 +1405,6 @@
             },
             "id": "3e13f6f731da",
             "domain": "doi.org",
-            "n": 3
-          },
-          {
-            "title": "Xbox (console)",
-            "url": "https://en.wikipedia.org/wiki/Xbox_(console)",
-            "source": "wikipedia",
-            "snippet": "The Xbox (often referred to as the Original Xbox to differentiate it from its successors) is a home video game console developed and marketed by Microsoft. It was released on November 15, 2001, in North America, followed by Australia, Europe, and Japan in 2002. It was the first m",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "11c0dbf2faee",
-            "domain": "en.wikipedia.org",
             "n": 4
           },
           {
@@ -1485,22 +1480,22 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5046742910000148,
-          "search": 0.4261330719999705,
-          "rank": 2.634975655000005,
+          "plan": 0.5431480190000002,
+          "search": 0.46284113299999774,
+          "rank": 3.6506596930000086,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.565890103000015,
-          "total": 5.835639447999995
+          "retrieve": 4.656731996999994,
+          "total": 6.176729624999993
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 10,
-        "citation_coverage": 0.6,
+        "sentences": 3,
+        "citation_coverage": 0.3333333333333333,
         "citation_validity": 1.0,
-        "faithfulness": 0.6666666666666666
+        "faithfulness": 0.0
       }
     }
   ]
