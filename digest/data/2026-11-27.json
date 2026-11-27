@@ -6,15 +6,15 @@
     {
       "kind": "hackernews",
       "topic": "1Password Security Incident",
-      "points": 1631,
-      "comments": 703,
+      "points": 1632,
+      "comments": 704,
       "link": "https://1password.com/blog/update-on-nov-2026-security-incident",
       "discussion": "https://news.ycombinator.com/item?id=50644817",
       "question": "1Password Security Incident — what is this about and why does it matter?",
       "focus": "all",
       "category": "security",
       "category_by": "nvidia",
-      "signal": "▲ 1,631 points on Hacker News · 703 comments",
+      "signal": "▲ 1,632 points on Hacker News · 704 comments",
       "result": {
         "question": "1Password Security Incident — what is this about and why does it matter?",
         "focus": "all",
@@ -23,11 +23,11 @@
           "1Password security incident details",
           "1Password security incident impact"
         ],
-        "answer": "Based on the provided search results, there is no specific information about a \"1Password Security Incident.\" The results describe 1Password's general features and history, but do not document a security breach or incident specific to the product.\n\nHere is what the results reveal about 1Password and related security context:\n\n**1Password Overview [1]**\n- Developed by AgileBits Inc., a Canadian software company [1]\n- Supports multiple platforms: iOS, Android, Windows, Linux, and macOS [1]\n- Stores passwords, software licenses, and sensitive information in a virtual vault [1]\n- Vault is locked with a PBKDF2-guarded master password [1]\n- By default, encrypted vaults are hosted on 1Password's servers for a monthly fee [1]\n\n**Related Security Context**\n- **LastPass incidents [2]**: LastPass (a competing password manager) was founded in 2008 and acquired by GoTo in 2015 for $110 million. It was spun off into a stand-alone business in 2024 [2]. LastPass suffered significant security incidents between 2011 and 2022, including a 2022 breach where user data, billing information, and vaults were compromised [2].\n\n- **Credential stuffing risks [3]**: 81% of users reuse passwords across two or more sites, and 25% use the same passwords across most accounts. This makes credential stuffing attacks particularly effective, where attackers use stolen credential pairs to gain unauthorized access to accounts on other systems [3].\n\n- **Cloudbleed incident [4]**: A buffer overflow in Cloudflare (February 2017) leaked private information from customer memory, including HTTP cookies, authentication tokens, and POST bodies, occurring more than 18,000,000 times before being corrected.\n\n- **Password manager comparison**: Apple also offers a password manager (\"Passwords\") available on iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher [5].\n\nSince the search results do not contain information about a 1Password-specific security incident, I cannot provide details about what such an incident might involve or why it would matter. The available information focuses on 1Password's general features and competing password managers' security histories.",
+        "answer": "Based on the provided search results, there is no documented security incident specifically named \"1Password Security Incident.\" 1Password is a password manager developed by AgileBits Inc. that stores user data in an encrypted vault protected by a master password [1]. Unlike LastPass, which suffered significant breaches between 2011 and 2022, including a 2022 incident where user data and vaults were breached [2], 1Password's security model and incident history are not detailed in the given sources.\n\nThe provided results discuss credential stuffing attacks, which exploit password reuse across sites [3], and Cloudbleed, a Cloudflare memory leak that exposed customer data [4], but these are unrelated to 1Password. Apple's Passwords manager is also mentioned [5], but no 1Password breach is described.\n\nSince the search results do not contain information about a 1Password security incident, the following is based on general knowledge of the service's design and the absence of breach data in the sources: 1Password emphasizes client-side encryption, meaning user data is encrypted on the device before syncing to 1Password's servers [1]. Without cited evidence of an incident in the provided texts, users should rely on 1Password's stated security practices and monitor official AgileBits communications for any future updates.",
         "followups": [
-          "Are there any general security tips?",
-          "Where can I check for updates?",
-          "What should I do for security?"
+          "What are common password risks?",
+          "How is 1Password secured?",
+          "Should I check my passwords?"
         ],
         "sources": [
           {
@@ -166,22 +166,22 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.464299687999997,
-          "search": 1.2386466920000032,
-          "rank": 1.4832527799999866,
+          "plan": 0.4594165580000009,
+          "search": 0.44530482600000454,
+          "rank": 0.8249472149999946,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.1862489840000023,
-          "total": 6.451487979999996
+          "retrieve": 1.7297322970000053,
+          "total": 4.195551356999999
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 16,
-        "citation_coverage": 0.75,
+        "sentences": 7,
+        "citation_coverage": 0.7142857142857143,
         "citation_validity": 1.0,
-        "faithfulness": 1.0
+        "faithfulness": 0.6
       }
     },
     {
@@ -200,16 +200,37 @@
         "focus": "academic",
         "lang": "en",
         "queries": [
-          "Mixture-of-Loops Transformer paper proposal",
+          "Mixture-of-Loops Transformer proposal",
           "Mixture-of-Loops Transformer significance"
         ],
-        "answer": "Mixture-of-Loops Transformer architectures combine looped transformer blocks with Mixture-of-Experts (MoE) mechanisms to improve scaling and efficiency [1]. Key proposals and impacts from the search results include:\n\n- **Looped-MoE models scale better than standard baselines** because routing divergence between loops activates different experts on each pass through shared layers, recovering expressivity without additional parameters [1].\n- **Dynamic Looped MoE DiT (DyLoMo-DiT)** reuses parameters via weight-shared loops while sparse experts allocate capacity across tokens, deepening the network without adding parameters and freeing the budget for more experts or distinct layers [2].\n- **LoopMoEVR** introduces a loop-based Mixture-of-Experts model for unified UHD video restoration, using a degradation-conditioned low-rank loop embedding and an input-conditioned depth predictor to adaptively configure loop iterations, achieving state-of-the-art performance with only ~0.884M trainable parameters [3].\n- **Source-Centered State Evolution (SCSE)** reconciles input conditioning with reference-preserving shared recurrence in looped Transformers, improving controlled recurrent quality across language modeling benchmarks [4].\n- **Looped Transformers with Layer Normalization** provably learn the power method, where each self-attention layer performs one power iteration, revealing an \"algorithmic implicit bias\" of looped transformers with LN [5].\n- **LSTM-UT** adds a small, bounded, gated cell state to the shared block, enabling looped Transformers to maintain 99.7% exact-row accuracy at depth 60 and outperform baselines on delayed recall tasks [6].\n- **Step-resolved data attribution (SDI)** decomposes training influence into per-loop iteration trajectories, scaling to transformer scale and supporting interpretability tasks with insights into latent reasoning [7].\n- **AutoMoT** proposes a unified Vision-Language-Action model with asynchronous Mixture-of-Transformers, enabling efficient fast-slow inference and preserving pre-trained VLM reasoning capabilities for end-to-end autonomous driving [8].\n\nThese architectures address fundamental challenges in scaling looped models, improving parameter efficiency, enabling algorithmic learning, and extending applicability to vision, video, and robotics domains.",
+        "answer": "Mixture-of-Loops Transformer is not a specific published paper in the provided results; however, the search results cover several related works on looped Mixture-of-Experts (MoE) architectures. The most directly relevant is \"Looping Beyond Twice: A Scalable Recipe for Looped Mixture-of-Experts\" [1], which proposes LOOM, a method that stabilizes recurrence by scaling residual updates and re-injecting input embeddings at every loop, while diversifying computation through per-loop routers and a Looping Residual. This enables stable scaling to 9–12 loops, with the 700M model achieving the best near-iso-FLOP performance at 5 loops, reducing perplexity from 18.36 to 16.54 and improving zero-shot accuracy from 38.84% to 39.53% [1]. Another key finding [2] is that looped-MoE models scale better than standard baselines because routing divergence across loops recovers expressivity without additional parameters, and loop boundaries serve as superior early-exit points due to earlier output convergence. DyLoMo-DiT [3] extends the looped MoE concept to Diffusion Transformers, achieving significant FID reductions and higher GenEval scores with a fraction of the parameters. Loopback Transformer [4] introduces geometric decay and attention-based weight allocation to control recurrent state, reaching lower validation loss with 40–75% of standard transformer parameters. LoopCTR [5] applies loop scaling to click-through rate prediction, enabling train-multi-loop, infer-zero-loop strategies that outperform baselines with fewer loops. LoopMoEVR [6] uses loop-based Mixture-of-Experts for UHD video restoration, achieving state-of-the-art performance with minimal parameters. Looped Transformers with Source-Centered State Evolution [7] propose a mechanism to reconcile input conditioning with reference-preserving recurrence, improving controlled recurrent quality across multiple benchmarks. Finally, LoopCache [8] accelerates long-context speculative decoding for looped transformers via confidence-guided draft updating and cyclic KV cache rotation, achieving 10–15x speedups. Together, these works demonstrate that looped MoE architectures can improve compute-quality trade-offs, enable early exits, and scale effectively when routing and residual stabilization are properly designed [2].",
         "followups": [
-          "What are the main benefits?",
-          "How does it improve efficiency?",
-          "Where can I read the paper?"
+          "What is LOOM?",
+          "How does LOOM stabilize recurrence?",
+          "What are the performance improvements?"
         ],
         "sources": [
+          {
+            "title": "Looping Beyond Twice: A Scalable Recipe for Looped Mixture-of-Experts",
+            "url": "https://arxiv.org/abs/2610.01153v1",
+            "source": "arxiv",
+            "snippet": "Looped Transformers introduce recurrent depth as a new scaling axis for LLMs: by repeatedly applying shared Transformer blocks, they increase effective depth without increasing parameter count. However, the benefits of looping remain unclear for large MoE LLMs under FLOPs-matched",
+            "published": "2026-10-01",
+            "authors": [
+              "Di He",
+              "Pengxiang Li",
+              "Da Chang",
+              "Qingyan Meng",
+              "Lu Yin",
+              "Shiwei Liu"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "b97ae6a72d9c",
+            "domain": "arxiv.org",
+            "n": 1
+          },
           {
             "title": "Sparse Layers are Critical to Scaling Looped Language Models",
             "url": "https://arxiv.org/abs/2605.09165v3",
@@ -227,7 +248,7 @@
             },
             "id": "ed46b46ac04f",
             "domain": "arxiv.org",
-            "n": 1
+            "n": 2
           },
           {
             "title": "DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers",
@@ -246,7 +267,51 @@
             },
             "id": "7651dacaf856",
             "domain": "arxiv.org",
-            "n": 2
+            "n": 3
+          },
+          {
+            "title": "Loopback Transformer: Towards a Unified View of Residual Looped Transformers",
+            "url": "https://doi.org/10.48550/arxiv.2611.07226",
+            "source": "openalex",
+            "snippet": "Looped Transformers reduce parameter count by repeatedly applying shared blocks, but parameter sharing alone does not determine how the results of repeated computation are reused. We take the depth-memory view of residual connections and analyze which representation is stored aft",
+            "published": "2026",
+            "authors": [
+              "Xuan Ouyang",
+              "Zefan Cai",
+              "Chenlong Zhang",
+              "Cheng Luo",
+              "Ke Wan",
+              "Junjie Hu"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "d82dac60bef2",
+            "domain": "doi.org",
+            "n": 4
+          },
+          {
+            "title": "LoopCTR: Unlocking the Loop Scaling Power for Click-Through Rate Prediction",
+            "url": "https://arxiv.org/abs/2604.19550v1",
+            "source": "arxiv",
+            "snippet": "Scaling Transformer-based click-through rate (CTR) models by stacking more parameters brings growing computational and storage overhead, creating a widening gap between scaling ambitions and the stringent industrial deployment constraints. We propose LoopCTR, which introduces a l",
+            "published": "2026-04-21",
+            "authors": [
+              "Jiakai Tang",
+              "Runfeng Zhang",
+              "Weiqiu Wang",
+              "Yifei Liu",
+              "Chuan Wang",
+              "Xu Chen"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "cfa2faae03c8",
+            "domain": "arxiv.org",
+            "n": 5
           },
           {
             "title": "LoopMoEVR: Loop-Based Degradation-Aware Mixture-of-Experts for Unified UHD Video Restoration",
@@ -267,7 +332,7 @@
             },
             "id": "cd36d4af5d8b",
             "domain": "arxiv.org",
-            "n": 3
+            "n": 6
           },
           {
             "title": "Looped Transformers with Source-Centered State Evolution",
@@ -290,109 +355,48 @@
             },
             "id": "09da90145d18",
             "domain": "doi.org",
-            "n": 4
+            "n": 7
           },
           {
-            "title": "Looped Transformers with Layer Normalization Provably Learn the Power Method",
-            "url": "https://doi.org/10.48550/arxiv.2606.00605",
+            "title": "LoopCache: Accelerating Long-Context Self-Speculative Decoding for Looped Transformers",
+            "url": "https://doi.org/10.48550/arxiv.2611.24301",
             "source": "openalex",
-            "snippet": "Transformers have achieved remarkable success across a wide range of applications, and a growing body of work suggests that part of their strength comes from their ability to learn and execute algorithmic procedures. However, our understanding of how transformers learn such algor",
+            "snippet": "Looped Transformers achieve large effective depth with compact models by repeatedly applying a weight-shared block across R recurrent steps, each maintaining a loop-specific key-value (KV) cache. To accelerate sequential loop execution, recent wave-style self-speculative methods ",
             "published": "2026",
             "authors": [
-              "Lyumin Wu",
-              "Chenyang Zhang",
-              "Yuan Cao"
-            ],
-            "extra": {
-              "cited_by": 5,
-              "venue": "arXiv",
-              "license": "CC0 metadata"
-            },
-            "id": "bfd0adf632f5",
-            "domain": "doi.org",
-            "n": 5
-          },
-          {
-            "title": "Storing Is Not Remembering: LSTM-UT and Bounded Gated Memory for Looped Transformers",
-            "url": "https://doi.org/10.48550/arxiv.2609.19521",
-            "source": "openalex",
-            "snippet": "Recurrent-depth Transformers reuse one block across many steps, so information needed later must survive repeated rewriting of the hidden state. A natural remedy is to keep more history. We show that, in controlled cellular-automaton tasks, making history available is not the sam",
-            "published": "2026",
-            "authors": [
-              "Aras Kavuncu",
-              "Muhammad Burhan Hafez"
+              "Zizhuo Fu",
+              "Haochen Huang",
+              "Shengxuan Qiu",
+              "Wei Linye",
+              "Ziyu Tang",
+              "Runsheng Wang"
             ],
             "extra": {
               "cited_by": 0,
               "venue": "arXiv",
               "license": "CC0 metadata"
             },
-            "id": "9a82db4e57a4",
-            "domain": "doi.org",
-            "n": 6
-          },
-          {
-            "title": "Step-resolved data attribution for looped transformers",
-            "url": "https://doi.org/10.48550/arxiv.2602.10097",
-            "source": "openalex",
-            "snippet": "We study how individual training examples shape the internal computation of looped transformers, where a shared block is applied for $τ$ recurrent iterations to enable latent reasoning. Existing training-data influence estimators such as TracIn yield a single scalar score that ag",
-            "published": "2026",
-            "authors": [
-              "Georgios A. Kaissis",
-              "David Mildenberger",
-              "Juan Felipe Gomez",
-              "Martin J. Menten",
-              "Eleni Triantafillou"
-            ],
-            "extra": {
-              "cited_by": 4,
-              "venue": "International Conference on Machine Learning",
-              "license": "CC0 metadata"
-            },
-            "id": "1c64727a13ad",
-            "domain": "doi.org",
-            "n": 7
-          },
-          {
-            "title": "AutoMoT: A Unified Vision-Language-Action Model with Asynchronous Mixture-of-Transformers for End-to-End Autonomous Driving",
-            "url": "https://doi.org/10.48550/arxiv.2603.14851",
-            "source": "openalex",
-            "snippet": "Integrating vision-language models (VLMs) into end-to-end (E2E) autonomous driving (AD) systems has shown promise in improving scene understanding. However, existing integration strategies suffer from several limitations: they either struggle to resolve distribution misalignment ",
-            "published": "2026",
-            "authors": [
-              "Wenhui Huang",
-              "Songyan Zhang",
-              "Qihang Huang",
-              "Qi Wang",
-              "Zhiqi Mao",
-              "Collister Chua"
-            ],
-            "extra": {
-              "cited_by": 18,
-              "venue": "International Conference on Machine Learning",
-              "license": "CC0 metadata"
-            },
-            "id": "f5d403ebf8f9",
+            "id": "bbb2fdcfa832",
             "domain": "doi.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.48182464900000355,
-          "search": 0.44420748599999627,
-          "rank": 4.427676926000004,
+          "plan": 0.5438218970000008,
+          "search": 0.4562590630000045,
+          "rank": 4.362431337999993,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 5.353787279000002,
-          "total": 8.197107113000001
+          "retrieve": 5.362603700000008,
+          "total": 35.18049771000001
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
         "sentences": 11,
-        "citation_coverage": 0.8181818181818182,
+        "citation_coverage": 0.9090909090909091,
         "citation_validity": 1.0,
         "faithfulness": 1.0
       }
@@ -415,13 +419,13 @@
         "queries": [
           "DocSEAM AI research paper proposal",
           "Bidirectional Cross-Page Encoding document understanding",
-          "DocSEAM significance"
+          "importance of DocSEAM paper"
         ],
-        "answer": "DocSEAM proposes a lightweight module that injects cross-page context into multi-page document vision-language models by forming local triplets between a page and its two neighbors, applying center-anchored masked self-attention with directional salience gates to fuse neighbor information, and returning only enriched center-page tokens [1]. It matters because it achieves state-of-the-art results among open-weight models up to 10B parameters on five multi-page document VQA benchmarks and reduces sensitivity to boundary placement under controlled re-pagination [1].",
+        "answer": "DocSEAM proposes a lightweight module that injects cross-page context into visual representations by forming local triplets with neighboring pages and applying masked self-attention, enabling a 9B-parameter model to achieve state-of-the-art results on multi-page document VQA benchmarks and reduce sensitivity to boundary placement [1]. This matters because multi-page document vision-language models traditionally encode each page independently, creating feature-level discontinuities at page boundaries that hinder reasoning across adjacent content [1]. DocSEAM addresses this by preserving the visual token count while enriching center-page tokens with directional salience from neighbors, improving robustness under controlled re-pagination [1].",
         "followups": [
+          "How does the triplet formation work?",
           "What are the VQA benchmarks?",
-          "How is the module lightweight?",
-          "Can you explain the triplets?"
+          "Is it faster than other methods?"
         ],
         "sources": [
           {
@@ -573,19 +577,19 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.518835408000001,
-          "search": 0.5100855909999922,
-          "rank": 3.3654150490000063,
+          "plan": 0.6073736249999939,
+          "search": 0.5607104290000109,
+          "rank": 0.8390341960000001,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.3943690790000005,
-          "total": 5.6012911689999925
+          "retrieve": 2.0071539169999966,
+          "total": 3.7768173550000057
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 2,
+        "sentences": 3,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
         "faithfulness": 1.0
@@ -594,15 +598,15 @@
     {
       "kind": "hackernews",
       "topic": "Intel One Mono font",
-      "points": 453,
-      "comments": 235,
+      "points": 458,
+      "comments": 237,
       "link": "https://github.com/intel/intel-one-mono",
       "discussion": "https://news.ycombinator.com/item?id=50653667",
       "question": "Intel One Mono font — what is this about and why does it matter?",
       "focus": "all",
       "category": "gadgets",
       "category_by": "nvidia",
-      "signal": "▲ 453 points on Hacker News · 235 comments",
+      "signal": "▲ 458 points on Hacker News · 237 comments",
       "result": {
         "question": "Intel One Mono font — what is this about and why does it matter?",
         "focus": "all",
@@ -611,11 +615,11 @@
           "Intel One Mono font information",
           "importance of Intel One Mono font"
         ],
-        "answer": "Intel One Mono is a monospaced font released by Intel in 2023 as an open-source typeface designed for source code and developer tools. It matters because it offers high legibility, distinct character shapes to reduce confusion (such as between \"0\" and \"O\"), and supports multiple weights and languages, all available free of charge under the SIL Open Font License. This makes it a practical alternative to proprietary monospaced fonts like Consolas or Courier New, and it integrates well with modern development environments. The font was created to improve developer productivity and accessibility, and its open-source nature allows for widespread adoption and customization [1].",
+        "answer": "Intel One Mono is a monospaced font released by Intel in 2023, designed specifically for source code and developer tools. It matters because it offers high legibility at small sizes, includes programming-specific glyphs, and is free and open-source, addressing the need for accessible coding fonts in developer workflows. [1]\n\nThe font was created to improve developer productivity and accessibility. Key features include [1][3]:\n- Optimized for code editing and terminal use\n- High legibility at small sizes\n- Extensive glyph set for programming symbols\n- Free and open-source licensing\n- Available across platforms\n\nIntel One Mono joins a growing trend of tech companies releasing custom fonts. Microsoft's Cascadia Code and Fira Code are notable examples in the developer tools space. The font is available on GitHub and can be integrated into IDEs like Visual Studio Code.",
         "followups": [
           "Where can I download Intel One Mono?",
-          "Which operating systems support it?",
-          "Is it better than Consolas?"
+          "What are its best uses?",
+          "How does it compare to Cascadia Code?"
         ],
         "sources": [
           {
@@ -751,20 +755,20 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.4533885690000119,
-          "search": 1.120616437999999,
-          "rank": 3.0202711190000002,
+          "plan": 0.5383188939999997,
+          "search": 0.45282558099999903,
+          "rank": 4.078634962999999,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 4.594346833000003,
-          "total": 6.1747258480000085
+          "retrieve": 5.0698603199999965,
+          "total": 6.949797924999999
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 4,
-        "citation_coverage": 0.25,
+        "sentences": 10,
+        "citation_coverage": 0.1,
         "citation_validity": 1.0,
         "faithfulness": 0.0
       }
@@ -773,7 +777,7 @@
       "kind": "github",
       "topic": "Marvisak/VIctory",
       "context": "An attempt at running GTA VI on PC",
-      "stars": 13367,
+      "stars": 13374,
       "language": "Rust",
       "created": "2026-11-23",
       "link": "https://github.com/Marvisak/VIctory",
@@ -781,7 +785,7 @@
       "focus": "all",
       "category": "gadgets",
       "category_by": "nvidia",
-      "signal": "★ 13,367 GitHub stars since 2026-11-23 · Rust",
+      "signal": "★ 13,374 GitHub stars since 2026-11-23 · Rust",
       "result": {
         "question": "What is the new open-source project VIctory (An attempt at running GTA VI on PC), and why is it getting attention?",
         "focus": "all",
@@ -790,11 +794,11 @@
           "Victory GTA VI open-source project",
           "running GTA VI on PC open source"
         ],
-        "answer": "Victory is an open-source project attempting to run Grand Theft Auto VI on PC, and it is getting attention because it demonstrates the feasibility of running the latest Rockstar title outside its intended console ecosystem [1]. The project leverages the open-source development environment built on Grand Theft Auto V, which itself has been used for self-driving vehicle research [4]. This connection highlights how GTA V's architecture has become a foundation for AI and simulation research beyond gaming [4].",
+        "answer": "Victory is an open-source project attempting to run Grand Theft Auto VI on PC. It is getting attention because it demonstrates how developers can reverse-engineer and port recent commercial games to open-source platforms, even before official PC releases.\n\nThe project leverages the game's existing architecture built on Rockstar's RAGE engine. Because GTA VI runs on the same foundation as its predecessor, developers can adapt existing PC porting techniques. The open-source nature allows the community to inspect, modify, and improve the code, fostering transparency and collaborative development.\n\nKey points about the project include:\n\n- **Reverse Engineering**: The team is dissecting the game's assets and code to create a compatible runtime environment.\n- **Community Interest**: Gamers and tech enthusiasts are tracking its progress as a proof-of-concept for running next-gen titles on unsupported hardware.\n- **Technical Challenges**: Running a 2026 title on PC involves overcoming DRM, optimizing shaders, and ensuring stability across different GPU configurations.\n\nThe project highlights the growing trend of open-source initiatives bridging the gap between console-exclusive releases and PC gaming communities.",
         "followups": [
-          "How does it work technically?",
-          "Is it playable yet?",
-          "What are the next steps?"
+          "Is it fully playable yet?",
+          "What engine does it use?",
+          "When can I try it?"
         ],
         "sources": [
           {
@@ -931,22 +935,22 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.5018933000000061,
-          "search": 0.5063271419999893,
-          "rank": 5.660368936000012,
+          "plan": 0.5848432680000073,
+          "search": 0.6305048809999931,
+          "rank": 5.9027832390000015,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 6.668667374999998,
-          "total": 8.379569548999996
+          "retrieve": 7.118222908999996,
+          "total": 9.336374144999994
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 3,
-        "citation_coverage": 1.0,
-        "citation_validity": 1.0,
-        "faithfulness": 0.3333333333333333
+        "sentences": 10,
+        "citation_coverage": 0.0,
+        "citation_validity": null,
+        "faithfulness": null
       }
     },
     {
@@ -968,10 +972,10 @@
           "What is Grand Theft Auto VI",
           "Grand Theft Auto VI key facts"
         ],
-        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following 2013's Grand Theft Auto V, and the sixteenth entry overall [1]. The game is set in the fictional US state of Leonida, based on Florida, and features the criminal duo Jason Duval and Lucia Caminos as protagonists [1][3]. Preliminary work began in 2014 after the release of Grand Theft Auto V, with principal production starting after the 2018 launch of Red Dead Redemption 2; Rockstar's global development teams had more than doubled since then [1]. The promotional trailer \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix on August 27, 2026, and topped the English language trailer chart in 87 countries in its first week [2]. Lucia Caminos is the first non-optional playable female protagonist in the series, designed to be an independent, stoic, and strong character avoiding common clichés [3].",
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games, serving as the eighth main entry in the series and the sixteenth overall [1]. It is set in the fictional US state of Leonida, based on Florida, and follows the criminal duo Jason Duval and Lucia Caminos as they navigate a state-wide criminal conspiracy [1][4]. Key facts include:\n\n- **Release & Development**: Preliminary work began in 2014 after GTA V; principal production started after Red Dead Redemption 2 (2018) [1]. Rockstar's global development teams had more than doubled since then [1].\n- **Protagonists**: Lucia is the first non-optional playable female protagonist in the series, originally from Liberty City; she partners with Jason Duval [4].\n- **Trailer**: \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix on August 27, 2026, then on YouTube, featuring 27 minutes of gameplay footage [2].\n- **Setting**: The open world includes Leonida and a Miami-inspired Vice City, parodying Floridian and 2020s American culture [1].\n- **Development Context**: Rockstar North, the series creator (originally DMA Design), has overseen the franchise since its inception in the early 1960s [3].",
         "followups": [
-          "When is GTA VI expected to release?",
-          "Where is Leonida based?",
+          "When is the official release date?",
+          "What is Leonida like?",
           "Who are the main characters?"
         ],
         "sources": [
@@ -1006,6 +1010,21 @@
             "n": 2
           },
           {
+            "title": "Grand Theft Auto",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto (GTA) is an action-adventure video game series created by the Scottish programmers David Jones and Mike Dailly at DMA Design, now known as Rockstar North. Later titles were developed under the oversight of brothers Dan and Sam Houser, Leslie Benzies and Aaron Gar",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d56b41b53500",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
             "title": "Lucia Caminos",
             "url": "https://en.wikipedia.org/wiki/Lucia_Caminos",
             "source": "wikipedia",
@@ -1018,7 +1037,7 @@
             },
             "id": "c18959d481d1",
             "domain": "en.wikipedia.org",
-            "n": 3
+            "n": 4
           },
           {
             "title": "Niko Bellic",
@@ -1032,21 +1051,6 @@
               "license": "CC BY-SA 4.0"
             },
             "id": "9a1d6c8ac9f4",
-            "domain": "en.wikipedia.org",
-            "n": 4
-          },
-          {
-            "title": "Grand Theft Auto: Vice City",
-            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
-            "source": "wikipedia",
-            "snippet": "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the fourth main game in the Grand Theft Auto series, following 2001's Grand Theft Auto III, and the sixth entry overall. Set in 1986 within the fictional",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "1ce06c45db6a",
             "domain": "en.wikipedia.org",
             "n": 5
           },
@@ -1098,49 +1102,49 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.44884526500000277,
-          "search": 0.37405755800000406,
-          "rank": 3.0168585010000015,
+          "plan": 0.5336983269999962,
+          "search": 0.3517374320000073,
+          "rank": 3.1210734919999936,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 3.8398077340000043,
-          "total": 5.651299866000002
+          "retrieve": 4.0065624009999965,
+          "total": 6.1184389819999865
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 6,
+        "sentences": 8,
         "citation_coverage": 1.0,
         "citation_validity": 1.0,
-        "faithfulness": 1.0
+        "faithfulness": 0.875
       }
     },
     {
       "kind": "hackernews",
       "topic": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-      "points": 1978,
-      "comments": 1805,
+      "points": 1981,
+      "comments": 1810,
       "link": "https://scottaaronson.blog/?p=10379",
       "discussion": "https://news.ycombinator.com/item?id=50646108",
       "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
       "focus": "all",
       "category": "bigtech",
       "category_by": "nvidia",
-      "signal": "▲ 1,978 points on Hacker News · 1,805 comments",
+      "signal": "▲ 1,981 points on Hacker News · 1,810 comments",
       "result": {
         "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
         "focus": "all",
         "lang": "en",
         "queries": [
           "what is happening now",
-          "why is this important"
+          "why is current event important"
         ],
-        "answer": "Based on the search results, the phrase \"What is happening now?\" appears across diverse contexts including entertainment, academic philosophy, IPv6 transition, cattle raiding in conflict, and privacy theory. Results [1]-[3] reference academic works titled \"What is Happening Now?\" spanning entertainment studies, philosophy, and clinical education. Result [5] discusses cattle raiding as a war tactic in South Sudanese conflicts. Result [4] addresses IPv4-to-IPv6 transition challenges. Result [6] covers privacy importance. Result [7] is a Hacker News community post about interpersonal conflict. Result [8] showcases a robotics touch sensor advancement.\n\nSince the query lacks a specific topic, the results collectively show \"What is happening now?\" as a recurring thematic question across disciplines—from entertainment and philosophy to technology transitions and conflict dynamics—rather than referring to a single event. The phrase functions as both a literal question about current events and a conceptual inquiry into the nature of present moments across different fields of study.",
+        "answer": "The phrase \"what is happening now\" appears across diverse topics in the provided search results, ranging from entertainment and academic works to current events and technology transitions. Here is a breakdown of the contexts:\n\n**Academic and Literary Works**\n- \"What is happening now?\" is the title of several academic publications. Result [1] lists it as an entertainment topic from 2015, while result [2] references \"The Status of Becoming: What is Happening Now?\" from 1979. Result [3] covers \"Educating clinicians. What is happening now?\" from 2011 [1]. Result [6] includes the chapter \"‘What is happening now is not raiding, it's war’\" from 2022, analyzing cattle-raiding in contemporary political conflicts in South Sudan.\n\n**Technology and Internet**\n- Result [5] discusses the \"IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now,\" reflecting on the delayed adoption of IPv6 compared to earlier optimistic projections.\n\n**Community and Current Events**\n- Result [4] captures a Hacker News discussion from 2023 about Israel war submissions being flagged, highlighting ongoing geopolitical tensions and community moderation debates.\n- Result [7] from 2013 features an Ask HN post titled \"Please stop tearing each other up,\" expressing concern over community rifts and hate-mongering at the time.\n\n**Software and Releases**\n- Result [8] refers to \"GNOME 3.7: what is happening now,\" a 2012 blog post detailing the features and development status of the GNOME 3.7 desktop environment.\n\nThe phrase spans academic, technological, and social domains, with no single unifying event. Disagreements or distinct viewpoints are not evident across the results, as each addresses a separate subject.\n\n[1][2][3][4][5][6][7][8]",
         "followups": [
-          "Which context interests you most?",
+          "Which context is most relevant?",
           "Can you narrow down the topic?",
-          "What specific area should I focus on?"
+          "What are the key takeaways?"
         ],
         "sources": [
           {
@@ -1198,6 +1202,24 @@
             "n": 3
           },
           {
+            "title": "Ask HN: Why are Israel war submissions being flagged?",
+            "url": "https://news.ycombinator.com/item?id=37803593",
+            "source": "hackernews",
+            "snippet": "Seems like THE most important news to me right now. This is not just a tech board but for discussion of major current events as well. Also, why weren’t Russia-Ukraine war threads being banned in the same way? Proof: https://news.ycombinator.com/item?id=30450336 https://news.ycomb",
+            "published": "2023-10-07",
+            "authors": [
+              "prakhar897"
+            ],
+            "extra": {
+              "points": 32,
+              "comments": 22,
+              "discussion": "https://news.ycombinator.com/item?id=37803593"
+            },
+            "id": "f87bccc818e1",
+            "domain": "news.ycombinator.com",
+            "n": 4
+          },
+          {
             "title": "IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now",
             "url": "http://www.potaroo.net/ispcol/2012-08/EndPt2.html",
             "source": "hackernews",
@@ -1213,7 +1235,7 @@
             },
             "id": "6dbe29c252ff",
             "domain": "potaroo.net",
-            "n": 4
+            "n": 5
           },
           {
             "title": "‘What is happening now is not raiding, it's war’",
@@ -1233,24 +1255,6 @@
             },
             "id": "5545bf0274dc",
             "domain": "doi.org",
-            "n": 5
-          },
-          {
-            "title": "Why privacy is important",
-            "url": "https://philpapers.org/rec/RACWPI",
-            "source": "openalex",
-            "snippet": "Why privacy is important",
-            "published": "1975",
-            "authors": [
-              "James A. Rachels"
-            ],
-            "extra": {
-              "cited_by": 705,
-              "venue": "Philosophy &amp Public Affairs",
-              "license": "CC0 metadata"
-            },
-            "id": "c39e3069bec5",
-            "domain": "philpapers.org",
             "n": 6
           },
           {
@@ -1272,49 +1276,49 @@
             "n": 7
           },
           {
-            "title": "Show HN: Put this touch sensor on a robot and learn super precise tasks",
-            "url": "https://any-skin.github.io",
+            "title": "GNOME 3.7: what is happening now",
+            "url": "http://blogs.gnome.org/mclasen/2012/12/05/gnome-3-7-what-is-happening-now/",
             "source": "hackernews",
-            "snippet": "We just released a very excited touch sensor that finally simplifies touch sensing for robotics. Our most exciting result: Learned visuotactile policies for precise tasks like inserting USBs and credit card swiping, that work out-of-the-box when you replace skins! To the best of ",
-            "published": "2024-09-20",
+            "snippet": "GNOME 3.7: what is happening now",
+            "published": "2012-12-06",
             "authors": [
-              "raunaqmb"
+              "hendi_"
             ],
             "extra": {
-              "points": 390,
-              "comments": 66,
-              "discussion": "https://news.ycombinator.com/item?id=41603865"
+              "points": 4,
+              "comments": 1,
+              "discussion": "https://news.ycombinator.com/item?id=4881023"
             },
-            "id": "8a40a197bac0",
-            "domain": "any-skin.github.io",
+            "id": "156a0f39abd4",
+            "domain": "blogs.gnome.org",
             "n": 8
           }
         ],
         "warnings": [],
         "timings": {
-          "plan": 0.3666103360000008,
-          "search": 0.8700984559999938,
-          "rank": 5.79719793400001,
+          "plan": 0.4929040190000009,
+          "search": 0.9873226160000002,
+          "rank": 4.794685880000003,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 7.034041600000002,
-          "total": 8.996673958999999
+          "retrieve": 6.275045953999999,
+          "total": 9.749241922000003
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 9,
-        "citation_coverage": 0.6666666666666666,
+        "sentences": 13,
+        "citation_coverage": 0.6153846153846154,
         "citation_validity": 1.0,
-        "faithfulness": 0.5
+        "faithfulness": 0.625
       }
     },
     {
       "kind": "github",
       "topic": "xcl-dev/xcl",
       "context": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-      "stars": 8609,
+      "stars": 8612,
       "language": "Rust",
       "created": "2026-11-20",
       "link": "https://github.com/xcl-dev/xcl",
@@ -1322,7 +1326,7 @@
       "focus": "all",
       "category": "software",
       "category_by": "nvidia",
-      "signal": "★ 8,609 GitHub stars since 2026-11-20 · Rust",
+      "signal": "★ 8,612 GitHub stars since 2026-11-20 · Rust",
       "result": {
         "question": "What is the new open-source project xcl (Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL), and why is it getting attention?",
         "focus": "all",
@@ -1332,11 +1336,11 @@
           "Xbox Series compatibility layer Windows",
           "why is xcl getting attention"
         ],
-        "answer": "xcl is an open-source project that creates an Xbox Series compatibility layer for Windows, allowing console game code to run natively by reimplementing console system libraries and recompiling RDNA2 shaders to DXIL. It is gaining attention because it enables running Xbox Series X/S games on Windows PCs, bridging the gap between console and PC gaming ecosystems. [3][4][5]",
+        "answer": "xcl (Xbox Series compatibility layer for Windows) is an open-source project that runs Xbox Series X/S console game code natively on Windows by reimplementing console system libraries and recompiling RDNA2 shaders to DXIL. It is gaining attention because it enables playing Xbox Series games directly on Windows without emulation, leveraging the compatibility layer to translate console APIs to DirectX. This approach allows Windows users to play console exclusives on PC hardware, bridging the gap between the Xbox ecosystem and the Windows platform. The project represents a significant development in cross-platform gaming, as it potentially reduces the need for separate console and PC game libraries.",
         "followups": [
-          "How does it achieve native execution?",
+          "How does it avoid emulation?",
           "What are its current limitations?",
-          "Where can I find the project?"
+          "When will it be more stable?"
         ],
         "sources": [
           {
@@ -1370,6 +1374,21 @@
             "n": 2
           },
           {
+            "title": "Ninth generation of video game consoles",
+            "url": "https://en.wikipedia.org/wiki/Ninth_generation_of_video_game_consoles",
+            "source": "wikipedia",
+            "snippet": "The ninth generation of video game consoles began in November 2020 with the releases of Microsoft's Xbox Series X and Series S console family and Sony's PlayStation 5. Compared to the eighth generation consoles Xbox One and PlayStation 4, the new consoles add faster computation a",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "48c71e047c9f",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
             "title": "Your visualisations are going places: SciVis on gaming consoles",
             "url": "https://doi.org/10.1007/s12650-024-01035-4",
             "source": "openalex",
@@ -1390,21 +1409,6 @@
             },
             "id": "3e13f6f731da",
             "domain": "doi.org",
-            "n": 3
-          },
-          {
-            "title": "Xbox (console)",
-            "url": "https://en.wikipedia.org/wiki/Xbox_(console)",
-            "source": "wikipedia",
-            "snippet": "The Xbox (often referred to as the Original Xbox to differentiate it from its successors) is a home video game console developed and marketed by Microsoft. It was released on November 15, 2001, in North America, followed by Australia, Europe, and Japan in 2002. It was the first m",
-            "published": null,
-            "authors": [],
-            "extra": {
-              "lang": "en",
-              "license": "CC BY-SA 4.0"
-            },
-            "id": "11c0dbf2faee",
-            "domain": "en.wikipedia.org",
             "n": 4
           },
           {
@@ -1480,22 +1484,22 @@
         ],
         "warnings": [],
         "timings": {
-          "plan": 4.536819010000002,
-          "search": 1.118479961999995,
-          "rank": 2.9178832510000063,
+          "plan": 0.6400451269999934,
+          "search": 0.5871913700000135,
+          "rank": 6.7844525499999975,
           "dense": 1.0,
           "rerank": 1.0,
-          "retrieve": 8.573270085000004,
-          "total": 9.617715720999996
+          "retrieve": 8.011783675000004,
+          "total": 9.554951279000008
         },
         "nvidia": true,
         "llm_error": ""
       },
       "metrics": {
-        "sentences": 2,
-        "citation_coverage": 0.5,
-        "citation_validity": 1.0,
-        "faithfulness": 0.0
+        "sentences": 4,
+        "citation_coverage": 0.0,
+        "citation_validity": null,
+        "faithfulness": null
       }
     }
   ]

@@ -16,3 +16,4 @@ date,mode,questions,answer_accuracy,retrieval_recall,citation_coverage,citation_
 2026-11-26 15:24 UTC,NVIDIA NIM (24/24 answers by the LLM),24,0.917,1.000,0.868,1.000,0.915,5.544,8.510
 2026-11-26 20:23 UTC,NVIDIA NIM (24/24 answers by the LLM),24,1.000,1.000,0.843,1.000,0.958,5.428,16.044
 2026-11-27 00:57 UTC,NVIDIA NIM (24/24 answers by the LLM),24,1.000,1.000,0.837,1.000,0.923,5.704,8.120
+2026-11-27 01:22 UTC,NVIDIA NIM (24/24 answers by the LLM),24,1.000,1.000,0.889,1.000,0.903,5.985,10.737
