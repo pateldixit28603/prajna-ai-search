@@ -12,7 +12,7 @@ Prajna (Sanskrit: *wisdom*) is a Perplexity-style AI search engine. You ask a qu
 ![Prajna live, answering a Hinglish question with NVIDIA Nemotron and cited sources](docs/live-demo.jpg)
 
 **It runs every day without anyone touching it.** A GitHub Actions job:
-- 📰 **[Prajna Daily](DIGEST.md)** takes the day's trending topics from Wikipedia's most-read list and the Hacker News front page, researches each one, and publishes cited answers ([web version](https://pateldixit28603.github.io/prajna-ai-search/)).
+- 📰 **[Prajna Daily](DIGEST.md)** is a global tech-trends digest. Each day it picks what's trending in tech from the Hacker News front page, new GitHub repos by stars, Hugging Face daily papers (or new arXiv AI papers) and tech-only Wikipedia most-read. NVIDIA NIM sorts the topics into categories (AI & ML, Chips & Hardware, Software & Dev Tools, Open Source, Security, Science & Space, Big Tech & Startups, Gadgets), with keyword rules as the fallback. Prajna then researches each topic and publishes cited answers with category filters and "why it's trending" signals ([web version](https://pateldixit28603.github.io/prajna-ai-search/)).
 - 📊 **[Benchmark](EVAL.md)** re-runs a fixed set of 24 questions in English, Hindi, Hinglish, Russian, Spanish, Chinese and Arabic, across encyclopedia, academic and tech topics. It tracks answer accuracy, retrieval recall, citation coverage and validity, faithfulness and latency, with the [full history](backend/eval/results/history.csv) kept so you can see the trend.
 
 ---
@@ -117,7 +117,7 @@ The GPU stack runs three NIM containers (`llama-3.1-8b-instruct`, `llama-3.2-nv-
 
 Hosted models get retired over time. The daily job runs `python -m scripts.nim_check`, which probes every configured endpoint, discovers the live catalog and records what works in [`nim_status.json`](backend/eval/results/nim_status.json). Retired endpoints are skipped automatically by a circuit breaker, so a retired model never breaks search.
 
-You can swap in a bigger answer model by setting `LLM_MODEL`, for example `nvidia/nemotron-3-ultra-550b-a55b`. Any chat model listed at build.nvidia.com works.
+You can swap in a bigger answer model by setting `LLM_MODEL`, for example `nvidia/nemotron-3-ultra-550b-a55b`. Any chat model listed at build.nvidia.com works. If the answer model fails before writing anything (a timeout or an outage), Prajna retries once with `LLM_BACKUP_MODEL` (default: Nemotron 3.5 Bolt), and only then falls back to an extractive answer.
 
 ## API
 

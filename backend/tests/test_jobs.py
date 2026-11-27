@@ -37,22 +37,31 @@ def test_citation_metrics_flags_bad_citations():
 async def test_daily_digest_writes_outputs(tmp_path, monkeypatch):
     from scripts import daily_digest as dd
 
-    async def fake_trending(day, n_wiki, n_hn):
+    async def fake_trending(day, counts):
         return [{"kind": "wikipedia", "topic": "Nvidia", "question": "When was Nvidia founded?",
-                 "focus": "wiki", "context": "American tech company"}]
+                 "focus": "wiki", "context": "American technology company", "views": 123456,
+                 "link": "https://en.wikipedia.org/wiki/Nvidia"},
+                {"kind": "github", "topic": "acme/cuda-kit", "question": "What is CUDA?", "focus": "wiki",
+                 "context": "Open-source CUDA helpers for GPUs", "stars": 4200, "language": "C++"}]
 
     monkeypatch.setattr(dd, "trending", fake_trending)
     monkeypatch.setattr(dd, "engine_session", fake_session(tmp_path))
     monkeypatch.setattr(dd, "DIGEST", tmp_path / "digest")
     monkeypatch.setattr(dd, "SITE", tmp_path / "site")
     monkeypatch.setattr(dd, "REPO", tmp_path)
-    await dd.main_async(dt.date(2026, 11, 25), 1, 0)
+    await dd.main_async(dt.date(2026, 11, 25), {"hn": 0, "github": 1, "papers": 0, "wiki": 1})
 
     data = json.loads((tmp_path / "digest/data/2026-11-25.json").read_text())
     assert data["items"][0]["result"]["sources"] and "passages" not in data["items"][0]["result"]
+    assert data["categories_by"] == "keywords"            # fake engine has no NVIDIA key
+    cats = {it["topic"]: it["category"] for it in data["items"]}
+    assert cats == {"Nvidia": "chips", "acme/cuda-kit": "chips"}
     page = (tmp_path / "site/index.html").read_text()
     assert 'class="cite"' in page and "Prajna <span>Daily</span>" in page and "<script" not in page
-    assert "# Prajna Daily — 2026-11-25" in (tmp_path / "DIGEST.md").read_text()
+    assert 'label for="f-chips">Chips &amp; Hardware <b>2</b>' in page and 'article class="c-chips"' in page
+    assert "★ 4,200 GitHub stars · C++" in page and "123,456 Wikipedia views" in page
+    md = (tmp_path / "DIGEST.md").read_text()
+    assert "# Prajna Daily — 2026-11-25" in md and "## Chips & Hardware" in md
 
 
 async def test_eval_report(tmp_path, monkeypatch):

@@ -1,12 +1,16 @@
 """Daily "Prajna Daily" digest.
 
 Every day (GitHub Actions cron) this:
-  1. pulls today's trending topics from open data — Wikipedia "most read" (Wikimedia feed API)
-     and the Hacker News front page (Algolia API);
-  2. runs each through the full Prajna pipeline (search -> rank -> NVIDIA rerank -> cited answer);
-  3. writes digest/data/<date>.json, DIGEST.md (rendered on GitHub) and a static site in site/.
+  1. pulls what is trending globally in tech from open data (see scripts/tech_trends.py): the Hacker News
+     front page, new GitHub repos by stars, Hugging Face daily papers / new arXiv AI papers, and
+     Wikipedia most-read filtered to technology, science, companies and products;
+  2. sorts the topics into categories (AI & ML, Chips & Hardware, ...) with the NVIDIA NIM LLM,
+     falling back to keyword rules;
+  3. runs each through the full Prajna pipeline (search -> rank -> NVIDIA rerank -> cited answer);
+  4. writes digest/data/<date>.json, DIGEST.md (rendered on GitHub) and a static site in site/
+     with category chips (CSS-only filters) and "why it's trending" signals.
 
-Usage:  python -m scripts.daily_digest [--wiki 4] [--hn 3] [--date YYYY-MM-DD]
+Usage:  python -m scripts.daily_digest [--hn 3] [--github 2] [--papers 2] [--wiki 2] [--date YYYY-MM-DD]
 """
 from __future__ import annotations
 
@@ -15,11 +19,10 @@ import asyncio
 import datetime as dt
 import html
 import json
+import os
 import re
 import sys
 from pathlib import Path
-
-import httpx
 
 BACKEND = Path(__file__).resolve().parents[1]
 REPO = BACKEND.parent
@@ -27,55 +30,16 @@ sys.path.insert(0, str(BACKEND))
 
 from app.config import settings  # noqa: E402
 from app.runner import answer, citation_metrics, engine_session  # noqa: E402
+from scripts import tech_trends as tt  # noqa: E402
 
 DIGEST = REPO / "digest"
 SITE = REPO / "site"
-SKIP = re.compile(r"^(Main_Page|Special:|Wikipedia:|Portal:|File:|Deaths_in|List_of|\d{4}_in)", re.I)
 
 
 # ------------------------------------------------------------------ topics
-async def trending(day: dt.date, n_wiki: int, n_hn: int) -> list[dict]:
-    topics: list[dict] = []
-    headers = {"User-Agent": settings.user_agent}
-    async with httpx.AsyncClient(timeout=20, headers=headers, follow_redirects=True) as c:
-        # Wikipedia most-read is published for the previous day
-        ref = day - dt.timedelta(days=1)
-        try:
-            r = await c.get(f"https://en.wikipedia.org/api/rest_v1/feed/featured/{ref:%Y/%m/%d}")
-            arts = (r.json().get("mostread") or {}).get("articles", [])
-            for a in arts:
-                if SKIP.search(a.get("title", "")) or a.get("type", "standard") != "standard":
-                    continue
-                name = a.get("normalizedtitle") or a["title"].replace("_", " ")
-                topics.append({
-                    "kind": "wikipedia", "topic": name, "views": a.get("views"),
-                    "question": f"Who or what is {name}, and what are the key facts to know?",
-                    "focus": "wiki", "context": a.get("description", ""),
-                })
-                if len(topics) >= n_wiki:
-                    break
-        except Exception as e:
-            print("wikipedia trending failed:", e)
-        try:
-            r = await c.get("https://hn.algolia.com/api/v1/search", params={"tags": "front_page", "hitsPerPage": 30})
-            hits = sorted(r.json().get("hits", []), key=lambda h: -(h.get("points") or 0))
-            added = 0
-            for h in hits:
-                t = h.get("title") or ""
-                if not t or t.lower().startswith(("ask hn", "show hn", "tell hn")):
-                    continue
-                clean = re.sub(r"\s*\[[^\]]*\]|\s*\(\d{4}\)", "", t).strip()
-                topics.append({
-                    "kind": "hackernews", "topic": clean, "points": h.get("points"),
-                    "discussion": f"https://news.ycombinator.com/item?id={h.get('objectID')}",
-                    "question": f"{clean} — what is this about and why does it matter?", "focus": "all",
-                })
-                added += 1
-                if added >= n_hn:
-                    break
-        except Exception as e:
-            print("hacker news trending failed:", e)
-    return topics
+async def trending(day: dt.date, counts: dict[str, int]) -> list[dict]:
+    """Today's global tech trends (HN, GitHub, papers, tech-only Wikipedia most-read)."""
+    return await tt.gather(day, counts, settings.user_agent, os.getenv("GITHUB_TOKEN", ""))
 
 
 # ------------------------------------------------------------- rendering
@@ -129,48 +93,94 @@ article{border-top:1px solid var(--line);padding:28px 0}article h2{font:600 1.45
 .meta{font-size:.8rem;color:var(--muted)}.cite{display:inline-block;min-width:1.2em;padding:0 .35em;margin:0 1px;border-radius:99px;background:#76b90022;color:var(--nv);font:500 .7rem/1.5 ui-monospace,monospace;text-decoration:none;vertical-align:.15em}
 .src{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}.src a{font-size:.78rem;border:1px solid var(--line);border-radius:8px;padding:4px 8px;color:var(--text);text-decoration:none;max-width:250px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .src a:hover{border-color:var(--nv)}li::marker{color:var(--nv)}code{background:var(--panel);padding:0 4px;border-radius:4px}
-nav.archive a{margin-right:10px;font-size:.85rem}footer{color:var(--muted);font-size:.8rem;border-top:1px solid var(--line);padding-top:20px;margin-top:20px}
+nav.archive a{margin-right:10px;font-size:.85rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}.chips label{cursor:pointer;border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:.85rem;user-select:none}
+.chips label:hover{border-color:var(--nv)}.chips b{font-weight:500;opacity:.7;margin-left:2px}.pill.cat{color:var(--nv);border-color:#76b90066}
+.sig{font-size:.8rem;color:var(--text);margin-right:4px}.ctx{color:var(--muted);font-size:.9rem;margin:-.3rem 0 .6rem}footer{color:var(--muted);font-size:.8rem;border-top:1px solid var(--line);padding-top:20px;margin-top:20px}
 """
 
 
+def _cat(it: dict) -> str:
+    """Category of an item; older archive items (before categories) get the keyword fallback."""
+    c = it.get("category")
+    return c if c in tt.CATEGORIES else tt.fallback_category(it)
+
+
+def category_counts(items: list[dict]) -> list[tuple[str, int]]:
+    counts: dict[str, int] = {}
+    for it in items:
+        counts[_cat(it)] = counts.get(_cat(it), 0) + 1
+    return [(k, counts[k]) for k in tt.CATEGORIES if k in counts]
+
+
+def filter_css(slugs: list[str]) -> str:
+    """CSS-only category filter: a hidden radio per category + :has() rules (no JavaScript)."""
+    rules = []
+    for k in slugs:
+        rules.append(f"body:has(#f-{k}:checked) article:not(.c-{k}){{display:none}}")
+        rules.append(f"body:has(#f-{k}:checked) label[for=f-{k}]{{background:var(--nv);color:#0b0f0a;border-color:var(--nv)}}")
+    rules.append("body:has(#f-all:checked) label[for=f-all]{background:var(--nv);color:#0b0f0a;border-color:var(--nv)}")
+    return "\n".join(rules)
+
+
 def render_page(day: str, items: list[dict], archive: list[str], mode: str) -> str:
+    cats = category_counts(items)
     arts = []
     for it in items:
-        r = it["result"]
+        r, cat = it["result"], _cat(it)
         srcs = "".join(f'<a href="{html.escape(s["url"])}" target="_blank" rel="noopener">{s["n"]} · '
                        f'{html.escape(s["title"])}</a>' for s in r["sources"])
-        badge = "Wikipedia most-read" if it["kind"] == "wikipedia" else "Hacker News front page"
-        arts.append(f"""<article><div class="meta"><span class="pill">{badge}</span>{html.escape(it.get('context') or '')}</div>
-<h2>{html.escape(r['question'])}</h2>{md_to_html(r['answer'], r['sources'])}<div class="src">{srcs}</div></article>""")
+        kind = tt.KIND_LABEL.get(it.get("kind", ""), it.get("kind", ""))
+        signal = it.get("signal") or tt.signal_text(it)
+        link = (f' · <a href="{html.escape(it["link"])}" target="_blank" rel="noopener">open ↗</a>'
+                if it.get("link") else "")
+        if it.get("discussion") and it.get("discussion") != it.get("link"):
+            link += f' · <a href="{html.escape(it["discussion"])}" target="_blank" rel="noopener">discussion ↗</a>'
+        ctx = f'<p class="ctx">{html.escape(it["context"])}</p>' if it.get("context") else ""
+        arts.append(f"""<article class="c-{cat}"><div class="meta"><span class="pill cat">{html.escape(tt.LABELS[cat])}</span><span class="pill">{html.escape(kind)}</span><span class="sig">{html.escape(signal)}</span>{link}</div>
+<h2>{html.escape(r['question'])}</h2>{ctx}{md_to_html(r['answer'], r['sources'])}<div class="src">{srcs}</div></article>""")
+    radios = '<input type="radio" name="cat" id="f-all" checked hidden>' + "".join(
+        f'<input type="radio" name="cat" id="f-{k}" hidden>' for k, _ in cats)
+    chips = f'<label for="f-all">All <b>{len(items)}</b></label>' + "".join(
+        f'<label for="f-{k}">{html.escape(tt.LABELS[k])} <b>{n}</b></label>' for k, n in cats)
     links = " ".join(f'<a href="{d}.html">{d}</a>' for d in archive[:30])
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Prajna Daily — {day}</title><meta name="description" content="What the internet is curious about today, answered with citations by Prajna (NVIDIA NIM + open data).">
-<style>{CSS}</style></head><body><main><header><h1>Prajna <span>Daily</span></h1>
-<p class="sub">{day} · today's trending topics from Wikipedia and Hacker News, researched and answered automatically by
-<a href="https://github.com/pateldixit28603/prajna-ai-search">Prajna</a> — an open-source answer engine on NVIDIA NIM + open data.
-<br><span class="pill">mode: {html.escape(mode)}</span></p></header>
+<title>Prajna Daily — {day}</title><meta name="description" content="What's trending in tech worldwide today, by category, answered with citations by Prajna (NVIDIA NIM + open data).">
+<style>{CSS}{filter_css([k for k, _ in cats])}</style></head><body>{radios}<main><header><h1>Prajna <span>Daily</span></h1>
+<p class="sub">{day} · what's trending in tech worldwide today, from Hacker News, GitHub, new AI papers and Wikipedia,
+grouped by category, then researched and answered with citations by
+<a href="https://github.com/pateldixit28603/prajna-ai-search">Prajna</a>, an open-source answer engine on NVIDIA NIM + open data.
+<br><span class="pill">mode: {html.escape(mode)}</span></p>
+<nav class="chips" aria-label="Filter by category">{chips}</nav></header>
 {''.join(arts) or '<p>No topics today.</p>'}
-<footer><nav class="archive">Archive: {links}</nav><p>Generated by GitHub Actions. Sources: Wikipedia (CC BY-SA), OpenAlex (CC0), arXiv, Hacker News.</p></footer>
+<footer><nav class="archive">Archive: {links}</nav><p>Generated by GitHub Actions. Topics: Hacker News, GitHub, Hugging Face Daily Papers / arXiv, Wikipedia. Answer sources: Wikipedia (CC BY-SA), OpenAlex (CC0), arXiv, Hacker News.</p></footer>
 </main></body></html>"""
 
 
 def render_markdown(day: str, items: list[dict], mode: str) -> str:
     out = [f"# Prajna Daily — {day}", "",
-           f"_Today's trending topics (Wikipedia most-read + Hacker News front page), answered automatically with "
-           f"citations. Mode: **{mode}**. Updated daily by GitHub Actions — [archive](digest/data/)._", ""]
-    for it in items:
-        r = it["result"]
-        out += [f"## {r['question']}", "", r["answer"].split("> _Extractive")[0].strip(), "", "<sub>Sources: " +
-                " · ".join(f"[{s['n']}] [{s['title']}]({s['url']})" for s in r["sources"]) + "</sub>", ""]
+           f"_What's trending in tech worldwide today (Hacker News, GitHub, new AI papers, Wikipedia), grouped by "
+           f"category and answered automatically with citations. Mode: **{mode}**. Updated daily by GitHub Actions "
+           f"— [archive](digest/data/)._", ""]
+    for cat, _ in category_counts(items):
+        out += [f"## {tt.LABELS[cat]}", ""]
+        for it in (i for i in items if _cat(i) == cat):
+            r = it["result"]
+            signal = it.get("signal") or tt.signal_text(it)
+            out += [f"### {r['question']}", "", f"<sub>{signal}</sub>", "",
+                    r["answer"].split("> _Extractive")[0].strip(), "", "<sub>Sources: " +
+                    " · ".join(f"[{s['n']}] [{s['title']}]({s['url']})" for s in r["sources"]) + "</sub>", ""]
     return "\n".join(out) + "\n"
 
 
 # ------------------------------------------------------------------ main
-async def main_async(day: dt.date, n_wiki: int, n_hn: int) -> None:
-    topics = await trending(day, n_wiki, n_hn)
+async def main_async(day: dt.date, counts: dict[str, int]) -> None:
+    topics = await trending(day, counts)
     print(f"{len(topics)} topics")
     items = []
     async with engine_session() as engine:
+        how = await tt.classify(topics, engine.nv, settings.llm_fast_model)
+        print(f"categories by: {how}")
         for t in topics:
             try:
                 r = await answer(engine, t["question"], t["focus"])
@@ -180,7 +190,9 @@ async def main_async(day: dt.date, n_wiki: int, n_hn: int) -> None:
             if not r["sources"]:
                 continue
             items.append(t | {"result": r, "metrics": citation_metrics(r)})
-            print(f"  ✓ {t['topic']} ({len(r['sources'])} sources, {r['timings']['total']:.1f}s)")
+            print(f"  ✓ [{t['category']}] {t['topic']} ({len(r['sources'])} sources, {r['timings']['total']:.1f}s)")
+    order = list(tt.CATEGORIES)
+    items.sort(key=lambda it: order.index(_cat(it)))
     n_llm = sum(it["result"]["nvidia"] for it in items)
     mode = f"NVIDIA NIM ({n_llm}/{len(items)} answers by the LLM)" if n_llm else "extractive (no NVIDIA LLM)"
     for it in items:
@@ -189,7 +201,8 @@ async def main_async(day: dt.date, n_wiki: int, n_hn: int) -> None:
     ds = day.isoformat()
     (DIGEST / "data").mkdir(parents=True, exist_ok=True)
     (DIGEST / "data" / f"{ds}.json").write_text(
-        json.dumps({"date": ds, "mode": mode, "items": items}, indent=2, ensure_ascii=False), encoding="utf-8")
+        json.dumps({"date": ds, "mode": mode, "categories_by": how, "items": items}, indent=2, ensure_ascii=False),
+        encoding="utf-8")
     archive = sorted((p.stem for p in (DIGEST / "data").glob("*.json")), reverse=True)
     (DIGEST / "index.json").write_text(json.dumps(archive), encoding="utf-8")
     (REPO / "DIGEST.md").write_text(render_markdown(ds, items, mode), encoding="utf-8")
@@ -205,11 +218,13 @@ async def main_async(day: dt.date, n_wiki: int, n_hn: int) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--wiki", type=int, default=4)
-    ap.add_argument("--hn", type=int, default=3)
+    ap.add_argument("--hn", type=int, default=3, help="Hacker News front-page stories")
+    ap.add_argument("--github", type=int, default=2, help="new GitHub repos by stars")
+    ap.add_argument("--papers", type=int, default=2, help="Hugging Face daily papers (arXiv fallback)")
+    ap.add_argument("--wiki", type=int, default=2, help="tech-only Wikipedia most-read articles")
     ap.add_argument("--date", type=dt.date.fromisoformat, default=dt.datetime.now(dt.timezone.utc).date())
     a = ap.parse_args()
-    asyncio.run(main_async(a.date, a.wiki, a.hn))
+    asyncio.run(main_async(a.date, {"hn": a.hn, "github": a.github, "papers": a.papers, "wiki": a.wiki}))
 
 
 if __name__ == "__main__":

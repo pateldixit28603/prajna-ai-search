@@ -1,3 +1,4 @@
+import httpx
 import pytest
 
 from app.pipeline import AnswerEngine
@@ -74,3 +75,24 @@ async def test_repair_citations_skips_initials(offline_nv, docs):
     res = await eng.retrieve("When was Nvidia founded?", "wiki", [])
     out = eng.repair_citations("Nvidia was founded in 1993 by Jensen Huang and Chris A. Malachowsky with Curtis Priem.", res)
     assert "A. Malachowsky" in out and "A [" not in out
+
+
+@pytest.mark.asyncio
+async def test_backup_model_when_answer_model_times_out(online_nv, docs):
+    s, nv = online_nv
+    eng = AnswerEngine(s, nv, {"wikipedia": FakeSource("wikipedia", docs)})
+    res = await eng.retrieve("When was Nvidia founded?", "wiki", [])
+    tried = []
+    real = nv.chat_stream
+
+    async def flaky(messages, model=None, **kw):
+        tried.append(model)
+        if model == s.llm_model:
+            raise httpx.ReadTimeout("")
+        async for t in real(messages, model=model, **kw):
+            yield t
+
+    nv.chat_stream = flaky
+    answer = "".join([t async for t in eng.answer_stream(res, [])])
+    assert tried == [s.llm_model, s.llm_backup_model]
+    assert answer == "Nvidia was founded in 1993 [1]." and eng.last_llm_ok

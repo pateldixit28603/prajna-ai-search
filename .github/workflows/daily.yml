@@ -26,6 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # higher GitHub search rate limit for trending repos
       CONTACT_EMAIL: pateldixit28603@users.noreply.github.com
     steps:
       - uses: actions/checkout@v4
@@ -37,9 +38,9 @@ jobs:
         working-directory: backend
         run: python -m scripts.nim_check
 
-      - name: Prajna Daily — answer today's trending topics
+      - name: Prajna Daily — answer today's global tech trends
         working-directory: backend
-        run: python -m scripts.daily_digest --wiki 4 --hn 3
+        run: python -m scripts.daily_digest --hn 3 --github 2 --papers 2 --wiki 2
 
       - name: Benchmark
         working-directory: backend

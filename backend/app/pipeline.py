@@ -240,14 +240,19 @@ class AnswerEngine:
         messages.append({"role": "user", "content": ANSWER_USER.format(context=context, question=res.question)})
         self.last_llm_ok = False
         got_any = False
-        try:
-            async for tok in self.nv.chat_stream(messages):
-                got_any = True
-                yield tok
-            self.last_llm_ok = got_any
-        except Exception as e:
-            log.error("LLM stream failed, falling back to extractive: %s", e)
-            self.last_llm_error = str(e)[:300]
+        # primary answer model, then (only if it failed before writing anything) the backup model
+        models = [self.s.llm_model] + [m for m in [self.s.llm_backup_model] if m and m != self.s.llm_model]
+        for model in models:
+            try:
+                async for tok in self.nv.chat_stream(messages, model=model):
+                    got_any = True
+                    yield tok
+                self.last_llm_ok = got_any
+            except Exception as e:
+                log.error("LLM stream failed on %s: %r", model, e)
+                self.last_llm_error = f"{model}: {type(e).__name__}: {e}"[:300]
+            if self.last_llm_ok or got_any:
+                break
         if not self.last_llm_ok:
             yield ("\n\n" if got_any else "") + extractive_answer(res.question, flat)
 

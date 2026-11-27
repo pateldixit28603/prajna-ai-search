@@ -48,6 +48,8 @@ class Settings:
         os.getenv("LLM_EXTRA_BODY", '{"chat_template_kwargs": {"enable_thinking": false}}') or "{}"))
     # NeMo Retriever embeddings (OpenAI-compatible /embeddings)
     embed_base_url: str = field(default_factory=lambda: os.getenv("EMBED_BASE_URL", "https://integrate.api.nvidia.com/v1"))
+    # Used only when the answer model fails before writing anything (timeout, outage, retired endpoint).
+    llm_backup_model: str = field(default_factory=lambda: os.getenv("LLM_BACKUP_MODEL", "nvidia/nemotron-3.5-bolt-e4b"))
     embed_model: str = field(default_factory=lambda: os.getenv("EMBED_MODEL", "nvidia/nemotron-3.5-embed-1b"))
     # NeMo Retriever reranker. Hosted catalog URL by default; for a local NIM use http://localhost:8002/v1/ranking
     rerank_url: str = field(default_factory=lambda: os.getenv(
