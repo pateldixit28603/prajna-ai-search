@@ -21,7 +21,7 @@ from pydantic import BaseModel, Field
 from . import lang as L
 from .config import settings
 from .nvidia import NvidiaClient
-from .imagegen import ASPECTS, ImageError, ImageGenerator
+from .imagegen import ASPECTS, STYLES, ImageError, ImageGenerator, apply_style
 from .evidence import build_evidence, passages_by_source
 from .pipeline import FOCUS_MODES, AnswerEngine
 from .ratelimit import RateLimiter
@@ -86,6 +86,7 @@ class ImageRequest(BaseModel):
     prompt: str = Field(..., min_length=2, max_length=1000)
     aspect: str = "square"
     enhance: bool = True               # let Nemotron Bolt expand the idea into a detailed prompt
+    style: str = "none"                # Prajna Studio style preset (imagegen.STYLES)
     seed: int | None = Field(None, ge=0, le=2**31 - 1)
     thread_id: str | None = None
 
@@ -116,6 +117,7 @@ async def health(request: Request):
         "local_index": local.stats() if local else None,
         "focus_modes": {k: v["label"] for k, v in FOCUS_MODES.items()},
         "image_models": settings.image_models,
+        "image_styles": {k: v[0] for k, v in STYLES.items()},
         "languages": {k: {"label": v["label"], "native": v["native"], "dir": v["dir"]} for k, v in L.LANGUAGES.items()},
     }
 
@@ -210,6 +212,8 @@ async def create_image(req: ImageRequest, request: Request):
     """Generate an image with NVIDIA visual GenAI (FLUX / Stable Diffusion), saved into a thread."""
     if req.aspect not in ASPECTS:
         raise HTTPException(400, f"Unknown aspect. Use one of {list(ASPECTS)}")
+    if req.style not in STYLES:
+        raise HTTPException(400, f"Unknown style. Use one of {list(STYLES)}")
     client_ip = request.client.host if request.client else "anon"
     if not image_limiter.allow(client_ip):
         raise HTTPException(429, "Image limit reached (6 per minute). Wait a moment.")
@@ -219,12 +223,14 @@ async def create_image(req: ImageRequest, request: Request):
     idea = req.prompt.strip()
     t0 = time.perf_counter()
     prompt = await gen.enhance(engine.nv, idea) if req.enhance else idea
+    prompt = apply_style(prompt, req.style)
     try:
         out = await gen.generate(prompt, req.aspect, req.seed)
     except ImageError as e:
         raise HTTPException(e.status, str(e))
     meta = {"kind": "image", "image": out["image"], "model": out["model"], "seed": out["seed"],
-            "aspect": out["aspect"], "prompt": prompt, "enhanced": prompt != idea,
+            "aspect": out["aspect"], "prompt": prompt, "enhanced": req.enhance and prompt != apply_style(idea, req.style),
+            "style": req.style,
             "total": time.perf_counter() - t0, "nvidia": True}
     thread_id = req.thread_id if req.thread_id and store.exists(req.thread_id) else None
     if not thread_id:

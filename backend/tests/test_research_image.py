@@ -155,6 +155,11 @@ def test_api_research_and_image(tmp_path):
         t = c.get(f"/api/threads/{img['thread_id']}").json()
         assert t["focus"] == "image" and t["turns"][0]["meta"]["kind"] == "image"
         assert c.post("/api/image", json={"prompt": "x y", "aspect": "round"}).status_code == 400
+        styled = c.post("/api/image", json={"prompt": "a red fox", "enhance": False, "style": "anime"}).json()
+        assert styled["prompt"].startswith("a red fox, anime illustration") and styled["style"] == "anime"
+        assert styled["enhanced"] is False
+        assert c.post("/api/image", json={"prompt": "x y", "style": "nope"}).status_code == 400
+        assert "anime" in c.get("/api/health").json()["image_styles"]
 
 
 def test_api_image_without_key_is_clear(tmp_path):

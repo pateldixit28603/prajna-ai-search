@@ -79,7 +79,7 @@ export default function SearchBox({ onSubmit, focus, setFocus, lang, setLang, as
       />
       <div className="flex items-center justify-between gap-2 px-2.5 pb-2.5">
         <div className="flex flex-wrap gap-1">
-          {FOCUS.map(({ id, label, icon: Icon, hint }) => (
+          {FOCUS.filter((f) => f.id !== "image").map(({ id, label, icon: Icon, hint }) => (
             <button
               key={id}
               title={hint}

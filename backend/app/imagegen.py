@@ -27,6 +27,25 @@ ASPECTS = {   # name -> (width, height, aspect_ratio)
     "portrait": (768, 1344, "9:16"),
 }
 
+# Style presets for Prajna Studio: appended to the (enhanced) prompt so every model gets the same look.
+STYLES = {
+    "none": ("No style", ""),
+    "photo": ("Photo", "ultra-realistic photograph, natural light, 50mm lens, sharp focus, high detail"),
+    "cinematic": ("Cinematic", "cinematic film still, dramatic lighting, anamorphic, shallow depth of field, color graded"),
+    "anime": ("Anime", "anime illustration, clean line art, vibrant cel shading, detailed background"),
+    "3d": ("3D render", "3D render, octane, soft global illumination, studio lighting, high detail"),
+    "watercolor": ("Watercolor", "watercolor painting, soft washes, paper texture, delicate brush strokes"),
+    "digital-art": ("Digital art", "digital painting, concept art, rich colors, highly detailed"),
+    "pixel": ("Pixel art", "pixel art, 16-bit retro game style, crisp pixels, limited palette"),
+    "minimal": ("Minimal / logo", "minimal flat vector design, simple shapes, clean background, bold colors"),
+}
+
+
+def apply_style(prompt: str, style: str) -> str:
+    suffix = STYLES.get(style, STYLES["none"])[1]
+    return f"{prompt.rstrip(' .,')}, {suffix}" if suffix else prompt
+
+
 ENHANCE_SYSTEM = """You write prompts for an AI image generator.
 Turn the user's idea (any language) into ONE vivid English image prompt of at most 60 words:
 subject, setting, style, lighting, composition. Keep every concrete detail the user gave.

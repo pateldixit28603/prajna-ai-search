@@ -1,4 +1,4 @@
-import { Cpu, Database, MessageSquare, Plus, Trash2, X } from "lucide-react";
+import { Cpu, Database, ImageIcon, MessageSquare, Plus, Trash2, Wand2, X } from "lucide-react";
 import type { Health, ThreadSummary } from "../lib/api";
 
 type Props = {
@@ -8,6 +8,7 @@ type Props = {
   open: boolean;
   onClose: () => void;
   onNew: () => void;
+  onStudio: () => void;
   onOpen: (id: string) => void;
   onDelete: (id: string) => void;
 };
@@ -25,7 +26,7 @@ export function Logo() {
   );
 }
 
-export default function Sidebar({ threads, current, health, open, onClose, onNew, onOpen, onDelete }: Props) {
+export default function Sidebar({ threads, current, health, open, onClose, onNew, onStudio, onOpen, onDelete }: Props) {
   return (
     <>
       {open && <div className="fixed inset-0 z-30 bg-black/50 md:hidden" onClick={onClose} />}
@@ -46,6 +47,13 @@ export default function Sidebar({ threads, current, health, open, onClose, onNew
             <span className="flex items-center gap-2"><Plus size={15} /> New search</span>
             <kbd className="font-mono text-[10px] text-muted">/</kbd>
           </button>
+          <button
+            onClick={onStudio}
+            className="mt-2 flex w-full items-center justify-between rounded-xl border border-nv/40 bg-nv-soft px-3 py-2.5 text-sm text-nv transition hover:border-nv"
+          >
+            <span className="flex items-center gap-2"><Wand2 size={15} /> Create image</span>
+            <span className="rounded bg-nv px-1.5 py-0.5 text-[9px] font-semibold tracking-wide text-ink uppercase">AI</span>
+          </button>
         </div>
 
         <p className="mt-6 px-4 text-[11px] font-medium tracking-wider text-muted uppercase">History</p>
@@ -57,7 +65,9 @@ export default function Sidebar({ threads, current, health, open, onClose, onNew
               className={`group flex items-center rounded-lg text-sm ${current === t.id ? "bg-panel-2 text-text" : "text-text/75 hover:bg-panel-2"}`}
             >
               <button onClick={() => onOpen(t.id)} className="flex min-w-0 flex-1 items-center gap-2 px-2.5 py-2 text-left">
-                <MessageSquare size={13} className="shrink-0 text-muted" />
+                {t.focus === "image"
+                  ? <ImageIcon size={13} className="shrink-0 text-nv" />
+                  : <MessageSquare size={13} className="shrink-0 text-muted" />}
                 <span className="truncate">{t.title}</span>
               </button>
               <button

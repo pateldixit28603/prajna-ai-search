@@ -45,6 +45,7 @@ export type Turn = {
 
 export type ImageResult = {
   image: string; model: string; seed: number; aspect: string; prompt: string; enhanced: boolean; total: number;
+  style?: string; idea?: string;
   thread_id?: string; turn_id?: number;
 };
 
@@ -75,7 +76,7 @@ export async function getResearch(q: string): Promise<Research> {
 
 /** Generate an image with NVIDIA visual GenAI (FLUX / Stable Diffusion). */
 export async function createImage(body: {
-  prompt: string; aspect: string; enhance: boolean; seed?: number; thread_id?: string | null;
+  prompt: string; aspect: string; enhance: boolean; seed?: number; thread_id?: string | null; style?: string;
 }): Promise<ImageResult> {
   const r = await fetch(`${BASE}/api/image`, {
     method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
