@@ -37,9 +37,9 @@ const RATIO: Record<string, string> = { square: "1 / 1", landscape: "16 / 9", po
 
 const IDEAS = [
   { text: "A tiger walking through Mumbai rain at night, neon reflections", style: "cinematic" },
-  { text: "Diwali ki raat, Varanasi ke ghat par diyon ki roshni", style: "photo" },
+  { text: "Diwali night on the Varanasi ghats, thousands of oil lamps", style: "photo" },
   { text: "A cozy reading nook inside a giant teacup", style: "3d" },
-  { text: "Astronaut chai pi raha hai Mars par, sunset", style: "digital-art" },
+  { text: "An astronaut drinking chai on Mars at sunset", style: "digital-art" },
   { text: "A minimal logo of a green owl made of circuit lines", style: "minimal" },
   { text: "Studio Ghibli-like village in the Himalayas, spring morning", style: "anime" },
 ];
@@ -187,7 +187,7 @@ export default function Studio({ items, busy, nvidia, onGenerate }: {
             <Sparkles size={12} /> Prajna Studio · NVIDIA FLUX + Nemotron
           </span>
           <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight md:text-5xl">
-            Command do. <span className="text-nv">Image ban jayegi.</span>
+            Describe it. <span className="text-nv">See it.</span>
           </h1>
           <p className="mx-auto mt-3 max-w-xl text-sm text-muted md:text-base">
             Describe anything, in any language. Nemotron turns your idea into a detailed prompt and NVIDIA FLUX paints it in seconds.
@@ -276,7 +276,7 @@ export default function Studio({ items, busy, nvidia, onGenerate }: {
         ) : (
           <div className="mx-auto mt-14 grid max-w-3xl gap-3 text-sm sm:grid-cols-3">
             {[
-              ["1 · Describe", "Hindi, Hinglish, English or any language works."],
+              ["1 · Describe", "Write your idea in plain words, in any language."],
               ["2 · Nemotron writes", "Bolt expands it into a detailed image prompt."],
               ["3 · FLUX paints", "NVIDIA visual GenAI returns the image in seconds."],
             ].map(([t, d]) => (

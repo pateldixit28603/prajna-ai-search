@@ -8,10 +8,10 @@ import TurnView from "./components/TurnView";
 import { createImage, deleteThread, getHealth, getThread, listThreads, streamSearch, type Health, type ThreadSummary, type Turn } from "./lib/api";
 
 const EXAMPLES = [
-  { q: "NVIDIA ka CUDA kya hai aur AI ke liye kyun zaroori hai?", tag: "Tech · Hinglish", icon: Cpu },
+  { q: "What is NVIDIA CUDA and why does it matter for AI?", tag: "Tech", icon: Cpu },
   { q: "How do retrieval-augmented generation systems reduce hallucinations?", tag: "Research", icon: GraduationCap },
-  { q: "Bhagavad Gita ke 18 adhyay kaun se hain?", tag: "Encyclopedia", icon: BookOpen },
-  { q: "Как работают графические процессоры NVIDIA?", tag: "Русский", icon: Globe2 },
+  { q: "What are the 18 chapters of the Bhagavad Gita?", tag: "Encyclopedia", icon: BookOpen },
+  { q: "How did India land Chandrayaan-3 near the Moon's south pole?", tag: "Science", icon: Globe2 },
 ];
 
 type View = "search" | "studio";
@@ -255,7 +255,7 @@ export default function App() {
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-nv text-ink"><Sparkles size={20} /></span>
               <span className="min-w-0 flex-1">
                 <span className="block font-medium">Create images with AI</span>
-                <span className="block text-xs text-muted">Command do, image ban jayegi · NVIDIA FLUX + Nemotron, 9 styles</span>
+                <span className="block text-xs text-muted">Type a prompt and get an image in seconds · NVIDIA FLUX + Nemotron, 9 styles</span>
               </span>
               <ArrowRight size={18} className="shrink-0 text-nv transition group-hover:translate-x-0.5" />
             </button>

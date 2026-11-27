@@ -73,7 +73,7 @@ export default function SearchBox({ onSubmit, focus, setFocus, lang, setLang, as
             submit();
           }
         }}
-        placeholder={focus === "image" ? "Describe an image… e.g. a tiger walking through Mumbai rain at night" : placeholder ?? "Kuch bhi poochho… Ask anything"}
+        placeholder={focus === "image" ? "Describe an image… e.g. a tiger walking through Mumbai rain at night" : placeholder ?? "Ask anything…"}
         className="w-full resize-none bg-transparent px-4 pt-3.5 pb-1 text-[1.02rem] outline-none placeholder:text-muted"
         aria-label="Search query"
       />
@@ -117,7 +117,7 @@ export default function SearchBox({ onSubmit, focus, setFocus, lang, setLang, as
             >
               <option value="auto">Auto</option>
               {LANGS.map((l) => (
-                <option key={l.code} value={l.code}>{l.native}</option>
+                <option key={l.code} value={l.code}>{l.label}</option>
               ))}
             </select>
           </label>

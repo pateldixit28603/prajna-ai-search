@@ -1,0 +1,60 @@
+name: Live site check
+
+# After every push to main: (optionally) ask Render to deploy, then wait until
+# https://prajna-ai-search.onrender.com/api/health reports this commit (or a newer one).
+# The job log shows exactly what the live site is running, so a stuck Render deploy is visible.
+#
+# Optional: add a repository secret RENDER_DEPLOY_HOOK_URL (Render dashboard -> service ->
+# Settings -> Deploy Hook) so every push also triggers a deploy, even if Render auto-deploy is off.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: live-check
+  cancel-in-progress: true
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      SITE: https://prajna-ai-search.onrender.com
+      HOOK: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+
+      - name: Trigger Render deploy (only if the deploy hook secret is set)
+        run: |
+          if [ -n "$HOOK" ]; then
+            curl -fsS -X POST "$HOOK" -o /dev/null && echo "deploy hook called"
+          else
+            echo "::notice::RENDER_DEPLOY_HOOK_URL not set; relying on Render auto-deploy"
+          fi
+
+      - name: Wait for the live site to run this commit
+        run: |
+          want="${GITHUB_SHA::7}"
+          echo "waiting for $SITE to serve $want (or newer)"
+          for i in $(seq 1 50); do
+            body=$(curl -s -m 70 "$SITE/api/health" || true)
+            live=$(echo "$body" | python3 -c "import json,sys; print(json.load(sys.stdin).get('version','none'))" 2>/dev/null || echo "down")
+            echo "[$i] live version: $live"
+            [ "$i" -eq 1 ] && echo "first response: ${body:0:600}"
+            if [ "$live" != "down" ] && [ "$live" != "none" ] && [ "$live" != "dev" ]; then
+              if [ "$live" = "$want" ] || git merge-base --is-ancestor "$GITHUB_SHA" "$live" 2>/dev/null; then
+                echo "$body" | python3 -m json.tool | head -40
+                page=$(curl -s -m 60 "$SITE/")
+                echo "$page" | grep -q '<div id="root">' && echo "UI page served OK" || { echo "::error::UI page missing"; exit 1; }
+                echo "::notice::Live site is running $live"
+                exit 0
+              fi
+            fi
+            sleep 30
+          done
+          echo "last health response: ${body:0:500}"
+          echo "::error::Live site did not pick up $want within 25 minutes (live: $live). Check Render dashboard -> Events."
+          exit 1

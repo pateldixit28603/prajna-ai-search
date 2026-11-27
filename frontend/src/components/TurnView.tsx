@@ -74,7 +74,7 @@ function LangBar({ turn, threadId, onLang }: {
             }`}
           >
             {pending === l.code && <Loader2 size={11} className="animate-spin" />}
-            <span dir={l.dir}>{l.native}</span>
+            <span>{l.label}</span>
           </button>
         ))}
       </div>
