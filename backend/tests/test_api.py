@@ -26,6 +26,12 @@ def test_search_stream_and_threads(tmp_path):
         sources = next(e for e in ev if e["type"] == "sources")["sources"]
         assert sources[0]["n"] == 1 and sources[0]["domain"] == "en.wikipedia.org" and "content" not in sources[0]
         tid = ev[-1]["thread_id"]
+        evidence = next(e for e in ev if e["type"] == "evidence")["items"]
+        assert evidence and evidence[0]["n"] == 1 and evidence[0]["k"] == 0
+        founded = next(e for e in evidence if "1993" in e["claim"])
+        a, b = founded["highlight"]
+        assert "1993" in founded["passage"][a:b]
+        assert ev[-1]["meta"]["evidence"] == evidence           # stored with the turn for reloads
 
         # follow-up in same thread
         r2 = c.post("/api/search", json={"query": "What is CUDA?", "focus": "wiki", "thread_id": tid})

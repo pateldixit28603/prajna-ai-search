@@ -88,6 +88,9 @@ export default function App() {
           case "replace":
             patchLast((t) => ({ ...t, answer: e.text }));
             break;
+          case "evidence":
+            patchLast((t) => ({ ...t, evidence: e.items ?? [] }));
+            break;
           case "followups":
             patchLast((t) => ({ ...t, followups: e.questions }));
             break;
@@ -131,7 +134,7 @@ export default function App() {
       question: x.question, answer: x.answer, sources: x.sources, followups: x.followups,
       queries: x.meta?.queries ?? [], status: "", stage: "done", warnings: [], meta: x.meta,
       lang: x.meta?.lang, turnId: x.id, translations: x.meta?.translations ?? {},
-      shownLang: x.meta?.shown_lang ?? x.meta?.lang,
+      shownLang: x.meta?.shown_lang ?? x.meta?.lang, evidence: x.meta?.evidence ?? [],
     })));
     setMenu(false);
   };

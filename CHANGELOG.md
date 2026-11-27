@@ -2,6 +2,9 @@
 
 All notable changes to Prajna. Daily digest/benchmark commits from `prajna-bot` are not listed here.
 
+## 2026-11-27
+- **Evidence view.** Hover over any `[n]` citation in an answer, or tap it on a phone, to open a card showing the exact passage Prajna read from that source. These are the passages the NVIDIA reranker picked. The sentence that best supports the claim is highlighted, and the card says what share of the claim's key words it contains. If there's no word overlap (for example, an English passage behind a Hindi sentence), the card says so plainly and suggests checking the source. Each citation keeps its own evidence, even when the same source is cited several times, and it still works after you switch the answer language or reopen a saved thread. Matching is instant and needs no extra model call, so it also works when NVIDIA is down.
+
 ## 2026-11-26
 - **Prajna Daily is now a global tech-trends digest.** The generic Wikipedia most-read mix is gone. Topics now come from the Hacker News front page, the most-starred GitHub repos created in the last 7 days, Hugging Face Daily Papers (falling back to the newest arXiv cs.AI/CL/LG/CV papers), and Wikipedia most-read, which is now kept only for technology, science, company and product articles.
 - Every topic gets a category: AI & ML, Chips & Hardware, Software & Dev Tools, Open Source, Security, Science & Space, Big Tech & Startups or Gadgets. NVIDIA Nemotron 3.5 Bolt sorts the whole day's list in one call. If NVIDIA is down or replies with something unusable, keyword rules take over for each item.

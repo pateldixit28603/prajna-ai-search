@@ -155,7 +155,7 @@ export default function TurnView({ turn, onFollowup, live, threadId, onLang }: {
 
           <div className="mt-6">
             {turn.answer ? (
-              <Answer text={text} sources={turn.sources} streaming={streaming} dir={dir} />
+              <Answer text={text} sources={turn.sources} streaming={streaming} dir={dir} evidence={done ? turn.evidence : undefined} />
             ) : turn.stage !== "error" ? (
               <div className="space-y-2.5">
                 <div className="shimmer h-4 w-11/12 rounded" />

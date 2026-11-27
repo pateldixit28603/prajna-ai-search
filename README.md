@@ -21,6 +21,7 @@ Prajna (Sanskrit: *wisdom*) is a Perplexity-style AI search engine. You ask a qu
 
 | Feature | How |
 |---|---|
+| **Evidence view** 🆕 | Hover or tap any `[n]` citation to see the exact passage Prajna read from that source, with the supporting sentence highlighted and how many of the claim's key words it contains. Works in every answer language and in saved threads |
 | **Answer in 7 languages** 🆕 | One click re-renders any answer in English, 简体中文, हिन्दी, Español, العربية (right-to-left), Русский or Hinglish with the NIM LLM. No new search, and every `[n]` citation is checked and restored so it points at the same source. Pick the language before searching too (auto-detected from the script by default); non-English questions also search that language's Wikipedia (ru/zh/hi/es/ar). The choice is saved with the thread |
 | **Create images** 🆕 | *Create image* mode: NVIDIA visual GenAI (FLUX.2 klein first, then FLUX.1 / Stable Diffusion 3 via `ai.api.nvidia.com/v1/genai`), with Nemotron Bolt expanding your idea into a detailed prompt. Square / wide / tall, variations, download, saved in history |
 | **Research mode** 🆕 | A *Research* tab on every answer: key, foundational (most-cited) and rising papers with citation counts and free full-text links, a "read next" list, and a publications-per-year timeline, all from OpenAlex (CC0) |

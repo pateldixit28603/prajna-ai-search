@@ -21,6 +21,7 @@ from . import lang as L
 from .config import settings
 from .nvidia import NvidiaClient
 from .imagegen import ASPECTS, ImageError, ImageGenerator
+from .evidence import build_evidence, passages_by_source
 from .pipeline import FOCUS_MODES, AnswerEngine
 from .ratelimit import RateLimiter
 from .research import ResearchService
@@ -159,6 +160,13 @@ async def search(req: SearchRequest, request: Request):
                 answer = repaired
                 yield sse({"type": "replace", "text": answer})
 
+            try:
+                evidence = build_evidence(answer, passages_by_source(res))
+            except Exception as e:  # evidence is a bonus; never fail the answer over it
+                log.warning("evidence failed: %s", e)
+                evidence = []
+            yield sse({"type": "evidence", "items": evidence})
+
             follow = await engine.followups(query, answer, res, lang)
             yield sse({"type": "followups", "questions": follow})
 
@@ -167,7 +175,7 @@ async def search(req: SearchRequest, request: Request):
             elif L.normalize(req.lang):
                 store.set_lang(thread_id, lang)
             meta = {"queries": res.queries, "timings": res.timings, "focus": req.focus, "lang": lang,
-                    "nvidia": bool(settings.nvidia_enabled and engine.last_llm_ok), "ttft": t_first, "total": time.perf_counter() - t0}
+                    "nvidia": bool(settings.nvidia_enabled and engine.last_llm_ok), "ttft": t_first, "total": time.perf_counter() - t0, "evidence": evidence}
             turn_id = store.add_turn(thread_id, query, answer, public_sources, follow, meta)
             yield sse({"type": "done", "thread_id": thread_id, "turn_id": turn_id, "meta": meta})
         except Exception as e:  # never leave the client hanging

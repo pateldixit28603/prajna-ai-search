@@ -11,6 +11,12 @@ export type Source = {
   extra: Record<string, unknown>;
 };
 
+/** The passage behind one [n] citation: the k-th occurrence of [n] in the answer. */
+export type Evidence = {
+  n: number; k: number; claim: string; passage: string; highlight: [number, number] | null;
+  overlap: number; matched: string[]; cut_before: boolean; cut_after: boolean;
+};
+
 export type Turn = {
   question: string;
   answer: string;
@@ -30,6 +36,8 @@ export type Turn = {
   translations?: Record<string, string>;
   /** language currently shown for this answer */
   shownLang?: string;
+  /** supporting passage for each citation, from the retrieved (NVIDIA-reranked) passages */
+  evidence?: Evidence[];
   /** "image" turns hold a generated picture instead of an answer */
   kind?: "answer" | "image";
   image?: ImageResult;
