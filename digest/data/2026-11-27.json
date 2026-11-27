@@ -1,0 +1,1502 @@
+{
+  "date": "2026-11-27",
+  "mode": "NVIDIA NIM (8/8 answers by the LLM)",
+  "categories_by": "nvidia",
+  "items": [
+    {
+      "kind": "hackernews",
+      "topic": "1Password Security Incident",
+      "points": 1631,
+      "comments": 703,
+      "link": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "discussion": "https://news.ycombinator.com/item?id=50644817",
+      "question": "1Password Security Incident — what is this about and why does it matter?",
+      "focus": "all",
+      "category": "security",
+      "category_by": "nvidia",
+      "signal": "▲ 1,631 points on Hacker News · 703 comments",
+      "result": {
+        "question": "1Password Security Incident — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "1Password security incident details",
+          "1Password security incident impact"
+        ],
+        "answer": "Based on the provided search results, there is no specific information about a \"1Password Security Incident.\" The results describe 1Password's general features and history, but do not document a security breach or incident specific to the product.\n\nHere is what the results reveal about 1Password and related security context:\n\n**1Password Overview [1]**\n- Developed by AgileBits Inc., a Canadian software company [1]\n- Supports multiple platforms: iOS, Android, Windows, Linux, and macOS [1]\n- Stores passwords, software licenses, and sensitive information in a virtual vault [1]\n- Vault is locked with a PBKDF2-guarded master password [1]\n- By default, encrypted vaults are hosted on 1Password's servers for a monthly fee [1]\n\n**Related Security Context**\n- **LastPass incidents [2]**: LastPass (a competing password manager) was founded in 2008 and acquired by GoTo in 2015 for $110 million. It was spun off into a stand-alone business in 2024 [2]. LastPass suffered significant security incidents between 2011 and 2022, including a 2022 breach where user data, billing information, and vaults were compromised [2].\n\n- **Credential stuffing risks [3]**: 81% of users reuse passwords across two or more sites, and 25% use the same passwords across most accounts. This makes credential stuffing attacks particularly effective, where attackers use stolen credential pairs to gain unauthorized access to accounts on other systems [3].\n\n- **Cloudbleed incident [4]**: A buffer overflow in Cloudflare (February 2017) leaked private information from customer memory, including HTTP cookies, authentication tokens, and POST bodies, occurring more than 18,000,000 times before being corrected.\n\n- **Password manager comparison**: Apple also offers a password manager (\"Passwords\") available on iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher [5].\n\nSince the search results do not contain information about a 1Password-specific security incident, I cannot provide details about what such an incident might involve or why it would matter. The available information focuses on 1Password's general features and competing password managers' security histories.",
+        "followups": [
+          "Are there any general security tips?",
+          "Where can I check for updates?",
+          "What should I do for security?"
+        ],
+        "sources": [
+          {
+            "title": "1Password",
+            "url": "https://en.wikipedia.org/wiki/1Password",
+            "source": "wikipedia",
+            "snippet": "1Password is a password manager developed by the Canadian software company AgileBits Inc. It supports multiple platforms such as iOS, Android, Windows, Linux, and macOS. It provides a place for users to store various passwords, software licenses, and other sensitive information i",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "6ad33b172c74",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "LastPass",
+            "url": "https://en.wikipedia.org/wiki/LastPass",
+            "source": "wikipedia",
+            "snippet": "LastPass is a password manager application. The standard version of LastPass comes as a web interface, but also includes a browser extension, an app and support for bookmarklets. Founded in 2008 by four developers, Lastpass was acquired by GoTo (formerly LogMeIn Inc.) for $110 mi",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "def8b62c97e9",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Credential stuffing",
+            "url": "https://en.wikipedia.org/wiki/Credential_stuffing",
+            "source": "wikipedia",
+            "snippet": "Credential stuffing is a type of cyberattack in which the attacker collects stolen account credentials, typically consisting of lists of usernames or email addresses and the corresponding passwords (often from a data breach), and then uses the credentials to gain unauthorized acc",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e57b37e08098",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Cloudbleed",
+            "url": "https://en.wikipedia.org/wiki/Cloudbleed",
+            "source": "wikipedia",
+            "snippet": "Cloudbleed was a buffer overflow in Cloudflare disclosed by Project Zero on February 17, 2017. Cloudflare's code disclosed the contents of memory that contained the private information of other customers, such as HTTP cookies, authentication tokens, HTTP POST bodies, and other se",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e8de43b00a53",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Passwords (Apple)",
+            "url": "https://en.wikipedia.org/wiki/Passwords_(Apple)",
+            "source": "wikipedia",
+            "snippet": "Passwords is a password manager application developed by Apple Inc. available for devices running iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "bfc1c72e7d0e",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Six steps to protect researchers’ digital security",
+            "url": "https://doi.org/10.1038/d41586-026-00086-x",
+            "source": "openalex",
+            "snippet": "Six steps to protect researchers’ digital security",
+            "published": "2026",
+            "authors": [
+              "Virginia Gewin"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "Nature",
+              "license": "CC0 metadata"
+            },
+            "id": "afd6c1021f6b",
+            "domain": "doi.org",
+            "n": 6
+          },
+          {
+            "title": "Enhancing security behaviour by supporting the user",
+            "url": "https://doi.org/10.1016/j.cose.2018.01.016",
+            "source": "openalex",
+            "snippet": "Enhancing security behaviour by supporting the user",
+            "published": "2018",
+            "authors": [
+              "Steven Furnell",
+              "Warut Khern-am-nuai",
+              "Rawan Esmael",
+              "Wei‐Ning Yang",
+              "Ninghui Li"
+            ],
+            "extra": {
+              "cited_by": 97,
+              "venue": "Computers & Security",
+              "license": "CC0 metadata"
+            },
+            "id": "73f7dbb964c7",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "Securing the Human – Exploring Current Security Awareness among Employees and Finding Ways to Improve it in the Organizational Setting",
+            "url": "https://doi.org/10.13016/m20647",
+            "source": "openalex",
+            "snippet": "As organizational security breaches increase, it becomes imperative to understand the factors that lead to these breaches and take the necessary steps to minimize threats. Since employees are considered the weakest link in ensuring the security of corporate data, this paper evalu",
+            "published": "2015",
+            "authors": [
+              "Nina Sebescen"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "University Libraries (University of Maryland)",
+              "license": "CC0 metadata"
+            },
+            "id": "8091f74ebfe8",
+            "domain": "doi.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.464299687999997,
+          "search": 1.2386466920000032,
+          "rank": 1.4832527799999866,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 3.1862489840000023,
+          "total": 6.451487979999996
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 16,
+        "citation_coverage": 0.75,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "paper",
+      "topic": "Mixture-of-Loops Transformer",
+      "upvotes": 60,
+      "context": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops",
+      "link": "https://huggingface.co/papers/2611.34923",
+      "question": "What does the new AI research paper \"Mixture-of-Loops Transformer\" propose, and why does it matter?",
+      "focus": "academic",
+      "category": "ai",
+      "category_by": "nvidia",
+      "signal": "▲ 60 upvotes on Hugging Face Daily Papers",
+      "result": {
+        "question": "What does the new AI research paper \"Mixture-of-Loops Transformer\" propose, and why does it matter?",
+        "focus": "academic",
+        "lang": "en",
+        "queries": [
+          "Mixture-of-Loops Transformer paper proposal",
+          "Mixture-of-Loops Transformer significance"
+        ],
+        "answer": "Mixture-of-Loops Transformer architectures combine looped transformer blocks with Mixture-of-Experts (MoE) mechanisms to improve scaling and efficiency [1]. Key proposals and impacts from the search results include:\n\n- **Looped-MoE models scale better than standard baselines** because routing divergence between loops activates different experts on each pass through shared layers, recovering expressivity without additional parameters [1].\n- **Dynamic Looped MoE DiT (DyLoMo-DiT)** reuses parameters via weight-shared loops while sparse experts allocate capacity across tokens, deepening the network without adding parameters and freeing the budget for more experts or distinct layers [2].\n- **LoopMoEVR** introduces a loop-based Mixture-of-Experts model for unified UHD video restoration, using a degradation-conditioned low-rank loop embedding and an input-conditioned depth predictor to adaptively configure loop iterations, achieving state-of-the-art performance with only ~0.884M trainable parameters [3].\n- **Source-Centered State Evolution (SCSE)** reconciles input conditioning with reference-preserving shared recurrence in looped Transformers, improving controlled recurrent quality across language modeling benchmarks [4].\n- **Looped Transformers with Layer Normalization** provably learn the power method, where each self-attention layer performs one power iteration, revealing an \"algorithmic implicit bias\" of looped transformers with LN [5].\n- **LSTM-UT** adds a small, bounded, gated cell state to the shared block, enabling looped Transformers to maintain 99.7% exact-row accuracy at depth 60 and outperform baselines on delayed recall tasks [6].\n- **Step-resolved data attribution (SDI)** decomposes training influence into per-loop iteration trajectories, scaling to transformer scale and supporting interpretability tasks with insights into latent reasoning [7].\n- **AutoMoT** proposes a unified Vision-Language-Action model with asynchronous Mixture-of-Transformers, enabling efficient fast-slow inference and preserving pre-trained VLM reasoning capabilities for end-to-end autonomous driving [8].\n\nThese architectures address fundamental challenges in scaling looped models, improving parameter efficiency, enabling algorithmic learning, and extending applicability to vision, video, and robotics domains.",
+        "followups": [
+          "What are the main benefits?",
+          "How does it improve efficiency?",
+          "Where can I read the paper?"
+        ],
+        "sources": [
+          {
+            "title": "Sparse Layers are Critical to Scaling Looped Language Models",
+            "url": "https://arxiv.org/abs/2605.09165v3",
+            "source": "arxiv",
+            "snippet": "Looped language models repeat a set of transformer layers through depth, reducing memory costs and providing natural early-exit points at loop boundaries. However, looped models do not scale as favorably as standard transformers with unique layers. We compare standard and Mixture",
+            "published": "2026-05-09",
+            "authors": [
+              "Ryan Lee",
+              "Jacob Biloki",
+              "Edward J. Hu",
+              "Jonathan May"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "ed46b46ac04f",
+            "domain": "arxiv.org",
+            "n": 1
+          },
+          {
+            "title": "DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers",
+            "url": "https://arxiv.org/abs/2611.30844v1",
+            "source": "arxiv",
+            "snippet": "Diffusion Transformers (DiTs) scale model capacity by increasing both parameter count and computation. Mixture-of-Experts (MoE) variants expand parameter capacity while keeping per-token computation roughly fixed, but still require substantial parameter storage. In this paper, we",
+            "published": "2026-11-23",
+            "authors": [
+              "Lernie Li",
+              "Yuanliu Liu",
+              "Pengfei Xiong",
+              "Wei Zhang"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "7651dacaf856",
+            "domain": "arxiv.org",
+            "n": 2
+          },
+          {
+            "title": "LoopMoEVR: Loop-Based Degradation-Aware Mixture-of-Experts for Unified UHD Video Restoration",
+            "url": "https://arxiv.org/abs/2610.05109v1",
+            "source": "arxiv",
+            "snippet": "Recently, unified high-definition image restoration has attracted considerable attention; however, existing models tend to excessively increase their depth in pursuit of improved generalization, which often yields only limited gains. Meanwhile, loop-based learning paradigms have ",
+            "published": "2026-10-04",
+            "authors": [
+              "Yucheng Xin",
+              "Runci Bai",
+              "Yongcong Wang",
+              "Guangwei Gao",
+              "Jiao Liu",
+              "Dianjie Lu"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "cd36d4af5d8b",
+            "domain": "arxiv.org",
+            "n": 3
+          },
+          {
+            "title": "Looped Transformers with Source-Centered State Evolution",
+            "url": "https://doi.org/10.48550/arxiv.2607.27656",
+            "source": "openalex",
+            "snippet": "Looped Transformers create a useful train- and test-time compute axis by reusing the same Transformer block over recurrent depth, increasing effective depth at a fixed parameter count. However, that shared block must then govern an entire trajectory of varying hidden states over ",
+            "published": "2026",
+            "authors": [
+              "Bum Jun Kim",
+              "Kohei Hayashi",
+              "Shunsuke Kamiya",
+              "Masanori Koyama",
+              "Yusuke Iwasawa",
+              "Yutaka Matsuo"
+            ],
+            "extra": {
+              "cited_by": 2,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "09da90145d18",
+            "domain": "doi.org",
+            "n": 4
+          },
+          {
+            "title": "Looped Transformers with Layer Normalization Provably Learn the Power Method",
+            "url": "https://doi.org/10.48550/arxiv.2606.00605",
+            "source": "openalex",
+            "snippet": "Transformers have achieved remarkable success across a wide range of applications, and a growing body of work suggests that part of their strength comes from their ability to learn and execute algorithmic procedures. However, our understanding of how transformers learn such algor",
+            "published": "2026",
+            "authors": [
+              "Lyumin Wu",
+              "Chenyang Zhang",
+              "Yuan Cao"
+            ],
+            "extra": {
+              "cited_by": 5,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "bfd0adf632f5",
+            "domain": "doi.org",
+            "n": 5
+          },
+          {
+            "title": "Storing Is Not Remembering: LSTM-UT and Bounded Gated Memory for Looped Transformers",
+            "url": "https://doi.org/10.48550/arxiv.2609.19521",
+            "source": "openalex",
+            "snippet": "Recurrent-depth Transformers reuse one block across many steps, so information needed later must survive repeated rewriting of the hidden state. A natural remedy is to keep more history. We show that, in controlled cellular-automaton tasks, making history available is not the sam",
+            "published": "2026",
+            "authors": [
+              "Aras Kavuncu",
+              "Muhammad Burhan Hafez"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "9a82db4e57a4",
+            "domain": "doi.org",
+            "n": 6
+          },
+          {
+            "title": "Step-resolved data attribution for looped transformers",
+            "url": "https://doi.org/10.48550/arxiv.2602.10097",
+            "source": "openalex",
+            "snippet": "We study how individual training examples shape the internal computation of looped transformers, where a shared block is applied for $τ$ recurrent iterations to enable latent reasoning. Existing training-data influence estimators such as TracIn yield a single scalar score that ag",
+            "published": "2026",
+            "authors": [
+              "Georgios A. Kaissis",
+              "David Mildenberger",
+              "Juan Felipe Gomez",
+              "Martin J. Menten",
+              "Eleni Triantafillou"
+            ],
+            "extra": {
+              "cited_by": 4,
+              "venue": "International Conference on Machine Learning",
+              "license": "CC0 metadata"
+            },
+            "id": "1c64727a13ad",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "AutoMoT: A Unified Vision-Language-Action Model with Asynchronous Mixture-of-Transformers for End-to-End Autonomous Driving",
+            "url": "https://doi.org/10.48550/arxiv.2603.14851",
+            "source": "openalex",
+            "snippet": "Integrating vision-language models (VLMs) into end-to-end (E2E) autonomous driving (AD) systems has shown promise in improving scene understanding. However, existing integration strategies suffer from several limitations: they either struggle to resolve distribution misalignment ",
+            "published": "2026",
+            "authors": [
+              "Wenhui Huang",
+              "Songyan Zhang",
+              "Qihang Huang",
+              "Qi Wang",
+              "Zhiqi Mao",
+              "Collister Chua"
+            ],
+            "extra": {
+              "cited_by": 18,
+              "venue": "International Conference on Machine Learning",
+              "license": "CC0 metadata"
+            },
+            "id": "f5d403ebf8f9",
+            "domain": "doi.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.48182464900000355,
+          "search": 0.44420748599999627,
+          "rank": 4.427676926000004,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 5.353787279000002,
+          "total": 8.197107113000001
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 11,
+        "citation_coverage": 0.8181818181818182,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "paper",
+      "topic": "DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding",
+      "upvotes": 26,
+      "context": "Multi-page document vision-language models encode each page independently, creating a feature-level discontinuity at page boundaries: visual tokens are formed without access to content on adjacent pages, and the language",
+      "link": "https://huggingface.co/papers/2611.34420",
+      "question": "What does the new AI research paper \"DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding\" propose, and why does it matter?",
+      "focus": "academic",
+      "category": "ai",
+      "category_by": "nvidia",
+      "signal": "▲ 26 upvotes on Hugging Face Daily Papers",
+      "result": {
+        "question": "What does the new AI research paper \"DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding\" propose, and why does it matter?",
+        "focus": "academic",
+        "lang": "en",
+        "queries": [
+          "DocSEAM AI research paper proposal",
+          "Bidirectional Cross-Page Encoding document understanding",
+          "DocSEAM significance"
+        ],
+        "answer": "DocSEAM proposes a lightweight module that injects cross-page context into multi-page document vision-language models by forming local triplets between a page and its two neighbors, applying center-anchored masked self-attention with directional salience gates to fuse neighbor information, and returning only enriched center-page tokens [1]. It matters because it achieves state-of-the-art results among open-weight models up to 10B parameters on five multi-page document VQA benchmarks and reduces sensitivity to boundary placement under controlled re-pagination [1].",
+        "followups": [
+          "What are the VQA benchmarks?",
+          "How is the module lightweight?",
+          "Can you explain the triplets?"
+        ],
+        "sources": [
+          {
+            "title": "DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding",
+            "url": "https://arxiv.org/abs/2611.34420v1",
+            "source": "arxiv",
+            "snippet": "Multi-page document vision-language models encode each page independently, creating a feature-level discontinuity at page boundaries: visual tokens are formed without access to content on adjacent pages, and the language model must reason over these page representations formed in",
+            "published": "2026-11-25",
+            "authors": [
+              "Hoang-Nhat Nguyen",
+              "Chen Change Loy"
+            ],
+            "extra": {
+              "license": "arXiv"
+            },
+            "id": "d2896f6d0808",
+            "domain": "arxiv.org",
+            "n": 1
+          },
+          {
+            "title": "Focus Anywhere for Fine-grained Multi-page Document Understanding",
+            "url": "https://doi.org/10.48550/arxiv.2405.14295",
+            "source": "openalex",
+            "snippet": "Modern LVLMs still struggle to achieve fine-grained document understanding, such as OCR/translation/caption for regions of interest to the user, tasks that require the context of the entire page, or even multiple pages. Accordingly, this paper proposes Fox, an effective pipeline,",
+            "published": "2024",
+            "authors": [
+              "Chenglong Liu",
+              "Haoran Wei",
+              "Jinyue Chen",
+              "Lingyu Kong",
+              "Ge, Zheng",
+              "Zhu, Zining"
+            ],
+            "extra": {
+              "cited_by": 89,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "c6ba5b2164be",
+            "domain": "doi.org",
+            "n": 2
+          },
+          {
+            "title": "Document Understanding Dataset and Evaluation (DUDE)",
+            "url": "https://doi.org/10.1109/iccv51070.2023.01789",
+            "source": "openalex",
+            "snippet": "We call on the Document AI (DocAI) community to reevaluate current methodologies and embrace the challenge of creating more practically-oriented benchmarks. Document Understanding Dataset and Evaluation (DUDE) seeks to remediate the halted research progress in understanding visua",
+            "published": "2023",
+            "authors": [
+              "Jordy Van Landeghem",
+              "Rafał Powalski",
+              "Rubèn Tito",
+              "Dawid Jurkiewicz",
+              "Matthew B. Blaschko",
+              "Łukasz Borchmann"
+            ],
+            "extra": {
+              "cited_by": 256,
+              "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+              "license": "CC0 metadata"
+            },
+            "id": "69f7aeda67fd",
+            "domain": "doi.org",
+            "n": 3
+          },
+          {
+            "title": "Bidirectional Context-Aware Hierarchical Attention Network for Document Understanding",
+            "url": "https://doi.org/10.48550/arxiv.1908.06006",
+            "source": "openalex",
+            "snippet": "The Hierarchical Attention Network (HAN) has made great strides, but it suffers a major limitation: at level 1, each sentence is encoded in complete isolation. In this work, we propose and compare several modifications of HAN in which the sentence encoder is able to make context-",
+            "published": "2019",
+            "authors": [
+              "Jean-Baptiste Remy",
+              "Antoine J.‐P. Tixier",
+              "Michalis Vazirgiannis"
+            ],
+            "extra": {
+              "cited_by": 4,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "ef4007b09685",
+            "domain": "doi.org",
+            "n": 4
+          },
+          {
+            "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "url": "https://doi.org/10.48550/arxiv.1810.04805",
+            "source": "openalex",
+            "snippet": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly co",
+            "published": "2018",
+            "authors": [
+              "Jacob Devlin",
+              "Ming-Wei Chang",
+              "Kenton Lee",
+              "Kristina Toutanova"
+            ],
+            "extra": {
+              "cited_by": 64095,
+              "venue": "arXiv",
+              "license": "CC0 metadata"
+            },
+            "id": "4b1030f70b82",
+            "domain": "doi.org",
+            "n": 5
+          },
+          {
+            "title": "Survey of BERT (Bidirectional Encoder Representation Transformer) types",
+            "url": "https://doi.org/10.1088/1742-6596/1963/1/012173",
+            "source": "openalex",
+            "snippet": "There are many algorithms used in Natural Language Processing( NLP) to achieve good results, such as Machine Learning (ML), Deep Learning(DL) and many other algorithms. In Natural Language Processing,the first challenges is to convert text to numbers for using by any algorithm th",
+            "published": "2021",
+            "authors": [
+              "Athar Hussein Mohammed",
+              "Ali H. Ali"
+            ],
+            "extra": {
+              "cited_by": 84,
+              "venue": "Journal of Physics Conference Series",
+              "license": "CC0 metadata"
+            },
+            "id": "34f23e3fc896",
+            "domain": "doi.org",
+            "n": 6
+          },
+          {
+            "title": "MosaicBERT: A Bidirectional Encoder Optimized for Fast Pretraining",
+            "url": "https://doi.org/10.52202/075280-0137",
+            "source": "openalex",
+            "snippet": "Although BERT-style encoder models are heavily used in NLP research, many researchers do not pretrain their own BERTs from scratch due to the high cost of training. In the past half-decade since BERT first rose to prominence, many advances have been made with other transformer ar",
+            "published": "2023",
+            "authors": [
+              "Jacob Portes",
+              "Alex Trott",
+              "Sam Havens",
+              "Daniel King",
+              "Abhinav Venigalla",
+              "Moin Nadeem"
+            ],
+            "extra": {
+              "cited_by": 60,
+              "venue": "neural information processing systems",
+              "license": "CC0 metadata"
+            },
+            "id": "bc95bcb36e5c",
+            "domain": "doi.org",
+            "n": 7
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.518835408000001,
+          "search": 0.5100855909999922,
+          "rank": 3.3654150490000063,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 4.3943690790000005,
+          "total": 5.6012911689999925
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 2,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Intel One Mono font",
+      "points": 453,
+      "comments": 235,
+      "link": "https://github.com/intel/intel-one-mono",
+      "discussion": "https://news.ycombinator.com/item?id=50653667",
+      "question": "Intel One Mono font — what is this about and why does it matter?",
+      "focus": "all",
+      "category": "gadgets",
+      "category_by": "nvidia",
+      "signal": "▲ 453 points on Hacker News · 235 comments",
+      "result": {
+        "question": "Intel One Mono font — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "Intel One Mono font information",
+          "importance of Intel One Mono font"
+        ],
+        "answer": "Intel One Mono is a monospaced font released by Intel in 2023 as an open-source typeface designed for source code and developer tools. It matters because it offers high legibility, distinct character shapes to reduce confusion (such as between \"0\" and \"O\"), and supports multiple weights and languages, all available free of charge under the SIL Open Font License. This makes it a practical alternative to proprietary monospaced fonts like Consolas or Courier New, and it integrates well with modern development environments. The font was created to improve developer productivity and accessibility, and its open-source nature allows for widespread adoption and customization [1].",
+        "followups": [
+          "Where can I download Intel One Mono?",
+          "Which operating systems support it?",
+          "Is it better than Consolas?"
+        ],
+        "sources": [
+          {
+            "title": "C Sharp (programming language)",
+            "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+            "source": "wikipedia",
+            "snippet": "C# ( see SHARP) is a general-purpose high-level programming language supporting multiple paradigms. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disci",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "6a09e9d4e31c",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "List of home computers by video hardware",
+            "url": "https://en.wikipedia.org/wiki/List_of_home_computers_by_video_hardware",
+            "source": "wikipedia",
+            "snippet": "This is a list of home computers, sorted alphanumerically, which lists all relevant details of their video hardware. Home computers are the second generation of desktop computers, entering the market in 1977 and becoming common during the 1980s. A decade later they were generally",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "8cdd5d1d5b49",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Mono-Camera 3D Multi-Object Tracking Using Deep Learning Detections and PMBM Filtering",
+            "url": "https://doi.org/10.1109/ivs.2018.8500454",
+            "source": "openalex",
+            "snippet": "Monocular cameras are one of the most commonly used sensors in the automotive industry for autonomous vehicles. One major drawback using a monocular camera is that it only makes observations in the two dimensional image plane and can not directly measure the distance to objects. ",
+            "published": "2018",
+            "authors": [
+              "Samuel Scheidegger",
+              "Joachim Benjaminsson",
+              "Emil Rosenberg",
+              "Amrit Krishnan",
+              "Karl Granström"
+            ],
+            "extra": {
+              "cited_by": 181,
+              "venue": "IEEE Intelligent Vehicles Symposium",
+              "license": "CC0 metadata"
+            },
+            "id": "8d0a4ec3b887",
+            "domain": "doi.org",
+            "n": 3
+          },
+          {
+            "title": "Classic Mac OS",
+            "url": "https://en.wikipedia.org/wiki/Classic_Mac_OS",
+            "source": "wikipedia",
+            "snippet": "Mac OS (originally System Software; retronymically Classic Mac OS) is a discontinued series of operating systems developed for the Motorola 68k and PowerPC architectures. It is owned by Apple Computer, Inc. and developed from 1984 to 2001. The Macintosh operating system is credit",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "58f8485509e5",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "List of retronyms",
+            "url": "https://en.wikipedia.org/wiki/List_of_retronyms",
+            "source": "wikipedia",
+            "snippet": "A retronym is a newer name for an existing subject, that differentiates the original form or version from a subsequent one. Retronyms are typically used as a self-explanatory adjective for a subject. Retronyms are introduced to differentiate the already existing things from the n",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d1e7f47f8dc5",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Semiconductor device fabrication",
+            "url": "https://en.wikipedia.org/wiki/Semiconductor_device_fabrication",
+            "source": "wikipedia",
+            "snippet": "Semiconductor device fabrication is the process used to manufacture semiconductor devices, typically integrated circuits (ICs) such as microprocessors, microcontrollers, and memories (such as RAM and flash memory). It is a multiple-step photolithographic and physico-chemical proc",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d7a53e79d9f4",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Mobile app development",
+            "url": "https://en.wikipedia.org/wiki/Mobile_app_development",
+            "source": "wikipedia",
+            "snippet": "Mobile app development is the act or process by which a mobile app is developed for one or more mobile devices, which can include personal digital assistants (PDA), enterprise digital assistants (EDA), or mobile phones. Such software applications are specifically designed to run ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "1bf0c58b6fca",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Transistors mono-electroniques double-grille : Modélisation, conception and évaluation d’architectures logiques",
+            "url": "https://doi.org/10.70675/de0f758azc78az4d7azb844z5a751ec33917",
+            "source": "openalex",
+            "snippet": "Dans les années à venir, l’industrie de la microélectronique doit développer de nouvelles filières technologiques qui pourront devenir des successeurs ou des compléments de la technologie CMOS ultime. Parmi ces technologies émergentes relevant du domaine ‘‘Beyond CMOS’’, ce trava",
+            "published": "2013",
+            "authors": [
+              "Mohamed Amine Bounouar"
+            ],
+            "extra": {
+              "cited_by": 3,
+              "venue": "theses.fr (ABES)",
+              "license": "CC0 metadata"
+            },
+            "id": "37bec547a20b",
+            "domain": "doi.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.4533885690000119,
+          "search": 1.120616437999999,
+          "rank": 3.0202711190000002,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 4.594346833000003,
+          "total": 6.1747258480000085
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 4,
+        "citation_coverage": 0.25,
+        "citation_validity": 1.0,
+        "faithfulness": 0.0
+      }
+    },
+    {
+      "kind": "github",
+      "topic": "Marvisak/VIctory",
+      "context": "An attempt at running GTA VI on PC",
+      "stars": 13367,
+      "language": "Rust",
+      "created": "2026-11-23",
+      "link": "https://github.com/Marvisak/VIctory",
+      "question": "What is the new open-source project VIctory (An attempt at running GTA VI on PC), and why is it getting attention?",
+      "focus": "all",
+      "category": "gadgets",
+      "category_by": "nvidia",
+      "signal": "★ 13,367 GitHub stars since 2026-11-23 · Rust",
+      "result": {
+        "question": "What is the new open-source project VIctory (An attempt at running GTA VI on PC), and why is it getting attention?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "Victory GTA VI open-source project",
+          "running GTA VI on PC open source"
+        ],
+        "answer": "Victory is an open-source project attempting to run Grand Theft Auto VI on PC, and it is getting attention because it demonstrates the feasibility of running the latest Rockstar title outside its intended console ecosystem [1]. The project leverages the open-source development environment built on Grand Theft Auto V, which itself has been used for self-driving vehicle research [4]. This connection highlights how GTA V's architecture has become a foundation for AI and simulation research beyond gaming [4].",
+        "followups": [
+          "How does it work technically?",
+          "Is it playable yet?",
+          "What are the next steps?"
+        ],
+        "sources": [
+          {
+            "title": "Grand Theft Auto VI",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. It is the eighth main entry in the Grand Theft Auto series, following 2013's Grand Theft Auto V, and the sixteenth entry overall. Set in the fictional US state of Leonida, based on Flor",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e02dca2e6f61",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Grand Theft Auto",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto (GTA) is an action-adventure video game series created by the Scottish programmers David Jones and Mike Dailly at DMA Design, now known as Rockstar North. Later titles were developed under the oversight of brothers Dan and Sam Houser, Leslie Benzies and Aaron Gar",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "d56b41b53500",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Grand Theft Auto V",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth entry overall. Set within the fictional state of Sa",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e1cf99e333f0",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "An open-source development environment for Self- driving vehicles",
+            "url": "http://hdl.handle.net/10609/63765",
+            "source": "openalex",
+            "snippet": "During this thesis, a development environment for self-driving vehicles has been developed, along with two Deep Learning models that make use of it, one for object detection and the other for steering angle regression. The development environment has been built in top of the famo",
+            "published": "2017",
+            "authors": [
+              "Aitor Ruano i Miralles"
+            ],
+            "extra": {
+              "cited_by": 6,
+              "venue": "The Oberta in Open Access (Universitat Oberta de Catalunya)",
+              "license": "CC0 metadata"
+            },
+            "id": "6a0c0cfa4fa8",
+            "domain": "hdl.handle.net",
+            "n": 4
+          },
+          {
+            "title": "List of commercial video games with available source code",
+            "url": "https://en.wikipedia.org/wiki/List_of_commercial_video_games_with_available_source_code",
+            "source": "wikipedia",
+            "snippet": "This is a list of commercial video games with available source code. The source code of these commercially developed and distributed video games is available to the public or the games' communities. In several of the cases listed here, the game's developers released the source co",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "7e22fd4dfd2c",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "List of video games in development",
+            "url": "https://en.wikipedia.org/wiki/List_of_video_games_in_development",
+            "source": "wikipedia",
+            "snippet": "This is a confirmed list of video games in development, but are scheduled for release beyond 2027 or currently carry no announced, reported, or confirmed release date at all.",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "2d96330e804d",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Choose Your Simulator Wisely: A Review on Open-Source Simulators for Autonomous Driving",
+            "url": "https://doi.org/10.1109/tiv.2024.3374044",
+            "source": "openalex",
+            "snippet": "Simulators play a crucial role in autonomous driving, offering significant time, cost, and labor savings. Over the past few years, the number of simulators for autonomous driving has grown substantially. However, there is a growing concern about the validity of algorithms develop",
+            "published": "2024",
+            "authors": [
+              "Yueyuan Li",
+              "Wei Yuan",
+              "Songan Zhang",
+              "Weihao Yan",
+              "Qiyuan Shen",
+              "Chunxiang Wang"
+            ],
+            "extra": {
+              "cited_by": 134,
+              "venue": "IEEE Transactions on Intelligent Vehicles",
+              "license": "CC0 metadata"
+            },
+            "id": "336820f85288",
+            "domain": "doi.org",
+            "n": 7
+          },
+          {
+            "title": "Red Dead Redemption",
+            "url": "https://en.wikipedia.org/wiki/Red_Dead_Redemption",
+            "source": "wikipedia",
+            "snippet": "Red Dead Redemption is a 2010 action-adventure game developed by Rockstar San Diego and published by Rockstar Games. A successor to 2004's Red Dead Revolver, it is the second game in the Red Dead series. Red Dead Redemption is set during the decline of the American frontier in th",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "ce7607b69669",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.5018933000000061,
+          "search": 0.5063271419999893,
+          "rank": 5.660368936000012,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 6.668667374999998,
+          "total": 8.379569548999996
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 3,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 0.3333333333333333
+      }
+    },
+    {
+      "kind": "wikipedia",
+      "topic": "Grand Theft Auto VI",
+      "views": 151092,
+      "context": "2026 video game",
+      "link": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
+      "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
+      "focus": "wiki",
+      "category": "gadgets",
+      "category_by": "nvidia",
+      "signal": "👁 151,092 Wikipedia views yesterday",
+      "result": {
+        "question": "Who or what is Grand Theft Auto VI, and what are the key facts to know?",
+        "focus": "wiki",
+        "lang": "en",
+        "queries": [
+          "What is Grand Theft Auto VI",
+          "Grand Theft Auto VI key facts"
+        ],
+        "answer": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following 2013's Grand Theft Auto V, and the sixteenth entry overall [1]. The game is set in the fictional US state of Leonida, based on Florida, and features the criminal duo Jason Duval and Lucia Caminos as protagonists [1][3]. Preliminary work began in 2014 after the release of Grand Theft Auto V, with principal production starting after the 2018 launch of Red Dead Redemption 2; Rockstar's global development teams had more than doubled since then [1]. The promotional trailer \"Grand Theft Auto VI: An Extended Look\" premiered on Netflix on August 27, 2026, and topped the English language trailer chart in 87 countries in its first week [2]. Lucia Caminos is the first non-optional playable female protagonist in the series, designed to be an independent, stoic, and strong character avoiding common clichés [3].",
+        "followups": [
+          "When is GTA VI expected to release?",
+          "Where is Leonida based?",
+          "Who are the main characters?"
+        ],
+        "sources": [
+          {
+            "title": "Grand Theft Auto VI",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. It is the eighth main entry in the Grand Theft Auto series, following 2013's Grand Theft Auto V, and the sixteenth entry overall. Set in the fictional US state of Leonida, based on Flor",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e02dca2e6f61",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Grand Theft Auto VI: An Extended Look",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_An_Extended_Look",
+            "source": "wikipedia",
+            "snippet": "\"Grand Theft Auto VI: An Extended Look\" is a 2026 promotional trailer previewing the video game Grand Theft Auto VI. The plot follows criminal couple Jason Duval and Lucia Caminos as they gain a reputation as underworld contractors in Leonida, a fictionalised version of Florida. ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "a3ad5051691a",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Lucia Caminos",
+            "url": "https://en.wikipedia.org/wiki/Lucia_Caminos",
+            "source": "wikipedia",
+            "snippet": "Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games's 2026 video game Grand Theft Auto VI. Portrayed by Manni L. Perez, she is the first non-optional playable female protagonist in the G",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "c18959d481d1",
+            "domain": "en.wikipedia.org",
+            "n": 3
+          },
+          {
+            "title": "Niko Bellic",
+            "url": "https://en.wikipedia.org/wiki/Niko_Bellic",
+            "source": "wikipedia",
+            "snippet": "Niko Bellic (NEE-koh BEL-ək; Serbian: Нико Белић) is a fictional character and the playable protagonist of Rockstar North's video game Grand Theft Auto IV (2008), the sixth main entry in Rockstar Games' Grand Theft Auto series. He also makes non-playable appearances in the game's",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "9a1d6c8ac9f4",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Grand Theft Auto: Vice City",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the fourth main game in the Grand Theft Auto series, following 2001's Grand Theft Auto III, and the sixth entry overall. Set in 1986 within the fictional",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "1ce06c45db6a",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Grand Theft Auto: The Trilogy – The Definitive Edition",
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_The_Trilogy_%E2%80%93_The_Definitive_Edition",
+            "source": "wikipedia",
+            "snippet": "Grand Theft Auto: The Trilogy – The Definitive Edition is a 2021 compilation of three action-adventure games in the Grand Theft Auto series: Grand Theft Auto III (2001), Grand Theft Auto: Vice City (2002), and Grand Theft Auto: San Andreas (2004). Developed by Grove Street Games ",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "1103661a44e7",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Jack Thompson (activist)",
+            "url": "https://en.wikipedia.org/wiki/Jack_Thompson_(activist)",
+            "source": "wikipedia",
+            "snippet": "John Bruce Thompson (born July 25, 1951) is an American activist and disbarred attorney. As an attorney, Thompson focused his legal efforts against what he perceives as obscenity in modern culture. He gained notoriety as an anti-video game activist, criticizing the content of gam",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e025d9d77064",
+            "domain": "en.wikipedia.org",
+            "n": 7
+          },
+          {
+            "title": "Development of Red Dead Redemption",
+            "url": "https://en.wikipedia.org/wiki/Development_of_Red_Dead_Redemption",
+            "source": "wikipedia",
+            "snippet": "A team of approximately 1,000 people developed Red Dead Redemption over five years. Rockstar Games published the action-adventure game in May 2010 for the PlayStation 3 and Xbox 360. A spiritual successor to the 2004 game Red Dead Revolver, its development was led by Rockstar San",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "41c9194e0277",
+            "domain": "en.wikipedia.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.44884526500000277,
+          "search": 0.37405755800000406,
+          "rank": 3.0168585010000015,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 3.8398077340000043,
+          "total": 5.651299866000002
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 6,
+        "citation_coverage": 1.0,
+        "citation_validity": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "kind": "hackernews",
+      "topic": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
+      "points": 1978,
+      "comments": 1805,
+      "link": "https://scottaaronson.blog/?p=10379",
+      "discussion": "https://news.ycombinator.com/item?id=50646108",
+      "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
+      "focus": "all",
+      "category": "bigtech",
+      "category_by": "nvidia",
+      "signal": "▲ 1,978 points on Hacker News · 1,805 comments",
+      "result": {
+        "question": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "what is happening now",
+          "why is this important"
+        ],
+        "answer": "Based on the search results, the phrase \"What is happening now?\" appears across diverse contexts including entertainment, academic philosophy, IPv6 transition, cattle raiding in conflict, and privacy theory. Results [1]-[3] reference academic works titled \"What is Happening Now?\" spanning entertainment studies, philosophy, and clinical education. Result [5] discusses cattle raiding as a war tactic in South Sudanese conflicts. Result [4] addresses IPv4-to-IPv6 transition challenges. Result [6] covers privacy importance. Result [7] is a Hacker News community post about interpersonal conflict. Result [8] showcases a robotics touch sensor advancement.\n\nSince the query lacks a specific topic, the results collectively show \"What is happening now?\" as a recurring thematic question across disciplines—from entertainment and philosophy to technology transitions and conflict dynamics—rather than referring to a single event. The phrase functions as both a literal question about current events and a conceptual inquiry into the nature of present moments across different fields of study.",
+        "followups": [
+          "Which context interests you most?",
+          "Can you narrow down the topic?",
+          "What specific area should I focus on?"
+        ],
+        "sources": [
+          {
+            "title": "What is happening now? entertainment",
+            "url": "https://www.um.edu.mt/library/oar/handle/123456789/10987",
+            "source": "openalex",
+            "snippet": "What is happening now? entertainment",
+            "published": "2015",
+            "authors": [
+              "Matthew Muscat"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": null,
+              "license": "CC0 metadata"
+            },
+            "id": "6b8c43d06c11",
+            "domain": "um.edu.mt",
+            "n": 1
+          },
+          {
+            "title": "The Status of Becoming: What is Happening Now?",
+            "url": "https://doi.org/10.2307/2025813",
+            "source": "openalex",
+            "snippet": "The Status of Becoming: What is Happening Now?",
+            "published": "1979",
+            "authors": [
+              "Ernest Sosa"
+            ],
+            "extra": {
+              "cited_by": 14,
+              "venue": "The Journal of Philosophy",
+              "license": "CC0 metadata"
+            },
+            "id": "9f5b94b86267",
+            "domain": "doi.org",
+            "n": 2
+          },
+          {
+            "title": "Educating clinicians. What is happening now?",
+            "url": "https://research.usc.edu.au/esploro/outputs/conferencePresentation/Educating-clinicians--What-is-happening-now/99450690102621",
+            "source": "openalex",
+            "snippet": "Educating clinicians. What is happening now?",
+            "published": "2011",
+            "authors": [
+              " Geoff Simon"
+            ],
+            "extra": {
+              "cited_by": 0,
+              "venue": "UniSC Research Bank (University of the Sunshine Coast)",
+              "license": "CC0 metadata"
+            },
+            "id": "71c05ed0af68",
+            "domain": "research.usc.edu.au",
+            "n": 3
+          },
+          {
+            "title": "IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now",
+            "url": "http://www.potaroo.net/ispcol/2012-08/EndPt2.html",
+            "source": "hackernews",
+            "snippet": "IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now",
+            "published": "2012-08-02",
+            "authors": [
+              "liotier"
+            ],
+            "extra": {
+              "points": 2,
+              "comments": 1,
+              "discussion": "https://news.ycombinator.com/item?id=4328064"
+            },
+            "id": "6dbe29c252ff",
+            "domain": "potaroo.net",
+            "n": 4
+          },
+          {
+            "title": "‘What is happening now is not raiding, it's war’",
+            "url": "https://doi.org/10.4324/9780429426957-23",
+            "source": "openalex",
+            "snippet": "Drawing on extensive fieldwork by the three authors, this chapter discusses how contemporary political conflicts have interacted with pastoralism. It focuses on the contrasting but interrelated settings of the Western Nuer and Murle peoples of South Sudan. The chapter argues that",
+            "published": "2022",
+            "authors": [
+              "Diana Felix da Costa",
+              "Naomi Pendle",
+              "Jérôme Tubiana"
+            ],
+            "extra": {
+              "cited_by": 4,
+              "venue": "Routledge eBooks",
+              "license": "CC0 metadata"
+            },
+            "id": "5545bf0274dc",
+            "domain": "doi.org",
+            "n": 5
+          },
+          {
+            "title": "Why privacy is important",
+            "url": "https://philpapers.org/rec/RACWPI",
+            "source": "openalex",
+            "snippet": "Why privacy is important",
+            "published": "1975",
+            "authors": [
+              "James A. Rachels"
+            ],
+            "extra": {
+              "cited_by": 705,
+              "venue": "Philosophy &amp Public Affairs",
+              "license": "CC0 metadata"
+            },
+            "id": "c39e3069bec5",
+            "domain": "philpapers.org",
+            "n": 6
+          },
+          {
+            "title": "Ask HN: Please stop tearing each other up.",
+            "url": "https://news.ycombinator.com/item?id=5058052",
+            "source": "hackernews",
+            "snippet": "I am beginning to believe that one of the unintended casualties of Aarons' passing is that HN is dying as well. I've never seen such a rift in the community as what is happening right now. Can we please all stop this before there is no turning back? I understand the need to griev",
+            "published": "2013-01-15",
+            "authors": [
+              "jacquesm"
+            ],
+            "extra": {
+              "points": 27,
+              "comments": 7,
+              "discussion": "https://news.ycombinator.com/item?id=5058052"
+            },
+            "id": "0d6339886b18",
+            "domain": "news.ycombinator.com",
+            "n": 7
+          },
+          {
+            "title": "Show HN: Put this touch sensor on a robot and learn super precise tasks",
+            "url": "https://any-skin.github.io",
+            "source": "hackernews",
+            "snippet": "We just released a very excited touch sensor that finally simplifies touch sensing for robotics. Our most exciting result: Learned visuotactile policies for precise tasks like inserting USBs and credit card swiping, that work out-of-the-box when you replace skins! To the best of ",
+            "published": "2024-09-20",
+            "authors": [
+              "raunaqmb"
+            ],
+            "extra": {
+              "points": 390,
+              "comments": 66,
+              "discussion": "https://news.ycombinator.com/item?id=41603865"
+            },
+            "id": "8a40a197bac0",
+            "domain": "any-skin.github.io",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 0.3666103360000008,
+          "search": 0.8700984559999938,
+          "rank": 5.79719793400001,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 7.034041600000002,
+          "total": 8.996673958999999
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 9,
+        "citation_coverage": 0.6666666666666666,
+        "citation_validity": 1.0,
+        "faithfulness": 0.5
+      }
+    },
+    {
+      "kind": "github",
+      "topic": "xcl-dev/xcl",
+      "context": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+      "stars": 8609,
+      "language": "Rust",
+      "created": "2026-11-20",
+      "link": "https://github.com/xcl-dev/xcl",
+      "question": "What is the new open-source project xcl (Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL), and why is it getting attention?",
+      "focus": "all",
+      "category": "software",
+      "category_by": "nvidia",
+      "signal": "★ 8,609 GitHub stars since 2026-11-20 · Rust",
+      "result": {
+        "question": "What is the new open-source project xcl (Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL), and why is it getting attention?",
+        "focus": "all",
+        "lang": "en",
+        "queries": [
+          "xcl open-source project explained",
+          "Xbox Series compatibility layer Windows",
+          "why is xcl getting attention"
+        ],
+        "answer": "xcl is an open-source project that creates an Xbox Series compatibility layer for Windows, allowing console game code to run natively by reimplementing console system libraries and recompiling RDNA2 shaders to DXIL. It is gaining attention because it enables running Xbox Series X/S games on Windows PCs, bridging the gap between console and PC gaming ecosystems. [3][4][5]",
+        "followups": [
+          "How does it achieve native execution?",
+          "What are its current limitations?",
+          "Where can I find the project?"
+        ],
+        "sources": [
+          {
+            "title": "Windows 11",
+            "url": "https://en.wikipedia.org/wiki/Windows_11",
+            "source": "wikipedia",
+            "snippet": "Windows 11 is the current major release of Microsoft's Windows NT operating system, released on October 5, 2021, as the successor to Windows 10. It is available as a free upgrade for devices running Windows 10 that meet its system requirements. The Windows Server counterpart, Win",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "71729a823bfd",
+            "domain": "en.wikipedia.org",
+            "n": 1
+          },
+          {
+            "title": "Xbox (app)",
+            "url": "https://en.wikipedia.org/wiki/Xbox_(app)",
+            "source": "wikipedia",
+            "snippet": "The Xbox app (stylized as XBOX) is an application developed by Microsoft's Xbox division. It serves as a front-end for the Xbox ecosystem and the Xbox network, including access to Xbox social and community features, Microsoft Store, integration with Xbox One, Series X, and Series",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "2928c93132b4",
+            "domain": "en.wikipedia.org",
+            "n": 2
+          },
+          {
+            "title": "Your visualisations are going places: SciVis on gaming consoles",
+            "url": "https://doi.org/10.1007/s12650-024-01035-4",
+            "source": "openalex",
+            "snippet": "Gaming consoles, whether stationary or handheld, are designed to provide a reasonably high level of computing power to run contemporary video games at an attractive price point, a compact form factor and modest energy consumption. While consoles have traditionally been closed-off",
+            "published": "2024",
+            "authors": [
+              "Michael Becher",
+              "Christoph Müller",
+              "Dominik Sellenthin",
+              "Thomas Ertl",
+              "Guido Reina",
+              "Daniel Weiskopf"
+            ],
+            "extra": {
+              "cited_by": 1,
+              "venue": "Journal of Visualization",
+              "license": "CC0 metadata"
+            },
+            "id": "3e13f6f731da",
+            "domain": "doi.org",
+            "n": 3
+          },
+          {
+            "title": "Xbox (console)",
+            "url": "https://en.wikipedia.org/wiki/Xbox_(console)",
+            "source": "wikipedia",
+            "snippet": "The Xbox (often referred to as the Original Xbox to differentiate it from its successors) is a home video game console developed and marketed by Microsoft. It was released on November 15, 2001, in North America, followed by Australia, Europe, and Japan in 2002. It was the first m",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "11c0dbf2faee",
+            "domain": "en.wikipedia.org",
+            "n": 4
+          },
+          {
+            "title": "Xbox (division)",
+            "url": "https://en.wikipedia.org/wiki/Xbox_(division)",
+            "source": "wikipedia",
+            "snippet": "Xbox (formerly Microsoft Gaming) is the video game and digital entertainment division of Microsoft, an American multinational technology company based in Redmond, Washington. Established in 2022, it produces the namesake video game consoles and services, in addition to overseeing",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "38fd4c2eea2e",
+            "domain": "en.wikipedia.org",
+            "n": 5
+          },
+          {
+            "title": "Microsoft Windows",
+            "url": "https://en.wikipedia.org/wiki/Microsoft_Windows",
+            "source": "wikipedia",
+            "snippet": "Windows is a proprietary operating system developed by Microsoft. Windows is grouped into families that cater to particular sectors of the computing industry – Windows for personal computers, Windows Server for servers and Windows IoT for embedded systems. Windows itself is furth",
+            "published": null,
+            "authors": [],
+            "extra": {
+              "lang": "en",
+              "license": "CC BY-SA 4.0"
+            },
+            "id": "e82964f75078",
+            "domain": "en.wikipedia.org",
+            "n": 6
+          },
+          {
+            "title": "Playing Spy Games: a Surveillant Platform Study of Microsoft's Xbox 360",
+            "url": "http://hdl.handle.net/1807/80299",
+            "source": "openalex",
+            "snippet": "This thesis, a platform study of Microsoft's videogame console the Xbox 360, demonstrates how one of the defining traits of the videogame platform's design and architecture is pervasive surveillance of its users. By applying William Bogard's (1996) theory of surveillant \"enclosur",
+            "published": "2014",
+            "authors": [
+              "Alexander Dean Cybulski"
+            ],
+            "extra": {
+              "cited_by": 2,
+              "venue": "TSpace (University of Toronto)",
+              "license": "CC0 metadata"
+            },
+            "id": "c20444869dc7",
+            "domain": "hdl.handle.net",
+            "n": 7
+          },
+          {
+            "title": "TDOA-based acoustic source localization in the space–range reference frame",
+            "url": "https://doi.org/10.1007/s11045-013-0233-8",
+            "source": "openalex",
+            "snippet": "TDOA-based acoustic source localization in the space–range reference frame",
+            "published": "2013",
+            "authors": [
+              "Paolo Bestagini",
+              "Marco Antônio Compagnoni",
+              "Fabio Antonacci",
+              "A. Sarti",
+              "Stefano Tubaro"
+            ],
+            "extra": {
+              "cited_by": 39,
+              "venue": "Multidimensional Systems and Signal Processing",
+              "license": "CC0 metadata"
+            },
+            "id": "08cccac4de19",
+            "domain": "doi.org",
+            "n": 8
+          }
+        ],
+        "warnings": [],
+        "timings": {
+          "plan": 4.536819010000002,
+          "search": 1.118479961999995,
+          "rank": 2.9178832510000063,
+          "dense": 1.0,
+          "rerank": 1.0,
+          "retrieve": 8.573270085000004,
+          "total": 9.617715720999996
+        },
+        "nvidia": true,
+        "llm_error": ""
+      },
+      "metrics": {
+        "sentences": 2,
+        "citation_coverage": 0.5,
+        "citation_validity": 1.0,
+        "faithfulness": 0.0
+      }
+    }
+  ]
+}

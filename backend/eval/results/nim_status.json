@@ -1,11 +1,11 @@
 {
-  "date": "2026-11-26 20:14 UTC",
+  "date": "2026-11-27 00:54 UTC",
   "key_present": true,
   "results": [
     {
       "check": "chat:nvidia/nemotron-3.5-lightning-30b-a3b",
-      "ok": false,
-      "detail": "TimeoutError: "
+      "ok": true,
+      "detail": "ready"
     },
     {
       "check": "chat:nvidia/nemotron-3.5-bolt-e4b",
@@ -23,24 +23,9 @@
       "detail": "[-2.443920612335205, -3.176544666290283]"
     },
     {
-      "check": "chat:nvidia/nemotron-3-ultra-550b-a55b",
-      "ok": true,
-      "detail": "ready"
-    },
-    {
-      "check": "chat:nvidia/nemotron-3.5-bolt-e4b",
-      "ok": true,
-      "detail": "ready"
-    },
-    {
-      "check": "chat:nvidia/nemotron-3.5-lightning-30b-a3b",
-      "ok": false,
-      "detail": "TimeoutError: "
-    },
-    {
       "check": "image:black-forest-labs/flux.2-klein-4b",
       "ok": true,
-      "detail": "HTTP 200 in 2.4s, keys=['artifacts'], finish=SUCCESS, 67 KB"
+      "detail": "HTTP 200 in 6.3s, keys=['artifacts'], finish=SUCCESS, 96 KB"
     },
     {
       "check": "research:openalex",

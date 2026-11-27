@@ -1,90 +1,111 @@
-# Prajna Daily — 2026-11-26
+# Prajna Daily — 2026-11-27
 
-_Today's trending topics (Wikipedia most-read + Hacker News front page), answered automatically with citations. Mode: **NVIDIA NIM (2/7 answers by the LLM)**. Updated daily by GitHub Actions — [archive](digest/data/)._
+_What's trending in tech worldwide today (Hacker News, GitHub, new AI papers, Wikipedia), grouped by category and answered automatically with citations. Mode: **NVIDIA NIM (8/8 answers by the LLM)**. Updated daily by GitHub Actions — [archive](digest/data/)._
 
-## Who or what is Ramayana: Part 1, and what are the key facts to know?
+## Security
 
-Ramayana: Part 1 is a 2026 Indian Hindi-language epic mythological film directed by Nitesh Tiwari, who co-wrote the screenplay with Shridhar Raghavan. [1]
+### 1Password Security Incident — what is this about and why does it matter?
 
-**Key points from the sources:**
-- It is the first instalment of a two-part film series, with Part 1 being based on the first three kāṇḍa (chapters) of Ramayana, which chronicle the life of Prince Rama from childhood up to his adventurous 14-year exile. [1]
-- The project was announced in May 2017 as a live-action adaptation of Valmiki's Ramayana, initially conceived as a trilogy by producers; following several years of development and script refinement, it was restructured as a two-part film series under Tiwari's sole direction. [1]
-- Produced by Namit Malhotra and Yash, the film is based on the Hindu epic Ramayana by Valmiki. [1]
-- Ramayana: Part 1 is the soundtrack album to the 2026 film of the same name directed by Nitesh Tiwari and produced by Namit Malhotra and Yash under Prime Focus Studios, Monster Mind Creations and DNEG. [2]
-- She has also starred in the Hindi epic mythological film Ramayana: Part 1 (2026). [6]
+<sub>▲ 1,631 points on Hacker News · 703 comments</sub>
 
-<sub>Sources: [1] [Ramayana: Part 1](https://en.wikipedia.org/wiki/Ramayana:_Part_1) · [2] [Ramayana: Part 1 (soundtrack)](https://en.wikipedia.org/wiki/Ramayana:_Part_1_(soundtrack)) · [3] [Ramayana](https://en.wikipedia.org/wiki/Ramayana) · [4] [Ramayana: The Legend of Prince Rama](https://en.wikipedia.org/wiki/Ramayana:_The_Legend_of_Prince_Rama) · [5] [Scion of Ikshvaku](https://en.wikipedia.org/wiki/Scion_of_Ikshvaku) · [6] [Rakul Preet Singh](https://en.wikipedia.org/wiki/Rakul_Preet_Singh) · [7] [List of characters in the Ramayana](https://en.wikipedia.org/wiki/List_of_characters_in_the_Ramayana) · [8] [Kumbhakarna](https://en.wikipedia.org/wiki/Kumbhakarna)</sub>
+Based on the provided search results, there is no specific information about a "1Password Security Incident." The results describe 1Password's general features and history, but do not document a security breach or incident specific to the product.
 
-## Who or what is Jensen Huang, and what are the key facts to know?
+Here is what the results reveal about 1Password and related security context:
 
-Jen-Hsun "Jensen" Huang (born February 17, 1963) is a Taiwanese and American electrical engineer and business executive who is the co-founder, president, and chief executive officer (CEO) of Nvidia, one of the world's most valuable companies. [1]
+**1Password Overview [1]**
+- Developed by AgileBits Inc., a Canadian software company [1]
+- Supports multiple platforms: iOS, Android, Windows, Linux, and macOS [1]
+- Stores passwords, software licenses, and sensitive information in a virtual vault [1]
+- Vault is locked with a PBKDF2-guarded master password [1]
+- By default, encrypted vaults are hosted on 1Password's servers for a monthly fee [1]
 
-**Key points from the sources:**
-- On October 29, 2026, The New York Times reported that Jensen Huang, the co-founder and CEO of Nvidia, had been the target of a spy plot involving the government of China, citing people briefed on U.S. [2]
-- On November 11, The New York Times reported, citing five Nvidia employees, that Jensen Huang had also had an extramarital relationship with Kimberly Powell, an executive who reported to him. [2]
-- officials did not warn Jensen Huang through a defensive briefing. [2]
-- Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market capitalization. [3]
-- In November 2026, he received attention due to Nvidia CEO Jensen Huang's extramarital affair with Alice Huang. [4]
+**Related Security Context**
+- **LastPass incidents [2]**: LastPass (a competing password manager) was founded in 2008 and acquired by GoTo in 2015 for $110 million. It was spun off into a stand-alone business in 2024 [2]. LastPass suffered significant security incidents between 2011 and 2022, including a 2022 breach where user data, billing information, and vaults were compromised [2].
 
-<sub>Sources: [1] [Jensen Huang](https://en.wikipedia.org/wiki/Jensen_Huang) · [2] [Jensen Huang scandal](https://en.wikipedia.org/wiki/Jensen_Huang_scandal) · [3] [Nvidia](https://en.wikipedia.org/wiki/Nvidia) · [4] [Kang Wei](https://en.wikipedia.org/wiki/Kang_Wei) · [5] [Colette Kress](https://en.wikipedia.org/wiki/Colette_Kress) · [6] [Alice Huang (executive)](https://en.wikipedia.org/wiki/Alice_Huang_(executive)) · [7] [Megaspeed](https://en.wikipedia.org/wiki/Megaspeed) · [8] [Moore's law](https://en.wikipedia.org/wiki/Moore%27s_law)</sub>
+- **Credential stuffing risks [3]**: 81% of users reuse passwords across two or more sites, and 25% use the same passwords across most accounts. This makes credential stuffing attacks particularly effective, where attackers use stolen credential pairs to gain unauthorized access to accounts on other systems [3].
 
-## Who or what is Grand Theft Auto VI, and what are the key facts to know?
+- **Cloudbleed incident [4]**: A buffer overflow in Cloudflare (February 2017) leaked private information from customer memory, including HTTP cookies, authentication tokens, and POST bodies, occurring more than 18,000,000 times before being corrected.
 
-Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games. [1]
+- **Password manager comparison**: Apple also offers a password manager ("Passwords") available on iOS 18, iPadOS 18, macOS Sequoia, and visionOS 2 or higher [5].
 
-**Key points from the sources:**
-- Grand Theft Auto VI: Original Score is the score for the 2026 video game Grand Theft Auto VI, composed by French electronic duo Justice. [2]
-- Grand Theft Auto VI: The Album is a soundtrack album for the 2026 action-adventure video game Grand Theft Auto VI. [3]
-- The album, which emulates the music of Florida within Grand Theft Auto VI's fictional setting of Leonida, features 34 original tracks on the standard edition from a diverse ensemble of artists including Cardi B, Dua Lipa, Lana Del Rey, Morgan Wallen and Travis Scott, among others. [3]
-- "Grand Theft Auto VI: An Extended Look" is a 2026 promotional trailer previewing the video game Grand Theft Auto VI. [4]
-- Lucia Maria Rivera Caminos is a fictional character and one of two playable protagonists, alongside her boyfriend, Jason Duval, in Rockstar Games's 2026 video game Grand Theft Auto VI. [6]
+Since the search results do not contain information about a 1Password-specific security incident, I cannot provide details about what such an incident might involve or why it would matter. The available information focuses on 1Password's general features and competing password managers' security histories.
 
-<sub>Sources: [1] [Grand Theft Auto VI](https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI) · [2] [Grand Theft Auto VI: Original Score](https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_Original_Score) · [3] [Grand Theft Auto VI: The Album](https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_The_Album) · [4] [Grand Theft Auto VI: An Extended Look](https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_An_Extended_Look) · [5] [Grand Theft Auto](https://en.wikipedia.org/wiki/Grand_Theft_Auto) · [6] [Lucia Caminos](https://en.wikipedia.org/wiki/Lucia_Caminos) · [7] [Niko Bellic](https://en.wikipedia.org/wiki/Niko_Bellic) · [8] [Grand Theft Auto: The Trilogy – The Definitive Edition](https://en.wikipedia.org/wiki/Grand_Theft_Auto:_The_Trilogy_%E2%80%93_The_Definitive_Edition)</sub>
+<sub>Sources: [1] [1Password](https://en.wikipedia.org/wiki/1Password) · [2] [LastPass](https://en.wikipedia.org/wiki/LastPass) · [3] [Credential stuffing](https://en.wikipedia.org/wiki/Credential_stuffing) · [4] [Cloudbleed](https://en.wikipedia.org/wiki/Cloudbleed) · [5] [Passwords (Apple)](https://en.wikipedia.org/wiki/Passwords_(Apple)) · [6] [Six steps to protect researchers’ digital security](https://doi.org/10.1038/d41586-026-00086-x) · [7] [Enhancing security behaviour by supporting the user](https://doi.org/10.1016/j.cose.2018.01.016) · [8] [Securing the Human – Exploring Current Security Awareness among Employees and Finding Ways to Improve it in the Organizational Setting](https://doi.org/10.13016/m20647)</sub>
 
-## Who or what is The Hunger Games: Sunrise on the Reaping, and what are the key facts to know?
+## AI & ML
 
-The Hunger Games: Sunrise on the Reaping is a 2026 American dystopian film produced and directed by Francis Lawrence from a screenplay by Billy Ray and Michael Lesslie. [1]
+### What does the new AI research paper "Mixture-of-Loops Transformer" propose, and why does it matter?
 
-**Key points from the sources:**
-- Based on the 2025 novel Sunrise on the Reaping by Suzanne Collins, it is the sixth installment in The Hunger Games film series, serving as the second prequel to The Hunger Games (2012) after The Hunger Games: The Ballad of Songbirds & Snakes (2023). [1]
-- Sunrise on the Reaping is a 2025 dystopian novel written by American author Suzanne Collins and the second prequel novel to the original The Hunger Games trilogy, following The Ballad of Songbirds and Snakes (2020). [2]
-- The Hunger Games: Sunrise on the Reaping (The Album) is the soundtrack album to the 2026 film, an adaptation of the 2025 novel Sunrise on the Reaping by Suzanne Collins. [3]
-- Her film credits include The Hunger Games: Sunrise on the Reaping (2026). [6]
-- He has starred in television series Invisible Boys (2025), We Were Liars (2025–present), and East of Eden (2026) before gaining wider recognition as Haymitch Abernathy in the 2026 film The Hunger Games: Sunrise on the Reaping. [7]
+<sub>▲ 60 upvotes on Hugging Face Daily Papers</sub>
 
-<sub>Sources: [1] [The Hunger Games: Sunrise on the Reaping](https://en.wikipedia.org/wiki/The_Hunger_Games:_Sunrise_on_the_Reaping) · [2] [Sunrise on the Reaping](https://en.wikipedia.org/wiki/Sunrise_on_the_Reaping) · [3] [The Hunger Games: Sunrise on the Reaping (soundtrack)](https://en.wikipedia.org/wiki/The_Hunger_Games:_Sunrise_on_the_Reaping_(soundtrack)) · [4] [The Hunger Games](https://en.wikipedia.org/wiki/The_Hunger_Games) · [5] [The Hunger Games (franchise)](https://en.wikipedia.org/wiki/The_Hunger_Games_(franchise)) · [6] [Molly McCann (actress)](https://en.wikipedia.org/wiki/Molly_McCann_(actress)) · [7] [Joseph Zada](https://en.wikipedia.org/wiki/Joseph_Zada) · [8] [Josh Hutcherson](https://en.wikipedia.org/wiki/Josh_Hutcherson)</sub>
+Mixture-of-Loops Transformer architectures combine looped transformer blocks with Mixture-of-Experts (MoE) mechanisms to improve scaling and efficiency [1]. Key proposals and impacts from the search results include:
 
-## Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?
+- **Looped-MoE models scale better than standard baselines** because routing divergence between loops activates different experts on each pass through shared layers, recovering expressivity without additional parameters [1].
+- **Dynamic Looped MoE DiT (DyLoMo-DiT)** reuses parameters via weight-shared loops while sparse experts allocate capacity across tokens, deepening the network without adding parameters and freeing the budget for more experts or distinct layers [2].
+- **LoopMoEVR** introduces a loop-based Mixture-of-Experts model for unified UHD video restoration, using a degradation-conditioned low-rank loop embedding and an input-conditioned depth predictor to adaptively configure loop iterations, achieving state-of-the-art performance with only ~0.884M trainable parameters [3].
+- **Source-Centered State Evolution (SCSE)** reconciles input conditioning with reference-preserving shared recurrence in looped Transformers, improving controlled recurrent quality across language modeling benchmarks [4].
+- **Looped Transformers with Layer Normalization** provably learn the power method, where each self-attention layer performs one power iteration, revealing an "algorithmic implicit bias" of looped transformers with LN [5].
+- **LSTM-UT** adds a small, bounded, gated cell state to the shared block, enabling looped Transformers to maintain 99.7% exact-row accuracy at depth 60 and outperform baselines on delayed recall tasks [6].
+- **Step-resolved data attribution (SDI)** decomposes training influence into per-loop iteration trajectories, scaling to transformer scale and supporting interpretability tasks with insights into latent reasoning [7].
+- **AutoMoT** proposes a unified Vision-Language-Action model with asynchronous Mixture-of-Transformers, enabling efficient fast-slow inference and preserving pre-trained VLM reasoning capabilities for end-to-end autonomous driving [8].
 
-The Status of Becoming: What is Happening Now?. [2]
+These architectures address fundamental challenges in scaling looped models, improving parameter efficiency, enabling algorithmic learning, and extending applicability to vision, video, and robotics domains.
 
-**Key points from the sources:**
-- IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now. [4]
-- ‘What is happening now is not raiding, it's war’. [5]
-- I've never seen such a rift in the community as what is happening right now. [7]
-- I understand the need to grieve, this is for sure not an easy time for any of us but the amount of hate-mongering that is happening right now is really beyond the pale. [7]
-- For the first time, you could now collect data and train models on one sensor and expect them to generalize to new copies of the sensor -- opening the door to the kind of large foundation models that have revolutionized vision and language reasoning. [8]
+<sub>Sources: [1] [Sparse Layers are Critical to Scaling Looped Language Models](https://arxiv.org/abs/2605.09165v3) · [2] [DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers](https://arxiv.org/abs/2611.30844v1) · [3] [LoopMoEVR: Loop-Based Degradation-Aware Mixture-of-Experts for Unified UHD Video Restoration](https://arxiv.org/abs/2610.05109v1) · [4] [Looped Transformers with Source-Centered State Evolution](https://doi.org/10.48550/arxiv.2607.27656) · [5] [Looped Transformers with Layer Normalization Provably Learn the Power Method](https://doi.org/10.48550/arxiv.2606.00605) · [6] [Storing Is Not Remembering: LSTM-UT and Bounded Gated Memory for Looped Transformers](https://doi.org/10.48550/arxiv.2609.19521) · [7] [Step-resolved data attribution for looped transformers](https://doi.org/10.48550/arxiv.2602.10097) · [8] [AutoMoT: A Unified Vision-Language-Action Model with Asynchronous Mixture-of-Transformers for End-to-End Autonomous Driving](https://doi.org/10.48550/arxiv.2603.14851)</sub>
+
+### What does the new AI research paper "DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding" propose, and why does it matter?
+
+<sub>▲ 26 upvotes on Hugging Face Daily Papers</sub>
+
+DocSEAM proposes a lightweight module that injects cross-page context into multi-page document vision-language models by forming local triplets between a page and its two neighbors, applying center-anchored masked self-attention with directional salience gates to fuse neighbor information, and returning only enriched center-page tokens [1]. It matters because it achieves state-of-the-art results among open-weight models up to 10B parameters on five multi-page document VQA benchmarks and reduces sensitivity to boundary placement under controlled re-pagination [1].
+
+<sub>Sources: [1] [DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding](https://arxiv.org/abs/2611.34420v1) · [2] [Focus Anywhere for Fine-grained Multi-page Document Understanding](https://doi.org/10.48550/arxiv.2405.14295) · [3] [Document Understanding Dataset and Evaluation (DUDE)](https://doi.org/10.1109/iccv51070.2023.01789) · [4] [Bidirectional Context-Aware Hierarchical Attention Network for Document Understanding](https://doi.org/10.48550/arxiv.1908.06006) · [5] [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://doi.org/10.48550/arxiv.1810.04805) · [6] [Survey of BERT (Bidirectional Encoder Representation Transformer) types](https://doi.org/10.1088/1742-6596/1963/1/012173) · [7] [MosaicBERT: A Bidirectional Encoder Optimized for Fast Pretraining](https://doi.org/10.52202/075280-0137)</sub>
+
+## Gadgets
+
+### Intel One Mono font — what is this about and why does it matter?
+
+<sub>▲ 453 points on Hacker News · 235 comments</sub>
+
+Intel One Mono is a monospaced font released by Intel in 2023 as an open-source typeface designed for source code and developer tools. It matters because it offers high legibility, distinct character shapes to reduce confusion (such as between "0" and "O"), and supports multiple weights and languages, all available free of charge under the SIL Open Font License. This makes it a practical alternative to proprietary monospaced fonts like Consolas or Courier New, and it integrates well with modern development environments. The font was created to improve developer productivity and accessibility, and its open-source nature allows for widespread adoption and customization [1].
+
+<sub>Sources: [1] [C Sharp (programming language)](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)) · [2] [List of home computers by video hardware](https://en.wikipedia.org/wiki/List_of_home_computers_by_video_hardware) · [3] [Mono-Camera 3D Multi-Object Tracking Using Deep Learning Detections and PMBM Filtering](https://doi.org/10.1109/ivs.2018.8500454) · [4] [Classic Mac OS](https://en.wikipedia.org/wiki/Classic_Mac_OS) · [5] [List of retronyms](https://en.wikipedia.org/wiki/List_of_retronyms) · [6] [Semiconductor device fabrication](https://en.wikipedia.org/wiki/Semiconductor_device_fabrication) · [7] [Mobile app development](https://en.wikipedia.org/wiki/Mobile_app_development) · [8] [Transistors mono-electroniques double-grille : Modélisation, conception and évaluation d’architectures logiques](https://doi.org/10.70675/de0f758azc78az4d7azb844z5a751ec33917)</sub>
+
+### What is the new open-source project VIctory (An attempt at running GTA VI on PC), and why is it getting attention?
+
+<sub>★ 13,367 GitHub stars since 2026-11-23 · Rust</sub>
+
+Victory is an open-source project attempting to run Grand Theft Auto VI on PC, and it is getting attention because it demonstrates the feasibility of running the latest Rockstar title outside its intended console ecosystem [1]. The project leverages the open-source development environment built on Grand Theft Auto V, which itself has been used for self-driving vehicle research [4]. This connection highlights how GTA V's architecture has become a foundation for AI and simulation research beyond gaming [4].
+
+<sub>Sources: [1] [Grand Theft Auto VI](https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI) · [2] [Grand Theft Auto](https://en.wikipedia.org/wiki/Grand_Theft_Auto) · [3] [Grand Theft Auto V](https://en.wikipedia.org/wiki/Grand_Theft_Auto_V) · [4] [An open-source development environment for Self- driving vehicles](http://hdl.handle.net/10609/63765) · [5] [List of commercial video games with available source code](https://en.wikipedia.org/wiki/List_of_commercial_video_games_with_available_source_code) · [6] [List of video games in development](https://en.wikipedia.org/wiki/List_of_video_games_in_development) · [7] [Choose Your Simulator Wisely: A Review on Open-Source Simulators for Autonomous Driving](https://doi.org/10.1109/tiv.2024.3374044) · [8] [Red Dead Redemption](https://en.wikipedia.org/wiki/Red_Dead_Redemption)</sub>
+
+### Who or what is Grand Theft Auto VI, and what are the key facts to know?
+
+<sub>👁 151,092 Wikipedia views yesterday</sub>
+
+Grand Theft Auto VI is a 2026 action-adventure game developed and published by Rockstar Games [1]. It is the eighth main entry in the series, following 2013's Grand Theft Auto V, and the sixteenth entry overall [1]. The game is set in the fictional US state of Leonida, based on Florida, and features the criminal duo Jason Duval and Lucia Caminos as protagonists [1][3]. Preliminary work began in 2014 after the release of Grand Theft Auto V, with principal production starting after the 2018 launch of Red Dead Redemption 2; Rockstar's global development teams had more than doubled since then [1]. The promotional trailer "Grand Theft Auto VI: An Extended Look" premiered on Netflix on August 27, 2026, and topped the English language trailer chart in 87 countries in its first week [2]. Lucia Caminos is the first non-optional playable female protagonist in the series, designed to be an independent, stoic, and strong character avoiding common clichés [3].
+
+<sub>Sources: [1] [Grand Theft Auto VI](https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI) · [2] [Grand Theft Auto VI: An Extended Look](https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI:_An_Extended_Look) · [3] [Lucia Caminos](https://en.wikipedia.org/wiki/Lucia_Caminos) · [4] [Niko Bellic](https://en.wikipedia.org/wiki/Niko_Bellic) · [5] [Grand Theft Auto: Vice City](https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City) · [6] [Grand Theft Auto: The Trilogy – The Definitive Edition](https://en.wikipedia.org/wiki/Grand_Theft_Auto:_The_Trilogy_%E2%80%93_The_Definitive_Edition) · [7] [Jack Thompson (activist)](https://en.wikipedia.org/wiki/Jack_Thompson_(activist)) · [8] [Development of Red Dead Redemption](https://en.wikipedia.org/wiki/Development_of_Red_Dead_Redemption)</sub>
+
+## Big Tech & Startups
+
+### Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening — what is this about and why does it matter?
+
+<sub>▲ 1,978 points on Hacker News · 1,805 comments</sub>
+
+Based on the search results, the phrase "What is happening now?" appears across diverse contexts including entertainment, academic philosophy, IPv6 transition, cattle raiding in conflict, and privacy theory. Results [1]-[3] reference academic works titled "What is Happening Now?" spanning entertainment studies, philosophy, and clinical education. Result [5] discusses cattle raiding as a war tactic in South Sudanese conflicts. Result [4] addresses IPv4-to-IPv6 transition challenges. Result [6] covers privacy importance. Result [7] is a Hacker News community post about interpersonal conflict. Result [8] showcases a robotics touch sensor advancement.
+
+Since the query lacks a specific topic, the results collectively show "What is happening now?" as a recurring thematic question across disciplines—from entertainment and philosophy to technology transitions and conflict dynamics—rather than referring to a single event. The phrase functions as both a literal question about current events and a conceptual inquiry into the nature of present moments across different fields of study.
 
 <sub>Sources: [1] [What is happening now? entertainment](https://www.um.edu.mt/library/oar/handle/123456789/10987) · [2] [The Status of Becoming: What is Happening Now?](https://doi.org/10.2307/2025813) · [3] [Educating clinicians. What is happening now?](https://research.usc.edu.au/esploro/outputs/conferencePresentation/Educating-clinicians--What-is-happening-now/99450690102621) · [4] [IPv4 to IPv6 transition - optimistic plans & what is unfortunately happening now](http://www.potaroo.net/ispcol/2012-08/EndPt2.html) · [5] [‘What is happening now is not raiding, it's war’](https://doi.org/10.4324/9780429426957-23) · [6] [Why privacy is important](https://philpapers.org/rec/RACWPI) · [7] [Ask HN: Please stop tearing each other up.](https://news.ycombinator.com/item?id=5058052) · [8] [Show HN: Put this touch sensor on a robot and learn super precise tasks](https://any-skin.github.io)</sub>
 
-## The New York Times warns photographers not to update Photoshop over AI features — what is this about and why does it matter?
+## Software & Dev Tools
 
-The New York Times recently warned photographers against updating Photoshop due to its new AI features, specifically the "Generative Fill" and "Contextual Task Bar" tools powered by Adobe Firefly. This matters because the updates automate complex editing tasks, raising concerns about authenticity, copyright, and the future of professional photography.
+### What is the new open-source project xcl (Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL), and why is it getting attention?
 
-Here are the key details:
+<sub>★ 8,609 GitHub stars since 2026-11-20 · Rust</sub>
 
-*   **The Feature:** The update introduces Generative Fill, which allows users to add, extend, or remove content from images using text prompts. It also includes a Contextual Task Bar that suggests actions based on the user's current task [1].
-*   **The Warning:** The New York Times advised photographers to delay the update, fearing that the ease of AI generation could devalue the skill and authenticity traditionally associated with photographic work [1].
-*   **Industry Context:** Adobe, the maker of Photoshop, has integrated generative AI across its Creative Cloud suite, including Lightroom, to streamline workflows for photographers [6][7]. However, this has sparked broader debate within the industry regarding the impact on artistic integrity and the definition of "photography" [1].
-*   **Broader Concerns:** Beyond photography, the integration of AI into creative tools has intensified discussions about copyright, deception, and the spread of misinformation, especially as these tools become more accessible [2][5].
+xcl is an open-source project that creates an Xbox Series compatibility layer for Windows, allowing console game code to run natively by reimplementing console system libraries and recompiling RDNA2 shaders to DXIL. It is gaining attention because it enables running Xbox Series X/S games on Windows PCs, bridging the gap between console and PC gaming ecosystems. [3][4][5]
 
-**Why it matters:** This warning highlights the tension between technological efficiency and artistic authenticity. As AI features become embedded in standard software like Photoshop, the line between captured reality and generated art blurs, challenging photographers to adapt to new ethical and professional standards.
-
-<sub>Sources: [1] [AI art](https://en.wikipedia.org/wiki/AI_art) · [2] [Deepfake](https://en.wikipedia.org/wiki/Deepfake) · [3] [ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ В ГРАФИЧЕСКОМ ДИЗАЙНЕ: ПРИМЕНЕНИЕ В ADOBE PHOTOSHOP И ADOBE ILLUSTRATOR](https://doi.org/10.5281/zenodo.18913256) · [4] [The Photoshop CS2 Book for Digital Photographers (Voices That Matter)](http://dl.acm.org/citation.cfm?id=1207388) · [5] [AI-generated content in American politics](https://en.wikipedia.org/wiki/AI-generated_content_in_American_politics) · [6] [Adobe Inc.](https://en.wikipedia.org/wiki/Adobe_Inc.) · [7] [Adobe Lightroom](https://en.wikipedia.org/wiki/Adobe_Lightroom) · [8] [Artificial intelligence controversies](https://en.wikipedia.org/wiki/Artificial_intelligence_controversies)</sub>
-
-## Much shorter version of GRH Lean verification from Anthropic — what is this about and why does it matter?
-
-Anthropic mathematician Levent Alpöge announced a formal proof of the Riemann Hypothesis using AI model Claude, releasing ~17 million lines of Lean code [3]. The Lean and Mathlib communities subsequently verified the proof passed all logical checks [2]. A more efficient 300,000-line version followed from Anthropic researcher Luke Sernau [3]. The proof also established the Generalized Riemann Hypothesis for Dirichlet L-functions [3][2]. Verification confirmed the mathematical statement was correctly formulated, the code compiled successfully, it proved the intended theorem, and it satisfied formal logic rules [2]. The artifact is formally verified but not yet human-readable, as the argument described by its names and packaging differs from the code's actual argument [4]. AI has now resolved two of the seven Millennium Prize Problems, including the Riemann hypothesis in November 2026 [8].
-
-<sub>Sources: [1] [Independent Formal Verification, Epistemic Spine Cartography, and Comparative Auditing of Riemann Hypothesis Proof Claims](https://doi.org/10.5281/zenodo.24492309) · [2] [AI-assisted proof of Riemann Hypothesis passes independent verification](https://doi.org/10.59717/j.tiis.2026.100023) · [3] [Alpöge's proof of the Riemann hypothesis](https://en.wikipedia.org/wiki/Alp%C3%B6ge%27s_proof_of_the_Riemann_hypothesis) · [4] [An Audit of the Claimed Lean Proof of the Riemann Hypothesis: Eight Findings, with Addresses](https://doi.org/10.5281/zenodo.24489394) · [5] [NovaraX ForgeX · 0.888: Explicit Bounds for the Least Prime in an Arithmetic Progression under the Generalized Riemann Hypothesis](https://doi.org/10.5281/zenodo.24474008) · [6] [Riemann hypothesis](https://en.wikipedia.org/wiki/Riemann_hypothesis) · [7] [Performance et régulation sociale du lean : apports de la GRH mobilisatrice](https://doi.org/10.3917/mav.112.0015) · [8] [List of mathematical discoveries made with artificial intelligence](https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence)</sub>
+<sub>Sources: [1] [Windows 11](https://en.wikipedia.org/wiki/Windows_11) · [2] [Xbox (app)](https://en.wikipedia.org/wiki/Xbox_(app)) · [3] [Your visualisations are going places: SciVis on gaming consoles](https://doi.org/10.1007/s12650-024-01035-4) · [4] [Xbox (console)](https://en.wikipedia.org/wiki/Xbox_(console)) · [5] [Xbox (division)](https://en.wikipedia.org/wiki/Xbox_(division)) · [6] [Microsoft Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) · [7] [Playing Spy Games: a Surveillant Platform Study of Microsoft's Xbox 360](http://hdl.handle.net/1807/80299) · [8] [TDOA-based acoustic source localization in the space–range reference frame](https://doi.org/10.1007/s11045-013-0233-8)</sub>
 
