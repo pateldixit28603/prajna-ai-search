@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-28 00:50 UTC",
+  "date": "2026-11-28 00:53 UTC",
   "key_present": true,
   "results": [
     {
@@ -25,7 +25,7 @@
     {
       "check": "image:black-forest-labs/flux.2-klein-4b",
       "ok": true,
-      "detail": "HTTP 200 in 2.6s, keys=['artifacts'], finish=SUCCESS, 74 KB"
+      "detail": "HTTP 200 in 2.7s, keys=['artifacts'], finish=SUCCESS, 115 KB"
     },
     {
       "check": "research:openalex",
