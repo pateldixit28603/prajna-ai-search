@@ -2,6 +2,12 @@
 
 All notable changes to Prajna. Daily digest/benchmark commits from `prajna-bot` are not listed here.
 
+## 2026-11-28
+- **Fact-check mode.** A new **Fact-check** tab sits between Search and Create image, with its own page at `/#factcheck`. You'll also find it in the sidebar and on the home page. Paste a claim you heard, for example *"The Great Wall of China is visible from space"*, and Prajna gives a verdict: **Supported**, **Contradicted**, **Disputed** or **Not enough evidence**. It also shows a confidence level, a source-agreement meter, a short cited summary, and the evidence grouped into *for*, *against* and *not decisive*. Each evidence card shows the source, its date, the passage with the key sentence highlighted, the model's one-line reason and the NVIDIA reranker's relevance score.
+- How it works: Nemotron Bolt plans the searches, Embed 1B and Rerank 8B pick the 8 most relevant passages, and Nemotron Lightning labels each passage (Bolt takes over if Lightning fails). The verdict is then counted from those labels by fixed rules, so it can always be traced back to the evidence, and the model can't simply announce one. If NVIDIA is unavailable, you still get the passages and an honest "Could not verify". Choose All sources, Encyclopedia, Academic or Tech news. New API: `POST /api/factcheck`.
+- The daily NVIDIA health check now also runs a fact-check test, to confirm the answer model still returns usable labels.
+- **Deploys:** Render now deploys on every commit without waiting for GitHub checks (`autoDeployTrigger: commit` in `render.yaml`). The Live site check now reports a warning instead of failing. The live site had been stuck on commit `aabd0b1` since 2026-11-27. If Render was set to wait for checks, the failing Live site check would have blocked every deploy.
+
 ## 2026-11-27
 - **New live link: https://prajna-ai-search-l11b.onrender.com.** The search engine now runs on a fresh Render service created from the repo's Blueprint, so every push to `main` goes live. The old link was stuck on the first release.
 - **The whole interface is now in English.** That covers the placeholder, home examples, Studio texts and sample prompts, and the language switch and picker labels (Chinese, Hindi, Spanish, Arabic, Russian, Hinglish). Answers can still be shown in any of the 7 languages.

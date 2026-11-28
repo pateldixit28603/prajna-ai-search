@@ -6,7 +6,9 @@ services:
     runtime: docker
     plan: free
     branch: main
-    autoDeploy: true
+    # deploy on every push to main without waiting for GitHub checks (the Live site check
+    # waits for the deploy, so waiting on checks would deadlock)
+    autoDeployTrigger: commit
     healthCheckPath: /api/health
     envVars:
       - key: NVIDIA_API_KEY

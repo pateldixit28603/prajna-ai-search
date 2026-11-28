@@ -117,6 +117,22 @@ async def main() -> None:
             return (f"{len(r['key_papers'])} key, {len(r['read_next'])} read-next, "
                     f"{len(r['timeline'])} years, warnings={r['warnings']}")
         results.append(await probe("research:openalex", research()))
+    # Fact-check mode: the answer model must label passage stances as parseable JSON
+    from types import SimpleNamespace
+    from app.factcheck import judge
+    async def factcheck():
+        items = [{"n": 1, "title": "Nvidia", "source": "wikipedia", "published": None,
+                  "passage": "Nvidia was founded on April 5, 1993, by Jensen Huang, Chris Malachowsky and Curtis Priem."},
+                 {"n": 2, "title": "Banana", "source": "wikipedia", "published": None,
+                  "passage": "A banana is an elongated, edible fruit."}]
+        summary, model = await judge(SimpleNamespace(nv=nv, s=settings), "Nvidia was founded in 2001.", items, "en")
+        if not model:
+            raise RuntimeError("no usable stance JSON from the answer models")
+        stances = [it["stance"] for it in items]
+        if stances[0] != "contradicts":
+            raise RuntimeError(f"wrong stance on the test claim: {stances}")
+        return f"{model.split('/')[-1]} stances={stances}"
+    results.append(await probe("factcheck:judge", factcheck()))
     await nv.aclose()
     status = {"date": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
               "key_present": bool(settings.nvidia_api_key), "results": results, "catalog": catalog}

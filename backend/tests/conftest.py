@@ -1,4 +1,5 @@
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -78,6 +79,19 @@ def nim_transport():
                 out = src.replace("Nvidia was founded in 1993", "Nvidia fue fundada en 1993")
                 out = out.replace("[1]", "[9]")
                 return httpx.Response(200, json={"choices": [{"message": {"content": out}}]})
+            if "fact-checker" in sys_prompt:
+                user = body["messages"][1]["content"]
+                claim = user.split("\n", 1)[0]
+                rows = []
+                for m in re.finditer(r"^\[(\d+)\] (.*?)(?=^\[\d+\] |\Z)", user, re.M | re.S):
+                    block = m.group(2)
+                    st = "neutral"
+                    if "founded in 1993" in block:
+                        st = "supports" if "1993" in claim else "contradicts"
+                    rows.append({"n": int(m.group(1)), "stance": st, "reason": "fake reason"})
+                rows.append({"n": 99, "stance": "supports", "reason": "invented passage"})
+                content = json.dumps({"stances": rows, "summary": "Founding year per [1]; bogus [42]."})
+                return httpx.Response(200, json={"choices": [{"message": {"content": content}}]})
             content = ('{"queries": ["nvidia founding year"]}' if "search queries" in sys_prompt
                        else '{"questions": ["Who founded Nvidia?", "What is CUDA?", "Nvidia GPUs?"]}')
             return httpx.Response(200, json={"choices": [{"message": {"content": content}}]})

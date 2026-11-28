@@ -1,4 +1,4 @@
-import { Cpu, Database, ImageIcon, MessageSquare, Plus, Trash2, Wand2, X } from "lucide-react";
+import { Cpu, Database, ImageIcon, MessageSquare, Plus, ShieldCheck, Trash2, Wand2, X } from "lucide-react";
 import type { Health, ThreadSummary } from "../lib/api";
 
 type Props = {
@@ -9,6 +9,7 @@ type Props = {
   onClose: () => void;
   onNew: () => void;
   onStudio: () => void;
+  onFactCheck: () => void;
   onOpen: (id: string) => void;
   onDelete: (id: string) => void;
 };
@@ -26,7 +27,7 @@ export function Logo() {
   );
 }
 
-export default function Sidebar({ threads, current, health, open, onClose, onNew, onStudio, onOpen, onDelete }: Props) {
+export default function Sidebar({ threads, current, health, open, onClose, onNew, onStudio, onFactCheck, onOpen, onDelete }: Props) {
   return (
     <>
       {open && <div className="fixed inset-0 z-30 bg-black/50 md:hidden" onClick={onClose} />}
@@ -46,6 +47,12 @@ export default function Sidebar({ threads, current, health, open, onClose, onNew
           >
             <span className="flex items-center gap-2"><Plus size={15} /> New search</span>
             <kbd className="font-mono text-[10px] text-muted">/</kbd>
+          </button>
+          <button
+            onClick={onFactCheck}
+            className="mt-2 flex w-full items-center gap-2 rounded-xl border border-line px-3 py-2.5 text-sm transition hover:border-nv/60"
+          >
+            <ShieldCheck size={15} className="text-nv" /> Fact-check a claim
           </button>
           <button
             onClick={onStudio}

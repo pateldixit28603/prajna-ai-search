@@ -171,3 +171,28 @@ export async function streamSearch(
     }
   }
 }
+
+export type Stance = "supports" | "contradicts" | "neutral" | "unknown";
+export type FactEvidence = {
+  n: number; source_n: number | null; title: string; url: string; domain: string; source: string;
+  published?: string | null; passage: string; highlight: [number, number] | null;
+  cut_before: boolean; cut_after: boolean; score: number | null; stance: Stance; reason: string;
+};
+export type FactCheckResult = {
+  claim: string; verdict: "supported" | "contradicted" | "disputed" | "not_enough_evidence" | "unverified";
+  label: string; confidence: "high" | "medium" | "low" | "none";
+  counts: { supports: number; contradicts: number; neutral: number }; agreement: number | null;
+  summary: string; evidence: FactEvidence[]; queries: string[]; sources: number; warnings: string[];
+  nvidia: boolean; lang?: string;
+  models: { plan: string | null; embed: string | null; rerank: string | null; judge: string | null };
+  timings: Record<string, number>;
+};
+
+/** Fact-check a claim: verdict plus evidence for and against, judged by NVIDIA Nemotron. */
+export async function factCheck(body: { claim: string; focus: string }): Promise<FactCheckResult> {
+  const r = await fetch(`${BASE}/api/factcheck`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
+  });
+  if (!r.ok) throw new Error(await errorOf(r));
+  return r.json();
+}

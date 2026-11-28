@@ -1,5 +1,6 @@
-import { ArrowRight, BookOpen, Cpu, Globe2, GraduationCap, Menu, Search, Sparkles, Wand2 } from "lucide-react";
+import { ArrowRight, BookOpen, Cpu, Globe2, GraduationCap, Menu, Search, ShieldCheck, Sparkles, Wand2 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
+import FactCheck, { type CheckItem } from "./components/FactCheck";
 import ImageTurn from "./components/ImageTurn";
 import SearchBox from "./components/SearchBox";
 import Sidebar, { Logo } from "./components/Sidebar";
@@ -14,8 +15,10 @@ const EXAMPLES = [
   { q: "How did India land Chandrayaan-3 near the Moon's south pole?", tag: "Science", icon: Globe2 },
 ];
 
-type View = "search" | "studio";
-const viewFromHash = (): View => (window.location.hash === "#create" ? "studio" : "search");
+type View = "search" | "studio" | "factcheck";
+const HASH: Record<View, string> = { search: "", studio: "#create", factcheck: "#factcheck" };
+const viewFromHash = (): View =>
+  window.location.hash === "#create" ? "studio" : window.location.hash === "#factcheck" ? "factcheck" : "search";
 
 const emptyTurn = (question: string): Turn => ({
   question, answer: "", sources: [], followups: [], queries: [], status: "Starting…", stage: "planning", warnings: [],
@@ -35,13 +38,14 @@ export default function App() {
   const [studioItems, setStudioItems] = useState<StudioItem[]>([]);
   const [studioThread, setStudioThread] = useState<string | null>(null);
   const [studioBusy, setStudioBusy] = useState(false);
+  const [checks, setChecks] = useState<CheckItem[]>([]);
   const abortRef = useRef<AbortController | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   const setView = (v: View) => {
     setViewState(v);
     setMenu(false);
-    const hash = v === "studio" ? "#create" : "";
+    const hash = HASH[v];
     if (window.location.hash !== hash) history.replaceState(null, "", hash || window.location.pathname);
   };
 
@@ -200,19 +204,19 @@ export default function App() {
   return (
     <div className="flex h-full">
       <Sidebar threads={threads} current={threadId} health={health} open={menu}
-        onClose={() => setMenu(false)} onNew={newThread} onStudio={() => setView("studio")} onOpen={openThread} onDelete={removeThread} />
+        onClose={() => setMenu(false)} onNew={newThread} onStudio={() => setView("studio")} onFactCheck={() => setView("factcheck")} onOpen={openThread} onDelete={removeThread} />
 
       <main className="relative flex min-w-0 flex-1 flex-col">
         <header className="flex items-center gap-3 border-b border-line bg-ink/80 px-3 py-2.5 backdrop-blur md:px-6">
           <button className="md:hidden" onClick={() => setMenu(true)} aria-label="Open menu"><Menu size={20} /></button>
           <span className="md:hidden"><Logo /></span>
           <nav className="mx-auto flex rounded-xl border border-line bg-panel p-1 md:mx-0" aria-label="Mode">
-            {([["search", "Search", Search], ["studio", "Create image", Wand2]] as const).map(([v, label, Icon]) => (
+            {([["search", "Search", Search], ["factcheck", "Fact-check", ShieldCheck], ["studio", "Create image", Wand2]] as const).map(([v, label, Icon]) => (
               <button key={v} onClick={() => setView(v)} aria-current={view === v ? "page" : undefined}
-                className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+                className={`flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-[13px] font-medium whitespace-nowrap transition sm:px-3 sm:text-sm ${
                   view === v ? "bg-nv text-ink" : "text-muted hover:text-text"
                 }`}>
-                <Icon size={14} /> {label}
+                <Icon size={14} className="hidden sm:block" /> {v === "studio" ? <><span className="sm:hidden">Create</span><span className="hidden sm:inline">{label}</span></> : label}
               </button>
             ))}
           </nav>
@@ -222,7 +226,9 @@ export default function App() {
           </span>
         </header>
 
-        {view === "studio" ? (
+        {view === "factcheck" ? (
+          <FactCheck nvidia={health ? health.nvidia : null} items={checks} setItems={setChecks} />
+        ) : view === "studio" ? (
           <Studio items={studioItems} busy={studioBusy} nvidia={health ? health.nvidia : null} onGenerate={generate} />
         ) : turns.length === 0 ? (
           <section className="scroll-thin flex flex-1 flex-col items-center overflow-y-auto px-4 pt-[12vh] pb-16">
@@ -250,8 +256,17 @@ export default function App() {
                 </button>
               ))}
             </div>
+            <button onClick={() => setView("factcheck")}
+              className="group mt-4 flex w-full max-w-2xl items-center gap-4 rounded-2xl border border-line bg-panel/60 p-4 text-left transition hover:border-nv/60">
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-nv/50 bg-nv-soft text-nv"><ShieldCheck size={20} /></span>
+              <span className="min-w-0 flex-1">
+                <span className="flex items-center gap-2 font-medium">Fact-check a claim <span className="rounded bg-nv px-1.5 py-0.5 text-[9px] font-semibold tracking-wide text-ink uppercase">New</span></span>
+                <span className="block text-xs text-muted">Paste anything you heard and get a verdict with evidence for and against · Rerank 8B + Nemotron</span>
+              </span>
+              <ArrowRight size={18} className="shrink-0 text-nv transition group-hover:translate-x-0.5" />
+            </button>
             <button onClick={() => setView("studio")}
-              className="group mt-4 flex w-full max-w-2xl items-center gap-4 rounded-2xl border border-nv/40 bg-gradient-to-r from-nv/15 via-panel to-panel p-4 text-left transition hover:border-nv">
+              className="group mt-3 flex w-full max-w-2xl items-center gap-4 rounded-2xl border border-nv/40 bg-gradient-to-r from-nv/15 via-panel to-panel p-4 text-left transition hover:border-nv">
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-nv text-ink"><Sparkles size={20} /></span>
               <span className="min-w-0 flex-1">
                 <span className="block font-medium">Create images with AI</span>
@@ -262,7 +277,7 @@ export default function App() {
             <div className="mt-10 flex flex-wrap justify-center gap-x-5 gap-y-2 text-[11px] text-muted">
               <span><b className="font-medium text-text/80">Nemotron Bolt</b> plans queries</span>
               <span><b className="font-medium text-text/80">Embed 1B + Rerank 8B</b> rank passages</span>
-              <span><b className="font-medium text-text/80">Nemotron Lightning</b> writes cited answers</span>
+              <span><b className="font-medium text-text/80">Nemotron Lightning</b> writes answers and judges claims</span>
               <span><b className="font-medium text-text/80">FLUX.2</b> creates images</span>
             </div>
           </section>

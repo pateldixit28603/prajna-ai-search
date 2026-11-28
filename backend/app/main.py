@@ -23,6 +23,7 @@ from .config import settings
 from .nvidia import NvidiaClient
 from .imagegen import ASPECTS, STYLES, ImageError, ImageGenerator, apply_style
 from .evidence import build_evidence, passages_by_source
+from .factcheck import fact_check
 from .pipeline import FOCUS_MODES, AnswerEngine
 from .ratelimit import RateLimiter
 from .research import ResearchService
@@ -91,6 +92,12 @@ class ImageRequest(BaseModel):
     thread_id: str | None = None
 
 
+class FactCheckRequest(BaseModel):
+    claim: str = Field(..., min_length=3, max_length=500)
+    focus: str = "all"
+    lang: str | None = None          # language of the reasons/summary; None = detected from the claim
+
+
 class TranslateRequest(BaseModel):
     text: str = Field(..., min_length=1, max_length=12000)
     lang: str
@@ -116,6 +123,7 @@ async def health(request: Request):
                    "embed": settings.embed_model, "rerank": settings.rerank_model},
         "local_index": local.stats() if local else None,
         "focus_modes": {k: v["label"] for k, v in FOCUS_MODES.items()},
+        "features": ["answers", "evidence", "research", "images", "translate", "factcheck"],
         "image_models": settings.image_models,
         "image_styles": {k: v[0] for k, v in STYLES.items()},
         "languages": {k: {"label": v["label"], "native": v["native"], "dir": v["dir"]} for k, v in L.LANGUAGES.items()},
@@ -189,6 +197,21 @@ async def search(req: SearchRequest, request: Request):
 
     return StreamingResponse(events(), media_type="text/event-stream",
                              headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+
+
+@app.post("/api/factcheck")
+async def factcheck(req: FactCheckRequest, request: Request):
+    """Verdict on a claim (supported / contradicted / disputed / not enough evidence) with evidence for and against."""
+    if req.focus not in FOCUS_MODES:
+        raise HTTPException(400, f"Unknown focus mode. Use one of {list(FOCUS_MODES)}")
+    client_ip = request.client.host if request.client else "anon"
+    if not limiter.allow(client_ip):
+        raise HTTPException(429, "Too many requests — slow down a little.")
+    try:
+        return await fact_check(request.app.state.engine, req.claim.strip(), req.focus, L.normalize(req.lang))
+    except Exception as e:
+        log.exception("fact-check failed")
+        raise HTTPException(502, f"Fact-check failed: {type(e).__name__}. Try again in a moment.")
 
 
 @app.get("/api/research")

@@ -69,5 +69,6 @@ jobs:
             sleep 30
           done
           echo "last health response: ${body:0:500}"
-          echo "::error::Live site did not pick up $want within 25 minutes (live: $live). Check Render dashboard -> Events."
-          exit 1
+          # A warning, not a failure: a red check here would block Render deploys that wait for checks.
+          echo "::warning title=Live site not updated::Live site did not pick up $want within 25 minutes (live: $live). Check Render dashboard -> Settings -> Auto-Deploy (On Commit) and Events, or add the RENDER_DEPLOY_HOOK_URL secret."
+          exit 0

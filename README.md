@@ -21,6 +21,7 @@ Prajna (Sanskrit: *wisdom*) is a Perplexity-style AI search engine. You ask a qu
 
 | Feature | How |
 |---|---|
+| **Fact-check mode** 🆕 | A *Fact-check* page (`/#factcheck`). Paste a claim and get **Supported / Contradicted / Disputed / Not enough evidence**, a source-agreement meter, and the evidence for and against side by side. Rerank 8B picks the most relevant passages, Nemotron Lightning labels each one (supports / contradicts / not decisive) with a reason, and the verdict is counted from those labels in code, not written by the model |
 | **Evidence view** 🆕 | Hover or tap any `[n]` citation to see the exact passage Prajna read from that source, with the supporting sentence highlighted and how many of the claim's key words it contains. Works in every answer language and in saved threads |
 | **Answer in 7 languages** 🆕 | One click re-renders any answer in English, 简体中文, हिन्दी, Español, العربية (right-to-left), Русский or Hinglish with the NIM LLM. No new search, and every `[n]` citation is checked and restored so it points at the same source. Pick the language before searching too (auto-detected from the script by default); non-English questions also search that language's Wikipedia (ru/zh/hi/es/ar). The choice is saved with the thread |
 | **Prajna Studio (create images)** 🆕 | A dedicated *Create image* page (`/#create`). Type a command in any language, pick one of 9 styles and a shape, and Nemotron Bolt writes a detailed prompt for NVIDIA FLUX.2 klein (falling back to FLUX.1 / Stable Diffusion 3 via `ai.api.nvidia.com/v1/genai`). Includes a gallery, full-size preview, variations, download and saved history |
@@ -121,6 +122,7 @@ The GPU stack runs three NIM containers (`llama-3.1-8b-instruct`, `llama-3.2-nv-
 | Query planning + follow-ups | `nvidia/nemotron-3.5-bolt-e4b` | `POST /v1/chat/completions` |
 | Answer generation (streaming) | `nvidia/nemotron-3.5-lightning-30b-a3b` | `POST /v1/chat/completions` (`stream: true`) |
 | Passage + query embeddings | `nvidia/nemotron-3.5-embed-1b` | `POST /v1/embeddings` (`input_type: query/passage`) |
+| Fact-check stance labels | `nvidia/nemotron-3.5-lightning-30b-a3b` (backup: Bolt) | `POST /v1/chat/completions` |
 | Reranking | `nvidia/nemotron-3.5-rerank-8b` | hosted `…/retrieval/…/reranking` or local `/v1/ranking` |
 
 Hosted models get retired over time. The daily job runs `python -m scripts.nim_check`, which probes every configured endpoint, discovers the live catalog and records what works in [`nim_status.json`](backend/eval/results/nim_status.json). Retired endpoints are skipped automatically by a circuit breaker, so a retired model never breaks search.
@@ -133,6 +135,7 @@ You can swap in a bigger answer model by setting `LLM_MODEL`, for example `nvidi
 |---|---|---|
 | `GET` | `/api/health` | NVIDIA status, models, local-index stats, focus modes |
 | `POST` | `/api/search` | `{query, focus, thread_id?}` → **SSE** events: `status`, `queries`, `sources`, `token`, `followups`, `done`, `error` |
+| `POST` | `/api/factcheck` | `{claim, focus?, lang?}` → verdict, confidence, stance counts, agreement, summary, evidence (stance + reason + passage per source), models, timings |
 | `GET` | `/api/threads` | recent threads |
 | `GET` | `/api/threads/{id}` | full thread with turns, sources, timings |
 | `DELETE` | `/api/threads/{id}` | delete thread |
