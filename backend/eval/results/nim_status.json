@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-27 19:59 UTC",
+  "date": "2026-11-28 00:50 UTC",
   "key_present": true,
   "results": [
     {
@@ -20,17 +20,22 @@
     {
       "check": "rerank:nvidia/nemotron-3.5-rerank-8b",
       "ok": true,
-      "detail": "[-2.4414563179016113, -3.1762280464172363]"
+      "detail": "[-2.443920612335205, -3.176544666290283]"
     },
     {
       "check": "image:black-forest-labs/flux.2-klein-4b",
       "ok": true,
-      "detail": "HTTP 200 in 6.7s, keys=['artifacts'], finish=SUCCESS, 89 KB"
+      "detail": "HTTP 200 in 2.6s, keys=['artifacts'], finish=SUCCESS, 74 KB"
     },
     {
       "check": "research:openalex",
       "ok": true,
       "detail": "8 key, 6 read-next, 30 years, warnings=[]"
+    },
+    {
+      "check": "factcheck:judge",
+      "ok": true,
+      "detail": "nemotron-3.5-lightning-30b-a3b stances=['contradicts', 'neutral']"
     }
   ],
   "catalog": [
